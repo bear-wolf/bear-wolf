@@ -1,0 +1,65 @@
+<div class="content-block bonus-agreement-common-info-content">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Общая информация</h3>
+    <span class="sub-title">Заполните основную информацию об активности</span>
+  </div>
+
+  <div class="form-component">
+    <form [formGroup]="form">
+      <div class="rows-block">
+        <div class="row-item period-content align-items-start">
+          <label class="first-level">Период активности:</label>
+          <app-form-controls-period
+                  class="controls-period-activity-column"
+                  [formControlName]="'activityPeriod'"
+                  [labels]="true">
+          </app-form-controls-period>
+        </div>
+        <div class="row-item"
+             *ngIf="bonusAgreement.marketingPlan">
+          <app-form-controls-label
+                  class="controls-input-point w-100"
+                  label="Общее количество точек АС:"
+                  formControlName="totalOfPharmacies">
+          </app-form-controls-label>
+        </div>
+        <div class="row-item">
+          <app-form-controls-input
+                  class="controls-input-activity-pharmacies w-100"
+                  label="Количество точек, участвующих в активности:"
+                  formControlName="activityPoint"
+                  [hideErrors]="true"
+                  [errors]="form.get('activityPoint').errors"
+                  type="number">
+          </app-form-controls-input>
+        </div>
+        <div class="row-item">
+          <span>
+            <label class="first-level">НДС:</label>
+          </span>
+          <span>
+              <app-form-controls-label
+                      class="controls-label-nds"
+                      formControlName="nds">
+              </app-form-controls-label>
+              <span>%</span>
+          </span>
+        </div>
+        <div class="row-item">
+          <span>
+            <label class="first-level">Учитывать вторичных ДБ:</label>
+          </span>
+          <span class="container-secondary-db">
+            <app-form-controls-select
+                    formControlName="secondaryDb"
+                    class="controls-select-secondary-db"
+                    [options]="listTrue"
+                    [hideErrors]="true"
+                    [errors]="form.get('secondaryDb').errors">
+            </app-form-controls-select>
+          </span>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>

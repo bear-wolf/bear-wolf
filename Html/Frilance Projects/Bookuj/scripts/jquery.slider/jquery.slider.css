@@ -1,0 +1,322 @@
+/*Global*/
+.SmallPhoto{ border:1px solid #dbdbdb; background:#e5e5e5; padding:3px;}
+ul li.Active .SmallPhoto{ background:#0bb1e8; }
+/*Global=========*/
+
+/*Navigation*/	
+.Navigation{ 
+	position:relative;
+    z-index:10;
+}
+
+/*.Navigation .ArrowLeft,
+.Navigation .ArrowRight{
+	position:absolute;
+	width:27px;
+	height:36px;
+	font-size:0;
+	background:url(images/Arrow.png) no-repeat;
+	top:105px;
+}*/
+
+.Navigation .ArrowLeft{ left:0; background-position:0 0;}
+.Navigation .ArrowRight{ right:0; background-position: right 0;}
+
+.Navigation .ArrowLeft.Last{ background-position:left bottom; display:none;}
+.Navigation .ArrowRight.Last{background-position:right bottom; display:none;}
+
+
+.BaseRelative{ padding:0 55px;}
+
+.Slider { position:relative;
+}
+.Slider .absolute
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;	
+	heiht:110px;
+	}
+.Slider .absolute ul li{ float:left;}
+
+.Slider .Relative
+{
+	position:relative;
+	overflow:hidden;	
+	height:280px;
+    z-index:255px;
+	}
+
+.pagination a{
+	display:inline-block;background:url(images/thumb.png) 0 0 no-repeat;height:38px;width:17px;
+	position:relative;margin:0 1px 0 2px; font-size:0;
+	}
+
+.pagination a:hover, 
+.pagination a.active{background-position:right top;}
+.pagination a.active{cursor:default;}
+/*Navigation=======*/	
+
+
+/*SliderBigArrow - slider*/
+.BigPhotoSlider .BaseRelative{ padding:0;}
+.BigPhotoSlider .absolute ul li{ width:135px; height:78px; text-align:left;  
+    font-size:11px;
+    font-family:Arial;
+    text-align:left;}
+.BigPhotoSlider .absolute ul li .SmallText { width:115px; text-align:center;}
+.BigPhotoSlider .Navigation{ position:absolute; left:0; width:837px; top:516px; }
+.BigPhotoSlider .Relative{ margin:0 89px 0 85px;}
+.BigPhotoSlider .Navigation .ArrowLeft,
+.BigPhotoSlider .Navigation .ArrowRight{
+	position:absolute;
+	width:25px;
+	height:40px;
+	font-size:0;
+	background: url(Images/Arrow.png) no-repeat;
+	top:0;
+    z-index:999;
+}
+.BigPhotoSlider .absolute ul li .SmallPhoto{ width:115px; height:70px; border:1px solid #dbdbdb; background:#e5e5e5; padding:3px; margin-bottom:2px;}
+.BigPhotoSlider .absolute ul li.Active .SmallPhoto{ background:#0bb1e8!important; }
+.BigPhotoSlider .Navigation .ArrowLeft.Last{ background-position:left bottom; display:none;}
+.BigPhotoSlider .Navigation .ArrowRight.Last{background-position:right bottom; display:none;}
+
+.BigPhotoSlider .Navigation .ArrowLeft.Big{ top:-287px; left:43px}
+.BigPhotoSlider .Navigation .ArrowRight.Big{ top:-287px; right:43px;}
+
+.BigPhotoSlider .BaseSlider{ padding:494px 0px 0 0!important;}
+.BigPhotoSlider .Navigation .ArrowLeft{ left:43px; background-position:0 0;}
+.BigPhotoSlider .Navigation .ArrowRight{ right:43px; background-position: right top!important;}
+
+.BigPhotoSlider .pagination a{
+	display:inline-block;
+    /*background:url(images/thumb.png) 0 0 no-repeat;*/
+    height:38px;width:17px;
+	position:relative;margin:0 1px 0 2px; font-size:0;
+	}
+
+.BigPhotoSlider .pagination a:hover, 
+.BigPhotoSlider .pagination a.active{background-position:right top;}
+.BigPhotoSlider .pagination a.active{cursor:default;}
+
+/*SliderBigArrow - slider =====================*/
+
+
+/*.ListSlider*/
+.ListSlider .BaseRelative{ padding:0;}
+.ListSlider .absolute ul li{ width:131px; height:78px; float:left;}
+.ListSlider .Navigation{ position:absolute; left:0; width:870px; top:0px;}
+.ListSlider .Relative{ margin:0 40px 0 46px;}
+.ListSlider .Navigation .ArrowLeft,
+.ListSlider .Navigation .ArrowRight{
+	position:absolute;
+	width:26px;
+	height:40px;
+	font-size:0;
+	background: url(Images/Arrow1.png) no-repeat;
+	top:34px;
+    z-index:999;
+}
+
+.ListSlider .Navigation .ArrowLeft.Last{ background-position:left bottom; display:none;}
+.ListSlider .Navigation .ArrowRight.Last{background-position:right bottom; display:none;}
+
+.ListSlider .BaseSlider{padding:7px 0px 0 0!important;}
+.ListSlider .Navigation .ArrowLeft{ left:11px; background-position:0 0;}
+.ListSlider .Navigation .ArrowRight{ right:8px; background-position: right top!important;}
+
+.ListSlider .pagination a{
+	display:inline-block;
+    height:38px;width:17px;
+	position:relative;margin:0 1px 0 2px; font-size:0;
+	}
+
+.ListSlider .pagination a:hover, 
+.ListSlider .pagination a.active{background-position:right top;}
+.ListSlider .pagination a.active{cursor:default;}
+/*.ListSlider*/          
+
+/*.ListSlider MiddleSlider*/
+.ListSlider.MiddleSlider{ margin-bottom:23px;}
+.ListSlider.MiddleSlider li .Slider {height:152px;}
+.ListSlider.MiddleSlider .Slider .Relative{ height:143px;}
+
+.ListSlider.MiddleSlider .BaseRelative{ padding:0;}
+.ListSlider.MiddleSlider .absolute ul li{ width:158px; height:115px; float:left;}
+.ListSlider.MiddleSlider .Navigation{ position:absolute; left:0; width:870px; top:0px;}
+.ListSlider.MiddleSlider .Relative{ margin:0 40px 0 46px;}
+.ListSlider.MiddleSlider .SmallText b{ display:block; text-transform:uppercase; font-size:11px; font-family:Arial; color:#111017; font-weight:normal; }
+.ListSlider.MiddleSlider .absolute ul li .SmallPhoto{ width:140px; height:85px;}
+/*.ListSlider MiddleSlider*/
+                           
+/*.BigDetail*/
+.BigDetail{ margin-bottom:23px;}
+.BigDetail.Slider .Relative{ height:370px; margin:0 96px 0 0; }
+.BigDetail .BaseSlider{ padding:42px 0px 0 93px;}
+.BigDetail .BaseRelative{ padding:0;}
+.BigDetail .absolute ul.BaseList li,
+.BigDetail .absolute > ul li{ width:951px; height:362px; float:left;}
+.BigDetail .Navigation{ position:absolute; left:0; width:1140px; top:0px;}
+.BigDetail .SmallText b{ display:block; text-transform:uppercase; font-size:11px; font-family:Arial; color:#111017; font-weight:normal; }
+.BigDetail .absolute ul li .SmallPhoto{ width:140px; height:85px;}
+
+.BigDetail .Navigation .ArrowLeft,
+.BigDetail .Navigation .ArrowRight{
+	position:absolute;
+	width:26px;
+	height:40px;
+	font-size:0;
+	background: url(Images/Arrow1.png) no-repeat;
+	top:209px;
+    z-index:999;
+}
+.BigDetail .Navigation .ArrowLeft{ left:38px; background-position:0 0;}
+.BigDetail .Navigation .ArrowRight{ right:38px; background-position: right top!important;}
+
+.BigDetail h2{
+    font-size:20px;
+    color:white;
+    font-family:"OpenSansBold";	
+    border:1px solid #d4dbe7;
+    height:39px;
+    line-height:39px;
+    text-align:center;
+    font-weight:normal;
+    text-transform:uppercase;
+    margin-bottom:14px;
+    background:url(../../Images/Background/Title.png) repeat-x;
+}
+/*.BigDetail*/
+
+/*.DetailService*/
+.DetailService{ margin:25px 0 0 0!important;}
+.DetailService .absolute ul.InnerGallery li,
+.DetailService.Slider .Relative{ height:650px!important;}
+.DetailService .Navigation.InnerNav{width:484px!important;}
+
+.DetailService .BaseSlider{ padding:0px 68px 0 46px;}
+.DetailService .BaseRelative{ padding:0;}
+.DetailService ul.InnerGallery li{ float:left!important; width:154px!important;}
+.DetailService .Navigation.InnerNav{ position:absolute; left:0; top:0px; height:50px;}
+.DetailService ul.InnerGallery li .SmallPhoto{ width:140px!important; height:85px!important; border:1px solid #c5c6c8; padding:3px; background:#e5e5e5; display:block; float:left;}
+
+.DetailService .Navigation .ArrowLeft,
+.DetailService .Navigation .ArrowRight{
+	position:absolute;
+	width:26px;
+	height:40px;
+	font-size:0;
+	background: url(Images/Arrow.png) no-repeat;
+	font-size:0;
+	top:1px;    
+    z-index:999;
+}
+.DetailService .Navigation .ArrowLeft{ left:-39px; background-position:0 0;}
+.DetailService .Navigation .ArrowRight{ right:-39px; background-position: right top!important;}
+/*.DetailService=========*/
+
+
+/*.MainSmallSlider*/
+.MainSmallSlider .Relative{ height:87px; margin:0 35px 0 39px;}
+.MainSmallSlider .BaseRelative{ padding:7px 0 0 0; background:#d2d6de;}
+.MainSmallSlider .absolute ul li{ width:128px; height:78px; float:left;}
+.MainSmallSlider .Navigation{ position:absolute; left:0; width:842px; top:0px;}
+.MainSmallSlider .SmallText b{ display:block; text-transform:uppercase; font-size:11px; font-family:Arial; color:#111017; font-weight:normal; }
+.MainSmallSlider .absolute ul li .SmallPhoto{ width:115px; height:70px; background:#e5e5e5; padding:3px; border:1px solid #b4b8bf!important; }
+.MainSmallSlider .absolute ul li.Active .SmallPhoto{ background:#0bb1e8!important; }
+.MainSmallSlider  .Navigation .ArrowLeft,
+.MainSmallSlider  .Navigation .ArrowRight{
+	position:absolute;
+	width:26px;
+	height:40px;
+	font-size:0;
+	background: url(Images/Arrow1.png) no-repeat;
+	font-size:0;
+	top:28px;    
+    z-index:999;
+}
+.MainSmallSlider .Navigation .ArrowLeft{ left:9px; background-position:0 0;}
+.MainSmallSlider .Navigation .ArrowRight{ right:9px; background-position: right top!important;}
+/*.MainSmallSlider==========*/
+
+
+
+
+/*TwoSlider*/
+.TwoSlider{ margin-bottom:23px;}
+.TwoSlider .absolute ul.BaseList li,
+.TwoSlider.Slider .Relative{ height:540px;}
+.TwoSlider .BaseSlider{ padding:42px 0px 0 41px;}
+.TwoSlider .BaseRelative{ padding:0; width:761px; margin:0;}
+.TwoSlider .BaseRelative  .BaseRelative{ width:auto;}
+.TwoSlider .absolute ul.BaseList li{ width:762px; float:left; text-align:left;}
+.TwoSlider .absolute ul.BaseList li li{ height:auto; width:auto; float:none;}
+.TwoSlider .Navigation{ position:absolute; left:0; width:837px; top:0px;}
+.TwoSlider .SmallText b{ display:block; text-transform:uppercase; font-size:11px; font-family:Arial; color:#111017; font-weight:normal; }
+/*.TwoSlider .absolute ul.BaseList li .SmallPhoto{ width:140px; height:85px;}*/
+
+.TwoSlider .Navigation .ArrowLeft,
+.TwoSlider .Navigation .ArrowRight{
+	position:absolute;
+	width:95px;
+	height:98px;
+	font-size:0;
+	background: url(Images/Arrow2.png) no-repeat;
+	top:234px;
+    z-index:999;
+    font-size:24px;
+    color:white;
+    padding-top:48px;
+    line-height:24px;
+    font-family:"OpenSansRegular";	
+    text-transform:uppercase;
+}
+.TwoSlider .Navigation a:hover{ text-decoration:none!important;}
+.TwoSlider .Navigation .ArrowLeft{ left:-154px; background-position:0 0; padding-left:52px; text-align:left;}
+.TwoSlider .Navigation .ArrowRight{ right:-154px; background-position: right top!important; padding-right:52px; text-align:right;}
+/*TwoSlider==============*/
+
+/*Innerlider*/
+.InnerSlider{ height:105px; position:relative;}
+
+.InnerSlider .InnerAbsolute
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;	
+	height:110px;
+	}
+.InnerSlider .InnerAbsolute ul li{ float:left;}
+
+.InnerSlider .Nav{width:484px!important;}
+
+.InnerSlider .BaseSlider{ padding:0;}
+.InnerSlider .Rel{ margin:0 68px 0 46px; position:relative; overflow:hidden; height:115px;}
+.InnerSlider ul.InnerGallery li{ float:left!important; width:154px!important;}
+.InnerSlider .Nav{ position:absolute; left:0; top:0px; height:50px;}
+
+.InnerSlider ul.InnerGallery li .SmallPhoto{ width:140px!important; height:85px!important; border:1px solid #c5c6c8!important; padding:3px; background:#e5e5e5; display:block; float:left;}
+.InnerSlider ul.InnerGallery li.Active .SmallPhoto{ background:#0bb1e8!important; }
+
+.InnerSlider .Nav .AL,
+.InnerSlider .Nav .AR{
+	position:absolute;
+	width:26px;
+	height:40px;
+	font-size:0;
+	background: url(Images/Arrow.png) no-repeat;
+	font-size:0;
+	top:30px;    
+    z-index:999;
+}
+.InnerSlider .Nav .AL{ left:15px; background-position:0 0;}
+.InnerSlider .Nav .AR{ right:-50px; background-position: right top!important;}
+.InnerSlider .Nav .AL.Last{ background-position:left bottom; display:none;}
+.InnerSlider .Nav .AR.Last{background-position:right bottom; display:none;}
+/*Innerlider=========*/
+
+
+

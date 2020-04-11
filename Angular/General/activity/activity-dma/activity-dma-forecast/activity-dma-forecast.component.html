@@ -1,0 +1,30 @@
+ <div class="content-block">
+    <div class="title-block">
+        <h3 class="title title-border-gray justify-content-center">
+            Таблица прогноза
+        </h3>
+    </div>
+
+    <form [formGroup]="dynamicForm.form">
+        <table class="table table-forecast">
+            <thead>
+            <tr>
+                <th>Показатели проведения ДМА</th>
+                <th>Прогноз</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let row of dynamicForm.list">
+                <td>{{ row.label }}</td>
+                <td>
+                    <app-form-controls-input
+                            [errors]="dynamicForm.form.get(row.title).errors"
+                            [hideErrors]="true"
+                            [formControlName]="row.title">
+                    </app-form-controls-input>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

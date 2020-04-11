@@ -1,0 +1,143 @@
+<form [formGroup]="form" class="sku-details-content">
+  <div class="content-block">
+    <div class="title-block title-border-gray">
+      <h3 class="title">Препарат {{bmSku.sku.name}}</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-3 item">
+        <div>
+          <label>НТЗ</label>
+          <app-form-controls-input
+                  type="number"
+                  placeholder="Введите сумму"
+                  [hideErrors]="true"
+                  [errors]="form.get('ntzAmount').errors"
+                  formControlName="ntzAmount">
+          </app-form-controls-input>
+        </div>
+        <div>
+          <label>Сумма по SKU</label>
+          <div>{{bmSku.skuAmount}}</div>
+        </div>
+      </div>
+      <div class="col-3 item">
+         <div>
+           <label>Выкладка</label>
+           <app-form-controls-input
+                   type="number"
+                   placeholder="Введите сумму"
+                   [hideErrors]="true"
+                   [errors]="form.get('calculationAmount').errors"
+                   formControlName="calculationAmount">
+           </app-form-controls-input>
+         </div>
+         <div>
+           <label>Сумма исходная</label>
+           <div>{{bmSku.originalAmount}}</div>
+         </div>
+      </div>
+      <div class="col-3 item">
+        <div>
+          <label>Отчеты</label>
+          <app-form-controls-input
+                  type="number"
+                  placeholder="Введите сумму"
+                  [hideErrors]="true"
+                  [errors]="form.get('reportsAmount').errors"
+                  formControlName="reportsAmount">
+          </app-form-controls-input>
+        </div>
+        <div>
+          <label>Сумма текущая</label>
+          <div>{{bmSku.currentAmount}}</div>
+        </div>
+      </div>
+      <div class="col-3 item">
+        <div></div>
+        <div>
+          <label>Дельта</label>
+          <span>{{bmSku.delta}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block sku-details-calculation">
+    <div class="title-block title-border-gray">
+      <h3 class="title">Детали по НТЗ и выкладке</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-3 item">
+        <label>План НТЗ = 1 уп., к-во точек</label>
+        <app-form-controls-input
+                type="number"
+                placeholder="Введите число"
+                [hideErrors]="true"
+                [errors]="form.get('ntzEqualsOne').errors"
+                formControlName="ntzEqualsOne">
+        </app-form-controls-input>
+      </div>
+      <div class="col-3 item">
+        <label>План НТЗ (> 1 уп.), к-во уп.</label>
+        <app-form-controls-input
+                type="number"
+                placeholder="Введите число"
+                [hideErrors]="true"
+                [errors]="form.get('ntzMoreOnePacks').errors"
+                formControlName="ntzMoreOnePacks">
+        </app-form-controls-input>
+      </div>
+      <div class="col-3 item">
+        <label>План НТЗ (> 1 уп.), к-во точек</label>
+        <app-form-controls-input
+                type="number"
+                placeholder="Введите число"
+                [hideErrors]="true"
+                [errors]="form.get('ntzMoreOneDots').errors"
+                formControlName="ntzMoreOneDots">
+        </app-form-controls-input>
+      </div>
+      <div class="col-3 item">
+        <label>План НТЗ (> 1 уп.), ИТОГО уп.</label>
+        <app-form-controls-input
+                type="number"
+                placeholder="Введите число"
+                [hideErrors]="true"
+                [errors]="form.get('ntzMoreOneTotal').errors"
+                formControlName="ntzMoreOneTotal">
+        </app-form-controls-input>
+      </div>
+      <div class="col-3 item">
+        <label>К-во фейсингов</label>
+        <app-form-controls-input
+                type="number"
+                placeholder="Введите число"
+                [hideErrors]="true"
+                [errors]="form.get('facetingNumber').errors"
+                formControlName="facetingNumber">
+        </app-form-controls-input>
+      </div>
+      <div class="col-3 item">
+        <label>К-во точек выкладки</label>
+        <app-form-controls-input
+                type="number"
+                placeholder="Введите число"
+                [hideErrors]="true"
+                [errors]="form.get('calculationNumber').errors"
+                formControlName="calculationNumber">
+        </app-form-controls-input>
+      </div>
+      <div class="col-3 item">
+        <label>Место выкладки</label>
+        <app-form-controls-select
+                [options]="calculationPlaceOptions"
+                formControlName="calculationPlace"
+                [errors]="form.get('calculationPlace').errors"
+                [hideErrors]="true">
+        </app-form-controls-select>
+      </div>
+    </div>
+  </div>
+</form>

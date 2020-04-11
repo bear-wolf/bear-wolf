@@ -1,0 +1,10 @@
+<p-checkbox
+        [label]="label"
+        [(ngModel)]="value"
+        (ngModelChange)="updateValue($event)"
+        binary="true">
+</p-checkbox>
+
+<div *ngIf="errors" class="error-messages">
+  <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+</div>

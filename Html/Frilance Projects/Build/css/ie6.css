@@ -1,0 +1,57 @@
+/*css style for IE6*/
+
+@import url(ie.css);
+
+body{	
+	width: expression(((document.documentElement.clientWidth || document.body.clientWidth) < 995)? "995px" : "100%");
+	}
+
+* html div,
+* html li{
+	height:1%;	
+	}
+	
+* html .clearfix,
+* html .easyfix{
+	overflow:visible;
+	}
+
+.fixPNG, 
+.fixPNG img{
+	filter:expression(fixPNG(this));
+	}
+	
+.main{ height:100%; }	
+	
+.leftCol{ margin-right:-3px; }
+
+.middleColMain{	margin-left:229px; }
+
+.rightCol{ margin-left:-3px; }
+
+.middleCol2{ margin-right:229px; }
+
+.catalogMain h2{
+	margin-top:8px;	
+	}
+
+.engine,
+.cart{
+	right:-1px;
+	}
+	
+.nav-top{
+	right:19px;
+	}
+	
+.middle-block-other{
+	padding:0;
+	}
+	
+.middleCol{
+	padding-right:17px;
+	}
+	
+.catalog-img{
+	height:123px;
+	}

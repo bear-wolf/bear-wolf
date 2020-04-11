@@ -1,0 +1,13 @@
+<div class="container training-doc-total-content">
+    <div class="row">
+        <div class="col-lg-3">
+            <app-document
+                #appDocument
+                *ngIf="training.activityDocument"
+                [document]="training.activityDocument"></app-document>
+        </div>
+        <div class="col-lg-9">
+            <app-activity-training-results [training]="training"></app-activity-training-results>
+        </div>
+    </div>
+</div>

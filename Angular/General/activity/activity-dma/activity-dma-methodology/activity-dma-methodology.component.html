@@ -1,0 +1,16 @@
+<div class="content-block methodology-calculation-block">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Методология расчета</h3>
+    </div>
+    <form [formGroup]="form">
+        <app-form-controls-select
+                formControlName="methodology"
+                placeholder=""
+                class="controls-select-methodology"
+                label="Методология расчета уровня продаж без учета активностей ДМА:"
+                [options]="methodologyOptions"
+                [hideErrors]="true"
+                [errors]="form.get('methodology').errors">
+        </app-form-controls-select>
+    </form>
+</div>

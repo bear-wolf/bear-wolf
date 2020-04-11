@@ -1,0 +1,34 @@
+<div class="content-block drug-total-content">
+  <div class="content-header">
+    <div class="title-block title-border-gray">
+      <h3 class="title">Общие показатели</h3>
+    </div>
+  </div>
+
+  <div class="form-component">
+    <form [formGroup]="form">
+      <div class="row-block">
+        <div class="item">
+          <app-form-controls-select
+                  formControlName="scale"
+                  class="controls-select"
+                  label="Шкала для расчета премии"
+                  [options]="scaleList"
+                  [hideErrors]="true"
+                  [errors]="form.get('scale').errors">
+          </app-form-controls-select>
+        </div>
+        <div class="item">
+          <app-form-controls-multiselect
+                  formControlName="focusMonthes"
+                  class="controls-select"
+                  label="Фокусные месяцы:"
+                  [hideErrors]="true"
+                  [errors]="form.get('focusMonthes').errors"
+                  [options]="focusMonthes">
+          </app-form-controls-multiselect>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

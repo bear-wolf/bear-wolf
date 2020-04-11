@@ -1,0 +1,27 @@
+<div class="form-group">
+<!--    If one checkbox -->
+    <label *ngIf="label"
+        [for]="prefix+'option'">
+        <span *ngIf="!options">
+            <input type="checkbox" [id]="prefix+'option'" (change)="updateValue(value)" class="form-control">
+        </span>
+        {{label}}
+    </label>
+
+    <!--    If list checkboxes -->
+    <div class="list" *ngIf="options">
+        <label *ngFor="let option of options; let i = index"
+               [for]="'option'+i">
+            <input type="checkbox" [id]="'option'+i" class="form-control">
+            {{option.label}}
+        </label>
+    </div>
+
+    <div *ngIf="errors"
+         class="errors">
+    </div>
+
+    <div *ngIf="!errors && hint" class="form-text text-muted">
+        {{hint}}
+    </div>
+</div>

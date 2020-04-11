@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="script/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="script/fixpng.js"></script>	
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->	
+	<script src="script/jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="script/jquery-ui-1.8.20.custom.min.js" type="text/javascript"></script>
+	<script src="script/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="script/jquery.mousewheel.min.js" type="text/javascript"></script>	
+    <script src="script/web-app.js" type="text/javascript"></script>
+	
+    <script type="text/javascript">
+	jQuery(document).ready(function () {
+	    setToggleInputs();
+	});
+	
+	function setToggleInputs () {
+	
+	jQuery("[class*='toggle-inputs']").each(function (i) {
+	var defaultValue = jQuery(this).val();
+	
+	jQuery(this).bind("click", function(){
+	if (jQuery(this).val() == defaultValue) {
+	jQuery(this).val('');
+	}
+	});
+	
+	jQuery(this).bind("focus", function(){
+	if (jQuery(this).val() == defaultValue) {
+	jQuery(this).val('');
+	}
+	});
+	
+	jQuery(this).bind("blur", function(){
+	if (jQuery(this).val() == '') {
+	jQuery(this).val(defaultValue);
+	}
+	});
+	
+	});
+	
+	return true;
+	}
+	</script>
+</head>
+
+<body>
+
+<div class="main">
+<!-- header -->
+	<div class="header">
+        <a class="logo"></a>
+
+        <div class="nav-top">            
+            <div class="nav-top-right">
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Собака дня</a></li>
+                <li><a href="#">Беда</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Кто на радуге</a></li>
+                <li><a href="#">Приюты</a></li>                
+            </ul>
+
+            <div class="autorization">
+                <ul>
+                    <li><input type="text" value="логин" class="toggle-inputs" /></li>
+                    <li><input type="text" value="пароль" class="toggle-inputs" /></li>
+                    <li><input type="image" src="img/background/input.png"  class="button" /></li>
+                </ul>
+                <p>                    
+                    <a href="#">хозяева</a>
+                    <a href="#">регистрация</a>
+                </p>
+            </div>
+            </div>
+        </div>
+
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">	
+			
+            <table>
+                <tr>
+                    <th style="width:470px; padding-top:10px;">
+                        <div class="Block width470">
+                            <div class="name" style="width:455px; margin:0 auto; margin-bottom:-13px;">
+                                <div>Выбор собаки дня</div>
+                                <i class="left"></i>
+                                <i class="right"></i>                    
+                            </div>
+                            <a href="#"><img src="img/temp/main_31.png" width="470" /></a>
+                        </div>                        
+                    </th>
+                    <td class="otstup">&nbsp;</td>
+                    <td style="width:470px;">
+                        
+                        <div class="FindDog">
+                            <ul>
+                                <li><a href="#">Потерянные и найденные: </a> 500</li>
+                                <li><a href="#">Собак:</a> 2000</li>             
+                                <li><a href="#">Хозяев:</a> 1000</li>
+                                                   
+                            </ul>
+                            <table>
+                                <tr>
+                                    <td><a href="#"><img src="img/temp/big/main_25.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/big/main_27.png" /></a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><img src="img/temp/big/main_34.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/big/main_35.png" /></a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="name">
+                            <div>Потерянные и найденные друзья</div>
+                            <i class="left"></i>
+                            <i class="right"></i>                    
+                        </div>
+                        <div class="Block width470 MinHeight">                            
+                            <div class="Category">
+                                <ul>
+                                    <li><a href="#">Категория</a></li>
+                                    <li><a href="#">Категория</a></li>
+                                    <li><a href="#">Категория</a></li>
+                                    <li><a href="#">Категория</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="Gradient">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <a href="#"><img src="img/temp/big/main_39.png" /></a>
+                                        </th>
+                                        <td>
+                                            <ul>
+                                                <li><a href="#"><img src="img/temp/small/main_41.png" /></a></li>
+                                                <li><a href="#"><img src="img/temp/small/main_44.png" /></a></li>
+                                                <li><a href="#">
+                                                    <img src="img/temp/small/main_50.png" /></a></li>
+                                                <li><a href="#">
+                                                    <img src="img/temp/small/main_52.png" /></a></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <a href="#">Нашли собаку в парке</a>
+                                <p>свободный текст</p>                                
+                            </div>
+
+                        </div>                                                                                               
+                    </th>
+                    <td class="otstup">&nbsp;</td>
+                    <td>                        
+                        <div class="name">
+                            <div>Добро пожаловать в нашу социальную сеть</div>
+                            <i class="left"></i>
+                            <i class="right"></i>                    
+                        </div>                            
+                        <div class="Block BorderLine Welcome MinHeight">                            
+                            <div class="Inner">
+                            <p>Новая социальная сеть собак, максимум свободы общения. Создавайте группы по интересам, делитесь музыкой, фото, делайте объявления. У нас есть чат, блоги и многое другое.. У нас есть страничка с понятными объяснениями, она называеться часто задаваемые вопросы. На страничке "О нас" можно прочитать кто развивает эту социальную сеть. Все опции будут доступны после регистрации или соответственно после ввода логина и пароля.Наша тематика: социальная сеть, социальные сети, общение</p>
+                            <a href="#">Первый раз у нас?</a>
+                            <div class="Seti">
+                                <b>Войти через социальные сети:</b>
+                                <ul>
+                                    <li class="contact"><a href="#"></a></li>
+                                    <li class="facebook"><a href="#"></a></li>
+                                    <li class="twitter"><a href="#"></a></li>
+                                    <li class="yandex"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>    
+                <tr>
+                    <th>
+                         <div class="raduga MinHeightBlock">
+                            <h1><span>Друзья которых уже нет с нами</span></h1>
+                            <table style="margin-left:10px;">
+                                <tr>
+                                    <td>
+                                        <a href="#"><img src="img/temp/big/main_39.png" width="200" /></a>
+                                    </td>                                    
+                                    <td>
+                                        <a href="#"><img src="img/temp/big/main_39.png" width="200" /></a>
+                                    </td>
+                                </tr>                                
+                                <tr class="obzor">
+                                    <td colspan="2">
+                                        <div class="BackgroundObzor">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        <div>
+                                                            <a href="#">Нашли собаку в парке</a>
+                                                            <p>свободный текст</p>
+                                                        </div>
+                                                    </th>                                    
+                                                    <td>
+                                                        <div>
+                                                            <a href="#">Нашли собаку в парке</a>
+                                                            <p>свободный текст</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>  
+                            
+                            <table class="margin">
+                                <tr>
+                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/small/main_44.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/small/main_44.png" /></a></td>                                    
+                                </tr>                    
+                                <tr>
+                                    <td><a href="#"><img src="img/temp/small/main_50.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/small/main_52.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/small/main_50.png" /></a></td>
+                                    <td><a href="#"><img src="img/temp/small/main_52.png" /></a></td>                                    
+                                </tr>
+                            </table>
+                            <p class="right"><a href="#">Кто на радуге...</a></p>            
+                        </div>
+                    </th>
+                    <td class="otstup">&nbsp;</td>
+                    <td>                        
+                            <div class="name">
+                                <div>Последние сообщения в аккаунтах</div>
+                                <i class="left"></i>
+                                <i class="right"></i>                    
+                            </div>                            
+                            <div class="Block BorderLine MinHeightBlock">                            
+                                <div class="Inner">
+
+                                    <div class="VerticalSpace" id="SelectNews">
+                                        <div class="customScrollBox">
+
+                                            <div class="dragger_container" id="scrollBox" style="display: none">
+                                                <div class="dragger ui-draggable">
+                                                </div>
+                                            </div>
+
+                                        <div class="container">
+                                        <div class="content" id="scroller">
+                                           <table class="News">
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <p><a href="#">Нашли собаку в парке</a></p>
+                                                        <p>Всем привет.За все время владения машиной, получилось так, что не было ни одного нормальн...</p>
+                                                        <span>29 августа 2012 в 15:00</span>
+                                                    </th>
+                                                    <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                                                </tr>
+                                            </table>                                        
+                                        </div>
+                                        </div>
+                                        </div>
+                                       </div>
+                                       <p class="right PaddingRight" style=" margin-top:5px;"><a href="#">Лента сообщений в аккаутах</a></p>
+                                  </div>
+                            </div>
+                    </td>
+                </tr>                         
+            </table>
+			
+            <div class="Block">
+                <div class="name">
+                    <div class="uppercase">Они ждут тебя</div>
+                    <i class="left"></i>
+                    <i class="right"></i>                    
+                </div>
+                <div class="Padding">
+                    <table class="margin">
+                        <tr>
+                            <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_44.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_44.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_44.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_41.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_44.png" /></a></td>
+                        </tr>                    
+                        <tr>
+                            <td><a href="#"><img src="img/temp/small/main_50.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_52.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_50.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_52.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_50.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_52.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_50.png" /></a></td>
+                            <td><a href="#"><img src="img/temp/small/main_52.png" /></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+        <div class="line"></div>        
+        <span class="phone">3-000-000</span>
+        
+        <p>
+            <i>DogPeace - Социальный проект ДревГрад</i>    
+            Свободный текст или слоган а так же контакты
+        </p>
+	    <div class="counter">            
+            <ul>
+                <li><a href="#"><img src="img/counter/main_102.png" width="88" height="31" /></a></li>
+                <li><a href="#"><img src="img/counter/main_100.png" width="88" height="31" /></a></li>                
+            </ul>
+        </div>
+
+	</div>	
+<!--bottom=========== -->
+
+    <script type="text/javascript">
+
+        $(function () {
+            //$("#SelectNews").mCustomScrollbar("vertical", 900, "easeOutCirc", 1.05, "auto", "no", "no", 0);
+            $("#SelectNews").mCustomScrollbar("vertical", 300, "easeOutCirc", 0, "auto", "yes", "yes", 15);            
+        })
+
+        $.fx.prototype.cur = function () {
+            if (this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null)) {
+                return this.elem[this.prop];
+            }
+            var r = parseFloat(jQuery.css(this.elem, this.prop));
+            return typeof r == 'undefined' ? 0 : r;
+        }
+    </script>
+    <script src="script/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+
+
+</div>
+</body>
+</html>

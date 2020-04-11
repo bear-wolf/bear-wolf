@@ -1,0 +1,22 @@
+<div class="form-control-select">
+  <label *ngIf="label" class="form-control-select-label">
+    {{label}}
+  </label>
+
+  <p-multiSelect
+          [(ngModel)]="value"
+          [options]="options"
+          [defaultLabel]="defaultLabel"
+          (ngModelChange)="updateSelectValue($event)"
+          [dataKey]="bindValue"
+          [optionLabel]="bindLabel">
+  </p-multiSelect>
+
+  <div *ngIf="errors" class="error-messages">
+    <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+  </div>
+
+  <div *ngIf="!errors && hint" class="hint-messages">
+    {{hint}}
+  </div>
+</div>

@@ -1,0 +1,28 @@
+@import "variables";
+
+.btn{
+  &.btn-green{
+    background: $btn-green!important;
+    border-color: $btn-green!important;
+  }
+  &.btn-orange{
+    background: $btn-orange!important;
+    border-color: $btn-orange!important;
+  }
+  &.btn-blue{
+    background: $btn-blue!important;
+    border-color: $btn-blue!important;
+  }
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.btn-update-block{
+  position: absolute;
+  display: block;
+  .btn{
+    border-radius: 5px;
+  }
+}

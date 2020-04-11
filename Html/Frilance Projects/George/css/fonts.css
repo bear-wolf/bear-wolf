@@ -1,0 +1,39 @@
+﻿
+/*font-face*/
+@font-face {
+    font-family: "PFDinTextCompPro-Bold";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/PFDinTextCompPro-Bold.eot');
+    src: url('../fonts/PFDinTextCompPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/pfdintextcomppro-bold.ttf') format("truetype"), url('../fonts/PFDinTextCompPro-Bold.woff') format("woff");
+}
+
+@font-face {
+    font-family: "PFDinTextCompPro-Medium";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/PFDinTextCompPro-Medium.eot');
+    src: url('../fonts/PFDinTextCompPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/pfdintextcomppro-medium.ttf') format("truetype"), url('../fonts/PFDinTextCompPro-Medium.woff') format("woff");
+}
+
+@font-face {
+    font-family: "PFDinTextCompPro-Thin";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/PFDinTextCompPro-Thin.eot');
+    src: url('../fonts/PFDinTextCompPro-Thin.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/pfdintextcomppro-thin.ttf') format("truetype"), 
+        url('../fonts/PFDinTextCompPro-Thin.woff') format("woff");
+}
+@font-face {
+    font-family: "PFDinTextCompPro-Regular";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/PFDinTextCompPro-Regular.eot');
+    src: url('../fonts/PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/pfdintextcomppro-regular.ttf') format("truetype"), 
+        url('../fonts/PFDinTextCompPro-Regular.woff') format("woff");
+}
+
+
+/*font-face=========*/

@@ -1,0 +1,194 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <title> написать сообщение </title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7a.css"/><![endif]-->
+	<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+
+
+	<div class="dialog3">
+		<div class="dial-name">
+			<div>написать сообщение</div>
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<a href="#"></a>
+		</div>
+		
+		<div class="dial-centr">
+			<div class="centr1">
+				
+				<div class="obramka">
+					<div class="profil border-net">
+						<table>
+							<tr>
+								<td>
+									<div class="foto">
+										<div class="top">
+											<i class="u1"></i>
+											<i class="u2"></i>
+											<div></div>
+										</div>
+										<div class="cen"><img src="img/dialog/temp/pit_03.jpg" width="106" height="106" alt="" /></div>
+										<div class="bot">
+											<i class="u1"></i>
+											<i class="u2"></i>
+											<div></div>
+										</div>
+									</div>
+									<h2><a href="#">напиши мне</a></h2>
+								</td>
+								<td>
+									<h3>Иванов Иван Иванович</h3>
+									<a href="#">Россия, Москва, Кузьминки</a>
+									<ul class="znak">
+										<li class="dog"><img src="img/dialog/icon/dog.png" width="54" height="54" alt="" /></li>
+										<li class="kot"><img src="img/dialog/icon/kit.png" width="54" height="54" alt="" /></li>
+										<li class="zver"><img src="img/dialog/icon/zaec.png" width="54" height="54" alt="" /></li>
+									</ul>
+									<br />
+									<p>Всего питомцев 3</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					
+					
+					
+					<div class="vkladki">
+						<a href="#" class="del">Удалить</a>
+						<div>
+							<ul>
+								<li class="vxod">
+									<a href="#">
+										<i class="lt"></i>
+										<i class="rt"></i>
+										Входящие
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="lt"></i>
+										<i class="rt"></i>
+										Отправленые
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="lt"></i>
+										<i class="rt"></i>
+										Новые письма
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="tabul">
+						<div>
+							<ul>
+								<li class="chek"><input type="checkbox" name="on" /></li>
+								<li class="width1">Автор</li>
+								<li class="width2">Тема</li>
+								<li>Дата</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="poshta">
+						<table>
+							<tr>
+								<td class="width1"><input type="checkbox" name="on" /></td>
+								<td class="width2"><img src="img/dialog/temp/poshta/poshta_22.jpg" width="46" height="46" alt="" /></td>
+								<td class="nik"><a href="#">Петр</a></td>
+								<td><a href="#">Продай собаку!</a></td>
+								<td class="width3">11.06.08</td>
+							</tr>
+							<tr>
+								<td class="width1"><input type="checkbox" name="on" /></td>
+								<td class="width2"><img src="img/dialog/temp/poshta/poshta_22.jpg" width="46" height="46" alt="" /></td>
+								<td class="nik"><a href="#">Петр</a></td>
+								<td><a href="#">Продай собаку!</a></td>
+								<td class="width3">11.06.08</td>
+							</tr>
+							<tr>
+								<td class="width1"><input type="checkbox" name="on" /></td>
+								<td class="width2"><img src="img/dialog/temp/poshta/poshta_22.jpg" width="46" height="46" alt="" /></td>
+								<td class="nik"><a href="#">Петр</a></td>
+								<td><a href="#">Продай собаку!</a></td>
+								<td class="width3">11.06.08</td>
+							</tr>
+							<tr>
+								<td class="width1"><input type="checkbox" name="on" /></td>
+								<td class="width2"><img src="img/dialog/temp/poshta/poshta_22.jpg" width="46" height="46" alt="" /></td>
+								<td class="nik"><a href="#">Петр</a></td>
+								<td><a href="#">Продай собаку!</a></td>
+								<td class="width3">11.06.08</td>
+							</tr>
+							<tr>
+								<td class="width1"><input type="checkbox" name="on" /></td>
+								<td class="width2"><img src="img/dialog/temp/poshta/poshta_22.jpg" width="46" height="46" alt="" /></td>
+								<td class="nik"><a href="#">Петр</a></td>
+								<td><a href="#">Продай собаку!</a></td>
+								<td class="width3">11.06.08</td>
+							</tr>
+						</table>	
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="dial-bot">
+			<span class="u1"></span>
+			<span class="u2"></span>
+			<div></div>
+		</div>
+		
+	</div>
+
+</div>
+</body>
+</html>

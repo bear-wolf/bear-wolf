@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <dict>
+      <key>Title</key>
+      <string>Trouble Looms in Dr. Wells’ Office</string>
+      <key>Description</key>
+      <string>page2</string>
+      <key>PagesCount</key>
+      <integer>2</integer>
+      <key>PageToNavigate</key>
+      <integer>2</integer>
+      <key>ImageSrc</key>
+      <string>pagePreview/002_ebookimg_5d4b4508-a6a6-4eb6-be59-893e5ba86e56.png</string>
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>Page3</string>
+      <key>Description</key>
+      <string>Page3</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>3</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>Page4</string>
+      <key>Description</key>
+      <string>Help is On the Way!</string>
+      <key>PagesCount</key>
+      <integer>2</integer>
+      <key>PageToNavigate</key>
+      <integer>4</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>Page5</string>
+      <key>Description</key>
+      <string>Page5</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>5</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>Page6</string>
+      <key>Description</key>
+      <string>Consider the Source</string>
+      <key>PagesCount</key>
+      <integer>2</integer>
+      <key>PageToNavigate</key>
+      <integer>6</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>page7</string>
+      <key>Description</key>
+      <string>page7</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>7</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>page8</string>
+      <key>Description</key>
+      <string>Analyze This!</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>8</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>page9</string>
+      <key>Description</key>
+      <string>A Different Kind of Staff Meeting</string>
+      <key>PagesCount</key>
+      <integer>4</integer>
+      <key>PageToNavigate</key>
+      <integer>9</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>page10</string>
+      <key>Description</key>
+      <string>page10</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>10</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>page11</string>
+      <key>Description</key>
+      <string>page11</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>11</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+    <dict>
+      <key>Title</key>
+      <string>page12</string>
+      <key>Description</key>
+      <string>page12</string>
+      <key>PagesCount</key>
+      <integer>1</integer>
+      <key>PageToNavigate</key>
+      <integer>12</integer>
+      <key>ImageSrc</key>
+      <string />
+      <key>Paragraph</key>
+      <array />
+    </dict>
+  </array>
+</plist>

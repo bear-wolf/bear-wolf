@@ -1,0 +1,828 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=1060, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Головна</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="script/fixpng.js"></script>
+    <link href="script/jquery.slider/jquery.slider.css" rel="stylesheet" />			
+    <script type="text/javascript" src="script/jquery.js"></script>
+	<script src="script/jquery.slider.js"></script>
+    <script src="script/java.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    jQuery(document).ready(function() {
+	        setToggleInputs();
+
+	        slider();
+	        DarkSlider();
+
+	        MaketsInDialog();/*Расширенное Диалоговое окно макета*/
+	        MaketsOfColors() /*Выбор цвета макета*/
+	        MaketsOfColors(); /*Выбор цвета макета*/
+
+	        if ((navigator.userAgent.match(/iPad/i) != null) || (navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/iPod/i))) {
+	            $("body").addClass("Mobile");
+	        }
+
+            /*Slider*/
+	        $(".Navigation .ArrowLeft").hover(function() { }, function() { $(this).removeClass("actives"); });
+	        $(".Navigation .ArrowLeft").mousedown(function() {
+	            $(this).addClass("actives");
+	        });
+	        $(".Navigation .ArrowLeft").mouseup(function() {
+	            $(this).removeClass("actives");
+	        });
+
+	        $(".Navigation .ArrowRight").hover(function() { }, function() { $(this).removeClass("actives"); });
+	        $(".Navigation .ArrowRight").mousedown(function() {
+	            $(this).addClass("actives");
+	        });
+	        $(".Navigation .ArrowRight").mouseup(function () {
+	            $(this).removeClass("actives");
+	        });
+	        /*Slider===========================*/
+            
+	    });
+
+        function ShowOthersShablon() {
+	        $(".Maket .OthersShablon").css("display", "block");
+	        $(".OtherVariants").hide();
+	    }
+
+	    function SelectShablon() {
+	        var _ = $(".SelectMenu li:first");	        
+	        $(_).addClass("active");	        
+	        var dir = $("#LoadImgMaket").attr("data-dir") + $(_).find("a").attr("data-img");	        
+	        $("#LoadImgMaket").attr("src", dir);	        
+	    }
+
+        function PromoCode(el) {
+            $(el).hide();
+            $(".PromoCode .TextEntry").show();
+        }
+
+	    function SelectSite(speed) {	        
+	        ScrollToElement("SelectDesign",speed);
+	    }
+        
+	    
+	</script>
+
+    <!--[if IE 8]>
+        <script type="text/javascript">
+            $(function(){
+                $("body").addClass("ie8");
+            })
+        </script>
+    <![endif]-->
+	<!--[if IE 9]>
+        <script type="text/javascript">
+            $(function(){
+                $("body").addClass("ie9");
+            })
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="alfa fancybox-overlay">
+    <div class="fancybox-wrap fancybox-desktop fancybox-type-image">
+        <div class="SmallDialog" style="background:url("img/Dialog.png") no-repeat!important; ">                
+           <div class="InnerDialog">
+               <h1>Макет 10 <a class="btnCansel" href="javascript:void(0)"></a></h1>     
+               <table>
+                   <tr>
+                       <td>
+                           <img src="" id="LoadImgMaket" data-dir="img/upload/dialog/" />
+                       </td>
+                       <th>
+                           <div class="BlockSelectMenu">
+                               <ul class="SelectMenu">
+                                   <li><a href="javascript:void(0)" data-img="maket2.png">Главная страница</a></li>
+                                   <li><a href="javascript:void(0)" data-img="maket1.png">Каталог продукции</a></li>
+                                   <li><a href="javascript:void(0)" data-img="maket10.png">Объект каталога</a></li>
+                                   <li><a href="javascript:void(0)" data-img="maket3.png">Обратная связь</a></li>
+                                   <li class="hidden">
+                                        <input type="hidden" value="" />
+                                   </li>
+                               </ul>
+                            </div>
+                           <div class="Buttons">			                
+			                    <input type="text" value="Выбрать" />
+			                </div>
+                       </th>
+                   </tr>
+               </table>
+               <div class="BlockColor">
+                    <ul class="SmallCollor">
+                        <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                        <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                        <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                        <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                        <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                        <li class="hidden">
+                            <input type="hidden" value="" />
+                        </li>
+                    </ul>
+                   — доступные цветовые гаммы для этого макета
+               </div>
+               <div class="BlockLink">
+                   <a href="javascript:void(0)" class="Prev">Предыдущий вариант</a>
+                   <a href="javascript:void(0)" class="Next">Следующий вариант</a>
+               </div>
+           </div>
+        </div>        
+</div>    
+</div>
+
+<div class="Main">    
+<!-- header -->
+    <div class="Fixit">
+	    <div class="Header">        
+            <a href="index.html" class="Logo">WOW Rocket</a>
+            <a href="javascript:void(0)" class="NewOrder" onclick="SelectSite(2500)">Заказать готовый сайт<i class="left"></i><i class="right"></i><span class="icon"></span></a>
+            <div class="TopMenu">
+                <ul>
+                    <li><a href="Opportunity.html"><span>Возможности </span></a></li>
+                    <li><a href="cenu.html"><span>Цены </span></a></li>
+                    <li><a href="Review.html"><span>Отзывы </span></a></li>
+                    <li><a href="Support.html"><span>Поддержка </span></a></li>
+                </ul>            
+            </div>
+
+            <div class="DateEvent">
+                <table>
+                    <tr>
+                        <td class="Width1">
+                            <span>Сегодня <i class="LineGorizontale"></i></span>
+                            <p>27 Февраля <br /> Инвестиции в сайт от 10 000 руб.</p>
+                        </td>
+                        <td class="Width2">
+                            <span>Завтра <i class="LineGorizontale"></i></span>
+                            <p>28 Февраля <br /> Сайт, готовый к <a href="">продвижению</a></p>
+                        </td>
+                        <td class="Last">
+                            <span>В течении месяца</span>
+                            <p>Март 2013 <br /> От 100 потенциальных клиентов с сайта</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+	    </div>		
+    <!-- /header -->		
+    </div>
+
+	<div class="content">
+		<div class="wrapper">	
+
+            <div id="NewsSlider">
+                <div class="NSBackground">
+                    <div class="Fixit">
+                      <div class="Slider">
+                        <div class="Navigation">                    
+	                        <a href="javascript:void(0)" class="ArrowLeft Last" rel="beg"></a>
+						    <a href="javascript:void(0)" class="ArrowRight" rel="end"></a>
+	                    </div>  
+                        <div id="PlacePager">
+                            <div class='paging'>
+                                <a href="javascript:void(0)" rel="0" class="Slide1 active">1 <i class="arrow"></i></a>
+                                <a href="javascript:void(0)" rel="1" class="Slide2">2<i class="arrow"></i></a>
+                                <a href="javascript:void(0)" rel="2" class="Slide3">3<i class="arrow"></i></a>
+                                <a href="javascript:void(0)" rel="3" class="Slide4">4<i class="arrow"></i></a>
+                                <a href="javascript:void(0)" rel="4" class="Slide5">5<i class="arrow"></i></a>
+                                <a href="javascript:void(0)" rel="5" class="Slide6">6<i class="arrow"></i></a>
+                                <a href="javascript:void(0)" rel="6" class="Slide7">7 <i class="arrow"></i></a>
+                            </div>
+                        </div>
+                        <div class="BaseRelative">
+                            <div class="Relative">
+                                <div class="absolute">
+                                    <table class="Images">
+                                        <tr>
+                                            <td>
+                                                <div class="Base">  
+                                                    <img src="img/upload/Lenta.png" alt="" class="img"  />                              
+                                                    <span class="name">Обновляйте новости. С удовольствием!<i class="BottomLine"></i></span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base Padding10">  
+                                                    <img src="img/upload/Email.png" class="img" />                     
+                                                    <span class="name">Форма обратной связи. Прямо на сайте!</span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <img src="img/upload/InteractiveMaps.png" class="img" alt="" />                              
+                                                    <span class="name">Интерактивная карта проезда от Google!</span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <img src="img/upload/Stat.png" alt="" class="img" />                              
+                                                    <span class="name">Статистика посещаемости. Анализируйте!</span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base Padding10">  
+                                                    <img src="img/upload/Pages.png" alt="" class="img" />                              
+                                                    <span class="name">Создание страниц. Без ограничений!</span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base PaddingLeft">  
+                                                    <img src="img/upload/Products.png" class="img" alt="" />                              
+                                                    <span class="name">Каталог продукции. Прямо на сайте!</span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <img src="img/upload/Hosting.png" alt="" class="img" />                              
+                                                    <span class="name">Хостинг и домен на 1 год. В подарок!</span>                                            
+                                                    <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  производительность сотрудников над проектами!</p>
+                                                </div>
+                                            </td>                                           
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+			
+			<div class="OrderInformation">
+			    <div class="Fixit">
+			        <div class="BlockNewsOrder"><span><a href="javascript:void(0)" onclick="SelectSite(1000)">Заказать сайт прямо сейчас</a></span></div>
+			        <span class="Name">WOW Rocket - готовые сайты за 1 день<i class="Gorizontale"></i></span>
+			        <p><b>WOWRocket</b> - отличная штука! Которая в разы повышает производительность сотрудников над проектами! Не тратится время на бесконечные пересылки и уточнения - всё делается вместе! Информация не теряется, а только копится и “количество переходит в качество</p>
+			    </div>
+			</div>
+			
+			<div class="Clouds">
+			    <i class="TopLine"></i>
+			    <div class="Base">
+			        <div class="Fixit Opportunity">
+			            <span class="name">Начните знакомство с возможностями <b>прямо сейчас!</b><i class="VerticalLine"></i></span>
+                        <div class="Scotch">
+                            <i class="BottomRight"></i>  
+                            <i class="BotLine"></i>                          
+                        </div>
+			            <div class="InformationBlock">                                                        
+                            <iframe title="YouTube video player" id="MainVideo" class="youtube-player" width="640" height="360" src="http://www.youtube.com/embed/lM5VuWyr1Go?wmode=transparent&amp;fs=1&amp;hl=en&amp;showinfo=0&amp;iv_load_policy=3&amp;showsearch=0&amp;rel=1&amp;theme=dark" frameborder="0"></iframe>
+			            </div>
+			            <p class="text">Вы можете найти больше информации о сервисе в разделе <a href="">Возможности</a></p>
+			        </div>
+			    </div>
+			</div>
+			
+			<div class="WhiteBlueBlock">
+			    <i class="TopLine"></i>
+			    <div class="Fixit">
+			    <span>Звоните нам по телефону: (343) 255 55 55</span>
+			    </div>
+			</div>
+			
+			<div class="WhiteBlock">
+			    <i class="TopLine"></i>
+			    <div class="Fixit PriceSite">
+			        <span class="BigName"><b>Сколько</b> стоит сайт?</span>
+			        
+			        <div class="BlockColumn">
+			            <div class="BottomColumn"></div>
+		                <table>
+		                    <tr>
+		                        <td>
+		                            <div class="_Base">
+		                                <h2>Визитка</h2>
+		                                <span class="Price">10000 руб.</span>
+		                                <ul>
+		                                    <li>Неограниченное количество страниц</li>
+		                                    <li>Лента новостей</li>
+		                                    <li>Форма обратной связи</li>
+		                                    <li>Карта проезда</li>
+		                                    <li class="Last">Статистика сайта</li>
+		                                </ul>
+		                                
+		                                <a href="javascript:void(0)" onclick="SelectSite(1000)" class="Button">Выбрать</a>		                                
+		                            </div>
+		                        </td>
+		                        <th>
+		                            <div class="_Base">
+		                                <h2>Компания</h2>
+		                                <span class="Price">14000 руб.</span>
+		                                <ul>
+		                                    <li>Неограниченное количество страниц</li>
+		                                    <li>Лента новостей</li>
+		                                    <li>Форма обратной связи</li>
+		                                    <li>Карта проезда</li>
+		                                    <li class="Last">Статистика сайта</li>
+		                                </ul>
+		                                <a href="javascript:void(0)" onclick="SelectSite(1000)" class="Button">Выбрать</a>
+		                            </div>
+		                        </th>
+		                        <td>
+		                            <div class="_Base">
+		                                <h2>Премиум</h2>
+		                                <span class="Price">18000 руб.</span>
+		                                <ul>
+		                                    <li>Неограниченное количество страниц</li>
+		                                    <li>Лента новостей</li>
+		                                    <li>Форма обратной связи</li>
+		                                    <li>Карта проезда</li>
+		                                    <li class="Last">Статистика сайта</li>
+		                                </ul>
+		                                <a href="javascript:void(0)" onclick="SelectSite(1000)" class="Button disable">Выбрать</a>
+		                            </div>
+		                        </td>
+		                    </tr>
+		                </table>
+			        </div>
+			        
+			    </div>
+			</div>
+			
+			
+			<div class="GrayBlock">
+			    <i class="TopLine"></i>
+			    <div class="Base NewDesignSite">
+			        <div class="Fixit">
+                        <a href="javascript:void(0)" id="SelectDesign"></a>
+			            <span class="name">Выберите дизайн <b>сайта</b><i class="LineVertical"></i></span>
+                        <i class="BotLine"></i>
+			            <table class="Maket">
+			                <tr>
+			                    <td>
+			                        <div class="Bases">
+			                            <div class="Phone"> <!--active-->
+                                            <!--<img src="img/maket/Preview.png" class="MaketPreview" />-->
+                                            <div class="img">
+                                                <img src="img/upload/dialog/maket10.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 1</span>
+			                               <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>
+			                            </div>
+			                        </div>
+			                    </td>
+			                    <td>
+			                        <div class="Bases">			
+                                        <div class="Phone">
+                                            <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 2</span>
+			                              <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>
+                                        </div>                                                                    
+			                        </div>
+			                    </td>
+			                    <td>
+			                        <div class="Bases">
+			                            <div class="Phone">
+                                            <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 3</span>
+			                                  <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+			                            </div>
+			                        </div>
+			                    </td>
+			                    <td class="Last">
+			                        <div class="Bases">
+                                        <div class="Phone">
+			                                <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 4</span>
+			                                <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+                                        </div>
+			                        </div>
+			                    </td>
+			                </tr>
+                            <tr class="OthersShablon">
+			                    <td>
+			                        <div class="Bases">
+			                            <div class="Phone">
+                                            <!--<img src="img/maket/Preview.png" class="MaketPreview" />-->
+                                            <div class="img">
+                                                <img src="img/upload/dialog/maket10.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 1</span>
+			                              <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+			                            </div>
+			                        </div>
+			                    </td>
+			                    <td>
+			                        <div class="Bases">			
+                                        <div class="Phone">
+                                            <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 2</span>
+			                              <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+                                        </div>                                                                    
+			                        </div>
+			                    </td>
+			                    <td>
+			                        <div class="Bases">
+			                            <div class="Phone">
+                                            <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 3</span>
+			                             <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+			                            </div>
+			                        </div>
+			                    </td>
+			                    <td class="Last">
+			                        <div class="Bases">
+                                        <div class="Phone">
+			                                <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 4</span>
+			                               <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+                                        </div>
+			                        </div>
+			                    </td>
+			                </tr>
+                            <tr class="OthersShablon">
+			                    <td>
+			                        <div class="Bases">
+			                            <div class="Phone">
+                                            <!--<img src="img/maket/Preview.png" class="MaketPreview" />-->
+                                            <div class="img">
+                                                <img src="img/upload/dialog/maket10.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 1</span>
+			                               <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+			                            </div>
+			                        </div>
+			                    </td>
+			                    <td>
+			                        <div class="Bases">			
+                                        <div class="Phone">
+                                            <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 2</span>
+			                               <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+                                        </div>                                                                    
+			                        </div>
+			                    </td>
+			                    <td>
+			                        <div class="Bases">
+			                            <div class="Phone">
+                                            <div class="img">
+                                                <img src="img/maket/Preview.png" class="MaketPreview" />
+                                            </div>
+			                                <span>Макет 3</span>
+			                               <ul class="SmallCollor">
+                                                <li><a href="javascript:void(0)" data-color="green" class="Color1"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="olive" class="Color2"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="blue" class="Color3"></a></li>
+                                                <li><a href="javascript:void(0)" data-color="black" class="Color4"></a></li>
+                                                <li class="active"><a href="javascript:void(0)" data-color="rouse" class="Color5"></a></li>
+                                                <li class="hidden">
+                                                    <input type="hidden" value="" />
+                                                </li>
+                                            </ul>   
+			                            </div>
+			                        </div>
+			                    </td>
+			                    <td class="Last">
+			                       
+			                    </td>
+			                </tr>
+			            </table>
+			            
+			            <div class="OtherVariants"><a href="javascript:void(0)" onclick="ShowOthersShablon()"><span>Ещё варианты</span> </a><i class="iArrow"></i></div>
+			            <div class="Separator"></div>
+			            
+			            <div class="Form">			            
+			            
+			                <div class="Afisha">
+			                    <ul>
+			                        <li class="First"><a href=""><b>Визитка</b> <span>1000 руб.</span></a></li>
+			                        <li class="Center"><a href=""><b>Компания</b> <span>14000 руб.</span></a></li>
+			                        <li class="Last"><a href=""><b>Премиум</b> <span>18000 руб.</span></a></li>
+			                    </ul>
+			                </div>
+    			            
+			            
+			                <table class="Field">
+			                    <tr>
+			                        <td class="First">
+			                            <div class="Base">
+			                                <i class="Right"></i>
+			                                <i class="Left"></i>
+			                                <input type="text" class="toggle-inputs" value="Как Вас зовут?" />
+			                            </div>
+			                        </td>
+			                        <td>
+			                            <div class="Base">
+			                                <i class="Right"></i>
+			                                <i class="Left"></i>
+			                                <input type="text" class="toggle-inputs" value="Email" />
+			                            </div>
+			                        </td>
+			                        <td>
+			                            <div class="Base">
+			                                <i class="Right"></i>
+			                                <i class="Left"></i>
+			                                <input type="text" value="Номер телефона" class="toggle-inputs" />
+			                            </div>
+			                        </td>
+			                        <td class="Last">
+			                            <div class="Buttons">
+			                                <!--<i class="Right"></i>
+			                                <i class="Left"></i>-->
+			                                <input type="text" value="Отправить" />
+			                            </div>
+			                        </td>
+			                    </tr>
+			                </table>
+			                <p class="Podpis">* Все поля обязательны для заполнения!</p>
+			                <div class="PromoCode">
+			                    <a href="javascript:void(0)" onclick="PromoCode(this)">У меня есть промо-код</a>
+			                    <div class="TextEntry">
+	                                <i class="Right"></i>
+	                                <i class="Left"></i>
+	                                <input type="text" class="toggle-inputs" value="Промо-код" />
+	                            </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			
+			<div class="BlueBlock">
+			    <i class="TopLine"></i>
+			    <div class="Fixit PromoCodeLink">
+			        <span>Вы можете получить промо-коды на &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; и
+			            <a class="facebook" href="#"></a>
+			            <a class="vcontacte" href="#"></a>  
+			        </span>
+			    </div>
+			</div>
+			
+			
+			<div id="DarkBlock">
+			    <i class="TopLine"></i>
+			    <div class="Fixit">
+                      <div class="DarkSlider">
+                      
+                        <span class="name">Что говорят о WOWRocket</span>
+                      
+                        <div class="Navigation">                    
+	                        <a href="javascript:void(0)" class="ArrowLeft Last" rel="beg"></a>
+						    <a href="javascript:void(0)" class="ArrowRight" rel="end"></a>
+	                    </div>  
+                        <div class="PlacePager">
+                            
+                        </div>
+                        <div class="BaseRelative">
+                            <div class="Relative">
+                                <div class="absolute">
+                                    <table class="Images">
+                                        <tr>
+                                            <td>
+                                                <div class="Base">  
+                                                    <!--<img src="img/upload/icon25.png" alt=""  />                              -->
+                                                    <img src="img/upload/Partneram.png" />
+                                                    <div class="text">
+                                                        <span class="topName">Дмитрий Степура</span>                                            
+                                                        <i class="topName">Генеральный директор групы компаний "Матрица"</i>
+                                                        <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  Не тратиться время на безконечные  пересылки и уточнения - всё делаеться вместе! Информация не теряеться, а только копиться  и "Количество переходит в качество"!</p>
+                                                        <p class="Link"><a href="">Подробнее</a></p>
+                                                    </div>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <!--<img src="img/upload/icon25.png" alt=""  />                              -->
+                                                    <div class="text">
+                                                        <span class="topName">Дмитрий Степура</span>                                            
+                                                        <i class="topName">Генеральный директор групы компаний "Матрица"</i>
+                                                        <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  Не тратиться время на безконечные  пересылки и уточнения - всё делаеться вместе! Информация не теряеться, а только копиться  и "Количество переходит в качество"!</p>
+                                                        <p class="Link"><a href="">Подробнее</a></p>
+                                                    </div>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <!--<img src="img/upload/icon25.png" alt=""  />                              -->
+                                                    <div class="text">
+                                                        <span class="topName">Дмитрий Степура</span>                                            
+                                                        <i class="topName">Генеральный директор групы компаний "Матрица"</i>
+                                                        <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  Не тратиться время на безконечные  пересылки и уточнения - всё делаеться вместе! Информация не теряеться, а только копиться  и "Количество переходит в качество"!</p>
+                                                        <p class="Link"><a href="">Подробнее</a></p>
+                                                    </div>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <!--<img src="img/upload/icon25.png" alt=""  />                              -->
+                                                    <div class="text">
+                                                        <span class="topName">Дмитрий Степура</span>                                            
+                                                        <i class="topName">Генеральный директор групы компаний "Матрица"</i>
+                                                        <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  Не тратиться время на безконечные  пересылки и уточнения - всё делаеться вместе! Информация не теряеться, а только копиться  и "Количество переходит в качество"!</p>
+                                                        <p class="Link"><a href="">Подробнее</a></p>
+                                                    </div>
+                                                </div>
+                                            </td>     
+                                            <td>
+                                                <div class="Base">  
+                                                    <!--<img src="img/upload/icon25.png" alt=""  />                              -->
+                                                    <div class="text">
+                                                        <span class="topName">Дмитрий Степура</span>                                            
+                                                        <i class="topName">Генеральный директор групы компаний "Матрица"</i>
+                                                        <p>WOWRocket - отличная штука! Которая в разы повышает производительность сотрудников над проектами!  Не тратиться время на безконечные  пересылки и уточнения - всё делаеться вместе! Информация не теряеться, а только копиться  и "Количество переходит в качество"!</p>
+                                                        <p class="Link"><a href="">Подробнее</a></p>
+                                                    </div>
+                                                </div>
+                                            </td>                                              
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="WhiteBlock">
+			    <i class="TopLine"></i>
+			    <div class="Fixit">
+			        <table class="Article">
+			            <tr>
+			                <th>
+			                    <div class="Base">
+			                        <span class="name">Безопасность</span>
+			                        <p><b>WOWRocket</b> - отличная штука! Которая в разы повышает производительность сотрудников над проектами! Не тратится время на бесконечные пересылки и уточнения - всё делается вместе! Информация не теряется, а только копится и “количество переходит в качество”!Не тратится время на бесконечные пересылки и уточнения - всё делается вместе! Информация не теряется, а только копится и “количество переходит в качество”!</p>
+			                        <p class="Link"><a href="">Узнайте больше</a></p>
+			                    </div>
+			                </th>
+			                <td>
+			                    <div class="Base">
+			                        <span class="name">О компании</span>
+			                        <p><b>WOWRocket</b> - отличная штука! Которая в разы повышает производительность сотрудников над проектами! Не тратится время на бесконечные пересылки и уточнения - всё делается вместе! Информация не теряется, а только копится и “количество переходит в качество”!Не тратится время на бесконечные пересылки и уточнения - всё делается вместе! Информация не теряется, а только копится и “количество переходит в качество”!</p>
+			                        <p class="Link"><a href="">Узнайте больше</a></p>
+			                    </div>
+			                </td>
+			            </tr>
+			        </table>
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+
+    <div class="Footer">
+	    <div class="Fixit">
+            <table>
+                <tr>
+                    <td class="width1">
+                        <ul class="BottomLink">
+                            <li><a href="">О компании</a></li>
+                            <li><a href="">Возможности системы</a></li>
+                            <li><a href="">Безопасность</a></li>
+                            <li><a href="">Технологии</a></li>
+                        </ul>
+                    </td>
+                    <td class="width2">
+                        <ul class="BottomLink">
+                            <li><a href="">Партнёрам</a></li>
+                            <li><a href="">Клиентам</a></li>
+                            <li><a href="">Цены</a></li>
+                        </ul>
+                    </td>
+                    <td class="width3">
+                        <ul class="BottomLink">
+                            <li><a href="">Политика конфиденциальности</a></li>
+                            <li><a href="">Условия использования</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="social">
+                             <a href="javascript:void(0)" class="NewOrder" onclick="SelectSite(2000)">Заказать готовый сайт<i class="left"></i><i class="right"></i><span class="icon"></span></a>
+                             <p>Мы в соцмедиа:</p>
+                             <div class="SocLink">
+                                <a href="" class="F"></a>
+                                <a href="" class="T"></a>
+                                <a href="" class="B"></a>
+                                <a href="" class="H"></a>
+                             </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <p class="Copyright">© 2013 WOW Rocket  Екатеринбург. Поддержка - <a href="">support@wowrocket.ru</a></p>
+            
+	    </div>
+	</div>	
+</div>
+</body>
+</html>

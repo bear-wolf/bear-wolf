@@ -1,0 +1,47 @@
+@import "~assets/css/variables";
+
+.drug-detail-content{
+  .character{
+    .form-group{
+      display: flex;
+      margin-bottom: $form-row-margin-bottom;
+      align-items: center;
+
+      label{
+        font-weight: bold!important;
+        min-width: 90px;
+      }
+    }
+  }
+
+  .row-block{
+    flex-wrap: wrap;
+    display: flex;
+
+    .item{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: $form-row-margin-bottom;
+
+      .controls-select-bonus,
+      .controls-input-price-prev-year{
+        margin-left: 15px;
+      }
+
+      .form-control-select,
+      .form-control-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &>label{
+          display: flex;
+          font-weight: bold;
+          width: 100%;
+          justify-content: flex-start;
+          margin-bottom: $form-row-margin-bottom;
+        }
+      }
+    }
+  }
+}

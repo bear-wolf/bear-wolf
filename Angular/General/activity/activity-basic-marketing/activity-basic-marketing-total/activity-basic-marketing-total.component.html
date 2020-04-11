@@ -1,0 +1,38 @@
+<div class="content-block marketing-total-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Документы и итоги</h3>
+    </div>
+
+    <app-document
+            #appDocument
+            *ngIf="basicMarketing.activityDocument"
+            [header]="false"
+            [innerBlock]="true"
+            [document]="basicMarketing.activityDocument"></app-document>
+
+    <div class="content-body">
+        <label>Итоги:</label>
+
+        <table class="table table-bordered table-total">
+            <thead>
+            <tr>
+                <th colspan="2" class="text-center table-active-header">Инвестиции, p</th>
+                <th rowspan="2" class="">Директ постинг, p</th>
+                <th rowspan="2">Реверс</th>
+            </tr>
+            <tr>
+                <td class="table-active">План</td>
+                <td class="table-active">Факт</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td [innerText]="basicMarketing.totalPlanNow"></td>
+                <td [innerText]="basicMarketing.investmentsFact"></td>
+                <td [innerText]="basicMarketing.directPosting"></td>
+                <td [innerText]="basicMarketing.reverse"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,983 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=320px;">
+    <title>Головна</title>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=uk_UA" type="text/javascript"></script>
+    <link href="content/bootstrap.css" rel="stylesheet" />
+    <link href="content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="content/bootstrap-override.css" rel="stylesheet" />
+    <link href="content/fonts.css" rel="stylesheet" />
+    <link href="content/jquery-responsiveGallery.css" rel="stylesheet" />
+    <link href="content/Site.css" rel="stylesheet" />
+    <link href="content/someBrowser.css" rel="stylesheet" />
+    <link href="content/animations.css" rel="stylesheet" />
+    <link href="content/media.css" rel="stylesheet" />
+    <link href="content/themes/base/all.css" rel="stylesheet" />
+    <link href="content/growl/growl.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.9.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/jquery-ui-1.11.1.js"></script>
+    <script src="scripts/jquery-ui-1.11.2.js"></script>
+    <script src="scripts/jquery.json-2.3.js"></script>
+    <script src="scripts/jquery.cookie.js"></script>
+    <script src="scripts/base64.js"></script>
+    <!--<script src="scripts/growl.js"></script>-->
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="scripts/jquery.validate.unobtrusive.bootstrap.custom.js"></script>
+    <script src="scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="scripts/underscore.js"></script>
+    <script src="scripts/SerializeObject.js"></script>
+    <script src="scripts/Common/FilterHighlight.js"></script>
+    <script src="scripts/Common/PagingSorting.js"></script>
+    <script src="scripts/Common/modernizr.custom.js"></script>
+    <script src="scripts/Common/jquery.viewportchecker.js"></script>
+    <script src="scripts/Common/jquery.easing.1.3.js"></script>
+    <script src="scripts/Common/jquery.simplr.smoothscroll.min.js"></script>
+    <script src="scripts/Common/jquery.mousewheel.min.js"></script>
+    <script src="scripts/Common/jquery.responsiveGallery.js"></script>
+    <script src="scripts/Common/Parametrize.js"></script>
+    <script src="scripts/Common/jquery.mask.min.js"></script>
+    <script src="scripts/Common/jquery.scrollintoview.min.js"></script>
+    <script src="scripts/Common/jquery.nicefileinput.min.js"></script>
+    <script src="scripts/Common/popup.js"></script>
+    <script src="scripts/Common/SiteScriptMessage.js"></script>
+    <script src="scripts/Common/SiteAutocomplete.js"></script>
+    <script src="scripts/Common/SiteValidators.js"></script>
+    <script src="scripts/Common/SiteAjaxSetup.js"></script>
+    <script src="scripts/Common/Site.js"></script>
+    <script src="scripts/Common/SiteDialog.js"></script>
+    <script src="scripts/selectboxes.js"></script>
+    <script src="scripts/datepicker-uk.js"></script>
+    <script src="scripts/filtering.js"></script>
+    <script src="scripts/pie-chart-clusterer.min.js"></script>
+    <script src="scripts/maps.js"></script>
+    <script src="scripts/interactiveMap.js"></script>
+    <script src="scripts/nicEdit-latest.js"></script>
+    <script src="scripts/Common/select-restyle.js"></script>
+</head>
+<body class="dark">
+    <a name="1"></a>
+    <div class="main" id="main">
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand" data-slide-index="0">Контроль Хмельницький</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="" data-to="#main">Про нас</a></li>
+                            <li><a href="" data-to="#Slide2">Звернення громадян</a></li>
+                            <li><a href="" data-to="#Slide3">Карта звернень</a></li>
+                            <li><a href="/Account/LogOn">Увійти</a></li>
+
+
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </nav>
+        </header>
+        <!-- Begin page content -->
+        <div class="side-middle container-full " id="Wrapper">
+
+            <a name="2"></a>
+            <div id="Slide1" class="slide1 white">
+                <div class="inner-height">
+                    <div class="wrap-right dark">
+                        <span class="animate-right"></span>
+                        <span class="animate-left"></span>
+                        <div class="">
+                            <div class="mainPage">
+                                <div class="fullWidth"></div>
+                            </div>
+                            <div class="step-all">
+                                <div class="base">
+                                    <div class="form-group">
+                                        <div class="step item1">
+                                            <span class="photo"></span>
+                                            <p>
+                                                Опишіть суть зверення, <br />
+                                                додайте фото та<br />
+                                                місце розташування <br /> проблеми
+                                            </p>
+                                            <a href="/Complaint/Create" class="btn-white">Залишити звернення</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="base">
+                                    <div class="form-group">
+                                        <div class="step item2">
+                                            <span class="photo"></span>
+                                            <p>
+                                                Звернення буде <br />
+                                                опрацьовано та надіслано<br />
+                                                до підрозділів ХМДА<br />
+                                                відповідно<br />
+                                                до їх компетенції
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="base last">
+                                    <div class="form-group">
+                                        <div class="step item3">
+                                            <span class="photo"></span>
+                                            <div class="form-small">
+                                                <form action="/Complaint/Details" id="Step3Number" method="get">
+                                                    <div class="block-text">
+                                                        <input class="form-control no-auto-scroll" data-val="true" data-val-required="Введіть № заявки" id="id" name="id" placeholder="№ звернення" type="text" value="" />
+                                                        <span class="field-validation-valid" data-valmsg-for="id" data-valmsg-replace="true"></span>
+                                                    </div>
+                                                    <button type="submit" class="btn-verify btn-white">Перевірити виконання</button>
+                                                    <div class="clear"></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page list-three white animatedParent">
+
+                <div class="container animated">
+                    <div class="animated slideInLeft">
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <h3>Квартира</h3>
+                                <ul>
+                                    <li>
+                                        <a href="/Complaint/Create/4">Холодний осушувач для рушників</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/5">Низька температура гарячої води</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/6">Проблеми з каналізацією</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/7">Неякісна вода з крану</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/8">Не працює вентиляція</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/9">Слабкий тиск води</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/10">Перепади напруги</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/11">Не гріють батареї</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/12">Вода за графіком</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/13">Цвіль на стінах</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/14">Інше</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <h3>Будинок</h3>
+                                <ul>
+                                    <li>
+                                        <a href="/Complaint/Create/15">Не прибирають прибудинкову територію</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/17">Відсутність освітлення на сходовому майданчику</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/18">Зламана поштова скринька</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/19">Тріснута плитка на підлозі</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/20">Переповнений сміттєпровід</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/21">Пошкоджені сходинки</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/22">Тріщини у фундаменті </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/23">Погнуті перила сходів</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/24">Осипається балкон</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/25">Руйнується дашок</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/26">Невимита підлога</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/27">Гризуни й комахи </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/28">Міжпанелеві шви</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/29">Водостічна труба</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/30">Написи на стінах</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/31">Запах із підвалу</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/32">Не працює ліфт</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/33">Розбите вікно</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/34">Брудний ліфт</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/35">Протікає дах</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <h3>Місто</h3>
+                                <ul>
+                                    <li>
+                                        <a href="/Complaint/Create/36">Неналежне утримання об’єктів збирання відходів</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/37">Відсутність каналізаційних люків у дворах </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/38">Відсутність місць для паркування</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/39">Відсутність освітлення на вулиці</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/40">Стихійні кіоски (МАФи)</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/41">Безпритульні собаки </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Complaint/Create/42">Відсутність пандуса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--<script>
+                $(function () {
+                    ClientValidator.Init("#Step3Number");
+                })
+            </script>-->
+
+            <section id="Slide2" class="slide2">
+                <div class="StaticLeftAnimate"></div>
+                <div class="StaticRightAnimate"></div>
+                <div>
+                    <div class="lastAddresses" data-page="1">
+                        <h2>Останні звернення</h2>
+                        <div class="parentInnerSlider">
+
+                            <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a>
+                            <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
+
+                            <ul class="responsiveGallery-wrapper">
+
+                                <li data-id="77" class="responsiveGallery-item" style="transform: translateX(-100%) translateZ(-400px) rotateY(0deg); z-index: -1; opacity: 0; visibility: hidden; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-a3730bdf5cabf02e1d70c6130d4d05e2_76423eb1dba44801a221f8d2bca8550f.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0077</span>
+                                                    <span class="float-right">07.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заповнюючи цю анкету, я даю згоду на те, що внесена мною інформація буде зберігатись і обр
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="78" class="responsiveGallery-item" style="transform: translateX(-100%) translateZ(-400px) rotateY(0deg); z-index: -1; opacity: 0; visibility: hidden; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/image2015-5-27 21-39-12_2daa9c3460884318945f802e155ef1e7.png)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0078</span>
+                                                    <span class="float-right">07.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    вдаопрвлдыап &nbsp;вадпдыр жва п вао пр жа вжа прываодп
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="79" class="responsiveGallery-item" style="transform: translateX(-100%) translateZ(-400px) rotateY(0deg); z-index: -1; opacity: 0; visibility: hidden; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-24322cab50d699df38e74ee891f86f77_ea40c61e6dc244d5922e6123f3bac5d4.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0079</span>
+                                                    <span class="float-right">07.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заповнюючи цю анкету, я даю згоду на те, що внесена мною інформація буде зберігатись і обр
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="70" class="responsiveGallery-item" style="transform: translateX(-100%) translateZ(-400px) rotateY(0deg); z-index: -1; opacity: 0; visibility: hidden; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_89654cb93be94b7bb0630868d0fe8f8a.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0070</span>
+                                                    <span class="float-right">06.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заповнюючи цю анкету, я даю згоду на те, що внесена мною інформація буде зберігатись і обр
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="72" class="responsiveGallery-item" style="transform: translateX(-60%) translateZ(-300px) rotateY(0deg); z-index: 0; opacity: 1; visibility: visible; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-24322cab50d699df38e74ee891f86f77_30dcef28d14d421096f9d0517b0cb1ed.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0072</span>
+                                                    <span class="float-right">06.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Текст звернення
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="73" class="responsiveGallery-item" style="transform: translateX(70%) translateZ(-200px) rotateY(0deg); z-index: 1; opacity: 1; visibility: visible; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0073</span>
+                                                    <span class="float-right">06.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Звернення
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="74" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out; transform: translateX(197%) translateZ(0px) rotateY(0deg); z-index: 2; opacity: 1; visibility: visible; margin-right: 30px; margin-left: 30px;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">С-0074</span>
+                                                    <span class="float-right">06.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    вфыафываыв
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="75" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out; transform: translateX(318%) translateZ(-200px) rotateY(0deg); z-index: 1; opacity: 1; visibility: visible; margin-right: 30px; margin-left: 30px;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0075</span>
+                                                    <span class="float-right">06.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Проблема
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="62" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out; transform: translateX(444%) translateZ(-300px) rotateY(0deg); z-index: 0; opacity: 1; visibility: visible; margin-right: 30px; margin-left: 30px;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_d9a57cc8d23e4f46926050332ddec89e.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0062</span>
+                                                    <span class="float-right">02.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Проблем проблема&nbsp;Проблем проблема&nbsp;Проблем проблема
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="65" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out; transform: translateX(500%) translateZ(-400px) rotateY(0deg); z-index: -1; opacity: 0; visibility: hidden; margin-right: 30px; margin-left: 30px;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0065</span>
+                                                    <span class="float-right">02.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Інфо
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="66" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0066</span>
+                                                    <span class="float-right">02.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заявник заявник
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="68" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">С-0068</span>
+                                                    <span class="float-right">02.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    &nbsp;[AllowAnonymous]
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="53" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/image2015-5-2721-39-12_537eec0ce0e74f26a1a9f86effcea7e1.png)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0053</span>
+                                                    <span class="float-right">01.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    веронлулулгулгнг
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="54" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0054</span>
+                                                    <span class="float-right">01.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заповнюючи цю анкету, я даю згоду на те, що внесена мною інформація буде зберігатись і обр
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="56" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0056</span>
+                                                    <span class="float-right">01.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заповнюючи цю анкету, я даю згоду на те, що внесена мною інформація буде зберігатись і обр
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="57" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0057</span>
+                                                    <span class="float-right">01.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Інформація про проблему
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="60" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0060</span>
+                                                    <span class="float-right">01.07.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    Заповнюючи цю анкету, я даю згоду на те, що внесена мною інформація буде зберігатись і обр
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="50" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_e969fa8f9bc84717b86499830ded7e9a.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">З-0050</span>
+                                                    <span class="float-right">30.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="51" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style=""></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0051</span>
+                                                    <span class="float-right">30.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="43" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_e4f3033ff0b745ef8c6d4f6f34a4874e.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0043</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="44" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_b4a2dead43844a8984c67bf011c7f231.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">З-0044</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="45" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_90de37e7ed374d70aa3c09e2be8b4cab.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">З-0045</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="46" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_4032980e3bdc4f3cbd80d14aa527d2d2.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">З-0046</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="47" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_263d11cabc304634ad00f640dc32f5d3.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">З-0047</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="48" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_ffdf9a4a577a4429acf8be726fdf185d.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">З-0048</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="49" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_61be8401dc514a558f1bfd0454c32247.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0049</span>
+                                                    <span class="float-right">25.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="35" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_756df48305ad41e98debd73eda44ef13.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0035</span>
+                                                    <span class="float-right">18.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    mmmmmmmmmmmmmmm13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до ком
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="36" class="responsiveGallery-item" style="transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_8cdd26060afc462780cfa20107c392eb.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">С-0036</span>
+                                                    <span class="float-right">18.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li data-id="37" class="responsiveGallery-item" style="transform: translateX(-100%) translateZ(-400px) rotateY(0deg); z-index: -1; opacity: 0; visibility: hidden; margin-right: 30px; margin-left: 30px; transition: all 0.4s ease-in-out;">
+                                    <div class="base">
+                                        <div class="no-photo"></div>
+                                        <div class="photo" style="background-image:url(/Attachments/151097-1d41919b50cc82443223e24f976ce85d_1e4033f840f44630a363c63cc02d7735.jpg)"></div>
+
+                                        <div class="w-responsivGallery-info">
+                                            <div class="content">
+                                                <div class="number line">
+                                                    <span class="float-left">П-0037</span>
+                                                    <span class="float-right">18.06.2015</span>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <p class="line">
+                                                    13.06.15 р. співробітники Київенерго покладаючи нову мережу живлення до комерційного закла
+                                                    ...
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a name="3"></a>
+            <section id="Slide3" class="slide3 footerHeight mapHeight">
+                <div class="block-map">
+                    <div id="bigmap" class="mapHeight">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83069.21425577013!2d26.995258549999996!3d49.41055195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1438165605673" width="100%" height="900px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <footer>
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container">
+                            <div class="float-left collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="network">
+                                <a href="http://vk.com/khmelnitskylife" class="vkontakt" target="_blank"></a>
+                                <a href="https://www.facebook.com/khmlife" class="facebook" target="_blank"></a>
+                            </div>
+                        </div>
+                    </nav>
+                </footer>
+            </section>
+            <a href="#" id="toTop" class="toTop fa  fa-arrow-up" data-to="#main"></a>
+            <div class="clear"></div>
+            <style>
+                .animateStaticRight {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 519px;
+                    height: 1125px;
+                    z-index: 0;
+                    background-image: url('images/background/right.png');
+                    background-size: 100%;
+                    display: block;
+                }
+
+                .animateStaticLeft {
+                    background-image: url('images/background/left.png');
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-size: 100%;
+                    z-index: 0;
+                    left: 0;
+                    top: 0;
+                    width: 540px;
+                    height: 1125px;
+                    display: block;
+                    position: absolute;
+                }
+            </style>
+        </div>
+    </div>
+</body>
+</html>

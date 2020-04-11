@@ -1,0 +1,24 @@
+<div class="form-group">
+    <label *ngIf="label">
+        {{label}}
+    </label>
+
+    <div class="position-relative">
+        <p-calendar
+                [(ngModel)]="value"
+                (ngModelChange)="updateValue($event)"
+                [placeholder]="placeholder"
+                [showIcon]="true">
+        </p-calendar>
+    </div>
+
+
+    <div *ngIf="errors"
+         class="errors">
+        <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+    </div>
+
+    <div *ngIf="!errors && hint" class="form-text text-muted">
+        {{hint}}
+    </div>
+</div>

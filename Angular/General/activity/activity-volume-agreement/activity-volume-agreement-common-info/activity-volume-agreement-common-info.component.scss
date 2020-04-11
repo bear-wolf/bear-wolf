@@ -1,0 +1,10 @@
+@import "/~assets/css/variables";
+@import "/~assets/css/shared";
+
+.volume-agreement-common-info-content {
+  .form-component {
+    max-width: 700px;
+
+    @include common-view;
+  }
+}

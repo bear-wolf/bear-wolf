@@ -1,0 +1,87 @@
+<div class="content-block training-common-info-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Общая информация</h3>
+    </div>
+
+    <div class="form-component">
+        <form [formGroup]="form" class="rows-block" *ngIf="form">
+            <div class="row row-item">
+                <div class="col-lg-12">
+                    <span>
+                        <label class="first-level">Период активности:</label>
+                    </span>
+                    <span>
+                        <app-form-controls-period
+                                [formControlName]="'activityPeriod'"
+                                [labels]="true"
+                                [dateFormat]="'dd-mm-yyyy'">
+                        </app-form-controls-period>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row row-item">
+                <div class="col-lg-12 item activity-period">
+                    <app-form-controls-select
+                            class="controls-select-month-from"
+                            formControlName="activityMonthFrom"
+                            placeholder=""
+                            label="Месяц начала:"
+                            [options]="period"
+                            [hideErrors]="true"
+                            [errors]="form.get('activityMonthFrom').errors">
+                    </app-form-controls-select>
+
+                    <app-form-controls-select
+                            class="controls-select-duration"
+                            formControlName="duration"
+                            placeholder=""
+                            label="Длительность:"
+                            [options]="duration"
+                            [hideErrors]="true"
+                            [errors]="form.get('duration').errors">
+                    </app-form-controls-select>
+
+                    <app-form-controls-select
+                            class="controls-select-duration-budget"
+                            formControlName="durationForBudget"
+                            placeholder=""
+                            label="Длительность для бюджета:"
+                            [options]="duration"
+                            [hideErrors]="true"
+                            [errors]="form.get('durationForBudget').errors">
+                    </app-form-controls-select>
+                </div>
+            </div>
+            <div class="row row-item row-item-brand">
+                <div class="col-lg-6">
+                    <app-form-controls-select
+                            class="controls-select-brand"
+                            formControlName="brand"
+                            placeholder=""
+                            label="Бренд:"
+                            [options]="brands"
+                            bindLabel="name"
+                            bindValue="id"
+                            [hideErrors]="true"
+                            (change)="changeBrand($event)"
+                            [translate]="false"
+                            [errors]="form.get('brand').errors">
+                    </app-form-controls-select>
+                </div>
+                <div class="col-lg-6">
+                    <app-form-controls-autocomplete
+                            [disabled]="!selectedBrand"
+                            formControlName="sku"
+                            label="SKU:"
+                            class="controls-autocomplete-sku"
+                            placeholder="Начните вводить"
+                            [suggestions]="filteredSkuList"
+                            [multiple]="true"
+                            (completeMethod)="searchSku($event)">>
+                    </app-form-controls-autocomplete>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

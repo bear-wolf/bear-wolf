@@ -1,0 +1,50 @@
+<div class="content-block basic-marketing-common-info-content">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Общая информация</h3>
+    <span class="sub-title">Заполните основную информацию об активности</span>
+  </div>
+
+  <form [formGroup]="form">
+    <div class="rows-block">
+      <div class="row-item row-period-content">
+        <label class="first-level">Период активности:</label>
+        <div class="form-item-control">
+          <app-form-controls-period
+                  [formControlName]="'activityPeriod'"
+                  [labels]="true">
+          </app-form-controls-period>
+        </div>
+      </div>
+
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="dataFrom"
+                label="Брать данные:"
+                [options]="dataFromOptions"
+                [errors]="form.get('dataFrom').errors"
+                [hideErrors]="true">
+        </app-form-controls-select>
+      </div>
+
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="activityType"
+                label="Тип активности:"
+                [options]="activityTypeOptions"
+                [hideErrors]="true"
+                [errors]="form.get('activityType').errors">
+        </app-form-controls-select>
+      </div>
+
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="nds"
+                label="НДС:"
+                [options]="ndsOptions"
+                [hideErrors]="true"
+                [errors]="form.get('nds').errors">
+        </app-form-controls-select>
+      </div>
+    </div>
+  </form>
+</div>

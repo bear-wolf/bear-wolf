@@ -1,0 +1,56 @@
+@import "~assets/css/shared";
+
+.volume-agreement-content{
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps {
+    li{
+      &.step1{
+        a{ padding: 0!important;}
+      }
+      &.step3{
+        a{
+          width: 132px!important;
+        }
+      }
+      &.step4{
+        a{
+          padding: 0!important;
+          width: 80px!important;
+        }
+      }
+    }
+    .ui-steps:before {
+      width: 705px !important;
+    }
+  }
+
+  .form-group,
+  p{
+    margin: 0;
+  }
+
+  table{
+    thead th{
+      vertical-align: inherit;
+    }
+
+    th{
+      text-align: center;
+      vertical-align: center;
+      font-size: 12px;
+    }
+    td{
+      text-align: center;
+    }
+  }
+
+  table input{
+    width: 80px!important;
+  }
+}
+
+.table-active-header{
+  background: #ccc;
+}

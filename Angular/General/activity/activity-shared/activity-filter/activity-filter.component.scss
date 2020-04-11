@@ -1,0 +1,67 @@
+@import "~assets/css/shared";
+
+.activity-filter-content{
+
+  .form-control-input,
+  .form-control-select{
+    display: flex;
+    justify-content: flex-start!important;
+    &>label{
+      display: flex;
+      font-weight: bold!important;
+      justify-content: flex-start;
+    }
+  }
+
+  .bu-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    @include bu-list-checkboxes;
+    p-checkbox {
+      margin-right: 5px!important;
+      display: flex;
+    }
+  }
+
+  .btn-block{
+    .btn{
+      width: 200px;
+    }
+  }
+
+  .row-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .controls-select-category-network,
+    .controls-select-segment-network{
+      .form-control-select{
+
+        p-dropdown{
+          &,
+          .ui-dropdown{
+            width: 225px;
+          }
+        }
+
+        &>label{
+          margin: 0;
+          margin-right: 15px!important;
+        }
+      }
+    }
+  }
+  .row-two{
+    .controls-multiselect-list-brands{
+      .form-control-select{
+        display: flex;
+        flex-direction: column;
+        &>label{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

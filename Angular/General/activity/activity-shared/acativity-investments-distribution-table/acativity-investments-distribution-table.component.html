@@ -1,0 +1,96 @@
+<div class="content-block investment-distribution-content">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Таблица распределения инвестиции</h3>
+  </div>
+
+  <form [formGroup]="form">
+    <table class="table-column table-borderless">
+      <thead>
+      <tr>
+        <th></th>
+        <th width="150">Доля, %</th>
+        <th width="150">Сумма, р.</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>НТЗ</td>
+        <td>
+          <app-form-controls-input
+                  formControlName="ntzPercentage"
+                  type="number"
+                  (change)="onChangePercentage('ntzPercentage')"
+                  [hideErrors]="true"
+                  [errors]="form.get('ntzPercentage').errors">
+          </app-form-controls-input>
+        </td>
+        <td>
+          <app-form-controls-input
+                  formControlName="ntzAmount"
+                  type="number"
+                  (change)="onChange('ntzAmount')"
+                  [hideErrors]="true"
+                  [errors]="form.get('ntzAmount').errors">
+          </app-form-controls-input>
+        </td>
+      </tr>
+      <tr>
+        <td>Выкладка</td>
+        <td>
+          <app-form-controls-input
+                  formControlName="calculationPercentage"
+                  type="number"
+                  (change)="onChangePercentage('calculationPercentage')"
+                  [hideErrors]="true"
+                  [errors]="form.get('calculationPercentage').errors">
+          </app-form-controls-input>
+        </td>
+        <td>
+          <app-form-controls-input
+                  formControlName="calculationAmount"
+                  type="number"
+                  (change)="onChange('calculationAmount')"
+                  [hideErrors]="true"
+                  [errors]="form.get('calculationAmount').errors">
+          </app-form-controls-input>
+        </td>
+      </tr>
+      <tr>
+        <td>Отчеты</td>
+        <td>
+          <app-form-controls-input
+                  formControlName="reportPercentage"
+                  type="number"
+                  (change)="onChangePercentage('reportPercentage')"
+                  [hideErrors]="true"
+                  [errors]="form.get('reportPercentage').errors">
+          </app-form-controls-input>
+        </td>
+        <td>
+          <app-form-controls-input
+                  formControlName="reportsAmount"
+                  type="number"
+                  (change)="onChange('reportsAmount')"
+                  [hideErrors]="true"
+                  [errors]="form.get('reportsAmount').errors">
+          </app-form-controls-input>
+        </td>
+      </tr>
+      <tr class="border-none">
+        <td>ИТОГО</td>
+        <td>
+          <label [innerText]="'100%'"></label>
+        </td>
+        <td>
+          <label [innerText]="activity.estimatedInvestmentsForPeriodPrice"></label>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+
+  <div class="plate-block">
+    При изменении сумм или процентов в таблице происходит автоматическое перераспределение инвестиций
+  </div>
+
+</div>

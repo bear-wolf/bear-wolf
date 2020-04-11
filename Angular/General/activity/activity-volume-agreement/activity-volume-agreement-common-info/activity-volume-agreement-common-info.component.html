@@ -1,0 +1,75 @@
+<div class="content-block volume-agreement-common-info-content">
+  <div class="content-header">
+    <div class="title-block title-border-gray">
+      <h3 class="title">Общая информация</h3>
+      <h3 class="sub-title">Заполните основную информацию об активности</h3>
+    </div>
+  </div>
+
+  <div class="form-component">
+    <form [formGroup]="form">
+
+      <div class="container">
+        <div class="rows-block">
+          <div class="row-item period-content">
+              <label class="first-level">Период активности:</label>
+              <app-form-controls-period
+                      class="controls-period-activity"
+                      [formControlName]="'activityPeriod'"
+                      [labels]="true">
+              </app-form-controls-period>
+          </div>
+          <div class="row-item">
+            <app-form-controls-label
+                    class="controls-input-point w-100"
+                    label="Общее количество точек АС:"
+                    formControlName="countPoints">
+            </app-form-controls-label>
+          </div>
+          <div class="row-item">
+            <app-form-controls-input
+                    formControlName="pointsInActivity"
+                    placeholder=""
+                    class="controls-input-activity-pharmacies w-100"
+                    label="Количество точек, участвующих в активности:"
+                    [hideErrors]="true"
+                    [errors]="form.get('pointsInActivity').errors">
+            </app-form-controls-input>
+          </div>
+          <div class="row-item">
+             <span>
+                <label class="first-level">НДС:</label>
+              </span>
+            <span>
+                <app-form-controls-label
+                        class="controls-label-nds"
+                        formControlName="ndsPercent"></app-form-controls-label>
+                <span>%</span>
+            </span>
+          </div>
+          <div class="row-item">
+            <app-form-controls-select
+                    class="controls-select-secondaryDB"
+                    formControlName="hasConsiderSecondaryDB"
+                    placeholder=""
+                    label="Учитывать вторичных ДБ:"
+                    [options]="listTrue"
+                    [errors]="form.get('hasConsiderSecondaryDB').errors">
+            </app-form-controls-select>
+          </div>
+          <div class="row-item">
+            <app-form-controls-select
+                    formControlName="project"
+                    placeholder=""
+                    class="controls-select-project"
+                    label="Проект"
+                    [options]="projectOptions"
+                    [hideErrors]="true"
+                    [errors]="form.get('project').errors">
+            </app-form-controls-select>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

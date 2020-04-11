@@ -1,0 +1,138 @@
+
+.jcarousel-skin-tango .jcarousel-container {
+/*
+    -moz-border-radius: 10px;
+     border: 0px solid #FFFFFF;
+*/
+	position: relative; display: block;
+	background:url(../img/sliderdodl.png) no-repeat;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+/*
+margin-left:2px;*/
+    padding: 10px;
+    width: 656px;
+	
+}
+
+
+
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  676px;
+    height: 358px;
+	
+}
+
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 676px;
+    height: 358px;	
+		background:none;
+		padding:0;
+}
+
+
+
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+ top:135px; 
+ right:10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent url(../img/arrow2_1.png) no-repeat 0 0;
+
+
+}
+
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+    background: transparent url(../img/arrow2_2.png) no-repeat 0 0;
+}
+
+
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+	top:135px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent url(../img/arrow1_1.png) no-repeat 0 0;
+}
+
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+ background: transparent url(../img/arrow1_2.png) no-repeat 0 0;
+}
+
+
+
+.jcarousel-control{position:absolute; top:60px;  right:280px;}
+
+.kl1{
+    position: absolute;
+	bottom:9px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+	z-index:+ 250px;
+	text-decoration:none;
+
+    background: transparent  url(../img/cerk1.png) no-repeat 0 0;
+	}
+.kl2{
+text-decoration:none;
+
+    position: absolute;
+	bottom:9px;
+    right: 40px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+	z-index:+ 250px;
+
+    background: transparent url(../img/cerk1.png) no-repeat 0 0;
+	}
+	.kl1 span,.kl2 span,.kl3 span,.kl4 span{ visibility:hidden;}
+	
+.kl3{
+text-decoration:none;
+    position: absolute;
+	bottom:9px;
+    right: 70px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+	z-index:+ 250px;
+
+    background: transparent url(../img/cerk1.png) no-repeat 0 0;
+	}
+	.kl4{
+text-decoration:none;
+    position: absolute;
+	bottom:9px;
+    right: 100px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+	z-index:+ 250px;
+
+    background: transparent url(../img/cerk1.png) no-repeat 0 0;
+	}
+	
+.kl1:hover,.kl2:hover,.kl3:hover,.kl4:hover,
+.active,.active,.active,.active
+	{background: transparent url(../img/cerk2.png) no-repeat 0 0;}

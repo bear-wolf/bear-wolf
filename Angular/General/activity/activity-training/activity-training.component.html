@@ -1,0 +1,84 @@
+<ng-container *ngIf="training">
+  <div class="training-content">
+    <div class="content-header">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="title">Обучение</h3>
+        </div>
+        <div class="col-md-6">
+          <app-document-version
+                  *ngIf="training.documentService"
+                  [activity]="training"></app-document-version>
+        </div>
+      </div>
+    </div>
+
+    <app-entity-header
+            #entityHeaderComponent
+            [data]="entityHeader"
+            [entity]="training"
+            [stepActiveIndex]="stepActiveIndex"
+            (currency)="currency($event)"
+            (approval)="approval($event, 1)"></app-entity-header>
+
+    <div [ngSwitch]="stepActiveIndex">
+      <div *ngSwitchCase="0">
+        <div class="row">
+          <div class="col-6">
+            <app-activity-training-common-info
+                    #innerFormComponent
+                    [training]="training"></app-activity-training-common-info>
+          </div>
+
+          <div class="col-6">
+            <app-activity-training-common-parameters
+                    #innerFormComponent
+                    [training]="training"></app-activity-training-common-parameters>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <app-activity-training-common-economics
+                    #innerFormComponent
+                    [training]="training"></app-activity-training-common-economics>
+          </div>
+        </div>
+
+      </div>
+
+      <div *ngSwitchCase="1">
+        <app-activity-akam-agreement [activity]="training"></app-activity-akam-agreement>
+      </div>
+
+      <div *ngSwitchCase="2">
+        <app-activity-training-doc-total
+                #innerFormComponent
+                [training]="training"></app-activity-training-doc-total>
+      </div>
+
+    </div>
+
+    <div class="common-form-btn-group">
+      <button class="btn btn-orange"
+              (click)="cancel()">Отмена
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isPrevStep"
+              (click)="prev()">Вернутся
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isNextStep"
+              (click)="next()">Далее
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isLastStep"
+              (click)="save()">Сохранить
+      </button>
+      <button class="btn btn-primary btn-green btn-approval"
+              *ngIf="stepActiveIndex == 1 && training.isApproval"
+              (click)="sendManager()">Сохранить и отправить руководителю
+      </button>
+    </div>
+  </div>
+</ng-container>

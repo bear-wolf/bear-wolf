@@ -1,0 +1,20 @@
+.transfer-details {
+    max-width: 440px;
+    min-width: 600px
+}
+
+.transfer-details .mat-list-text p {
+    color: rgba(0,0,0,.38);
+}
+.transfer-details .mat-list-text h4 {
+    font-weight: 400;
+}
+.transfer-details .mat-card .transfer-details-form {
+     padding: 0px; 
+}
+.transfer-details .mat-list .mat-list-item.mat-2-line .mat-list-item-content{
+    height: 56px;
+}
+.transfer-details-form {
+    padding: 0px !important;
+}

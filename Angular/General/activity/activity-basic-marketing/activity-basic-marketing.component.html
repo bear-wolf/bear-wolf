@@ -1,0 +1,137 @@
+<ng-container *ngIf="basicMarketing">
+<div class="basic-marketing-content">
+  <div class="content-header">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 *ngIf="basicMarketing.id" class="title">Базовый маркетинг №{{basicMarketing.id}}</h3>
+        <h3 *ngIf="!basicMarketing.id" class="title">Создание базового маркетинга</h3>
+      </div>
+      <div class="col-md-6">
+        <app-document-version
+                *ngIf="basicMarketing.documentService"
+                [activity]="basicMarketing">
+        </app-document-version>
+      </div>
+    </div>
+  </div>
+
+  <app-entity-header
+          #entityHeaderComponent
+          [data]="entityHeader"
+          [entity]="basicMarketing"
+          [stepActiveIndex]="stepActiveIndex"
+          (approval)="approval($event, 4)"
+          (currency)="currency($event)">
+  </app-entity-header>
+
+  <div [ngSwitch]="stepActiveIndex"
+       *ngIf="activityInstance">
+
+    <div *ngSwitchCase="0" class="row">
+      <div class="col-lg-6">
+        <app-activity-basic-marketing-common-info
+                #innerFormComponent
+                [basicMarketing]="basicMarketing">
+        </app-activity-basic-marketing-common-info>
+      </div>
+
+      <div class="col-lg-6">
+        <app-activity-basic-marketing-select-drug
+                #innerFormComponent
+                [basicMarketing]="basicMarketing"
+                [businessUnits]="businessUnits">
+        </app-activity-basic-marketing-select-drug>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="1" class="row">
+      <div class="col-lg-7">
+        <app-activity-basic-marketing-investments
+                #innerFormComponent
+                [basicMarketing]="basicMarketing">
+        </app-activity-basic-marketing-investments>
+      </div>
+
+      <div class="col-lg-5">
+        <app-acativity-investments-distribution-table
+                #innerFormComponent
+                [activity]="basicMarketing">
+        </app-acativity-investments-distribution-table>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="2">
+      <app-activity-basic-marketing-sku-details
+              [basicMarketing]="basicMarketing"
+              [businessUnits]="businessUnits">
+      </app-activity-basic-marketing-sku-details>
+    </div>
+
+    <div *ngSwitchCase="3">
+      <div class="row">
+        <div class="col-lg-3">
+          <app-activity-basic-marketing-choose-sku
+                  [basicMarketing]="basicMarketing"
+                  (selected)="selectedSku = $event">
+          </app-activity-basic-marketing-choose-sku>
+        </div>
+        <div class="col-lg-9">
+          <div *ngIf="selectedSku">
+            <ng-container *ngFor="let sku of basicMarketing.basicMarketingSku">
+              <app-activity-basic-marketing-sku-market-info
+                      *ngIf="sku === selectedSku"
+                      #innerFormComponent
+                      [bmSku]="sku">
+              </app-activity-basic-marketing-sku-market-info>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="4">
+      <app-activity-akam-agreement
+              [activity]="basicMarketing">
+      </app-activity-akam-agreement>
+    </div>
+
+    <div *ngSwitchCase="5">
+      <app-activity-basic-marketing-fines
+              #innerFormComponent
+              [businessUnits]="businessUnits"
+              [basicMarketing]="basicMarketing">
+      </app-activity-basic-marketing-fines>
+    </div>
+
+    <div *ngSwitchCase="6">
+      <app-activity-basic-marketing-total
+              #innerFormComponent
+              [basicMarketing]="basicMarketing">
+      </app-activity-basic-marketing-total>
+    </div>
+  </div>
+
+  <div class="common-form-btn-group">
+    <button class="btn btn-orange"
+            (click)="cancel()">Отмена
+    </button>
+    <button class="btn btn-blue btn-primary"
+            *ngIf="isPrevStep"
+            (click)="prev()">Вернутся
+    </button>
+    <button class="btn btn-blue btn-primary"
+            *ngIf="isNextStep"
+            (click)="next()">Далее
+    </button>
+    <button class="btn btn-blue btn-primary"
+            *ngIf="isLastStep"
+            (click)="save()">Сохранить
+    </button>
+    <button class="btn btn-primary btn-green btn-approval"
+            *ngIf="stepActiveIndex == 4 && basicMarketing.isApproval"
+            (click)="sendManager()">Сохранить и отправить руководителю
+    </button>
+  </div>
+</div>
+
+</ng-container>

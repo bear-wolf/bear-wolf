@@ -1,0 +1,420 @@
+
+@font-face {
+	font-family:"GothamBook";
+	font-style:normal;
+	font-weight:100;
+	font-stretch:condensed;
+    src: url("../font/GothamBook.otf") format("opentype");    
+}
+@font-face {
+	font-family:GothamBold;
+	font-style:normal;
+	font-weight:bold;
+    src: url("../font/GothamBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family:"GothamLight";
+	font-style:normal;
+	font-weight:lighter;
+    src: url("../font/GothamLight.otf") format("opentype");
+}
+
+@font-face
+{
+	font-family:"GothamLightItalic";    
+    src: url("../font/GothamLightItalic.otf") format("opentype");
+	font-weight:300;
+    font-weight:lighter;
+}
+
+@font-face
+{
+	font-family:"GothamExtraLight";    
+    src: url("../font/GothamExtraLight.otf") format("opentype");	
+    font-weight:100;
+}
+@font-face
+{
+	font-family:"GothamMedium";
+    src: url("../font/GothamMedium.otf") format("opentype");
+	font-weight:normal;
+}
+
+@font-face
+{
+	font-family:"MinionProRegular";
+	src:url("../font/MinionPro-Regular.otf")  format("opentype");
+	font-weight:100;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+
+p {    
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: "GothamBook";
+    font-weight:100;
+    padding: 0 0 9pt 0;
+    margin: 0;
+    position:relative;
+    z-index:255;
+    line-height:1.6em;
+}
+
+.Page {
+    width:989px;
+    max-height:663px;
+    min-height:663px;
+    padding:40px 0 0 25px;
+    position:relative;
+    overflow:hidden;
+}
+
+body {padding:0px;}
+
+table td,
+table th{ text-align:left; vertical-align:top;}
+
+.Main-page {
+    background:url(../image/MainPage.png) no-repeat;
+    background-size:1096px;        
+}
+.Main-page table td{ padding-right:15px;}
+
+.Main-page footer,
+.Page12 footer{
+    text-transform:uppercase;
+    font-family: "GothamLight";
+    font-size: 10px!important;
+    height:16px!important;
+    color: #FFF;
+	border-top:none!important;
+}
+
+.Main-page h1 {
+    font-family:"GothamBook";
+    font-size: 46px;
+    color: #FFF;
+    font-weight: normal;
+    padding: 56px 0 0 0px;
+}
+
+.Main-page table{ margin:75px 0 0 0px;}
+.Main-page table th{ padding-left:35px;}
+.Main-page table td {padding-bottom:5px;}
+
+.Main-page table th,
+.Main-page table td {
+    font-size:18px;
+    color:white;
+    font-family:"GothamLight";
+    font-weight:normal;
+}
+
+
+.TopLine.Blue {color: #2A3C8E!important;}
+.TopLine{
+    color: #C3202C!important;
+    font-size: 20px;
+    font-family: "GothamLight";
+    font-weight: normal;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    margin-right: 25px;
+    border-bottom: 1.9px solid #ddd;
+}
+
+.Images {
+    position:absolute;
+}
+
+
+.Page2 .Images{    
+    left:25px;
+    top:68px;
+    width:964px;
+    height:400px;
+    background: url(../image/IQuit.png) 0 -180px no-repeat;
+    background-size: 964px;
+}
+.Page2 table { margin: 360px 0 0 0; position:relative; z-index:255;}
+.Page2  table td{ width:50%;}
+.Page2 table td.Last{ padding-left:30px;}
+.Page2 p.Top{ padding-left:90px;}
+
+.Page3 {
+    background:url(../image/Questionnaire.png) -21px 240px no-repeat;
+    background-size:1014px;
+} 
+.Page3 td.Last{ padding-left:30px;}
+
+
+.Page4 .Images{    
+    left:0px;
+    bottom:0px;
+    width:500px;
+    height:470px;
+    background: url(../image/OnPage4.png) -65px 0 no-repeat;
+    background-size: 320px;
+    z-index:150;
+}
+.Page4 .ImagesOne{
+    position:absolute;
+    display:block;    
+    left:360px;
+    top:160px;
+    width:500px;
+    height:470px;
+    background: url(../image/Time.png) 0 0 no-repeat;
+    background-size: 380px;
+    z-index:0;
+}
+
+.Page4 footer{ z-index:100;}
+.Page4 td.Last{ padding-left:40px;}
+
+.Page5 .Images{    
+    right:0px;
+    bottom:0px;
+    width:460px;
+    height:460px;
+    background: url(../image/Discussion.png) 0 50px no-repeat;
+    background-size: 460px;
+    z-index:150;
+}
+.Page5 table td.First{ width:490px;}
+.Page5 table td.Last{ padding-left:30px;}
+.Page5 p{ padding-bottom:3pt;}
+.Page5 .Figure {
+}
+.Page5 .Figure video,
+.Page5 .Figure img{
+    width:485px;
+    margin-bottom: 4px;
+    height: 246px;
+    margin-top:0px;
+    background:white;
+    /*border:1px solid #263e8b;*/        
+    display:block;
+    margin-bottom:3px;
+}
+.Page5 i.toPlay {
+    left: 40%;
+    top: 34%;
+    z-index: 900;
+}
+
+.Page6{
+    background:url(../image/Consider.png) 290px 110px no-repeat;
+    background-size:270px;
+}
+.Page6 table td.Last{ padding-left:30px;}
+.Page6 .Images{
+    position:absolute;    
+    left:-108px;
+    bottom:0px;
+    width:460px;
+    height:394px;
+    background: url(../image/OnPage6.png) 0 0px no-repeat;
+    background-size: 400px;
+    z-index:150;
+}
+.Page6 .ImagesOne{    
+    right:-175px;
+    position:absolute;
+    bottom:0px;
+    width:460px;
+    height:345px;
+    background: url(../image/OnPage61.png) 0 0px no-repeat;
+    background-size: 370px;
+    z-index:150;
+}
+
+
+.Page7 .BaseImages{
+    width:1014px;
+    height:565px;
+    margin-top:10px;
+    background:url(../image/InteractiveExercise1.png) no-repeat;
+    background-size:964px;    
+}
+.Page7 .toPinch {
+    left: 47%;
+    top: 35%;
+    z-index: 900;
+}
+
+.Page8 {
+    background: url(../image/Ipad.png) 380px 60px no-repeat;    
+    background-size:850px;
+}
+.Page8 table td.Last{ padding-left:30px;}
+.Page8 p{ padding-bottom:8px;}
+
+.Page8 .BlockImages {
+    width:460px;
+    height:300px;
+    position:relative;
+    margin-bottom:15px;    
+}
+.Page8 .toTouch {
+    left: 44%;
+    top: 39%;
+    z-index: 900;
+}
+.Page8 footer{ text-align:left; width:380px;}
+
+.Page9 .Images{
+    position:absolute;    
+    left:-155px;
+    bottom:0px;
+    width:460px;
+    height:605px;
+    background: url(../image/OnPage9.png) 0 0px no-repeat;
+    background-size: 480px;
+    z-index:150;
+}
+.Page9 .ImagesOne{    
+    right:0px;
+    position:absolute;
+    bottom:0px;
+    width:460px;
+    height:370px;
+    background: url(../image/OnPage91.png) 0 0px no-repeat;
+    background-size: 460px;
+    z-index:150;
+}
+.Page9 table td.Last{ padding-left:30px;}
+
+
+.Page10 .BaseImages{
+    width:1014px;
+    height:480px;
+    background:url(../image/Interactive2.png) no-repeat;
+    background-size:964px;  
+    margin:10px 0 0 0;  
+}
+.Page10 .toPinch {
+    left: 47%;
+    top: 45%;
+    z-index: 900;
+}
+.Page10 table td.Last{ padding-left:30px;}
+.Page10 p{ padding-bottom:3px; line-height:1.5;}
+
+.Page11 .BlockImages {
+    width:455px;
+    height:210px;
+    border: 1px solid #263E8B;
+    background:url(../image/Interactive2Shadow.png) -280px 0 no-repeat;
+    background-size:970px;
+    display: block;
+    margin-top: 2px;
+    position:relative;
+    z-index:200;
+} 
+.Page11 p{ padding-bottom:10px;}
+.Page11 .Images{
+    position:absolute;    
+    right:-0px;
+    bottom:0px;
+    width:550px;
+    height:448px;
+    background: url(../image/OnPage11.png) 0 0px no-repeat;
+    background-size: 600px;
+    z-index:150;
+}
+.Page11 footer{ text-align:left;}
+.Page11 table td.Last{ padding-left:30px;}
+
+
+.Page12 table td.Last{ padding-left:30px;}
+.Page12 {
+    background: url(../image/OnPage12.png) center 85px no-repeat;        
+}
+.Page12 footer .right{ color:#404040;}
+
+.Figure {
+    font-family: "GothamBook";
+    font-weight: bold;
+    color: #100F0D;
+    font-size: 14px;
+    margin-bottom:10px;
+    position:relative;
+}
+.Figure span {
+    color: #1786d1;
+    font-family: "GothamMedium";
+    font-weight: 100;
+    font-size: 14px;
+}
+.Figure .Text{
+    font-family: "GothamLight";
+    font-weight: normal;    
+    font-style:italic;
+    color: #000;
+    font-size: 14px;
+    line-height:1em;
+    margin-top:4px;
+	letter-spacing: 0px;
+}
+
+.toPlay {
+    width: 60px;
+    height: 60px;
+    background: url(../image/toPlay.png) no-repeat;
+    background-size: 60px;
+    font-size: 0;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    cursor:pointer;
+}
+
+.toPinch {
+    width: 70px;
+    height: 70px;
+    background: url(../image/toTouch.png) no-repeat;
+    background-size: 70px;
+    font-size: 0;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+}
+
+.toTouch {
+    width: 60px;
+    height: 60px;
+    background: url(../image/toTouch.png) no-repeat;
+    background-size: 60px;
+    font-size: 0;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+}
+
+footer { 
+     position:absolute;
+     left:25px;
+     bottom:0;
+     width: 964px;
+     height:19px;
+     padding:5px 0 0 0;
+     border-top: 1.9px solid #ddd;
+     text-align:center;
+     color:#000;
+     font-family:"GothamLight";
+     font-size:12px;
+     color: #808285;
+}
+footer span.right{
+    display:block;
+    float:right;
+    margin:0 -20px 0 20px;
+}

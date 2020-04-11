@@ -1,0 +1,92 @@
+<div class="content-block training-common-economics-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Экономика обучения</h3>
+    </div>
+
+
+    <form class="" [formGroup]="form">
+        <table class="table-column">
+            <thead>
+                <tr>
+                    <th>Показатели</th>
+                    <th class="th-width">План</th>
+                    <th class="th-width">Факт</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Количество аптек</td>
+                    <td>
+                        <app-form-controls-input
+                                class=""
+                                formControlName="pharmaciesNumberPlan"
+                                placeholder=""
+                                [hideErrors]="true"
+                                [errors]="form.get('pharmaciesNumberPlan').errors">
+                        </app-form-controls-input>
+                    </td>
+                    <td>
+                        <app-form-controls-input
+                                class=""
+                                formControlName="pharmaciesNumberActually"
+                                [hideErrors]="true"
+                                [errors]="form.get('pharmaciesNumberActually').errors">
+                        </app-form-controls-input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Количество фармацевтов</td>
+                    <td>
+                        <app-form-controls-input
+                                class=""
+                                formControlName="pharmacistsNumberPlan"
+                                placeholder=""
+                                [hideErrors]="true"
+                                [errors]="form.get('pharmacistsNumberPlan').errors">
+                        </app-form-controls-input>
+                    </td>
+                    <td>
+                        <app-form-controls-input
+                                class=""
+                                formControlName="pharmacistsNumberActually"
+                                placeholder=""
+                                [hideErrors]="true"
+                                [errors]="form.get('pharmacistsNumberActually').errors">
+                        </app-form-controls-input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Инвестиции, р.</td>
+                    <td>
+                        <app-form-controls-input
+                                class=""
+                                formControlName="investmentsPlanPrice"
+                                placeholder=""
+                                [minlength]="0"
+                                [hideErrors]="true"
+                                [errors]="form.get('investmentsPlanPrice').errors">
+                        </app-form-controls-input>
+                    </td>
+                    <td>
+                        <app-form-controls-input
+                                class=""
+                                formControlName="investmentsFactPrice"
+                                [hideErrors]="true"
+                                [minlength]="0"
+                                [errors]="form.get('investmentsFactPrice').errors">
+                        </app-form-controls-input>
+                    </td>
+                </tr>
+                <tr class="cost-one-person border-none">
+                    <td>Стоимость на одного человека</td>
+                    <td class="block-value">
+                        <label [innerText]="costOnePersonPlan"></label>
+                    </td>
+                    <td class="block-value">
+                        <label [innerText]="costOnePersonFact"></label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,86 @@
+<ng-container *ngIf="eCommerce">
+  <div class="e-commerce-content">
+    <div class="content-header">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="title">E-commerce</h3>
+        </div>
+        <div class="col-md-6">
+          <app-document-version
+                  *ngIf="eCommerce.documentService"
+                  [activity]="eCommerce">
+          </app-document-version>
+        </div>
+      </div>
+    </div>
+
+    <app-entity-header
+            #entityHeaderComponent
+            [data]="entityHeader"
+            [entity]="eCommerce"
+            (approval)="approval($event, 1)"
+            (currency)="currency($event)"
+            [stepActiveIndex]="stepActiveIndex"></app-entity-header>
+
+    <div [ngSwitch]="stepActiveIndex">
+      <div *ngSwitchCase="0">
+        <div class="row">
+          <div class="col-6">
+            <app-activity-e-commerce-common-info
+                    #innerFormComponent
+                    [eCommerce]="eCommerce"></app-activity-e-commerce-common-info>
+          </div>
+
+          <div class="col-6">
+            <app-activity-e-commerce-common-drugs
+                    #innerFormComponent
+                    [eCommerce]="eCommerce"></app-activity-e-commerce-common-drugs>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <app-activity-e-commerce-common-activity-types
+                    #innerFormComponent
+                    [eCommerce]="eCommerce"></app-activity-e-commerce-common-activity-types>
+          </div>
+        </div>
+
+      </div>
+
+      <div *ngSwitchCase="1">
+        <app-activity-akam-agreement
+                [activity]="eCommerce"></app-activity-akam-agreement>
+      </div>
+
+      <div *ngSwitchCase="2">
+            <app-activity-e-commerce-results
+                    #innerFormComponent
+                    [eCommerce]="eCommerce"></app-activity-e-commerce-results>
+      </div>
+
+    </div>
+
+    <div class="common-form-btn-group">
+      <button class="btn btn-orange"
+              (click)="cancel()">Отмена
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isPrevStep"
+              (click)="prev()">Вернутся
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isNextStep"
+              (click)="next()">Далее
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isLastStep"
+              (click)="save()">Сохранить
+      </button>
+      <button class="btn btn-primary btn-green btn-approval"
+              *ngIf="stepActiveIndex == 1 && eCommerce.isApproval"
+              (click)="sendManager()">Сохранить и отправить руководителю
+      </button>
+    </div>
+  </div>
+</ng-container>

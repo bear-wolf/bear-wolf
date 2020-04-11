@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>society.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" width="765" height="115" alt=""/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li class="activ"><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			
+			<div class="top_line">
+				<div class="abs">
+					<ul>
+						<li class="active"><a href="#">Автомобили</a></li>
+						<li><a href="#">Частные объявления</a></li> 
+						<li><a href="#">Подобрать авто</a></li>
+						<li><a href="#">Автосалоны Екатеринбурга</a></li>
+						<li><a href="#">Консультации</a></li>
+						<li class="end"><a href="#">Новости</a></li>
+					</ul>
+				</div>
+			</div>
+			 
+		
+<div id="payed_autocenters">
+            <span>
+    			<a target="_blank" href="http://www.66.ru/go/http://www.ekt.renault-avtomir.ru"><img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1275483448_9435.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt=""></a>
+	    <br><a target="_blank" href="http://www.66.ru/go/http://www.ekt.renault-avtomir.ru">Renault-Автомир</a></span>
+    <span>
+    <a target="_blank" href="http://www.66.ru/go/http://www.ekt.suzuki-avtomir.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1275483509_1650.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="">
+    </a>
+    <br><a target="_blank" href="http://www.66.ru/go/http://www.ekt.suzuki-avtomir.ru">Suzuki-Автомир</a></span>
+    <span>
+    <a target="_blank" href="http://www.66.ru/go/http://www.berprivoz.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1285241239_2616.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Березовский привоз">
+    </a>
+    <br><a target="_blank" href="http://www.66.ru/go/http://www.berprivoz.ru">Березовский привоз</a></span>
+    <span>
+    <a target="_blank" href="http://www.66.ru/go/http://www.kia.luckymotors.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1297057294_5337.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Lucky Motors – KIA">
+    </a>
+    <br><a target="_blank" href="http://www.66.ru/go/http://www.kia.luckymotors.ru">Lucky Motors – KIA</a></span>
+    <span>
+    <a target="_blank" href="http://www.66.ru/go/http://www.hyundai-al.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1291197541_5174.jpg&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Авто-Лидер">
+    </a>
+    <br><a target="_blank" href="http://www.66.ru/go/http://www.hyundai-al.ru">Авто-Лидер</a></span>
+    <span>
+    <a target="_blank" href="http://www.66.ru/go/http://www.ford66.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1275483073_5953.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Форд центр Высоцкого">
+    </a>
+    <br><a target="_blank" href="http://www.66.ru/go/http://www.ford66.ru">Форд центр Высоцкого</a></span>
+    <span>
+    <a target="_blank" href="http://www.66.ru/go/http://www.zetamotors.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1276839280_700.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Зета Моторс">
+    </a>
+    <br><a target="_blank" href="http://www.66.ru/go/http://www.zetamotors.ru">Зета Моторс</a></span>
+    <span>
+    <a href="http://www.66.ru/go/http://www.europa-avto.ru">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1298975548_857.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Европа Авто">
+    </a>
+    <br><a href="http://www.66.ru/go/http://www.europa-avto.ru">Европа Авто</a></span>
+    <span>
+    <a href="http://www.66.ru/auto/catalog/toyota/">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1272971338_9444.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Toyota">
+    </a>
+    <br><a href="http://www.66.ru/auto/catalog/toyota/">Toyota</a></span>
+    <span>
+    <a href="http://www.66.ru/auto/catalog/mazda/">
+        <img src="img/pixel.gif" style="background: url(&quot;http://t.66.ru/auto/grayline/1276582406_2794.gif&quot;) no-repeat scroll center 0px transparent; width: 53px; height: 30px;" alt="Mazda">
+    </a>
+    <br><a href="http://www.66.ru/auto/catalog/mazda/">Mazda</a></span>
+<script type="text/javascript">
+jQuery('#payed_autocenters').append('<span style="width:100%;font-size:1px;"></span>');
+</script><span style="width: 100%; font-size: 1px;"></span><span style="width: 100%; font-size: 1px;"></span>   
+
+	
+		</div>
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+				
+				<div class="content-block">
+		
+		
+		<script type="text/javascript"><!--//<![CDATA[
+var m3_u = (location.protocol=='https:'?'https://r.66.ru/www/delivery/ajs.php':'http://r.66.ru/www/delivery/ajs.php');
+var m3_r = Math.floor(Math.random()*99999999999);
+if (!document.MAX_used) document.MAX_used = ',';
+document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+document.write ("?zoneid=80");
+document.write ('&amp;cb=' + m3_r);
+if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+document.write ("&amp;loc=" + escape(window.location));
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+if (document.context) document.write ("&context=" + escape(document.context));
+if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+document.write ("'></scr"+"ipt>");
+//]]>-->
+</script><script type="text/javascript" src="news_files/ajs_003.js"></script>
+<script type="text/javascript">
+<!--// <![CDATA[
+var fo = new FlashObject('http://r.66.ru/www/delivery/ai.php?filename=final-banner-spo-4-cs3.swf&contenttype=swf&clickTARGET=_blank&clickTAG=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9&link=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9&rb_link=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9', 'mymovie', '240', '400', '8');
+fo.addParam('wmode','opaque');
+fo.addParam('allowScriptAccess', 'always');
+fo.addParam('menu', 'false');
+fo.write('m3_79abced93d0f04b271ff4a3e17db2a4b');
+// ]]> -->
+</script><div id="beacon_2329" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="img/pages/news/lg_003.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><script type="text/javascript">document.context='YzoxNzk2fA=='; </script>
+<noscript>
+<a href='http://r.66.ru/www/delivery/ck.php?n=acddaa01&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://r.66.ru/www/delivery/avw.php?zoneid=80&amp;n=acddaa01' border='0' alt='' /></a></noscript>
+		</div>
+		
+						<embed type="application/x-shockwave-flash" src="img/pages/news/ai.php" id="mymovie" name="mymovie" quality="high" wmode="opaque" allowscriptaccess="always" menu="false" height="400" width="240" />
+		<div class="content-block">	
+			<script type="text/javascript" src="img/pages/news/openapi.js"></script>
+			<!-- VK Widget -->
+			<div style="width: 240px; background: none repeat scroll 0% 0% transparent; height: 362px;" id="vk_groups">
+				<iframe style="overflow: hidden; height: 362px;" id="vkwidget1" src="img/pages/news/widget_groups.htm" name="fXD5d4ee" scrolling="no" frameborder="0" height="200" width="240px"></iframe>
+			</div>
+			<script type="text/javascript">
+				VK.Widgets.Group("vk_groups", {mode: 0, width: "240", height: "360"}, 23350715);
+			</script>
+		</div>
+		
+		
+					
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+					<table class="struct_novunu">
+						<tr>
+							<td>
+								<div class="extnews">
+									<h1>Екатеринбуржцы смогут оплачивать проезд мобильным телефоном</h1>
+									<nowrap>Вчера [19:21]&nbsp;&nbsp;<a href="http://www.66.ru/auto/news/90975/#comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 10</a> <noindex><a href="#">info@66.ru</a></noindex></nowrap>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/news/shablon_103.jpg" width="133" height="100" alt="" />
+												<span>Уже в 2011 году в Екатеринбурге планируется внедрить систему бесконтактной оплаты проезда при помощи мобильного телефона. </span>
+												<p>Об этом сегодня заседании коллегии по проекту «Транспортная карта горожанина» заявил председатель Комитета по транспорту администрации Екатеринбурга Алексей Курлыков.</p>
+	<p>Как пишет «Новый Регион» со ссылкой на пресс-службу горадминистрации, для этого специальный чип будет закреплен на сим-карте горожанина. После отправки смс-сообщения оператору у абонента активизируется транспортный тариф. После его активации остается лишь поднести мобильный телефон к валидатору и получить чек. Администрация Екатеринбурга уже ведет активные переговоры на этот счет с несколькими сотовыми операторами. Сам Алексей Курлыков назвал внедрение бесконтактной оплаты в общественном транспорте «задачей года».</p>
+
+<p>Предшественником данного метода в Екатеринбурге стал запуск «ЕКАРТы» — пластикового проездного, позволяющего зачислять деньги на счет и активировать те или иные тарифы. По состоянию на 1 марта 2011 года в уральской столице было выдано более 278 тысяч персональных карт, и в том числе — 6 тысяч 289 транспортных карт школьников и 5 тысяч 939 транспортных карт студентов.</p>
+
+<p>Накопленный уральскими транспортниками опыт может быть использован и в более широких целях. С января 2012 года в России планируют запустить новый проект — универсальную электронную карту (УЭК) гражданина, которая фактически заменит многие документы. С ее помощью можно будет получать и оплачивать муниципальные, банковские и госуслуги. По словам главы администрации Екатеринбурга Александра Якоба, уральская столица может стать опытной площадкой для внедрения УЭК.</p>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="redactor">
+									<table>
+										<tr>
+											<td><img src="img/temp/radac.jpg" width="50" height="62" alt="" /></td>
+											<td>
+												<div>
+													<i></i>
+													<a href="#">Оксана Зотова</a>
+													<p>редактор новостей</p>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<ul>
+										<li><a href="#"><img src="img/temp/link/auto_10.jpg" width="97" height="20" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/link/auto_12.jpg" width="96" height="20" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/link/auto_14.jpg" width="109" height="21" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/link/auto_16.jpg" width="105" height="20" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/link/auto_19.jpg" width="94" height="19" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/link/auto_26.jpg" width="113" height="20" alt="" /></a></li>
+									</ul>
+								</div>
+								
+								<div class="comentariy">
+									<h2>
+										<a href="#">Коментировать</a>
+										<i>10 коментариев</i>
+									</h2>
+									<table>
+										<tr>
+											<td><a href="#"><img src="img/temp/avatar/auto_33.jpg" width="26" height="25" alt="" /></a></td>
+											<td>
+												<div>
+													<a href="#">Амиров</a>
+													<span>09 марта 2011 | 19:28 <a href="#"><img src="img/icon/reshetka.jpg" width="14" height="14" alt="" /></a></span>
+												</div> 
+											</td>
+										</tr>
+									</table>
+									<p>Странные у них задачи года... А дети, дороги, пенсионеры, ну или просто привести автопарк в порядок? </p>
+									<div class="otvet">
+										<a href="#">ответить</a>
+										<span>+5</span>
+									</div>
+									
+									<table>
+										<tr>
+											<td><a href="#"><img src="img/temp/avatar/auto_33.jpg" width="26" height="25" alt="" /></a></td>
+											<td>
+												<div>
+													<a href="#">Амиров</a>
+													<span>09 марта 2011 | 19:28 <a href="#"><img src="img/icon/reshetka.jpg" width="14" height="14" alt="" /></a></span>
+												</div> 
+											</td>
+										</tr>
+									</table>
+									<p>Странные у них задачи года... А дети, дороги, пенсионеры, ну или просто привести автопарк в порядок? </p>
+									<div class="otvet">
+										<a href="#">ответить</a>
+										<span>+5</span>
+									</div>
+									
+									<table>
+										<tr>
+											<td>
+												<div class="none">
+													<a href="#">Показать все коментарии</a> (ещё 8)
+												</div> 
+											</td>
+										</tr>
+									</table>
+									
+									<div class="all_coment">
+										<h3>На эту же тему</h3>
+										<ul>
+											<li>* Вчера [18:29] <a href="#">Японское судно смыло огромной волной</a></li>
+											<li>* Вчера [17:00] <a href="#">Японское цунами угрожает Америке</a></li>
+											<li>* Вчера [12:40] <a href="#">В Японии сегодня утром произошло мощное землетрясение</a></li>
+											<li>* 09.03 [13:32] <a href="#">Японию сегодня утром основательно тряхнуло</a></li>
+										</ul>
+									</div>
+								</div>
+								
+							</td>
+							<td class="tdnews_chas">
+								<div class="news_chas">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<h2>Главные новости</h2>
+									<table class="news_single_image">
+										<tr>
+											<td>
+												<div>
+													<a href="#" class="img"><img src="img/pages/news/f310bb9b_resizedScaled_100to79.jpg" width="70" alt=""></a>
+													<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+														Сегодня [16:26]
+													<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">Вся лента новостей</a> &raquo; 
+										</li>
+									</ul>
+								</div>
+								
+								<a href="#"><img src="img/temp/reklama/auto_03.jpg" width="165" height="100" alt="" /></a>
+								
+								<div class="news_chas">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<h2>Новости часа</h2>
+									<table class="news_single_image">
+										<tr>
+											<td>
+												<div>
+													<a href="#" class="img"><img src="img/pages/news/f310bb9b_resizedScaled_100to79.jpg" width="70" alt=""></a>
+													<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+														Сегодня [16:26]
+													<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">Вся лента новостей</a> &raquo; 
+										</li>
+									</ul>
+								</div>
+								
+								<div class="news_chas">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<a href="#">Отправте нам новость</a>
+									<p>Самые интересные новости от читателей мы публикуем на портале.</p>
+									<address><b>Адрес редакции:</b><br />
+									Екатеринбург, <br />
+									ул. Крестинского, д.44, оф.1012 <br />
+									Тел.  +7(343) 345-28-49 </address>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+					<div class="news_list">
+						<h3>Другие новости раздела "авто"</h3>
+						<table>
+							<tr>
+								<td><b><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></b></td>
+								<td>
+									<a href="#">Милиционеров оденут в новую форму</a>
+									<i>Сегодня [17:05]</i>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+								</td>
+							</tr>
+							<tr>
+								<td><b><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></b></td>
+								<td>
+									<a href="#">Милиционеров оденут в новую форму</a>
+									<i>Сегодня [17:05]</i>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+								</td>
+							</tr>
+							<tr>
+								<td><b><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></b></td>
+								<td>
+									<a href="#">Милиционеров оденут в новую форму</a>
+									<i>Сегодня [17:05]</i>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+								</td>
+							</tr>
+							<tr>
+								<td><b><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></b></td>
+								<td>
+									<a href="#">Милиционеров оденут в новую форму</a>
+									<i>Сегодня [17:05]</i>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>
+		<address>2010 - АiiA - Городской портал Майкопа 
+<br /> Все права защищены</address>
+<div class="count">
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t53.7;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число просмотров и"+
+	" посетителей за 24 часа' "+
+	"border='0' width='88' height='31'><\/a>")
+	//--></script><!--/LiveInternet-->
+
+	<a href="http://www.pr-cy.ru/" target="_blank" title="Счетчик тИЦ и PR"><img src="http://counter.pr-cy.ru/prcy/www.aiia.pro" alt="PR-CY.ru" width="88" height="31" border="0" /></a>
+
+	<!--Openstat--><span id="openstat2140389"></span><script type="text/javascript">
+	var openstat = { counter: 2140389, image: 5043, next: openstat, track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+	(("https:" == document.location.protocol) ? "s" : "") +
+	"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E"));
+	</script><!--/Openstat--> 
+</div>
+
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<div class="dma-total-content">
+    <div class="row">
+        <div class="col-4">
+
+            <div class="content-block item1-content">
+                <div class="title-block title-border-gray">
+                    <h3 class="title">Документы</h3>
+                </div>
+
+                <app-document
+                    #appDocument
+                    [header]="false"
+                    [innerBlock]="true"
+                    *ngIf="dma.activityDocument"
+                    [document]="dma.activityDocument">
+                </app-document>
+
+                <form [formGroup]="form" class="dma-total-content-data">
+                    <div class="item">
+                        <app-form-controls-select
+                                formControlName="showData"
+                                label="Показывать данные:"
+                                [options]="showDataOptions"
+                                [errors]="form.get('showData').errors">
+                        </app-form-controls-select>
+                    </div>
+
+                    <div class="item">
+                        <app-form-controls-select
+                                formControlName="brand"
+                                [options]="[]"
+                                label="Бренд:"
+                                [errors]="form.get('brand').errors">
+                        </app-form-controls-select>
+                    </div>
+
+                    <div class="item">
+                        <app-form-controls-select
+                                formControlName="sku"
+                                [options]="[]"
+                                label="SKU:"
+                                [errors]="form.get('sku').errors">
+                        </app-form-controls-select>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <app-activity-dma-results
+                #innerFormComponent
+                [dma]="dma">
+            </app-activity-dma-results>
+        </div>
+
+        <div class="col-4">
+            <app-activity-dma-charts
+                #innerFormComponent>
+            </app-activity-dma-charts>
+        </div>
+    </div>
+</div>

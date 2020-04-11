@@ -1,0 +1,66 @@
+/*SAFARY*/
+
+/*html:root**/
+
+.safari3 ul.line li.inp i{
+	display:block;
+	position:absolute;
+	top:-3px;
+	font-size:0;
+	width:4px;
+	height:20px;
+	}
+.safari3  ul.line li.inp i.u2{ right:2px;}
+
+.safari3 ul.line li.sel select{
+	background:#fff;
+	position:relative;
+	z-index:0;
+	}
+
+.safari3 ul.line li.sel i{
+	display:block;
+	position:absolute;
+	top:-3px;
+	font-size:0;
+	width:4px;
+	z-index:255;
+	height:20px;
+	}
+.safari3  ul.line li.sel i.u1{ left:0px; background:url(../img/ugol/inp_lt.jpg) no-repeat;}
+.safari3 ul.line li.sel i.u2{ right:19px; background:url(../img/ugol/inp_rt.jpg) no-repeat;}
+
+
+.safari3 .contactus table td{height:27px; vertical-align:top;}
+
+.safari3 td.area .u3,
+.safari3 td.area .u4{
+	bottom:3px;
+	}
+.safari3 td.area textarea{
+	height:50px;
+	}
+
+.safari3 ul.line li.button i.u11,
+.safari3 ul.line li.button i.u22{
+	top:-8px;
+	}
+
+.safari3 ul.line li.button i.u1,
+.safari3 ul.line li.button i.u2{
+	top:-7px;
+	}
+
+.safari3 i.korz{
+	top:0px;
+	}
+	
+/************/
+.safari3 table.products td ul.line li.sel i{ 
+	top:-3px;
+	}
+
+.safari3 table.products td .block ul.line li.button i.u11,
+.safari3 table.products td .block ul.line li.button i.u22{
+	top:-7px;
+	}	

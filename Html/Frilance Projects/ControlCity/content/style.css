@@ -1,0 +1,727 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+ul li {
+    list-style: none;
+}
+
+html,
+body {
+    display: block;
+    height: 100%;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+div {
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    height: 91px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+body {
+    background: #252525;
+    font-family: "ProximaNova-Light", Arial;
+}
+
+.main {
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar-default .navbar-brand {
+    float: left;
+    width: 180px;
+    height: 90px;
+    background-image: url('../images/logoType.png');
+    background-repeat: no-repeat;
+    background-size: 146px;
+    background-position: center top;
+    font-family: "Asenine_Cyrillic";
+    font-size: 21px;
+    color: black;
+    display: block;
+    margin: 0 !important;
+    padding: 63px 0 0 0 !important;
+    white-space: nowrap;
+}
+
+nav li a {
+    color: #777;
+    font-size: 25px;
+    font-family: "ProximaNova-Light";
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    height: 90px;
+    display: inline-block;
+    line-height: 66px;
+}
+
+    .navbar-default .navbar-nav > li > a.active {
+        color: #333;
+    }
+
+.navbar-default {
+    background: none !important;
+    border: none !important;
+}
+
+
+/*Global*/
+h2 {
+    font-size: 37px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: "ProximaNova-Light";
+    margin-top: 62px;
+    margin-bottom: 30px;
+}
+
+.side-middle {
+    /*padding: 78px 37px 150px 37px;*/
+    padding: 78px 0px 150px 0px;
+}
+
+p {
+    font-family: "ProximaNova-Light";
+    font-size: 21px;
+    color: white;
+    line-height: 30px;
+}
+
+/*Global============*/
+
+footer {
+    height: 95px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+    footer nav li a {
+        color: white !important;
+    }
+
+.page-theme footer nav li a {
+    color: #252525 !important;
+}
+
+footer nav {
+    margin-left: -18px;
+}
+
+footer .container {
+    padding-right: 0 !important;
+}
+
+footer .navbar-default {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+/*page-theme*/
+.page-theme footer {
+    background: white;
+}
+/*page-theme==========*/
+
+/*registration*/
+.registration .block-form {
+    margin-top: 17px;
+}
+
+div.checkbox label {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    line-height: 21px;
+    padding-left: 0;
+}
+
+div.checkbox .col-md-12 {
+    margin-top: -10px;
+    margin-bottom: -2px;
+}
+
+div.checkbox input[type='checkbox'] {
+    margin-top: 14px;
+}
+
+/*div.checkbox input[type='checkbox']:checked {
+        float: left;
+        background: none;
+        border: 1px solid #888;
+    }
+
+        div.checkbox input[type='checkbox']:checked + span:before {
+            content: "\2713";
+            color: #2b5a9b;
+            text-align: center;
+            line-height: 15px;
+            border: 1px solid #888;
+            position: absolute;
+            left: 0px;
+            top: 13px;
+            width: 16px;
+            height: 16px;
+            font-weight: bold;
+            font-size: 25px;
+            background: #252525;
+            z-index: 15;
+        }*/
+
+div.checkbox .oneLine {
+    padding-top: 8px;
+}
+
+    div.checkbox .oneLine span {
+        padding-top: 3px;
+        display: inline-block;
+    }
+
+/*registration*/
+.form-horizontal .col-sm-6 {
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.form-horizontal textarea {
+    background: none;
+    height: 242px;
+    max-height: 242px;
+    resize: none;
+    display: block;
+    border: 1px solid #888;
+    padding: 6px 17px !important;
+    color: #acacac;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    border-radius: 0;
+    width: 100%;
+}
+
+.form-horizontal select,
+.form-horizontal input[type='text'],
+.form-horizontal input[type='password'] {
+    background: none;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #888;
+    /*padding: 0 17px;*/
+    color: #acacac;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    border-radius: 0;
+    width: 100%;
+}
+
+.form-horizontal select {
+    padding: 0 13px;
+}
+
+.form-horizontal .form-group {
+    margin-bottom: 3px;
+}
+
+.form-horizontal .btn-primary:first-child {
+    margin-right: 19px;
+}
+
+.form-horizontal .row-btn {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.btn-primary {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.form-horizontal .btn-primary {
+    background: #2b5a9b;
+    color: #fefefe;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    text-align: center;
+    width: 242px;
+    height: 50px;
+}
+
+.new_user {
+    margin-top: 2px;
+}
+
+    .new_user a {
+        text-decoration: underline;
+        color: #2b5a9b !important;
+    }
+
+        .new_user a:hover {
+            text-decoration: none;
+        }
+
+/*login*/
+.login {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+    .login input {
+        max-width: 550px;
+    }
+/*login=======*/
+
+
+
+
+
+/*input files
+define a class on your HTML file input element
+<input type="file" class="nice" />
+ so you can now write your CSS code as follows:
+    */
+
+.NFI-wrapper {
+    width: 100%;
+    overflow: visible !important;
+}
+
+    .NFI-wrapper .nice .NFI-button {
+    }
+
+    .NFI-wrapper .NFI-filename {
+        margin-left: 10% !important;
+        width: 85% !important;
+    }
+/*input files=========*/
+
+
+/*network*/
+.network {
+    float: right;
+    margin: 22px 70px 0 0;
+    height: 50px;
+    width: auto;
+}
+
+    .network .vkontakt,
+    .network .facebook {
+        display: block;
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .network .facebook {
+        background-image: url('../images/icons/facebook.png');
+    }
+
+    .network .vkontakt {
+        background-image: url('../images/icons/vk.png');
+    }
+/*network*/
+
+.LocationChecked {
+    display: none;
+    max-height: 102px;
+}
+
+    .LocationChecked.active {
+    }
+
+    .LocationChecked.col-lg-12 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .LocationChecked .select-dropdown {
+        width: 95% !important;
+    }
+
+.checkboxLabel {
+    position: relative;
+}
+
+    .checkboxLabel.oneLine .icon {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .checkboxLabel .icon {
+        float: left;
+        width: 19px;
+        height: 20px;
+        display: block;
+        background-image: url('../images/icons/checkbox.png');
+        background-position: left bottom;
+        margin: 8px 10px 5px 0;
+    }
+
+        .checkboxLabel .icon.active {
+            background-position: left top;
+        }
+
+
+/*arrow_bottom.png*/
+
+
+
+/*ADD style to select*/
+.select-wrap {
+    position: relative;
+    cursor: default;
+    display: block;
+    width: 100%;
+    height: 36px;
+    color: #acacac;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    border: 1px solid #acacac;
+}
+
+.select-title {
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    padding-left: 17px;
+}
+
+.select-button {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    cursor: default;
+    width: 14px;
+    height: 8px;
+    display: block;
+    border: none;
+    background: url(../images/icons/arrow_bottom.png) no-repeat right top;
+}
+
+.select-dropdown {
+    position: absolute;
+    z-index: 300;
+    left: 15px;
+    top: 35px;
+    background: #252525;
+    border: solid #acacac 1px;
+}
+
+.select-option {
+    cursor: default;
+    height: 36px;
+    line-height: 36px;
+    color: #acacac;
+    font-size: 20px;
+    padding-left: 17px;
+    font-family: "ProximaNova-Light";
+}
+
+    .select-option:hover {
+        /*background-color: white;*/
+        color: white;
+    }
+/*ADD style to select*/
+
+
+.mainPage {
+    width: 100%;
+    height: 100%;
+    max-height: 574px;
+    background: url('../images/Slides/mainPage.png') center top no-repeat;
+    background-size: cover;
+}
+
+    .mainPage div {
+        height: 574px;
+    }
+
+.bx-wrapper {
+    max-width: 1900px !important;
+    position: relative;
+}
+
+    .bx-wrapper section {
+        width: 100% !important;
+    }
+
+.step-all {
+    width: 100%;
+    max-width: 960px;
+    margin-top: 54px;
+    height: 100%;
+    max-height: 435px;
+}
+
+.step {
+    min-height: 195px;
+    max-height: 378px;
+    background-repeat: no-repeat;
+}
+
+    .step .photo {
+        width: 100%;
+        max-width: 168px;
+        height: 100%;
+        max-height: 195px;
+        padding-top: 195px;
+        margin: 0 auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .step.item1 .photo {
+        background-image: url('../images/Slides/step1.png');
+    }
+
+    .step.item2 .photo {
+        background-image: url('../images/Slides/step2.png');
+    }
+
+    .step.item3 .photo {
+        background-image: url('../images/Slides/step3.png');
+    }
+
+    .step p {
+        font-size: 21px;
+        color: #bbb;
+        text-align: center;
+    }
+
+.step-all .col-lg-4 {
+    padding: 0 !important;
+}
+
+.step-all button {
+    margin: 0 auto;
+    margin-top: 29px;
+    display: block;
+}
+
+.step-all .form-group {
+    margin-bottom: 57px;
+}
+
+.step-all .item3 input {
+    width: 241px;
+    background: none;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #888;
+    /*padding: 0 17px;*/
+    color: #acacac;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    border-radius: 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.step.item3 .photo {
+    margin-bottom: 12px;
+}
+
+.step-all .item3 button {
+    margin-top: 37px;
+}
+
+.fullWidth {
+    width: 1920px;
+}
+
+.step-all .btn-primary {
+    background: #2b5a9b;
+    color: #fefefe;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    text-align: center;
+    width: 228px;
+    height: 50px;
+}
+
+.list-three {
+    min-height: 521px;
+}
+
+
+.white {
+    background: #f5f5f5;
+}
+
+/*.list-three*/
+.list-three h3 {
+    padding: 28px 0 19px 17px;
+    color: #333333;
+    font-size: 37px;
+    font-family: "ProximaNova-Light";
+}
+
+.list-three ul {
+}
+
+.list-three li {
+    background-image: url('../images/icons/point.png');
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+    padding: 0 0 5px 17px;
+    font-family: "ProximaNova-Light";
+    font-size: 21px;
+    color: #777;
+}
+/*.list-three=========*/
+
+.slide1 .inner-height {
+    height: 1571px;
+}
+
+
+.slide2 {
+    min-height: 629px;
+}
+
+.slide3 img {
+    height: 100%;
+    max-height: 785px;
+}
+
+/*lastAddresses*/
+.lastAddresses {
+    padding-top: 76px;
+}
+
+.parentInnerSlider {
+    position:relative;
+    overflow:hidden;
+    margin:0 65px;
+}
+
+    .lastAddresses .bx-viewport {
+        margin: 0 95px;
+        z-index: 10;
+    }
+
+    .lastAddresses .bx-controls {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 433px;
+        z-index: 0;
+    }
+
+    .lastAddresses .bx-next,
+    .lastAddresses .bx-prev {
+        width: 30px;
+        height: 91px;
+        background-image: url('../images/icons/arrow.png');
+        background-repeat: no-repeat;
+        font-size: 0;
+        display: block;
+        margin-top: 171px;
+    }
+
+    .lastAddresses .bx-prev {
+        background-position: left top;
+    }
+
+    .lastAddresses .bx-next {
+        background-position: right top;
+        float: right;
+        margin-top:-91px;
+    }
+
+    .lastAddresses .bx-pager {
+        display: none;
+    }
+
+    .lastAddresses .bx-wrapper {
+        margin-bottom: 56px;
+    }
+
+.sliderLastAddresses li {
+    max-width: 217px !important;
+    margin-right: 10px !important;
+}
+
+.sliderLastAddresses .base {
+    width: 217px;
+    height: 433px;
+    background-color: #f5f5f5;
+    padding-top: 254px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .sliderLastAddresses .base img {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        margin: 0 auto;
+        width: 450px;
+        height: auto;
+    }
+        .sliderLastAddresses .base img.item1 {
+            left: -140px;
+            top: -160px;
+        }
+
+    .sliderLastAddresses .base .content {
+        background: #f5f5f5;
+        padding: 0px 13px 0 13px;
+        position: relative;
+        min-height: 179px;
+    }
+
+    .sliderLastAddresses .base .arrow {
+        background: url("../images/background/arrow217.png") no-repeat;
+        width: 100%;
+        height: 68px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -68px;
+    }
+
+    .sliderLastAddresses .base .number {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .sliderLastAddresses .base p {
+        font-size: 16px;
+        color: #777;
+        text-align: center;
+        line-height: 21px;
+    }
+/*lastAddresses===========*/

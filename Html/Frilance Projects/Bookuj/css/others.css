@@ -1,0 +1,40 @@
+@font-face{
+	font-family:"OpenSansSemiBold";	
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:condensed;	
+	src: url('../Fonts/OpenSans-Semibold.ttf') format("truetype");    
+}
+
+@font-face{
+	font-family:"OpenSansBold";	
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:condensed;	
+	src: url('../Fonts/OpenSans-Bold.ttf') format("truetype");    
+}
+
+@font-face{
+	font-family:"OpenSansExtraBold";	
+	font-style:normal;
+	font-weight:100;    
+	font-stretch:condensed;	
+	src: url('../Fonts/OpenSans-ExtraBold.ttf') format("truetype");    
+}
+
+@font-face{
+	font-family:"OpenSansExtraBoldItalic";	
+	font-style:normal;
+	font-weight:100;    
+	font-stretch:condensed;	
+	src: url('../Fonts/OpenSans-ExtraBoldItalic.ttf') format("truetype");    
+}
+
+@font-face{
+	font-family:"OpenSansSemibold";	
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:condensed;	
+	src: url('../Fonts/OpenSans-Semibold.ttf') format("truetype");    
+}	
+		

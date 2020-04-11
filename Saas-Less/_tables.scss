@@ -1,0 +1,18 @@
+@import "variables";
+
+table {
+  width: 100%;
+
+  tr {
+    td,
+    th {
+      border: 1px solid $color-abbott-black;
+      padding: 0 10px;
+      //white-space: nowrap;
+    }
+
+    &.total {
+      font-weight: bold;
+    }
+  }
+}

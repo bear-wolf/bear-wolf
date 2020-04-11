@@ -1,0 +1,142 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/interactive.css" type="text/css" rel="stylesheet">
+    <script class="jsbin" src="scripts/jquery-2.0.0.min.js"></script>
+</head>
+<body>
+    <div class="frame" style="margin:0 auto;">
+
+        <div class="noteName Row1 Entry"></div>
+        <div class="noteName Row2 Entry"></div>            
+        <div class="noteName Row3 Entry"></div>
+        <div class="noteName Row4 Entry"></div>            
+        <div class="noteName Row5 Entry"></div>
+        <div class="noteName Row6 Entry"></div>
+        <div class="noteName Row7 Entry"></div>
+        <div class="noteName Row8 Entry"></div>
+        <div class="noteName Row9 Entry"></div>
+        <div class="noteName Row10 Entry"></div>
+
+        <div id="answer-0" class="noteName Row1 Full"></div>
+        <div id="answer-1" class="noteName Row2 Full"></div>            
+        <div id="answer-2" class="noteName Row3 Full"></div>
+        <div id="answer-3" class="noteName Row4 Full"></div>            
+        <div id="answer-4" class="noteName Row5 Full"></div>
+        <div id="answer-5" class="noteName Row6 Full"></div>
+        <div id="answer-6" class="noteName Row7 Full"></div>
+        <div id="answer-7" class="noteName Row8 Full"></div>
+        <div id="answer-8" class="noteName Row9 Full"></div>
+        <div id="answer-9" class="noteName Row10 Full"></div>
+
+        <div class="Background">
+            <div class="noteName Row1" data-id="answer-0"></div>
+            <div class="noteName Row2" data-id="answer-1"></div>            
+            <div class="noteName Row3" data-id="answer-2"></div>
+            <div class="noteName Row4" data-id="answer-3"></div>            
+            <div class="noteName Row5" data-id="answer-4"></div>
+            <div class="noteName Row6" data-id="answer-5"></div>            
+            <div class="noteName Row7" data-id="answer-6"></div>            
+            <div class="noteName Row8" data-id="answer-7"></div>            
+            <div class="noteName Row9" data-id="answer-8"></div>            
+            <div class="noteName Row10" data-id="answer-9"></div>            
+        </div>
+    </div>
+    <p class="notes" style="margin:0 auto;">
+        Drag and drop each idea onto the appropriate branch. If placed correctly, they stick. If not, they snap back.
+    </p>
+</body>
+
+    <script type="text/javascript">
+        $('.Full').hide();
+
+        $.fn.draggable = function () {
+            var offset = null;
+
+            var start = function (e) {
+                var orig = e.originalEvent;
+                var pos = $(this).position();
+                offset = {
+                    x: orig.changedTouches[0].pageX - pos.left,
+                    y: orig.changedTouches[0].pageY - pos.top
+                };
+            };
+
+            var moveMe = function (e) {
+                e.preventDefault();
+                var orig = e.originalEvent;
+                $(this).css({
+                    top: orig.changedTouches[0].pageY - offset.y,
+                    left: orig.changedTouches[0].pageX - offset.x
+                });
+            };
+
+            var end = function () {
+                var el = $(this);
+            
+                var l = parseInt(el.css("left"));
+                var t = parseInt(el.css("top"));
+
+                var width = parseInt(el.css('width'));
+                var height = parseInt(el.css('height'));
+
+                var element = $('#' + el.data('id'));
+
+                var tmpL = parseInt($(element).css("left"));
+                var tmpT = parseInt($(element).css("top"));
+
+                var deltaL = Math.abs(l - tmpL);
+                var deltaT = Math.abs(t - tmpT);
+
+                var isCorrect = (deltaL < (width * 0.9) && deltaT < (height * 0.8));
+                
+                if (isCorrect) {
+                    el.hide();
+                    element.show();
+                } else {
+                    el.css({
+                        left: $('[class="' + el.attr('class') + ' Entry"]').css('left'),
+                        top: $('[class="' + el.attr('class') + ' Entry"]').css('top')
+                    });
+                }
+            };
+
+            this.bind("touchstart", start);
+            this.bind("touchmove", moveMe);
+            this.bind("touchend", end);
+        };
+
+        $(".Background div").draggable();
+
+        var gLineWidth = parseInt($(".Background").css("width"));
+        var gLineHeight = parseInt($(".Background").css("height"));
+
+        var stickerWidth = parseInt($(".Background div").css("width"));
+        var stickerHeight = parseInt($(".Background div").css("height"));
+    
+
+        function GetValues() {
+            var obj = [];
+            
+            $(".Full").each(function (index) {
+                var t = $(this);
+                if (t.css('display') != 'none') obj.push(t.attr('id'));
+            });
+
+            arrJSON = JSON.stringify(obj);
+            return encodeURIComponent(arrJSON);
+        };
+
+        function RestoreState(JSONstring) {
+            var obj = $.parseJSON(decodeURIComponent(JSONstring));
+            try {
+                for (var i = 0; i < obj.length; i++) {
+                    $('#' + obj[i]).show();
+                    $('[data-id="' + obj[i] + '"]').hide();
+                }
+            } catch(e) {}
+        }
+    </script>
+</html>

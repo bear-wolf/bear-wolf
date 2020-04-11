@@ -1,0 +1,3 @@
+var css = el.document.createStyleSheet();
+css.addRule("v\\:roundrect", "behavior: url(#default#VML)");
+css.addRule("v\\:fill", "behavior: url(#default#VML)");

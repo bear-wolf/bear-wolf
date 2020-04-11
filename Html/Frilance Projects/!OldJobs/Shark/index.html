@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/fixpng.js"></script>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+	<!--[if IE 9]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/java.js"></script>
+    <script src="js/jquery.lightbox-0.5.js" type="text/javascript"></script>
+    
+	 <script type="text/javascript">
+
+	     if ($.browser.opera) document.writeln("<link rel='stylesheet' type='text/css' href='css/opera.css'/>");
+	     if ($.browser.msie) document.writeln("<link rel='stylesheet' type='text/css' href='ie7.css'/>");
+	     if ($.browser.mozilla) document.writeln("<link rel='stylesheet' type='text/css' href='mozilla.css'/>");
+
+	     if ($.browser.safari) {
+	         var userAgent = navigator.userAgent.toLowerCase();
+	         jQuery.browser = {
+	             version: (userAgent.match(/.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/) || [])[1],
+	             chrome: /chrome/.test(userAgent),
+	             safari: /webkit/.test(userAgent) && !/chrome/.test(userAgent),
+	             opera: /opera/.test(userAgent),
+	             msie: /msie/.test(userAgent) && !/opera/.test(userAgent),
+	             mozilla: /mozilla/.test(userAgent) && !/(compatible|webkit)/.test(userAgent)
+	         };
+	         if ($.browser.safari) { document.writeln("<link rel='stylesheet' type='text/css' href='css/safary.css'/>"); }
+	         else { document.writeln("<link rel='stylesheet' type='text/css' href='css/chrome.css'/>"); }
+	     }
+
+	     jQuery(document).ready(function() {
+	         $('#gallery a').lightBox();
+	         $("div.inform").hide();
+
+	         $("div.CenterPart").height($("body").height() - 64);
+	         $("div.Background1").height($("body").height() - 64);
+	         $("div.PhotoZone").height($("body").height() - 64);
+	         $("div.PhotoZone").width($("body").width() + 135);
+
+	         $("#PhotoRelative").height($("body").height() - $("div.footer").height());
+	         $("div.Photo").width($("body").width() - $("div.LeftPart").width() + 82);
+
+	         if ($.browser.safari) {	             
+	             $("div.CenterPart").width($("body").width() - 324);
+	         }
+
+	         if ($.browser.chrome) {
+	             $("div.CenterPart").width($("body").width() - 324);	             
+	         }
+
+	         if ($.browser.opera) {
+	             var wid = $("body").width() + 457;
+	             $("div.PhotoZone").attr("style", "left:-457px; width:" + $("body").width() + 457 + "px;");
+	             $("#PhotoRelative").attr("style", "width:" + wid + "px");
+	         }
+
+	         $('div.Photo a').hover(
+	         function() {
+	             $(this).find("div").animate({ bottom: 0 }, 700);
+	         },
+             function() {
+                 $(this).find("div").animate({ bottom: -50 }, 700);
+             });
+	     });
+
+
+	     function ShowDescription(element) {	         	         
+	         $('div.PhotoZone').animate({ left:0}, 1000);	         	         
+	         
+	         $("#PhotoRelative").addClass("PhotoRelativeSmall");
+	         $("#PhotoRelative").height($("body").height() - $("div.footer").height());         	         
+	         $("div.inform").animate({ left: -470 }, 1000);
+	         $("#inform" + element).animate({ left: 30 }, 1);
+	         $("#inform" + element).attr("style", "display:block");
+	         $("#inform" + element).animate({ top: 0, left: 30 }, 1000);
+	         $("#PhotoRelative").width($("body").width() - $(".LeftPart").width() - 494);
+	     }
+
+	     function HidePhotoZone() {
+	         $('div.PhotoZone').animate({ left: -422 }, 1000);
+	         $("div.PhotoZone").width($("body").width()+135);
+	         $("div.Photo").width($("body").width() - $("div.LeftPart").width() + 82);
+	         $("#PhotoRelative").width($("body").width() - $(".LeftPart").width());
+	     }
+	     
+               
+    </script>
+</head>
+
+<body>
+
+<div class="main">	
+
+	<div class="content">
+		<div class="wrapper">	
+			
+			<div class="MIDDLE-COL">
+				
+				<div class="LeftPart">					
+					
+					<a href="index.html" class="logo"></a>
+					
+					<div class="menu">
+					    <ul>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(1)"><span>Свадебное оформление</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(2)"><span>День рождения</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(3)"><span>Корпоратив</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(4)"><span>Знаменательные даты</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(5)"><span>Новый Год</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(6)"><span>Украшение зала</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(7)"><span>Оформление сцены</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(8)"><span>Подарочное оформление</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(9)"><span>Шары с печатью</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(10)"><span>Фольгированные шары</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(11)"><span>Ходячие фигуры</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(12)"><span>Плакаты</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(13)"><span>Наши цены</span><i class="left"></i><i class="right"></i></a></li>
+						    <li><a href="javascript:void(0)" onclick="$('div.menu a').removeClass(); $(this).addClass('active'); ShowDescription(14)"><span>Контакты</span><i class="left"></i><i class="right"></i></a></li>
+					    </ul>
+					</div>
+					
+				</div>
+				
+				<div class="CenterPart">				
+				    <div class="PhotoZone">
+				        <table>
+				            <tr>
+				                <td class="Description">
+				                    <div class="Background">
+				                    <div class="Background1">
+				                        <i class="BotomPhoto"></i>
+    				                    
+				                        <div class="inform" id="inform1">
+				                            <h2>Свадебное <br />оформление	</h2>
+				                            <p>Украшение зала воздушными шариками - это один из самых лучших вариантов на сегодняшний день. В зале сразу прибавятся цвета, радость и позитивное настроение. </p>                                            <p>Украшение зала никогда не бывает лишним, даже если оформление незначительно. Воздушные шарики всегда имеют место, когда вы задумали большой или маленький праздник, а шарики с гелием - это пожалуй лучшее украшение зала на сегодняшний день.</p>                                            <p>Воздушные шарики бывают совершенно разного цвета и размера, кроме этого, мы можем вам предложить фольгированные шары.</p>                                            <p>Украсить зал можно не только шарами, но и плакатами, на которых можно изобразить пожелания для вас и ваших гостей, красивые слова, если это плакаты на свадьбу, поздравления или логотип фирмы, если это плакат на корпоратив.</p>                                            
+                                            <div class="relative">                                        
+                                                <a href="javascript:void(0)" onclick="HidePhotoZone()" class="Link">
+                                                    <i class="left"></i>
+                                                    <i class="right"></i>
+                                                    Смотреть примеры работ
+                                                </a>
+                                            </div>
+                                        </div>                                    
+                                        <div class="inform" id="inform2">
+				                            <h2>День <br />рождения</h2>
+				                            <p>Украшение зала воздушными шариками - это один из самых лучших вариантов на сегодняшний день. В зале сразу прибавятся цвета, радость и позитивное настроение. </p>                                            <p>Украшение зала никогда не бывает лишним, даже если оформление незначительно. Воздушные шарики всегда имеют место, когда вы задумали большой или маленький праздник, а шарики с гелием - это пожалуй лучшее украшение зала на сегодняшний день.</p>                                            <p>Воздушные шарики бывают совершенно разного цвета и размера, кроме этого, мы можем вам предложить фольгированные шары.</p>                                            <p>Украсить зал можно не только шарами, но и плакатами, на которых можно изобразить пожелания для вас и ваших гостей, красивые слова, если это плакаты на свадьбу, поздравления или логотип фирмы, если это плакат на корпоратив.</p>                                            
+                                            <div class="relative">                                        
+                                                <a href="javascript:void(0)" onclick="HidePhotoZone()" class="Link">
+                                                    <i class="left"></i>
+                                                    <i class="right"></i>
+                                                    Смотреть примеры работ
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="inform" id="inform3">
+				                            <h2>Корпоратив</h2>
+				                            <p>Украшение зала воздушными шариками - это один из самых лучших вариантов на сегодняшний день. В зале сразу прибавятся цвета, радость и позитивное настроение. </p>                                            <p>Украшение зала никогда не бывает лишним, даже если оформление незначительно. Воздушные шарики всегда имеют место, когда вы задумали большой или маленький праздник, а шарики с гелием - это пожалуй лучшее украшение зала на сегодняшний день.</p>                                            <p>Воздушные шарики бывают совершенно разного цвета и размера, кроме этого, мы можем вам предложить фольгированные шары.</p>                                            <p>Украсить зал можно не только шарами, но и плакатами, на которых можно изобразить пожелания для вас и ваших гостей, красивые слова, если это плакаты на свадьбу, поздравления или логотип фирмы, если это плакат на корпоратив.</p>                                            
+                                            <div class="relative">                                        
+                                                <a href="javascript:void(0)" onclick="HidePhotoZone()" class="Link">
+                                                    <i class="left"></i>
+                                                    <i class="right"></i>
+                                                    Смотреть примеры работ
+                                                </a>
+                                            </div>
+                                        </div>
+    				                    
+    				                    
+                                         <div class="inform" id="inform4">
+				                            <h2>Знаменательные даты</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform5">
+				                            <h2>Новый Год</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform6">
+				                            <h2>Украшение зала</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform7">
+				                            <h2>Оформление сцены</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform8">
+				                            <h2>Подарочное оформление</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform9">
+				                            <h2>Шары с печатью</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform10">
+				                            <h2>Фольгированные шары</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform11">
+				                            <h2>Ходячие фигуры</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform12">
+				                            <h2>Плакаты</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform13">
+				                            <h2>Наши цены</h2>				                        
+                                        </div>
+                                         <div class="inform" id="inform14">
+				                            <h2>Контакты</h2>				                        
+                                        </div>
+    				                    
+				                    </div>
+				                    </div>
+				                </td>
+				                <td>
+				                    <div class="PhotoRelative" id="PhotoRelative">
+				                        <div class="Photo" id="gallery">
+				                            <ul>
+				                                <li><a href="img/temp/mod1_04.jpg">
+                                                        <img src="img/temp/mod1_04.jpg" width="215" height="215" alt="" />
+                                                        <div>
+                                                            <p>Описание фотографии</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_05.jpg">
+                                                    <img src="img/temp/mod1_05.jpg" width="215" height="215" alt="" title="" />
+                                                     <div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_06.jpg">
+                                                    <img src="img/temp/mod1_06.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_11.jpg">
+                                                    <img src="img/temp/mod1_11.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_12.jpg">
+                                                    <img src="img/temp/mod1_12.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_13.jpg">
+                                                    <img src="img/temp/mod1_13.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_36.jpg">
+                                                    <img src="img/temp/mod1_36.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_04.jpg">
+                                                    <img src="img/temp/mod1_04.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_05.jpg">
+                                                    <img src="img/temp/mod1_05.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_06.jpg">
+                                                    <img src="img/temp/mod1_06.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_11.jpg">
+                                                    <img src="img/temp/mod1_11.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_12.jpg">
+                                                    <img src="img/temp/mod1_12.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_13.jpg">
+                                                    <img src="img/temp/mod1_13.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_36.jpg">
+                                                    <img src="img/temp/mod1_36.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_04.jpg">
+                                                    <img src="img/temp/mod1_04.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_05.jpg">
+                                                    <img src="img/temp/mod1_05.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_06.jpg">
+                                                    <img src="img/temp/mod1_06.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_11.jpg">
+                                                    <img src="img/temp/mod1_11.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_12.jpg">
+                                                    <img src="img/temp/mod1_12.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_13.jpg">
+                                                    <img src="img/temp/mod1_13.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_36.jpg">
+                                                    <img src="img/temp/mod1_36.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_37.jpg">
+                                                    <img src="img/temp/mod1_37.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                                <li><a href="img/temp/mod1_38.jpg">
+                                                    <img src="img/temp/mod1_38.jpg" width="215" height="215" alt="" title="" /><div>
+                                                        <p>Описание фотографии</p>
+                                                     </div>
+                                                    </a>
+                                                </li>
+				                            </ul>
+				                        </div>
+				                    </div>
+				                </td>
+				            </tr>
+				        </table>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<address>Все права защищены  2011 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Разработка сайта - white web</address>			
+	</div>	
+<!--bottom=========== -->
+
+</div>
+</body>
+</html>

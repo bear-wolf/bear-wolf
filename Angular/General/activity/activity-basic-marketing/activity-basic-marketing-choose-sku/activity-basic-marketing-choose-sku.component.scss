@@ -1,0 +1,38 @@
+@import "../../../../assets/css/variables";
+
+.drug-select-content{
+
+  .controls-select-group{
+    width: 100%;
+    .form-control-select{
+      justify-content: flex-start;
+      &>label{
+        margin: 0;
+        margin-right: 15px;
+      }
+      p-dropdown{
+        &,
+        .ui-dropdown{
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .list{
+    height: 300px;
+    overflow: auto;
+  }
+
+  .table {
+    td{
+      cursor: pointer;
+
+      &.selected{
+        background: $background-light-blue;
+        color: white!important;
+      }
+    }
+  }
+
+}

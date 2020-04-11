@@ -1,0 +1,95 @@
+
+@media (min-width: 1200px){
+    
+}
+@media (min-width: 1200px){
+    .activity-list .row {
+        margin-left: -15px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) { /*1366x768*/
+    body{
+        overflow: hidden;
+    }
+    .activity-scrollbar{
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+     .activity li .count {
+        max-width: 175px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 800px) { /*1366x768*/
+    .title-big .name{
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .activity-list .live{
+        margin-top: -41px;
+    }
+    .grid-calendar {
+        max-width: 440px;
+    }    
+    .activity-list .row{ 
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .activity-list .game-count-xs{ margin-bottom: 0px;}
+    
+    .activity-list .row [class*="col-"]{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .current-game .row {
+        max-width: 90%;
+    }
+    .current-game .pull-right,
+    .current-game .pull-left{
+        float: none!important;
+    }
+    .current-game .col-xs-4 {
+        width: 100%;
+    }   
+    .current-game .clock {
+        margin-top: 7px!important;
+    }
+    .icon-question {
+        margin-right: 20px;
+    }
+    .current-game .center{ margin-top: 115px;}
+    .current-game .first, 
+    .current-game .last {
+        margin:0;
+        position: absolute;
+        top: 0;        
+        width: 100px;
+    }
+    .current-game .first{ left: 0;}
+    .current-game .last{ right: 0;}
+}
+
+@media (max-width: 400px){
+    body{ min-width: 320px;}
+    .grid-calendar .row div {
+        margin-right: 2px;
+    }
+}

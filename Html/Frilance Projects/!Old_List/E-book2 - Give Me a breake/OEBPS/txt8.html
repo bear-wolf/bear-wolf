@@ -1,0 +1,17 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=0;">
+        <script class="jsbin" src="scripts/jquery-2.0.0.min.js"></script>
+        <script class="jsbin" src="scripts/jquery.hammer.min.js"></script>
+        <script class="jsbin" src="scripts/hammer.min.js"></script>
+	</head>
+	<body class="toPinch" marginwidth="0" marginheight="0">
+		<img src="image/Body.png" width="964">
+	</body>
+</html>
+<script>
+    $(".toPinch").hammer().on("pinchin", function (event) {
+        ClosePopup();
+    });
+</script>

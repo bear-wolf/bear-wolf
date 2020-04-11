@@ -1,0 +1,17 @@
+<mat-card flex class="strategy-statement">
+  <mat-card-title>Strategy Charts</mat-card-title>
+  <mat-divider></mat-divider>
+
+  <mat-card-content
+    class="strategy-charts">
+
+    <mat-tab-group (selectedTabChange)="changeTab($event)">
+      <mat-tab label="Instruments">
+        <div #instrument></div>
+      </mat-tab>
+      <mat-tab label="Yield">
+        <div #fraction></div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

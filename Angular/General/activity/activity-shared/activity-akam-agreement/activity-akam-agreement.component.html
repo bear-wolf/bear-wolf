@@ -1,0 +1,45 @@
+<div class="agreement-content"
+     *ngIf="activity">
+
+    <div class="content-block"
+        *ngIf="activity.comments && activity.comments.length">
+
+        <div class=""
+            *ngFor="let comment of activity.comments; let last = last">
+            <div class="d-flex">
+                <span class="user"
+                      [innerText]="comment.roleType+': '+comment.user.fullName"></span>
+                <span class="date" [innerText]="comment.date | customDate"></span>
+                <span class="status"
+                      *ngIf="last">
+                    <span *ngIf="activity.addedComment"
+                          [innerText]="status" translate></span>
+
+                </span>
+            </div>
+
+            <div class="comment-list d-flex flex-column h-auto">
+                <div class="item justify-content-start form-control h-auto">
+                    <div class="comment" [innerHTML]="comment.message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form [formGroup]="form"
+          [class.submitted]="submitted"
+          (ngSubmit)="save()">
+        <div class="content-block">
+          <app-form-controls-textarea
+                  class="controls-textarea-comment-inside"
+                  formControlName="comment"
+                  placeholder="Введите коментарий"
+                  [errors]="form.get('comment').errors">
+          </app-form-controls-textarea>
+          <label>Количество символов: {{ maxCount}}</label>
+          <div class="btn-group d-flex justify-content-end">
+            <button class="btn btn-primary d-flex btn-add">Добавить</button>
+          </div>
+        </div>
+    </form>
+</div>

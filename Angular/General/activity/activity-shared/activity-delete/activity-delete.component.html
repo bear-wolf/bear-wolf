@@ -1,0 +1,22 @@
+<div class="modal-window user-modal">
+  <a class="close"
+     (click)="close()">
+    <i class="fa fa-times"></i>
+  </a>
+
+  <div class="container">
+    <h3 class="title">Удаление активности</h3>
+
+    <p>Вы точно уверены, что хотите удалить активность {{activity.id}}?</p>
+
+    <div class="btn-group justify-content-center d-flex align-items-center">
+      <button class="btn btn-outline-primary max-width-150" (click)="close()">
+        Нет
+      </button>
+
+      <button class="btn btn-primary max-width-150" (click)="delete()">
+        Да
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.joint-agreement-content{
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps {
+    li{
+      &.step1{
+        a{
+          padding: 0 14px!important;
+        }
+      }
+      &.step2{
+        a{
+          padding: 0 22px!important;
+        }
+      }
+    }
+    .ui-steps:before {
+      width: 360px !important;
+    }
+  }
+
+  .document-content .item .form-control {
+    width: 115px;
+  }
+
+  .period-row{
+    &>span>label{
+      white-space: nowrap!important;
+      font-weight: bold!important;
+    }
+  }
+  .period-content{
+    label{
+      width: 120px;
+    }
+  }
+}

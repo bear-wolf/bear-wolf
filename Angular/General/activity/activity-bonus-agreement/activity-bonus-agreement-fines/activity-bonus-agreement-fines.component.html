@@ -1,0 +1,95 @@
+<div class="content-block sku-details">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Детализация по препаратам</h3>
+  </div>
+
+  <p-table [columns]="columns" [value]="groupedSkus | keyvalue" dataKey="name">
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th rowspan="2">МКТ Бренд</th>
+        <th colspan="2">Отклонение факта от плана, %</th>
+        <th rowspan="2">Отчеты</th>
+        <th rowspan="2">Итого штрафы</th>
+        <th rowspan="2">Итого по SKU, p.</th>
+      </tr>
+      <tr>
+        <th>НТЗ</th>
+        <th>Выкладка</th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+      <tr>
+        <td colspan="6" [pRowToggler]="rowData.key" class="bu-row">
+          <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></i>
+          {{rowData.key}}
+        </td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns" let-expanded="expanded">
+      <tr>
+        <td colspan="6" class="inner-table-wrapper">
+
+          <p-table [columns]="columns" [value]="rowData.value | keyvalue" dataKey="name">
+            <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+      <tr>
+        <td *ngFor="let col of columns" >
+          <ng-container [ngSwitch]="col.field">
+            <ng-container *ngSwitchCase="'name'">
+              <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'" [pRowToggler]="rowData.key"></i>
+              {{rowData.key}}
+            </ng-container>
+            <ng-container *ngSwitchCase="'hasReports'">
+<!--              <p-checkbox (onChange)="toggleAll($event, rowData.value)" binary="true"></p-checkbox>-->
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+<!--              {{getTotalForBrand(rowData.value, col.field)}}-->
+            </ng-container>
+          </ng-container>
+        </td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns" let-expanded="expanded">
+      <tr *ngFor="let bmSku of rowData.value">
+        <td *ngFor="let col of columns">
+          <ng-container [ngSwitch]="col.field">
+            <ng-container *ngSwitchCase="'name'">
+              {{bmSku.sku.name}}
+            </ng-container>
+
+            <ng-container *ngSwitchCase="'hasReports'">
+              <p-checkbox [(ngModel)]="bmSku.hasReports" binary="true"></p-checkbox>
+            </ng-container>
+
+            <ng-container *ngSwitchDefault>
+              {{bmSku[col.field]}}
+            </ng-container>
+          </ng-container>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  </td>
+  </tr>
+
+  </ng-template>
+
+  <ng-template pTemplate="footer" let-columns>
+    <tr>
+      <td *ngFor="let col of columns" class="total">
+        <ng-container [ngSwitch]="col.field">
+          <ng-container *ngSwitchCase="'name'">
+            Итого:
+          </ng-container>
+          <ng-container *ngSwitchDefault>
+            {{getTotal(col.field)}}
+          </ng-container>
+        </ng-container>
+      </td>
+    </tr>
+  </ng-template>
+  </p-table>
+</div>

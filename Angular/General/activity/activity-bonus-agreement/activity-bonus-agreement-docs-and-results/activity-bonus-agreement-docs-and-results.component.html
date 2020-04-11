@@ -1,0 +1,63 @@
+<div class="content-block bonus-agreement-docs-and-results-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Документы и итоги</h3>
+    </div>
+
+    <div class="content-body">
+        <app-document
+            #appDocument
+            *ngIf="bonusAgreement.activityDocument"
+            [header]="false"
+            [innerBlock]="true"
+            [document]="bonusAgreement.activityDocument"></app-document>
+
+        <div class="form-component"
+             *ngIf="total">
+            <form [formGroup]="form">
+                <label>Итоги:</label>
+
+                <table class="table table-head-fixed table-bordered">
+                    <thead>
+                    <tr>
+                        <th colspan="4" class="text-center table-active-header">Иневестици, p</th>
+                        <th rowspan="2" class="">Директ постинг, p</th>
+                        <th rowspan="2">Реверс</th>
+                        <th colspan="2">Размер премии</th>
+                    </tr>
+                    <tr>
+                        <td class="table-active">Шкала 1</td>
+                        <td class="table-active">Шкала 2</td>
+                        <td class="table-active">Шкала 3</td>
+                        <td class="table-active">Факт</td>
+                        <td class="bg-white">%</td>
+                        <td class="bg-white">p</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td [innerText]="volumeAgreement.scale1"></td>
+                        <td [innerText]="volumeAgreement.scale2"></td>
+                        <td [innerText]="volumeAgreement.scale3"></td>
+                        <td [innerText]="volumeAgreement.factInvestment"></td>
+                        <td [innerText]="volumeAgreement.directPosting"></td>
+                        <td [innerText]="volumeAgreement.revers"></td>
+                        <td>
+                            <app-form-controls-input
+                                    formControlName="premiumSize"
+                                    class="controls-input-premium-size"
+                                    placeholder="Заполните поле"
+                                    [errors]="form.get('premiumSize').errors">
+                            </app-form-controls-input>
+                        </td>
+                        <td class="bonus-amount-td">
+                            <label  [innerText]="bonusAmount"
+                                    class="bonus-amount-label">
+                            </label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>

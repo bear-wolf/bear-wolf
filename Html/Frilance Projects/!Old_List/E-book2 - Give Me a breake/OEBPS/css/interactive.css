@@ -1,0 +1,196 @@
+@font-face
+{
+	font-family:"Rabiohead";
+	src:url("../font/rabiohead.ttf") format("truetype")
+}
+/*@font-face
+{
+	font-family:"Gotham";
+	src:url("../font/47.ttf");
+	font-weight:normal
+}*/
+@font-face
+{
+	font-family:"Gotham";
+	src:url("../font/188.ttf") format("truetype");
+	font-weight:bold
+}
+@font-face
+{
+	font-family:"Chalkduster";
+	src:url("../font/Chalkduster.ttf") format("truetype");
+	font-weight:normal;
+}
+@font-face
+{
+	font-family:"AEnigmaScrawl4BRK";
+	src:url("../font/aescrawl.ttf") format("truetype");
+	font-weight:normal;
+}
+*
+{
+	margin:0;
+	padding:0;
+	border-collapse:collapse
+}
+.frame
+{
+	width:942px;
+	height:504px;
+	background:url(../image/frame.jpg);
+	background-size:942px 504px;
+	position:relative
+}
+.frame .Background {
+    width:942px;
+	height:504px;
+	background:url(../image/InteractiveExercise3/InteractiveExercise3.png) no-repeat 40px 45px;
+	background-size:850px;
+	position:relative;
+}
+.notes
+{
+	font:bold 14px "Gotham";
+	color:#448fcc;
+	width:942px;
+	text-align:center
+}
+.greenLine
+{
+	height:100%;
+	background:url(../image/Line.png) center 82px no-repeat;
+    background-size:860px;
+	font-family:"Rabiohead"
+}
+.greenLine h2
+{
+	font-size:48px;
+	font-weight:normal;
+	color:#589642;
+	width:50%;
+	text-align:center;
+	padding-top:35px
+}
+.greenLine h2.short{ color:#d92931;}
+
+.long
+{
+	float:left;
+    background:url(../image/IconOk.png) 135px 30px no-repeat;
+    background-size:37px;
+}
+.short
+{
+    position:relative;
+	float:right;
+    background:url(../image/IconDel.png) 95px 35px no-repeat;
+    background-size:37px;
+}
+
+
+.greenLine div
+{
+	width:115px;
+	height:114px;
+	background-size:contain;
+	font-size:21px;
+	padding:10px 0 0 15px;
+	position:absolute;
+}
+.greenLine div small{ font-size:18px;}
+
+.greenLine div.padding-top {    
+	height:104px;	
+	padding:20px 0 0 15px;
+}
+
+.noteSticker-blue
+{
+	background-image:url(../image/Sticker/noteSticker-blue.png);
+	color:#164577
+}
+.noteSticker-yellow
+{
+	background-image:url(../image/Sticker/noteSticker-yellow.png);
+	color:#d72a31
+}
+.noteSticker-green
+{
+	background-image:url(../image/Sticker/noteSticker-green.png);
+	color:#404041
+}
+.noteSticker-orange
+{
+	background-image:url(../image/Sticker/noteSticker-orange.png);
+	color:#164577
+}
+.noteSticker-blue.rotate-left{-webkit-transform:rotate(-17deg)}
+.noteSticker-blue.rotate-right{-webkit-transform:rotate(5deg)}
+.noteSticker-yellow.rotate-left{-webkit-transform:rotate(-9deg)}
+.noteSticker-green.rotate-left {-webkit-transform:rotate(-9deg);}
+
+
+.noteSticker-green.rotate-left.two {-webkit-transform:rotate(-18deg);}
+.noteSticker-blue.rotate-right.two{-webkit-transform:rotate(9deg)}
+
+.noteSticker-yellow.rotate-right{-webkit-transform:rotate(8deg)}
+.noteSticker-green.rotate-left{-webkit-transform:rotate(-5deg)}
+.noteSticker-orange.rotate-left{-webkit-transform:rotate(-9deg)}
+.noteSticker-orange.rotate-right{-webkit-transform:rotate(9deg)}
+
+
+
+.noteName
+{
+    position:absolute;
+	width:70px;
+	height:30px;	
+	font-size:21px;	
+    border:none;	
+    left:50px; 
+    background-size:70px!important;
+    display:block;
+    z-index:60;
+}
+
+.noteName.Row1{ top:50px; background:url(../image/InteractiveExercise3/Row1.png) no-repeat;}
+.noteName.Row2{ top:85px; background:url(../image/InteractiveExercise3/Row2.png) no-repeat;}
+.noteName.Row3{ top:123px; background:url(../image/InteractiveExercise3/Row3.png) no-repeat;}
+.noteName.Row4{ top:160px; background:url(../image/InteractiveExercise3/Row4.png) no-repeat;}
+.noteName.Row5{ top:197px; background:url(../image/InteractiveExercise3/Row5.png) no-repeat;}
+.noteName.Row6{ top:235px; background:url(../image/InteractiveExercise3/Row6.png) no-repeat;}
+.noteName.Row7{ top:273px; background:url(../image/InteractiveExercise3/Row7.png) no-repeat;}
+.noteName.Row8{ top:309px; background:url(../image/InteractiveExercise3/Row8.png) no-repeat;}
+.noteName.Row9{ top:344px; background:url(../image/InteractiveExercise3/Row9.png) no-repeat;}
+.noteName.Row10{ top:380px; height:44px; background:url(../image/InteractiveExercise3/Row10.png) no-repeat;}
+
+
+.noteName.Entry{ z-index:50;}
+
+.noteName.Row1.Entry,
+.noteName.Row2.Entry,
+.noteName.Row3.Entry,
+.noteName.Row4.Entry,
+.noteName.Row5.Entry,
+.noteName.Row6.Entry,
+.noteName.Row7.Entry,
+.noteName.Row8.Entry,
+.noteName.Row9.Entry{background:url(../image/InteractiveExercise3/Row1Entry.png) no-repeat 0px 0; }
+.noteName.Row10.Entry{background:url(../image/InteractiveExercise3/Row10Entry.png) no-repeat 0px 0; }
+
+.noteName.Full {
+     background-size:61px!important;
+     width: 62px;
+     height: 25px;
+}
+
+.noteName.Row1.Full{ top:315px; left:358px; background:url(../image/InteractiveExercise3/Row1Full.png) no-repeat; background-size:61px!important;}
+.noteName.Row2.Full{ top:85px; left:580px; background:url(../image/InteractiveExercise3/Row2Full.png) no-repeat;}
+.noteName.Row3.Full{ top:315px; left:505px; background:url(../image/InteractiveExercise3/Row3Full.png) no-repeat; background-size:61px!important;}
+.noteName.Row4.Full{ top:85px; left:433px; background:url(../image/InteractiveExercise3/Row4Full.png) no-repeat;}
+.noteName.Row5.Full{ top:246px; left:277px; background:url(../image/InteractiveExercise3/Row5Full.png) no-repeat;}
+.noteName.Row6.Full{ top:120px; left:616px; background:url(../image/InteractiveExercise3/Row6Full.png) no-repeat;}
+.noteName.Row7.Full{ top:84px; left:278px; background:url(../image/InteractiveExercise3/Row7Full.png) no-repeat;}
+.noteName.Row8.Full{ top:245px; left:429px; background:url(../image/InteractiveExercise3/Row8Full.png) no-repeat; background-size:61px!important;}
+.noteName.Row9.Full{ top:120px; left:313px; background:url(../image/InteractiveExercise3/Row9Full.png) no-repeat;}
+.noteName.Row10.Full{ top:188px; left:540px; height:44px; background:url(../image/InteractiveExercise3/Row10Full.png) no-repeat;}

@@ -1,0 +1,33 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.agreement-drugs-group-content {
+  @include choose-group-sku;
+
+  h3 {
+    border-bottom: 2px solid $color-abbott-light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .controls-autocomplete-sku,
+  .controls-autocomplete-name {
+    label {
+      font-weight: bold !important;
+      display: flex;
+    }
+  }
+
+  .controls-autocomplete-name {
+    .form-control-input {
+      & > label {
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  .row {
+    padding-bottom: 15px;
+  }
+}

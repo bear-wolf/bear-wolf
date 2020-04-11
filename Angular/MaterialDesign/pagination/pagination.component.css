@@ -1,0 +1,47 @@
+.pagination li {
+  display: inline;
+}
+
+.pagination li a,
+.pagination li span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: rgba(0,0,0,.87)!important;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination li a{
+  cursor: pointer;
+}
+.pagination .active a,
+.pagination .active a:focus,
+.pagination .active a:hover,
+.pagination .active span,
+.pagination .active span:focus,
+.pagination .active span:hover {
+  z-index: 3;
+  color: #fff!important;
+  background-color: #673ab7;
+  border-color: #673ab7;
+}
+.pagination .disabled a,
+.pagination .disabled a:focus,
+.pagination .disabled a:hover,
+.pagination .disabled span,
+.pagination .disabled span:focus,
+.pagination .disabled span:hover {
+  color: #777!important;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.pagination .li-select .mat-form-field {
+  width: 65px;
+  margin-right: 15px;
+  margin-top: -10px;
+}

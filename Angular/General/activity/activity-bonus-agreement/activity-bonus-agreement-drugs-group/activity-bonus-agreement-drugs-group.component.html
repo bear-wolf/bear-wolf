@@ -1,0 +1,58 @@
+<div class="agreement-drugs-group-content">
+    <form [formGroup]="form">
+        <div formArrayName="skuList">
+            <div *ngFor="let sku of form.get('skuList')['controls']; let index = index" class="content-block">
+                <h3>
+                    <span>Группа {{index + 1}}</span>
+
+                    <div class="command-block mb-1">
+                        <a (click)="onPlus()"
+                           class="ico ico-plus">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a (click)="onMinus(index)"
+                           class="ico ico-minus">
+                            <i class="fa fa-minus"></i>
+                        </a>
+                    </div>
+                </h3>
+
+                <div class="container" [formGroup]="sku">
+                    <div class="row">
+                        <div class="col-2">
+                            <app-form-controls-input
+                                    label="Название группы"
+                                    class="controls-input-name"
+                                    formControlName="name"
+                                    placeholder="Начните вводить"
+                                    [hideErrors]="true"
+                                    [errors]="sku.get('name').errors">
+                            </app-form-controls-input>
+                        </div>
+                        <div class="col-6">
+                            <div class="sku-group">
+                                <app-form-controls-autocomplete
+                                        formControlName="drugInformation"
+                                        label="SKU, входящие в группу"
+                                        class="controls-autocomplete-sku"
+                                        placeholder="Начните вводить"
+                                        [suggestions]="filteredSkuList"
+                                        [multiple]="true"
+                                        (completeMethod)="searchSku($event)">>
+                                </app-form-controls-autocomplete>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex align-items-center">
+                            <app-form-controls-check
+                                    class="controls-check-individual-accounting"
+                                    formControlName="personalAccountingSku"
+                                    label="Индивидуальный учет SKU">
+                            </app-form-controls-check>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>help.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" width="765" height="115" alt=""/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li class="activ"><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			
+			<table class="help">
+				<tr class="top">
+					<td>
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h2><a href="#">Работа в Майкопе</a></h2>
+							<ul class="line3">
+								<li class="inp">
+									<input type="text" class="" />
+								</li>
+								<li class="but">
+									<input type="submit" value="&gt;&gt;" />
+								</li>
+							</ul>
+							<ul class="line5">
+								<li><a href="#">Бухгалтерия</a> 30 000 руб</li>
+								<li><a href="#">Бухгалтерия</a> 20 000 руб</li>
+								<li><a href="#">Бухгалтерия</a> 10 000 руб</li>
+							</ul>
+						</div>
+					</td>
+					<td class="gran">
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h2 class="int"><a href="#">Карта Майкопа</a></h2>
+							<ul class="line3">
+								<li class="inp">
+									<input type="text" class="" />
+								</li>
+								<li class="but">
+									<input type="submit" value="&gt;&gt;" />
+								</li>
+							</ul>
+							<p>Вы также можете <a href="#">скачать карту Майкопа</a></p>
+							<span></span>
+						</div>
+					</td>
+					<td>
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h2 class="disk"><a href="#">Кафе, бары, рестораны</a></h2>
+							<ul class="line3">
+								<li class="inp">
+									<input type="text" class="" value="Например: поесть суши" />
+								</li>
+								<li class="but">
+									<input type="submit" value="&gt;&gt;" />
+								</li>
+							</ul>
+							<p> Узнай где <a href="#">поесть сейчас в Майкопе</a></p>
+							
+						</div>
+					</td>
+				</tr><tr>
+					<td>
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h2 class="krug"><a href="#">Консультации</a></h2>
+							<p>Задайте <b>любой вопрос</b> и получите ответ</p>
+							<ul class="line2">
+								<li>
+									<ul>
+										<li><a href="#">Автоправо</a></li>
+										<li><a href="#">Страхование</a></li>
+										<li><a href="#">Прочее</a></li>
+										<li><a href="#">Интернет</a></li>
+										<li><a href="#">Правовые вопросы</a></li>
+										<li><a href="#">Бухгалтерия</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#">Автоправо</a></li>
+										<li><a href="#">Страхование</a></li>
+										<li><a href="#">Прочее</a></li>
+										<li><a href="#">Интернет</a></li>
+										<li><a href="#">Правовые вопросы</a></li>
+										<li><a href="#">Бухгалтерия</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</td>
+					<td class="gran">
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h2 class="int"><a href="#">Интернет магазины</a></h2>
+							<br />
+							<ul class="line2">
+								<li>
+									<ul>
+										<li><a href="#">Автоправо</a></li>
+										<li><a href="#">Страхование</a></li>
+										<li><a href="#">Прочее</a></li>
+										<li><a href="#">Интернет</a></li>
+										<li><a href="#">Правовые вопросы</a></li>
+										<li><a href="#">Бухгалтерия</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><a href="#">Автоправо</a></li>
+										<li><a href="#">Страхование</a></li>
+										<li><a href="#">Прочее</a></li>
+										<li><a href="#">Интернет</a></li>
+										<li><a href="#">Правовые вопросы</a></li>
+										<li><a href="#">Бухгалтерия</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h2 class="disk"><a href="#">Дисконтный клуб Майкопа</a></h2>
+							<br />
+							<ul class="line3">
+								<li class="inp">
+									<input type="text" class="" />
+								</li>
+								<li class="but">
+									<input type="submit" value="&gt;&gt;" />
+								</li>
+							</ul>
+							<p>скидки в <a href="#">210 компаний</a></p>
+							<p><a href="#">2 акции и распродажи</a></p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h3 class="apt"><a href="#">Аптеки Майкопа</a></h3>
+							<p>Поиск лекартсв в аптеках Майкопа</p>
+							<ul class="line3">
+								<li class="inp">
+									<input type="text" class="" />
+								</li>
+								<li class="but">
+									<input type="submit" value="&gt;&gt;" />
+								</li>
+							</ul> 
+						</div>
+					</td>
+					<td class="gran">
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h3 class="bank"><a href="#">Банки Майкопа</a></h3>
+							<p>$ 29.32 (-0.03) &pound; 29.32 (-0.03)</p>
+							<ul class="line4">
+								<li><a href="#">все банкоматы</a></li>
+								<li><a href="#">Обмены валют</a></li>
+								<li><a href="#">Курсы валют</a></li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<div class="bgphone">
+							<i class="u1bg"></i>
+							<i class="u2bg"></i>
+							<i class="u3bg"></i>
+							<i class="u4bg"></i>
+							<h3 class="dir"><a href="#">Справочник товаров и услуг</a></h3>
+							<br />
+							<ul class="line3">
+								<li class="inp">
+									<input type="text" class="" />
+								</li>
+								<li class="but">
+									<input type="submit" value="&gt;&gt;" />
+								</li>
+							</ul>
+							<p>скидки в <a href="#">210 компаний</a></p>
+							<p><a href="#">2 акции и распродажи</a></p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="doska">
+							<div><a href="#">Доска обявлений</a> <a href="#"><input type="image" src="img/button/add1.png" /></a></div>
+							<b>2</b> обявления за сегодня
+							<ul>
+								<li><a href="#">продам новый ПК </a> за 7500 руб.</li>
+								<li><a href="#">продам новый ПК </a> за 7500 руб.</li>
+								<li><a href="#">продам новый ПК </a> за 7500 руб.</li>
+								<li><a href="#">продам новый ПК </a> за 7500 руб.</li>
+								<li><a href="#">продам новый ПК </a> за 7500 руб.</li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<div class="doska">
+							<div><a href="#">Продажа автомобилей</a> <a href="#"><input type="image" src="img/button/add1.png" /></a></div>
+							<b>7748</b> обявлений за сегодня <br />
+							<div class="prodaj_auto">
+								<table>
+									<tr>
+										<td>
+											<a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a>
+											<span><a href="#">Huight Getz</a></span>
+											35 000 руб.
+										</td>
+										<td>
+											<a href="#"><img src="img/temp/auto/sm/auto_24.jpg" width="69" height="55" alt="" /></a>
+											<span><a href="#">Huight Getz</a></span>
+											35 000 руб.
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="doska">
+							<div><a href="#">Сад и город</a></div>
+							<br />
+							<ul class="line5">
+								<li><a href="#">Садовый календарь</a></li>
+								<li><a href="#">Садовый календарь</a></li>
+								<li><a href="#">Садовый календарь</a></li>
+							</ul>
+							<br />
+							<p><a href="#">Дачная барахолка</a> <b>0 объявлений</b> </p>
+						</div>
+					</td>
+				</tr>
+				<tr class="line">
+					<td>
+						<div class="doska">
+							<div><a href="#">Доска обявлений</a><input type="image" src="img/button/add1.png" /></div>
+							<b>2</b> обявления за сегодня
+							<ul>
+								<li><a href="#">продам новый ПК </a> за 7500 руб.</li>
+							</ul>
+						</div>
+					</td>
+					<td class="gran">
+						<div class="doska">
+							<b>Поиск автомобиля</b>
+							<ul class="line4">
+								<li>
+									<select>
+										<option>марка</option>
+									</select>
+								</li>
+								<li>
+									<select>
+										<option>модель</option>
+									</select>
+								</li>
+								<li class="but"><input type="image" src="img/button/find.jpg" /></li>
+							</ul>
+						</div>
+					</td>
+					<td>
+						<div>
+							<ul>
+								<li><a href="#">електрички </a></li>
+								<li><a href="#">автобусы </a></li>
+								<li><a href="#">межгород </a></li>
+							</ul>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>
+		<address>2010 - АiiA - Городской портал Майкопа 
+<br /> Все права защищены</address>
+<div class="count">
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t53.7;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число просмотров и"+
+	" посетителей за 24 часа' "+
+	"border='0' width='88' height='31'><\/a>")
+	//--></script><!--/LiveInternet-->
+
+	<a href="http://www.pr-cy.ru/" target="_blank" title="Счетчик тИЦ и PR"><img src="http://counter.pr-cy.ru/prcy/www.aiia.pro" alt="PR-CY.ru" width="88" height="31" border="0" /></a>
+
+	<!--Openstat--><span id="openstat2140389"></span><script type="text/javascript">
+	var openstat = { counter: 2140389, image: 5043, next: openstat, track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+	(("https:" == document.location.protocol) ? "s" : "") +
+	"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E"));
+	</script><!--/Openstat--> 
+</div>
+
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

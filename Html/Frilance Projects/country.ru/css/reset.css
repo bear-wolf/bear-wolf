@@ -1,0 +1,36 @@
+*{
+margin: 0;
+padding: 0;
+background:transparent;
+outline:none;
+}
+
+body {
+color: black;
+background: white;
+}
+
+textarea,
+input,
+select{outline:none;}
+
+img{ border:none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width:100%;
+}
+table td,
+table th{ vertical-align:top;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+
+

@@ -1,0 +1,63 @@
+@import "~assets/css/shared";
+
+.e-commerce-common-info-content{
+  @include main-row-period-input;
+
+  .document-content{
+    .contract-item{
+      position: relative;
+
+      .error{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .row-item{
+    justify-content: flex-start;
+    label{
+      width: auto!important;
+      margin-bottom: 0;
+    }
+    .first-level{
+      font-weight: bold!important;
+      padding-right: 15px;
+    }
+
+    [class*="controls-select"]{
+      .form-control-select>label{
+        font-weight: bold!important;
+      }
+    }
+
+  }
+
+  .controls-select-month-from,
+  .controls-select-duration{
+    margin-right: 15px;
+  }
+
+  .form-component{
+    .form-group{
+      justify-content: flex-start;
+
+      label{
+        width: auto!important;
+      }
+
+      label.first-level{
+        font-weight: bold!important;
+        display: flex;
+      }
+
+      .ng-select{
+        width: 100px!important;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.dma-common-info-content{
+  @include common-view;
+
+  $widthTwoSide: 500px;
+
+  .row-item{
+    .two-column{
+      width: $widthTwoSide;
+
+      .controls-input-cities{
+        margin-right: 15px;
+      }
+      .ui-chkbox-label{
+        padding-left: 15px;
+      }
+    }
+
+    .controls-input-point{
+      .form-group>div{
+        width: $widthTwoSide!important;
+      }
+    }
+    .controls-input-activity-pharmacies{
+      .form-control-input input{
+        margin-right: 400px!important;
+      }
+    }
+  }
+
+  .period-container{
+    &>span{
+      padding-right: 15px;
+    }
+  }
+}

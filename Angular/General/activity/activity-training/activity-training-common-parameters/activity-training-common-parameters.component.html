@@ -1,0 +1,65 @@
+<div class="content-block training-common-parameters-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Параметры обучения</h3>
+    </div>
+
+    <div class="form-component">
+        <form [formGroup]="form" class="rows-block">
+            <div class="row-item">
+                <div class="item">
+                    <app-form-controls-select
+                            class="controls-select-training-form"
+                            formControlName="trainingForm"
+                            placeholder=""
+                            label="Форма обучения:"
+                            [options]="trainingForm"
+                            [hideErrors]="true"
+                            [errors]="form.get('trainingForm').errors">
+                    </app-form-controls-select>
+                </div>
+                <div class="item">
+                    <app-form-controls-select
+                            class="controls-select-type"
+                            formControlName="trainingType"
+                            placeholder=""
+                            label="Вид обучения:"
+                            [options]="trainingType"
+                            [hideErrors]="true"
+                            [errors]="form.get('trainingType').errors">
+                    </app-form-controls-select>
+                </div>
+                <div class="item">
+                    <app-form-controls-select
+                            class="controls-select-conducts-training"
+                            formControlName="conductsTraining"
+                            placeholder=""
+                            label="Кто проводит:"
+                            [options]="conductsTraining"
+                            [hideErrors]="true"
+                            [errors]="form.get('conductsTraining').errors">
+                    </app-form-controls-select>
+                </div>
+                <div class="item">
+                    <app-form-controls-input
+                            class="controls-input-day-duration"
+                            formControlName="dayDuration"
+                            placeholder=""
+                            label="Продолжительность дней:"
+                            [hideErrors]="true"
+                            [errors]="form.get('dayDuration').errors">
+                    </app-form-controls-input>
+                </div>
+                <div class="item">
+                    <app-form-controls-input
+                            class="controls-input-conducts-sales"
+                            formControlName="salesDuringTrainingPrice"
+                            placeholder=""
+                            label="Продажи в период обучения, р.:"
+                            [hideErrors]="true"
+                            [errors]="form.get('salesDuringTrainingPrice').errors">
+                    </app-form-controls-input>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+/*css style for IE7*/
+
+html div,
+html li{
+	zoom:1;
+	}
+
+
+.find ul li input.button
+{
+	top:0px;	
+	}

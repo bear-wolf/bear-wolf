@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>index.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+	<script type="text/javascript" src="js/jquery1_6_4.js"></script>
+	<script type="text/javascript" src="js/java.js"></script>
+    <script src="js/select-restyle.js" type="text/javascript"></script>
+	<script type="text/javascript"> 
+
+        if ($.browser.opera) document.writeln("<link rel='stylesheet' type='text/css' href='css/opera.css'>");
+        if ($.browser.msie) document.writeln("<link rel='stylesheet' type='text/css' href='css/ie7.css'>");        
+        if ($.browser.mozilla) document.writeln("<link rel='stylesheet' type='text/css' href='css/mozilla.css'>");
+
+        if ($.browser.safari) {
+            var userAgent = navigator.userAgent.toLowerCase();
+            jQuery.browser = {
+                version: (userAgent.match(/.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/) || [])[1],
+                chrome: /chrome/.test(userAgent),
+                safari: /webkit/.test(userAgent) && !/chrome/.test(userAgent),
+                opera: /opera/.test(userAgent),
+                msie: /msie/.test(userAgent) && !/opera/.test(userAgent),
+                mozilla: /mozilla/.test(userAgent) && !/(compatible|webkit)/.test(userAgent)
+            };
+            if ($.browser.safari) { document.writeln("<link rel='stylesheet' type='text/css' href='css/safary.css'>"); }
+            else { document.writeln("<link rel='stylesheet' type='text/css' href='css/chrome.css'>"); }
+        }
+
+        $(function() {
+            //$("ul.Select select").addClass(".ddl");
+            //$("select.ddl").wrap("<div class='Relative'></div>");
+            //alert("ol");
+        });
+        
+               
+    </script>
+	
+</head>
+
+<body>
+<div class="main">
+    <div class="sunflower"></div>
+    <div class="fixit">
+	
+<!-- header --> 
+	<div class="header">
+		
+		<div class="logo">
+			<a href="#"></a>
+		</div>
+
+        <div class="Registry">
+            <h1>Уже зарегистрировались?</h1>
+            <form action="http://www.rambler.ru">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="text" value="" /></td>
+                </tr>
+                <tr>
+                    <th>Пароль</th>
+                    <td><input type="text" value="" /></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <div>
+                            <input type="checkbox" class="checkbox" /> Запомнить
+                            <input type="submit" value="Войти" class="vxod" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="About">                
+                <a href="#" class="floatright">Как зарегистрироваться?</a>
+                <a href="#" class="floatleft">Забыли пароль?</a>
+            </div>
+            </form>
+        </div>					
+					
+						
+		<div class="nav-head">
+			<ul>                           
+				<li class="active"><a href="#">видео</a></li>					
+				<li><a href="#">музыка</a></li>					
+				<li><a href="#">фото</a></li>					
+				<li><a href="#">блоги</a></li>					
+				<li><a href="#">люди</a></li>					
+			</ul>
+		</div>
+		
+	</div>
+<!-- /header -->	
+
+    <div class="content">
+	<div class="wrapper clearfix">
+    <table class="ShablonTwo">
+        <tr>
+            <th>
+                <div class="find">
+                    <ul>
+                        <li>Поиск</li>
+                        <li>
+                            <input type="text" class="textEntry" value="" />
+                            <input type="image" src="img/button/find.jpg" class="button" />
+                        </li>                        
+                    </ul>
+                    <p><a href="">Расширеный поиск</a></p>
+                </div>            
+                
+                <div class="Statistic">
+                    <p>Нас уже   <span>12.739.273.</span> </p>
+                    <p>Присоединяйся, тебя ждут друзья!</p>
+                </div>
+                
+                <div class="BigPhoto">
+                    <img src="img/temp/BigPhoto.jpg" width="424" height="388" alt="" />
+                </div>                               
+            </th>
+            <td>                        
+                <div class="NewRegistry">
+                    <p class="name">Регистрируйтесь, загружайте свое фото, общайтесь в видео чате. Обменивайтесь музыкой, играйте в онлайн игры, смотрите онлайн видео, скачивайте фильмы, открывайте свой блог, получайте подарки и бонусы.</p>
+                    <h2>Регистрация</h2>
+                    <div class="NewRegistryForm">
+                        <table>
+                            <tr>
+                                <th>Имя</th>
+                                <td><input type="text" class="textEntry" /></td>
+                            </tr>
+                            <tr>
+                                <th>Фамилия</th>
+                                <td><input type="text" class="textEntry" /></td>
+                            </tr>
+                            <tr>
+                                <th>Пол</th>
+                                <td>
+                                    <ul class="Pol">
+                                        <li><input type="radio" name="pol" /> мужской</li>
+                                        <li><input type="radio" name="pol" /> женский</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Дата рождения</th>
+                                <td>
+                                    <ul class="Select">
+                                        <li class="small">
+                                            <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select>
+                                                <option value="Январь">Январь</option>
+                                                <option value="2">Февраль</option>
+                                                <option value="3">Март</option>
+                                                <option value="4">Апрель</option>
+                                            </select>
+                                        </li>
+                                        <li class="small end">
+                                            <select>
+                                                <option value="1980">1980</option>
+                                                <option value="1981">1981</option>
+                                                <option value="1982">1982</option>
+                                            </select>
+                                        </li>
+                                    </ul>                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Страна</th>
+                                <td>                   
+                                    <div class="Relative">
+                                        <select class="ddl">
+                                            <option value="1">Россия</option>
+                                            <option value="2">Украина</option>                                        
+                                        </select>
+                                     </div>     
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Город</th>
+                                <td>
+                                    <div class="Relative">
+                                        <select class="ddl">
+                                            <option value="1">Моксва</option>
+                                            <option value="2">СанктПетербург</option>                                        
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td><input type="text" class="textEntry" /></td>
+                            </tr>
+                            <tr>
+                                <th>Пароль</th>
+                                <td><input type="text" class="textEntry" /></td>
+                            </tr>
+                            <tr>
+                                <th>Ещё раз пароль</th>
+                                <td><input type="text" class="textEntry" /></td>
+                            </tr>
+                            <tr class="otstup">
+                                <th>
+                                    Код протекции
+                                    <span>Введите символы с картинки</span>
+                                </th>
+                                <td>
+                                    <img src="img/temp/captchaHandler.jpg" width="147" height="46" alt="" />
+                                    <input type="text" value="" class="textEntry captcha" />
+                                </td>
+                            </tr>                        
+                        </table>
+                        <div class="Soglashenie">
+                            <span>После нажатие кнопки “регистрация” обязательно проверьте вашу почту. Параметры доступа будут высланы на e-mail. </span>
+                            <span>Я принимаю <a href="#">пользовательское соглашение</a></span>
+                        </div>
+                        <input type="submit" value="Регистрация" class="button" />
+                    </div>                                        
+                </div>
+                
+                <div class="GorizontaleMenu">
+                    <ul>
+                        <li><span>Войти через</span></li>
+                        <li class="Facebook"><a href="#"></a></li>
+                        <li class="Mailru"><a href="#"></a></li>
+                        <li class="Twitter"><a href="#"></a></li>
+                        <li class="Vkontakt"><a href="#"></a></li>
+                        <li class="People"><a href="#"></a></li>
+                        <li class="Pu"><a href="#"></a></li>
+                        <li class="FF"><a href="#"></a></li>
+                    </ul>
+                </div>                               
+            </td>
+        </tr>
+    </table>
+    
+    <table class="Welcome">
+        <tr>
+            <td>
+                <h2>Добро пожаловать в социальную сеть</h2>
+                <div class="BorderBlock">                                            
+                    <p>новая социальная сеть, максимум свободы общения.</p>
+                    <p>Создавайте группы по интересам, делитесь музыкой, фото, делайте объявления.</p>
+                    <p>У нас есть чат, блоги и многое другое..</p>
+                    <p>У нас есть страничка с понятными объяснениями, она называеться часто задаваемые вопросы.</p>
+                    <p>На страничке "О нас" можно прочитать кто развивает эту социальную сеть.</p>
+                    <p class="otstup">Все опции будут доступны после регистрации или соответственно после ввода логина и пароля.</p>
+                    <p class="otstup">Наша тематика: социальная сеть, социальные сети, общение </p>
+                    
+                </div>
+            </td>
+            <th>
+                <div class="MainMenu">
+                    <ul>
+                        <li><a href="#">Регистрируйтесь <i class="kofe"></i></a></li>
+                        <li><a href="#">Загружайте фото<i class="photo"></i></a></li>
+                        <li><a href="#">Приглашайте друзей<i class="frends"></i></a></li>
+                        <li><a href="#">Скачивайте файлы <i class="files"></i></a></li>
+                        <li><a href="#">Получайте подарки<i class="podarki"></i></a></li>
+                    </ul>
+                </div>
+            </th>
+        </tr>
+    </table>
+    
+    </div>
+    </div>
+
+    <!-- шаблон в 3 колонки -->
+	<!--<div class="content">
+		<div class="wrapper clearfix">
+
+			<div class="left-col">	
+			        left part									            				
+			</div>
+			<div class="middle-col">			
+				<div class="right-col">
+				    right part					
+				</div>
+				<div class="center-col">
+					center									
+				</div>
+			</div> 									
+		</div>	
+	</div>-->
+	<!-- шаблон в 3 колонки -->
+	
+			
+</div>
+<!-- bottom -->
+	<div class="footer">		
+		<div class="fixit">
+		    <div class="FooterTopMenu">
+		        <div>
+		            <ul>
+	                    <li><a href="#">Конфиденциальность</a></li>
+	                    <li><a href="#">Реклама</a></li>
+	                    <li><a href="#">Контакты</a></li>
+	                    <li><a href="#">Помощь</a></li>
+	                </ul>
+	            </div>
+		    </div>
+		    <div class="Padding">
+		        <address>
+			        ©  2012 Социально-развлекательная сеть. Пользователей: 26 988 265 человек
+		        </address>		    
+		        <p class="town">Самые популярные города: Москва, Санкт-Петербург, Челябинск, Владивосток, Омск, Екатеринбург, Красноярск, Новосибирск, Казань, Ростов-на-Дону,     Уфа, Воронеж, Саратов, Оренбург, Хабаровск, Нижний Новгород, Краснодар, Барнаул, Київ, Волгоград</p>
+		        
+		        <div class="counter">
+		            <ul>
+		                <li><a href="#"><img src="img/counter/counter1.gif" width="88" height="31" alt="" /></a></li>
+		                <li><a href="#"><img src="img/counter/counter2.gif" width="88" height="31" alt="" /></a></li>
+		            </ul>
+		        </div>
+		        
+		    </div>		    
+		</div>
+				
+	</div>	
+<!-- /bottom -->	
+
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<div class="pagination-wrapper" *ngIf="pager && pager.pages.length">
+    <!-- pager -->
+    <ul class="pagination">
+        <li class="li-select">
+          <mat-form-field>
+            <mat-select placeholder="Count" [value]="perPage">
+              <mat-option (click)="onSelect(count)"
+                *ngFor="let count of config.perPage" [value]="count">
+                {{ count }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </li>
+        <div *ngIf="pager.pages && pager.pages.length > 1">
+          <li [ngClass]="{disabled:pager.currentPage === 1}"
+              *ngIf="pager.totalPages > config.group">
+              <a (click)="setPage(1)">First</a>
+          </li>
+          <li [ngClass]="{disabled:pager.currentPage === 1}"
+              *ngIf="pager.totalPages > config.group">
+              <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+          </li>
+          <li *ngFor="let page of pager.pages"
+              [ngClass]="{active:pager.currentPage === page}">
+              <a (click)="setPage(page)">{{page}}</a>
+          </li>
+          <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}"
+              *ngIf="pager.totalPages > config.group">
+              <a (click)="setPage(pager.currentPage + 1)">Next</a>
+          </li>
+          <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}"
+              *ngIf="pager.totalPages > config.group">
+              <a (click)="setPage(pager.totalPages)">Last</a>
+          </li>
+        </div>
+    </ul>
+</div>

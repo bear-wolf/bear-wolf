@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <script type="text/javascript" src="css/jquery.js"></script>
+   <script type="text/javascript" src="css/java.js"></script>
+   <title>index</title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+<!--HEADER-->
+	<div class="header">
+		<span class="people"></span>
+		
+		<div class="nav-top">
+			<div class="abs">
+				<ul>
+					<li><div><a href="#">Главная</a></div></li>
+					<li><div><a href="#">Контакты</a></div></li>
+					<li><div><a href="#">Обо мне</a></div></li>
+					<li><div><a href="#">Мои&nbsp;клиенты</a></div></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<!-- /HEADER -->
+
+            
+<!-- CONTENT -->			
+<div class="content">
+	<div class="wrapper">
+		
+		<!-- RIGHT-COL -->	
+		<div class="RIGHT-COL">
+		
+			<div class="build">
+				<ul>
+					<li>
+						<p><a href="#">Трехкомнатная квартира в центре города!</a></p>
+						<a href="#"><img src="img/temp/1_11.jpg" width="194" height="144"  alt="" /></a>
+					</li>
+					<li>
+						<p><a href="#">Однокомнатная квартира в новостройке</a></p>
+						<a href="#"><img src="img/temp/1_28.jpg" width="194" height="144"  alt="" /></a>
+					</li>
+					<li>
+						<p><a href="#">Квартиры в носотройках с видом на центральный парк!</a></p>
+						<a href="#"><img src="img/temp/1_42.jpg" width="194" height="144" alt="" /></a>
+					</li>
+					<li>
+						<p><a href="#">Трехкомнатная квартира в центре города!</a></p>
+						<a href="#"><img src="img/temp/1_46.jpg" width="194" height="144" alt="" /></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /RIGHT-COL============== -->			
+		<!-- LEFT-COL-->
+		<div class="LEFT-COL">
+			
+			<div class="news">
+				<span class="ten"></span>
+				<div class="prodaj">
+					<ul>
+						<li>
+							<span class="ris"></span>
+							<div><a href="#" onclick="return toggleMenu('pro')">Продажа недвижимости</a></div>
+							<ul id="pro" class="left-mnu" style="display:none;">
+								<li><span></span><a href="#">Мои объекты</a></li>
+								<li><span></span><a href="#">Подбор</a></li>
+								<li><span></span><a href="#">Услуги и цены</a></li>
+								<li><span></span><a href="#">Справка</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="ris1"></span>
+							<div><a href="#" onclick="return toggleMenu('pok')">Покупка недвижимости</a></div>
+							<ul id="pok" class="left-mnu" style="display:block;">
+								<li><span></span><a href="#">Мои объекты</a></li>
+								<li><span></span><a href="#">Подбор</a></li>
+								<li><span></span><a href="#">Услуги и цены</a></li>
+								<li><span></span><a href="#">Справка</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				
+				<div class="reklama">
+					<ul>
+						<li class="ris2"><span></span><a href="#">+7962-262-3951</a></li>
+						<li class="ris3"><span></span><a href="#">prokaliningrad</a></li>
+					</ul>
+				</div>			
+			</div>
+			
+			<div class="forma">
+				<p>Заполнить заявку <br />на подбор объекта недвижимости</p>
+				<ul>
+					<li>
+						<div>
+							<span class="left"></span>
+							<span class="right"></span>
+							<input type="text" value="Как к Вам обращаться" class="toggle-inputs" />
+						</div>
+					</li>
+					<li>
+						<div>
+							<span class="left"></span>
+							<span class="right"></span>
+							<input type="text" value="Ваш контактный телефон" class="toggle-inputs" />
+						</div>
+					</li>
+					<li>
+						<div>
+							<span class="left"></span>
+							<span class="right"></span>
+							<input type="text" value="Ваш контактный e-mail" class="toggle-inputs" />
+						</div>
+					</li>
+					<li>
+						<div class="textarea">
+							<span class="one"></span>
+							<span class="two"></span>
+							<span class="three"></span>
+							<span class="four"></span>
+							<textarea cols="" rows="" class="toggle-inputs">Что бы Вы хотели приобрести</textarea>
+						</div>
+					</li>
+					<li class="center">
+						<input type="image" src="img/forma/but.jpg"/>
+					</li>
+				</ul>
+			</div>
+			
+			
+		</div>
+			<!-- /LEFT-COL-->
+		<div class="MIDDLE-COL">
+					
+			<!-- CENTER -->	
+			<div class="CENTER">
+
+				<div class="perevagu">
+					<p>Эта страница создана мной для того, чтобы ответить на два основных вопроса:</p>
+
+					<p><b>1. Почему из маклеров, работающих в Москве, именно ко мне Вам стоит обратиться?</b></p>
+
+<p>Мой подход к работе:<br />
+— честность и открытость с клиентами, стремление сделать их постоянными;<br />
+— постоянное повышение профессионализма, желание учиться и расширять круг компетенции; <br />
+— знание механизма проведения любых сделок, юридических и налоговых тонкостей, гарантирующих отсутствие рисков; <br />
+— отличное знание техники переговоров, что, по моему мнению, является основой мастерства маклера.
+</p>
+
+<p><b>2. Чем отличаются услуги частного маклера от услуг агентства недвижимости?</b></p>
+
+<p>Для ответа на этот вопрос я создала небольшую таблицу. Также замечу, основная причина обращения в агентство, несмотря на высокую стоимость услуг, — это уверенность в том что “большая фирма — надёжная фирма”. К сожалению, в нашей стране пока это не так. Попросите в агентстве форму договора и покажите её квалифицированному юристу, скорее всего он подскажет Вам, насколько невыгоден для Вас данный юридический документ и как реально он защищает Ваши интересы. При этом, как правило, финансовая ответственность фирмы ограничена уставным фондом, составляющим 10000 рублей. </p>
+
+<p><b>3. Почему из маклеров, работающих в Москве, именно ко мне Вам стоит обратиться?</b></p>
+
+<p>Мой подход к работе:<br />
+— честность и открытость с клиентами, стремление сделать их постоянными;<br />
+— постоянное повышение профессионализма, желание учиться и расширять круг компетенции; <br />
+— знание механизма проведения любых сделок, юридических и налоговых тонкостей, гарантирующих отсутствие рисков; <br />
+— отличное знание техники переговоров, что, по моему мнению, является основой мастерства маклера.
+</p>
+
+<p>невыгоден для Вас данный юридический документ и как реально он защищает Ваши интересы. При этом, как правило, финансовая ответственность фирмы ограничена уставным фондом, составляющим 10000 рублей. </p>
+				</div>
+				
+			</div>
+			<!-- CENTER===================== -->			
+		</div>
+	</div>	
+</div>
+
+
+<!-- /CONTENT========================= -->	
+           
+<!--FOOTER-->
+	<div class="footer">
+		<div>
+			© 2010 адрес-сайта.com.ru  All rights reserved
+			<div class="podpis">Design: Savchenko Tanya</div>
+		</div>
+	</div>		
+<!--/ FOOTER===============-->	
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<div class="content-block commerce-common-drugs-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Выбор препаратов</h3>
+    </div>
+
+    <div class="content form-component">
+        <form [formGroup]="form" class="rows-block" *ngIf="form">
+            <div class="item row-item"
+                *ngIf="brands">
+                <app-form-controls-select
+                        class="controls-select-brand"
+                        formControlName="brand"
+                        label="Бренд:"
+                        [bindLabel]="'name'"
+                        [bindValue]="'id'"
+                        [options]="brands"
+                        [hideErrors]="true"
+                        [translate]="false"
+                        [errors]="form.get('brand').errors">
+                </app-form-controls-select>
+            </div>
+
+            <div class="item row-item"
+                 *ngIf="form.get('brand').value">
+                <app-form-controls-autocomplete
+                        formControlName="eCommerceSkus"
+                        label="SKU:"
+                        class="controls-autocomplete-sku"
+                        placeholder="Начните вводить"
+                        [suggestions]="filteredSkuList"
+                        [multiple]="true"
+                        (completeMethod)="searchSku($event)">
+                </app-form-controls-autocomplete>
+            </div>
+        </form>
+    </div>
+
+</div>

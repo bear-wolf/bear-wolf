@@ -1,0 +1,9 @@
+label {
+  margin-bottom: 0;
+  margin-right: 5px;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

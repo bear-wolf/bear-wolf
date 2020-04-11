@@ -1,0 +1,55 @@
+@import "~assets/css/variables";
+
+.dma-sku-content {
+  h3 {
+    border-bottom: 2px solid $color-abbott-light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item-1{
+    padding-left: 15px;
+
+    .text-bold,
+    &>div{
+      padding-bottom: 5px;
+    }
+  }
+
+  .plate-block{
+    .form-control-input>label,
+    .form-group>label,
+    &>label{
+      font-weight: bold!important;
+    }
+
+    .form-control-input{
+      justify-content: space-between;
+    }
+
+    .controls-input-additionalCalculationInTheCategory,
+    .controls-input-additionalCreationTZ{
+      input{
+        width: 200px;
+      }
+    }
+
+    .controls-input-additional-accommodation{
+      input{
+        width: 350px;
+      }
+    }
+  }
+
+  .item-2{
+    .text-bold{
+      padding-bottom: 10px;
+    }
+
+    &>div{
+      padding-bottom: 5px;
+      min-height: 70px;
+    }
+  }
+}

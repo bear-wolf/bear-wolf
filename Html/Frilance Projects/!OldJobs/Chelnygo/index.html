@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>index.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+	
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.crawlLine.js"></script>
+	<script type="text/javascript" src="js/LightBox/jquery.lightbox-0.5.js"></script>
+	
+	<script type="text/javascript" src="js/java.js"></script>
+	<script type="text/javascript"> 
+
+        if ($.browser.opera) document.writeln("<link rel='stylesheet' type='text/css' href='css/opera.css'>");
+        if ($.browser.msie) document.writeln("<link rel='stylesheet' type='text/css' href='css/ie7.css'>");        
+        if ($.browser.mozilla) document.writeln("<link rel='stylesheet' type='text/css' href='css/mozilla.css'>");
+
+        if ($.browser.safari) {
+            var userAgent = navigator.userAgent.toLowerCase();
+            jQuery.browser = {
+                version: (userAgent.match(/.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/) || [])[1],
+                chrome: /chrome/.test(userAgent),
+                safari: /webkit/.test(userAgent) && !/chrome/.test(userAgent),
+                opera: /opera/.test(userAgent),
+                msie: /msie/.test(userAgent) && !/opera/.test(userAgent),
+                mozilla: /mozilla/.test(userAgent) && !/(compatible|webkit)/.test(userAgent)
+            };
+            if ($.browser.safari) { document.writeln("<link rel='stylesheet' type='text/css' href='css/safary.css'>"); }
+            else { document.writeln("<link rel='stylesheet' type='text/css' href='css/chrome.css'>"); }
+        }      
+        
+        $(function(){
+        
+			$('.RunningLine').crawlLine();
+			
+			$(".BottomMenuLine li").eq(0).addClass("none");
+			$(".Top table tr td:last").addClass("no-padding");
+			$(".advertising ul li:first").addClass("first");
+			$(".advertising ul li:last").addClass("last");
+        	      	        
+			$('div.Photo a').hover(
+	         function() {
+	             $(this).find("div").animate({ top: 0 }, 700);
+	         },
+             function() {
+                 $(this).find("div").animate({ top: -64 }, 700);
+             });
+        })
+               
+    </script>
+	
+</head>
+
+<body>
+<div class="main">
+
+<div class="fixit">
+<div class="dTopStruct">
+<table class="TopStruct">
+	<tr>
+		<th>
+			<div class="Photo gallery">
+				<a href="img\temp\topafisha.png">
+					<img src="img\temp\topafisha.png" width="413" height="314" alt="">
+					<div>
+						<p>
+						Выставка кустарных картин <br>
+						c 23 мая по 15 июля 2012 года								
+						</p>
+					 </div>
+				</a>
+			</div>
+		</th>
+		<td>
+			<div class="Line clearfix">
+				<div class="today">
+					Сегодня
+					<span>15 апреля 2012 года</span>
+				</div>				
+				<div class="Authorization">
+					
+					<ul>
+						<li>Логин</li>
+						<li><input type="text" class="TextEntry" value="" /></li>
+						<li>Пароль</li>
+						<li><input type="password" class="TextEntry" value="" /></li>
+						<li><input type="submit" class="button" value="Войти"></li>
+					</ul>	
+					<div class="clearfix"></div>			
+					
+					<div class="ReminderLine">
+						<input type="checkbox" class="checkbox"> запомнить
+						
+						<ul class="Reminder">
+							<li><a href="#">Регистрация</a> /</li>
+							<li><a href="#">Забыли пароль?</a></li>
+						</ul>								
+					</div>								
+				</div>
+			</div>
+			
+			<div class="Afisha">
+				<h1>Афиша</h1>
+				<a href="#" class="all">Смотри полную версию события города</a><b class="arrow">&rarr;</b>
+				
+				<div class="Slider">                
+                <div class="Navigation">                    
+                    <a href="javascript:void(0)" class="ArrowLeft" rel="first"></a>
+					<a href="javascript:void(0)" class="ArrowRight" rel="last"></a>
+                </div>                 
+                <div class="BaseRelative">
+                	<div class="Relative">
+						<div class="absolute">
+							<ul class="picture gallery">    
+								<li><a href="img/temp/afisha/img1.png" title="1 pictures..."><img src="img/temp/afisha/img1.png" alt=""></a></li>
+								<li><a href="img/temp/afisha/img.png" title="2 pictures..."><img src="img/temp/afisha/img.png"  alt=""></a></li>
+								<li><a href="img/temp/afisha/img1.png" title="1 pictures..."><img src="img/temp/afisha/img1.png" alt=""></a></li>
+								<li><a href="img/temp/afisha/img.png" title="2 pictures..."><img src="img/temp/afisha/img.png"  alt=""></a></li>
+								<li><a href="img/temp/afisha/img1.png" title="1 pictures..."><img src="img/temp/afisha/img1.png" alt=""></a></li>
+								<li><a href="img/temp/afisha/img.png" title="2 pictures..."><img src="img/temp/afisha/img.png"  alt=""></a></li>
+								<li><a href="img/temp/afisha/img1.png" title="1 pictures..."><img src="img/temp/afisha/img1.png" alt=""></a></li>
+								<li><a href="img/temp/afisha/img.png" title="2 pictures..."><img src="img/temp/afisha/img.png"  alt=""></a></li>
+								<li><a href="img/temp/afisha/img1.png" title="1 pictures..."><img src="img/temp/afisha/img1.png" alt=""></a></li>
+								<li><a href="img/temp/afisha/img.png" title="2 pictures..."><img src="img/temp/afisha/img.png"  alt=""></a></li>
+								<li><a href="img/temp/afisha/img1.png" title="1 pictures..."><img src="img/temp/afisha/img1.png" alt=""></a></li>
+								<li><a href="img/temp/afisha/img.png" title="2 pictures..."><img src="img/temp/afisha/img.png"  alt=""></a></li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="RunningLine">
+					<div>
+						<p>
+							<a href="#">Последние новости: "Российским вузам порекомендовали создать футбольные команды"</a>
+							<a href="#">Последние новости: "Легионер Металлиста: Язык очень сложная, а стадион похож на Сантьяго Бернабеу <i> 9:21 </ i>"</a>
+						</p>
+					</div>
+				</div>			
+			</div>		
+			
+			
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+<!-- header -->
+	<div class="header">						
+		<a href="index.html" class="logo"></a>
+		<div class="fixit">
+		<table class="Menu">
+			<tr>
+				<th>
+					<ul>
+						<li class="active"><a href="#">Новости</a></li>
+						<li><a href="#">Банки</a></li>
+						<li><a href="#">Авто</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Образование</a></li>
+						<li><a href="#">Реклама</a></li>						
+					</ul>				
+				</th>
+				<td>
+					<ul>
+						<li><a href="#">Отдых</a></li>
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Справка</a></li>
+						<li><a href="#">Объявление</a></li>
+						<li><a href="#">Общение</a></li>
+						<li class="find">
+							<ul>
+								<li><input type="text" value="поиск" class="toggle-inputs TextEntry"></li>
+								<li><input type="submit" value="Поиск" class="button"></li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+<!-- /header -->	
+
+	<div class="content fixit">
+		<div class="wrapper clearfix">
+
+	<table class="TwoPart">
+		<tr>
+			<td>
+				<table class="Adversiting News">
+					<tr>
+						<th>
+							<ul>
+								<li><a href=""><img src="img/temp/baner/adversiting.png" width="232" height="238" alt="" /></a></li>
+								<li><a href=""><img src="img/temp/baner/adversiting.png" width="232" height="238" alt="" /></a></li>
+							</ul>							
+						</th>
+						<td>
+							<h2>Новости</h2>
+							<ul class="News">
+								<li>
+									<span>10/04/2012 10:20</span>
+									<p class="name">Х.Клинтон не верит Б.Асаду:</p>
+									<a href="#" class="text">Будем судить по его делам</a>
+									<a href="#" class="comments">10</a>
+								</li>
+								<li>
+									<span>12/04/2012 11:20</span>
+									<p class="name">Where does it come from?</p>
+									<a href="#" class="text">Contrary to popular belief,  roots in a piece of, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. </a>
+									<a href="#" class="comments">5</a>
+								</li>
+								<li>
+									<span>14/04/2012 21:20</span>
+									<p class="name">Why do we use it?</p>
+									<a href="#" class="text">It is a long established facthe readable content of a page when looking at its layout. </a>
+									<a href="#" class="comments">2</a>
+								</li>								
+								<li>
+									<span>10/04/2012 10:20</span>
+									<p class="name">Х.Клинтон не верит Б.Асаду:</p>
+									<a href="#" class="text">Будем судить по его делам</a>
+									<a href="#" class="comments">10</a>
+								</li>
+								<li>
+									<span>12/04/2012 11:20</span>
+									<p class="name">Where does it come from?</p>
+									<a href="#" class="text">Contrary to popular belief,  roots in a piece of, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. </a>
+									<a href="#" class="comments">5</a>
+								</li>
+								<li>
+									<span>14/04/2012 21:20</span>
+									<p class="name">Why do we use it?</p>
+									<a href="#" class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </a>
+									<a href="#" class="comments">2</a>
+								</li>								
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<h3>Работа</h3>
+							<div class="list">
+								<ul>
+									<li><a href="#">Кадровые службы, HR</a></li>								
+									<li><a href="#">Работа для студентов</a></li>
+									<li><a href="#">Социальная сфера</a></li>
+									<li><a href="#">Менеджмент, продажи</a></li>
+									<li><a href="#">Руководящий состав</a></li>
+									<li class="select"><a href="#">Все категории</a></li>
+									<li class="select"><a href="#">Добавить вакансию/резюме</a></li>
+								</ul>
+							</div>
+						</th>
+						<td>
+							<h3>Организации</h3>
+							<div class="list">
+								<table>
+									<tr>
+										<td>
+											<ul>
+												<li><a href="#">Автошколы</a></li>								
+												<li><a href="#">Автомойки</a></li>												
+												<li><a href="#">Бани/Сауны</a></li>
+												<li><a href="#">Одежда и обувь</a></li>
+												<li><a href="#">Торговые центры</a></li>
+												<li><a href="#">Салоны красоты</a></li>
+											</ul>
+										</td>										
+										<td>
+											<ul>
+												<li><a href="#">Спортивные клубы</a></li>								
+												<li><a href="#">Учебные заведения</a></li>
+												<li><a href="#">Рекламные агенства</a></li>
+												<li><a href="#">Салоны сотовой связи</a></li>
+												<li><a href="#">Кинотеатры/театры</a></li>
+												<li class="select"><a href="#">Все категории</a></li>
+												<li class="select"><a href="#">Добавить вакансию/резюме</a></li>
+											</ul>
+										</td>										
+									</tr>
+								</table>								
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td class="td">
+					<div class="recreations">
+						<span>Работайте и отдыхайте вместе с нами</span>
+					</div>
+					
+					<div class="Top">
+						<div class="NameBlock">
+							<span class="top12"><i></i>ТОП 12</span>
+							Лучшие заведения города                      						
+						</div>
+						<table class="">
+							<tr>
+								<td>
+									<a href="img/temp/fridays.png" class="fridays" title="title replace"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#" class="fridays" title="title replace"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#" class="fridays"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#" class="fridays"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#" class="fridays"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">0</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#" class="fridays"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">5</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">99</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">500</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+								<td>
+									<a href="#"><img src="img/temp/fridays.png" alt="" /></a>
+									<ul class="Rayting">
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+										<li class="passive"><a href="#"></a></li>
+									</ul>
+									<div>
+										<a href="#" class="comments">3</a>
+										<a href="" class="add">+</a>
+									</div>
+								</td>
+							</tr>
+						</table>											    
+					</div>
+					
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="BigPhoto">
+				</div>
+				<div class="BigPhoto bottom">
+				</div>
+			</td>
+			<td class="td">
+				<div class="PhotoDay">
+					<h4>Фото</h4>
+					<table>
+						<tr>
+							<th class="boys">
+								<span class="topspan">Топ парней</span>
+								<a href="#"><img src="img/temp/boys/chelnygo.png" alt=""></a>
+								<span>Оцени парня дня</span>
+								<ul class="Rayting">
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li class="passive"><a href="#"></a></li>
+									<li class="passive"><a href="#"></a></li>
+								</ul>
+							</th>
+							<td class="girls">
+								<span class="topspan">Топ девушек</span>
+								<a href="#"><img src="img/temp/girls/chelnygo.png" alt=""></a>
+								<span>Оцени девушку дня</span>
+								<ul class="Rayting">
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li class="passive"><a href="#"></a></li>
+									<li class="passive"><a href="#"></a></li>
+								</ul>
+							</td>							
+						</tr>
+						<tr class="button">
+							<th>
+								<p>Добавь свое фото и стань звездой рейтинга!</p>
+							</th>
+							<td><input type="submit" value="добавить фото" class="green"></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td class="padding-right-15 width240">
+							<h3>Объявления</h3>
+							<div class="list small">								
+								<div class="background-icons">
+									<ul>
+										<li><a href="#">Автомобили</a></li>								
+										<li><a href="#">Недвижимость</a></li>												
+										<li><a href="#">Электрика</a></li>
+										<li><a href="#">Животные</a></li>
+										<li class="select"><a href="#">Все категории</a></li>									
+									</ul>					
+									<i class="icon-buy"></i>			
+								</div>
+								<p class="marketplace"><a href="#">Добавить объявление</a></p>
+								<i class="icon-sale"></i>			
+							</div>
+						</td>		
+						<td>
+							<div class="relative">
+								<h3>Внимание! Конкурсы.</h3>
+								<div class="list small padding-right">								
+									<span class="red">Выиграй билеты на спектакль...</span>
+									<p>Дорогие читатели, chelnygo.ru	совместно с Молодым театром разыгрывает билеты 	на спектакль "Любовные письма Сталину"! 	Участвуйте в конкурсе и получите возможность 	выиграть два билета на...</p>
+								</div>
+								<i class="icon-gift"></i>
+							</div>
+						</td>						
+					</tr>
+				</table>
+			</td>
+			<td class="td">				
+				<div class="relative">
+					<h3>Недвижимость</h3>
+					<div class="list small padding-right">
+						<table>
+							<tr>
+								<td>
+									<ul>
+										<li><a href="#">Квартиры</a></li>								
+										<li><a href="#">Земельные участки</a></li>												
+										<li><a href="#">Офисы</a></li>									
+										<li class="select"><a href="#">Все категории</a></li>
+									</ul>
+								</td>										
+								<td>
+									<ul>
+										<li><a href="#">Комнаты</a></li>								
+										<li><a href="#">Дома/котеджи</a></li>
+										<li><a href="#">Гаражи</a></li>																		
+									</ul>
+								</td>										
+							</tr>
+						</table>								
+					</div>					
+					<i class="icon-build"></i>
+				</div>
+			</td>
+		</tr>
+	</table>
+		
+		<div class="advertising">
+			<ul>
+				<li><a href="#"><img src="img/temp/baner/baner.png" width="253" height="170" alt=""></a></li>
+				<li><a href="#"><img src="img/temp/baner/baner.png" width="253" height="170" alt=""></a></li>
+				<li><a href="#"><img src="img/temp/baner/baner.png" width="253" height="170" alt=""></a></li>
+				<li><a href="#"><img src="img/temp/baner/baner.png" width="253" height="170" alt=""></a></li>
+			</ul>
+		</div>
+			
+		</div>	
+	</div>
+		
+	
+
+<!-- bottom -->
+	<div class="footer">
+		<div class="background">
+			<table class="BottomMenu">
+				<tr>
+					<td>
+						<ul>
+							<li class="active"><a href="#">Новости</a></li>
+							<li><a href="#">Банки</a></li>
+							<li><a href="#">Авто</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Образование</a></li>
+							<li><a href="#">Реклама</a></li>							
+						</ul>
+					</td>
+					<td>					
+						<ul>
+							<li><a href="#">Фотоальбомы</a></li>							
+							<li><a href="#">Фотоконкурсы</a></li>
+							<li><a href="#">Гороскопы</a></li>
+							<li><a href="#">3D панорамы</a></li>
+							<li><a href="#">Телепрограмма</a></li>
+							<li><a href="#">Игры</a></li>
+						</ul>
+					</td>					
+					<td>
+						<ul>
+							<li><a href="#">Кино</a></li>							
+							<li><a href="#">Вечеринки</a></li>
+							<li><a href="#">Выставки</a></li>
+							<li><a href="#">Концерты</a></li>
+							<li><a href="#">Разное</a></li>
+						</ul>
+					</td>					
+					<td>					
+						<ul>						
+							<li><a href="#">Каталог предприятий</a></li>
+							<li><a href="#">Расписание транспорта</a></li>
+							<li><a href="#">Карта города</a></li>							
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li><a href="#">Автомобили</a></li>							
+							<li><a href="#">Недвижимость</a></li>
+							<li><a href="#">Электроника</a></li>
+							<li><a href="#">Животные</a></li>
+							<li><a href="#">Разное</a></li>
+						</ul>
+					</td>					
+					<td>
+						<ul>						
+							<li><a href="#">Знакомства</a></li>
+							<li><a href="#">Форум города</a></li>
+							<li><a href="#">Блоги</a></li>
+						</ul>
+					</td>					
+				</tr>
+			</table>
+		</div>		
+		<div class="FooterLine fixit">
+			<span class="text">Набережные челны - современный городской портал - Chelnygo.ru 2012</span>	
+			<ul class="BottomMenuLine">
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Размещение рекламы</a></li>
+				<li><a href="#">Написать нам</a></li>
+				<li><a href="#">Соглашения</a></li>
+				<li><a href="#">Вопросы и ответы</a></li>
+			</ul>
+			
+			<div class="counter">
+				<table>
+					<tr>
+						<td><a href="#"><img src="img/counter/chelnygo1.png" width="43" height="43" alt="" /></a></td>
+						<td><a href="#"><img src="img/counter/chelnygo.png" width="88" height="31" alt="" /></a></td>
+					</tr>
+				</table>
+			</div>						
+			<a href="index.html" class="Chelnygo"></a>
+		</div>
+		
+		
+	</div>	
+<!-- /bottom -->	
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,439 @@
+/* author Andreykiv A.V. */
+/* data xx.xx.2008 */
+@import "reset.css";
+	
+html, body{ height:100%; }	
+	
+body {
+	font: 12px Arial, Tahoma;
+	background:#000 url(../images/beckgraund/head.jpg) no-repeat center 0;
+    color:#fff;
+	}
+a:link,
+a:visited{
+	font:100 12px Arial;
+	color:#CB7D7B;
+	text-decoration: underline;
+	}	
+a:hover{
+	text-decoration:none;
+	}
+	
+div{ margin:0 auto; }
+	
+ul li{ list-style:none; }
+
+/* UTIL */
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;	
+	}
+
+
+.none span,
+.none a span{	
+	display:none; 
+	}
+	
+/* headings */
+h1, h2, h3, h4, h5, h6{ line-height:1; }	
+		
+/* Main */
+.main{
+	position:relative;
+	min-width:995px;
+	min-height:100%;
+	}
+	
+.header{
+	position:relative;
+	height:330px;
+	}
+	
+.content{
+	position:relative;
+	padding:62px 0 60px 0;	
+	}		
+
+.right-col{
+	float:right;
+	width:165px;
+	padding:0 5px 0 0;
+	}
+	
+.left-middle-col{margin-right:171px;}
+	
+.left-col{
+	float:left;
+	width:175px;
+	padding:0 0 0 5px;
+	}
+
+.middle-col{ margin-left:181px;}
+
+/* HEADER------------------ */
+.logo {
+	position: absolute;
+	top: 69px;
+	left:22px;
+	width:243px;
+	height:183px;
+	font-size:0;
+	}
+.tel{
+	position:absolute;
+	left:72px;
+	top:261px;
+	height:15px;
+	width:122px;
+	font-size:0;
+	}
+
+/* HEADER =================*/
+
+/*nav-head--------------------*/
+.nav-head{
+	position:absolute;
+	right:0;
+	top:112px;
+	width:237px;
+	height:150px;
+	}
+.nav-head{
+	position:absolute;
+	}
+.nav-head ul li{
+	padding:0 0 26px 29px;
+	}
+.nav-head ul li.telephone{background:url(../images/icon/kons.gif) no-repeat;}
+.nav-head ul li.project{background: url(../images/icon/dizain.gif) no-repeat 0 2px;}
+.nav-head ul li.auto{background: url(../images/icon/dostavka.gif) no-repeat;}
+.nav-head ul li.vopros{background: url(../images/icon/stat.gif) no-repeat;}
+	
+.nav-head ul li a:link,
+.nav-head ul li a:visited{
+	font:100 16px Georgia;
+	color:#CB7D7B;
+	font-style:italic;
+	text-decoration:underline;
+	}
+.nav-head ul li a:hover{text-decoration:none;}
+/*nav-head====================*/
+
+/*menu*/
+.menu{
+	width:590px;
+	padding:316px 0 0 0;
+	}
+
+.menu ul li{ display:inline; padding:0 32px 0 0;}
+
+.menu ul li a:link,
+.menu ul li a:visited{
+	font:100 14px Arial;
+	color:#EBD0C5;
+	text-decoration:underline;
+	}
+.menu ul li a.activ:link,
+.menu ul li a.activ:visited,
+.menu ul li a:hover{ text-decoration:none; color:#C0C0C0;}
+
+/*menu*/
+
+
+/*LEFT-COL---------------------*/
+.menu2{ padding:0 0 24px 0;}
+.menu2 h2{
+	font:100 18px Georgia;
+	color:#fff;
+	padding:0 0 24px 27px;
+	}
+.menu2 ul li{
+	padding:0 0 12px 27px;
+	background: url(../images/icon/strila.jpg) no-repeat 3px 5px;
+	}
+.menu2 ul li a:link,
+.menu2 ul li a:visited{
+	font:100 13px Arial;
+	color:#CB7D7B;
+	text-decoration:underline;
+	}
+.menu2 ul li a:hover{
+	text-decoration:none;
+	}
+/*LEFT-COL=====================*/
+
+/*MENU_NAV----------*/
+.nav-left h2{
+	font:100 18px Georgia;
+	color:#fff;
+	padding:0 0 24px 27px;
+	}
+
+.nav-left p{ padding:0 0 0 27px;}
+.nav-left ul li{ padding:2px 0 12px 27px;}
+
+.nav-left ul li a:link,
+.nav-left ul li a:visited{font-size:16px;}
+
+.nav-left ul li.spain{background: url(../images/icon/spain.gif) no-repeat 0px 7px;}
+.nav-left ul li.italy {background: url(../images/icon/italy.gif) no-repeat 0px 7px;}
+.nav-left ul li.polska {background: url(../images/icon/polska.gif) no-repeat 0px 7px;}
+.nav-left ul li.cheh {background: url(../images/icon/cheh.gif) no-repeat 0 7px;}
+.nav-left ul li.rus {background: url(../images/icon/rus.gif) no-repeat 0 7px;}
+.nav-left ul li.belorus {background: url(../images/icon/belorus.gif) no-repeat 0 7px;}
+.nav-left ul li.ukraina {background: url(../images/icon/ukraina.gif) no-repeat 0 7px;}
+/*MENU_NAV============*/
+
+/*MENU_NAV----------
+.nav-left h2{
+	font:100 18px Georgia;
+	color:#fff;
+	padding:0 0 24px 27px;
+	}
+
+.nav-left p{ padding:0 0 0 27px;}
+.nav-left ul li li{ padding:2px 0 2px 27px;}
+
+.nav-left ul li a:link,
+.nav-left ul li a:visited{font-size:16px;}
+
+.nav-left ul li li a:link,
+.nav-left ul li li a:visited{font-size:14px;}
+.nav-left ul li li a:hover{font-size:14px; color:#fff;}
+	
+.b-menu-item a:link,
+.b-menu-item a:visited{color:#075f8a;}
+
+.b-menu-off 
+.b-menu-item{display:none;}
+
+.b-menu-on, 
+.b-menu-item{display:block;}
+
+#spain{
+	background: url(../images/icon/spain.gif) no-repeat 1px 4px;
+	}
+#italy {
+	background: url(../images/icon/italy.gif) no-repeat 1px 4px;
+	}
+#polska {
+	background: url(../images/icon/polska.gif) no-repeat 2px 4px;
+	}
+#cheh {
+	background: url(../images/icon/cheh.gif) no-repeat 2px 4px;
+	}
+#rus {
+	background: url(../images/icon/rus.gif) no-repeat 2px 4px;
+	}
+#belorus {
+	background: url(../images/icon/belorus.gif) no-repeat 2px 4px;
+	}
+#ukraina {
+	background: url(../images/icon/ukraina.gif) no-repeat 1px 4px;
+	}
+/*MENU_NAV============*/
+
+.counters{
+	padding:18px 0 0 27px;
+	}
+
+/*RIGHT-COL-------------------*/
+
+.menu1{ padding:0 0 65px 0;}
+
+
+.menu1 .pl,
+.menu1 .statya,
+.menu1 .inform{
+	font:bold 14px Georgia;
+	color:#CACACA;
+	font-style:italic;
+	background: url(../images/icon/green.jpg) no-repeat;
+	padding:0 0 16px 26px;
+	}
+
+.menu1 .pl{
+	background: url(../images/icon/green.jpg) no-repeat;
+	}
+	
+.menu1 .inform{
+	background: url(../images/icon/inform.jpg) no-repeat;
+	}
+
+.menu1 .statya{
+	background: url(../images/icon/stat.jpg) no-repeat;
+	}
+
+.menu1 ul li{padding:0 0 6px 30px;}
+
+h2 {
+	font-size: 20px;
+	color: #cacaca;
+	padding:0 0 10px 5px;
+	}
+
+.korzina{
+	position:relative;
+	background:#01070B;
+	border:1px solid #0B141B;
+	margin:0;
+	/*width:123px;*/
+	padding:16px 0 0 41px;
+	}
+.korzina span.one,
+.korzina span.two,
+.korzina span.three,
+.korzina span.four{
+	position:absolute;
+	display:block;
+	font-size:0;
+	width:18px;
+	height:18px;
+	}
+.korzina span.one{ left:-1px; top:-1px; background:url(../images/slice/korz.jpg) no-repeat 0 0;}
+.korzina span.two{ right:-1px; top:-1px; background:url(../images/slice/korz.jpg) no-repeat -18px 0;}
+.korzina span.three{ right:-1px; bottom:-1px; background:url(../images/slice/korz.jpg) no-repeat -18px -18px;}
+.korzina span.four{ left:-1px; bottom:-1px; background:url(../images/slice/korz.jpg) no-repeat 0 -18px;}
+
+.korzina ul li{
+	font:100 12px Arial;
+	color:#8A8A8A;
+	padding:0 0 15px;
+	}
+.korzina ul li span{ color:#fff;}
+
+.korzina ul li a:link,
+.korzina ul li a:visited{
+	font:100 15px Arial;
+	color:#CB7D7B;
+	text-decoration:underline;
+	}
+.korzina ul li a:hover{text-decoration:none;}
+
+.korzina ul li.suma a:link,
+.korzina ul li.suma a:visited{
+	font:100 12px Arial;
+	color:#61991B;
+	text-decoration:underline;
+	}
+.korzina ul li.suma a:hover{text-decoration:none;}
+
+.korzina ul li.suma{
+	font:100 12px Arial;
+	color:#61991B;
+	}
+.korzina ul li.suma span{
+	color:#8A8A8A;
+	}
+
+span.korz{
+	display:block;
+	position:absolute;
+	left:16px;
+	top:18px;
+	width:17px;
+	height:17px;
+	font-size:0;
+	background:url(../images/icon/korzina.jpg) no-repeat;
+	}
+/*-------------------*/
+.price{
+	margin:44px 0 0 0;
+	background:url(../images/icon/price.jpg) no-repeat 10px 0;
+	padding:10px 0 10px 62px;
+	}
+/*RIGHT-COL===================*/
+
+/*MIDDLE-COL------------------*/
+
+.inform-block h1{
+	font:100 24px Georgia;
+	color:#fff;
+	padding:0 0 30px 0;
+	}
+.inform-block h4{
+	font:bold 13px Arial;
+	color:#fff;
+	padding:0 0 19px 0;
+	}
+	
+.inform-block p{
+	font:100 13px Arial;
+	color:#B3B3B3;
+	padding:0 0 19px 0;
+	}
+.inform-block p span{
+	color:#A3CAE8;
+	}
+
+/*FOTO------------*/
+
+table.foto td{padding: 30px 0; }
+
+table.foto td div{ 
+	position:relative; 
+	margin:0 10px 0 0; 
+	float:left; 
+	padding:0; 
+	}
+
+table.foto td p{
+	color: #BDBDBD;
+	font:100 11px Arial;
+	padding:0 0 8px 0;
+	}
+table.foto td div.name{
+	width:auto;
+	height:auto;
+	float:none;
+	font:100 18px Arial;
+	color:#fff;
+	padding:0 0 15px 0;
+	}
+		
+table.foto td span{
+	font:100 11px Arial;
+	color:#CB7D7B;
+	font-style:italic;
+	}
+
+table.foto td div span{
+	position:absolute;
+	display:block;
+	width:7px;
+	height:7px;
+	padding:0;
+	overflow:hidden;
+	}
+table.foto td div span.one{left:0;top:0;background:url(../images/prozoro.gif) no-repeat;}
+table.foto td div span.two{right:0;top:0;background:url(../images/prozoro.gif) no-repeat -7px 0;}
+table.foto td div span.three{right:0;bottom:0;background:url(../images/prozoro.gif) no-repeat -7px -7px;}
+table.foto td div span.four{left:0;bottom:0;background:url(../images/prozoro.gif) no-repeat 0 -7px;}
+
+/*FOTO============*/
+
+/*MIDDLE-COL==================*/
+
+
+
+
+/*FOOTER------------*/
+#footer {
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:0;
+	height: 40px;
+	}
+#footer_right{
+	padding-left: 150px;
+	padding-top: 5px;
+	}
+#footer_right p{color: #8a8a8a;}
+/*FOOTER=============*/
+
+

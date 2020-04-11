@@ -1,0 +1,35 @@
+.manage-columns{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.manage-columns .list{
+    display: flex!important;
+    flex-direction: column!important;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+.manage-columns .list>div{
+    display: flex;
+    padding: 2px 0;
+}
+.manage-columns>a{
+    top: 6px;
+    position: relative;
+}
+
+
+.pop-up{
+    position: absolute;
+    display: flex;
+    top: 35px;
+    right: -22px;
+    width: 250px;
+    height: auto;
+    overflow: auto;
+    max-height: 300px;
+    z-index: 15;
+    background: white;
+}

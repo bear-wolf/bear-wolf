@@ -1,0 +1,17 @@
+.volume-agreement-drugs-details-content{
+  .drug-select-content {
+
+    .controls-select-group {
+      p-dropdown,
+      p-dropdown > .ui-dropdown {
+        width: 150px;
+      }
+
+      &>.form-control-select{
+        &>label {
+          font-weight: bold !important;
+        }
+      }
+    }
+  }
+}

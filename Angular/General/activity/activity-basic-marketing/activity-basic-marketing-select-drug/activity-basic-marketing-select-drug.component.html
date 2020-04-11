@@ -1,0 +1,36 @@
+<div class="content-block basic-marketing-select-drug-content">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Выбор препаратов</h3>
+  </div>
+
+  <form [formGroup]="form" *ngIf="businessUnits">
+    <div class="content">
+      <div class="item">
+        <label class="first-level">Выбрать препараты по следующим BU:</label>
+        <div class="bu-list">
+          <ng-container *ngFor="let bu of businessUnits">
+            <p-checkbox
+                    [value]="bu.name"
+                    [label]="bu.name"
+                    name="businessUnits"
+                    [formControl]="form.get('businessUnits')">
+            </p-checkbox>
+          </ng-container>
+        </div>
+      </div>
+
+      <div class="item">
+        <label class="first-level">Выберите препараты, участвующие в активности</label>
+        <app-form-controls-autocomplete
+                formControlName="skus"
+                placeholder="Начните вводить"
+                class="list-sku"
+                [suggestions]="filteredSkuList"
+                [field]="'name'"
+                [multiple]="true"
+                (completeMethod)="searchSku($event)">>
+        </app-form-controls-autocomplete>
+      </div>
+    </div>
+  </form>
+</div>

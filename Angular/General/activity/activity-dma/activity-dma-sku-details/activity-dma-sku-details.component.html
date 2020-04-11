@@ -1,0 +1,141 @@
+<div class="content-block">
+  <div class="title-block title-border-gray">
+    <h2 class="title fs-20">Препарат {{sku.skuBlockName}}</h2>
+  </div>
+
+  <form [formGroup]="form" *ngIf="form">
+    <table class="table table-forecast">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Потенциальный охват / объем</th>
+        <th>Потенциальная стоимость / экономия, руб</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Обучение фармацевтов</td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('prPharmacistTrainingPrice')"
+                    formControlName="prPharmacistTrainingPrice">
+            </app-form-controls-input>
+          </td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('pcPharmacistTrainingPrice')"
+                    formControlName="pcPharmacistTrainingPrice">
+            </app-form-controls-input></td>
+        </tr>
+        <tr>
+          <td>Размещение на внешних рекламных поверхностях</td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('prExternalSurfacesPrice')"
+                    formControlName="prExternalSurfacesPrice">
+            </app-form-controls-input>
+          </td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('pcExternalSurfacesPrice')"
+                    formControlName="pcExternalSurfacesPrice">
+            </app-form-controls-input>
+          </td>
+        </tr>
+        <tr>
+          <td>Размещение на внутренних рекламных поверхностях</td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('prIndoorSurfacesPrice')"
+                    formControlName="prIndoorSurfacesPrice">
+            </app-form-controls-input>
+          </td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('pcIndoorSurfacesPrice')"
+                    formControlName="pcIndoorSurfacesPrice">
+            </app-form-controls-input>
+          </td>
+        </tr>
+        <tr>
+          <td>Радио реклама</td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('prRadioPrice')"
+                    formControlName="prRadioPrice">
+            </app-form-controls-input>
+          </td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('pcRadioPrice')"
+                    formControlName="pcRadioPrice">
+            </app-form-controls-input>
+          </td>
+        </tr>
+        <tr>
+          <td>ТВ реклама</td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('prTvPrice')"
+                    formControlName="prTvPrice">
+            </app-form-controls-input>
+          </td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('pcTvPrice')"
+                    formControlName="pcTvPrice">
+            </app-form-controls-input>
+          </td>
+        </tr>
+        <tr>
+          <td>Другое</td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('prOtherPrice')"
+                    formControlName="prOtherPrice">
+            </app-form-controls-input>
+          </td>
+          <td>
+            <app-form-controls-input
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('pcOtherPrice')"
+                    formControlName="pcOtherPrice">
+            </app-form-controls-input>
+          </td>
+        </tr>
+        <tr>
+          <td>Всего</td>
+          <td>{{getTotal('pr')}}</td>
+          <td>{{getTotal('pc')}}</td>
+        </tr>
+        <tr>
+          <td colspan="2">ROI с учетом дополнительных эффектов:</td>
+          <td>{{sku.forecastTable.roi}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

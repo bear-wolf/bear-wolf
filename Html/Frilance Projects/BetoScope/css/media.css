@@ -1,0 +1,121 @@
+@media (max-width: 800px) {
+    /*.logo_st {
+        margin-right: 0%;
+    }*/
+}
+
+@media (max-width: 1550px) {
+    .games {
+        width: 63%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .games {
+        width: 61%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .games {
+        width: 58%;
+    }
+}
+
+/*@media (max-width: 1250px) {
+    .games {
+        width: 52%;
+    }
+}*/
+
+
+
+@media (max-width: 1250px) {
+    .games {
+        width: 100%;
+        float: none;
+    }
+
+    .float-right.baseAction {
+        float: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .title i {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 160px;
+        white-space: nowrap;
+    }
+
+    .middle-side {
+        margin-right: 35%;
+    }
+
+    .side-bar {
+        max-width: 33%;
+        margin-right: 5px !important;
+    }
+
+    .navigation td i {
+        width: 95%;
+    }
+
+    .block-national li p i {
+        width: 110px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .fixitWidth {
+        width: 90%;
+    }
+
+    .login {
+        padding: 0;
+    }
+
+        .login input {
+            width: 100%;
+        }
+
+    .network a {
+        margin-right: 6%;
+    }
+
+    .side-bar h2 {
+        padding: 25px 0 0 6%;
+    }
+
+    .arrow_left {
+        left: 5px;
+    }
+
+    .arrow_right {
+        right: 5px;
+    }
+    .table2_1 > tbody > tr > td.logo {
+        padding-right:1px!important;
+        padding-left:1px!important;
+    }
+    .side-bar .space .add, .side-bar .space .oformit {
+        max-width: 95%;
+    }
+
+    .table2_1 > tbody > tr > td {
+        padding: 15px 5px;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .block-national li p i {
+        width: 95px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,50 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.marketing-total-content {
+  position: relative;
+
+  @include document-column-view;
+
+  .document-content {
+    .item .form-control {
+      width: 115px !important;
+    }
+
+    .contract-item {
+      .controls-datepicker {
+        width: 200px;
+      }
+
+      .error {
+        color: $color-abbott-red;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  & > .content-body {
+    max-width: 600px;
+  }
+
+  .btn-update-block {
+    right: 15px;
+    top: 5px;
+    position: absolute;
+  }
+
+  .form-component {
+    max-width: 600px !important;
+    margin: 0;
+
+    .row-item {
+      flex-direction: column;
+    }
+
+    .item {
+      width: 100%;
+      margin-bottom: $form-row-margin-bottom;
+    }
+  }
+}

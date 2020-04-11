@@ -1,0 +1,55 @@
+@import "~assets/css/variables";
+
+.training-common-economics-content{
+  .th-width{
+    width: 150px;
+  }
+
+  .form-control{
+    width: 100px!important;
+  }
+
+  .table-column{
+    .cost-one-person{
+      td.block-value{
+        text-align: right;
+      }
+
+      label{
+        display: block;
+        margin: 0;
+        width: 100px;
+        text-align: center;
+        float: right;
+        font-weight: bold;
+      }
+    }
+  }
+
+  table{
+    margin-top: 15px;
+
+    tr{
+      border-bottom: 1px solid $color-abbott-light-gray;
+      td{
+        vertical-align: middle;
+        height: 40px;
+        padding: 5px;
+
+        input{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .form-group{
+          margin-bottom: 0;
+          display: flex;
+          width: 100px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

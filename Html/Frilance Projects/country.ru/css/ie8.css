@@ -1,0 +1,7 @@
+/*css style for IE8*/
+
+html div,
+html li{
+	zoom:1;
+	}
+

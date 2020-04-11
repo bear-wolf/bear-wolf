@@ -1,0 +1,49 @@
+
+@media screen and (min-width: 1025px) { /*1366x768*/
+    body{
+        overflow: hidden;
+    }
+    .activity-scrollbar{
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .current-game .count{
+        margin: 0 6%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+     .activity li .count {
+        max-width: 175px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 800px) { /*1366x768*/
+    .title-big .name{
+        font-size: 32px;
+    }
+}
+
+/*
+@media screen and (max-width: 900px) {
+    .grid-calendar .row div {
+        margin-right: 17px;
+    }
+    .grid-calendar {
+        max-width: 365px;
+    }
+    .activity li .count {
+        max-width: 160px;
+    }
+    .activity li {        
+        padding: 31px 10px 0 10px;
+    }
+}*/

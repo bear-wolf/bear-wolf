@@ -1,0 +1,12 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.bonus-agreement-docs-and-results-content{
+  position: relative;
+
+  @include document-column-view;
+
+  .form-component{
+    max-width: 1000px;
+  }
+}

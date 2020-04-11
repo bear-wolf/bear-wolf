@@ -1,0 +1,51 @@
+@import "~assets/css/variables";
+
+.agreement-content{
+  .controls-textarea-comment-inside{
+    .form-control{
+      width: 100% !important;
+    }
+  }
+
+  .btn-add {
+    width: 150px!important;
+    flex: none!important;
+    justify-content: center;
+    background: $btn-blue!important;
+  }
+
+  .content-block {
+    .user {
+      color: $color-abbott-light-blue;
+      padding-right: 15px;
+    }
+
+    .date {
+      color: $color-abbott-light-gray;
+      padding-right: 15px;
+    }
+
+    .status {
+      color: $color-abbott-red;
+    }
+  }
+
+  .comment-list {
+    & > * {
+      display: flex;
+    }
+
+    .item {
+      margin-bottom: 5px;
+    }
+
+    .comment-output {
+      justify-content: right;
+    }
+
+    .comment-input {
+      justify-content: left;
+    }
+  }
+
+}

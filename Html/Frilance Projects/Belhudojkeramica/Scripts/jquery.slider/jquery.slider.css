@@ -1,0 +1,52 @@
+/*Navigation*/	
+.Navigation{ 
+	position:relative;
+}
+
+.Navigation .ArrowLeft,
+.Navigation .ArrowRight{
+	position:absolute;
+	width:27px;
+	height:36px;
+	font-size:0;
+	background:url(images/Arrow.png) no-repeat;
+	top:105px;
+}
+
+.Navigation .ArrowLeft{ left:0; background-position:0 0;}
+.Navigation .ArrowRight{ right:0; background-position: right 0;}
+
+.Navigation .ArrowLeft.last{ background-position:left bottom; display:none;}
+.Navigation .ArrowRight.last{background-position:right bottom; display:none;}
+
+
+.BaseRelative{ padding:0 30px;}
+
+.Slider .absolute
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;	
+	heiht:280px;
+	}
+.Slider{}
+
+.Slider .Relative
+{
+	position:relative;
+	overflow:hidden;	
+	height:280px;
+	z-index:500;
+	}
+
+.pagination a{
+	display:inline-block;background:url(images/thumb.png) 0 0 no-repeat;height:38px;width:17px;
+	position:relative;margin:0 1px 0 2px; font-size:0;
+	}
+
+.pagination a:hover, 
+.pagination a.active{background-position:right top;}
+.pagination a.active{cursor:default;}
+
+/*Navigation=======*/	

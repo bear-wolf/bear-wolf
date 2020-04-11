@@ -1,0 +1,27 @@
+/*css style for IE7*/
+
+html div,
+html li{
+	zoom:1;
+	}
+	
+.find-input{ padding-top:8px; height:22px; }
+
+.find-input .button{
+	position:absolute;
+	top:59px;
+	right:0;
+	}
+
+.statistik li div span{	top:0px;	}
+
+.banner-two{
+	position:relative;
+	z-index:-200;
+	}
+
+.content{
+	position:relative;
+	z-index:-50;
+	padding-bottom:195px;
+	}	

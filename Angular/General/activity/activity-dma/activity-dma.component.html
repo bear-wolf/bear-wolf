@@ -1,0 +1,124 @@
+<ng-container *ngIf="dma">
+ <div class="dma-content">
+   <div class="content-header">
+     <div class="row">
+       <div class="col-md-6">
+         <h3 class="title">ДМА</h3>
+       </div>
+       <div class="col-md-6">
+         <app-document-version
+                 *ngIf="dma.documentService"
+                 [activity]="dma">
+         </app-document-version>
+       </div>
+     </div>
+   </div>
+
+   <app-entity-header
+           #entityHeaderComponent
+           [data]="entityHeader"
+           [entity]="dma"
+           [stepActiveIndex]="stepActiveIndex"
+           (approval)="approval($event, 4)"
+           (currency)="currency($event)">
+   </app-entity-header>
+
+   <div [ngSwitch]="stepActiveIndex">
+     <div *ngSwitchCase="0">
+       <div class="row">
+         <div class="col-8">
+           <app-activity-dma-common-info
+                   #innerFormComponent
+                   [dma]="dma">
+           </app-activity-dma-common-info>
+         </div>
+
+         <div class="col-4">
+           <app-activity-dma-item-support
+                   #innerFormComponent
+                   [dma]="dma">
+           </app-activity-dma-item-support>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col-12">
+           <app-activity-dma-sku
+                   #innerFormComponent
+                   [dma]="dma">
+           </app-activity-dma-sku>
+         </div>
+       </div>
+     </div>
+
+     <div *ngSwitchCase="1">
+       <app-activity-dma-methodology
+               #innerFormComponent
+               [dma]="dma">
+       </app-activity-dma-methodology>
+       <app-activity-dma-stock-sales-forecast
+               #innerFormComponent
+               [dma]="dma">
+       </app-activity-dma-stock-sales-forecast>
+     </div>
+
+     <div *ngSwitchCase="2">
+       <div class="row">
+         <div class="col-lg-5">
+           <app-activity-dma-stock-economics
+                   #innerFormComponent
+                   [dma]="dma">
+           </app-activity-dma-stock-economics>
+         </div>
+         <div class="col-lg-7">
+           <app-activity-dma-forecast
+                   #innerFormComponent
+                   [dma]="dma">
+           </app-activity-dma-forecast>
+         </div>
+       </div>
+     </div>
+
+     <div *ngSwitchCase="3">
+       <app-activity-dma-additional-promotion-effect
+               #innerFormComponent
+               [dma]="dma">
+       </app-activity-dma-additional-promotion-effect>
+     </div>
+
+     <div *ngSwitchCase="4">
+       <app-activity-akam-agreement
+               [activity]="dma">
+       </app-activity-akam-agreement>
+     </div>
+
+     <div *ngSwitchCase="5">
+       <app-activity-dma-total
+               #innerFormComponent
+               [dma]="dma"></app-activity-dma-total>
+     </div>
+   </div>
+
+   <div class="common-form-btn-group">
+     <button class="btn btn-orange"
+             (click)="cancel()">Отмена
+     </button>
+     <button class="btn btn-blue btn-primary"
+             *ngIf="isPrevStep"
+             (click)="prev()">Вернутся
+     </button>
+     <button class="btn btn-blue btn-primary"
+             *ngIf="isNextStep"
+             (click)="next()">Далее
+     </button>
+     <button class="btn btn-blue btn-primary"
+             *ngIf="isLastStep"
+             (click)="save()">Сохранить
+     </button>
+     <button class="btn btn-primary btn-green btn-approval"
+             *ngIf="stepActiveIndex == 4 && dma.isApproval"
+             (click)="sendManager()">Сохранить и отправить руководителю
+     </button>
+   </div>
+ </div>
+</ng-container>

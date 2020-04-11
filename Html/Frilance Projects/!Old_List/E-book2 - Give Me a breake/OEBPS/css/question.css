@@ -1,0 +1,571 @@
+
+@font-face {
+	font-family:"GothamBook";
+	font-style:normal;
+	font-weight:100;
+	font-stretch:condensed;	
+    src : url("../font/GothamBook.ttf") format("truetype");
+    
+}
+@font-face {
+	font-family:GothamBold;
+	font-style:normal;
+	font-weight:bold;	
+    src : url("../font/GothamBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family:"GothamLight";
+	font-style:normal;
+	font-weight:lighter;	
+    src : url("../font/GothamLight.ttf")  format("truetype");
+}
+
+@font-face
+{
+	font-family:"GothamLightItalic";    	
+    src:url("../font/GothamLightItalic.ttf")  format("truetype");
+	font-weight:300;
+    font-weight:lighter;
+}
+
+@font-face
+{
+	font-family:"GothamMedium";	
+    src:url("../font/GothamMedium.ttf")  format("truetype");    
+	font-weight:normal;
+}
+
+@font-face
+{
+	font-family:"MinionProRegular";
+	src:url("../font/MinionPro-Regular.otf")  format("opentype");
+	font-weight:100;
+}
+
+
+p {    
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: "GothamBook";
+    font-weight:100;
+    padding: 0 0 9pt 0;
+    margin: 0;
+    position:relative;
+    z-index:255;
+    line-height:1.6em;
+}
+
+.Page {
+    width:989px;
+    max-height:680px;
+    min-height:663px;
+    padding:40px 0 0 25px;
+    position:relative;
+    overflow:hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear:both;
+}
+
+h1 {
+    color: #C3202C!important;
+    font-size: 20px;
+    font-family: "GothamLight";
+    font-weight: normal;
+    padding-bottom: 3px;
+    margin-bottom: 26px;
+    margin-right: 25px;
+    border-bottom: 1.9px solid #B21E22;
+}
+
+.Title{
+    font-family: "GothamBold";
+    font-weight:bold;
+    font-size:14px;
+}
+
+table th,
+table td{vertical-align:top; text-align:left; font-weight:normal;}
+
+
+.Question1 .Border {
+    border:2px solid #1786d1;
+    border-radius:3px;
+    margin-bottom:5px;
+    width:461px;
+}
+
+.tdFirst{ width:520px;}
+.tdLast{ padding-left:10px;}
+
+.Grid tr{ height:20px;}
+.Grid th,
+.Grid td{
+    border:1px solid #ccc;
+    font-family:"GothamLight";
+    font-size:12px;
+    padding:3px;
+    vertical-align:middle;
+}
+.Grid .small { width:60px; text-align:center; padding:0;}
+.Grid th{ font-weight:bold; text-align:center; }
+.Grid .First th{ text-transform:uppercase;}
+
+.Grid {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width:100%;
+}
+
+.tdLast p.Question{ position:relative; padding-left:20px; font-family:GothamLight; font-size:14px;}
+.tdLast p.Question span{position:absolute; display:block; left:0px;}
+
+
+.quiz_buttons {
+    position:relative;    
+    text-align: center;
+}
+
+.quiz_buttons a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2.5px solid #e0e1e1;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 40px;
+    margin: 0 12px;
+    color: #acabaa;
+    position: relative;
+}
+
+.quiz_buttons a.Button {
+    border-color: #c1c0bf!important;    
+    color:#949392;
+}
+
+.quiz_buttons a:first-child,
+.quiz_buttons a:last-child {
+    font-size: 14px;
+    line-height: 36px;
+    margin: 0;
+    color: #575757;
+    width: 62px;
+    border: none!important;
+    background-size: 224px;
+    color: #6db0de;
+    
+}
+
+.quiz_buttons a:last-child {
+    right: 0px;
+    padding: 0 30px 0 20px;
+    margin-left: 0px!important;
+    background: url(../image/Question/BtnPrevNext.png) no-repeat right top;
+}
+
+.quiz_buttons a:first-child {
+    left: 0px;
+    padding: 0 20px 0 30px;
+    margin-right: 0px!important;
+    background: url(../image/Question/BtnPrevNext.png) no-repeat left top;
+}
+
+
+.quiz_buttons a:first-child.Active,
+.quiz_buttons a:last-child.Active {
+    color: #6db0de;
+}
+
+.quiz_buttons .Button.Active {
+    color: #6DB0DE;
+    border: 2.5px solid #6DB0DE!important;
+}
+
+.quiz_buttons a:first-child.Active {
+    background-position: left top!important;
+}
+
+.quiz_buttons a:last-child.Active {
+    background-position: right top!important;
+}
+
+.quiz_buttons a.enable,
+.quiz_buttons .Button.Active {
+    color: #6db0de;
+    border: 2.5px solid #6db0de!important;
+}
+
+
+
+.question {
+    font-size: 14px;
+    color: #2b2b2b;
+    padding-top: 5px;
+}
+
+.tdLast .MinHeight{ height:316px; position:relative;}
+
+.BlockVariant ul li {
+    list-style: none;
+    width: 340px;
+    font-size: 14px;
+    color: #575656;
+    text-align: left;
+    line-height: 30px;
+    border: 2px solid #c1c0bf;
+    border-radius: 6px;
+    height: 30px;
+    padding-left:70px;
+    position: absolute;
+    left: 0px;
+    border-color: #6db0de;
+    background: white;
+    z-index: 1;
+    font-family:"GothamLight";
+    letter-spacing:-1px;
+}
+
+.BlockVariant ul li.variant1 { bottom: 194px;}
+.BlockVariant ul li.variant2 { bottom: 134px;}
+.BlockVariant ul li.variant3 { bottom: 74px;}
+.BlockVariant ul li.variant4 { bottom: 14px;}
+
+
+.Border.true .tdTrue,
+.BlockVariant ul li.Active{ background:#fee05f;}
+
+.BlockVariant ul li span{
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:65px;
+    text-align:center;
+    background:#c4e35a;
+    color:white;
+    font-family:GothamBold;
+}
+
+
+.testResults {  
+    position:relative;  
+    text-align:center;
+    margin:10px 0 0 0;
+    display:none;
+}
+.testResults.false,
+.testResults.true{ display:block;}
+
+.testResults h2 {
+    font: 16px/30px "GothamBold", Verdana;
+    text-align: center;    
+}
+
+.true h2 {
+    color: #99cb60!important;
+}
+
+.false a,
+.false h2 {
+    color: #8e1e24!important;
+}
+
+.testResults p {   
+    text-align: center;
+}
+
+.testResults p span {
+    font-family: "GothamBold", Verdana;
+    color: #a2a1a1;
+}
+
+.true .false,
+.false .true {
+    display: none!important;
+}
+
+
+.testResults p.Caption {
+    text-align:left;
+    font-size:12px;    
+    padding:0 0 0 7px;
+    line-height:30px;
+    font-family: "Gotham";
+    font-weight: bold;
+	color:#100f0d;
+	font-size:14px;
+}
+
+
+.InteracivePage .BaseBlock li{
+    font-size:14px;
+    font-family:GothamBook;
+    color:#000;
+    padding-bottom:5px;
+    list-style:none;
+}
+.InteracivePage .BaseBlock li span.answer{}
+.InteracivePage .BaseBlock li span.timer{}
+
+.InteracivePage .tdFirst,
+.InteracivePage .thLast{ text-align:left;}
+
+.InteracivePage .QuestionBlock ul li a {
+	display: inline-block;
+	text-decoration: none;
+	border: 2.5px solid #e0e1e1;
+	border-radius: 6px;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 10px;
+	color: #acabaa;
+	position: relative;
+}
+.InteracivePage .QuestionBlock ul li a:hover{ background:#9cd3f9; color:#0683d8;}
+.InteracivePage .Visible a.Button { background:none!important;}
+.InteracivePage .QuestionBlock.Visible ul li a.Button {    
+    border-color: #C1C0BF;
+    color: #949392!important;
+}
+
+.InteracivePage .QuestionBlock ul li a.Button.Active {
+	color: #6db0de!important;
+	border: 2.5px solid #6db0de!important;
+}
+.InteracivePage .QuestionBlock ul li a.Button.Active:hover{ background:#9cd3f9!important; color: #0683D8!important;}
+
+.InteracivePage .testResults.false, 
+.InteracivePage .testResults.true, 
+.InteracivePage .testResults.timeIsOver{ display:block!important;}
+
+.InteracivePage .true h2 { color: #99cb60!important; font-size:15px!important; }
+.InteracivePage .false h2 { color: #8e1e24!important; font-size:14px;}
+
+.InteracivePage .true h2
+.InteracivePage .timeIsOver h2 { color: #8e1e24!important;}
+
+.InteracivePage .testResults.true h2.false, 
+.InteracivePage .testResults.false h2.true,
+.InteracivePage .testResults.true h2.timeIsOver, 
+.InteracivePage .testResults.false h2.timeIsOver,
+.InteracivePage .testResults.timeIsOver h2.true, 
+.InteracivePage .testResults.timeIsOver h2.false{display: none!important;}
+
+.InteracivePage .testResults h2.false,
+.InteracivePage .testResults h2.timeIsOver{
+    font: 14px "GothamLight", Verdana;
+    font-weight:normal;
+    color:#8E1E24;
+}
+
+.Panel1 .QuestionBlock{border:1px solid transparent!important;}
+.Panel1 .QuestionBlock.Visible{ border:1px solid #6db0de!important;}
+.Panel1 h2.Name{ padding-right:60px;}
+.InteracivePage  .tdFirst { width:auto; padding-right:14px;}
+.InteracivePage div .testResults{ margin-top:5px;}
+.InteracivePage .testResults a.Button { width:400px!important; display:block!important;}
+.QuestionBlock{
+    border:1px solid #6db0de;
+    border-radius: 6px;    
+    margin-left:0;
+    margin-bottom:16px;
+    padding:12px 7px;
+    width:457px;        
+    position:relative;
+    min-height:108px!important;
+}
+.QuestionBlock .timer{
+    position:absolute;
+    right:0;
+    top:0;
+    width:60px;
+    text-align:center;
+    font-family:GothamBook;
+    font-size:14px;
+    color:#6DB0DE;
+    border:1px solid #6DB0DE;
+    border-top:none!important;
+    border-right:none!important;
+    border-bottom-left-radius:6px;
+}
+
+.QuestionBlock ul li{ float:left; margin:0; list-style:none;}
+.QuestionBlock.Visible{border:1px solid #000;}
+.QuestionBlock.Visible h2.Name,
+.QuestionBlock.Visible input,
+.QuestionBlock.Visible ul{ display:block;}
+
+.QuestionBlock h2.Name,
+.QuestionBlock input,
+.QuestionBlock ul{ display:none;}
+
+.QuestionBlock input.disabled{ background:#f8f8f8;}
+
+.QuestionBlock input{ 
+    border:2px solid #dedddc;
+    border-radius: 6px;
+    width:240px; 
+    background:#fafafa;
+    height:30px;  
+    line-height:30px; 
+    text-align:center;
+    margin-right:20px;
+    color:#2b2b2b;
+}
+h2.Name{
+    font-family: "GothamBold";
+    font-weight: 100;
+    font-size: 15px;
+    /*color:#2b2b2b;*/
+    color:#154478!important;
+    min-height:40px;
+    padding-bottom:2px;
+    line-height:22px;
+}
+
+
+.TableOfQuestionBlock div.Base{         
+    min-height: 70px!important;        
+    border:none;
+    width:473px;
+    margin-bottom:10px;
+    padding:0!important;
+    border-radius:0;  
+}
+.TableOfQuestionBlock div.Base div{
+    border:1px solid #6db0de;    
+    border-radius: 6px;        
+    padding:13px 5px 10px 17px!important;
+    margin-bottom:0px;
+    margin-top:0px;       
+    cursor:pointer;
+    min-height: 40px!important;
+}
+
+.TableOfQuestionBlock div.Base .Hidden{ background:none!important; border:1px solid transparent; cursor:default;}
+
+.TableOfQuestionBlock table td{ height:450px!important;}
+.TableOfQuestionBlock div.Active{ background:#dceffc!important;}
+.TableOfQuestionBlock div.Active.Sound, .TableOfQuestionBlock div.Sound{ background:#9cd3f9!important;}
+.TableOfQuestionBlock div h2.Name{ display:block; font-family:GothamLight;}
+.TableOfQuestionBlock a.Button {
+	display:block;
+	text-decoration: none;
+	border: 2.5px solid #e0e1e1;
+	border-radius: 6px;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 10px;
+    width:140px;
+    text-align: center;
+    margin:0 auto;
+    margin-top:10px;
+	color: #acabaa;
+	position: relative;
+}
+
+.TableOfQuestionBlock .testResults h2.blue {color:#9cd3f9!important;}
+.TableOfQuestionBlock a.Button.Click {    
+    border-color: #C1C0BF;
+    color: #949392!important;
+    background:none!important;
+}
+
+.TableOfQuestionBlock a.Button.Active {
+	color: #6db0de!important;
+	border: 2.5px solid #6db0de!important;
+}
+.TableOfQuestionBlock a.Button.Active:hover{ background:#9cd3f9!important; color: #0683D8!important;}
+
+.Animation{    
+    position:relative;
+    overflow:hidden;
+}
+
+.Animation span {
+    height:82px;
+}
+#page-1 .Animation,
+#page-2 .Animation{ height:42px!important;}
+
+.Animation span{
+    display:block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+}
+.Animation span i{ font-style:normal; display:block;}
+.Animation span i.bottom{padding-top:61px;}
+
+.QuestionBlock .timer {line-height:26px;}
+
+.TableOfQuestionBlock div h2.Name,
+h2.Name {font-family: "GothamLight";}
+
+.TableOfQuestionBlock a.Button,
+.InteracivePage table a.Button,
+.InteracivePage table input{ font-size:14px!important; font-family: GothamBook;}
+
+.InteracivePage table input{ -webkit-appearance: none; }
+
+.InteracivePage h1 {
+    color:#154478!important;    
+    line-height:24px;
+    margin-bottom: 16px!important; 
+    padding-bottom:14px;
+}
+.Page.InteracivePage{padding-top:25px!important;}
+
+.Panel1 ul,
+.Panel1 h2.Name {margin-left:11px;}
+.Panel1 .testResults { padding-top:9px;}
+.Panel1 .testResults h2{ line-height:14px;}
+
+.InteracivePage .TableOfQuestionBlock .tdFirst {padding-right: 14px!important;}
+
+
+.Page.Question1 h1 {color: #154478!important;}
+
+.Question1 .Interactive2 .Field{ display:none;}
+.Question1 .tdFirst{ width:auto; padding-right:10px;}
+
+.Question1 .BaseTable{
+    position:absolute;
+    left:25px;
+    top:105px;
+    width:960px;
+    height:680px;
+}
+
+.BlockTestResults { padding-top:440px;}
+.BlockTestResults.divGroup2 { padding-left:500px!important; padding-top:25px!important;}
+
+.Interactive2 .ListItem{ padding:10px;}
+.Interactive2 h1 {margin-bottom:5px!important;}
+.Interactive2 .ListItem p{
+    font-family: "GothamLight";
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom:5px;
+}
+.Interactive2 .ListItem ul{ margin:0 0 8px 20px;}
+.Interactive2 .ListItem li{
+    font-family: GothamLight;
+    font-size: 14px;
+}
+.Interactive2 .SubTitle { 
+    display:block;
+    font-family: "GothamLight";
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom:5px;
+}

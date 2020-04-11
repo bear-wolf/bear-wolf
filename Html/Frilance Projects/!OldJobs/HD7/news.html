@@ -1,0 +1,242 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/pages.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <title>новости</title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->	
+	<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+<div class="fixit">
+<!--HEADER-->
+	<div class="header">
+		
+		<a href="#" class="logo"></a>
+		
+		<div class="phone">
+			Горячая линия:
+			<p><b>(495)</b> 345-67-89</p>
+		</div>
+		
+		<div class="autorizaciya">
+			Вход <span><a href="#">Регистрация</a></span>
+			<ul>
+				<li><input type="text" value="Логин" class="toggle-inputs" /></li>
+				<li><input type="text" value="Пароль" class="toggle-inputs" /></li>
+				<li class="but"><input type="image" src="img/button/vxod.jpg" /></li>
+			</ul>
+			<p><input type="checkbox" /> Запомнить пароль <a href="#">Востановить пароль</a></p>
+		</div>	
+		
+		<div class="nav-top">
+			<div class="menu">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог фильмов</a></li>
+					<li><a href="#">Вид</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Справка</a></li>
+					<li><a href="#">Прошивки</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="korzina">
+				В корзине <a href="#"><b>2 товара</b></a>
+			</div>
+		</div>
+		
+	</div>
+	<!-- /HEADER -->
+
+            
+<!-- CONTENT -->			
+<div class="content">
+	<div class="wrapper">
+					
+		<div class="MIDDLE-COL">
+			<!-- RIGHT-COL-->
+			<div class="RIGHT-COL">
+				
+				<div class="find">
+					<h2>Поиск</h2>
+					<div>
+						<ul>
+							<li><input type="text" value="input" class="toggle-inputs"  /></li>
+							<li class="but"><input type="image" src="img/button/find.jpg" /></li>
+						</ul>	
+					</div>
+					<p><a href="#">Расширеный поиск</a></p>
+				</div>	
+				
+				<div class="katalog">
+					<h3>Каталог</h3>
+					<div>
+						<ul>
+							<li><a href="#">Боевик</a></li>
+							<li><a href="#">Фантастика</a></li>
+							<li><a href="#">Комедия</a></li>
+							<li><a href="#">Триллер</a></li>
+							<li><a href="#">Драма</a></li>
+							<li><a href="#">Детектив</a></li>
+							<li><a href="#">Мелодрама</a></li>
+							<li><a href="#">Военный</a></li>
+							<li><a href="#">Ужасы</a></li>
+							<li><a href="#">Криминал</a></li>
+							<li><a href="#">Мюзикл</a></li>
+							<li><a href="#">Фэнтези</a></li>
+							<li><a href="#">Приключения</a></li>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Биография</a></li>
+							<li><a href="#">Семейный</a></li>
+							<li><a href="#">Музыка</a></li>
+							<li><a href="#">Спорт</a></li>
+							<li><a href="#">Вестерн</a></li>
+							<li><a href="#">Документальный</a></li>
+							<li><a href="#">Для взрослых</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="kupili">
+					<h4>Только что купили</h4>
+					<table>
+						<tr>
+							<td class="img"><a href="#"><img src="img/temp/kupili/main_111.jpg" width="69" height="98" alt="" /></a></td>
+							<td>
+								<a href="#">Железный человек 2</a>
+								<p>Купили <br />1 ч. 34 мин. <br />назад</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="img"><a href="#"><img src="img/temp/kupili/main_111.jpg" width="69" height="98" alt="" /></a></td>
+							<td>
+								<a href="#">Железный человек 2</a>
+								<p>Купили <br />1 ч. 34 мин. <br />назад</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="img"><a href="#"><img src="img/temp/kupili/main_111.jpg" width="69" height="98" alt="" /></a></td>
+							<td>
+								<a href="#">Железный человек 2</a>
+								<p>Купили <br />1 ч. 34 мин. <br />назад</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+			<!-- /RIGHT-COL-->
+						
+			<!-- CENTER -->	
+			<div class="CENTER">
+						
+				<div class="head_line">
+					<ul>
+						<li>16 ноября 2010</li>
+					</ul>
+				</div>
+			
+				<div class="textovka">
+					<h3>Новые технологии теперь на службе у нас.</h3>
+					<p>Прошло полгода с тех пор, как мир узнал, что миллиардер-изобретатель Тони Старк является обладателем уникальной кибер-брони Железного человека. Общественность требует, чтобы Старк передал технологию брони правительству США, но Тони не хочет разглашать её секреты, потому что боится, что она попадёт не в те руки. </p>
+					<p>Между тем, Иван Ванко — сын русского учёного когда-то работавшего на фирму Старка, но потом уволенного и лишенного всего, намерен отомстить Тони за беды своей семьи. Для чего сооружает своё высокотехнологичное оружие. </p>
+					
+					<h2>Подзаголовок</h2>
+					<p>Прошло полгода с тех пор, как мир узнал, что миллиардер-изобретатель Тони Старк является обладателем уникальной кибер-брони Железного человека. Общественность требует, чтобы Старк передал технологию брони правительству США, но Тони не хочет разглашать её секреты, потому что боится, что она попадёт не в те руки. </p>
+					<p>Между тем, Иван Ванко — сын русского учёного когда-то работавшего на фирму Старка, но потом уволенного и лишенного всего, намерен отомстить Тони за беды своей семьи. Для чего сооружает своё высокотехнологичное оружие. </p>
+					<p>Продолжение, понравилось примерно так же, как и первый фильм. Такая же динамика, актерский состав, характер героев (в частности главного), атмосфера, спецэффекты из 2008 года. Изменился лишь сюжет, не сказать, что он получился оригинальным и грандиозным, он просто добротный для просмотра. </p>
+					
+					<img src="img/temp/news/3_03.jpg" width="485" height="323" alt="" />
+					<p>Общественность требует, чтобы Старк передал технологию брони правительству США, но Тони не хочет разглашать её секреты, потому что боится, что она попадёт не в те руки. Между тем, Иван Ванко — сын русского учёного когда-то работавшего на фирму Старка, но потом уволенного и лишенного всего, намерен отомстить Тони за беды своей семьи. </p>
+					<p>Для чего сооружает своё высокотехнологичное оружие. Такая же динамика, актерский состав, характер героев (в частности главного), атмосфера, спецэффекты из 2008 года. Изменился лишь сюжет, не сказать, что он получился оригинальным и грандиозным, он просто добротный для просмотра. В фильме снова показана «гонка за ноу-хау Старка», благо его «батарейку» не изымали в качестве сувенира. Понравилось, что были показаны последствия от облучения, есть ссылка на то, что у Тони все-таки организм человека. </p>
+				</div>
+			
+				<div class="tizer">
+					<ul>
+						<li><a href="#"><img src="img/baner/tizer.jpg" width="220" height="87" alt="" /></a></li>
+						<li><a href="#"><img src="img/baner/tizer.jpg" width="220" height="87" alt="" /></a></li>
+						<li><a href="#"><img src="img/baner/tizer.jpg" width="220" height="87" alt="" /></a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- CENTER===================== -->			
+		</div>
+	</div>	
+</div>
+<!-- /CONTENT========================= -->	
+           
+<!--FOOTER-->
+	<div class="footer">
+		<div class="nav-bot">
+			<ul>
+				<li><a href="#">Главная</a></li> 
+				<li><a href="#">Каталог фильмов</a></li> 
+				<li><a href="#">Вид</a></li> 
+				<li><a href="#">Поиск</a></li> 
+				<li><a href="#">Справка</a></li> 
+				<li><a href="#">Прошивки</a></li> 
+				<li><a href="#">Контакты</a></li> 
+				<li class="act"><a href="#">Карта сайта</a></li> 
+				<li class="act"><a href="#">Размещение рекламы</a></li> 
+				<li class="act"><a href="#">Обратная связь</a></li> 
+			</ul>
+		</div>
+		<div class="text">
+			<address>2010 © Magazina. Все права защищены</address>
+			Мнения и пожелания по работе проекта, можно оставить в разделе Обратная связь. Если не указана иное, копирование и размещение материалов в сети разрешено только при условии размещении ссылки на первоисточник. 
+			<div class="counter">
+				<ul>
+					<li><a href="#"><img src="img/counter/img1.jpg" width="88" height="31" alt="" /></a></li>
+					<li><a href="#"><img src="img/counter/img1.jpg" width="88" height="31" alt="" /></a></li>
+					<li><a href="#"><img src="img/counter/img1.jpg" width="88" height="31" alt="" /></a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>		
+<!--/ FOOTER===============-->	
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import "~assets/css/variables";
+
+.joint-agreement-docs-content{
+  position: relative;
+
+  .btn-update-block{
+    right: 15px;
+    top: 8px;
+    position: absolute;
+  }
+
+  .document-content{
+
+    .error{
+      display: flex;
+      align-items: center;
+    }
+
+    .item>span>label{
+      font-weight: bold!important;
+    }
+    .form-control-input{
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      label{
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .item{
+    display: flex;
+    height: $form-control-height;
+    margin-right: 10px;
+
+    .form-control{
+      width: 120px;
+    }
+
+    label{
+      margin: 0;
+      font-size: 14px;
+    }
+
+    &>span{
+      padding-right: 5px;
+      display: flex;
+      &>label{
+        width: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .form-group{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+
+      &>*{
+        display: flex;
+      }
+      label{
+        padding-right: 5px;
+      }
+    }
+  }
+}

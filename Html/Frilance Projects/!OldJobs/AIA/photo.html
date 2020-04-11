@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>photo.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" border="0"/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li class="activ"><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+		
+			<div class="top_line">
+				<div class="abs">
+					<ul>
+					  <li class="active"><a href="#">Главные</a></li> 	
+					  <li><a href="http://www.66.ru/news/politic/">Политика</a>	  </li>	
+					  <li><a href="http://www.66.ru/news/society/" >Общество</a>	  </li>
+					  <li><a href="http://www.66.ru/realty/news/" >Недвижимость</a>	  </li>
+					  <li><a href="http://www.66.ru/news/business/">Бизнес</a>	  </li>
+					  <li><a href="http://www.66.ru/news/incident/" >Происшествия!</a>	  </li>
+					  <li><a href="http://www.66.ru/news/internet/" >Интернет</a>	  </li>
+					  <li><a href="http://www.66.ru/news/freetime/" >Свободное время</a>	  </li>
+					  <li><a href="http://www.66.ru/auto/news/">Авто</a>	  </li>
+					  <li><a href="http://www.66.ru/news/hitech/" >Hi-Tech</a>	  </li>
+					  <li><a href="http://www.66.ru/news/science/">Наука</a>	  </li>
+					  <li class="end"><a href="http://www.66.ru/news/sport/">Спорт</a>	  </li>
+					 </ul>
+				</div>
+			</div>
+			
+			<div class="head_line2">
+				<ul>
+					<li><a href="#"><img src="img/icon/home.jpg" width="11" height="9" alt="" /></a> /</li>
+					<li><a href="#">фотоальбомы</a></li>
+				</ul>
+				<div>
+					<ul>
+						<li><a href="#">Избранные фото</a> |</li>
+						<li><a  href="#">Мои фото</a></li>
+					</ul>
+					<p><a href="#">Загрузить фото</a></p>
+				</div>
+			</div>
+			<!--<ul class="gorizontal">
+				  <li><a href="#">Главные</a></li> 	
+				  <li><a href="http://www.66.ru/news/politic/">Политика</a>	  </li>	
+				  <li><a href="http://www.66.ru/news/society/" >Общество</a>	  </li>
+				  <li><a href="http://www.66.ru/realty/news/" >Недвижимость</a>	  </li>
+				  <li><a href="http://www.66.ru/news/business/">Бизнес</a>	  </li>
+				  <li><a href="http://www.66.ru/news/incident/" >Происшествия!</a>	  </li>
+				  <li><a href="http://www.66.ru/news/internet/" >Интернет</a>	  </li>
+				  <li><a href="http://www.66.ru/news/freetime/" >Свободное время</a>	  </li>
+				  <li><a href="http://www.66.ru/auto/news/">Авто</a>	  </li>
+				  <li><a href="http://www.66.ru/news/hitech/" >Hi-Tech</a>	  </li>
+				  <li><a href="http://www.66.ru/news/science/">Наука</a>	  </li>
+				  <li><a href="http://www.66.ru/news/sport/">Спорт</a>	  </li>
+			 </ul>-->
+			 
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+				
+				<div class="temu">
+					<i class="ku1"></i>
+					<i class="ku2"></i>
+					<i class="ku3"></i>
+					<i class="ku4"></i>
+					<h3>Популярные метки <span><a href="#">все</a></span></h3>
+					<ul class="float">
+						<li><a href="#">2008</a></li>
+						<li class="b1"><a href="#">Абхазия</a></li>
+						<li><a href="#">Андрей</a> </li>
+						<li class="b2"><a href="#">Животные</a></li>
+						<li><a href="#">Известные люди</a></li>
+						<li class="b1"><a href="#">Искуство</a></li>
+						<li><a href="#">Макросьёмка</a> </li>
+						<li class="b3"><a href="#">Разное</a></li>
+						<li><a href="#">Абхазия</a></li>
+						<li class="b4"><a href="#">Андрей</a> </li>
+						<li><a href="#">Животные</a></li>
+						<li class="b5"><a href="#">Известные люди</a></li>
+						<li><a href="#">Искуство</a></li>
+						<li class="b6"><a href="#">Макросьёмка</a> </li>
+						<li><a href="#">Разное</a></li>
+						<li class="b7"><a href="#">Абхазия</a></li>
+						<li><a href="#">Андрей</a> </li>
+						<li><a href="#">Животные</a></li>
+						<li class="b8"><a href="#">Известные люди</a></li>
+						<li class="b8"><a href="#">Известные люди</a></li>
+						
+					</ul>
+				</div>
+		
+				
+				<div class="photo-main-banner">
+				<!--/* 66.ru Javascript Tag v2.4.1 */-->
+				
+				<script type="text/javascript"><!--//<![CDATA[
+				var m3_u = (location.protocol=='https:'?'https://r.66.ru/www/delivery/ajs.php':'http://r.66.ru/www/delivery/ajs.php');
+				var m3_r = Math.floor(Math.random()*99999999999);
+				if (!document.MAX_used) document.MAX_used = ',';
+				document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+				document.write ("?zoneid=81");
+				document.write ('&amp;cb=' + m3_r);
+				if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+				document.write ("&amp;loc=" + escape(window.location));
+				if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+				if (document.context) document.write ("&context=" + escape(document.context));
+				if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+				document.write ("'><\/scr"+"ipt>");
+				//]]>--></script><script type="text/javascript" src="index_files/ajs_003.js"></script><a id="ad_link" href="http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=1765__ad_sec=1299850147__zoneid=81__cb=327d143e6b__maxdest=http://www.club.66.ru/" target="_self"><img src="index_files/ai.gif" alt="" title="" border="0" height="195" width="240"></a><div id="beacon_1765" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="index_files/lg.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><script type="text/javascript">document.context='YzoxODMzfA=='; </script>
+				<noscript><a href='http://r.66.ru/www/delivery/ck.php?n=a28bdc7e&amp;cb=3213487649' target='_blank'><img src='http://r.66.ru/www/delivery/avw.php?zoneid=81&amp;n=a28bdc7e' border='0' alt='' /></a></noscript>
+				
+				</div>
+					
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				
+				<!--LEFT-COL-->
+				<div class="LEFT-COL">
+				
+					<div class="temu">
+						<i class="ku1"></i>
+						<i class="ku2"></i>
+						<i class="ku3"></i>
+						<i class="ku4"></i>
+						<h2>Фото по темам</h2>
+						<ul>
+							<li><a href="#">Авто, мото </a> (40931)</li>
+							<li><a href="#">Город</a> (40931)</li>
+							<li><a href="#">Дети</a> (40931)</li>
+							<li><a href="#">Животные</a> (40931)</li>
+							<li><a href="#">Известные люди</a> (40931)</li>
+							<li><a href="#">Искуство</a> (40931)</li>
+							<li><a href="#">Макросьёмка</a> (40931)</li>
+							<li><a href="#">Разное</a> (40931)</li>
+							<li><a href="#">Дети</a> (40931)</li>
+							<li><a href="#">Животные</a> (40931)</li>
+							<li><a href="#">Известные люди</a> (40931)</li>
+							<li><a href="#">Искуство</a> (40931)</li>
+							<li><a href="#">Макросьёмка</a> (40931)</li>
+							<li><a href="#">Разное</a> (40931)</li>
+							<li><a href="#">Дети</a> (40931)</li>
+							<li><a href="#">Животные</a> (40931)</li>
+							<li><a href="#">Известные люди</a> (40931)</li>
+							<li><a href="#">Искуство</a> (40931)</li>
+							<li><a href="#">Макросьёмка</a> (40931)</li>
+							<li><a href="#">Разное</a> (40931)</li>
+							<li><a href="#">Дети</a> (40931)</li>
+							<li><a href="#">Животные</a> (40931)</li>
+							<li><a href="#">Известные люди</a> (40931)</li>
+							<li><a href="#">Искуство</a> (40931)</li>
+							<li><a href="#">Макросьёмка</a> (40931)</li>
+							<li><a href="#">Разное</a> (40931)</li>
+							<li><a href="#">Дети</a> (40931)</li>
+							<li><a href="#">Животные</a> (40931)</li>
+							<li><a href="#">Известные люди</a> (40931)</li>
+							<li><a href="#">Искуство</a> (40931)</li>
+							<li><a href="#">Макросьёмка</a> (40931)</li>
+							<li><a href="#">Разное</a> (40931)</li>
+						</ul>
+					</div>
+					
+				</div>
+				<!-- / LEFT-COL ===============-->
+				<div class="CENTER">
+					<table class="baner1">
+						<tbody>
+							<tr style="height: 158px;">
+								<td style="background-color: rgb(173, 205, 40); background-image: url(&quot;http://img.66.ru/dez/v3/photo_v3_main.jpg&quot;); background-repeat: no-repeat; width:284px;">&nbsp;</td>
+								<td class="blueLink" style="color: rgb(255, 255, 255); text-align: right; font-size: 24px; background-color: rgb(173, 205, 40); background-image: url(&quot;http://img.66.ru/dez/v3/photo_v3_main_bg.jpg&quot;); background-repeat: repeat-x;">
+									<div style="padding:45px 15px 0 0; font:100 24px 'Trebuchet MS';">Легко и быстро <a href="http://www.66.ru/demo/step4/" style="font:100 24px 'Trebuchet MS'; text-decoration:underline;">загрузить</a> много фоток</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="photo">
+						<h3>Лучшие фотографии</h3>
+						<table>
+							<tr>
+								<td class="big">
+									<a href="#"><img src="img/temp/news_foto/big/photo_20.jpg" width="240" height="200" alt="" /></a>
+									<div class="icon1">
+										<span><a href="#">webzest</a></span>
+										<p><a href="#">0 коментариев</a></p>
+									</div>
+								</td>
+								<td>
+									<table class="list_img">
+										<tr>
+											<td>
+												<img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" />
+												<div class="icon1">
+													<span><a href="#">webzest</a></span>
+													<p><a href="#">0 коментариев</a></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" />
+												<div class="icon2">
+													<span><a href="#">webzest</a></span>
+													<p><a href="#">0 коментариев</a></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" />
+												<div class="icon2">
+													<span><a href="#">webzest</a></span>
+													<p><a href="#">0 коментариев</a></p>
+												</div>
+											</td>
+										</tr>
+									</table>									
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="news_foto">
+			<h3><a href="#">Новые фотографии</a> <span>Всего фото:<b>86709</b> Сегодня <b>0</b></span></h3>
+			<ul>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+				<li><a href="#"><img src="img/temp/news_foto/img.jpg" width="74" height="75" alt="" /></a></li>
+			</ul>
+		</div>
+		
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>
+		<address>2010 - АiiA - Городской портал Майкопа 
+<br /> Все права защищены</address>
+<div class="count">
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t53.7;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число просмотров и"+
+	" посетителей за 24 часа' "+
+	"border='0' width='88' height='31'><\/a>")
+	//--></script><!--/LiveInternet-->
+
+	<a href="http://www.pr-cy.ru/" target="_blank" title="Счетчик тИЦ и PR"><img src="http://counter.pr-cy.ru/prcy/www.aiia.pro" alt="PR-CY.ru" width="88" height="31" border="0" /></a>
+
+	<!--Openstat--><span id="openstat2140389"></span><script type="text/javascript">
+	var openstat = { counter: 2140389, image: 5043, next: openstat, track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+	(("https:" == document.location.protocol) ? "s" : "") +
+	"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E"));
+	</script><!--/Openstat--> 
+</div>
+
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

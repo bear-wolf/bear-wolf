@@ -1,0 +1,30 @@
+@import "variables";
+
+p-table {
+  .ui-table {
+    .ui-table-wrapper {
+      table {
+        thead.ui-table-thead {
+          tr {
+            th {
+              white-space: normal;
+              padding: 5px;
+              // table column search input
+              input.ui-inputtext {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        tbody.ui-table-tbody {
+          tr {
+            td {
+              white-space: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

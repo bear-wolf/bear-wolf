@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>doska.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" border="0"/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li class="activ"><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			
+			 
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+					                    
+                    <div class="moi_obyav">
+						<i class="u1"></i>
+						<i class="u2"></i>
+						<i class="u3"></i>
+						<i class="u4"></i>
+						<a href="http://www.66.ru/doska/my/" rel="nofollow">мои объявления</a>
+						<div>
+							<span class="lt"></span>
+							<span class="rt"></span>
+							<input value="Подать объявление" type="submit" />
+						</div>
+                    </div>
+
+					<ul class="link-block" >
+						<li><a href="http://www.66.ru/doska/rules/" >Условия использования сервиса</a></li>
+						<li><a href="http://www.66.ru/doska/legal/">Правила публикации объявлений</a></li>
+					</ul>
+                    
+					 <div class="b-context-block">
+                     	<img src="img/temp/baner/foto_03.jpg" width="240" height="400" alt="" />  
+                     </div>
+                    
+                     <div>
+					 	<a href="#"><img src="img/temp/reklama/auto_01.jpg" width="240" height="524"  alt="" /></a>
+					 </div>       
+                        
+                           
+
+                         
+                    
+
+                  
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+				
+						<div class="doska_find1">
+						  <h1>Доска объявлений из рук в руки в Екатеринбурге</h1>
+						  <div class="bg">
+								<i class="u1"></i>
+								<i class="u2"></i>
+								<i class="u3"></i>
+								<i class="u4"></i>
+								<ul>
+									<li>Поиск</li>
+									<li><input type="text" value="" /></li>
+								</ul>
+								<div class="but">
+									<span class="lt"></span>
+									<span class="rt"></span>
+									<input value="Поиск" type="submit" />
+								</div>
+						  </div>
+						</div>
+						
+						<div class="b-list">
+							<table>
+								<tr>
+								<td class="listbg">
+									<table>
+										<tr>
+											<td><b>Недвижимость</b></td><td class="sum">58517</td>
+										</tr>
+										<tr>
+											<td><a href="http://www.66.ru/realty/doska/live/">>&nbsp;жилая</a></td><td class="sum">57759</td>											
+										</tr>
+										<tr>	
+			                                <td><a href="http://www.66.ru/realty/doska/com/">>&nbsp;коммерческая</a></td><td class="sum">758</td>                                  
+					                    </tr>
+                    					<tr>
+                        					<td><a href="http://www.66.ru/auto/doska/"><b>Продажа автомобилей</b></a></td><td class="sum">7594</td>
+                            			</tr>
+                    					<tr>
+                        					<td>&nbsp;</td><td class="sum"></td>
+                            			</tr>
+                    					<tr>
+                        					<td>									
+												<a href="http://www.66.ru/doska/avto-moto-zapchasti/">авто/мото запчасти</a>
+            				                </td>
+                            				<td class="sum">1175</td>
+                            			</tr>
+                    					<tr>
+				                          <td><a href="http://www.66.ru/doska/antikvariat-kollekcii/">антиквариат/коллекции</a></td>
+                				            <td class="sum">180</td>
+                           				</tr>
+									    <tr>
+										  <td><a href="http://www.66.ru/doska/bytovaya-technika/">бытовая техника</a></td>
+										  <td class="sum">557</td>
+									   </tr>
+										<tr>
+											   <td><a href="http://www.66.ru/doska/gotoviy-business/">готовый бизнес</a></td>
+												<td class="sum">608</td>
+										</tr>						
+										<tr>
+												<td><a href="http://www.66.ru/doska/detskiy-mir/">детский мир</a></td>
+												<td class="sum">1241</td>
+										</tr>
+										<tr>
+										   <td><a href="http://www.66.ru/doska/jivotniye/">животные</a></td>
+											<td class="sum">985</td>
+										</tr>
+										<tr>
+											<td><a href="http://www.66.ru/doska/zdorovie/">здоровье</a></td>
+											<td class="sum">260</td>
+										</tr>
+						 				<tr>
+										   <td>	<a href="http://www.66.ru/doska/igroviye-pristavki/">игровые приставки</a></td>
+											<td class="sum">225</td>
+										</tr>
+										<tr>
+											<td><a href="http://www.66.ru/doska/kanctovary/">канцтовары</a></td>
+											<td class="sum">15</td>
+										</tr>
+										<tr>
+												<td><a href="http://www.66.ru/doska/knigi-jurnaly/">книги/журналы</a></td>
+												<td class="sum">138</td>
+										</tr>
+										<tr>
+											<td><a href="http://www.66.ru/doska/kommercheskiy-transport/">коммерческий транспорт</a></td>
+											<td class="sum">138</td>
+										</tr>						
+									</table>
+					            </td>
+								<td>
+									<table class="list">
+										<tr>
+												<td><a href="http://www.66.ru/doska/computers/">компьютеры</a></td>
+												<td class="sum">925</td>
+												</tr>
+										   <tr>
+											 <td>
+													<a href="http://www.66.ru/doska/krasota/">красота</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">586</td>
+										  </tr>
+										  <tr>
+											  <td>
+													<a href="http://www.66.ru/doska/mebel-dekor/">мебель/декор</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">799</td>
+										</tr>
+										<tr>
+												<td>
+												   <a href="http://www.66.ru/doska/mir-muziki/">мир музыки</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">261</td>
+										   </tr>
+										 <tr>
+												<td>
+													<a href="http://www.66.ru/doska/obrazovanie/">образование</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">320</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/odejda-obuv/">одежда/обувь</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">1411</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/orgtechnika/">оргтехника</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">139</td>
+										  </tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/ohota-rybalka/">охота/рыбалка</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">107</td>
+									   </tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/predlozhenia-turfirm/">предложения турфирм</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">497</td>
+										 </tr>
+									   <tr>
+												<td>
+													<a href="http://www.66.ru/doska/produtky-pitaniya/">продукты питания</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">133</td>
+										</tr>
+										<tr>
+												<td>
+													 <a href="http://www.66.ru/doska/promoborudovanie/">промоборудование</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">654</td>
+										  </tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/razvlecheniya/">развлечения</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">212</td>
+										</tr>
+										
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/remont/">ремонт</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">1515</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/ritualnye-uslugi/">ритуальные услуги</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">11</td>
+										</tr>
+										 
+										<tr>
+												<td><a href="http://www.66.ru/doska/sadovodstvo-rasteniya/">садоводство/растения</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">164</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/spec-technika/">спецтехника</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">323</td>
+										</tr>
+									</table>
+								</td>
+								
+								<td class="listbg">
+									<table class="list">
+										<tbody><tr>
+											
+												
+												<td>
+													
+													<a href="http://www.66.ru/doska/sport-sportinventar/">спорт/спортинвентарь</a>
+												</td>
+												<td class="sum">261</td>
+										</tr>
+										<tr>
+												 <td>
+													<a href="http://www.66.ru/doska/stroitelstvo/">строительство</a>
+												</td>
+												<td class="sum">1006</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/stroymaterialy/">стройматериалы</a>
+												</td>
+												<td class="sum">358</td>
+										 </tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/syrie-i-materialy/">сырьё и материалы</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">341</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/telephones/">телефоны</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">978</td>
+									</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/torgovoye-oborudovaniye/">торговое оборудование</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">304</td>
+										</tr>
+										 <tr>
+												<td>
+													<a href="http://www.66.ru/doska/transportnye-uslugi/">транспортные услуги</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">554</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/ukrasheniya/">украшения</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">92</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/uslugi-dlya-biznesa/">услуги для бизнеса</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">330</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/finance/">финансы</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">242</td>
+										</tr>
+										<tr>
+												<td>
+													 <a href="http://www.66.ru/doska/photo-video/">фото/видео</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">332</td>
+											
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/hoztovary/">хозтовары</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">96</td>
+										 </tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/ezoterika/">эзотерика</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">38</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/juridicheskie-uslugi/">юридические услуги</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">261</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/ezoterika/">эзотерика</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">38</td>
+										</tr>
+										<tr>
+												<td>
+													<a href="http://www.66.ru/doska/juridicheskie-uslugi/">юридические услуги</a>
+												</td>
+												<td class="b-rubrics__table__col-sum">261</td>
+										</tr>
+										
+									   </table>
+								</td>
+								
+					
+								</tr>
+							</tbody>
+							</table>
+        </div>
+					
+					<table class="baners">
+						<tr>
+							<td>
+								<a href="#"><img src="img/pages/doska/ai.gif" width="240" height="90" alt="" /></a>
+							</td>
+							<td>
+								<a href="#"><img src="img/pages/doska/ai.gif" width="240" height="90" alt="" /></a>
+							</td>
+						</tr>
+					</table>
+				
+				
+					<div class="head_line1">
+						<div class="top">
+							<ul>
+								<li class="active"><a href="http://www.66.ru/doska/?action_type=buy">всё <i class="lt"></i> <i class="rt"></i></a></li>
+								<li><a href="http://www.66.ru/doska/?action_type=buy">купля <i class="lt"></i> <i class="rt"></i></a></li>
+								<li><a href="http://www.66.ru/doska/?action_type=sell">продажа <i class="lt"></i> <i class="rt"></i></a></li>
+								<li><a href="http://www.66.ru/doska/?action_type=serv">услуга <i class="lt"></i> <i class="rt"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<table class="list_doska">
+						 <tbody>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								<td class="cost">
+									350 руб.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+	 
+					
+						<div class="head_line1">
+							<div class="bot">
+								<ul>
+									<li class="active"><a href="#">1 <i class="lb"></i> <i class="rb"></i></a></li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=2&amp;sort_by=updated"> 2 <i class="lb"></i> <i class="rb"></i></a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=3&amp;sort_by=updated">    3 <i class="lb"></i> <i class="rb"></i> </a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=4&amp;sort_by=updated" rel="nofollow">      ... <i class="lb"></i> <i class="rb"></i></a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=929&amp;sort_by=updated" rel="nofollow">    929 <i class="lb"></i> <i class="rb"></i></a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=930&amp;sort_by=updated" rel="nofollow">
+											930 <i class="lb"></i> <i class="rb"></i>
+										</a>
+									</li>
+									<li class="right">
+										на странице:
+										<select>
+											<option value="20" selected="selected">20&nbsp;</option>
+											<option value="30">30&nbsp;</option>
+											<option value="50">50&nbsp;</option>
+											<option value="70">70&nbsp;</option>
+											<option value="100">100&nbsp;</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+								
+								<br />
+					
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>	
+		<address>2010 - Городской портал <br /> Все права защищены</address>
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

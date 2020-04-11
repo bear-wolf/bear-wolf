@@ -1,0 +1,418 @@
+@import "fonts.css";
+
+html,
+body{
+    height: 100%;
+    display: block;
+}
+body {
+    color: #546A67;    
+}
+
+a:link,
+a:visited{
+    color: #546A67;
+    text-decoration: none;
+}
+
+.clear-padding{
+    padding: 0;
+}
+
+.clear-margin{
+    margin: 0;
+}
+
+ul{ padding: 0; margin: 0; overflow: hidden;}
+ul li{ list-style: none;}
+
+div{
+    margin: 0 auto;
+}
+
+body > .container-fluid{
+    height: 100%;
+    background: #fafafa;
+}
+
+/* Struct-------------------------------------------------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Struct===================================================*/
+
+
+.top-line{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #e6e6e6;
+    height: 30px;
+}
+
+header{
+    background: #80af65;
+    min-height: 60px;
+}
+
+.navbar-brand{
+    background: url("../images/logo.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 15px;
+}
+
+.first-last{
+    margin: 15px 15px 0 0;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    background: url("../images/clear.png") no-repeat;
+    padding-left: 40px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.title-big{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.title-big .name{
+    height: 40px;
+    height: 40px;
+    font-family: AvenirNextLTPro-Medium;
+    line-height: 40px;
+    padding-left: 57px;
+    display: inline-block;
+    background: url("../images/fild.png") no-repeat;
+}
+.icon-question{
+    background: url("../images/question.png") no-repeat;    
+    height: 36px;
+    line-height: 36px;    
+    width: 36px;
+    margin: 32px 30px 0 0;
+ }
+
+.groundwork{    
+    color: white;
+    background: #364442;
+}
+
+
+.title-big a.active{
+    color:#80AF65;
+}
+
+.my-grid div{
+    padding: 0;    
+}
+.title-big.action .command a{ 
+    margin-left: 9%;
+    display: inline-block;    
+    font-family: AvenirNextLTPro-Medium;
+    font-size: 24px;
+}
+.title-big.action .command a:first-child{ margin-left: 0px!important;}
+
+.list-tabs{ display: none;}
+
+.list-tabs.carousel{ min-height: 494px; }
+
+.list-tabs .carousel-indicators li{
+    margin-left: 30%;
+    display: block;
+    font-family: AvenirNextLTPro-Medium;
+    font-size: 24px;
+    background: none;
+    width: auto;
+    height: auto;
+    text-indent: 0;   
+    float: left;
+}
+.list-tabs .carousel-indicators {
+    bottom: inherit;
+    width: 22%;
+    position: relative;
+    left: initial;
+    margin: 0 auto;
+}
+.list-tabs .carousel-indicators li:first-child{
+    margin-left: 0!important;    
+}
+.list-tabs .carousel-indicators li.active {
+    color: #80AF65;
+}
+
+.title{
+    height: 75px;
+    line-height: 75px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fafafa;
+    text-align: center;
+    font-family: AvenirNextLTPro-Medium;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.right-side{
+    border-left: 1px solid #e6e6e6;
+}
+
+.row-no-padding {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row-no-padding [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+}
+
+/*current-game*/
+.name-of-game{
+    line-height: 39px;
+    border-radius: 6px;
+    border:1px solid #e5e5e5;
+    padding: 0 10px;
+    width: auto;
+    color: #808080;
+    font-family: AvenirNextLTPro-Regular;
+    font-size: 24px;
+    display: inline-block;
+    text-transform: uppercase;    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.current-game .count{
+    margin: 0 auto;
+    max-width: 530px;
+}
+.current-game .count div{
+    font-family: AvenirNextLTPro-Medium;
+    font-size: 100px;
+    color: #546A67;
+    line-height: 100px;
+}
+.current-game .team-a,
+.current-game .team-b{
+    width: 100px;
+    height: 100px;    
+    margin-top: -100px;
+    display: block;
+}
+.current-game .team-b{
+    background: url("../images/group-b.png") no-repeat;
+}
+.current-game .team-a{
+    background: url("../images/group-a.png")  no-repeat;
+}
+.current-game .clock{
+    font-family: AvenirNextLTPro-Medium;
+    font-size: 80px;
+    color: #8DAFB8;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-family: AvenirNextLTPro-Demi;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+/*current-game========*/
+
+/*next-game*/
+.next-game{ border-bottom: 1px solid #e6e6e6;}
+.next-game .count{
+    margin: 0 auto;
+    max-width: 170px;
+}
+.next-game .count div{
+    font-family: AvenirNextLTPro-Demi;
+    font-size: 24px;    
+    color: #546A67;
+    line-height: 40px;
+}
+.next-game .team-a,
+.next-game .team-b{
+    width: 40px;
+    height: 40px;    
+    margin-top: -40px;
+    display: block;
+}
+.next-game .team-a,
+.next-game .team-b{
+    background: url("../images/group-small.png") no-repeat -80px top;
+}
+.next-game .team-b{
+    background-position: right top;
+}
+/*next-game==============*/
+
+.inner-body{
+    background: white;
+}
+
+/*activity*/
+.activity .space-results{ height: 0; overflow: hidden;}
+.activity li{
+    border-bottom: 1px solid #e6e6e6;
+    min-height: 102px;
+    padding: 31px 30px 0 30px;
+}
+.activity li .count{
+    max-width: 194px;
+}
+
+.activity-list .count {
+    margin: 0 auto;
+    max-width: 194px;
+}
+.activity-list .count div {
+    font-family: AvenirNextLTPro-Demi;
+    font-size: 24px;
+    color: #546A67;
+    line-height: 40px;
+}
+
+.activity-list .name-of-game{
+    margin: -41px 0 0 0;    
+    cursor: pointer;
+}
+
+.activity-list .live{
+    font-size: 26px;
+    color: #f16a63;
+    font-family: AvenirNextLTPro-Regular;
+    text-transform: uppercase;
+    margin-top: -41px;
+}
+.activity-list .lasts{
+    font-family: AvenirNextLTPro-Regular;
+    color: #ccc;
+    margin-top: -36px;
+    font-size: 22px;
+}
+
+.icon-small-a,
+.icon-small-b,
+.icon-small-c,
+.icon-small-d{
+    width: 40px;
+    height: 40px;        
+    display: block;
+    background: url("../images/group-small.png") no-repeat;
+}
+.icon-small-a{ background-position: left top;}
+.icon-small-b{ background-position: -40px top;}
+.icon-small-c{ background-position: -80px top; }
+.icon-small-d{ background-position: right top; }
+
+
+.activity-list .icon-small-a,
+.activity-list .icon-small-b,
+.activity-list .icon-small-c,
+.activity-list .icon-small-d{
+    margin-top: -40px;
+}
+
+ul.game-results{
+    margin-top: 26px;
+}
+ul.game-results li{
+    padding:2px 0 0 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom:none;
+    height: auto;
+    line-height: initial;
+    min-height: 90px;
+}
+ul.game-results .count div i{
+    font-style: normal!important;
+    color: #80AF65!important;        
+}
+.game-results .time{
+    display: block;
+    color: #8DAFB8;
+    margin-top: -46px;
+    font-size: 20px;
+    font-family: AvenirNextLTPro-Regular;
+}
+.game-results .added{
+    color: #808080;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+.game-results .added i{
+    font-style: normal!important;
+    color: #80AF65!important;        
+}
+.full-time{
+    font-size: 20px;
+    color: #546A67;
+    font-family: AvenirNextLTPro-Demi;
+    margin-top: -46px;
+    text-transform:uppercase;
+}
+
+.activity-scrollbar .mCSB_outside + .mCSB_scrollTools {
+    right: 0;
+}
+.activity-scrollbar .mCS-inset.mCSB_scrollTools .mCSB_draggerRail,
+.activity-scrollbar .mCS-inset-dark.mCSB_scrollTools .mCSB_draggerRail, 
+.activity-scrollbar .mCS-inset-2.mCSB_scrollTools .mCSB_draggerRail, 
+.activity-scrollbar .mCS-inset-2-dark.mCSB_scrollTools .mCSB_draggerRail,
+.activity-scrollbar .mCS-inset-3.mCSB_scrollTools .mCSB_draggerRail,
+.activity-scrollbar .mCS-inset-3-dark.mCSB_scrollTools .mCSB_draggerRail {
+    width: 6px; 
+}
+/*activity==============*/
+
+
+/*grid-calendar*/
+.grid-calendar{
+    max-width: 410px;
+    margin-top: 17px;
+}
+.grid-calendar .row{ margin-bottom: 20px;}
+
+.grid-calendar .row:last-child {
+    margin-bottom: 28px;
+}
+
+.grid-calendar .row div:last-child{
+    margin-right: 0;
+    color: #80AF65!important;     
+    font-size: 26px;
+    font-family: AvenirNextLTPro-Demi;
+}
+
+.grid-calendar .row:first-child div:last-child{
+    text-align: center;
+    line-height: 40px;    
+    float: left;
+}
+.grid-calendar .row div{
+    width: 40px;
+    height: 40px;
+    color: #546A67!important;
+    font-size: 24px!important;
+    font-family: AvenirNextLTPro-Regular;
+    text-align: center;
+    line-height: 40px;    
+    float: left;
+    margin-right: 26px;
+}
+.grid-calendar .row:first-child div,
+.grid-calendar .row div:first-child{
+    color: #999!important;
+    font-size: 20px!important;
+    font-family: AvenirNextLTPro-Medium!important;    
+}
+/*grid-calendar==============*/

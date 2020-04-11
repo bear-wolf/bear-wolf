@@ -1,0 +1,78 @@
+<div class="content-block dma-common-info-content">
+  <div class="part-common-info">
+    <div class="content-header">
+      <div class="row">
+        <div class="col-lg-12 title-block">
+          <h3 class="title">Общая информация</h3>
+          <span class="sub-title">
+              Заполните основную информацию об активности <br>
+              Затем добавьте SKU и укажите для каждого из них условия по элементам поддержки в аптеках.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-component">
+      <form *ngIf="form" [formGroup]="form" class="rows-block">
+
+        <div class="row-item period-content">
+          <span>
+            <span class="first-level">Период активности:</span>
+          </span>
+          <span>
+            <app-form-controls-period
+                    formControlName="activityPeriod"
+                    [labels]="true">
+            </app-form-controls-period>
+
+             <app-form-controls-select
+                     class="during-budget"
+                     formControlName="budgetDuration"
+                     placeholder=""
+                     label="Длительность для бюджета:"
+                     [options]="periodOptions"
+                     [errors]="form.get('budgetDuration').errors"
+                     [hideErrors]="true">
+              </app-form-controls-select>
+          </span>
+        </div>
+
+        <div class="row-item">
+          <app-form-controls-label
+                  class="controls-input-point w-100"
+                  label="Общее количество точек АС:"
+                  formControlName="countPoints">
+          </app-form-controls-label>
+        </div>
+
+        <div class="row-item">
+          <app-form-controls-input
+                  formControlName="pointsInActivity"
+                  placeholder=""
+                  class="controls-input-activity-pharmacies w-100"
+                  label="Количество точек, участвующих в активности:"
+                  [hideErrors]="true"
+                  [errors]="form.get('pointsInActivity').errors">
+          </app-form-controls-input>
+        </div>
+
+        <div class="row-item">
+          <span>
+            <label class="first-level">Города проведения:</label>
+          </span>
+          <span class="two-column">
+            <app-form-controls-input
+                    class="controls-input-cities"
+                    formControlName="cities"
+                    placeholder="">
+            </app-form-controls-input>
+            <app-form-controls-check
+                    label="Учитывать НДС"
+                    formControlName="useNds">
+            </app-form-controls-check>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

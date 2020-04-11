@@ -1,0 +1,408 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script class="jsbin" src="scripts/jquery-2.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/question.css" />
+</head>
+<body>
+    <audio id="audioTag" autoplay="autoplay" hidden="hidden" src="audio/VO 2.mp3"></audio>
+    <div id="page-1" class="Page InteracivePage">
+        <h1 class="Animation">
+            <span class="1st">
+                <i>You will now be asked seven questions about the video you’ve just seen.
+                <br />
+                After each question appears, you will have 10 seconds to type your answer.</i>
+                <i class="bottom">How many out of the seven did you answer correctly? <br />While you were paying attention to the dialogue, did you notice anything unusual happening?</i>
+            </span>
+        </h1>
+        <table class="Panel1">
+            <tr>
+                <td class="tdFirst">
+                    <div data-id="1" class="QuestionBlock">
+                        <h2 class="Name">What is the name of Brett’s wife?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="Brenda" /></li>
+                            <li><a class="Button Active" id="A1" href="javascript:submitAnswer(1);void(0);">Submit</a></li>
+                            <li><span data-id="1" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"Brenda"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"Brenda"</b></h2>
+                        </div>
+                    </div>
+                    <div data-id="2" class="QuestionBlock">
+                        <h2 class="Name">What was the name of the dealership that Brett and his wife went to?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="Groatstown Nissan" /></li>
+                            <li><a class="Button Active" id="A2" href="javascript:submitAnswer(2);void(0);">Submit</a></li>
+                            <li><span data-id="2" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"Groatstown Nissan"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"Groatstown Nissan"</b></h2>
+                        </div>
+                    </div>
+                    <div data-id="3" class="QuestionBlock">
+                        <h2 class="Name">What make and model of car did Brett really like?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="Nissan Altima" /></li>
+                            <li><a class="Button Active" id="A3" href="javascript:submitAnswer(3);void(0);">Submit</a></li>
+                            <li><span data-id="3" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"Nissan Altima"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"Nissan Altima"</b></h2>
+                        </div>
+                    </div>
+                    <div data-id="4" class="QuestionBlock">
+                        <h2 class="Name">What is the name of Jonathan’s son?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="Aiden" /></li>
+                            <li><a class="Button Active" id="A4" href="javascript:submitAnswer(4);void(0);">Submit</a></li>
+                            <li><span data-id="4" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"Aiden"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"Aiden"</b></h2>
+                        </div>
+                    </div>
+                </td>
+                <th class="thLast">
+                    <div data-id="5" class="QuestionBlock">
+                        <h2 class="Name">What was the final score of the Little League game?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="13-3" /></li>
+                            <li><a class="Button Active" id="A8" href="javascript:submitAnswer(5);void(0);">Submit</a></li>
+                            <li><span data-id="5" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"13-3"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"13-3"</b></h2>
+                        </div>
+                    </div>
+
+                    <div data-id="6" class="QuestionBlock">
+                        <h2 class="Name">How old is Jonathan’s son?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="11" /></li>
+                            <li><a class="Button Active" id="A5" href="javascript:submitAnswer(6);void(0);">Submit</a></li>
+                            <li><span data-id="6" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"11"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"11"</b></h2>
+                        </div>
+                    </div>
+
+                    <div data-id="7" class="QuestionBlock">
+                        <h2 class="Name">What position does Jonathan’s son play?</h2>
+                        <ul>
+                            <li>
+                                <input spellcheck="false" type="text" data-is-correct="shortstop" /></li>
+                            <li><a class="Button Active" id="A6" href="javascript:submitAnswer(7);void(0);">Submit</a></li>
+                            <li><span data-id="7" class="timer">00:10</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="testResults">
+                            <h2 class="true">That’s correct!</h2>
+                            <h2 class="false">The correct answer is <b>"shortstop"</b></h2>
+                            <h2 class="timeIsOver">The correct answer is <b>"shortstop"</b></h2>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="page-2" class="Page InteracivePage" style="display: none;">
+        <h1 class="Animation">
+            <span class="2nd">
+                <i>There were actually seven major changes that occurred during this clip! <br />See if you can pick out the seven changes that occurred by tapping on each one.</i>
+                <i class="bottom">Here’s what really changed in the video…</i>
+            </span>
+        </h1>
+        <div class="TableOfQuestionBlock">
+            <table>
+                <tr>
+                    <td class="tdFirst">
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_6">
+                                <h2 class="Name">Jonathan's metal fork changed into a plastic spoon.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="false" class="QuestionBlock Base">
+                            <div>
+                                <h2 class="Name">Jonathan’s blue polo shirt changed into a red T-shirt</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_7">
+                                <h2 class="Name">Brett’s white T-shirt changed into a gray T-shirt.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="false" class="QuestionBlock Base">
+                            <div>
+                                <h2 class="Name">An empty chair disappeared from the table.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_8">
+                                <h2 class="Name">Jonathan’s wedding ring moved from his left hand to his right hand.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="false" class="QuestionBlock Base">
+                            <div>
+                                <h2 class="Name">Jonathan went from drinking seltzer with his lunch to iced tea.</h2>
+                            </div>
+                        </div>
+                    </td>
+                    <th class="thLast">
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_9">
+                                <h2 class="Name">Brett's can of soda changed into a bottle of water.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_10">
+                                <h2 class="Name">Jonathan and Brett switched places.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="false" class="QuestionBlock Base">
+                            <div>
+                                <h2 class="Name">The lighting in the room flickered</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="false" class="QuestionBlock Base">
+                            <div>
+                                <h2 class="Name">Brett’s sandwich turned into a slice of pizza.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_11">
+                                <h2 class="Name">Brett’s sandwich went from half-eaten to whole again.</h2>
+                            </div>
+                        </div>
+                        <div data-is-correct="true" class="QuestionBlock Base">
+                            <div id="vo_12">
+                                <h2 class="Name">Jonathan’s light blue polo shirt changed into a navy blue polo shirt.</h2>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+            <a class="Button" id="SubmitAnswers" onclick="submitPage2(this)" href="javascript:void(0);">Submit answers</a>
+            <div class="testResults">
+                <!--<h2 class="blue">Don't believe us? Press, "Play" to watch this video on its entirety again.</h2>-->
+                <h2 class="blue">If you didn’t notice all or even one of these changes, don’t worry! You’re not alone!</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var timeoutTimer = null;
+    var Hidden = null;
+    var countActive = 0;
+    var audio = $('#audioTag');
+
+    $(function () {
+        $(".TableOfQuestionBlock .Base").bind("click", function () {
+            if (Hidden != null) return;
+
+            var t = $(this);
+            var inner = t.find("div");
+            var c = "Active";
+            var btn = $("#SubmitAnswers");
+            var q = "QuestionBlock";
+            if (inner.hasClass(c)) {
+                if (countActive == 0) return;
+
+                inner.removeClass(c);
+                t.addClass(q);
+                countActive--;
+                if ($(btn).hasClass(c)) $(btn).removeClass(c);
+            }
+            else {
+                if (countActive == 7) return;
+                if (countActive == 6) { $(btn).addClass(c); }
+                countActive++;
+                inner.addClass(c);
+                t.removeClass(q);
+            }
+        });
+    });
+
+    audio.bind('ended', function () {
+        SelectQuestionBlock(1);
+    });
+
+    function timerTick(id) {
+        var timer = $('.timer[data-id="' + id + '"]');
+        var time = timer.text().split(':');
+
+        var m = parseInt(time[0]);
+        var s = parseInt(time[1]);
+
+        var ticks = s + m * 60 - 1;
+
+        m = parseInt(ticks / 60);
+        s = parseInt(ticks % 60);
+
+        timeoutTimer = setTimeout(function () {
+            if (ticks < 0) {
+                timer.closest('.QuestionBlock').find('.testResults').data('time-class', 'timeIsOver');
+                clearTimeout(timeoutTimer);
+            }
+            else {
+                timer.text((m < 10 ? '0' : '') + m.toString() + ':' + (s < 10 ? '0' : '') + s.toString());
+                timerTick(id);
+            }
+        }, 1000);
+    }
+
+    function submitAnswer(id) {
+        var current = $('.Current');
+        if (current.data('id') != id) return false;
+
+        $('.QuestionBlock').removeClass('Current');
+
+        if (current[0] != null && current[0] != undefined) {
+            var btn = current.find('.Button');
+            if (btn.hasClass('Active')) {
+                btn.removeClass('Active');
+
+                var answTb = current.find('input[type="text"]');
+                var testResBlock = current.find('.testResults');
+
+                if (testResBlock.data('time-class')) testResBlock.addClass('timeIsOver');
+
+                if (!testResBlock.hasClass('timeIsOver')) {
+                    if (answTb.val().toString().trim().toLowerCase() == answTb.data('is-correct').toString().trim().toLowerCase()) testResBlock.addClass('true');
+                    else testResBlock.addClass('false');
+                }
+
+                answTb.attr('disabled', 'disabled');
+
+                clearTimeout(timeoutTimer);
+
+                var nextId = parseInt(id) + 1;
+                SelectQuestionBlock(nextId);
+            }
+        }
+    }
+
+    function submitPage2(btn) {
+        if (countActive != 7) return;
+
+        audio.unbind();
+        audio[0].src = "audio/VO 5.mp3";
+        audio[0].play();
+        
+        audio.bind('ended', function () {
+            var num = parseInt(audio.attr('src').split('.')[0].split(' ')[1]) + 1;
+
+            $('.TableOfQuestionBlock div').removeClass('Sound');
+            var current = $('#vo_' + num);
+            if (current[0] != null && current[0] != undefined) current.addClass('Sound');
+
+            if (num > 12) {
+                setTimeout(function () {
+                    audio.unbind();
+                    audio[0].src = "audio/VO 14.mp3";
+                    audio[0].play();
+                }, 2000);
+                return false;
+            }
+            
+            audio[0].src = "audio/VO " + num + ".mp3";
+            audio[0].pause();
+            audio[0].load();
+            audio[0].play();
+        });
+
+        var e = $(".TableOfQuestionBlock");
+        var b = $(".Base[data-is-correct='false'] div");
+        Hidden = true;
+        $(e).find(".testResults").addClass("true");
+        $(e).find(b).addClass("Hidden");
+        $(e).find(b).find("h2").fadeOut({ height: 0 });
+
+        $(btn).hide();
+        $("h1.Animation span.2nd").animate({ top: "-110px" }, 1000);
+    }
+
+    function SelectQuestionBlock(id) {
+        var next = $('.QuestionBlock[data-id="' + id + '"]');
+        if (next[0] == null || next[0] == undefined) {
+            $("h1.Animation span.1st").animate({ top: "-110px" }, 1000);
+            audio.unbind();
+            audio[0].src = "audio/VO 3.mp3";
+            audio[0].play();
+            
+            setTimeout(function () {
+                var height = $(window).height();
+                $('#page-1').animate({ top: -height }, 1000, function () { $('#page-1').hide(); });
+                $('#page-2').css({ top: height }).show().animate({ top: 0 }, 1000);
+
+                setTimeout(function () {
+                    audio.unbind();
+                    audio[0].src = "audio/VO 4.mp3";
+                    audio[0].play();
+                }, 2000);
+            }, 8000);
+        } else {
+            next.addClass('Current Visible');
+            timerTick(parseInt(id));
+        }
+    }
+
+    function GetValues() {
+        var obj = { page1: [], page2: [] };
+
+        $('#page-1 div.QuestionBlock').each(function() {
+            var t = $(this);
+            var q = t.find('.Name').text();
+            var answ = t.find('input').val().toString().trim().toLowerCase();
+            var correctAnsw = t.find('input').data('is-correct').toString().trim().toLowerCase();
+            var isCorrect = (answ == correctAnsw);
+            var timer = t.find('.timer').text();
+            var timeIsOut = t.find('.testResults').hasClass('timeIsOver');
+
+            obj.page1.push({ question: q, userAnswer: answ, correctAnswer: correctAnsw, isCorrect: isCorrect, timerValue: timer, timeIsOut: timeIsOut });
+        });
+
+        $('#page-2 div[data-is-correct="true"] div.Active').each(function() {
+            obj.page2.push({ selectedBoxText: $(this).find('.Name').text() });
+        });
+        
+        arrJSON = JSON.stringify(obj);
+        return encodeURIComponent(arrJSON);
+    };
+
+    function RestoreState(JSONstring) {
+        var obj = $.parseJSON(decodeURIComponent(JSONstring));
+        try {
+        } catch (e) { }
+    }
+</script>
+</html>

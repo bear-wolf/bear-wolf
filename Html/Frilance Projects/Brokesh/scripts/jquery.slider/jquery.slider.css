@@ -1,0 +1,389 @@
+/*Navigation*/
+.navigation
+{
+    position: relative;
+}
+
+    .navigation .arrowleft.last
+    {
+        background-position: left bottom;
+        display: none;
+    }
+
+    .navigation .arrowright.last
+    {
+        background-position: right bottom;
+        display: none;
+    }
+
+    .navigation .arrowleft:hover
+    {
+        background-position: left bottom;
+    }
+
+    .navigation .arrowright:hover
+    {
+        background-position: right bottom;
+    }
+
+    .navigation .arrowleft,
+    .navigation .arrowright
+    {
+        width: 55px;
+        height: 96px;
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 105px;
+    }
+
+    .navigation .arrowleft
+    {
+        left: -85px;
+    }
+
+.nav-slider .absolute
+{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.navigation .arrowright
+{
+    right: 10px;
+}
+
+.nav-slider .baserelative
+{
+    padding: 0 0px;
+}
+
+.nav-slider .relative
+{
+    position: relative;
+    overflow: hidden;
+    height: 245px;
+    z-index: 500;
+}
+
+.pagination a
+{
+    display: inline-block;
+    height: 38px;
+    width: 17px;
+    position: relative;
+    margin: 0 1px 0 2px;
+    font-size: 0;
+}
+
+    .pagination a:hover,
+    .pagination a.active
+    {
+        background-position: right top;
+    }
+
+    .pagination a.active
+    {
+        cursor: default;
+    }
+
+/*.other-slider - slider*/
+.other-slider
+{
+    height: 250px;
+    z-index: 0;
+    position: relative;
+}
+
+    .other-slider .baserelative
+    {
+        padding: 0;
+    }
+
+    .other-slider .absolute
+    {
+        top: 0px!important;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 250px;
+    }
+
+        .other-slider .absolute ul li
+        {
+            position: relative;
+            width: 189px;
+            height: 250px;
+            text-align: left;
+            font-size: 11px;
+            font-family: Arial;
+            text-align: left;
+            float: left;
+        }
+
+    .other-slider .navigation
+    {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        height: 275px;
+    }
+
+        .other-slider .navigation .arrowleft,
+        .other-slider .navigation .arrowright
+        {
+            width: 30px;
+            height: 52px;
+            display: block;
+            text-decoration: none;
+            position: absolute;
+            top: 65px;
+            background: url(images/arrow.png) no-repeat left top;
+        }
+
+        .other-slider .navigation .arrowleft
+        {
+            background-position: left top;
+            left: 0px;
+        }
+
+            .other-slider .navigation .arrowleft:hover
+            {
+                background-position: left bottom;
+            }
+
+            .other-slider .navigation .arrowleft.last
+            {
+                display: none;
+            }
+
+        .other-slider .navigation .arrowright.last
+        {
+            display: none;
+        }
+
+        .other-slider .navigation .arrowright:hover
+        {
+            background-position: right bottom;
+        }
+
+        .other-slider .navigation .arrowright
+        {
+            background-position: right top;
+            right: 0px;
+        }
+
+    .other-slider .sl-inner
+    {
+        margin: 0 48px;
+    }
+
+    .other-slider .relative
+    {
+        overflow: hidden;
+        position: relative;
+        z-index: 500;
+        height: 250px;
+    }
+/*.product-slider - slider =====================*/
+
+
+
+
+
+/*.default-slider*/
+.default-slider .relative
+{
+    height: 517px;
+    margin: 0;
+}
+
+.default-slider .baserelative
+{
+    padding: 0;
+}
+
+.default-slider .absolute ul li,
+.default-slider .absolute > ul li
+{
+    width: 951px;
+    height: 517px;
+    float: left;
+    background: #0072BB;
+}
+
+.default-slider .òavigation
+{
+    position: absolute;
+    left: 0;
+    width: 1140px;
+    top: 0px;
+}
+
+.default-slider .navigation .arrowleft,
+.default-slider .navigation .arrowright
+{
+    position: absolute;
+    width: 97px;
+    height: 93px;
+    font-size: 0;
+    top: 387px;
+    z-index: 999;
+    color:#80D7F7;
+}
+
+.default-slider .navigation .arrowleft
+{
+    left: 2px;
+    background-position: 0 0;
+}
+
+.default-slider .navigation .arrowright
+{
+    right: 2px;
+    width: 99px;
+    background-position: right top!important;
+}
+/*.default-slider*/
+
+
+
+/*.default-slider*/
+.object-slider
+{
+    position: relative;
+}
+
+    .object-slider .relative
+    {
+        height: 71px;
+        margin: 0;
+    }
+
+    .object-slider .baserelative
+    {
+        padding: 0 25px;
+    }
+
+    .object-slider .absolute ul li
+    {
+        width: 75px;
+        height: 71px;
+        float: left;
+        list-style: none;
+        background: none;
+        padding: 0!important;
+    }
+
+    .object-slider .navigation
+    {
+        position: absolute;
+        left: 0;
+        width: 353px;
+        top: 0px;
+    }
+
+        .object-slider .navigation .arrowleft,
+        .object-slider .navigation .arrowright
+        {
+            position: absolute;
+            width: 18px;
+            height: 31px;
+            font-size: 0;
+            top: 20px;
+            z-index: 999;
+            background: url(images/arrow-small.png) no-repeat;
+        }
+
+        .object-slider .navigation .arrowleft
+        {
+            left: 0px;
+            background-position: 0 0;
+        }
+
+        .object-slider .navigation .arrowright
+        {
+            right: 0px;
+            background-position: right top!important;
+        }
+
+/*slidersumary*/
+.slidersumary
+{
+    position: relative;
+    margin-bottom: 70px;
+}
+
+    .slidersumary .relative
+    {
+        height: 120px;
+        margin: 0;
+    }
+
+    .slidersumary .baserelative
+    {
+        padding: 0 45px;
+    }
+
+    .slidersumary .absolute ul li
+    {
+        width: 127px;
+        height: 120px;
+        float: left;
+        list-style: none;
+        background: none;
+        padding: 0!important;
+    }
+
+    .slidersumary .navigation
+    {
+        position: absolute;
+        left: 0;
+        width: 848px;
+        top: 0px;
+    }
+
+        .slidersumary .navigation .arrowleft,
+        .slidersumary .navigation .arrowright
+        {
+            width: 30px;
+            height: 52px;
+            display: block;
+            text-decoration: none;
+            position: absolute;
+            top: 34px;
+            background: url(images/arrow.png) no-repeat left top;
+        }
+
+        .slidersumary .navigation .arrowleft
+        {
+            left: 0px;
+            background-position: 0 0;
+        }
+
+            .slidersumary .navigation .arrowright.last,
+            .slidersumary .navigation .arrowleft.last
+            {
+                display: none;
+            }
+
+        .slidersumary .navigation .arrowright:hover
+        {
+            background-position: right bottom!important;
+        }
+
+        .slidersumary .navigation .arrowleft:hover
+        {
+            background-position: left bottom!important;
+        }
+
+        .slidersumary .navigation .arrowright
+        {
+            right: 0px;
+            background-position: right top!important;
+        }
+/*slidersumary==========*/

@@ -1,0 +1,151 @@
+<form [formGroup]="form" class="dma-sku-content">
+  <div formArrayName="skuBlocks">
+    <div *ngFor="let sku of form.get('skuBlocks')['controls']; let i = index" class="content-block">
+      <h3>
+        <span>SKU {{i + 1}}</span>
+
+        <div class="command-block mb-1">
+          <a (click)="onPlus()"
+             class="ico ico-plus">
+            <i class="fa fa-plus"></i>
+          </a>
+          <a (click)="onMinus(i)"
+             class="ico ico-minus">
+            <i class="fa fa-minus"></i>
+          </a>
+        </div>
+      </h3>
+
+      <div [formGroup]="sku">
+        <div class="row title-border-gray">
+          <div class="col-2 item-1">
+             <div>
+               <div class="text-bold">Наименование</div>
+               <app-form-controls-autocomplete
+                       formControlName="sku"
+                       placeholder="Начните вводить"
+                       [suggestions]="filteredSkuList"
+                       (completeMethod)="searchSku($event)"
+                       [hideErrors]="true"
+                       [errors]="sku.get('sku').errors">
+               </app-form-controls-autocomplete>
+             </div>
+            <div>
+              <div class="text-bold">Проект</div>
+              <app-form-controls-select
+                      formControlName="dmaProject"
+                      placeholder="Выберите проект"
+                      [options]="skuProjectOptions"
+                      [errors]="sku.get('dmaProject').errors"
+                      [hideErrors]="true"
+                      class="block">
+              </app-form-controls-select>
+            </div>
+          </div>
+          <div class="col-1 item-2">
+            <div>
+              <div class="text-bold">Бренд:</div>
+              <div>{{sku.get('sku').value && sku.get('sku').value['brand'] ? sku.get('sku').value['brand']['name'] : '-'}}</div>
+            </div>
+            <div>
+              <div class="text-bold">Цена DDP:</div>
+              <div>{{sku.get('sku').value ? sku.get('sku').value['priceDDP'] : '-'}}</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="plate-block">
+              <label>Цена при ком-ии, р:</label>
+
+              <div class="d-flex justify-content-between">
+                <div>
+                  <div>Начало</div>
+                  <app-form-controls-input
+                          formControlName="priceStart"
+                          placeholder="Введите цену"
+                          [hideErrors]="true"
+                          [errors]="sku.get('priceStart').errors">
+                  </app-form-controls-input>
+                </div>
+                <div>
+                  <div>Конец</div>
+                  <app-form-controls-input
+                          formControlName="priceEnd"
+                          placeholder="Введите цену"
+                          [hideErrors]="true"
+                          [errors]="sku.get('priceEnd').errors">
+                  </app-form-controls-input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="plate-block">
+              <label>Размещение POSM</label>
+
+              <app-form-controls-textarea
+                      formControlName="posmPosition"
+                      placeholder="Должны быть размещены материалы 'Название материала' в 1068 точках"
+                      [hideErrors]="true"
+                      [errors]="sku.get('posmPosition').errors">
+              </app-form-controls-textarea>
+            </div>
+
+            <app-form-controls-check
+                    class="communication"
+                    label="Коммуникация условий через первопрестольников"
+                    formControlName="conditionsCommunication">
+            </app-form-controls-check>
+          </div>
+          <div class="col-3">
+            <div class="plate-block">
+              <app-form-controls-textarea
+                      label="Обучение фармацевтов"
+                      formControlName="pharmacistTraining"
+                      placeholder="Тема обучения"
+                      [hideErrors]="true"
+                      [errors]="sku.get('pharmacistTraining').errors">
+              </app-form-controls-textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-5">
+            <div class="plate-block">
+              <app-form-controls-input
+                      class="controls-input-additional-accommodation"
+                      formControlName="additionalAccommodation"
+                      [errors]="sku.get('additionalAccommodation').errors"
+                      [hideErrors]="true"
+                      label="Дополнительное размещение в прикассовой зоне или промо зоне, количество фейсингов">
+              </app-form-controls-input>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="plate-block">
+              <app-form-controls-input
+                      class="controls-input-additionalCreationTZ"
+                      formControlName="additionalCreationTZ"
+                      [hideErrors]="true"
+                      [errors]="sku.get('additionalCreationTZ').errors"
+                      label="Создание доп. ТЗ, уп.">
+              </app-form-controls-input>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="plate-block">
+              <app-form-controls-input
+                      class="controls-input-additionalCalculationInTheCategory"
+                      formControlName="additionalCalculationInTheCategory"
+                      placeholder="Введите цену"
+                      [hideErrors]="true"
+                      [errors]="sku.get('additionalCalculationInTheCategory').errors"
+                      label="Дополнительная выкладка в категории">
+              </app-form-controls-input>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

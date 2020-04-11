@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>index.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/skin.css">
+    <!--<script type="text/javascript" src="js/jquery.imgr.js"></script>--> 
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>  
+    <!--<script type="text/javascript" src="js/PIE.js"></script>-->
+	<script type="text/javascript" src="js/java.js"></script>
+	<script type="text/javascript"> 
+
+        if ($.browser.opera) document.writeln("<link rel='stylesheet' type='text/css' href='css/opera.css'>");
+        if ($.browser.msie) document.writeln("<link rel='stylesheet' type='text/css' href='css/ie7.css'>");        
+        if ($.browser.mozilla) document.writeln("<link rel='stylesheet' type='text/css' href='css/mozilla.css'>");
+
+        if ($.browser.safari) {
+            var userAgent = navigator.userAgent.toLowerCase();
+            jQuery.browser = {
+                version: (userAgent.match(/.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/) || [])[1],
+                chrome: /chrome/.test(userAgent),
+                safari: /webkit/.test(userAgent) && !/chrome/.test(userAgent),
+                opera: /opera/.test(userAgent),
+                msie: /msie/.test(userAgent) && !/opera/.test(userAgent),
+                mozilla: /mozilla/.test(userAgent) && !/(compatible|webkit)/.test(userAgent)
+            };
+            if ($.browser.safari) { document.writeln("<link rel='stylesheet' type='text/css' href='css/safary.css'>"); }
+            else { document.writeln("<link rel='stylesheet' type='text/css' href='css/chrome.css'>"); }
+        }
+
+        $(function() {            
+            var empty = $(".Empty li.active").index() + 1;
+            var HotTo = $(".HotTo li.active").index() + 1;
+            var NewsTo = $(".NewsTo li.active").index() + 1;
+            var count = 1;
+            $(".Empty div.inform").each(function() {
+                $(this).attr("id", "div" + count);
+                count++;
+            })
+            count = 1;
+            $(".HotTo div.inform").each(function() {
+                $(this).attr("id", "div" + count);
+                count++;
+            })
+            count = 1;
+            $(".NewsTo div.inform").each(function() {
+                $(this).attr("id", "div" + count);
+                count++;
+            })
+
+            $(".Empty #div" + empty).attr("style", "display:block");
+            $(".HotTo #div" + empty).attr("style", "display:block");
+            $(".NewsTo #div" + empty).attr("style", "display:block");
+
+            $(".Empty div.MenuNews a").attr("href", "javascript: void (0)");
+            $(".HotTo div.MenuNews a").attr("href", "javascript: void (0)");
+            $(".NewsTo div.MenuNews a").attr("href", "javascript: void (0)");
+
+            $(".Empty div.MenuNews li:last").attr("style", " border-right:none;");
+            $(".HotTo div.MenuNews li:last").attr("style", "border-right:none;");
+            $(".NewsTo div.MenuNews li:last").attr("style", "border-right:none;");
+
+
+            $(".Empty ul li a").click(function() {
+                $(".Empty ul li").removeClass("active");
+                $(this).parent().addClass("active");
+                $(".Empty div.inform").attr("style", "display:none;");
+                $(".Empty #div" + ($(this).parent().index() + 1)).attr("style", "display:block;");
+            });
+            $(".HotTo ul li a").click(function() {
+                $(".HotTo ul li").removeClass("active");
+                $(this).parent().addClass("active");
+                $(".HotTo div.inform").attr("style", "display:none;");
+                $(".HotTo #div" + ($(this).parent().index() + 1)).attr("style", "display:block;");
+            });
+            $(".NewsTo ul li a").click(function() {
+                $(".NewsTo ul li").removeClass("active");
+                $(this).parent().addClass("active");
+                $(".NewsTo div.inform").attr("style", "display:none;");
+                $(".NewsTo #div" + ($(this).parent().index() + 1)).attr("style", "display:block;");
+            });
+        });                 
+    </script>
+	
+</head>
+
+<body>
+<div class="main">
+<div class="town">   
+<div class="headPhoto">   
+<div class="mainFixit">        
+    <div class="Bg">
+    <div class="fixit">	
+    
+    <div class="logo">
+		<a href="#">
+		    <i class="top"></i>
+		    <i class="text"></i>
+		    <i class="domen"></i>
+		</a>
+	</div>
+	
+	<div class="find">
+	    <p><input type="text" /></p>
+	    <input type="image" class="button" src="img/Button/find.png" />
+	</div>
+    
+    <div class="whether">
+        <!-- <div class="top"><div></div><i class="u1"></i><i class="u2"></i></div>        -->
+        <div class="center">
+            <strong> Погода в Москве</strong>
+            <ul>
+                <li>Пт <img src="img/icon/sun.png" width="26" height="26" alt="" /> <span>-1 +10</span></li>
+                <li>Сб <img src="img/icon/sun.png" width="26" height="26" alt="" /> <span>-1 +10</span></li>
+                <li>Вс <img src="img/icon/sun.png" width="26" height="26" alt="" /> <span>-1 +10</span></li>
+            </ul>
+        </div>
+        <!--<div class="bottom"><div></div><i class="u3"></i><i class="u4"></i></div>-->
+    </div>
+    
+<!-- header -->
+	<div class="header">					    				
+						
+		<div class="nav-head">		    
+			<div class="block">
+			    <i class="left"></i>
+		        <i class="right"></i>
+			    <div>
+				    <ul>                           
+					    <li class="active"><a href="#">Главная</a></li>
+					    <li>
+						    <a href="#">Пользователи</a>
+						    <div class="submenu">
+							    <ul>
+								    <li><a href="#">Пользователи на карте</a></li>								    
+							    </ul>
+						    </div>
+					    </li>
+					    <li>
+					        <a href="#">Новости</a>
+					        <div class="submenu">
+							    <ul>
+								    <li><a href="#">Политика</a></li>								    
+								    <li><a href="#">Происшествия</a></li>								    
+								    <li><a href="#">Hi-Tech</a></li>								    
+								    <li><a href="#">Гламур</a></li>
+							    </ul>
+						    </div>
+					    </li>
+					    <li><a href="#">Погода</a></li>
+					    <li>
+					        <a href="#">Маркет</a>
+					        <div class="submenu">
+							    <ul>
+								    <li><a href="#">On-line магазин</a></li>
+							    </ul>
+						    </div>
+					    </li>
+					    <li>
+					        <a href="#">Объявления</a>
+					        <div class="submenu">
+							    <ul>
+								    <li><a href="#">Категории</a></li>
+								    <li><a href="#">Авто, мото</a></li>
+								    <li><a href="#">Недвижимость</a></li>
+							    </ul>
+						    </div>
+					    </li>
+					    <li><a href="#">Работа</a></li>
+					    <li><a href="#">Форум</a></li>
+					    <li><a href="#">Сообщества</a></li>					    
+					    <li>
+						    <a href="#">Информация</a>
+						    <div class="submenu">
+							    <ul>
+								    <li><a href="#">Школы, Вузы </a></li>
+				                    <li><a href="#">Карта пользователей</a></li>
+				                    <li><a href="#">Карта организаций</a></li>
+				                    <li><a href="#">Интересы</a></li>
+				                    <li><a href="#">Деятельности</a></li>
+				                    <li><a href="#">География</a></li>
+							    </ul>
+						    </div>
+					    </li>					    
+					    <li class="end"><a href="#">Ещё</a></li>
+				    </ul>
+			    </div>
+			</div>
+		</div>
+		
+	</div>
+<!-- /header -->	
+
+	<div class="content">
+		<div class="wrapper clearfix">
+
+<!-- left col -->		  	
+			<div class="left-col">	
+				
+				<h3>Горячие предложения</h3>
+								
+				<div class="HotTo">
+				
+                    <div class="MenuNews">
+                        <ul>
+                            <li class="active"><a href="#">Товары</a></li>
+                            <li><a href="#">Объявления</a></li>
+                            <li class="end"><a href="#">Работа</a></li>
+                        </ul>
+                    </div>
+                
+				    <div class="line">
+				        			        
+				    </div>
+				    <div class="inform">				        
+				        <p>Всё о товарах</p>
+				    </div>
+				    <div class="inform">				        
+				        <p>Всё об объявлениях</p>
+				    </div>
+				    <div class="inform">				        
+				        <p>Всё о работе</p>
+				    </div>
+				</div>				
+												
+				<div class="menu">
+				    <ul>
+				        <li class="Biznes">
+				            <p>Бизнес</p>
+				            <ul>
+				                <li><a href="#">- Банки</a></li>
+				                <li><a href="#">- Страхование</a></li>
+				                <li><a href="#">- Организации</a></li>
+				            </ul>
+				        </li>
+				        <li class="Tovar">
+				            <p>Куплю-продам</p>
+				            <ul>
+				                <li><a href="#">- Авто-мототехника</a></li>
+				                <li><a href="#">- Недвижимость</a></li>
+				                <li><a href="#">- Доска объявлений</a></li>
+				            </ul>
+				        </li>
+				        <li class="Job">
+				            <p>Работа</p>
+				            <ul>
+				                <li><a href="#">- Вакансии</a></li>
+				                <li><a href="#">- Резюме</a></li>
+				            </ul>
+				        </li>
+				        <li class="Otdux">
+				            <p>Развлечения</p>
+				            <ul>
+				                <li><a href="#">- Знакомства </a></li>
+				                <li><a href="#">- Гороскопы</a></li>
+				                <li><a href="#">- Блоги</a></li>
+				                <li><a href="#">- Рейтинги</a></li>
+				                <li><a href="#">- Конкурсы</a></li>
+				                <li><a href="#">- Автогаражи</a></li>
+				                <li><a href="#">- Online игры</a></li>
+				            </ul>
+				        </li>
+				        <li class="Media">
+				            <p>Медиа</p>
+				            <ul>
+				                <li><a href="#">- Фото</a></li>
+				                <li><a href="#">- Аудио</a></li>
+				                <li><a href="#">- Видео</a></li>
+				                <li><a href="#">- Кинозал</a></li>
+				            </ul>
+				        </li>
+				        <li class="Afisha">
+				            <p>Афиша</p>
+				            <ul>
+				                <li><a href="#">- Кино</a></li>
+				                <li><a href="#">- Театры</a></li>
+				                <li><a href="#">- Вечеринки</a></li>
+				                <li><a href="#">- Телепрограмма</a></li>
+				            </ul>
+				        </li>
+				        <li class="Dir">
+				            <p>Каталог сайтов</p>
+				            <ul>
+				                <li><a href="#">- Правила</a></li>				                
+				                <li><a href="#">- Рейтинг</a></li>				                
+				                <li><a href="#">- Добавить сайт</a></li>				                
+				                <li><a href="#">- Получить счётчик</a></li>				                
+				            </ul>
+				        </li>				        
+				    </ul>
+				</div>			
+				
+				<h3>Новенькое</h3>
+				
+				<div class="NewsTo">
+				    <div class="MenuNews">
+				        <ul>
+				            <li class="active"><a href="#">SMS тексты</a></li>
+				            <li><a href="#">На форуме</a></li>
+				            <li class="end"><a href="#">В блогах</a></li>
+				        </ul>				    
+				    </div>
+				    <div class="inform">
+				        <!--<h3>SMS текст</h3>-->
+				        <p>Всё об sms</p>
+				    </div>
+				    <div class="inform">
+				        <!--<h3>Форум</h3>-->
+				        <p>На форуме</p>
+				    </div>
+				    <div class="inform">
+				        <!--<h3>Блоги</h3>-->
+				        <p>В блогах статистика</p>
+				    </div>
+				</div>
+				
+				<div class="BanerPart">
+				    <a href="#"><img src="img/baner/120х60.jpg" width="120" height="60" alt="120x60" /></a>
+				</div>	
+				
+				
+				<h3></h3>
+				
+				<div class="Empty">
+				    <div class="MenuNews">
+				        <ul>
+				            <li class="active"><a href="#">Опросы</a></li>
+				            <li class="end"><a href="#">Рейтинг сайтов</a></li>				        
+				        </ul>
+				    </div>
+				    
+				    <div class="inform">
+				         <!--<h3>Опросы</h3>-->
+				        <p>Всё об опросах</p>
+				    </div>
+				    <div class="inform">
+				         <!--<h3>Рейтинг</h3>-->
+				        <p>всё об рейтинге</p>
+				    </div>
+				    
+				</div>
+				
+				<div class="BanerPart">
+				    <a href="#"><img src="img/baner/main_105.jpg" width="218" height="63" alt="" /></a>
+				</div>
+						
+				
+			</div>
+<!-- /left col -->
+			<div class="middle-col">
+			
+				<div class="right-col">	
+								
+				    <div class="Registry">
+				        <b><a href="#">Регистрация</a></b>
+				        <a href="#">зачем?</a>
+				        <p><a href="#">Вход</a></p>
+				        <p> <a href="#">Забыли пароль?</a></p>
+				    </div>
+				    
+				    <div class="Speek">
+					    <h3>Хочу общаться</h3>
+					    <div>
+					        <p style=" margin-bottom:10px;">В настоящий момент место в блоке свободно.</p> 
+					        <a href="#">Как сюда попасть?</a>
+					    </div>					    
+					</div>				    
+					
+					<div class="Galery">
+					    <h2>Новые  пользователи</h2>
+					    <p>Список недавно зарегистрировавшихся пользователей</p>					    					    
+					</div>
+					
+					 <div class="Block">
+					    <h3>Фотоконкурс</h3>
+				        <div class="inform">				        
+				            <p>Нет фотоконкурсов</p>
+				        </div>
+				    </div>
+				    	
+				    <div class="Block">
+					    <h3>Популярные теги</h3>
+				        <div class="inform">				        
+				            <p>Популярные теги</p>
+				        </div>
+				    </div>			
+					
+					
+					<div class="Tegi">		    
+				        <span class="name">Местная жительница</span>				        				        				        
+				        <embed   height="355"   width="188"   bgcolor="#f4f4f4"  name="vishnu" src="http://iii.ru/static/Vishnu3.swf" wmode="window" flashvars="uuid=1ae6e5d8-6106-44a3-8647-37d72cf7f47e&disableRuOverride=1&home=5bca4cb427970098083837371653bd57&skin_color=0xEBEBEB&vertical_layout=1"type="application/x-shockwave-flash" quality="high" style=""></embed> 
+				    </div>				    						
+							
+					
+					<!--<div class="BanerPart">
+					    <a href="#"><img src="img/baner/120х60.jpg" width="120" height="60" alt="120x60" /></a>
+					</div>-->
+					
+					<div class="Galery">					    
+					    <span class="name">За последние сутки на сайте</span>
+					    <ul>
+					        <li><a href="#">Новостей <b>+0</b></a> </li>
+					        <li><a href="#">Фотографий <b>+0</b></a> </li>
+					        <li><a href="#">Записей в блогах <b>+0</b></a> </li>
+					        <li><a href="#">Записей в клубах <b>+0</b></a> </li>
+					        <li><a href="#">Авто обявлений <b>+0</b></a> </li>
+					        <li><a href="#">Новых регистраций <b>+10</b></a> </li>
+					    </ul>					    
+					</div>
+											
+					<div class="BanerPart">
+					    <a href="#"><img src="img/baner/120х60.jpg" width="120" height="60" alt="120x60" /></a>
+					</div>
+																			    						
+				</div>
+
+				<div class="center-col">
+									
+					   <div class="dNews">
+					        <p class="name"><i></i>Новости</p>
+					        
+					        <table>
+					            <tr>
+					                <th>
+					                    <span>Горячая новость</span>
+					                    <p class="img"><img src="img/temp/main_50.jpg" width="124" height="102" alt="" /></p>
+					                    <strong> Уфе сотрудники ФСБ пресекли контрабанду изумрудов</strong>                                        <p>В Уфе сотрудники ФСБ пресекли контрабанду изумрудов Управление УФСБ по РБ пресекло деятельность ОПГ, ...</p>
+					                </th>
+					                <td>
+					                
+					                    <div class="relative">
+					                        <div class="MenuNews">
+					                            <ul>
+					                                <li class="active"><a href="#">Политика</a></li>
+					                                <li><a href="#">Происшествия</a></li>
+					                                <li><a href="#">Hi-Tech</a></li>
+					                                <li class="end"><a href="#">Гламур</a></li>
+					                            </ul>
+					                        </div>
+					                    </div>
+					                    
+					                    <ul class="ulNews">
+					                        <li>
+					                            <strong>14-11-2011, 16:20 Башкирская гречка: мифы и реальность. </strong>
+					                            <p>Цены на гречку и наличие крупы республиканского производства на прилавках магазинов республики обсудили на совместном совещании представители сельхозпроизводителей, переработчико...</p>
+					                        </li>
+					                        <li>
+					                            <strong>14-11-2011, 16:20 Башкирская гречка: мифы и реальность. </strong>
+					                            <p>Цены на гречку и наличие крупы республиканского производства на прилавках магазинов республики обсудили на совместном совещании представители сельхозпроизводителей, переработчико...</p>
+					                        </li>
+					                        <li>
+					                            <strong>14-11-2011, 16:20 Башкирская гречка: мифы и реальность. </strong>
+					                            <p>Цены на гречку и наличие крупы республиканского производства на прилавках магазинов республики обсудили на совместном совещании представители сельхозпроизводителей, переработчико...</p>
+					                        </li>
+					                        <li>
+					                            <strong>14-11-2011, 16:20 Башкирская гречка: мифы и реальность. </strong>
+					                            <p>Цены на гречку и наличие крупы республиканского производства на прилавках магазинов республики обсудили на совместном совещании представители сельхозпроизводителей, переработчико...</p>
+					                        </li>
+					                    </ul>
+					                </td>
+					            </tr>
+					        </table>
+					        
+					   </div>			
+					   
+					   <div class="Today">
+					         <p class="name"><i></i>Сегодня</p>
+					         <div class="information">
+					             <p>Уважаемые пользователи! В нашей сети некоторые сервисы являются платными. Мы постарались обеспечить максимум удобства их оплаты для чего подключили несколько систем оплаты. Ниже представлены наиболее известные системы оплаты, которыми Вы можете воспользоваться для оплаты интересующих Вас услуг.</p>
+                                 <table class="datatable">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                Телепрограмма
+                                            </td>
+                                            <td>
+                                                Гороскопы
+                                            </td>
+                                            <td>
+                                                Афиша
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">Все  каналы</a>
+                                            </td>
+                                            <td>
+                                                <a href="#">Все  знаки</a>
+                                            </td>
+                                            <td>
+                                                <a href="#">Все расписания</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                 </table>
+                                 <p>подробнее о системах оплаты и процедуре покупки валюты сайта здесь...</p>
+                             </div>
+					   </div>
+					   
+					   <div class="Razvlechenie">
+					         <p class="name">
+					            <i></i>Развлечения
+					         </p>
+					         <div class="information">
+					            <div style="position:relative; height:30px;">
+					                 <div class="LineMenu">
+					                    <ul>
+					                        <li class="active"><a href="javascript:void(0)">Лидеры</a></li>
+					                        <li><a href="javascript:void(0)">Фотоальбомы</a></li>
+					                        <li><a href="javascript:void(0)">Топ видео</a></li>
+					                        <li><a href="javascript:void(0)">Топ музыки</a></li>
+					                    </ul>
+					                 </div>
+					            </div>
+					            <table class="Razvlechenie">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                Год
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td>
+                                                Месяц
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td>
+                                                Неделя
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td>
+                                                День
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                Год
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                Месяц
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                Неделя
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                День
+                                                <span>5 голосов</span>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                 </table>
+                                 <p>подробнее о системах оплаты и процедуре покупки валюты сайта здесь...</p>
+					         </div>
+					   </div>
+					   
+					  <div class="Razvlechenie">
+					         <p class="name">
+					            <i></i>Маркет
+					         </p>
+					         <div class="information">
+					            <div style="position:relative; height:30px;">
+					                 <div class="LineMenu">
+					                    <ul>
+					                        <li class="active"><a href="javascript:void(0)">Товары</a></li>
+					                        <li><a href="javascript:void(0)">Авто,  мото</a></li>
+					                        <li><a href="javascript:void(0)">Недвижимость</a></li>
+					                        <li><a href="javascript:void(0)">Разное</a></li>
+					                    </ul>
+					                 </div>
+					            </div>
+					            <table class="Razvlechenie">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                Год
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td>
+                                                Месяц
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td>
+                                                Неделя
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td>
+                                                День
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                Год
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                Месяц
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                Неделя
+                                                <span>5 голосов</span>
+                                            </td>
+                                            <td class="women">
+                                                День
+                                                <span>5 голосов</span>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Имя товарища</strong>
+                                            </td>
+                                            <td>
+                                                <a href="#"><img src="img/temp/main_85.jpg" width="50" height="50" alt="" /></a>
+                                                <strong>Свободно</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                 </table>
+                                 <p>подробнее о системах оплаты и процедуре покупки валюты сайта здесь...</p>
+					         </div>
+					   </div>
+					   
+					    <div class="BanerPart">
+				            <a href="#"><img src="img/baner/400х80.jpg" width="400" height="80" alt="400x80" /></a>
+				        </div>
+					   
+					   <div class="Today">
+					         <p class="name"><i></i>Каталог сайтов</p>
+					         <div class="information">
+					             <p>Уважаемые пользователи! В нашей сети некоторые сервисы являются платными. Мы постарались обеспечить максимум удобства их оплаты для чего подключили несколько систем оплаты. Ниже представлены наиболее известные системы оплаты, которыми Вы можете воспользоваться для оплаты интересующих Вас услуг.</p>
+                                 <table class="datatable">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                Телепрограмма
+                                            </td>
+                                            <td>
+                                                Гороскопы
+                                            </td>
+                                            <td>
+                                                Каталог
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#">Все  каналы</a>
+                                            </td>
+                                            <td>
+                                                <a href="#">Все  знаки</a>
+                                            </td>
+                                            <td>
+                                                <a href="#">Весь каталог</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                 </table>
+                                 <p>подробнее о системах оплаты и процедуре покупки валюты сайта здесь...</p>
+                             </div>
+					   </div>
+					   
+					   <div class="MyUsers">
+					         <p class="name"><i></i>Наши  пользователи</p>
+					         <a href="#"><img src="img/temp/maps.jpg" width="100%" alt="" /></a>
+					   </div>
+					  					   
+					   <!--<div class="BanerPart" style="margin-bottom:0">
+				            <a href="#"><img src="img/baner/main_68.jpg" width="554" height="103" alt="" /></a>
+				        </div>-->	
+					<!--<table class="Struct">
+					        <tr>
+					            <th>
+					                <p class="name"><i class="afisha"></i>Афиша</p>
+					                
+					                <table class="tAfisha">
+					                    <tr>
+					                        <th><a href="#"><img src="img/temp/main_85.jpg" width="102" height="145" /></a></th>
+					                        <td>
+					                            <strong>Миссия невыполнима: протокол “Фантом”</strong>                                                <p>МВФ закрыли. И все из-за того, что его работников подо- зревают в бомбардировке Кремля. Теперь главный герой фильма Миссия невыполнима: Протокол Фантом Итан Хант и его...</p>
+					                        </td>
+					                    </tr>
+					                </table>
+					                
+					                <div class="all"><i class="kino"></i><a href="#">Полное расписание кино</a></div>
+					            </th>
+					            <td>
+					                <p class="name"><i class="video"></i>Архив видео</p>
+					                 <span>Популярное</span>
+					                <img src="img/temp/main_91.jpg" class="vv" width="241" height="169" alt="" />
+					                 <div class="all"><i class="video"></i><a href="#">Все видео файлы</a></div>
+					            </td>
+					        </tr>
+					    </table>-->
+				</div>
+
+			</div> 
+									
+		</div>	
+	</div>
+		
+    </div>
+
+
+
+</div>
+</div>
+
+<!-- bottom -->
+	<div class="footer">
+		
+		<div class="dfixit">		
+		    <table>
+		        <tr>
+		            <td>
+		                <p class="base"><a href="#" class="active">О компании</a></p>
+		                <ul class="MenuSection">
+                             <li><a href="/country_pages/168/0/marketing/about.php">О компании</a></li>
+
+                             <li><a href="/News.php">Новости</a></li>
+                             <li><a href="/News.php/cat,26/">Акции</a></li>
+                             <li><a href="/country_pages/168/0/sc/">Безопасность</a></li>
+                             <li><a href="/phorum/index.php?f=1">Форум</a></li>
+                             <li><a href="http://blog.molotok.ru">Блог</a></li>
+                        </ul>
+		            </td>
+		            <td>
+		                <p class="base"><a href="#">Новости</a></p>
+		                <ul class="MenuSection">
+                             <li><a href="/country_pages/168/0/marketing/about.php">О компании</a></li>
+
+                             <li><a href="/News.php">Новости</a></li>
+                             <li><a href="/News.php/cat,26/">Акции</a></li>
+                             <li><a href="/country_pages/168/0/sc/">Безопасность</a></li>
+                             <li><a href="/phorum/index.php?f=1">Форум</a></li>
+                             <li><a href="http://blog.molotok.ru">Блог</a></li>
+                        </ul>    
+		            </td>
+		            <td>
+		                <p class="base"><a href="#">Акции</a></p>
+		                <ul class="MenuSection">
+                             <li><a href="/country_pages/168/0/marketing/about.php">О компании</a></li>
+                             <li><a href="/News.php">Новости</a></li>
+                             <li><a href="/News.php/cat,26/">Акции</a></li>
+                             <li><a href="/country_pages/168/0/sc/">Безопасность</a></li>
+                             <li><a href="/phorum/index.php?f=1">Форум</a></li>
+                             <li><a href="http://blog.molotok.ru">Блог</a></li>
+                        </ul>
+		            </td>
+		            <td>
+		                <p class="base"><a href="#">Безопасность</a></p>
+		                <ul class="MenuSection">
+                             <li><a href="/country_pages/168/0/marketing/about.php">О компании</a></li>
+
+                             <li><a href="/News.php">Новости</a></li>
+                             <li><a href="/News.php/cat,26/">Акции</a></li>
+                             <li><a href="/country_pages/168/0/sc/">Безопасность</a></li>
+                             <li><a href="/phorum/index.php?f=1">Форум</a></li>
+                             <li><a href="http://blog.molotok.ru">Блог</a></li>
+                        </ul>
+		            </td>
+		            <td class="tdmoney">
+		                <h2>Платежные сервисы</h2>
+		                <div class="money clearfix">
+					        <ul>
+					            <li class="wmlogo"><a href="#"></a></li>
+					            <li class="visa"><a href="#"></a></li>
+					            <li class="electron"><a href="#"></a></li>
+					            <li class="mastercard"><a href="#"></a></li>
+					            <li class="maestro"><a href="#"></a></li>
+					        </ul>
+					    </div>
+					    <p><a href="#">Уведомление о рисках Webmoney</a></p>
+		            </td>
+		        </tr>
+		    </table>		
+		    
+		    
+			<address>&copy; Контактная информация ecountry.ru 2012</address>					    
+		</div>							
+		
+	</div>	
+<!-- /bottom -->	
+</div>
+</div>
+</div>
+</body>
+</html>

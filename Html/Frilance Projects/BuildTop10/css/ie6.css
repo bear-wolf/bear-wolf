@@ -1,0 +1,73 @@
+/*css style for IE6*/
+* html div,
+* html li{
+	height:1%;	
+	}
+	
+* html .easyfix{ overflow:visible; }
+
+img{ filter:expression(fixPNG(this));}
+
+
+/* IE6 style */
+* html .nav li{ behavior:url("css/csshover.htc"); }
+* html .nav, * html .nav div, * html #nav li{ height:1%; }
+
+div.zone_nav li.active .link{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/find_pas_lt.png", sizingMethod="crop");
+	}
+div.zone_nav li.active .link .right{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/find_pas_rt.png", sizingMethod="crop");	
+	}
+
+div.zone_nav .punkt_menu .bg span.two{
+	top:0;
+	right:-1px;
+	}
+div.zone_nav .punkt_menu .bg span.three{
+	bottom:-4px;
+	right:-1px;
+	}
+div.zone_nav .punkt_menu .bg span.four{
+	bottom:-4px;
+	}
+
+.nav-bot div{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/foter_bg.png", sizingMethod="scale");	
+	}
+.nav-bot span.left{	
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/foter_lt.png", sizingMethod="crop");	
+	}
+.nav-bot span.right{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/foter_rt.png", sizingMethod="crop");	
+	}	
+
+.number5 li .name div{
+	top:5px;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/desyatka/background.png", sizingMethod="crop");	
+	}
+.find_forma li.active .link{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/find_act_lt.png", sizingMethod="crop");	
+	}
+.find_forma li.active .link .right{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/find_act_rt.png", sizingMethod="crop");	
+	}
+.find_forma li .link{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/find_pas_lt.png", sizingMethod="crop");	
+	}
+.find_forma li .link .right{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/find_pas_rt.png", sizingMethod="crop");	
+	}
+.nav-head span.right{right:-1px;	}	
+.nav-head ul.list-one li span{	margin:-24px 0 0 0;}	
+.nav-bot span.right{right:-1px;}	
+

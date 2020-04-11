@@ -1,0 +1,25 @@
+@import "~assets/css/shared";
+
+.bonus-agreement-content{
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps{
+    li {
+      &.step1 {
+        a {
+          padding: 0 !important;
+        }
+      }
+      &.step5 {
+        a {
+          padding: 0 !important;
+          width: 80px;
+        }
+      }
+    }
+    .ui-steps:before {
+      width: 901px;
+    }
+  }
+}

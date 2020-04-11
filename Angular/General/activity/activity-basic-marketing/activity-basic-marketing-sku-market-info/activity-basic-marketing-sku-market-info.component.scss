@@ -1,0 +1,48 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.sku-details-content{
+  .row{
+    .item{
+      @include label-bold-root;
+
+      &>div{
+        &:first-child{
+          min-height: 92px;
+        }
+        display: flex;
+        flex-direction: column;
+
+        .form-control-input{
+          justify-content: flex-start;
+          margin-bottom: 25px;
+
+          .form-control{
+            width: 250px;
+          }
+        }
+
+        @include label-bold;
+      }
+    }
+  }
+
+  p-dropdown{
+    &,
+    .ui-dropdown{
+      width: 250px;
+    }
+  }
+
+  .sku-details-calculation{
+    .item{
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $color-abbott-light-gray;
+
+      .form-control-select{
+        justify-content: flex-start;
+      }
+    }
+  }
+}

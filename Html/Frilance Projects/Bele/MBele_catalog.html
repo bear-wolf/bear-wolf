@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=1200px;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/jquery-ui-1.8.15.custom.css" rel="stylesheet" />    
+    <link href="css/select.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+    <link href="scripts/jquery.slider/jquery.slider.css" rel="stylesheet" />
+    <link href="css/jslider.css" rel="stylesheet" />
+    <link href="css/visuallightbox.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="scripts/jquery-1.8.3.js"></script>
+    <script src="scripts/jquery-ui-1.9.2.custom.min.js"></script>
+
+    <script type="text/javascript" src="scripts/jquery.navigation_slider.js"></script>
+    <script src="scripts/visuallightbox.js" type="text/javascript"></script>
+<!-- bin/jquery.slider.min.js -->
+	<script type="text/javascript" src="scripts/jshashtable-2.1_src.js"></script>
+	<script type="text/javascript" src="scripts/jquery.numberformatter-1.2.3.js"></script>
+	<script type="text/javascript" src="scripts/tmpl.js"></script>
+	<script type="text/javascript" src="scripts/jquery.dependClass-0.1.js"></script>
+	<script type="text/javascript" src="scripts/draggable-0.1.js"></script>
+	<script type="text/javascript" src="scripts/jquery.slider.js"></script>
+  <!-- end -->
+
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+
+    <!--[if (IE) ]>
+    <script type="text/javascript">document.writeln("<link rel='stylesheet' type='text/css' href='css/ie.css'>");</script>
+    <script type="text/javascript" src="scripts/html5.js"></script>            
+<![endif]-->
+
+    <!--[if !IE]><!-->
+    <script>
+        if (Function('/*@cc_on return document.documentMode===10@*/')() && window.innerWidth >= 980) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'css/ie.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+    <!--<![endif]-->
+
+    <!--[if !(IE)]>-->
+    <script type="text/javascript">
+        document.writeln("<link rel='stylesheet' type='text/css' href='css/others.css'>");
+    </script>
+    <!--<![endif]-->
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="enterdialog">
+            <table class="dbase">
+                <tbody>
+                    <tr>
+                        <td class="dbasetd">
+                            <div class="width639">
+                                <a class="exit" href="javascript:void(0)"></a>
+                                <h1>Вход</h1>
+                                <form class="entry_form" id="entry_form">                                
+                                <div class="pad">
+                                    <div class="regmarg">
+                                        <label>Введите E-mail</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>Введите Пароль</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>  
+    
+                                    <p><a href="" class="forgotpas">Забыли пароль?</a></p>
+                                    <p class="chkbx"><span class="checkbox"><input type="checkbox" checked="checked" value="1"></span>Запомнить меня</p>
+
+                                </div>
+                                      <input type="button" class="dialogbut" value="Войти на сайт" onclick="register()">
+								</form>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="regdialog">
+            <table class="dbase">
+                <tbody>
+                    <tr>
+                        <td class="dbasetd">
+                            <div class="width638">
+                                <a class="exit" href="javascript:void(0)"></a>
+                                <h1>Регистрация</h1>
+                                <form class="entry_form" id="entry_form">
+                                 <div class="pad">
+                                    <div class="regmarg">
+                                        <label>Ваше имя</label>
+                                        <input id="name" placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>Ваша фамилия</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="emptyfield">Поле не заполнено</span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>E-mail</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>Пароль</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>                                                                        
+                                    <div class="regmarg">
+                                        <label>Повторите пароль</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div> 
+                             
+
+                                    <table class="width638table">
+                                        <tr>
+                                            <td class="width638td1">Добавить фото<br>
+                                                142 х 122
+                                            </td>
+                                            <td class="width638td2"><a href="">
+                                                <img src="images/bg/emptyfoto.png"></a></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="code">
+                                    Введите защитный код
+                                    <div class="captcha"><img src="images/bg/capcha.png"></div>
+                                    <span class="load" onclick="refresh_captcha_reg('');"></span>
+                                    <input type="text" class="text">
+                                    <p class="emptyfield2">Поле не заполнено</p>
+                                </div>
+                                
+                                <input type="button" class="dialogbut" value="Зарегистрироваться" onclick="register()">
+
+								</form>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <div class="main">
+        <header>
+
+            <div class="fixit">
+                <div class="firsthead">
+                    <a href="" class="logo"></a>
+                    <div class="search">
+                    	<form class="search" action="/search/key/" method="get">
+                            <i></i>
+                            <input type="text" value="Поиск по сайту" class="toggle-inputs"><input type="submit" value="Поиск"/>
+						</form>
+                    </div>
+                    <ul class="headermen">
+                        <li><a href="">О проекте</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Добавить компанию</a></li>
+                        <li><a href="">Сайт отзывов в Украине</a></li>
+                    </ul>
+
+                     <div class="banbut visible" data-text="Свернуть баннер;Показать баннер">
+                        <i></i>
+                        <a href="javascript:void(0)">Свернуть баннер</a>
+                    </div>
+                    <div class="rightfon">
+                        <i></i>
+                        <span><b>0</b> товаров:  за <b>0 грн.</b></span>
+                        <a href="">Перейти в корзину</a>
+                    </div>
+                    <div class="enterfon">
+                        <a href="" class="reg">Регистрация</a>
+                        <a href="" class="enter">Вход</a>
+                    </div>
+                    <div class="tel">
+                    	<div class="ttel1">тел:<i>+38</i><span>123-456-789</span> </div>
+                       	<div class="ttel2">моб:<i>+38</i><span>123-456-789</span> </div>
+                    	<div class="ttel3">email:<i></i><a href="">underwear@bele.ua</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hidedblock">
+                <div class="fixit">
+                    <div class="topslider">
+                        <div class="struct big_slider">                            
+                            <div class="bottomLine">
+                                <div class="topmainslider">
+                                    <div class="navigation">
+                                        <a rel="beg" class="arrowleft" href="javascript:void(0)"></a>
+                                        <a rel="end" class="arrowright" href="javascript:void(0)"></a>
+                                    </div>
+                                    <div id="bs_pager"></div>
+                                    <div class="baserelative">
+                                        <div class="relative">
+                                            <div class="absolute" id="bs_absolute">
+                                                <ul class="picture gallery">
+                                                    <li class="bsslide1">
+                                                        <img src="images/foto/fototopslide.png">
+                                                        <div class="topslidertext">
+                                                            Пижамы и 
+                                                            <br>
+                                                            домашняя одежда
+                                                        </div>
+                                                        <ul class="topslidermenu">
+                                                            <li><a href="">комплекты женские халаты</a></li>
+                                                            <li><a href="">комплекты и пижамы мужские</a></li>
+                                                            <li><a href="">пижамы детские и подростковые</a></li>
+                                                            <li><a href="">костюмы для отдыха трикотажные</a></li>
+                                                            <li><a href="">пеньюары, халаты трикотажные</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="bsslide1">
+                                                        <img src="images/foto/fototopslide.png">
+                                                        <div class="topslidertext">
+                                                            22222222222222222
+                                                        </div>
+                                                        <ul class="topslidermenu">
+                                                            <li><a href="">комплекты женские халаты</a></li>
+                                                            <li><a href="">комплекты и пижамы мужские</a></li>
+                                                            <li><a href="">пижамы детские и подростковые</a></li>
+                                                            <li><a href="">костюмы для отдыха трикотажные</a></li>
+                                                            <li><a href="">пеньюары, халаты трикотажные</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondhead">
+                <div class="fixit">
+                <nav>
+                    <ul class="topmenu">
+                        <li><i></i><a href="">Нижнее бельё</a></li>
+                        <li class="active"><i></i><a href="">Домашняя одежда</a></li>
+                        <li><i></i><a href="">Купальники</a></li>
+                        <li><i></i><a href="">Пляжная одежда</a></li>
+                        <li><i></i><a href="">Для мужчин</a></li>
+                        <li><i></i><a href="" class="last">Sale</a></li>
+                    </ul>
+                </nav>   
+                </div>
+            </div>
+
+        </header>
+        <div class="clearfix"></div>
+        <div class="fixit">
+            <div class="content">
+                <div class="wrapper">
+                    <div class="left_part">
+                    	  <nav>
+                          <ul class="leftmen">
+                            <li class="first"><a href="javascript:void(0)">Нижнее бельё</a></li>
+                            <li class="active"><a href="javascript:void(0)">Домашняя одежда</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)"><i></i>Новинки 2014</a><b></b></li>
+                                    <li class="active"><a href="javascript:void(0)"><i></i>Бестселлеры</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Одежда для дома</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Ночные рубашки</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Пижамы</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Неглиже</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Ассорти </a><b></b></li>
+                                </ul>
+                                <li><a href="javascript:void(0)">Купальники</a></li>
+                            <li><a href="javascript:void(0)">Пляжная одежда</a></li>
+                            <li><a href="javascript:void(0)">Для мужчин</a></li>
+                            <li class="last"><a href="javascript:void(0)">Sale</a></li>
+
+                        </ul>
+                        </nav>
+                        <div class="sosialblock">
+                            <a href="" class="ico1"></a>
+                            <a href="" class="ico2"></a>
+                            <a href="" class="ico3"></a>
+                            <a href="" class="ico4"></a>
+                            <a href="" class="ico5"></a>
+                            <a href="" class="ico6"></a>
+                        </div>
+                        <div class="comenttitle">Комментарии</div>
+                        <div class="comentblock">
+                            <b>Иван Иванов</b>
+                            <div class="rayting">
+                                <ul>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </div>
+                            Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж...
+                        </div>
+                        <div class="comentblock">
+                            <b>Иван Иванов</b>
+                            <div class="rayting">
+                                <ul>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </div>
+                            Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж...
+                        </div>
+                        <a href="" class="allcoments">Читать все комментарии</a>
+                        <a href="">
+                            <img src="images/foto/Baner.png"></a>
+
+                    </div>
+
+                    <div class="middle_part">
+                        <div class="center_part">
+                            <!---------------------------------------------------------------->
+                            <p class="navtitle"><a href="">Главная</a>  »  <a href="">Одежда для дома</a>  »  <a href="">Одежда для дома</a>  »  <b>Одежда для дома</b></p>
+                            <p class="maintitle">Наши новости <span>/ одежда для дома</span></p>
+                            <div class="somemenblock clearfix">
+                  
+                                            <ul class="somemenu">
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li class="active"><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                            </ul>
+                                            <ul class="somemenu">
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                            </ul>
+
+                                            <ul class="somemenu">
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li class="active"><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                            </ul>
+
+                                            <ul class="somemenu">
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                                <li><i></i><a href="">Одежда для дома</a></li>
+                                            </ul>
+
+                            </div>
+                            <div class="filter">
+                            	<form>
+                                <input type="submit" id="sbm">
+                                <a href="" class="filterok" onClick="javascript::getElementById(sbm).click()">ОК</a>
+                                <a href="javascript:void(0)" class="filterreset" onClick="clearfilters(this)">Очистить фильтр</a>
+
+
+                                <div class="horizontale">
+                                    <ul class="type">
+                                        <li class="first">Цена:  </li>
+                                        <li class="input"><span class="cange">от 100 </span>грн.</li>
+                                        <li class="scroll">
+										      <input id="Slider3" type="slider" name="area" value="110;750" />
+                                        </li>
+                                        <li class="last input"><span class="cange">до 1000</span>грн.</li>
+                                    </ul>
+                                </div>
+
+                                <ul class="select">
+                                    <li>
+                                        <div class="ddl">
+                                            <select>
+                                                <option value="">Производитель</option>
+                                                <option value="">Производитель2</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ddl">
+                                            <select>
+                                                <option value="">Производитель</option>
+                                                <option value="">Производитель2</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+
+                                <ul class="checkbox">
+                                    <li class="first">ФИЛЬТРЫ:	 </li>
+                                    <li>
+	                                     <input type="checkbox" checked="checked" value="1" id="for1"><label for="for1">фильтр 1</label>
+                                    </li>
+                                    <li>
+	                                     <input type="checkbox" checked="checked" value="1" id="for2"><label for="for2">фильтр 2</label>
+                                    </li>
+                                    <li>
+             							<input type="checkbox" checked="checked" value="1" id="for3"><label for="for3">фильтр 3</label>
+                                    </li>
+
+                                </ul>
+                                <ul class="radiobox">
+                                    <li class="first">ФИЛЬТРЫ: </li>
+                                    <li>
+	                                       <input type="radio" checked="checked" value="1" id="for4" name="raz"><label for="for4">фильтр 4</label>
+                                    </li>
+                                    <li>
+	                                       <input type="radio"  value="1" id="for5" name="raz"><label for="for5">фильтр 5</label>
+                                    </li>
+                                    <li>
+                                 	      <input type="radio"  value="1" id="for6" name="raz"><label for="for6">фильтр 6</label>
+                                    </li>
+
+                                </ul>
+                                </form>
+                            </div>
+									<div class="clearfix">
+                                        <div class="filtertext">
+                                            Сортировать по:
+                                            <a href="">Цена</a>
+                                            <a href="">Размер</a>
+                                            <a href="">Производитель</a>
+                                            <span>По возростанию цены</span>
+                                            <a href="">Поснижению цены</a>
+                                        </div>
+                                        <div class="basepager filterpager">
+                                            <div>
+                                                <ul>
+                                                    <li class="firsttext">На странице по:</li>
+                                                    <li><a href="" class="active">10</a></li>
+                                                    <li><a href="">20</a></li>
+                                                    <li><a href="">30</a></li>
+                                                    <li><a href="">Все</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+									</div>
+                            <p class="line"></p>
+
+                            <div class="byeblocks clearfix">
+                            	<ul>
+                                	<li>
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto5.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li>
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto1.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li>
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto2.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li class="last">
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto3.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li>
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto5.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li>
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto1.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li>
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto2.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+                                	<li class="last">
+                                        <div class="byetitle">Пижама женская LASCANA</div>
+                                        <img src="images/foto/foto3.png">
+                                        <p>Артикул:3004-1</p>
+                                        <p class="colors"><span>Цвет:</span>
+                                        		 <a href=""><img src="images/foto/colors/gray.png" width="12" height="12" alt=""></a>
+                                        		 <a href="" class="active"><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></a>
+                                                 <a href=""><img src="images/foto/colors/white.png" width="12" height="12" alt=""></a>
+                                        </p>
+                                        <p>Размеры: XS, S, M, L</p>
+                                        <div class="byeblocktd2">
+                                            <div class="byeblocktd1">
+                                                <span class="price1">500 грн.</span>
+                                                <span class="price2"><b>350</b> грн.</span>
+
+                                            </div>
+                                            <a href="" class="byeblockbuton">Купить</a>
+                                        </div>
+									</li>
+
+								</ul>
+                            </div>
+                            <p class="line2"></p>
+
+                            <div class="basepager">
+                                <div>
+                                    <ul>
+                                        <li class="prev"><a href=""><i class="arrow"></i></a></li>
+                                        <li><a href="" class="active">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li class="next"><a href=""><i class="arrow"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="smalltext">
+                                Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж. Доставку товаров осуществляем во все города Украины. Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж. Доставку товаров осуществляем во все города Украины.
+                            </div>
+
+                            <!---------------------------------------------------------------->
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="fixit">
+            	<div class="footertable">
+
+                        <div class="footertd1">
+                            <b>Меню сайта</b>
+                            <ul>
+                                <li><a href="">Нижнее бельё</a></li>
+                                <li><a href="">Домашняя одежда</a></li>
+                                <li><a href="">Купальники</a></li>
+                                <li><a href="">Пляжная одежда</a></li>
+                                <li><a href="">Для мужчин</a></li>
+                            </ul>
+						</div>
+                         <div class="footertd3">
+                            <b>Советы</b>
+                            <ul>
+                                <li><a href="">Определить размер</a></li>
+                                <li><a href="">Рекомендации по уходу и стирке</a></li>
+                                <li><a href="">Типы бюстгальтеров</a></li>
+                                <li><a href="">Типы трусов</a></li>
+                                <li><a href="">Моделирующее белье</a></li>
+                            </ul>
+						</div>
+                         <div class="footertd5">
+                            <b>Помощь</b>
+                            <ul>
+                                <li><a href="">Часто задаваемые вопросы</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Доставка и оплата</a></li>
+                                <li><a href="">Подписаться на рассылку новостей</a></li>
+                                <li><a href="">Отказаться от рассылки</a></li>
+                            </ul>
+						</div>
+                         <div class="footertd7">
+                            <b>Наши контакты</b>
+                            <div class="foottel">
+                                <p><span>+38</span> 123-456-789</p>
+                                <p><span>+38</span> 123-456-789</p>
+                                <p class="email">underear@bele.ua</p>
+                            </div>
+						</div>
+                </div>
+                <p class="www">© Copyright 2014 <a href="">bele.com.ua</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@font-face{
+	font-family:"OpenSansBold";	
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:condensed;	
+	src: url('../fonts/OpenSans-Bold.ttf') format("truetype");    
+}
+
+@font-face{
+	font-family:"OpenSansCondensedLight";	
+	font-style:normal;
+	font-weight:bold;
+	font-stretch:condensed;	
+	src: url('../fonts/OpenSans-CondLight.ttf') format("truetype");    
+}		
+
+@font-face{
+	font-family:"OpenSansRegular";	
+	font-style:normal;
+	font-weight:100;
+	font-stretch:condensed;	
+	src: url('../fonts/OpenSans-Regular.ttf') format("truetype");    
+}        

@@ -1,0 +1,22 @@
+<div class="form-group">
+    <label *ngIf="label">
+        {{label}}
+    </label>
+
+    <textarea
+            name="field"
+            [(ngModel)]="value"
+            (ngModelChange)="updateValue($event)"
+            [placeholder]="placeholder || ''"
+            [disabled]="disabled"
+            class="form-control"></textarea>
+
+    <div *ngIf="errors && !hideErrors" class="error-messages">
+        <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+        <div *ngIf="errors.maxLength" class="form-text text-danger">Max length error</div>
+    </div>
+
+    <div *ngIf="!errors && hint" class="form-text text-muted">
+        {{hint}}
+    </div>
+</div>

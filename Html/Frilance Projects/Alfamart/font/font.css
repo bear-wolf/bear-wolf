@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'NeoSansPro-Light';
+	src: url('NeoSansPro-Light.eot'); /* IE9 */
+	src: local('☺'), 
+	url('NeoSansPro-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('NeoSansPro-Light.woff') format('woff'), /* Современные браузеры */
+	url('NeoSansPro-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('NeoSansPro-Light.svg') format('svg');  /*iOS */  
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeoSansPro-Regular';
+	src: url('NeoSansPro-Regular.eot'); /* IE9 */
+	src: local('☺'), 
+	url('NeoSansPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('NeoSansPro-Regular.woff') format('woff'), /* Современные браузеры */
+	url('NeoSansPro-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('NeoSansPro-Regular.svg') format('svg');  /*iOS */  
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeoSansPro-Medium';
+	src: url('NeoSansPro-Medium.eot'); /* IE9 */
+	src: local('☺'), 
+	url('NeoSansPro-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('NeoSansPro-Medium.woff') format('woff'), /* Современные браузеры */
+	url('NeoSansPro-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('NeoSansPro-Medium.svg') format('svg');  /*iOS */  
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeoSansPro-Bold';
+	src: url('NeoSansPro-Bold.eot'); /* IE9 */
+	src: local('☺'), 
+	url('NeoSansPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('NeoSansPro-Bold.woff') format('woff'), /* Современные браузеры */
+	url('NeoSansPro-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('NeoSansPro-Bold.svg') format('svg');  /*iOS */  
+	font-weight: normal;
+	font-style: normal;
+}

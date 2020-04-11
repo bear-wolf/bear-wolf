@@ -1,0 +1,103 @@
+
+/*ADD style to select*/
+.select-dropdown
+{
+    top: 30px;
+    width: 217px !important;
+}
+
+.select-wrap
+{
+    position: relative;
+    cursor: default;
+    display: block;
+    width: 100%;
+}
+
+
+.select-option,
+.select-dropdown,
+.select-wrap,
+.select-option,
+.select-title
+{
+    height: 30px;
+    line-height: 30px;
+}
+
+.select-option,
+.select-title,
+.select-option
+{
+    padding-left: 90px;
+    color: #fff695;
+    font-family: "OpenSans-Regular";
+    font-size: 18px;
+    background: #2d2d2d;
+    text-shadow: 0 1px 0 #fff695;
+    line-height: 27px;
+}
+
+.selblock span
+{
+    color: #787878;
+    font-family: Tahoma;
+    font-size: 12px;
+    left: 10px;
+    position: absolute;
+    top: 7px;
+    z-index: 255;
+}
+
+.select-title
+{
+    background: url(../images/backgrounds/select.png) no-repeat;
+    display: block;
+}
+
+.select-button
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 33px;
+    height: 30px;
+    display: block;
+    border: none;
+    background: url(../images/backgrounds/selectbutton.png) no-repeat;
+}
+
+.select-dropdown
+{
+    position: absolute;
+    z-index: 300;
+    left: 0;
+    background: #2d2d2d;
+    color: #281311;
+    font-family: Tahoma;
+}
+
+.select-option
+{
+    cursor: pointer;
+    margin-top: -1px;
+}
+
+    .select-option:hover
+    {
+        color: white;
+    }
+
+    .select-option.last
+    {
+        float: none !important;
+    }
+
+/*ADD style to select*/
+.selblock li .ddl
+{
+    height: 30px;
+    margin: 0px 0 0;
+    width: 250px;
+}

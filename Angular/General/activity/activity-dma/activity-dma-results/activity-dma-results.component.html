@@ -1,0 +1,82 @@
+<div class="content-block training-docs-content">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Итоги</h3>
+  </div>
+
+  <form [formGroup]="form">
+    <table>
+      <thead>
+      <tr>
+        <th>Показатели проведения ДМА</th>
+        <th>Прогноз</th>
+        <th>Факт</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Рост продаж в период проведения акции, %</td>
+        <td>{{getForecastTotals('salesGrowth')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Скидка для покупателя, %***</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Скидка для покупателя, компенсиируемая Abbott, %</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Стоимость участия в акции, руб (с НДС)</td>
+        <td>{{getForecastTotals('participationCostRub')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Всего затраты Abbott на акцию, руб (с НДС)</td>
+        <td>{{getForecastTotals('totalAbbottCosts')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Инвестиции, %</td>
+        <td>{{getForecastTotals('investments')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Прирост продаж в период акции, упаковок</td>
+        <td>{{getForecastTotals('salesGrowthDuringPromotionPackages')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Прирост продаж в период акции, руб (ASP)</td>
+        <td>{{getForecastTotals('salesGrowthDuringPromotionRub')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Продажи в период акции, упаковок</td>
+        <td>{{getForecastTotals('salesDuringPromotionPackages')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Продажи в период акции, руб (ASP)</td>
+        <td>{{getForecastTotals('salesDuringPromotionRub')}}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ROI***</td>
+        <td>{{getForecastTotals('roi')}}</td>
+        <td>{{dma.dmaTotals.roi}}</td>
+      </tr>
+      <tr>
+        <td>Direct Posting</td>
+        <td colspan="2">?</td>
+      </tr>
+      <tr>
+        <td>Reverse</td>
+        <td colspan="2">?</td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

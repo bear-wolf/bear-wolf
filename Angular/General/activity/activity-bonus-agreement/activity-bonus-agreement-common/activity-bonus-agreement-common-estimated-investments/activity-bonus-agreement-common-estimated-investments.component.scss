@@ -1,0 +1,49 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.agreement-common-estimated-investments-content {
+  @include period-container-column;
+  .rows-block {
+    .row-item {
+      &>div{
+        padding-right: 0;
+      }
+
+      label {
+        padding-right: 15px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      app-form-controls-label{
+        width: 100%;
+        .value{
+          width: 150px;
+        }
+      }
+
+      app-form-controls-input{
+        width: 100%;
+      }
+
+      .form-control-input{
+        display: flex;
+        justify-content: space-between;
+
+        .form-control{
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .period-container{
+    width: 200px;
+    &>span{
+      justify-content: space-between!important;
+    }
+    label{
+      font-weight: normal!important;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+*{
+margin: 0;
+padding: 0;
+background:transparent;
+}
+
+body {
+line-height: 1.4;
+color: black;
+background: white;
+}
+
+img{ border:none; }
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width:100%;
+}
+table td{ vertical-align:top;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+
+

@@ -1,0 +1,345 @@
+@mixin reset-view {
+  *{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@mixin main-row-form {
+  .form-control-select {
+    display: flex;
+    justify-content: space-between;
+
+    & > label {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}
+
+@mixin common-form-btn-group {
+  .common-form-btn-group {
+    .btn-green {
+      width: 325px;
+    }
+  }
+}
+
+@mixin item-steps {
+  p-steps {
+    $widthLink: 125px;
+    $commonBlock: 185px;
+
+    li {
+      width: $commonBlock;
+
+      a {
+        width: $widthLink;
+      }
+
+      &.step0 {
+        width: $widthLink !important;
+      }
+    }
+  }
+}
+
+@mixin common-view {
+  .rows-block {
+    .row-item {
+      .first-level {
+        font-weight: bold !important;
+      }
+
+      label {
+        padding-right: 15px;
+        margin: 0;
+      }
+
+      .controls-input-point {
+        .form-group {
+          display: flex;
+          justify-content: space-between;
+
+          .value {
+            width: 200px;
+          }
+        }
+      }
+
+      .controls-period-activity {
+        .period-container {
+          & > span:last-child {
+            padding-left: 15px;
+          }
+        }
+      }
+
+      .controls-label-nds + span {
+        width: 175px;
+      }
+
+      .controls-input-activity-pharmacies,
+      .controls-input-point,
+      .form-control-input,
+      .controls-label-nds {
+        label {
+          font-weight: bold !important;
+        }
+      }
+
+
+      .controls-input-activity-pharmacies {
+        .form-control-input {
+          display: flex;
+          justify-content: space-between;
+
+          .form-control {
+            width: 100px;
+            margin-right: 100px;
+          }
+        }
+      }
+
+      .controls-select-project,
+      .controls-select-secondaryDB {
+        width: 100%;
+
+        .form-control-select {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          & > label {
+            font-weight: bold !important;
+          }
+
+          p-dropdown {
+            margin-right: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin headline{
+  .headline{
+    margin-bottom: 5px!important;
+    font-weight: bold!important;
+  }
+}
+@mixin agreement-total-view {
+  table {
+    th,
+    td {
+      text-align: center;
+    }
+  }
+
+  .controls-input-premium-size {
+    input {
+      text-align: center;
+    }
+  }
+  .bonus-amount-td {
+    width: 130px;
+
+    .bonus-amount-label {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: $form-control-height;
+      margin: 0 !important;
+      width: 100%;
+    }
+  }
+  .form-component {
+    max-width: 1000px;
+
+    table {
+      td {
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    .form-control-input {
+      justify-content: center;
+
+      .form-control {
+        width: 130px !important;
+      }
+    }
+  }
+}
+
+@mixin document-column-view {
+  .document-content {
+    .container {
+      max-width: 600px;
+    }
+
+    .btn-update-block {
+      right: 15px;
+      top: 5px;
+      position: absolute;
+    }
+
+    .row-item {
+      flex-direction: column;
+
+      .item {
+        width: 100%;
+        margin-bottom: $form-row-margin-bottom;
+
+        p-calendar input {
+          font-size: 11px;
+          width: 115px;
+        }
+
+        .controls-label-idWorkflow {
+          label {
+            font-weight: bold !important;
+          }
+        }
+
+        & > span > label {
+          align-items: center;
+          font-weight: bold !important;
+          padding-right: 15px;
+        }
+
+        .form-control-input {
+          display: flex;
+
+          label {
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin bu-list-checkboxes {
+  p-checkbox {
+    max-width: 120px;
+    min-width: 70px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+
+    &:first-child {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@mixin main-row-period-input {
+  .period-container {
+    display: flex;
+    flex-direction: row;
+
+    & > span {
+      display: flex;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & > label {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .controls-select-month-from {
+    margin-right: 15px;
+  }
+}
+
+@mixin label-bold {
+  label {
+    font-weight: bold !important;
+  }
+}
+
+@mixin label-bold-root {
+  & > label {
+    font-weight: bold !important;
+  }
+}
+
+
+@mixin choose-group-sku {
+  .controls-autocomplete-sku {
+    .ui-autocomplete-multiple-container {
+      min-height: 38px;
+    }
+  }
+
+  .controls-autocomplete-sku,
+  .controls-autocomplete-name {
+    label {
+      font-weight: bold !important;
+      display: flex;
+    }
+  }
+
+  .controls-input-name {
+    .form-control-input {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      & > label {
+        display: flex;
+        margin-bottom: 8px;
+        font-weight: bold !important;
+        align-items: flex-start !important;
+        justify-content: flex-start;
+      }
+    }
+
+  }
+
+  .controls-check-individual-accounting {
+    top: 6px;
+    position: relative;
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+  .ui-autocomplete {
+    width: 100%;
+  }
+}
+
+@mixin period-container-column {
+  .period-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end !important;
+
+    & > span {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end !important;
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      & > label {
+        display: flex;
+        font-weight: normal;
+        align-items: center;
+      }
+    }
+  }
+}

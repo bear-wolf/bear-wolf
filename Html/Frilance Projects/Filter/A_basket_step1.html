@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=1200px;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/jquery-ui-1.8.15.custom.css" rel="stylesheet" />
+    <link href="css/jslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/select.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="scripts/jquery.slider/jquery.slider.css" rel="stylesheet" />
+    <link href="css/visuallightbox.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="scripts/jquery-1.8.3.js"></script>
+    <script src="scripts/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="scripts/tmpl.js"></script>
+    <script type="text/javascript" src="scripts/jquery.slider.js"></script>
+    <script type="text/javascript" src="scripts/jquery.navigation_slider.js"></script>
+    <script src="scripts/visuallightbox.js" type="text/javascript"></script>
+    <script src="scripts/unslider.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.raty.js"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="screen and (max-width:1280px) and (min-width:800px)" href="css/1280.css" />
+
+    <!--[if (IE) ]>
+    <script type="text/javascript">document.writeln("<link rel='stylesheet' type='text/css' href='css/ie.css'>");</script>
+    <script type="text/javascript" src="scripts/html5.js"></script>            
+<![endif]-->
+
+    <!--[if !IE]><!-->
+    <script>
+        if (Function('/*@cc_on return document.documentMode===10@*/')() && window.innerWidth >= 980) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'css/ie.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+    <!--<![endif]-->
+
+    <!--[if !(IE)]>-->
+    <script type="text/javascript">
+        document.writeln("<link rel='stylesheet' type='text/css' href='css/others.css'>");
+    </script>
+    <!--<![endif]-->
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-inner">
+            <header>
+                <div class="topline">
+                    <div class="fixit">
+                        <div class="keyblock">
+                            <a href="">Přihlášení</a>
+                            <a href="">Registrace</a>
+                        </div>
+                        <div class="search">
+                            <form action="/search/key/" method="get">
+                                <input type="text" value="Hleat..." class="toggle-inputs"><input type="submit" value="Hledat" />
+                            </form>
+                        </div>
+                        <div class="phoneblock">
+                            <span>+420</span>123 456 789
+                        </div>
+                        <div class="email">aquelia@voda.com</div>
+                        <div class="socialblock">
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <div class="korzina">
+                            <span>5</span>
+                            Do výše:  <b>1500 USD</b>
+                        </div>
+                    </div>
+                </div>
+                <nav class="topmenu">
+                    <ul class="level0">
+                        <li>
+                            <a href="" class="top0">Úvod</a>
+                            <ul class="level1">
+                                <li><a href="" class="top1">Filtry na vodu</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Změkčovače vody</a></li>
+                                <li><a href="" class="top1">UV lampy</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Filtry pro firm</a></li>
+                                <li><a href="" class="top1">Chlorizační jednotka</a></li>
+                                <li><a href="" class="top1">Dispensery</a></li>
+                                <li><a href="" class="top1">Sedimentační filtry</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="top0">Služby</a>
+                            <ul class="level1">
+                                <li><a href="" class="top1">Filtry na vodu</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Změkčovače vody</a></li>
+                                <li><a href="" class="top1">UV lampy</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Filtry pro firm</a></li>
+                                <li><a href="" class="top1">Chlorizační jednotka</a></li>
+                                <li><a href="" class="top1">Dispensery</a></li>
+                                <li><a href="" class="top1">Sedimentační filtry</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="" class="top0">Produkty </a>
+                            <ul class="level1">
+                                <li><a href="" class="top1">Filtry na vodu</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Změkčovače vody</a></li>
+                                <li><a href="" class="top1">UV lampy</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Filtry pro firm</a></li>
+                                <li><a href="" class="top1">Chlorizační jednotka</a></li>
+                                <li><a href="" class="top1">Dispensery</a></li>
+                                <li><a href="" class="top1">Sedimentační filtry</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="top0">O nás</a>
+                            <ul class="level1">
+                                <li><a href="" class="top1">Filtry na vodu</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Změkčovače vody</a></li>
+                                <li><a href="" class="top1">UV lampy</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Filtry pro firm</a></li>
+                                <li><a href="" class="top1">Chlorizační jednotka</a></li>
+                                <li><a href="" class="top1">Dispensery</a></li>
+                                <li><a href="" class="top1">Sedimentační filtry</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="top0">Reference</a>
+                            <ul class="level1">
+                                <li><a href="" class="top1">Filtry na vodu</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Změkčovače vody</a></li>
+                                <li><a href="" class="top1">UV lampy</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Filtry pro firm</a></li>
+                                <li><a href="" class="top1">Chlorizační jednotka</a></li>
+                                <li><a href="" class="top1">Dispensery</a></li>
+                                <li><a href="" class="top1">Sedimentační filtry</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="top0">Kontakt</a>
+                            <ul class="level1">
+                                <li><a href="" class="top1">Filtry na vodu</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Změkčovače vody</a></li>
+                                <li><a href="" class="top1">UV lampy</a>
+                                    <ul class="level2">
+                                        <li><a href="" class="top2">Filtry na vodu</a></li>
+                                        <li><a href="" class="top2">Změkčovače vody</a></li>
+                                        <li><a href="" class="top2">UV lampy</a></li>
+                                        <li><a href="" class="top2">Filtry pro firmy</a></li>
+                                        <li><a href="" class="top2">Chlorizační jednotka</a></li>
+                                        <li><a href="" class="top2">Dispensery</a></li>
+                                        <li><a href="" class="top2">Sedimentační filtry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="top1">Filtry pro firm</a></li>
+                                <li><a href="" class="top1">Chlorizační jednotka</a></li>
+                                <li><a href="" class="top1">Dispensery</a></li>
+                                <li><a href="" class="top1">Sedimentační filtry</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="fixit">
+                <div class="bread-crumbs"></div>
+                <div class="content">
+                    <div class="wrapper">
+                        <div class="left_part">
+                            <div class="leftblock">
+                                <div class="ltitle2"><b></b>product cataloge</div>
+                                <div class="block">
+                                    <nav class="leftmenu">
+                                        <ul>
+                                            <li><a href="javascript: void(0);" class="top0">Filtry na vodu</a></li>
+                                            <li><a href="javascript: void(0);" class="top0">Změkčovače vody</a></li>
+                                            <li><a href="javascript: void(0);" class="top0">UV lampy</a></li>
+                                            <li><a href="javascript: void(0);" class="top0">Filtry pro firmy</a></li>
+                                            <li><a href="javascript: void(0);" class="top0">Chlorizační jednotka</a></li>
+                                            <li><a href="javascript: void(0);" class="top0">Dispensery</a></li>
+                                            <li class="active"><a href="javascript: void(0);" class="top0">Sedimentační filtry</a>
+                                                <ul class="level2">
+                                                    <li class="active"><a href="javascript: void(0);" class="top2">Filtry na vodu</a>
+                                                        <ul class="level3">
+                                                            <li><a href="javascript: void(0);" class="top3">Filtry na vodu</a></li>
+                                                            <li><a href="javascript: void(0);" class="top3">Změkčovače vody</a></li>
+                                                            <li><a href="javascript: void(0);" class="top3">UV lampy</a></li>
+                                                            <li><a href="javascript: void(0);" class="top3">Filtry pro firmy</a></li>
+                                                            <li><a href="javascript: void(0);" class="top3">Chlorizační jednotka</a></li>
+                                                            <li><a href="javascript: void(0);" class="top3">Dispensery</a></li>
+                                                            <li><a href="javascript: void(0);" class="top3">Sedimentační filtry</a></li>
+                                                        </ul>
+
+                                                    </li>
+                                                    <li><a href="javascript: void(0);" class="top2">Změkčovače vody</a></li>
+                                                    <li><a href="javascript: void(0);" class="top2">UV lampy</a></li>
+                                                    <li><a href="javascript: void(0);" class="top2">Filtry pro firmy</a></li>
+                                                    <li><a href="javascript: void(0);" class="top2">Chlorizační jednotka</a></li>
+                                                    <li><a href="javascript: void(0);" class="top2">Dispensery</a></li>
+                                                    <li><a href="javascript: void(0);" class="top2">Sedimentační filtry</a></li>
+                                                </ul>
+
+                                            </li>
+                                            <li><a href="javascript: void(0);" class="top0">Slovník pojmů</a></li>
+
+
+                                        </ul>
+                                    </nav>
+
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="leftblock">
+                                <div class="ltitle">poslední novinky</div>
+                                <div class="block">
+                                    <ul class="leftnews clearfix">
+                                        <li>
+                                            <img src="images/bg/foto1.png">
+                                            <a href="" class="titlelink">Vodní filtry ZIP  5-fází filtračního systému</a>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis mauris quis auctor porttitor. Quisque dignissim vehicula leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis mauris quis auctor porttitor.                                            
+                                            <div class="date">01.01.2014<a href="">Vice...</a></div>
+                                        </li>
+                                        <li>
+                                            <img src="images/bg/foto1.png">
+                                            <a href="" class="titlelink">Vodní filtry ZIP  5-fází filtračního systému</a>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis mauris quis auctor porttitor. Quisque dignissim vehicula leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis mauris quis auctor porttitor.                                            
+                                            <div class="date">01.01.2014<a href="">Vice...</a></div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="leftblock">
+                                <div class="ltitle2"><i></i>recenze</div>
+                                <div class="block">
+                                    <div class="recenzeblock">
+                                        <span><b>Oleg Sergeev<i></i></b></span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet orci lectus, vitae dictum tellus consectetur ac. Etiam non dui quis justo feugiat sagittis. Ut non sagittis ante.
+										<div class="rayting" id="rayting1"></div>
+                                        <div class="clearfix"></div>
+                                        <div class="date">01.01.2014<a href="">Přečtěte si</a></div>
+                                    </div>
+                                    <div class="recenzeblock">
+                                        <span><b>Oleg Sergeev<i></i></b></span>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet orci lectus, vitae dictum tellus consectetur ac. Etiam non dui quis justo feugiat sagittis. Ut non sagittis ante.
+										<div class="rayting" id="rayting2"></div>
+                                        <div class="clearfix"></div>
+                                        <div class="date">01.01.2014<a href="">Přečtěte si</a></div>
+                                    </div>
+                                    <a href="" class="vicebut">Vice</a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <a href="">
+                                <img src="images/baner.png"></a><br>
+                            <br>
+                            <a href="">
+                                <img src="images/baner2.png"></a>
+                        </div>
+                        <div class="middle_part">
+                            <div class="center_part">
+
+                                <div class="title">
+                                    Nákupní košík
+                                </div>
+                                <div class="white">
+                                    <div class="basket step1">
+                                        <table class="grid">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Zboží</th>
+                                                    <th>Kód</th>
+                                                    <th>Cena</th>
+                                                    <th>Množstvi</th>
+                                                    <th>Součet</th>
+                                                    <th>Odstranit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="first">
+                                                    <td class="first">
+                                                        <img src="images/temp/m_07.jpg" />
+                                                    </td>
+                                                    <td class="descriptions separate">Vodní filtry ZIP 5-fází filtračního systému</td>
+                                                    <td class="kod separate">000-000-000</td>
+                                                    <td class="price separate"><span>25 000</span> Kč</td>
+                                                    <td class="separate">
+                                                        <div class="item_add_minus">
+                                                            <a href="javascript:void(0)" class="top"></a>
+                                                            <input type="text" value="1" />
+                                                            <a href="javascript:void(0)" class="bottom"></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="price separate"><span>25 000</span> Kč</td>
+                                                    <td class="last"><span class="delete"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="first">
+                                                        <img src="images/temp/m_07.jpg" />
+                                                    </td>
+                                                    <td class="descriptions separate">Vodní filtry ZIP 5-fází filtračního systému</td>
+                                                    <td class="kod separate">000-000-000</td>
+                                                    <td class="price separate"><span>25 000</span> Kč</td>
+                                                    <td class="separate">
+                                                        <div class="item_add_minus">
+                                                            <a href="javascript:void(0)" class="top"></a>
+                                                            <input type="number" value="1" />
+                                                            <a href="javascript:void(0)" class="bottom"></a>
+                                                        </div>
+                                                    </td>
+                                                    <td class="price separate"><span>25 000</span> Kč</td>
+                                                    <td class="last"><span class="delete"></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="basket-total">
+                                            <div class="base">
+                                                <ul>
+                                                    <li class="first">Kusů <i>2</i></li>
+                                                    <li class="last">Celkem <i><b>1500</b> Kč</i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="marg"></div>
+                                        <div class="block_button">
+                                            <a href="" class="next">Pokračovat</a>
+                                            <a href="" class="prev">Zpět k nakupování</a>
+                                        </div>
+
+                                        <div class="title inner">
+                                            se tento výrobek koupili
+                                        </div>
+
+                                        <div class="nav-slider product-slider">
+                                            <div class="sl-base">
+                                                <div class="sl-inner">
+                                                    <div class="navigation">
+                                                        <a rel="beg" class="arrowleft" href="javascript:void(0)"></a>
+                                                        <a rel="end" class="arrowright" href="javascript:void(0)"></a>
+                                                    </div>
+                                                    <div class="product-slider-pager"></div>
+                                                    <div class="baserelative">
+                                                        <div class="relative">
+                                                            <div class="absolute">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>25 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>25 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>25 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>101 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>25 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>101 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>25 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="design base">
+                                                                            <div class="image">
+                                                                                <img src="images/temp/sl_47.png" />
+                                                                            </div>
+                                                                            <strong>Vodní filtry ZIP 5-fází filtračního systému</strong>
+                                                                            <div class="price">
+                                                                                <i>101 000 </i>Kč
+                                                                       <a href="" class="link"></a>
+                                                                            </div>
+                                                                            <span class="skladem">Skladem</span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="fixit">
+                    <a href="" class="footerlogo">
+                        <img src="images/bg/footerlogo.png"></a>
+                    <div class="socialblock">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <div class="footertext">
+                        Spuštění a zastavení systému Tento systém je k dispozici s nízkým (ochrana čerpadla) a vysokým tlakovým spínačem pro řízení provozu. Zastaví systém, když je nádrž plná a začne znovu, když je částečně vyprázdněna. Aquastop, pro zabránění vyplavení Nízká citlivost elektronického řízení blokuje systém a varuje při nechtěném úniku vody. Byl navržen tak, aby zabránil systému zastavení v případě vlhkosti nebo kondenzace. Indikátor kvality vody - Parametry sondy a kontrolu kvality. Světelný indikátor, který ukazuje, kdy pronikají vodivost je vyšší než hodnota parametru. 
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Domů</a></li>
+                            <li><a href="">Materiály</a></li>
+                            <li><a href="" class="active">Galerie</a></li>
+                            <li><a href="">Partneři</a></li>
+                            <li><a href="">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footerline">Tvorba webových stránek  <a href="" target="_blank">Web planet s.r.o.</a> <a href="" class="planetlogo"></a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

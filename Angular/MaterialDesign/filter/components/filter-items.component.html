@@ -1,0 +1,91 @@
+<div *ngFor="let element of list"
+     class="filter-elements">
+  <div class="item"
+       [ngClass]="submit && element.error ? 'mat-form-field-invalid' : ''">
+
+                <span [ngSwitch]="element.type">
+                    <div *ngSwitchCase="typeFilterScheme.TypeNumber">
+                        <mat-form-field class="">
+                            <input matInput
+                                   type="number"
+                                   (keyup.enter)="onEnter()"
+                                   min="0"
+                                   (blur)="onBlur(element)"
+                                   tabindex="{{element.tabindex}}"
+                                   [minValueNumber]="element.minValue"
+                                   [placeholder]="element.placeholder"
+                                   [(ngModel)]="element.value" />
+                            <mat-hint align="end">It's required</mat-hint>
+                        </mat-form-field>
+                    </div>
+
+                    <div *ngSwitchCase="typeFilterScheme.TypeString || typeFilterScheme.TypeValue">
+                         <mat-form-field class="">
+                            <input matInput
+                                   type="text"
+                                   tabindex="{{element.tabindex}}"
+                                   (keyup.enter)="onEnter()"
+                                   [placeholder]="element.placeholder"
+                                   [(ngModel)]="element.value" />
+                            <mat-hint align="end">
+                              {{ element.message || "It's required" }}
+                            </mat-hint>
+                        </mat-form-field>
+                    </div>
+
+                  <div *ngSwitchCase="typeFilterScheme.TypeValue">
+                         <mat-form-field>
+                            <input matInput [placeholder]="element.placeholder"
+                                   tabindex="{{element.tabindex}}"
+                                   (keyup.enter)="onEnter()"
+                                   type="text"
+                                   [(ngModel)]="element.value" />
+                            <mat-hint align="end">
+                              {{ element.message || "It's required" }}
+                            </mat-hint>
+                        </mat-form-field>
+                  </div>
+
+                  <div *ngSwitchCase="typeFilterScheme.TypeSelect">
+                       <mat-form-field>
+                        <mat-select [(ngModel)]="element.value"
+                                    (keyup.enter)="onEnter()"
+                                    tabindex="{{element.tabindex}}"
+                                    [placeholder]="element.placeholder">
+                          <mat-option [value]="item.id"
+                                      *ngFor="let item of element.options"
+                                      [innerText]="item.value"></mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </div>
+
+                  <div *ngSwitchCase="typeFilterScheme.TypeCalendar" class="type-calendar">
+                      <span [ngClass]="{'is-dirty': element.date && (element.date.start || element.date.end), '': false }">
+                          <label [innerText]="element.placeholder" class="mat-form-field-label mat-input-placeholder mat-form-field-placeholder"></label>
+                      </span>
+                      <input type="text"
+                             matInput
+                             autocomplete="off"
+                             (click)="onChange(element)"
+                             [placeholder]="element.placeholder"
+                             ngxDaterangepickerMd
+                             tabindex="{{element.tabindex}}"
+                             (keyup.enter)="onEnter()"
+                             [dateLimit]="element.getCalendarDateLimit()"
+                             [maxDate]="element.getCalendarMaxDate()"
+                             [locale]="{applyLabel: 'ok', format: locale.format_date}"
+                             startKey="start" endKey="end"
+                             [(ngModel)]="element.date">
+
+                        <a href="javascript:void(0)"
+                           *ngIf="element.date"
+                           (click)="onClear(element)" class="close">
+                            <mat-icon aria-label="Clear the filter">clear</mat-icon>
+                        </a>
+                  </div>
+
+                    <span *ngSwitchDefault></span>
+                </span>
+
+  </div>
+</div>

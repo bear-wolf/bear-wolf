@@ -1,0 +1,1072 @@
+@import "reset.css";
+
+/*Шапка и все стили к елементов что находяться в шапке
+	ето коментарий, ищите его.
+*/
+
+
+html, body{ height:100%; }	
+	
+body{
+	color:#000;
+	font-family:Tahoma;
+	background:#0DB8D4 url(../img/background/BgHeader.jpg) repeat-x;	
+	}	
+
+.Bg{ }  
+		
+div{ margin:0 auto; }
+	
+ul li{ list-style:none; }
+
+a:link, a:visited{ color:#3B89B1; text-decoration:underline; outline:none;}
+a:hover{ color:#3B89B1; }
+
+/* UTIL */
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;	
+	}
+
+.easyfix{ overflow:hidden; }
+
+embed{ outline:none;}
+
+.none span,
+.none a span{	
+	display:none; 
+	}
+
+/* headings */
+h1, h2, h3, h4, h5, h6{ line-height:1.1; }
+
+p{
+	font:100 12px Arial;
+	color:#000;
+	}
+p a:link,
+p a:visited{ 
+	font:100 11px Arial;
+	color:#4068A8;
+	text-decoration:underline;
+	}
+p a:hover{ text-decoration:none;}
+
+.relative{ position:relative;}
+		
+/* Main */
+.main{
+	position:relative;
+	min-height:100%;	
+	background:url(../img/background/HeadBottom.png) repeat-x center 351px; /*линия фона под шапкой по ширине*/ 	
+	}
+.main .town{	
+	background:url(../img/background/town.png) repeat-y center 0px;		
+	}
+.main .headPhoto{
+	background:url(../img/background/head.jpg) no-repeat center 0px; /*Рисунок по центру шапки*/		
+	}
+.mainFixit{
+	position:relative;
+	width:1258px;	
+	}
+.fixit{ width:1024px; position:relative;}
+	
+.content{
+	padding:0px 0 170px 0px;
+	background:#fff url(../Img/background/BgContent.jpg) repeat-y center;	
+	}
+
+.wrapper{
+	position:relative;	
+	}
+
+.left-col{
+	float:left;
+	width:235px;
+	padding:14px 0px 0 0;	
+	}
+
+.middle-col{
+	margin-left:235px;
+	}
+.center-col{
+	margin-right:235px;
+	}
+
+.right-col{
+	float:right;
+	width:214px;
+	padding:14px 9px 0 12px;
+	}	
+
+.footer{
+	position:absolute;
+	height:168px;	
+	bottom:0;
+	left:0;	
+	width:100%;
+	background:url(../img/background/Footer.png) repeat-x;
+	}
+
+.Block
+{
+	margin:10px 0;
+	}
+.Block h3
+{
+	padding-left:0;
+	}
+
+h3
+{
+	font:100 17px Tahoma;
+    color:#3B89B1;
+    padding:0 0 5px 10px;
+	}
+
+/*Шапка и все стили к елементов что находяться в шапке*/
+
+.header{
+	position:relative;
+	z-index:100;
+	height:305px;
+	}
+
+
+/**Логотип 3 картинки, клава,телевизор...*********/
+.logo{
+	position:absolute;
+	left:-107px;
+	top:44px;
+	width:412px;
+	height:185px;
+	z-index:195;
+	}
+.logo a{
+	display:block;
+	text-align:right;
+	font:100 14px Arial;
+	text-decoration:none;
+	width:412px;
+	height:185px;
+	color:#fff;
+	}
+.logo i{
+	display:block;
+	font-size:0;
+	position:absolute;		
+	}
+.logo i.top
+{
+	left:57px;
+	top:0;
+	width:222px;
+	height:120px;
+	background:url(../img/logo/top.png)	no-repeat;
+	}
+.logo i.domen
+{
+	left:336px;
+	top:115px;
+	width:76px;
+	height:70px;
+	background:url(../img/logo/domen.png) no-repeat;
+	}
+.logo i.text
+{
+	left:0;
+	top:120px;
+	width:336px;
+	height:58px;
+	background:url(../img/logo/text.png) no-repeat;
+	}
+/**********/
+/* nav head Меню в шапке*/	
+.nav-head{
+	position:absolute;	
+	height:44px;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	}	
+.nav-head .block{
+	padding:0 10px;
+	position:relative;
+	}	
+.nav-head .block div{
+	background:url(../img/menu/Bgmenu.jpg) repeat-x;
+	height:44px;
+	}	
+.nav-head i.left,
+.nav-head i.right
+{
+	display:block;
+	position:absolute;
+	font-size:0;
+	width:10px;
+	height:44px;
+	top:0;
+	}
+.nav-head i.right{ right:0; background:url(../img/slices/menu.png) no-repeat -10px 0;}
+.nav-head i.left{ left:0; background:url(../img/slices/menu.png) no-repeat;}
+	
+.nav-head ul li{
+	float:left;
+	position:relative;
+	background: url(../img/menu/Delitel.jpg) no-repeat right 9px;
+	height:44px;
+	}		
+.nav-head ul li a:link,
+.nav-head ul li a:visited
+{
+    font:100 14px Tahoma;
+	color:#fff;
+	padding:12px 14px 0 14px;	
+	display:block;
+	text-decoration:none;	
+    }		
+.nav-head ul li a:hover
+{
+    color:#FFE400;	
+    }		
+
+.nav-head ul li.end
+{
+    background:none;
+    }		
+
+
+.nav-head ul li.end a:link,
+.nav-head ul li.end a:visited,
+.nav-head ul li.active a:link,
+.nav-head ul li.active a:visited
+{
+    color:#FFE400;
+    }
+	
+.nav-head ul li a:link,
+.nav-head ul li a:visited{
+	
+	}
+	
+.nav-head ul li .submenu{ display:none;}
+.nav-head ul li:hover .submenu{ display:block;}
+
+.nav-head ul li .submenu{
+	position:absolute;
+	left:0px;
+	top:44px;
+	background:#3179A1;
+	width:150px;
+	height:auto;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;	
+	z-index:255;
+	}
+	
+.nav-head ul li .submenu ul li{
+	float:none;
+	display:block;
+	padding:0 0 10px 5px;
+	margin:0;	
+	height:auto;
+	text-align:left;	
+	background:none;
+	}	
+.nav-head ul li .submenu ul li a:link,
+.nav-head ul li .submenu ul li a:visited{
+	float:none;
+	display:block;
+	padding:0;
+	font:100 12px Tahoma;
+	text-align:left;
+	}	
+/*nav head===============*/	
+
+/*find - строка поиска*/
+.find
+{
+	position:absolute;
+	left:-107px;
+	top:232px;
+	width:333px;
+	height:23px;
+	z-index:205;
+	}
+.find .button
+{
+	position:absolute;
+	display:block;
+	right:0;
+	top:0;
+	width:75px;
+	height:23px;
+	font-size:0;
+	cursor:pointer;
+	}
+.find p input
+{
+	border:1px solid #32A8BF;
+	border-radius:3px;
+	width:235px;
+	padding:0 5px;
+	height:20px;
+	vertical-align:middle;
+	line-height:20px;
+	background:#fff;
+	}	
+/*find======*/	
+
+/*WHETHER погода в шапке*/
+.whether
+{
+	position:absolute;
+	width:148px;
+	right:-97px;
+	top:25px;
+	font:bold 12px Tahoma;
+	color:#3179A1;		 
+    border:1px solid #3B89B1; 
+    behavior: url(border-radius.htc);
+	border-radius:5px;	
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;  
+    -moz-border-radius: 8px;
+    background:url(../img/background/BgWhether.png);
+
+	}
+.whether i.u1,
+.whether i.u2,
+.whether i.u3,
+.whether i.u4
+{
+	position:absolute;
+	display:none;
+	width:5px;
+	height:5px;
+	font-size:0;
+	} 	
+.whether i.u1{ left:0; top:0; background:url(../img/slices/whether.png) no-repeat 0 0;}
+.whether i.u2{ right:0; top:0; background:url(../img/slices/whether.png) no-repeat -5px 0;}
+.whether i.u3{ right:0; bottom:0; background:url(../img/slices/whether.png) no-repeat -5px -5px;}
+.whether i.u4{ left:0; bottom:0; background:url(../img/slices/whether.png) no-repeat 0 -5px;}
+
+.whether .top,
+.whether .bottom{ padding:0 5px; position:relative; background:url(../img/background/BgWhether.png);}
+
+.whether .bottom div{
+	height:5px;
+	font-size:0;
+}
+.whether .top div{
+	height:5px;
+	font-size:0;
+	line-height:0;
+}
+.whether .center
+{
+	background:url(../img/background/BgWhether.png);
+	padding:24px 0 10px 9px;
+	}
+
+.whether strong
+{
+	display:block;
+	font:bold 14px Tahoma;
+	color:#3179A1;
+	padding:0 0 14px 0;
+	}
+.whether ul li span
+{
+	position:absolute;
+	right:30px;
+	top:3px;
+	text-align:right;		
+	}
+.whether ul li
+{
+	position:relative;
+	padding:5px 0 10px 0;	
+	}	
+.whether ul li img
+{
+	position:absolute;
+	display:block;
+	top:0;
+	left:25px;
+	font-size:0;
+	}	
+
+/*WHETHER======*/
+
+/*Шапка и все стили к елементов что находяться в шапке=================*/
+		
+	
+/* footer */
+.footer div.dfixit
+{
+	padding:5px 0 5px 18px; 
+    width:1006px;
+    position:relative; 
+	margin:0 auto; 
+	background:#3B89B1;
+	height:158px;
+	border-top:1px solid #CFDFE7;
+	}
+.footer table{ width:100%;}	
+
+.footer table td p.base{ padding:0 0 10px 0;}
+.footer table td p.base a:link,
+.footer table td p.base a:visited
+{
+	text-decoration:none;
+	font:bold 14px Tahoma;
+	color:#fff;
+	}
+.footer table td p.base a.active,
+.footer table td p.base a:hover
+{	
+	color:#FFE400;
+	}
+
+.footer table td.tdmoney{ width:300px;}
+
+.footer ul li
+{
+	float:none;    	
+    font:100 14px Tahoma;
+	color:#A8E2FF;
+	padding:0 12px 0 0;
+	}
+.footer ul li a:link,
+.footer ul li a:visited{
+	text-decoration:none;
+	font:100 14px Tahoma;
+	color:#A8E2FF;
+	}	
+.footer ul li a:hover{
+	text-decoration:underline;
+	}
+.footer ul li.active a:link,
+.footer ul li.active a:visited
+{
+    color:#FFE400;
+    }	
+
+.footer ul li.active li a:link,
+.footer ul li.active li a:visited
+{
+    color:#A8E2FF;
+    }	
+	
+.footer ul li ul{ margin-top:10px;}
+.footer ul li li{ float:none;}
+
+/*Podpis*/
+.footer address{
+	padding:15px 0 0 0;		
+	text-align:center;
+	display:block;
+	font:100 12px Tahoma;
+    color:#A8E2FF;
+	}	
+/*Podpis====*/
+
+/*money*/
+.money
+{
+	width:300px;
+    position:relative;
+    }
+.money ul li{ float:left; padding:0;}
+.money ul li.wmlogo{ background:url(../img/money/webmoney.gif) no-repeat;}
+.money ul li.visa{ background:url(../img/money/Visa.jpg) no-repeat;}
+.money ul li.electron{ background:url(../img/money/VisaElectron.jpg) no-repeat;}
+.money ul li.mastercard{ background:url(../img/money/MasterCard.jpg) no-repeat;}
+.money ul li.maestro{ background:url(../img/money/Maestro.jpg) no-repeat;}
+.money ul li a
+{
+    display:block;
+    width:53px;
+    height:34px;
+    }
+.footer table td.tdmoney p a:link,
+.footer table td.tdmoney p a:visited{ color:#fff;}   
+
+.footer table td.tdmoney h2{ color:#fff; font-size:14px; padding:0 0 10px 0;}
+.footer table td.tdmoney h2:hover{ color:#FFE400;}
+/*money=========*/
+	
+
+/*footer========*/
+
+/*******/
+.BanerPart 
+{
+    text-align:center;
+    margin:10px 0;
+    }
+/*******/
+
+
+/*menu----------*/
+.menu
+{
+    padding:14px 0 14px 10px;
+    }
+.menu ul li
+{
+    padding:0 0 15px 65px;
+    font:100 17px Tahoma;
+    color:#3B89B1;
+    }
+.menu ul li p
+{
+    font:100 17px Tahoma;
+    color:#3B89B1;
+    }
+.menu ul li li
+{
+    padding:0;   
+    line-height:1; 
+    }
+.menu ul li a:link,
+.menu ul li a:visited
+{
+    font:100 12px Tahoma;
+    color:#3B89B1;
+    text-decoration:none;
+    }
+.menu ul li a:hover
+{
+    text-decoration:underline;
+    }
+.menu ul li.Biznes{ background:url(../img/icon/Biznes.png) no-repeat 4px 0;}
+.menu ul li.Tovar{ background:url(../img/icon/Tovar.png) no-repeat 0 0;}
+.menu ul li.Job{ background:url(../img/icon/Job.png) no-repeat 7px 0;}
+.menu ul li.Otdux{ background:url(../img/icon/Otdux.png) no-repeat 7px 0;}
+.menu ul li.Media{ background:url(../img/icon/Media.png) no-repeat 4px 0;}
+.menu ul li.Afisha{ background:url(../img/icon/Afisha1.png) no-repeat 9px 0;}
+.menu ul li.Dir{ background:url(../img/icon/Dir.png) no-repeat 4px 0;}
+
+/*menu==========*/
+
+/*registry*/
+.Registry
+{
+    padding:0 0 0 95px;
+    margin:0 0 14px 0;
+    height:74px;
+    background:url(../img/icon/registry.png) no-repeat 0px 0;
+    }
+.Registry a:link,
+.Registry a:visited
+{
+    font:100 14px Tahoma;
+    text-decoration:underline;
+    color:#3B89B1;
+    }
+.Registry a:hover
+{
+    text-decoration:none;
+    }
+.Registry b
+{
+    display:block;
+    font:100 17px Tahoma;
+    color:#3B89B1;
+    }
+.Registry b a:link,
+.Registry b a:visited
+{
+    font:100 17px Tahoma;
+    color:#3B89B1;
+    text-decoration:none;
+    }
+.Registry b a:hover{text-decoration:underline;}
+
+.Registry p{ padding:2px 0;}    
+.Registry p a:link,
+.Registry p a:visited
+{
+	font:100 12px Tahoma;
+    text-decoration:underline;
+    color:#3B89B1;
+	}    
+/*registry=======*/
+
+
+/*Galery*/
+.Galery h2
+{
+    font:100 17px Tahoma;
+    color:#3B89B1;
+    padding:0 0 5px 0;
+    }
+.Galery p
+{
+    font:100 11px Tahoma;
+    color:#3B89B1;
+    }
+.Galery span
+{
+    color:#fff;
+    font:100 14px Tahoma;
+    background:#3B89B1;
+    display:block;
+    margin:22px 0 8px 0;
+    padding:2px 5px;
+    }    
+.Galery ul li
+{
+    font:100 12px Tahoma;
+    color:#464646;
+    padding:0 0 14px 21px;
+    position:relative;
+    }
+
+.Galery ul li b
+{
+    display:block;
+    position:absolute;
+    right:20px;
+    top:0px;
+    width:15px;
+    font:100 12px Tahoma;
+    color:#3B89B1;
+    text-decoration:none;
+    }
+.Galery ul li a:link,
+.Galery ul li a:visited
+{
+    display:block;
+    font:100 12px Tahoma;
+    color:#464646;
+    text-decoration:none;
+    }
+.Galery ul li a:hover
+{
+    text-decoration:underline;
+    }
+/*Galery=======*/
+
+
+/*Speek*/
+.Speek
+{
+    margin:10px 0 5px 0;
+    }
+.Speek h3
+{
+    font:100 17px Tahoma;
+    color:#3B89B1;
+    padding:0 0 5px 0;
+    }
+.Speek p
+{
+    font:100 12px Tahoma;
+    color:#464646;
+    }
+.Speek a:link,
+.Speek a:visited
+{
+    font:100 12px Tahoma;
+    color:#0E5D85;
+    text-decoration:underline;
+    }    
+.Speek a:hover
+{
+    text-decoration:none;
+    }    
+
+.Speek div
+{
+	/*behavior: url(border-radius.htc);*/
+    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;    
+    background:#5CC8FF;
+    padding:7px 15px;
+    margin:0 0 10px 0;           
+    behavior: url(../js/PIE.htc);
+    }    
+    
+/*Speek=========*/
+
+/*dNews----------*/
+p.name
+{
+	background:url(../img/background/Zaglavie/BgGreen.jpg) repeat-x;
+	height:25px;
+	padding:0 0 0 35px;
+	font:100 17px Tahoma;
+	color:#3B89B1;
+	display:block;
+	text-align:left;
+	position:relative;
+	}
+p.name i
+{
+	display:block;
+	position:absolute;
+	left:5px;
+	top:3px;
+	font-size:0;
+	width:22px;
+	height:18px;
+	background:url(../img/icon/news.jpg) no-repeat;
+	}
+p.name i.afisha
+{
+	left:5px;
+	top:3px;
+	width:17px;
+	height:17px;
+	background:url(../img/icon/afisha.jpg) no-repeat;
+	}
+p.name i.video
+{
+	left:5px;
+	top:3px;
+	width:19px;
+	height:19px;
+	background:url(../img/icon/video1.png) no-repeat;
+	}
+/***********/
+.dNews table th
+{
+	width:173px;
+	background:#E8F7FF;
+	text-align:left;
+	padding:9px 11px 15px 11px;
+	}
+.dNews table th span
+{
+	display:block;
+	font:bold 12px Tahoma;
+	color:#3B89B1;
+	background:#FFE400;
+	text-align:left;
+	padding:0 8px;
+	height:18px;
+	line-height:18px;
+	margin:0 0 5px 0;
+	}
+.dNews table th p.img
+{
+	text-align:center;
+	}
+.dNews table th strong
+{
+	display:block;
+	text-align:justify;
+	font:bold 12px Tahoma;
+	color:#3B89B1;
+	line-height:1.3;
+	}
+.dNews table th p
+{
+	font:bold 12px Tahoma;
+	color:#4F4F4F;
+	line-height:1.3;
+	}
+.dNews table td
+{
+	padding:0 5px;
+	}
+/*dNews========*/
+
+
+/*ulNews*/
+.ulNews li{ padding:0 0 10px 0;}
+.ulNews li strong{ font:bold 10px Tahoma; color:#3B89B1; text-indent:20px; display:block; text-align:justify; }
+.ulNews li p{ font:100 10px Tahoma; color:#4f4f4f; text-align:justify;}
+/*ulNews========*/
+
+/*MenuNews*/
+
+.relative{ position:relative; height:30px; margin:10px 0 0 0;}
+
+.MenuNews 
+{
+	position:absolute;
+	right:0;
+	top:0;
+	height:20px;
+    background:#3B89B1;
+    border-radius:3px;
+    padding:0 3px;
+    }
+.MenuNews li{ float:left; font:none; background:#3B89B1 url(../img/menu/DelitelNews.jpg) no-repeat right 1px; padding:0 2px;}
+.MenuNews li.end{ background:none;}
+
+.MenuNews li:hover,
+.MenuNews li.active{ background-color:#186383; font-family:none;}
+
+.left-col .MenuNews
+{
+	left:5px;
+	}
+
+.MenuNews li a:link,
+.MenuNews li a:visited
+{
+	font:bold 12px Tahoma;
+	color:#fff;
+	padding:0 4px;
+	margin:0;
+	height:19px;
+	text-decoration:none;
+	}
+.left-col .MenuNews li a:link,
+.left-col .MenuNews li a:visited
+{
+	font-size:11px;
+	}
+/*MenuNews=====*/
+
+/*Struct*/
+.Struct{ margin:0 0 10px 0;}
+.Struct th{ padding:0 7px 0 0;}
+.Struct td{ padding:0 0 0 7px;}
+.Struct td span
+{
+	display:block;
+	font:bold 12px Tahoma;
+	color:#3B89B1;
+	background:#FFE400;
+	text-align:left;
+	padding:0 8px;
+	height:18px;
+	line-height:18px;
+	margin:5px 0;
+	}
+	
+div.all 
+{
+	position:relative;
+	padding:0 0 0 35px;
+	font:100 14px Tahoma;
+	color:#3B89B1;
+	margin:5px 0 0 0;
+	text-align:left;
+    }	
+div.all a:link,
+div.all a:visited
+{
+	font:100 14px Tahoma;
+	color:#3B89B1;
+	text-decoration:none;
+    }	
+div.all a:hover
+{
+	text-decoration:underline;
+    }	
+
+div.all i.video
+{
+	display:block;
+	position:absolute;
+	left:5px;
+	top:0px;
+	font-size:0;
+	width:19px;
+	height:19px;
+	background:url(../img/icon/video2.jpg) no-repeat;
+	}    
+div.all i.kino
+{
+	display:block;
+	position:absolute;
+	left:5px;
+	top:0px;
+	font-size:0;
+	width:23px;
+	height:16px;
+	background:url(../img/icon/kino.png) no-repeat;
+	}    
+/*Struct=========*/
+
+/*tAfisha*/
+.tAfisha
+{
+	margin:5px 0;
+	}
+.tAfisha th
+{
+	padding:0 8px;
+	text-align:center;
+	}
+.tAfisha td
+{
+	text-align:justify;
+	} 
+.tAfisha td strong
+{
+	display:block;
+	font:bold 12px Tahoma;
+	padding:5px 0;
+	color:#3B89B1;	
+	} 
+.tAfisha td p
+{
+	font:100 12px Tahoma;
+	color:#4f4f4f; 
+	}
+/*tAfisha=======*/
+
+/*Line*/
+.HotTo,
+.NewsTo,
+.Empty
+{
+	margin:5px 0;
+	padding:30px 5px 0 5px;	    
+	position:relative;
+	
+	}
+
+div.inform 
+{
+	margin:5px 0;
+	padding:5px;
+	background:#fff; 
+	border:1px solid #ccc; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;    
+    }
+
+
+.Empty div.inform,
+.NewsTo div.inform,
+.HotTo div.inform 
+{
+	display:none; 
+	}
+/*Line*/
+
+
+/*Today*/
+.Today,
+.Razvlechenie
+{
+	margin:5px 0;
+	}
+.Today .information
+{
+	padding:5px;
+	}
+table.datatable{ margin:5px 0;}	
+table.datatable thead td
+{
+	text-align:center;
+	font:bold 12px Arial;
+	height:30px;
+	vertical-align:middle;
+	}
+table.datatable tbody td{ text-align:center;}
+	
+table.datatable tbody td a:link,
+table.datatable tbody td a:visited
+{
+	font:100 11px Arial;
+	color:#4068A8;
+	text-decoration:underline;
+	}
+table.datatable tbody td a:hover
+{
+	text-decoration:none;
+	}
+/*Today=========*/
+
+
+/*LineMenu*/
+.LineMenu
+{
+	position:absolute;
+	right:0;
+	top:0;
+	height:25px;
+	}
+.LineMenu ul li
+{
+	float:left;
+	padding:0 5px 0 0;	
+	}
+.LineMenu ul li a:link,
+.LineMenu ul li a:visited
+{
+	display:inline-block;	
+	font:100 11px Arial;
+	padding:3px 5px;
+	text-decoration:none;
+	}
+.LineMenu ul li:hover a:link,
+.LineMenu ul li:hover a:visited,
+.LineMenu ul li.active a:link,
+.LineMenu ul li.active a:visited
+{
+	background:#ccc;
+	border-radius:5px;
+	}
+.LineMenu ul li
+{
+	float:left
+	}
+/*LineMenu=======*/
+
+/*Razvlechenie*/
+table.Razvlechenie thead td 
+{
+	font:100 11px Tahoma;
+	color:#000;
+	text-align:center;
+    }
+table.Razvlechenie thead td.women 
+{
+	font:100 11px Tahoma;
+	color:#f00;
+	text-align:center;
+    }
+table.Razvlechenie thead td span
+{
+	display:block;
+	font:100 10px Tahoma;
+	padding:0 0 5px 0;
+	}
+table.Razvlechenie tbody td
+{
+	text-align:center;
+	padding:0 2px;
+	}
+table.Razvlechenie tbody td strong
+{
+	display:block;
+	font:100 12px Tahoma;
+	color:#4f4f4f;
+	}
+/*Razvlechenie======*/
+
+span.name
+{
+    color:#fff;
+    font:100 14px Tahoma;
+    background:#3B89B1;
+    display:block;
+    padding:2px 5px;
+    margin-bottom:5px;
+    border-radius:3px;
+    }    
+
+
+/*TEGU*/
+.Tegi{ margin:10px 0 20px 0;}
+
+.Tegi embed{ margin:0 auto; display:block;}
+/*TEGU=====*/

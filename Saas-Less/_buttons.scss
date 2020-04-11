@@ -1,0 +1,32 @@
+@import "variables";
+
+button {
+  border: none;
+  color: white;
+
+  &.btn {
+
+    &-icon {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      padding: 0;
+    }
+
+    &-color {
+      color: white;
+
+      &-medium-green {
+        background-color: $color-abbott-medium-green;
+      }
+
+      &-red {
+        background-color: $color-abbott-red;
+      }
+
+      &-primary-blue {
+        background-color: $color-abbott-primary-blue;
+      }
+    }
+  }
+}

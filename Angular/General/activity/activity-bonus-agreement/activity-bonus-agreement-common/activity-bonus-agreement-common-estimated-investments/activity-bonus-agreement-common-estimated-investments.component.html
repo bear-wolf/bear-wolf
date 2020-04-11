@@ -1,0 +1,90 @@
+<div class="content-block agreement-common-estimated-investments-content">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Данные по расчетным инвестициям</h3>
+  </div>
+
+  <div class="form-component">
+    <form [formGroup]="form">
+      <div class="rows-block">
+        <div class="row-item">
+            <app-form-controls-input
+                    label="Факт итого 2019, р.:"
+                    formControlName="factTotal"
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('factTotal').errors">
+            </app-form-controls-input>
+        </div>
+        <div class="row-item">
+          <app-form-controls-input
+                  label="% прироста органический:"
+                  formControlName="growthOrganic"
+                  type="number"
+                  [hideErrors]="true"
+                  [errors]="form.get('growthOrganic').errors">
+          </app-form-controls-input>
+        </div>
+        <div class="row-item">
+          <label>% инвестиций:</label>
+          <div>
+            <app-form-controls-input
+                    formControlName="investment"
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('investment').errors">
+            </app-form-controls-input>
+          </div>
+        </div>
+        <div class="row-item">
+          <app-form-controls-label
+                  label="План итого 2020, р.:"
+                  formControlName="planTotal">
+          </app-form-controls-label>
+        </div>
+        <div class="row-item">
+          <app-form-controls-label
+                  label="Инвестиции по матрице, год, р.:"
+                  formControlName="investmentByMatrix">
+          </app-form-controls-label>
+        </div>
+        <div class="row-item">
+          <app-form-controls-label
+                  label="Месяц, р.:"
+                  formControlName="investmentMonth">
+          </app-form-controls-label>
+        </div>
+        <div class="row-item">
+            <app-form-controls-input
+                    label="Расчетные инвестиции на период активности, р.:"
+                    formControlName="estimatedInvestmentsForPeriodPrice"
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('estimatedInvestmentsForPeriodPrice').errors">
+            </app-form-controls-input>
+        </div>
+        <div class="row-item">
+            <app-form-controls-input
+                    label="Цена отчетов 1 SKU, р.:"
+                    formControlName="priceReport"
+                    type="number"
+                    [hideErrors]="true"
+                    [errors]="form.get('priceReport').errors">
+            </app-form-controls-input>
+        </div>
+        <div class="row-item align-items-start">
+          <span>
+            <label>Фактический период отчетов:</label>
+          </span>
+          <span>
+            <app-form-controls-period
+                    formControlName="reportPeriod"
+                    [hideErrors]="true"
+                    [errors]="form.get('reportPeriod').errors"
+                    [labels]="true">
+            </app-form-controls-period>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

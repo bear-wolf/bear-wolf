@@ -1,0 +1,10 @@
+@import "../../../../../assets/css/variables";
+
+td {
+  cursor: pointer;
+
+  &.selected {
+    color: white;
+    background-color: $color-abbott-primary-blue;
+  }
+}

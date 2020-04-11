@@ -1,0 +1,36 @@
+﻿
+/*font-face*/
+@font-face {
+    font-family: "Asenine_Cyrillic";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/AsenineCyrillic.eot');
+    src: url('../fonts/AsenineCyrillic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Asenine_Cyrillic.ttf') format("truetype"), 
+         url('../fonts/AsenineCyrillic.woff') format("woff"), 
+         url('../fonts/AsenineCyrillic.svg') format('svg');
+}
+
+@font-face {
+    font-family: "ProximaNova-Light";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Proxima_Nova_Light.otf') format('opentype'), 
+         url('../fonts/ProximaNova-Light.woff') format("woff"), 
+         url('../fonts/ProximaNova-Light.svg') format('svg');
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ProximaNova-Regular.otf') format('opentype'), 
+         url('../fonts/ProximaNova-Regular.woff') format("woff"), 
+         url('../fonts/ProximaNova-Regular.svg') format('svg');
+}
+
+/*font-face=========*/

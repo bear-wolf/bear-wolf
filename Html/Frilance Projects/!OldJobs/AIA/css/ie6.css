@@ -1,0 +1,49 @@
+/*css style for IE6*/
+
+* html div,
+* html li{
+	height:1%;
+	}
+
+* html .easyfix{ overflow:visible; }
+
+img{ filter:expression(fixPNG(this));}
+
+	
+
+.autor ul li div span.left{ 
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/header/autor/autor_lt.png", sizingMethod="crop");	
+	}
+.autor ul li div span.right{ 
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/header/autor/autor_rt.png", sizingMethod="crop");
+	}
+
+.find  span.right,
+.arxiv .otstup div span.right{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/header/find/find_rt.png", sizingMethod="crop");
+	}
+.find span.left,
+.arxiv .otstup div span.left{ 
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/header/find/find_lt.png", sizingMethod="crop");
+	}
+
+.autor ul li div{ margin:0 10px 0 0; }
+.deystvie .right{
+	margin-top:-13px;
+	}
+
+.build div.podobrat .button{margin:0 0 0 4px;}
+
+.wheather{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/background/wether.png", sizingMethod="crop");
+	}
+
+.find input{
+	height:17px;
+	padding:3px 0 0 0;
+	}

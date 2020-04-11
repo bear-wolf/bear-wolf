@@ -1,0 +1,459 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/pages.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <title>Карточка товара</title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->	
+	<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+<div class="fixit">
+<!--HEADER-->
+	<div class="header">
+		
+		<a href="#" class="logo"></a>
+		
+		<div class="phone">
+			Горячая линия:
+			<p><b>(495)</b> 345-67-89</p>
+		</div>
+		
+		<div class="autorizaciya">
+			<div class="avto">
+				<a href="#"><img src="img/temp/autoruzaciya/to_06.jpg" width="58" height="58" alt="" /></a>
+				Александр Македонский <a href="#">[DeluxeMan]</a>
+				<i class="exit"><a href="#">Выход</a></i>
+			</div>
+			
+		</div>	
+		
+		<div class="nav-top">
+			<div class="menu">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог фильмов</a></li>
+					<li><a href="#">Вид</a></li>
+					<li><a href="#">Поиск</a></li>
+					<li><a href="#">Справка</a></li>
+					<li><a href="#">Прошивки</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="korzina">
+				В корзине <a href="#"><b>2 товара</b></a>
+			</div>
+		</div>
+		
+	</div>
+	<!-- /HEADER -->
+
+            
+<!-- CONTENT -->			
+<div class="content">
+	<div class="wrapper">
+					
+		<div class="MIDDLE-COL">
+			<!-- RIGHT-COL-->
+			<div class="RIGHT-COL">
+				
+				<div class="find">
+					<h2>Поиск</h2>
+					<div>
+						<ul>
+							<li><input type="text" value="input" class="toggle-inputs"  /></li>
+							<li class="but"><input type="image" src="img/button/find.jpg" /></li>
+						</ul>	
+					</div>
+					<p><a href="#">Расширеный поиск</a></p>
+				</div>	
+				
+				<div class="katalog">
+					<h3>Каталог</h3>
+					<div>
+						<ul>
+							<li><a href="#">Боевик</a></li>
+							<li><a href="#">Фантастика</a></li>
+							<li><a href="#">Комедия</a></li>
+							<li><a href="#">Триллер</a></li>
+							<li><a href="#">Драма</a></li>
+							<li><a href="#">Детектив</a></li>
+							<li><a href="#">Мелодрама</a></li>
+							<li><a href="#">Военный</a></li>
+							<li><a href="#">Ужасы</a></li>
+							<li><a href="#">Криминал</a></li>
+							<li><a href="#">Мюзикл</a></li>
+							<li><a href="#">Фэнтези</a></li>
+							<li><a href="#">Приключения</a></li>
+							<li><a href="#">История</a></li>
+							<li><a href="#">Биография</a></li>
+							<li><a href="#">Семейный</a></li>
+							<li><a href="#">Музыка</a></li>
+							<li><a href="#">Спорт</a></li>
+							<li><a href="#">Вестерн</a></li>
+							<li><a href="#">Документальный</a></li>
+							<li><a href="#">Для взрослых</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="kupili">
+					<h4>Только что купили</h4>
+					<table>
+						<tr>
+							<td class="img"><a href="#"><img src="img/temp/kupili/main_111.jpg" width="69" height="98" alt="" /></a></td>
+							<td>
+								<a href="#">Железный человек 2</a>
+								<p>Купили <br />1 ч. 34 мин. <br />назад</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="img"><a href="#"><img src="img/temp/kupili/main_111.jpg" width="69" height="98" alt="" /></a></td>
+							<td>
+								<a href="#">Железный человек 2</a>
+								<p>Купили <br />1 ч. 34 мин. <br />назад</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="img"><a href="#"><img src="img/temp/kupili/main_111.jpg" width="69" height="98" alt="" /></a></td>
+							<td>
+								<a href="#">Железный человек 2</a>
+								<p>Купили <br />1 ч. 34 мин. <br />назад</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+			<!-- /RIGHT-COL-->
+						
+			<!-- CENTER -->	
+			<div class="CENTER">
+						
+				<div class="head_line">
+					<ul>
+						<li><a href="#">Главная</a> /</li>
+						<li><a href="#">Каталог</a> /</li>
+						<li><a href="#">Фантастика</a></li>
+					</ul>
+				</div>
+				
+				<div class="obzor_filma">
+					<h2><b>Железный человек 2</b>(Iron Man 2)</h2>
+					<table>
+						<tr>
+							<td><img src="img/temp/obzor_filma/big.jpg" width="266" height="363" alt="" /></td>
+							<td class="ramka">
+								<ul class="kinost">
+									<li><i>Страна</i>США,  </li>
+									<li><i>Киностудия</i> Парамаунт Пикчерз</li>
+									<li><i>Режисер</i>  Джон Фавро</li>
+									<li><i>Актеры</i>Роберт Дауни мл., Дон Чидл , Скарлетт Йоханссон</li>
+									<li><i>Бюджет</i> 3 400 000 долларов</li>
+									<li><i>Год</i> 2010</li>
+									<li><i></i></li>
+								</ul>
+								<div class="line"></div>
+								
+								<div class="reyting">
+									<span>Рейтинг</span>
+									<ul>
+										<li><a href="#"><img src="img/icon/zirku/yel-act.jpg" width="17" height="17" alt="" /></a></li>
+										<li><a href="#"><img src="img/icon/zirku/yel-act.jpg" width="17" height="17" alt="" /></a></li>
+										<li><a href="#"><img src="img/icon/zirku/yel-act.jpg" width="17" height="17" alt="" /></a></li>
+										<li><a href="#"><img src="img/icon/zirku/yel_pas_act.jpg" width="17" height="17" alt="" /></a></li>
+										<li><a href="#"><img src="img/icon/zirku/yel-pas.jpg" width="17" height="17" alt="" /></a></li>
+									</ul>
+									<p>(3,8) <i>Голосов:</i> 1209</p>
+								</div>
+								
+								<div class="golosovat">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<span>Голосовать</span>
+									<ul>
+										<li><a href="#"><img src="img/icon/zirku/gr_act.jpg" width="17" height="17" alt="" /></a></li> 
+										<li><a href="#"><img src="img/icon/zirku/gr_act.jpg" width="17" height="17" alt="" /></a></li> 
+										<li><a href="#"><img src="img/icon/zirku/gr_act-pas.jpg" width="17" height="17" alt="" /></a></li> 
+										<li><a href="#"><img src="img/icon/zirku/gr_pas.jpg" width="17" height="17" alt="" /></a></li> 
+									</ul>
+								</div>
+								
+								<div class="link">
+									<ul>
+										<li><a href="#"><img src="img/counter/link/to_78.jpg" width="103" height="22" alt="" /></a></li>
+										<li><a href="#"><img src="img/counter/link/to_81.jpg" width="19" height="19" alt="" /></a></li>
+										<li><a href="#"><img src="img/counter/link/to_83.jpg" width="20" height="19" alt="" /></a></li>
+										<li><a href="#"><img src="img/counter/link/to_85.jpg" width="19" height="19" alt="" /></a></li>
+										<li><a href="#"><img src="img/counter/link/to_87.jpg" width="20" height="19" alt="" /></a></li>
+									</ul>
+								</div>
+								
+							</td>
+							<td class="pric">
+								<div class="otstup2">
+									<ul class="cena">
+										<li class="cen">
+											<div>
+												<i class="u1"></i>
+												<i class="u2"></i>
+												820 <b>руб.</b>
+											</div>
+										</li>
+										<li class="radio-vert"> 
+											<div>
+												<input type="radio" name="v" /> 
+												<img src="img/counter/to_31.jpg" width="48" height="27" alt="" />
+											</div>
+											<div>
+												<input type="radio" name="v" /> 
+												<img src="img/counter/to_35.jpg" width="72" height="19" alt="" />	
+											</div>										
+										</li>
+										<li class="red">
+											<a href="#">
+												<i class="u1"></i>
+												<i class="u2"></i>
+												В корзину
+											</a>
+										</li>
+									</ul>
+								</div>
+							
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="textovka">
+					<h2>Описание</h2>
+					<p>Прошло полгода с тех пор, как мир узнал, что миллиардер-изобретатель Тони Старк является обладателем уникальной кибер-брони Железного человека. Общественность требует, чтобы Старк передал технологию брони правительству США, но Тони не хочет разглашать её секреты, потому что боится, что она попадёт не в те руки. </p>
+
+					<p>Между тем, Иван Ванко — сын русского учёного когда-то работавшего на фирму Старка, но потом уволенного и лишенного всего, намерен отомстить Тони за беды своей семьи. Для чего сооружает своё высокотехнологичное оружие. </p>
+
+					<p>Продолжение, понравилось примерно так же, как и первый фильм. Такая же динамика, актерский состав, характер героев (в частности главного), атмосфера, спецэффекты из 2008 года. Изменился лишь сюжет, не сказать, что он получился оригинальным и грандиозным, он просто добротный для просмотра. </p>
+				</div>
+				
+				<div class="comentarii">
+					<h2>Коментарии</h2>
+					<ul class="otstup">
+						<li>
+							<table>
+								<tr>
+									<td> <img src="img/temp/comentary/to_103.jpg" width="59" height="58" alt="" /></td>
+									<td>
+										<div>
+											<h3><i>Boomerman</i> 18 августа 2010</h3>
+											<div class="post">
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												Единственное что могу посоветовать то сразу купить нормальный объектив. В идеале л-серию. Разобраться легко, проблем
+											</div>
+											
+											<div class="znak">
+												<div>
+													<ul>
+														<li class="plus"><a href="#"></a>134</li>
+														<li class="minus"><a href="#"></a>131</li>
+														<li class="oklik"><a href="#"></a></li>
+														<li class="com"><a href="#">Коментировать</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="line"></div>
+						</li>
+						<li class="img1">
+							<table>
+								<tr>
+									<td> <img src="img/temp/comentary/to_103.jpg" width="59" height="58" alt="" /></td>
+									<td>
+										<div>
+											<h3><i>Boomerman</i> 18 августа 2010</h3>
+											<div class="post">
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												Единственное что могу посоветовать то сразу купить нормальный объектив. В идеале л-серию. Разобраться легко, проблем
+											</div>
+											<div class="znak">
+												<div>
+													<ul>
+														<li class="plus"><a href="#"></a>134</li>
+														<li class="minus"><a href="#"></a>131</li>
+														<li class="oklik"><a href="#"></a></li>
+														<li class="com"><a href="#">Коментировать</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="line"></div>
+						</li>
+						<li class="img05">
+							<table>
+								<tr>
+									<td> <img src="img/temp/comentary/to_103.jpg" width="59" height="58" alt="" /></td>
+									<td>
+										<div>
+											<h3><i>Boomerman</i> 18 августа 2010</h3>
+											<div class="post">
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												Единственное что могу посоветовать то сразу купить нормальный объектив. В идеале л-серию. Разобраться легко, проблем
+											</div>
+											<div class="znak">
+												<div>
+													<ul>
+														<li class="plus"><a href="#"></a>134</li>
+														<li class="minus"><a href="#"></a>131</li>
+														<li class="oklik"><a href="#"></a></li>
+														<li class="com"><a href="#">Коментировать</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="line"></div>
+						</li>
+						<li>
+							<table>
+								<tr>
+									<td> <img src="img/temp/comentary/to_103.jpg" width="59" height="58" alt="" /></td>
+									<td>
+										<div>
+											<h3><i>Boomerman</i> 18 августа 2010</h3>
+											<div class="post">
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												Единственное что могу посоветовать то сразу купить нормальный объектив. В идеале л-серию. Разобраться легко, проблем
+											</div>
+											<div class="znak">
+												<div>
+													<ul>
+														<li class="plus"><a href="#"></a>134</li>
+														<li class="minus"><a href="#"></a>131</li>
+														<li class="oklik"><a href="#"></a></li>
+														<li class="com"><a href="#">Коментировать</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="line"></div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="add_coment">
+					<h3>Добавить коментарий</h3>
+					<textarea cols="" rows="">Текст</textarea>
+					<input type="image" src="img/button/add.jpg" />
+				</div>
+				
+				<div class="tizer">
+					<ul>
+						<li><a href="#"><img src="img/baner/tizer.jpg" width="220" height="87" alt="" /></a></li>
+						<li><a href="#"><img src="img/baner/tizer.jpg" width="220" height="87" alt="" /></a></li>
+						<li><a href="#"><img src="img/baner/tizer.jpg" width="220" height="87" alt="" /></a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<!-- CENTER===================== -->			
+		</div>
+	</div>	
+</div>
+<!-- /CONTENT========================= -->	
+           
+<!--FOOTER-->
+	<div class="footer">
+		<div class="nav-bot">
+			<ul>
+				<li><a href="#">Главная</a></li> 
+				<li><a href="#">Каталог фильмов</a></li> 
+				<li><a href="#">Вид</a></li> 
+				<li><a href="#">Поиск</a></li> 
+				<li><a href="#">Справка</a></li> 
+				<li><a href="#">Прошивки</a></li> 
+				<li><a href="#">Контакты</a></li> 
+				<li class="act"><a href="#">Карта сайта</a></li> 
+				<li class="act"><a href="#">Размещение рекламы</a></li> 
+				<li class="act"><a href="#">Обратная связь</a></li> 
+			</ul>
+		</div>
+		<div class="text">
+			<address>2010 © Magazina. Все права защищены</address>
+			Мнения и пожелания по работе проекта, можно оставить в разделе Обратная связь. Если не указана иное, копирование и размещение материалов в сети разрешено только при условии размещении ссылки на первоисточник. 
+			<div class="counter">
+				<ul>
+					<li><a href="#"><img src="img/counter/img1.jpg" width="88" height="31" alt="" /></a></li>
+					<li><a href="#"><img src="img/counter/img1.jpg" width="88" height="31" alt="" /></a></li>
+					<li><a href="#"><img src="img/counter/img1.jpg" width="88" height="31" alt="" /></a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>		
+<!--/ FOOTER===============-->	
+</div>
+</div>
+</body>
+</html>

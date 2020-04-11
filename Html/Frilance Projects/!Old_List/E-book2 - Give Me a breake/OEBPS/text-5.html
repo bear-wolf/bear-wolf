@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />   
+    <script class="jsbin" type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script> 
+</head>
+<body>
+<div class="Page Page5">       
+    <div class="Images"></div>     
+     <table>
+        <tbody>
+            <tr>
+                <td class="First">
+                    <p>Wendy added, “Sometimes... our interpretation of a situation can <br />
+                        keep us from seeing what’s really going on. Let me show you <br />
+                        something that illustrates this concept.”</p>                    
+                    <p>Wendy pulled out her iPad and invited Dr. Wells to watch a video.</p>
+                     <div class="Figure">       
+                         <!--<img src="image/Attention.png" />-->                 
+                        <video id="videoTag" controls poster="image/Attention.png" src="audio/eBook2.mp4"><source src="audio/eBook2.mp4" type="video/mp4"></video>
+                         <span>Interactive Video.</span> Selective Attention
+                         <span class="isAlreadyViewed" style="display: none;">Your answers are already posted.</span>
+                    </div>
+                    <p>“I think I know what you mean about missing what’s really going <br />
+                        on, Wendy,” said Dr. Wells. “This sort of thing has happened to <br /> 
+                        me before. I sometimes get so wound up in everyday minutiae, <br />
+                        I don’t see things that are right in front of me.”</p>
+                    <p>Wendy smiled. “That’s where critical thinking comes in handy, <br />
+                        Dr. Wells. It helps you distinguish among facts, opinions, and <br />
+                        assumptions, so you can observe things objectively, and <br />
+                        see what’s really happening.”</p>
+                    <p>“Now, tell me what your nurse, Cheryl, has to say. I didn’t <br />
+                        mean to be rude earlier, or invalidate Cheryl’s thoughts, <br />
+                        but first I needed you to give me the objective facts.</p>
+                </td>
+                <td class="Last">                
+                   <p>Now, let’s hear some opinions on the underlying cause.”</p>
+                   <p>“Okay,” said Dr. Wells. “Cheryl believes the low morale in the <br />
+                    office, and the recent resignations are due solely to a tedious <br />
+                    prior authorization process my billing staff has to follow, to help <br />
+                    patients whose insurance companies don’t cover the medications <br />
+                    I prescribe. I find it hard to believe an insurance process could <br />
+                    cause such dissatisfaction throughout the entire office, but <br />
+                    Cheryl insists that the frustration is contagious.”</p>
+                   <p>“Cheryl presents an interesting <br />
+                    hypothesis about the root cause <br />
+                    of the problem. But, I’d like to <br />
+                    hear what some of your other <br />
+                    staff members have to say.”</p>
+                   <p>“I’ll call a meeting for later <br />
+                    this week,” said Dr. Wells. <br />
+                    “I’d hate to lose any <br />
+                    more good people. <br />
+                    They’re all so <br />
+                    dedicated and <br />
+                    hardworking.”</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>Page 4</footer>
+</div> 
+    <script>
+        var isVideoAlreadyPlayed = 0;
+
+        $(function () {
+            if (isVideoAlreadyPlayed == 0) {
+                $('#videoTag').bind('ended', function() {
+                    isVideoAlreadyPlayed = 1;
+                    $('.isAlreadyViewed').show();
+                    $('#videoTag').unbind();
+                    
+                    openPopupWithButtonsTitle('interactive-video.html', "", "Submit");
+                });
+            }
+
+            if (isVideoAlreadyPlayed == 1) $('.isAlreadyViewed').show();
+        });
+
+        function GetValues() {
+            arrJSON = JSON.stringify(isVideoAlreadyPlayed);
+            return encodeURIComponent(arrJSON);
+        };
+
+        function RestoreState(JSONstring) {
+            var obj = $.parseJSON(decodeURIComponent(JSONstring));
+            try {
+                isVideoAlreadyPlayed = obj;
+                if (isVideoAlreadyPlayed == 1) $('.isAlreadyViewed').show();
+                $('#videoTag').unbind();
+            } catch (e) { }
+        }
+    </script>
+</body>
+</html>

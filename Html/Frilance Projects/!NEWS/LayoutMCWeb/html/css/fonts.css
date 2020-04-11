@@ -1,0 +1,31 @@
+@font-face {
+    font-family: AvenirNext-Demi;
+	src: url("../fonts/AvenirNextCyrW00-Demi.eot");
+    src: url("../fonts/AvenirNextCyrW00-Demi.eot?#iefix") format("embedded-opentype"),        
+		url("../fonts/AvenirNextCyrW00-Demi.otf") format("opentype"),
+		url("../fonts/AvenirNextCyrW00-Demi.woff") format("woff"),        
+		url("../fonts/AvenirNextCyrW00-Demi.ttf") format('truetype'),		
+	    url("../fonts/AvenirNextCyrW00-Demi.svg#AvenirNextCyrW00-Demi") format('svg');
+   }
+
+
+@font-face {
+    font-family: AvenirNext-Medium;
+    src: url("../fonts/AvenirNextCyrW00-Medium.eot");
+    src: url("../fonts/AvenirNextCyrW00-Medium.eot?#iefix") format("embedded-opentype"),        
+        url("../fonts/AvenirNextCyrW00-Medium.otf") format("opentype"),
+        url("../fonts/AvenirNextCyrW00-Medium.woff") format("woff"),
+        url("../fonts/AvenirNextCyrW00-Medium.ttf") format("truetype"),                
+        url("../fonts/AvenirNextCyrW00-Medium.svg#AvenirNextCyrW00-Medium") format("svg");
+   }
+@font-face {
+    font-family: AvenirNext-Regular;
+    src: url("../fonts/AvenirNextCyrW00-Regular.eot");
+    src: url("../fonts/AvenirNextCyrW00-Regular.eot?#iefix") format("embedded-opentype"),                
+        url("../fonts/AvenirNextCyrW00-Regular.otf") format("opentype"),       
+        url("../fonts/AvenirNextCyrW00-Regular.woff") format("woff"),
+        url("../fonts/AvenirNextCyrW00-Regular.ttf") format("truetype"),
+        url("../fonts/AvenirNextCyrW00-Regular.svg#AvenirNextCyrW00-Regular") format("svg");
+/*        url("../fonts/AvenirNextCyrW00-Regular.svg#AvenirNextCyrW00-Regular") format("svg");*/
+
+}

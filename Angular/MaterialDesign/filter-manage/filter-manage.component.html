@@ -1,0 +1,9 @@
+<div class="container-filter" *ngIf="data && data.length">
+  <button mat-button (click)="openFilters()"
+          class="btn btn-primary">Filter</button>
+  <button mat-icon-button
+    *ngIf="isDirty">
+    <mat-icon aria-label="Clear the filter"
+              (click)="onClearFilter()">clear</mat-icon>
+  </button>
+</div>

@@ -1,0 +1,199 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/interactive.css" type="text/css" rel="stylesheet">
+    <script class="jsbin" src="scripts/jquery-2.0.0.min.js"></script>
+</head>
+<body>
+    <div class="frame" style="margin: 0 auto;">
+        <div class="greenLine">
+            <h2 class="long">Reliable</h2>
+            <h2 class="short">Not Reliable</h2>
+            <div id="sticker-1" class="noteSticker-yellow padding-top" data-answ="1">
+                Scholarly reprint
+                <br />
+                <small>(author unknown)</small>
+            </div>
+            <div id="sticker-2" class="noteSticker-yellow rotate-right padding-top" data-answ="-1">
+                University<br>
+                website<br>
+                <small>(www.cornell.edu)</small>
+            </div>
+            <div id="sticker-3" class="noteSticker-green rotate-left two" data-answ="1">
+                <br />
+                Blog post
+            </div>
+            <div id="sticker-4" class="noteSticker-green rotate-left" data-answ="-1">
+                Undergraduate<br>
+                Psychology<br>
+                Textbook
+            </div>
+            <div id="sticker-5" class="noteSticker-orange rotate-right" data-answ="1">
+                <br />
+                Wikipedia<br>
+                Article
+            </div>
+            <div id="sticker-6" class="noteSticker-blue rotate-right" data-answ="-1">
+                Department<br>
+                of Labor<br>
+                website
+                <br>
+                <small>(www.defense.gov)</small>
+            </div>
+            <div id="sticker-7" class="noteSticker-orange rotate-left padding-top" data-answ="-1">
+                U.S.<br>
+                Census Data<br>
+            </div>
+            <div id="sticker-8" class="noteSticker-blue rotate-right two" data-answ="1">
+                Wall Street<br>
+                Journal Article<br>
+                from 1992
+            </div>
+        </div>
+    </div>
+    <p class="notes" style="margin: 0 auto;">
+        Drag and drop the stickies into either Reliable or Not Reliable
+    </p>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var mass = [
+            { top: '328px', left: '140px' },
+            { top: '320px', left: '40px' },
+            { top: '320px', left: '250px' },
+            { top: '320px', left: '481px' },
+            { top: '330px', left: '361px' },
+            { top: '330px', left: '585px' },
+            { top: '320px', left: '690px' },
+            { top: '330px', left: '775px' }
+        ];
+        
+        for (var i = 0; i < $('.greenLine div').length; i++) {
+            var current = $('#sticker-' + (i + 1));
+            current.css({
+                top: mass[i].top,
+                left: mass[i].left
+            });
+            current.data('top', mass[i].top);
+            current.data('left', mass[i].left);
+        }
+    });
+    
+    var gLineWidth = parseInt($(".greenLine").css("width"));
+    var gLineHeight = parseInt($(".greenLine").css("height"));
+
+    var stickerWidth = parseInt($(".greenLine div").css("width"));
+    var stickerHeight = parseInt($(".greenLine div").css("height"));
+
+    $.fn.draggable = function () {
+        var offset = null;
+
+        var start = function (e) {
+            var orig = e.originalEvent;
+            var position = $(this).position();
+            offset = {
+                x: orig.changedTouches[0].pageX - position.left,
+                y: orig.changedTouches[0].pageY - position.top
+            };
+        };
+
+        var moveMe = function (e) {
+            e.preventDefault();
+            var orig = e.originalEvent;
+            $(this).css({
+                top: orig.changedTouches[0].pageY - offset.y,
+                left: orig.changedTouches[0].pageX - offset.x
+            });
+        };
+        
+        var end = function () {
+            var t = $(this);
+            var elPos = elementPosition(t);
+            
+            if (elPos != t.data('answ')) {
+                t.css({
+                    left: t.data('left'),
+                    top: t.data('top')
+                });
+            } else {
+                var top = parseInt(t.css('top'));
+                if (top + stickerHeight / 2 < 120) t.css('top', (top + 120) + 'px');
+                t.data('left', t.css('left'));
+                t.data('top', t.css('top'));
+            }
+        };
+
+        this.bind("touchstart", start);
+        this.bind("touchmove", moveMe);
+        this.bind("touchend", end);
+    };
+
+    $(".greenLine div").draggable();
+    
+    function elementPosition(el) {
+        var pos = el.position();
+        if (pos.top + stickerHeight / 2 < 0 || pos.top + stickerHeight / 2 > (gLineHeight - stickerHeight / 2) || pos.left + stickerWidth / 2 < 0 || pos.left + stickerWidth / 2 > gLineWidth) return 0;
+        else if (pos.left + stickerWidth / 2 < gLineWidth / 2) return -1;
+        else return 1;
+    }
+
+    function GetValues() {
+        var obj = {};
+
+        obj.left = [];
+        obj.right = [];
+        obj.unknown = [];
+
+        $(".greenLine div").each(function (index) {
+            var t = $(this);
+            var elPos = elementPosition(t);
+            var arr;
+
+            if (elPos == 0) arr = obj.unknown;
+            else if (elPos == -1) arr = obj.left;
+            else arr = obj.right;
+
+            arr.push({ 'value': t.text().replace('www.', '*TEMPLATE*'), 'top': t.css('top'), 'left': t.css('left') });
+        });
+
+        arrJSON = JSON.stringify(obj);
+        return encodeURIComponent(arrJSON);
+    };
+
+    function RestoreState(JSONstring) {
+        var obj = $.parseJSON(decodeURIComponent(JSONstring));
+
+        $.each(obj.left, function (index, value) {
+            FindAndRestoreSticker(value);
+        });
+
+        $.each(obj.right, function (index, value) {
+            FindAndRestoreSticker(value);
+        });
+
+        $.each(obj.unknown, function (index, value) {
+            FindAndRestoreSticker(value);
+        });
+    }
+
+    function FindAndRestoreSticker(data) {
+        $(".greenLine div").filter(function() {
+            var div = $(this);
+            var val = data.value.replace('*TEMPLATE*', 'www.');
+            if (div.text() == val) {
+                div.css('top', data.top);
+                div.css('left', data.left);
+            }
+        });
+
+        $('.greenLine div').each(function() {
+            var t = $(this);
+            t.data('top', t.css('top'));
+            t.data('left', t.css('left'));
+        });
+    }
+</script>
+</html>

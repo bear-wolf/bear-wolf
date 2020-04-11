@@ -1,0 +1,25 @@
+<div class="form-control-input">
+    <label *ngIf="label" [innerHTML]="label" class="form-control-input-label"></label>
+
+    <input [(ngModel)]="value"
+           (ngModelChange)="updateValue($event)"
+           [width]="width"
+           [type]="type || 'text'"
+           [placeholder]="placeholder || ''"
+           [disabled]="disabled"
+           class="form-control">
+
+    <div *ngIf="errors && !hideErrors" class="error-messages">
+        <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+        <div *ngIf="errors.minlength" class="form-text text-danger">Minimal length is {{errors.minlength.requiredLength}}</div>
+        <div *ngIf="errors.maxlength" class="form-text text-danger">Maximal length is {{errors.maxlength.requiredLength}}</div>
+        <div *ngIf="errors.min" class="form-text text-danger">Minimal value is {{errors.min.min}}</div>
+        <div *ngIf="errors.max" class="form-text text-danger">Maximal value is {{errors.max.max}}</div>
+        <div *ngIf="errors.pattern" class="form-text text-danger">Pattern error</div>
+        <div *ngIf="errors.email" class="form-text text-danger">Email format error</div>
+    </div>
+
+    <div *ngIf="!errors && hint" class="form-text text-muted">
+        {{hint}}
+    </div>
+</div>

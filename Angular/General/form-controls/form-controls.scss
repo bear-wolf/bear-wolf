@@ -1,0 +1,33 @@
+:host {
+  width: 100%;
+}
+
+.form-group{
+  .list{
+    label{
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      outline: none;
+      margin-bottom: 0;
+
+      input{
+        width: auto;
+        outline: none;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .form-control{
+    &~.btn,
+    &+.btn{
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+    }
+  }
+
+}
+

@@ -1,0 +1,42 @@
+/*css style for IE6*/
+
+* html div,
+* html li{
+	height:1%;	
+	}
+	
+* html .clearfix{
+	overflow:visible;
+	}
+
+.fixPNG, 
+.fixPNG img{
+	filter:expression(fixPNG(this));
+	}
+	
+* html .main{	
+	width: expression(((document.documentElement.clientWidth || document.body.clientWidth) < 995)? "995px" : "100%");
+	height:100%;
+	}
+	
+.right-col{ margin-left:-3px; }
+.left-middle-col{ margin-right:267px; }
+.left-col{ margin-right:-3px; }
+.middle-col{ margin-left:267px; }					
+	
+/*link for PNG background*/
+/*div.logo_all div a{
+	position:relative;
+	}*/
+
+/*PNG background*/		
+/*div.cap_brown{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/cap_brown.png", sizingMethod="crop"); слева вверху
+	}
+
+	div.cap_brown{
+	background:expression("none");
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/cap_brown.png", sizingMethod="scale"); растянет на всю область
+	}
+*/

@@ -1,0 +1,31 @@
+/*@font-face {
+    font-family: "Helvetica-BoldIt";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/HelveticaNeueCyr-BoldItalic.eot');
+    src: url('../fonts/HelveticaNeueCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeueCyr-BoldItalic.ttf') format("truetype"), 
+         url('../fonts/HelveticaNeueCyr-BoldItalic.woff') format("woff"), 
+         url('../fonts/HelveticaNeueCyr-BoldItalic.svg') format('svg');
+}*/
+
+@font-face {
+    font-family: "roboto-light";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/roboto-light.ttf') format("truetype"), 
+         url('../fonts/roboto-light.woff') format("woff");
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Roboto-Regular.ttf') format("truetype"), 
+         url('../fonts/Roboto-Regular.woff') format("woff");         
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/Roboto-Bold.ttf') format("truetype");         
+}

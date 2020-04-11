@@ -1,0 +1,242 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/pages.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <title>Добавить питомца дня</title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->	<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+<div class="fixit">
+<!--HEADER-->
+	<div class="headers">
+		
+		<div class="top_line">
+			<i class="u1"></i>
+			<i class="u2"></i>			
+			<div class="logo"><a href="#">Первая международная интернет-выставка животных</a></div>						
+		</div>
+		
+		<div class="autorizaciya">
+			<!--Добро пожаловать, <a href="#">Иван Иванов</a>
+			<input type="image" src="img/icon/button/exit.jpg" />-->
+			<table>
+				<tr>
+					<td>
+						<div>
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<input type="text" value="Email" class="toggle-inputs" />
+						</div>
+						<a href="#">Регистрация</a>
+					</td>
+					<td>
+						<div>
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<input type="text" value="Пароль" class="toggle-inputs" />
+						</div>
+						<a href="#">Забыли&nbsp;пароль?</a>
+					</td>
+					<td class="go"><input type="image" src="img/icon/button/go.jpg" /></td>
+				</tr>
+			</table>
+			
+		</div>	
+		
+		<div class="add"><div><a href="#"></a></div></div>
+		
+		<div class="find">
+			<ul>
+				<li><span>Найти на выставке</span></li>
+				<li>
+					<div>
+						<i class="u1"></i>
+						<i class="u2"></i>
+						<input type="text" value="Город" class="toggle-inputs" />
+					</div>
+				</li>
+				<li>
+					<div>
+						<i class="u1"></i>
+						<i class="u2"></i>
+						<input type="text" value="Порода / Имя" class="toggle-inputs" />
+					</div>
+				</li>
+				<li class="res">отобразить <br />в результатах:</li>
+				<li class="rad"><input type="radio" name="vl" /> Питомцев </li>
+				<li class="rad"><input type="radio" name="vl" /> Владельцев </li>
+				<li class="but"><input type="image" src="img/icon/button/find.jpg" /></li>
+			</ul>
+		</div>
+		
+		<div class="menu">
+			<div class="gor-menu">
+				<i></i>
+				<ul>
+					<li class="one"><a href="#">Главная</a> /</li>
+					<li><span>Выставка собак</span></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<!-- /HEADER -->
+
+           <!-- CONTENT -->			
+<div class="content">
+	<div class="wrapper">
+				
+		<div class="MIDDLE-COL">
+			<!-- LEFT-COL-->
+			<div class="LEFT-COL">
+				
+				<div class="pitomec_dnya">
+					<ul>
+						<li>
+							<h1>Питомец дня</h1> <i></i>
+							<a href="#"><img src="img/temp/day/img.jpg" width="215" height="216" alt="" /></a>
+						</li>
+					</ul>	
+				</div>
+				
+				<div class="opis">
+					<h2>Самый дружный</h2>
+					<ul>
+						<li><span>577</span><a href="#">Москва</a></li>
+						<li><span>34</span><a href="#">Южно-Сахалинск</a></li>
+					</ul>
+					<h3>Задать вопрос</h3>
+					<div class="post">
+						<i class="u1"></i>
+						<i class="u2"></i>
+						<i class="u3"></i>
+						<i class="u4"></i>
+						<textarea cols="" rows="" class="toggle-inputs">Текст вопроса</textarea>
+					</div>
+					
+					<input type="image" src="img/icon/button/save.jpg" class="but" />
+					
+				</div>
+					
+			</div>
+			<!-- /LEFT-COL-->
+						
+			<!-- CENTER -->	
+			<div class="CENTER">
+			
+				<div class="galery">
+					<h2>Новые участники</h2>
+					<table>
+						<tr>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /></a></td>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /></a></td>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /></a></td>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /></a></td>
+						</tr>
+					</table>
+					<p><a href="#">Показать всех</a></p>
+				</div>
+			
+				
+				<div class="galery">
+					<h2>Лидеры</h2>
+					<table>
+						<tr>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /><i class="m1"></i></a></td>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /><i class="m2"></i></a></td>
+							<td><a href="#"><img src="img/temp/news/img.jpg" width="135" height="135" alt="" /><i class="m3"></i></a></td>
+							<td><a href="#"><img src="img/temp/none.jpg" width="135" height="135" alt="" /></a></td>
+						</tr>
+					</table>
+					<p><a href="#">Показать всех</a></p>
+				</div>
+					
+				<div class="geografy">
+					<h3>География выставки</h3>
+					<img src="img/temp/karta/karta.jpg" width="600" height="406" alt="" />	
+				</div>
+			
+				<div class="text">
+					<h4>Города-участники</h4>
+					<ul>
+						<li class="w24"><a href="#">Москва (577)</a></li>
+						<li class="w14"><a href="#">Санкт-Петербург (36)</a></li>
+						<li class="w12"><a href="#">Воронеж (11)</a></li>
+						<li class="w11"><a href="#">Даугавпилс (16)</a></li>
+						<li><a href="#">Днепропетровск (7) </a></li>
+					</ul>
+					<ul>
+						<li class="w24"><a href="#">Москва (577)</a></li>
+						<li class="w14"><a href="#">Санкт-Петербург (36)</a></li>
+						<li class="w12"><a href="#">Воронеж (11)</a></li>
+						<li class="w11"><a href="#">Даугавпилс (16)</a></li>
+						<li><a href="#">Днепропетровск (7) </a></li>
+					</ul>
+				</div>
+			
+			</div>
+			<!-- CENTER===================== -->			
+		</div>
+	</div>	
+</div>
+<!-- /CONTENT========================= -->	
+           
+<!--FOOTER-->
+	<div class="footer">
+		<i class="u1"></i>
+		<i class="u2"></i>
+		<div class="bg">
+			<div>
+				<address>ЗООСТРАНА © 2007-2008 Название компании. Все права защищены</address>
+				<ul class="bot">
+					<li><a href="#">Вакансии</a> |</li>
+					<li><a href="#">Связаться с нами</a> |</li>
+					<li><a href="#">Разместить рекламу</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>		
+<!--/ FOOTER===============-->	
+</div>
+</div>
+</body>
+</html>

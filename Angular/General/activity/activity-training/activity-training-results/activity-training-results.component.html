@@ -1,0 +1,73 @@
+<div class="content-block training-results-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Итоги</h3>
+    </div>
+
+    <div class="total">
+    <div>
+        <h3 class="subtitle">Итог общий</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Инвестиции, план, р.</th>
+                <th>Инвестиции, факт, р.</th>
+                <th>Прирост продаж, план, р.</th>
+                <th>Прирост продаж, факт, р.</th>
+                <th>ROI, план, р.</th>
+                <th>ROI, факт, р.</th>
+                <th>Директ постинг, р.</th>
+                <th>Реверс, р.</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td [innerText]="training.investmentsPlanPrice"></td>
+                    <td [innerText]="training.investmentsFactPrice"></td>
+                    <td [innerText]="training.salesDuringTrainingPrice"></td>
+                    <td [innerText]="training.salesGrowthFact"></td>
+                    <td [innerText]="training.roiPlan"></td>
+                    <td [innerText]="training.roiFact"></td>
+                    <td [innerText]="training.directPosting"></td>
+                    <td [innerText]="training.reverse"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="sku">
+        <h3 class="subtitle">Итог по SKU</h3>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Прогноз продаж без обучения, руб. (base line)</th>
+                <th>Наименование продукции</th>
+                <th>Продажи в период обучения, руб (ASP) План</th>
+                <th>Инвестиция, руб (с НДС) План</th>
+                <th>Обучения фармацевтов потенц. охват/объем</th>
+                <th>Продажи в период акции, руб (Факт)</th>
+                <th>Всего затраты Abbott на акцию, руб (с НДС), факт</th>
+                <th>Обучение фармацевтов фактический охват/объем</th>
+            </tr>
+            </thead>
+            <tbody>
+<!--                <tr *ngFor="let item of sku; let last = last">-->
+<!--                    <td [innerText]="item.salesForecast || 0"></td>-->
+<!--                    <td>-->
+<!--                        <span *ngIf="item.name"-->
+<!--                              [innerText]="item.name"></span>-->
+<!--                        <label *ngIf="last">-->
+<!--                            ИТОГО-->
+<!--                        </label>-->
+<!--                    </td>-->
+<!--                    <td [innerText]="(item.salesDuringActionPlan || 0).toFixed(configuration.decimal)"></td>-->
+<!--                    <td [innerText]="item.salesDuringActionFact  || 0"></td>-->
+<!--                    <td [innerText]="item.roiPlan || 0"></td>-->
+<!--                    <td [innerText]="item.roiFact || 0"></td>-->
+<!--                    <td [innerText]="item.directPosting || 0"></td>-->
+<!--                    <td [innerText]="item.reverse || 0"></td>-->
+<!--                </tr>-->
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

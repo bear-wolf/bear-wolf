@@ -1,0 +1,34 @@
+@import "~assets/css/variables";
+
+.table-forecast{
+
+  &,
+  tr{
+    &>th,
+    &>td{
+      border:none!important;
+      padding: 5px 0;
+    }
+  }
+
+  th{
+    text-align: center;
+  }
+
+  .form-group{
+    margin: 0;
+
+    label,
+    input{
+      height: 30px;
+    }
+  }
+
+  tr{
+    border-bottom: 1px solid $color-abbott-light-gray;
+
+    td:last-child{
+      width: 100px;
+    }
+  }
+}

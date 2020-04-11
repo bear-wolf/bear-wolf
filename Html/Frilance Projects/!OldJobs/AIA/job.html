@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>rabota.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" border="0"/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li class="activ"><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			
+			 
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+				
+				 <div class="moi_obyav otst">
+					<i class="u1"></i>
+					<i class="u2"></i>
+					<i class="u3"></i>
+					<i class="u4"></i>
+					<ul>
+						<li class="line"><a href="http://www.66.ru/doska/my/">мои резюме</a>(0)</li>
+						<li><a href="http://www.66.ru/doska/my/">мои отклики</a> (0)</li>
+					</ul>
+
+					<div>
+						<span class="lt"></span>
+						<span class="rt"></span>
+						<input value="добавить резюме" type="submit" />
+					</div>
+				</div>
+				
+				<div class="content-block">
+		
+		
+		<script type="text/javascript"><!--//<![CDATA[
+var m3_u = (location.protocol=='https:'?'https://r.66.ru/www/delivery/ajs.php':'http://r.66.ru/www/delivery/ajs.php');
+var m3_r = Math.floor(Math.random()*99999999999);
+if (!document.MAX_used) document.MAX_used = ',';
+document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+document.write ("?zoneid=80");
+document.write ('&amp;cb=' + m3_r);
+if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+document.write ("&amp;loc=" + escape(window.location));
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+if (document.context) document.write ("&context=" + escape(document.context));
+if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+document.write ("'></scr"+"ipt>");
+//]]>-->
+</script><script type="text/javascript" src="news_files/ajs_003.js"></script>
+<script type="text/javascript">
+<!--// <![CDATA[
+var fo = new FlashObject('http://r.66.ru/www/delivery/ai.php?filename=final-banner-spo-4-cs3.swf&contenttype=swf&clickTARGET=_blank&clickTAG=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9&link=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9&rb_link=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9', 'mymovie', '240', '400', '8');
+fo.addParam('wmode','opaque');
+fo.addParam('allowScriptAccess', 'always');
+fo.addParam('menu', 'false');
+fo.write('m3_79abced93d0f04b271ff4a3e17db2a4b');
+// ]]> -->
+</script><div id="beacon_2329" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="img/pages/news/lg_003.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><script type="text/javascript">document.context='YzoxNzk2fA=='; </script>
+<noscript>
+<a href='http://r.66.ru/www/delivery/ck.php?n=acddaa01&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://r.66.ru/www/delivery/avw.php?zoneid=80&amp;n=acddaa01' border='0' alt='' /></a></noscript>
+		</div>
+		
+						<embed type="application/x-shockwave-flash" src="img/pages/news/ai.php" id="mymovie" name="mymovie" quality="high" wmode="opaque" allowscriptaccess="always" menu="false" height="400" width="240" />
+				
+			
+			<div class="additional-block">
+				<h2>Работа в Екатеринбурге</h2>
+				<p>Более 11000 вакансий ведущих работодателей города! Всегда есть работа
+				 водителем, менеджером и в строительной сфере. Ежедневно на нашем сайте 
+				ищут и находят работу более 5000 человек.</p>
+				
+				<h3>Работа и вакансии на современном портале Екатеринбурга WWW.66.RU.</h3>
+				<p>Удобные и эффективные инструменты поиска работы — рубрикатор 
+				вакансий, в том числе по отраслям, и поиск предложений. Каталог 
+				компаний-работодателей со списком всех вакансий в Екатеринбурге от 
+				конкретного работодателя. При просмотре подходящей для вас работы, вам 
+				автоматически будут выданы наиболее подходящие по тематике предложения о
+				 работе в Екатеринбурге. Вам больше не нужно мучиться с отправкой своего
+				 резюме по различным организациям. Просто нажмите "<b>отправить резюме</b>" и добавьте его в формате .doc. Этого будет достаточно, чтобы работодатель вас нашёл.</p>
+				<p>&nbsp;</p>
+				<p>Примите участие в наших <a href="http://www.66.ru/club/17/blog/">обсуждениях поиска работы в Екатеринбурге и вакансиях Екатеринбурга</a>
+				 или ознакомитесь с актуальными исследованиями рынка работы в 
+				Екатеринбурге (статистика, анализ современного состояния кадрового 
+				рынка).</p>
+			
+			</div>
+		
+					
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+				
+					<div class="top_line">
+						<div class="abs">
+							<ul>
+								<li class="active"><a href="#">Работа</a></li>
+								<li><a href="#">Добавить резюме</a></li>
+								<li><a href="#">Добавить вакансию</a></li>
+								<li><a href="#">Мои отклики</a></li>
+							</ul>
+						</div>
+						<div class="right"><a href="#">Скачать образец резюме</a></div>
+					</div>
+				
+					<div class="doska_find">
+					  <div class="bg">
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<i class="u3"></i>
+							<i class="u4"></i>
+							<ul>
+								<li>Ищу работу:</li>
+								<li><input type="text" value="" /></li>
+							</ul>
+							<div class="but">
+								<span class="lt"></span>
+								<span class="rt"></span>
+								<input value="Найти" type="submit" />
+							</div>
+							<ul class="menu">
+								<li><b>в городе:</b></li>
+								<li>
+									<select>
+										<option>[не выбрано]</option>
+									</select>
+								</li>
+								<li>зарплата от: <input type="text" value="" /> руб.</li>
+							</ul>
+					  </div>
+					</div>
+				
+				<table class="job_banners">
+					<tr>
+						<td>
+							<div>
+								<a href="#" class='on' style="background-image: url(&quot; http://www.rabota66.ru/upload_R66/companyLogos/67287_Korporaciya_Centrw90h70.jpg&quot;);">Корпорация Центр 30 вакансий</a>
+							</div>
+						</td>
+						<td>
+							<div>
+								<a href="http://www.66.ru/rabota/office/35359/" style="background-image: url(&quot;http://www.rabota66.ru/upload_R66/companyLogos/74397_pOMKORw90h70.jpg&quot;);">PОМКОР 30 вакансий</a>
+							</div>
+						</td>
+						<td>
+							<div>
+								<a href="http://www.66.ru/rabota/office/43954/" style="background-image: url(&quot;http://www.rabota66.ru/upload_R66/companyLogos/71087_limerance_fc_2w90h70.jpg&quot;);">
+								LIMERANCE FC <br /> 2 вакансии
+								</a>		
+							</div>
+						</td>
+						<td>
+							<div>
+								<a href="http://www.66.ru/rabota/office/21610/" style="background-image: url(&quot;http://www.rabota66.ru/upload_R66/companyLogos/60122_ooo_stroitelnii_dvorw90h70.jpg&quot;);">
+								ООО Строительный <br /> двор 14 вакансий
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+				
+					<table class="struct_novunu">
+						<tr>
+							<td>
+								<div class="jobs">
+									на сайте <span>все вакансии актуальны</span> вне зависимости от даты публикации. <br />Вы можете выбрать вакансии добавленные именно сегодня 
+									<table class="job_table">
+										<thead>
+											<tr>
+												<th><h1>Работа в Екатеринбурге</h1></th>
+												<th>за сегодня</th>
+												<th>всего</th>
+											</tr>
+										</thead>
+										<tbody>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch1/">Бухгалтерия</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=1" class="rating">
+																10
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														395
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch25/">Финансы, экономика и страхование</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=25" class="rating">
+																11
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														535
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch18/">Строительство, недвижимость</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=18" class="rating">
+																20
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														671
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch17/">Промышленность, производство, сервис</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=17" class="rating">
+																20
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														1098
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch6/">IT, телеком, связь</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=6" class="rating">
+																6
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														471
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch13/">Секретариат, АХО</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=13" class="rating">
+																10
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														493
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch5/">HR, тренинги</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=5" class="rating">
+																3
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														131
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch4/">Маркетинг, реклама, PR</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=4" class="rating">
+																15
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														474
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch37/">СМИ, Издательство, полиграфия</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=37" class="rating">
+																3
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														155
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch24/">Региональные, торговые представители</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=24" class="rating">
+																21
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														478
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch45/">Розничная торговля ТНП</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=45" class="rating">
+																24
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														835
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch46/">Розничная торговля продукты питания</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=46" class="rating">
+																16
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														443
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch33/">Продажи (Промышленность, оборудование)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=33" class="rating">
+																23
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														709
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch27/">Продажи (Строительство, недвижимость)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=27" class="rating">
+																20
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														495
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch29/">Продажи (ТНП, продукты)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=29" class="rating">
+																26
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														731
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch31/">Продажи (Услуги, реклама)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=31" class="rating">
+																31
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														751
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch34/">Продажи (Финансы, страхование)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=34" class="rating">
+																2
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														141
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch32/">Продажи (Автомобили, запчасти)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=32" class="rating">
+																3
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														183
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch30/">Продажи (IT, компьютеры)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=30" class="rating">
+																9
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														269
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch28/">Продажи (Одежда, мебель)</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=28" class="rating">
+																7
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														335
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch7/">Юриспруденция</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=7" class="rating">
+																2
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														99
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch36/">Государственная служба</a></td>
+													<td class="ratings">
+																									0
+																							</td>
+													<td class="common-ratings"><span>
+														17
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch16/">Рестораторы, повара, официанты</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=16" class="rating">
+																11
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														324
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch38/">Туризм, гостиницы</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=38" class="rating">
+																1
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														120
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch3/">Поставки, ВЭД</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=3" class="rating">
+																4
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														223
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch10/">Логистика, транспорт, склад</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=10" class="rating">
+																14
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														941
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch39/">Сельское хозяйство</a></td>
+													<td class="ratings">
+																									0
+																							</td>
+													<td class="common-ratings"><span>
+														19
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch22/">Медицина, фармацевтика</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=22" class="rating">
+																2
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														275
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch40/">Спорт, фитнесс, салоны красоты</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=40" class="rating">
+																2
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														172
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch21/">Дизайнеры, творческие профессии</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=21" class="rating">
+																2
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														192
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch41/">Культура, искусство, развлечения</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=41" class="rating">
+																5
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														82
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch23/">Наука, образование, консалтинг</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=23" class="rating">
+																6
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														137
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch14/">Служба безопасности, охрана</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=14" class="rating">
+																4
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														104
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch42/">Домашний персонал, обслуживание</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=42" class="rating">
+																4
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														126
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch26/">Разнорабочие</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=26" class="rating">
+																8
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														337
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch43/">Работа для молодежи, студентов</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=43" class="rating">
+																18
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														821
+													</span></td>
+												</tr>
+																												<tr class="job_nodd">
+																					<td><a href="http://www.66.ru/rabota/vbranch44/">Сезонная, временная работа</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=44" class="rating">
+																4
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														123
+													</span></td>
+												</tr>
+																												<tr>
+																					<td><a href="http://www.66.ru/rabota/vbranch47/">Работа для пенсионеров</a></td>
+													<td class="ratings">
+																									<a href="http://www.66.ru/rabota/ssearch/?RabotaSearchForm[days]=1&amp;RabotaSearchForm[vbranch]=47" class="rating">
+																2
+															</a>
+																							</td>
+													<td class="common-ratings"><span>
+														54
+													</span></td>
+												</tr>
+																	</tbody>
+									</table>
+								</div>
+								
+							</td>
+							<td class="tdnews_chas">
+								<div class="news_chas">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<h2>Эксклюзивные вакансии</h2>
+									<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a><br />
+											Cегодня и только сегодня
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a><br />
+											Cегодня и только сегодня
+										</li>
+										<li class="active">
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a><br />
+											Cегодня и только сегодня
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a><br />
+											Cегодня и только сегодня
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a><br />
+											Cегодня и только сегодня
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+					<div class="two_job">
+						<h2>Работа в Екатеринбурге и Свердловской области</h2>
+						<table>
+							<tr>
+								<td>
+									<ul class="bold">
+										<li><a href="http://www.66.ru/rabota/nizhniy-tagil/">Нижний Тагил</a></li>
+										<li><a href="http://www.66.ru/rabota/verhnyaya-pyshma/">Верхняя Пышма</a></li>
+										<li><a href="http://www.66.ru/rabota/pervouralsk/">Первоуральск</a></li>
+										<li><a href="http://www.66.ru/rabota/berezovsky/">Берёзовский</a></li>
+										<li><a href="http://www.66.ru/rabota/kamensk-uralskiy/">Каменск-Уральский</a></li>
+									</ul>
+									
+									<ul>
+										<li><a href="http://www.66.ru/rabota/alapaevsk/">Алапаевск</a></li>
+										<li><a href="http://www.66.ru/rabota/aramil/">Арамиль</a></li>							
+										<li><a href="http://www.66.ru/rabota/artemovsky/">Артемовский</a></li>
+										<li><a href="http://www.66.ru/rabota/asbest/">Асбест</a></li>							
+										<li><a href="http://www.66.ru/rabota/bogdanovich/">Богданович</a></li>
+									</ul>
+								</td>
+								<td>
+										
+										<ul class="job-district-citiesList">
+											<li><a href="http://www.66.ru/rabota/verhnyaya-salda/">Верхняя Салда</a></li>
+											<li><a href="http://www.66.ru/rabota/zarechniy/">Заречный</a></li>
+											<li><a href="http://www.66.ru/rabota/ivdel/">Ивдель</a></li>
+											<li><a href="http://www.66.ru/rabota/irbit/">Ирбит</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/kachkanar/">Качканар</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/kirovgrad/">Кировград</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/krasnoturyinsk/">Краснотурьинск</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/krasnoufimsk/">Красноуфимск</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/kushva/">Кушва</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/lesnoy/">Лесной</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/neviansk/">Невьянск</a></li>
+							
+									</ul>
+								</td>
+								<td>
+									<ul class="job-district-citiesList">
+											<li><a href="http://www.66.ru/rabota/nizhnyaya-tura/">Нижняя Тура</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/novouralsk/">Новоуральск</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/polevskoy/">Полевской</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/revda/">Ревда</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/rezh/">Реж</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/reftinskiy/">Рефтинский</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/severouralsk/">Североуральск</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/serov/">Серов</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/sredneuralsk/">Среднеуральск</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/sukhoi-log/">Сухой Лог</a></li>
+							
+											<li><a href="http://www.66.ru/rabota/sysert/">Сысерть</a></li>
+							
+									</ul>
+								</td>
+							</tr>
+						</table>				
+			
+					
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>	
+		<address>2010 - Городской портал <br /> Все права защищены</address>
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

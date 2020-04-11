@@ -1,0 +1,303 @@
+@import "reset";
+@import "variables";
+@import "sidebar";
+@import "common";
+@import "template";
+@import "btn";
+@import "shared";
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+.max-width-150{
+  max-width: 150px;
+}
+
+.max-width-200{
+  max-width: 200px;
+}
+
+.modal-window{
+  padding: 15px;
+
+  .close{
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    color: #222;
+    cursor: pointer;
+  }
+}
+
+.ng-untouched{
+  &>.form-group .errors{
+    display: none;
+  }
+}
+
+
+.ng-select {
+  padding: 0;
+  border: none;
+}
+
+.content-right{
+  justify-content: flex-end;
+  display: flex;
+
+  .btn{
+    height: 38px;
+    margin-left: 15px;
+  }
+}
+
+.btn-group{
+  .btn-icon{
+    margin-right: 5px;
+  }
+}
+
+
+.nav-treeview {
+  background: $nav-nav-item-background!important;
+  margin-top: -3px;
+  .nav-item{
+
+    .nav-link{
+      background: $nav-sub-menu-background!important;
+      border-radius: 0!important;
+      display: flex;
+      align-items: center;
+      margin: 0!important;
+      width: 100%;
+
+      .nav-icon{
+        opacity: 0.4;
+      }
+
+      p{
+        color: white!important;
+        opacity: 0.4!important;
+        visibility: visible!important;
+        margin-left: 8px!important;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar-collapse aside{
+    &,
+    .sidebar,
+    ul{
+      overflow: visible!important;
+    }
+
+    .sidebar>nav>ul>.nav-item{
+      &>.nav-link{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        left: 0px;
+        top: 0;
+        background: $nav-nav-item-background;
+
+        &.nav-link-active,
+        &:hover{
+          width: 260px;
+
+          .nav-treeview{
+            display: flex!important;
+          }
+
+          &>p{
+            display: flex !important;
+            width: 100% !important;
+            opacity: 1!important;
+            visibility: visible!important;
+            margin-left: 10px!important;
+          }
+        }
+      }
+    }
+
+    .nav-treeview{
+      display: none;
+      position: absolute;
+      margin-top: 0px;
+      left: 74px;
+      background: $nav-nav-item-background!important;
+      top: 34px;
+
+      .nav-item{
+        height: 34px!important;
+
+        .nav-link{
+          padding-left: 0;
+          background: $nav-sub-menu-background!important;
+          border-radius: 0!important;
+          width: 186px;
+          display: flex;
+          align-items: center;
+          p{
+            margin-left: 0px!important;
+          }
+        }
+      }
+    }
+
+    .nav-item {
+      position: relative;
+      height: 36px;
+    }
+  }
+}
+
+
+.status{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  display: block;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: $color-abbott-white;
+  text-align: center;
+
+  &.DRAFT{
+    background-color: $color-abbott-gold;
+  }
+
+  &.IN_COORDINATION_WITH_AKAM {
+    background-color: $color-abbott-light-green;
+  }
+
+  &.AGREED_WITH_AKAM {
+    background-color: $color-abbott-medium-green;
+  }
+
+  &.ON_AGREEMENT_IN_EDO {
+    background-color: $color-abbott-dark-blue;
+  }
+
+  &.AGREED_IN_EDO {
+    background-color: $color-abbott-medium-blue;
+  }
+
+  &.SUBMITTED_TO_DIRECT_POSTING {
+    background-color: $color-abbott-medium-green;
+  }
+
+  &.PAID {
+    background: $color-abbott-mint;
+  }
+}
+
+.common-form-btn-group{
+  margin: 0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+
+  .btn{
+    background: #428bca;
+    width: 150px;
+    color: white;
+    height: 36px;
+    margin-right: 20px;
+  }
+}
+
+
+.page-volume-agreement {
+  .part-common-data{
+    max-width: 700px;
+    .form-group{
+      margin: 0;
+    }
+  }
+
+  //deprecated
+  .row-item{
+    display: flex;
+    margin-bottom: 10px;
+
+    &>div,
+    &>span{
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+      &>label{
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .short-context{
+    .row-status{
+      .ng-select{
+        width: 100px!important;
+      }
+    }
+  }
+
+  .table{
+    tr,
+    tr>td{
+      &.selected{
+        background: $background-light-blue;
+        color: white!important;
+      }
+    }
+  }
+
+  .sub-title{
+    padding: 0 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid $line-gray;
+  }
+
+  .page-basic-marketing{
+    .dynamic-form{
+      border-bottom: 2px solid $line-gray;
+      .item{
+        max-width: 200px;
+        margin-right: 10px;
+
+        label{
+          min-height: 25px;
+        }
+      }
+    }
+  }
+
+  .content-steps{
+    .ui-steps-title{
+      width: 150px;
+      white-space: normal;
+    }
+    .ui-steps-item{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.table{
+  &.table-border-gray{
+    &th,
+    tr,
+    th,
+    td{
+      border: 1px solid $color-abbott-light-gray!important;
+    }
+  }
+}

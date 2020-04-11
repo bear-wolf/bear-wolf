@@ -1,0 +1,28 @@
+.joint-agreement-common-content{
+  .form-component{
+    max-width: 500px;
+  }
+
+  .first-level{
+    font-weight: bold!important;
+    width: 200px;
+  }
+
+  .period-content{
+    .period-container{
+      display: flex;
+      flex-direction: row;
+      &>span{
+        display: flex;
+        margin-right: 15px;
+        &>label{
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .controls-select-month-from{
+      margin-right: 15px;
+    }
+  }
+}

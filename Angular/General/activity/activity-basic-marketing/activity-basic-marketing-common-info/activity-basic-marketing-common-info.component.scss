@@ -1,0 +1,47 @@
+@import "~assets/css/shared";
+
+.basic-marketing-common-info-content {
+  @include main-row-form;
+
+  .row-period-content,
+  app-form-controls-select{
+    width: 100%;
+  }
+
+  .form-control-select {
+    justify-content: space-between!important;
+  }
+
+  .row-period-content{
+    @include main-row-period-input;
+    justify-content: space-between;
+  }
+
+  .form-group{
+    display: flex;
+    justify-content: space-between;
+    .value{
+      width: 200px;
+    }
+  }
+
+
+  .period-content{
+    .ui-dropdown{
+      min-width: 100px;
+    }
+
+    &.form-item-control {
+      display: flex;
+
+      .controls-select-month-from{
+        margin-right: 15px;
+      }
+
+      .controls-select-month-from,
+      .controls-select-month-to{
+        display: flex;
+      }
+    }
+  }
+}

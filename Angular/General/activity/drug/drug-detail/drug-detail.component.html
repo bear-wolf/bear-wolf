@@ -1,0 +1,37 @@
+<div class="content-block">
+    <div class="drug-detail">
+        <h2 class="sub-title fs-20"
+            [innerText]="model.title"></h2>
+
+        <form [formGroup]="form" (ngSubmit)="calculation()"
+              class="d-flex">
+            <div class="row">
+                <div class="col-lg-3">
+                    <app-form-controls-input
+                            formControlName="ntz"
+                            placeholder="Введите суму"
+                            [errors]="form.get('ntz').errors"
+                            label="НТЗ">
+                    </app-form-controls-input>
+                </div>
+                <div class="col-lg-3">
+                    <app-form-controls-input
+                            formControlName="calculation"
+                            placeholder="Введите суму"
+                            [errors]="form.get('calculation').errors"
+                            label="Выкладка">
+                    </app-form-controls-input>
+                </div>
+                <div class="col-lg-3">
+                    <app-form-controls-input
+                            formControlName="report"
+                            placeholder="Введите суму"
+                            [errors]="form.get('report').errors"
+                            label="Отчеты">
+                    </app-form-controls-input>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

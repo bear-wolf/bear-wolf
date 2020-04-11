@@ -1,0 +1,21 @@
+<div class="notifications">
+  <div *ngFor="let notification of notifications" class="notification">
+    <ng-container *ngTemplateOutlet="notificationTpl;context:{notification:notification}"></ng-container>
+  </div>
+<!--  [ngClass]="className(notification)"-->
+</div>
+
+<ng-template #notificationTpl let-notification="notification">
+  <div class="title">
+    <div translate>{{notification.title}}</div>
+    <a routerLink=""
+       class="close"
+       (click)="close(notification)">
+      <i class="fa fa-times"></i>
+    </a>
+  </div>
+
+  <div class="message"
+       [innerText]="notification.message"></div>
+
+</ng-template>

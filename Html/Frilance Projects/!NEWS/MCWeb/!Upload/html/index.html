@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Template</title>        
+        <meta name="description" content="" />        
+        <meta name="keywords" content="" />        
+    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>    
+	
+	<script type="text/javascript" src="scripts/jquery-2.0.0.min.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+    </head>
+<body>
+    
+    <div class="container-fluid clear-padding">
+        <div class="top-line"></div>
+        <header>
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://getbootstrap.com/examples/jumbotron/#"></a>      
+         <div class="first-last pull-right"> First last</div>
+        </header>
+        
+        <div class="row clearfix row-no-padding my-grid">
+            <div class="col-md-6">
+                <div class="title-big groundwork">
+                    <span class="name">Mini Challenge</span>
+                    <div class="icon-question pull-right"></div>
+                </div>
+                
+                <div class="current-game inner-body">
+                    <div class="title">Curent game</div>
+                    <div class="text-center">
+                        <span class="name-of-game">Game 23</span>    
+                    </div>
+                    <div class="count text-center">
+                        <div>0 - 0</div>
+                        <span class="team-a pull-left"></span>
+                        <span class="team-b pull-right"></span>
+                        <span class="clock">7:00</span>
+                    </div>
+                </div>
+                
+                <div class="next-game inner-body">
+                    <div class="title">next game</div>
+                    <div class="text-center">
+                                            
+                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                              </ol>
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <span class="name">If score stands:</span>
+                                    <div class="count text-center">
+                                        <div>vs</div>
+                                        <span class="team-a pull-left"></span>
+                                        <span class="team-b pull-right"></span>                                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="name">If score stands:</span>
+                                    <div class="count text-center">
+                                        <div>vs</div>
+                                        <span class="team-b pull-left"></span>
+                                        <span class="team-a pull-right"></span>                                        
+                                    </div>
+                                </div>
+                              </div>
+                              <a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6 right-side">
+                <div class="title-big action inner-body">                      
+                    <div class="command">
+                        <a href="#" class="active">Table</a>
+                        <a href="#">Teams</a>
+                    </div>
+                </div>
+                
+                <div class="tables inner-body">
+                    <div class="title">table</div>
+                    <div class="grid-calendar clearfix">
+                        <div class="row">
+                            <div></div>
+                            <div></div>
+                            <div>P</div>
+                            <div>W</div>
+                            <div>D</div>
+                            <div>L</div>
+                            <div>PTS</div>
+                        </div>
+                         <div class="row">
+                            <div>1</div>
+                            <div class="icon-small-b"></div>
+                            <div>13</div>
+                            <div>10</div>
+                            <div>1</div>
+                            <div>2</div>
+                            <div>31</div>
+                        </div>
+                         <div class="row">
+                            <div>2</div>
+                            <div class="icon-small-a"></div>
+                            <div>11</div>
+                            <div>5</div>
+                            <div>1</div>
+                            <div>5</div>
+                            <div>16</div>
+                        </div>
+                         <div class="row">
+                            <div>3</div>
+                            <div class="icon-small-d"></div>
+                            <div>11</div>
+                            <div>4</div>
+                            <div>0</div>
+                            <div>7</div>
+                            <div>12</div>
+                        </div>
+                         <div class="row">
+                            <div>4</div>
+                            <div class="icon-small-c"></div>
+                            <div>9</div>
+                            <div>2</div>
+                            <div>0</div>
+                            <div>7</div>
+                            <div>6</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity">
+                    <div class="title">activity</div>
+                    <div id="activity-scrollbar" class="activity-scrollbar">
+                        <ul class="activity-list inner-body">
+                        <li>
+                            <div class="text-center">
+                                <div class="count">
+                                    <div>2 - 2</div>
+                                    <span class="icon-small-d pull-left"></span>
+                                    <span class="icon-small-a pull-right"></span>
+                                </div>
+                                <span class="name-of-game pull-left">Game 23</span>    
+                                <a href="" class="live pull-right">live</a>
+                            </div>
+                            <div class="space-results">
+                                <ul class="game-results">
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>0 - <i>1</i></div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">0:56</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>1</i> - 1</div>
+                                                <span class="added">Added by: <i>Joan Stephenson</i></span>
+                                            </div>
+                                            <span class="pull-left time">3:15</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>2</i> - 1</div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">4:34</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>2 - 1</div>
+                                                <span class="added">Score confirmed by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">7:00</span>
+                                            <span class="pull-right full-time">full time</span>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-center">
+                                <div class="count">
+                                    <div>2 - 2</div>
+                                    <span class="icon-small-b pull-left"></span>
+                                    <span class="icon-small-d pull-right"></span>
+                                </div>
+                                <span class="name-of-game pull-left">Game 23</span>    
+<!--                                <a href="" class="live pull-right">live</a>-->
+                                <div class="lasts pull-right">6m</div>
+                            </div>
+                            <div class="space-results">
+                                <ul class="game-results">
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>0 - <i>1</i></div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">0:56</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>1</i> - 1</div>
+                                                <span class="added">Added by: <i>Joan Stephenson</i></span>
+                                            </div>
+                                            <span class="pull-left time">3:15</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>2</i> - 1</div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">4:34</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>2 - 1</div>
+                                                <span class="added">Score confirmed by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">7:00</span>
+                                            <span class="pull-right full-time">full time</span>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-center">
+                                <div class="count">
+                                    <div>2 - 2</div>
+                                    <span class="icon-small-b pull-left"></span>
+                                    <span class="icon-small-c pull-right"></span>
+                                </div>
+                                <span class="name-of-game pull-left">Game 23</span>    
+                                <a href="" class="live pull-right">live</a>
+                            </div>
+                            <div class="space-results">
+                                <ul class="game-results">
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>0 - <i>1</i></div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">0:56</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>1</i> - 1</div>
+                                                <span class="added">Added by: <i>Joan Stephenson</i></span>
+                                            </div>
+                                            <span class="pull-left time">3:15</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>2</i> - 1</div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">4:34</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>2 - 1</div>
+                                                <span class="added">Score confirmed by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">7:00</span>
+                                            <span class="pull-right full-time">full time</span>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-center">
+                                <div class="count">
+                                    <div>2 - 2</div>
+                                    <span class="icon-small-b pull-left"></span>
+                                    <span class="icon-small-c pull-right"></span>
+                                </div>
+                                <span class="name-of-game pull-left">Game 23</span>    
+                                <a href="" class="live pull-right">live</a>
+                            </div>
+                             <div class="space-results">
+                                <ul class="game-results">
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>0 - <i>1</i></div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">0:56</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>1</i> - 1</div>
+                                                <span class="added">Added by: <i>Joan Stephenson</i></span>
+                                            </div>
+                                            <span class="pull-left time">3:15</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>2</i> - 1</div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">4:34</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>2 - 1</div>
+                                                <span class="added">Score confirmed by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">7:00</span>
+                                            <span class="pull-right full-time">full time</span>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-center">
+                                <div class="count">
+                                    <div>2 - 2</div>
+                                    <span class="icon-small-b pull-left"></span>
+                                    <span class="icon-small-c pull-right"></span>
+                                </div>
+                                <span class="name-of-game pull-left">Game 23</span>    
+                                <a href="" class="live pull-right">live</a>
+                            </div>
+                             <div class="space-results">
+                                <ul class="game-results">
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>0 - <i>1</i></div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">0:56</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>1</i> - 1</div>
+                                                <span class="added">Added by: <i>Joan Stephenson</i></span>
+                                            </div>
+                                            <span class="pull-left time">3:15</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div><i>2</i> - 1</div>
+                                                <span class="added">Added by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">4:34</span>
+                                        </div>  
+                                    </li>
+                                    <li>
+                                      <div class="text-center">
+                                            <div class="count">
+                                                <div>2 - 1</div>
+                                                <span class="added">Score confirmed by: <i>Tom Brady</i></span>
+                                            </div>
+                                            <span class="pull-left time">7:00</span>
+                                            <span class="pull-right full-time">full time</span>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+<!--
+    <footer>
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+-->
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.volume-agreement-docs-content{
+  position: relative;
+
+  @include document-column-view;
+
+  .document-content{
+    .form-control-input {
+      input.form-control {
+        width: 130px !important;
+      }
+    }
+  }
+  .controls-input-premium-size{
+    input{
+      text-align: center;
+    }
+  }
+  .bonus-amount-td{
+    width: 130px;
+    .bonus-amount-label{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: $form-control-height;
+      margin: 0!important;
+      width: 100%;
+    }
+  }
+
+  .form-component{
+    max-width: 1000px;
+    table{
+      td{
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+    .form-control-input{
+      justify-content: center;
+      .form-control{
+        width: 130px!important;
+      }
+    }
+  }
+}

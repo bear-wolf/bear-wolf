@@ -1,0 +1,72 @@
+<ng-container *ngIf="volumeAgreement">
+    <div class="container volume-agreement-content">
+        <div class="content-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="title">Объемное соглашение №{{volumeAgreement.id}}</h3>
+                </div>
+                <div class="col-md-6">
+                    <app-document-version
+                            *ngIf="volumeAgreement.documentService"
+                            [activity]="volumeAgreement"></app-document-version>
+                </div>
+            </div>
+        </div>
+
+        <app-entity-header
+            #entityHeaderComponent
+            [data]="entityHeader"
+            [entity]="volumeAgreement"
+            [stepActiveIndex]="stepActiveIndex"
+            (approval)="approval($event, 3)"
+            (currency)="currency($event)"></app-entity-header>
+
+        <div [ngSwitch]="stepActiveIndex">
+            <div *ngSwitchCase="0">
+                <app-volume-agreement-common-info
+                    #innerFormComponent
+                    [volumeAgreement]="volumeAgreement"></app-volume-agreement-common-info>
+            </div>
+
+            <div *ngSwitchCase="1">
+                <app-volume-agreement-drugs-group
+                    #innerFormComponent
+                    [volumeAgreement]="volumeAgreement"></app-volume-agreement-drugs-group>
+            </div>
+
+            <div *ngSwitchCase="2">
+                <app-volume-agreement-drugs-details
+                    #innerFormComponent
+                    [volumeAgreement]="volumeAgreement"></app-volume-agreement-drugs-details>
+            </div>
+
+            <div *ngSwitchCase="3">
+                <app-activity-akam-agreement [activity]="volumeAgreement"></app-activity-akam-agreement>
+            </div>
+
+            <div *ngSwitchCase="4">
+                <app-volume-agreement-docs
+                    #innerFormComponent
+                    [volumeAgreement]="volumeAgreement"></app-volume-agreement-docs>
+            </div>
+        </div>
+
+        <div class="common-form-btn-group">
+            <button class="btn btn-orange"
+                    (click)="cancel()">Отмена</button>
+            <button class="btn btn-blue btn-primary"
+                    *ngIf="isPrevStep"
+                    (click)="prev()">Вернутся</button>
+            <button class="btn btn-blue btn-primary"
+                    *ngIf="isNextStep"
+                    (click)="next()">Далее</button>
+            <button class="btn btn-blue btn-primary"
+                    *ngIf="isLastStep"
+                    (click)="save()">Сохранить</button>
+            <button class="btn btn-primary btn-green btn-approval"
+                    *ngIf="stepActiveIndex == 3 && volumeAgreement.isApproval"
+                    (click)="sendManager()">Сохранить и отправить руководителю</button>
+        </div>
+
+    </div>
+</ng-container>

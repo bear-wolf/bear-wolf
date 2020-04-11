@@ -1,0 +1,125 @@
+@import "variables";
+
+.error-messages {
+  display: none;
+}
+
+//form.submitted{
+//  .error-messages {
+//    display: block;
+//  }
+//}
+
+app-form-controls-multiselect{
+  p-multiselect{
+    width: 100%;
+
+    .ui-multiselect{
+      min-height: $form-control-height;
+      width: 100%;
+    }
+  }
+}
+
+app-form-controls-select{
+  p-dropdown{
+    .ui-dropdown-item.ui-corner-all.disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+}
+
+app-form-controls-input,
+app-form-controls-select,
+app-form-controls-period,
+app-form-controls-autocomplete,
+app-form-controls-textarea {
+  &.ng-touched.ng-invalid {
+    .ui-widget,
+    input,
+    textarea {
+      border-color: $color-abbott-red;
+
+      .ui-dropdown-trigger {
+        color: $color-abbott-red;
+      }
+    }
+
+    .error-messages {
+      display: block;
+    }
+  }
+
+  .form-group {
+    margin: 0;
+
+    .error-messages {
+      display: none;
+    }
+  }
+
+  .ui-dropdown {
+    min-width: 100px;
+  }
+
+  &.block {
+    width: 100%;
+
+    p-dropdown {
+      width: 100%;
+
+      .ui-dropdown {
+        width: 100%;
+      }
+    }
+  }
+}
+
+app-form-controls-period {
+  .period-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .delimiter {
+      margin: 0 5px;
+    }
+
+    p-calendar.period-calendar {
+      input.ui-inputtext {
+        width: 50px;
+      }
+
+      .ui-calendar .ui-datepicker {
+        min-width: 200px;
+      }
+    }
+  }
+}
+
+p-calendar {
+  input {
+    font-size: 11px!important;
+  }
+}
+
+p-checkbox,
+p-radioButton {
+  display: inline-flex;
+  align-items: center;
+}
+
+p-checkbox{
+  label{
+    cursor: pointer;
+  }
+}
+
+app-form-controls-autocomplete {
+  .ui-autocomplete{
+    .ui-widget {
+      width: 100%;
+    }
+  }
+}

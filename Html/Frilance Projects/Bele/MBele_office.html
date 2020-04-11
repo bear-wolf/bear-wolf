@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=1200px;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/jquery-ui-1.8.15.custom.css" rel="stylesheet" />
+    <link href="css/jslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/select.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Css/style.css" />
+    <link href="scripts/jquery.slider/jquery.slider.css" rel="stylesheet" />
+    <link href="css/visuallightbox.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="scripts/jquery-1.8.3.js"></script>
+    <script src="scripts/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.navigation_slider.js"></script>
+    <script type="text/javascript" src="scripts/jquery.slider.js"></script>
+    <script src="scripts/visuallightbox.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+
+    <!--[if (IE) ]>
+    <script type="text/javascript">document.writeln("<link rel='stylesheet' type='text/css' href='css/ie.css'>");</script>
+    <script type="text/javascript" src="scripts/html5.js"></script>            
+<![endif]-->
+
+    <!--[if !IE]><!-->
+    <script>
+        if (Function('/*@cc_on return document.documentMode===10@*/')() && window.innerWidth >= 980) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'css/ie.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+    <!--<![endif]-->
+
+    <!--[if !(IE)]>-->
+    <script type="text/javascript">
+        document.writeln("<link rel='stylesheet' type='text/css' href='css/others.css'>");
+    </script>
+    <!--<![endif]-->
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="enterdialog">
+            <table class="dbase">
+                <tbody>
+                    <tr>
+                        <td class="dbasetd">
+                            <div class="width639">
+                                <a class="exit" href="javascript:void(0)"></a>
+                                <h1>Вход</h1>
+                                <form class="entry_form" id="entry_form">                                
+                                <div class="pad">
+                                    <div class="regmarg">
+                                        <label>Введите E-mail</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>Введите Пароль</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>  
+    
+                                    <p><a href="" class="forgotpas">Забыли пароль?</a></p>
+                                    <p><input type="checkbox" checked="checked" value="1" id="for1"><label for="for1">Запомнить меня</label></p>
+
+                                </div>
+                                      <input type="button" class="dialogbut" value="Войти на сайт" onclick="register()">
+								</form>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="regdialog">
+            <table class="dbase">
+                <tbody>
+                    <tr>
+                        <td class="dbasetd">
+                            <div class="width638">
+                                <a class="exit" href="javascript:void(0)"></a>
+                                <h1>Регистрация</h1>
+                                <form class="entry_form" id="entry_form">
+                                 <div class="pad">
+                                    <div class="regmarg">
+                                        <label>Ваше имя</label>
+                                        <input id="name" placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>Ваша фамилия</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="emptyfield">Поле не заполнено</span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>E-mail</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>
+                                    <div class="regmarg">
+                                        <label>Пароль</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div>                                                                        
+                                    <div class="regmarg">
+                                        <label>Повторите пароль</label>
+                                        <input  placeholder="" value="" type="text">
+                                        <span class="formerror"></span>
+                                    </div> 
+                             
+
+                                    <table class="width638table">
+                                        <tr>
+                                            <td class="width638td1">Добавить фото<br>
+                                                142 х 122
+                                            </td>
+                                            <td class="width638td2"><a href="">
+                                                <img src="images/bg/emptyfoto.png"></a></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="code">
+                                    Введите защитный код
+                                    <div class="captcha"><img src="images/bg/capcha.png"></div>
+                                    <span class="load" onclick="refresh_captcha_reg('');"></span>
+                                    <input type="text" class="text">
+                                    <p class="emptyfield2">Поле не заполнено</p>
+                                </div>
+                                
+                                <input type="button" class="dialogbut" value="Зарегистрироваться" onclick="register()">
+
+								</form>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <div class="main">
+        <header>
+
+            <div class="fixit">
+                <div class="firsthead">
+                    <a href="" class="logo"></a>
+                    <div class="search">
+                    	<form class="search" action="/search/key/" method="get">
+                            <i></i>
+                            <input type="text" value="Поиск по сайту" class="toggle-inputs"><input type="submit" value="Поиск"/>
+						</form>
+                    </div>
+                    <ul class="headermen">
+                        <li><a href="">О проекте</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Добавить компанию</a></li>
+                        <li><a href="">Сайт отзывов в Украине</a></li>
+                    </ul>
+
+                    <div class="banbut visible" data-text="Свернуть баннер;Показать баннер">
+                        <i></i>
+                        <a href="javascript:void(0)">Свернуть баннер</a>
+                    </div>
+                    <div class="rightfon">
+                        <i></i>
+                        <span><b>0</b> товаров:  за <b>0 грн.</b></span>
+                        <a href="">Перейти в корзину</a>
+                    </div>
+                    <div class="enterfon">
+                        <a href="" class="reg">Регистрация</a>
+                        <a href="" class="enter">Вход</a>
+                    </div>
+                    <div class="tel">
+                    	<div class="ttel1">тел:<i>+38</i><span>123-456-789</span> </div>
+                       	<div class="ttel2">моб:<i>+38</i><span>123-456-789</span> </div>
+                    	<div class="ttel3">email:<i></i><a href="">underwear@bele.ua</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="hidedblock">
+                <div class="fixit">
+                    <div class="topslider">
+                        <div class="struct big_slider">                            
+                            <div class="bottomLine">
+                                <div class="topmainslider">
+                                    <div class="navigation">
+                                        <a rel="beg" class="arrowleft" href="javascript:void(0)"></a>
+                                        <a rel="end" class="arrowright" href="javascript:void(0)"></a>
+                                    </div>
+                                    <div id="bs_pager"></div>
+                                    <div class="baserelative">
+                                        <div class="relative">
+                                            <div class="absolute" id="bs_absolute">
+                                                <ul class="picture gallery">
+                                                    <li class="bsslide1">
+                                                        <img src="images/foto/fototopslide.png">
+                                                        <div class="topslidertext">
+                                                            Пижамы и 
+                                                            <br>
+                                                            домашняя одежда
+                                                        </div>
+                                                        <ul class="topslidermenu">
+                                                            <li><a href="">комплекты женские халаты</a></li>
+                                                            <li><a href="">комплекты и пижамы мужские</a></li>
+                                                            <li><a href="">пижамы детские и подростковые</a></li>
+                                                            <li><a href="">костюмы для отдыха трикотажные</a></li>
+                                                            <li><a href="">пеньюары, халаты трикотажные</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="bsslide1">
+                                                        <img src="images/foto/fototopslide.png">
+                                                        <div class="topslidertext">
+                                                            22222222222222222
+                                                        </div>
+                                                        <ul class="topslidermenu">
+                                                            <li><a href="">комплекты женские халаты</a></li>
+                                                            <li><a href="">комплекты и пижамы мужские</a></li>
+                                                            <li><a href="">пижамы детские и подростковые</a></li>
+                                                            <li><a href="">костюмы для отдыха трикотажные</a></li>
+                                                            <li><a href="">пеньюары, халаты трикотажные</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondhead">
+                <div class="fixit">
+                <nav>
+                    <ul class="topmenu">
+                        <li><i></i><a href="">Нижнее бельё</a></li>
+                        <li class="active"><i></i><a href="">Домашняя одежда</a></li>
+                        <li><i></i><a href="">Купальники</a></li>
+                        <li><i></i><a href="">Пляжная одежда</a></li>
+                        <li><i></i><a href="">Для мужчин</a></li>
+                        <li><i></i><a href="" class="last">Sale</a></li>
+                    </ul>
+                </nav>   
+                </div>
+            </div>
+
+        </header>
+        <div class="clearfix"></div>
+        <div class="fixit">
+            <div class="content">
+                <div class="wrapper">
+                    <div class="left_part">
+                    	  <nav>
+                          <ul class="leftmen">
+                            <li class="first"><a href="javascript:void(0)">Нижнее бельё</a></li>
+                            <li class="active"><a href="javascript:void(0)">Домашняя одежда</a>
+                                <ul>
+                                    <li><a href="javascript:void(0)"><i></i>Новинки 2014</a><b></b></li>
+                                    <li class="active"><a href="javascript:void(0)"><i></i>Бестселлеры</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Одежда для дома</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Ночные рубашки</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Пижамы</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Неглиже</a><b></b></li>
+                                    <li><a href="javascript:void(0)"><i></i>Ассорти </a><b></b></li>
+                                </ul>
+                                <li><a href="javascript:void(0)">Купальники</a></li>
+                            <li><a href="javascript:void(0)">Пляжная одежда</a></li>
+                            <li><a href="javascript:void(0)">Для мужчин</a></li>
+                            <li class="last"><a href="javascript:void(0)">Sale</a></li>
+
+                        </ul>
+                        </nav>
+                        <div class="sosialblock">
+                            <a href="" class="ico1"></a>
+                            <a href="" class="ico2"></a>
+                            <a href="" class="ico3"></a>
+                            <a href="" class="ico4"></a>
+                            <a href="" class="ico5"></a>
+                            <a href="" class="ico6"></a>
+                        </div>
+                        <div class="comenttitle">Комментарии</div>
+                        <div class="comentblock">
+                            <b>Иван Иванов</b>
+                            <div class="rayting">
+                                <ul>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </div>
+                            Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж...
+                        </div>
+                        <div class="comentblock">
+                            <b>Иван Иванов</b>
+                            <div class="rayting">
+                                <ul>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a class="active" href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </div>
+                            Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж...
+                        </div>
+                        <a href="" class="allcoments">Читать все комментарии</a>
+                        <a href="">
+                            <img src="images/foto/Baner.png"></a>
+
+                    </div>
+
+                    <div class="middle_part">
+                        <div class="center_part">
+                            <!---------------------------------------------------------------->
+                            <p class="navtitle"><a href="">Главная</a>  »  <a href="">Одежда для дома</a>  »  <a href="">Одежда для дома</a>  »  <b>Одежда для дома</b></p>
+                            <p class="maintitle">Мои контактные данные</p>
+
+                            <p class="line3"></p>
+                            <div class="padettext">
+                                Относительно производительности, Microsoft Office 2010 работает также быстро и легко на системных ресурсах, как и Technical Preview. Значительно улучшения претерпели аппаратные приложения: быстрее запускаются и быстрее работают с документами. В целом, Microsoft Office 2010. Относительно производительности, Microsoft Office 2010 работает также быстро и легко на системных ресурсах, как и Technical Preview. Значительно улучшения претерпели аппаратные приложения: быстрее запускаются и быстрее работают с документами. В целом, Microsoft Office 2010.
+                            </div>
+                            <p class="line3"></p>
+
+                            <div class="contacttable">
+                                <table>
+                                    <tr>
+                                        <td>Фамилия, имя, отчество:</td>
+                                        <td>
+                                            <input type="text" value="Иванов Петр Афиногенович"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Номер телефона:</td>
+                                        <td>
+                                            <input type="text" value="(012) 123-456-789"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail:</td>
+                                        <td>
+                                            <input type="text" value="Afin@mail.ru"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Адрес доставки:</td>
+                                        <td>
+                                            <input type="text" value="г. Киев, ул. Строительная, д7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Примечания к заказу:</td>
+                                        <td>
+                                            <textarea>Примечание к заказу</textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Способ доставки:</td>
+                                        <td>
+                                            <div class="deliverysel">
+                                                <div class="ddl">
+                                                    <select>
+                                                        <option value="">Новая почта</option>
+                                                        <option value="">Новая почта2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Способ оплаты:</td>
+                                        <td>
+                                            <div class="deliverysel sel2">
+                                                <div class="ddl">
+                                                    <select>
+                                                        <option value="">Перевод на карту Приватбанка</option>
+                                                        <option value="">Перевод на карту Приватбанка2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <p class="karttitle1">Мои заказы</p>
+                            <div class="delivery">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>№ заказа</th>
+                                            <th>Дата заказа</th>
+                                            <th>Общая стоимость</th>
+                                            <th>Статус</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>04 апреля 2014 (10:15)</td>
+                                            <td>1000 грн.</td>
+                                            <td>Принят</td>
+                                            <td><a href="" class="dostdet">Подробнее</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>04 апреля 2014 (10:15)</td>
+                                            <td>2000 грн.</td>
+                                            <td>Формируется</td>
+                                            <td><a href="" class="dostdet">Подробнее</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>04 апреля 2014 (10:15)</td>
+                                            <td>3000 грн.</td>
+                                            <td>Принят</td>
+                                            <td><a href="" class="dostdet">Подробнее</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>04 апреля 2014 (10:15)</td>
+                                            <td>4000 грн.</td>
+                                            <td>Принят</td>
+                                            <td><a href="" class="dostdet">Подробнее</a></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <div class="basepager">
+                                    <div>
+                                        <ul>
+                                            <li class="prev"><a href=""><i class="arrow"></i></a></li>
+                                            <li><a class="active" href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href="">4</a></li>
+                                            <li><a href="">5</a></li>
+                                            <li><a href="">6</a></li>
+                                            <li><a href="">7</a></li>
+                                            <li class="next"><a href=""><i class="arrow"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <p class="karttitle1">Информация по заказу №1 (04 апреля 2014 (10:15))</p>
+                            <div class="block_kart">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>Фото, наименование</th>
+                                            <th>Артикул</th>
+                                            <th>Цвет</th>
+                                            <th>Размер</th>
+                                            <th>Цена, грн.</th>
+                                            <th>Кол-во шт.</th>
+                                            <th>Сумма, грн.</th>
+                                            <th>Удаление</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/foto/foto5.png">
+                                                <p>Пижама женская
+                                                    <br>
+                                                    LASCANA</p>
+                                            </td>
+                                            <td>3004-1</td>
+                                            <td><i><img src="images/foto/colors/yeloww.png" width="12" height="12" alt=""></i></td>
+                                            <td>XS</td>
+                                            <td>350</td>
+                                            <td>
+                                                <input type="text" value="3"></td>
+                                            <td>
+                                                <p class="pkart"><span class="loadkart"></span><b>1050</b></p>
+                                            </td>
+                                            <td><a href="">
+                                                <img src="images/bg/delkart.png"></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <!---------------------------------------------------------------->
+                            <div class="smalltext">
+                                Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж. Доставку товаров осуществляем во все города Украины. Интернет магазин предлагает пижамы по самым выгодным ценам. На страницах магазина Вы сможете подобрать  пижамы с брюками, пижамы с шортами, ночнушки, ночные сорочки. Прочий домашний трикотаж. Доставку товаров осуществляем во все города Украины.
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="fixit">
+            	<div class="footertable">
+
+                        <div class="footertd1">
+                            <b>Меню сайта</b>
+                            <ul>
+                                <li><a href="">Нижнее бельё</a></li>
+                                <li><a href="">Домашняя одежда</a></li>
+                                <li><a href="">Купальники</a></li>
+                                <li><a href="">Пляжная одежда</a></li>
+                                <li><a href="">Для мужчин</a></li>
+                            </ul>
+						</div>
+                         <div class="footertd3">
+                            <b>Советы</b>
+                            <ul>
+                                <li><a href="">Определить размер</a></li>
+                                <li><a href="">Рекомендации по уходу и стирке</a></li>
+                                <li><a href="">Типы бюстгальтеров</a></li>
+                                <li><a href="">Типы трусов</a></li>
+                                <li><a href="">Моделирующее белье</a></li>
+                            </ul>
+						</div>
+                         <div class="footertd5">
+                            <b>Помощь</b>
+                            <ul>
+                                <li><a href="">Часто задаваемые вопросы</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Доставка и оплата</a></li>
+                                <li><a href="">Подписаться на рассылку новостей</a></li>
+                                <li><a href="">Отказаться от рассылки</a></li>
+                            </ul>
+						</div>
+                         <div class="footertd7">
+                            <b>Наши контакты</b>
+                            <div class="foottel">
+                                <p><span>+38</span> 123-456-789</p>
+                                <p><span>+38</span> 123-456-789</p>
+                                <p class="email">underear@bele.ua</p>
+                            </div>
+						</div>
+                </div>
+                <p class="www">© Copyright 2014 <a href="">bele.com.ua</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

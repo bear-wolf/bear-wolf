@@ -1,0 +1,177 @@
+/*Navigation*/	
+.Navigation{ position:relative; }
+
+.Navigation .ArrowLeft.last{ background-position:left bottom; display:none ;}
+.Navigation .ArrowRight.last{background-position:right bottom; display:none;}
+.Navigation .ArrowLeft:hover{ background-position:left bottom;}
+.Navigation .ArrowRight:hover{background-position:right bottom; }
+
+.Navigation .ArrowLeft,
+.Navigation .ArrowRight{
+    width:55px;
+	height:96px;
+	display:block;
+	text-decoration:none;
+	position:absolute;
+	top:105px;
+}
+.Navigation .ArrowLeft{
+	background: url(../../Images/Background/slice2.png) no-repeat left top;
+	left:-85px;
+}
+.MainSlider .absolute {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.Navigation .ArrowRight{
+	background:url(../../Images/Background/slice2.png) no-repeat right top;
+	right:10px;
+}
+
+.BaseRelative{ padding:0 0px;}
+
+.Slider .absolute
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;	
+	height:280px;
+	}
+
+.Slider .Relative
+{
+	position:relative;
+	overflow:hidden;	
+	height:245px;
+	z-index:500;
+	}
+.MainSlider .Relative {
+    height: 365px;
+	width:1008px;
+	margin:0;
+    overflow: hidden;
+    position: relative;
+    z-index: 500;
+}
+.pagination a{
+	display:inline-block;background:url(images/thumb.png) 0 0 no-repeat;height:38px;width:17px;
+	position:relative;margin:0 1px 0 2px; font-size:0;
+	}
+
+.pagination a:hover, 
+.pagination a.active{background-position:right top;}
+.pagination a.active{cursor:default;}
+/*Navigation=======*/	
+
+/*SmallPhoto - slider*/
+.SmallPhoto {
+    border-top:1px solid #d4d4d4;
+    border-bottom:1px solid #d4d4d4;
+    height:118px;
+    position:relative;
+}
+.SmallPhoto .absolute{ top:11px!important;}
+.SmallPhoto .absolute ul li{ 
+    width:104px; height:96px; 
+    text-align:left;  
+    font-size:11px;
+    font-family:Arial;
+    text-align:left;
+    float:left;
+}
+.SmallPhoto .absolute ul li .SmallText { width:115px; text-align:center;}
+.SmallPhoto .Navigation{ position:absolute; left:0; width:351px; top:0; }
+.SmallPhoto .Navigation .ArrowLeft,
+.SmallPhoto .Navigation .ArrowRight{
+	position:absolute;
+	width:9px;
+	height:17px;
+	font-size:0;
+	background: url(images/arrow.png) no-repeat;
+	top:51px;
+    z-index:999;
+}
+.SmallPhoto .MainSlider .Relative {    
+    overflow: hidden;
+    position: relative;
+    z-index: 500;
+    margin:0 24px; 
+    width:309px;
+    height:108px;
+}
+.SmallPhoto .Navigation .ArrowLeft.Last{ background-position:left bottom; display:none;}
+.SmallPhoto .Navigation .ArrowRight.Last{background-position:right bottom; display:none;}
+.SmallPhoto .Navigation .ArrowLeft{ left:0px; background-position:0 0;}
+.SmallPhoto .Navigation .ArrowRight{ right:0px; background-position: right top!important;}
+
+li.Active .small_background{
+    background:#45dcfc;
+    border-color:#c4c3c1;
+}
+
+/*SmallPhoto - slider =====================*/
+
+.MainSliderBigArrow .Navigation .ArrowLeft.Last{ background-position:left bottom; display:none;}
+.MainSliderBigArrow .Navigation .ArrowRight.Last{background-position:right bottom; display:none;}
+
+/*big_slider - slider*/
+.big_slider { position:relative;}
+.big_slider .absolute{ 
+    top:11px!important;
+    position:absolute;
+	left:0;	
+	width:100%;	
+	height:495px;
+}
+.big_slider .absolute ul li{ 
+    position:relative;
+    width:1065px;
+    height:495px;
+    text-align:left;  
+    font-size:11px;
+    font-family:Arial;
+    text-align:left;
+    float:left;
+}
+
+.big_slider .absolute ul li .SmallText { width:115px; text-align:center;}
+.big_slider .Navigation{ display:none!important; }
+.big_slider .Relative {    
+    overflow: hidden;
+    position: relative;
+    z-index: 500;
+    margin:0 24px; 
+    width:1065px;
+    height:497px;
+}
+.big_slider .sliderfoto{
+	position:absolute;
+	top:-10px;
+	right:0px;
+}	
+
+
+/*big_slider - slider =====================*/
+
+.pagination {
+  bottom: 16px;
+  position: absolute;
+  right: 180px;
+  z-index: 4000;
+}
+.pagination a{
+	display:inline-block;
+	margin:0 5px 0 0 ;
+	background: url(../../Images/Background/slice_3.png) no-repeat right top;
+	width:15px;
+	height:15px;
+	text-decoration:none;
+}
+.pagination a:hover,.pagination a.Active{
+	text-decoration:none;
+
+	background:url(../../Images/Background/slice_3.png) no-repeat left top;
+}

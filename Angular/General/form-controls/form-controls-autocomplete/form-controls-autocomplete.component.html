@@ -1,0 +1,26 @@
+<div class="form-control-input">
+  <label *ngIf="label" [innerHTML]="label" class="form-control-input-label"></label>
+
+  <p-autoComplete
+        [(ngModel)]="value"
+        [field]="field"
+        [suggestions]="suggestions"
+        [multiple]="multiple"
+        [placeholder]="placeholder"
+        (ngModelChange)="updateValue($event)"
+        (completeMethod)="complete($event)">
+  <ng-template let-item pTemplate="item">
+    <ng-container [ngSwitch]="dataType">
+      <div *ngSwitchCase="'sku'">{{item.name}} ({{item.brand.name}})</div>
+    </ng-container>
+  </ng-template>
+</p-autoComplete>
+
+<div *ngIf="errors && !hideErrors" class="error-messages">
+  <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+</div>
+
+<div *ngIf="!errors && hint" class="form-text text-muted">
+  {{hint}}
+</div>
+</div>

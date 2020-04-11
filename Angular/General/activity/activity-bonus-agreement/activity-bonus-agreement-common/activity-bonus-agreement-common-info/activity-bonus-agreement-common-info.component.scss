@@ -1,0 +1,82 @@
+@import "~assets/css/shared";
+
+$controlWidth: 65px;
+
+.bonus-agreement-common-info-content{
+  @include period-container-column;
+  .period-container{
+    width: 300px;
+    &>span{
+      justify-content: space-between!important;
+    }
+  }
+
+  .rows-block{
+    .row-item{
+      label{
+        padding-right: 15px;
+        margin: 0;
+      }
+
+      .controls-input-point{
+        .form-group{
+          display: flex;
+          justify-content: space-between;
+          .value{
+            width: 65px;
+          }
+        }
+      }
+
+      .controls-label-nds+span{
+        width: 40px;
+      }
+
+      app-form-controls-period .period-container p-calendar.period-calendar input.ui-inputtext {
+        width: $controlWidth;
+      }
+
+      .controls-input-activity-pharmacies,
+      .controls-input-point,
+      .form-control-input,
+      .controls-label-nds{
+        label {
+          font-weight: bold !important;
+        }
+      }
+
+      .controls-input-activity-pharmacies{
+        .form-control-input{
+          display: flex;
+          justify-content: space-between;
+          .form-control{
+            width: $controlWidth;
+          }
+        }
+      }
+
+      .container-secondary-db{
+        width: $controlWidth;
+      }
+
+      .controls-select-secondary-db{
+        width: 100%;
+        .form-control-select{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          &>label {
+            font-weight: bold !important;
+          }
+          p-dropdown{
+            &,
+            .ui-dropdown{
+              width: $controlWidth;
+              min-width: $controlWidth;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+/*css style for IE8*/
+
+html div,
+html li{
+	zoom:1;
+	}
+
+
+ul.line li{}
+
+ul.line li input{
+	position:absolute;
+	left:0;
+	top:-4px;
+	}
+ul.line li.inp{
+	position:relative;
+	padding:0 0 0 2px;
+	width:84px;
+	}
+
+ul.line li.inp i{
+	top:-4px;
+	z-index:255;
+	}
+ul.line li.inp i.u1{ left:0px; }
+ul.line li.inp i.u2{ right:-48px;}
+
+
+
+ul.line li.sel i{
+	top:-4px;
+	}
+
+
+
+
+ul.line li.button input{
+	position:absolute;
+	left:78px;
+	top:-7px;
+	text-align:left;
+	width:87px;
+	padding:0 0 0 10px;
+	height:29px;
+	border:none;
+	}
+ul.line li.button{ position:relative; padding:0 0 0 39px; height:29px;}
+
+ul.line li.button i.u1,
+ul.line li.button i.u2{	
+	top:-7px;
+	}
+ul.line li.button i.u1{ left:75px;}
+ul.line li.button i.u2{ right:-130px;}
+
+
+ul.line li.button i.u11,
+ul.line li.button i.u22{
+	top:-7px;
+	}
+ul.line li.button i.u11{ left:75px;}
+ul.line li.button i.u22{ right:-130px;}
+
+
+i.korz{
+	right:-118px;
+	top:-2px;
+	}
+
+
+table.obzor ul.line li.button input{
+	position:absolute;
+	left:0;
+	top:0;
+	text-align:left;
+	width:87px;
+	padding:0 0 0 10px;
+	height:29px;
+	border:none;
+	margin:0;
+	}
+table.obzor ul.line li.button{ position:relative; padding:0px; margin:0; height:29px; }
+
+table.obzor ul.line li.button i.u1,
+table.obzor ul.line li.button i.u2{	
+	top:0px;
+	}
+table.obzor ul.line li.button i.u1{ left:0px;}
+table.obzor ul.line li.button i.u2{ right:-90px;}
+table.obzor ul.line li.button i.korz{
+	right:-80px;
+	top:6px;
+	}
+
+/***********/
+.prostor .block ul.line li.inp{ padding:0 50px 0 0;}
+.prostor .block ul.line li.inp i.u2{ right:0px;}

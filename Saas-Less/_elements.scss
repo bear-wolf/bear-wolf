@@ -1,0 +1,77 @@
+@import "variables";
+
+.chip {
+  border-radius: 5px;
+  color: $color-abbott-white;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+
+  &.active {
+    background-color: $color-abbott-medium-green;
+  }
+
+  &.not-active {
+    background-color: $color-abbott-gold;
+  }
+}
+
+label {
+  font-weight: normal;
+}
+
+form {
+  .form-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-abbott-light-gray;
+    padding: 10px 0;
+
+    .form-item-label {
+      margin: 0;
+    }
+
+    .form-item-control {
+      &+.form-item-control {
+        margin-left: 10px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+p-steps {
+  .ui-steps {
+    &:before {
+      top: 14px;
+      z-index: 0;
+    }
+
+    ul {
+      display: flex;
+
+      li.ui-steps-item {
+        max-width: none;
+
+        a.ui-menuitem-link {
+          padding: 0 10px;
+          height: 100%;
+
+          .ui-steps-number {
+            top: 0;
+            margin-bottom: 0;
+          }
+
+          span {
+            white-space: normal;
+          }
+        }
+      }
+    }
+  }
+}
+

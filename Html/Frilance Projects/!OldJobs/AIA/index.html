@@ -1,0 +1,913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>index.html</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" border="0"/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li class="activ"><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+						
+					
+					<table class="storona">
+						<tr>
+							<td>
+								<div class="ot">
+										<div class="center"><a href="#"><img  src="img/temp/valuta.jpg" width="159" height="36" alt="" /></a></div>
+									
+									<div class="calendar">
+										<h1>
+											<i class="lt"></i>
+											<i class="rt"></i>
+											Календарь
+										</h1>
+									<div class="bor">
+										<i class="bl"></i>
+										<i class="br"></i>
+										<p>
+											<a href="#" class="lt"><img src="img/icon/cal_left.jpg" width="7" height="5" alt="" /></a> 
+											Февраль 
+											<a href="#" class="rt"><img src="img/icon/cal_right.jpg" width="6" height="5" alt="" /></a>
+										</p>
+										<div>
+											<table>
+												<thead>
+													<tr>
+														<td>Пн</td>
+														<td>Вт</td>
+														<td>Ср</td>
+														<td>Чт</td>
+														<td>Пт</td>
+														<td class="red">Сб</td>
+														<td class="red">Нд</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td></td> 
+														<td>1</td>
+														<td>2</td>
+														<td>3</td>
+														<td>4</td>
+														<td class="red">5</td>
+														<td class="red">6</td>
+													</tr>
+													<tr>
+														<td><a href="#">7</a></td>
+														<td>8</td>
+														<td>9</td>
+														<td>10</td>
+														<td>11</td>
+														<td class="red">12</td>
+														<td class="red">13</td>
+													</tr>
+													<tr>
+														<td>14</td>
+														<td>15</td>
+														<td class="today">16</td>
+														<td>17</td>
+														<td>18</td>
+														<td class="red">19</td>
+														<td class="red">20</td>
+													</tr>
+													<tr>
+														<td>21</td>
+														<td>22</td>
+														<td>23</td>
+														<td>24</td>
+														<td>25</td>
+														<td class="red">26</td>
+														<td class="red">27</td>
+													</tr>
+													<tr class="no">
+														<td>28</td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+													</tr>
+												</tbody>
+											 </table>
+											</div>
+										</div>
+									</div>
+									
+									<div class="opros sir">
+										<h3 class="blue">
+											<i class="lt"></i>
+											<i class="rt"></i>
+											Опрос
+										</h3>
+										<div class="bor">
+											<i class="bll"></i>
+											<i class="brr"></i>
+											<p>Где Вы встретите Новый год?</p>
+											<ul>
+												<li><input type="radio" name="rad" /> Дома з семёй и друзьями. </li>
+												<li><input type="radio" name="rad" /> Заграницей. </li>
+												<li><input type="radio" name="rad" /> В командировке. </li>
+												<li><input type="radio" name="rad" /> Дома з семёй и друзьями. </li>
+											</ul>
+											<div>
+												<input type="image" src="img/button/opros.jpg" /><br /><a href="#">Результаты опроса</a>
+											</div>
+										</div>
+									</div>
+									
+									<div class="block">
+										<h2 class="sir">
+											<i class="lt"></i>
+											<i class="rt"></i>
+											Реклама
+										</h2>
+										<div>
+											<i class="bl"></i>
+											<i class="br"></i>
+											<a href="#"><img src="img/temp/baners/shablon_211.jpg" width="152" height="409" alt="" /></a>
+										</div>
+									</div>
+								</div>	
+							</td>
+							<td>
+								<div class="center"><a href="#"><img src="img/temp/wthezter/shablon_86.jpg" width="155" height="34" alt="" /></a></div>
+								
+								<div class="block">
+									<h2 class="sir">
+										<i class="lt"></i>
+										<i class="rt"></i>
+										Реклама
+									</h2>
+									<div>
+											<i class="bl"></i>
+											<i class="br"></i>
+											<a href="#"><img src="img/temp/baners/shablon_120.jpg" width="153" height="211" alt="" /></a>
+									</div>
+								</div>
+								
+								<div class="block sir">
+									<h3 class="blue">
+											<i class="lt"></i>
+											<i class="rt"></i>
+											Популярное
+										</h3>
+									<div>
+										<i class="bl"></i>
+										<i class="br"></i>
+										<ul class="list">
+											<li><a href="#">Новогодние корпоративы. Как они есть на самом деле.</a></li>
+											<li><a href="#">Новогодние корпоративы. Как они есть на самом деле.</a></li>
+											<li><a href="#">Новогодние корпоративы. Как они есть на самом деле.</a></li>
+											<li class="end"><a href="#">Новогодние корпоративы. Как они есть на самом деле.</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="block">
+									<h2 class="sir">
+										<i class="lt"></i>
+										<i class="rt"></i>
+										Реклама
+									</h2>
+									<div>
+										<i class="bl"></i>
+										<i class="br"></i>
+										<a href="#"><img src="img/temp/baners/shablon_213.jpg" width="153" height="182" alt="" /></a>
+									</div>
+								</div>
+								
+								
+								<table class="vopros">
+									<tr>
+										<td>
+											<div>
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												<h3>Задавай вопрос гостю</h3>
+												<img src="img/temp/small/ico.jpg" width="46" height="24" alt="" />
+												<p><a href="#">Александр Гагарин</a>
+													музыка, лидер групы Твист
+												</p>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<table class="vopros">
+									<tr>
+										<td>
+											<div>
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												<h3>Задавай вопрос гостю</h3>
+												<img src="img/temp/small/ico.jpg" width="46" height="24" alt="" />
+												<p><a href="#">Александр Гагарин</a>
+													музыка, лидер групы Твист
+												</p>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<table class="vopros">
+									<tr>
+										<td>
+											<div>
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												<h3>Задавай вопрос гостю</h3>
+												<img src="img/temp/small/ico.jpg" width="46" height="24" alt="" />
+												<p><a href="#">Александр Гагарин</a>
+													музыка, лидер групы Твист
+												</p>
+											</div>
+										</td>
+									</tr>
+								</table>
+								
+							</td>
+						</tr>
+					</table>
+					
+					<div class="anketa">				
+						<h3>Знакомство</h3>		
+						<div class="vkladka clearfix">
+							<div class="left"><a href="#">общий</a></div>
+							<div class="right"><a href="#">расширенный</a></div>
+						</div>
+						<div class="forma">
+								<div class="ugol-two"></div>
+								<div class="ugol-three"></div>
+								<div class="ugol-four"></div>
+								<ul class="nazva">
+									<li>
+										Я 
+										<select>
+											<option>Парень</option>
+										</select>
+									</li>
+									<li>
+										&nbsp;&nbsp;ищу
+										<select>
+											<option>Девушку</option>
+										</select>
+									</li>
+								</ul>
+								<ul class="nazva">
+									<li class="year">
+										В возрасте
+										<input type="text" value="" />&nbsp;-&nbsp;<input type="text" value="" />&nbsp;лет
+									</li>
+								</ul>
+								<div class="ot">&nbsp;</div>
+								<ul class="nazva">
+									<li>
+										где искать?
+										<select>
+											<option selected="selected">Россия</option>
+										</select>
+									</li>
+									<li>
+										<div class="add_but">
+											<div class="add_but_one">
+												<div class="add_but_two">
+													<input type="submit" value="Искать!" />
+												</div>
+											</div>
+										</div>
+
+									</li>
+								</ul>
+								<div class="checkbox">
+									<p>Отобразить только</p>
+									<ul>
+										<li><input type="checkbox" checked="checked" /><span>с фотографией</span></li>
+										<li><input type="checkbox" />с видео</li>
+										<li><input type="checkbox"/>скрывать предложения интимн-услуг</li>
+									</ul>
+								</div>
+						</div>								
+					</div>	
+					
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+				
+					<div class="head_line">
+						<div>
+							<ul>
+								<li class="activ"><a href="#">Главные новости <i class="lt"></i><i class="rt"></i></a></li>
+								<li><a href="#">Авто <i class="lt"></i><i class="rt"></i><i class="uk"></i></a></li>
+								<li><a href="#">Бизнес <i class="lt"></i><i class="rt"></i><i class="uk"></i></a></li>
+								<li><a href="#">Общество <i class="lt"></i><i class="rt"></i><i class="uk"></i></a></li>
+								<li><a href="#">Бизнес <i class="lt"></i><i class="rt"></i><i class="uk"></i></a></li>
+								<li><a href="#">Общество <i class="lt"></i><i class="rt"></i><i class="uk"></i></a></li>
+								<li><a href="#">Бизнес <i class="lt"></i><i class="rt"></i><i class="uk"></i></a></li>
+							</ul>
+						</div>
+						<a href="#" class="rss"></a>
+					</div>
+				
+					<div class="news">
+						<table>
+							<tr>
+								<td class="sm">
+									<img src="img/temp/news/shablon_103.jpg" width="133" height="100" alt="" />
+									<h1><a href="#">Владимир Путин: нищих в Росии стало меньше</a></h1>
+									<span>14:15 <img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a></span>
+									<p>На вопросы отвечал Путин в студии</p>
+								</td>
+								<td>
+									<ul>
+										<li><i>11:00</i> Уральського фармацевта стали <a href="#">первым резидет Соколова</a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a>
+										</li>
+										<li><i>12:00</i> Уральського фармацевта стали <a href="#">первым резидом Соколова</a> <img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a></li>
+										<li><i>13:00</i> Уральського фармацевта стали <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a><img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a></li>
+										<li><i>14:00</i> Антимонопольщики <a href="#">поймали монетку за Бонусы</a> <img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a></li>
+										<li><i>11:00</i> Уральського фармацевта стали <a href="#">первым резидетом Соколова</a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a>
+										</li>
+										<li><i>11:00</i> Уральського фармацевта стали <a href="#">первым резидетом Соколова</a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a>
+										</li>
+										<li><i>12:00</i> Развязка на Калине <a href="#">парализован</a><a href="#"><img src="img/icon/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a> <img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a></li>
+										<li><i>12:00</i> Развязка на Калине <a href="#">парализован</a><a href="#"><img src="img/icon/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a> <img src="img/icon/coment.png" width="9" height="10" alt="" />
+											<a href="#">1</a></li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<div class="repost">
+						<h2>Фоторепортаж</h2>
+						<div>
+							<table>
+								<tr>
+									<td>
+										<a href="#"><img src="img/temp/reportaj/shablon_163.jpg" width="75" height="46" alt="" /></a>
+										<p>будькакой текст ради текста обёма</p>
+										<b>остаток<a href="#"></a></b>
+									</td>
+									<td>
+										<a href="#"><img src="img/temp/reportaj/shablon_163.jpg" width="75" height="46" alt="" /></a>
+										<p>будькакой текст ради текста обёма</p>
+										<b>остаток<a href="#"></a></b>
+									</td>
+									<td>
+										<a href="#"><img src="img/temp/reportaj/shablon_163.jpg" width="75" height="46" alt="" /></a>
+										<p>будькакой текст ради текста обёма</p>
+										<b>остаток<a href="#"></a></b>
+									</td>
+									<td>
+										<a href="#"><img src="img/temp/reportaj/shablon_163.jpg" width="75" height="46" alt="" /></a>
+										<p>будькакой текст ради текста обёма</p>
+										<b>остаток<a href="#"></a></b>
+									</td>
+									<td>
+										<a href="#"><img src="img/temp/reportaj/shablon_163.jpg" width="75" height="46" alt="" /></a>
+										<p>будькакой текст ради текста обёма</p>
+										<b>остаток<a href="#"></a></b>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				
+					<div class="news_list">
+						<table>
+							<tr>
+								<td><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></td>
+								<td>
+									<h2>Милиционеров оденут в новую форму</h2>
+									<b>10 декабря 2009 Коментариев 124</b>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+									<a href="#">Подробнее...</a>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></td>
+								<td>
+									<h2>Милиционеров оденут в новую форму</h2>
+									<b>10 декабря 2009 Коментариев 124</b>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+									<a href="#">Подробнее...</a>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></td>
+								<td>
+									<h2>Милиционеров оденут в новую форму</h2>
+									<b>10 декабря 2009 Коментариев 124</b>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+									<a href="#">Подробнее...</a>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/news/shablon_195.jpg" width="95" height="64" alt="" /></a></td>
+								<td>
+									<h2>Милиционеров оденут в новую форму</h2>
+									<b>10 декабря 2009 Коментариев 124</b>
+									<p>На форме сотрудников милициии и так далее что то делали</p>
+									<a href="#">Подробнее...</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				
+					<p class="baner"><a href="#"><img src="img/temp/baners/shablon_215.jpg" width="431" height="63" alt="" /></a></p>
+				
+					<table class="link_page">
+						<tr>
+							<td>
+								<h3><a href="#">Работа в Екатеринбурге</a></h3>
+								<ul class="job">
+									<li><a href="#">Старший менеджер</a> 25 000 руб.</li>
+									<li><a href="#">менеджер</a> 10 000 руб.</li>
+									<li><a href="#">Начальник склада</a> 35 000 руб.</li>
+									<li><a href="#">Начальник склада</a> 35 000 руб.</li>
+									<li><a href="#">Старший менеджер</a> 25 000 руб.</li>
+									<li><a href="#">Старший менеджер</a> 1000 руб.</li>
+								</ul>
+								
+								<table class="vopros">
+									<tr>
+										<td>
+											<div>
+												<i class="u1"></i>
+												<i class="u2"></i>
+												<i class="u3"></i>
+												<i class="u4"></i>
+												<h3>Задавай вопрос гостю</h3>
+												<img src="img/temp/small/ico.jpg" width="46" height="24" alt="" />
+												<p><a href="#">Александр Гагарин</a>
+													музыка, лидер групы Твист
+												</p>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td>
+								<h3><a href="#">Продажа автомобилей</a> обявлений за сегодня 407</h3>
+								<table class="auto">
+									<tr>
+										<td>
+											<img src="img/temp/auto/shablon_218.jpg" width="42" height="33" alt="" />
+											<p><a href="#">ВАЗ 2011</a></p>
+											200 000р.
+										</td>
+										<td>
+											<img src="img/temp/auto/shablon_220.jpg" width="42" height="33" alt="" />
+											<p><a href="#">ВАЗ 2011</a></p>
+											200 000р.
+										</td>
+										<td>
+											<img src="img/temp/auto/shablon_222.jpg" width="42" height="33" alt="" />
+											<p><a href="#">ВАЗ 2011</a></p>
+											200 000р.
+										</td>
+										<td>
+											<img src="img/temp/auto/shablon_224.jpg" width="42" height="33" alt="" />
+											<p><a href="#">ВАЗ 2011</a></p>
+											200 000р.
+										</td>
+									</tr>
+								</table>
+								
+								<h4><a href="#">Доска обявлений</a> обявлений за сегодня 407</h4>
+								<h3><a href="#">Недвижимость</a></h3>
+								<ul class="job">
+									<li><i>возле</i> <a href="#">Сниму квартиру автовокзал</a> 25 000 руб.</li>
+									<li><i>возле</i> <a href="#">Сниму квартиру автовокзал</a> 25 000 руб.</li>
+									<li><i>возле</i> <a href="#">Сниму квартиру автовокзал</a> 25 000 руб.</li>
+									<li><i>возле</i> <a href="#">Сниму квартиру автовокзал</a> 25 000 руб.</li>
+									<li><i>возле</i> <a href="#">Сниму квартиру автовокзал</a> 25 000 руб.</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				
+					<table class="vubor">
+						<tr>
+							<td>
+								<div> Фотоконкурсы  <a href="#">новое</a></div>
+								<a href="#"><img src="img/temp/konkurs/shablon_235.jpg" width="184" height="184" alt="" /></a>
+							</td>
+							<td>
+								<div> Видео <a href="#" class="no">все</a></div>
+								<a href="#"><img src="img/temp/video/shablon_233.jpg" width="212" height="181" alt="" /></a>
+							</td>
+						</tr>
+					</table>
+				</div>			
+			</div>
+		
+			<table class="bottom">
+				<tr>
+					<td class="left">
+						<span class="line"></span>
+						<table class="vubor">
+							<tr>
+								<td>
+									<div> <b>Фотоальбомы</b>  <a href="#">новое</a></div>
+									<a href="#"><img src="img/temp/konkurs/shablon_235.jpg" width="184" height="184" alt="" /></a>
+								</td>
+							</tr>
+						</table>
+						<div class="add_foto">
+							<p><a href="#">Джонни Рижых</a></p>
+							<ul>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_298.jpg" width="57" height="57" alt="" /></a></li>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_300.jpg" width="57" height="57" alt="" /></a></li>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_302.jpg" width="57" height="57" alt="" /></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_298.jpg" width="57" height="57" alt="" /></a></li>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_300.jpg" width="57" height="57" alt="" /></a></li>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_302.jpg" width="57" height="57" alt="" /></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_298.jpg" width="57" height="57" alt="" /></a></li>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_300.jpg" width="57" height="57" alt="" /></a></li>
+								<li><a href="#"><img src="img/temp/small/foto/shablon_302.jpg" width="57" height="57" alt="" /></a></li>
+							</ul>
+							<a href="#"><img src="img/button/foto.jpg" width="184" height="35" alt="" /></a>
+						</div>
+					</td>
+					<td>
+						<span class="line"></span>
+						<table class="st-right">
+							<tr>
+								<td>
+									<p class="name"><b>Самое интересное в Блогах</b> <a href="#"><img src="img/icon/rss.jpg" width="11" height="11" alt="" /></a></p>
+									<a href="#"><img src="img/temp/baners/shablon_215.jpg" width="364" height="49" alt="" /></a>
+
+									<ul class="list_news">
+										<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропал. Кот Матроскин пошёл домой и пропал. Кот Матроскин пошёл домой и пропал. </a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Не хочу.</a>
+											<a href="#"><img src="img/icon/diagr.jpg" width="10" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/sm1.jpg" width="7" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Не хочу.</a>
+											<a href="#"><img src="img/icon/diagr.jpg" width="10" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/sm1.jpg" width="7" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Не хочу.</a>
+											<a href="#"><img src="img/icon/diagr.jpg" width="10" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/sm1.jpg" width="7" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>										
+									</ul>
+									
+									
+								</td>
+								<td class="lichnosti">
+									<p class="name"><b>Популярные личности</b></p>
+									<table class="list_lichnosti">
+										<tr>
+											<td class="img"><img src="img/temp/lichnosti/shablon_263.jpg" width="40" height="30" alt="" /></td>
+											<td>
+												<p><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /> <a href="#">orlova_m_p</a></p>
+												<div>Каждый человек в жизне получает то что хочет</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="img"><img src="img/temp/lichnosti/shablon_276.jpg" width="40" height="30" alt="" /></td>
+											<td>
+												<p><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /> <a href="#">Джонни Рижых</a></p>
+												<div>Каждый человек в жизне получает то что хочет</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="img"><img src="img/temp/lichnosti/shablon_263.jpg" width="40" height="30" alt="" /></td>
+											<td>
+												<p><a href="#">Джонни Рижых</a></p>
+												<div>Каждый человек в жизне получает то что хочет</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="img"><img src="img/temp/lichnosti/shablon_284.jpg" width="40" height="30" alt="" /></td>
+											<td>
+												<p><a href="#">Джонни Рижых</a></p>
+												<div>Каждый человек в жизне получает то что хочет</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="img"><img src="img/temp/lichnosti/shablon_295.jpg" width="32" height="40" alt="" /></td>
+											<td>
+												<p><a href="#">Джонни Рижых</a></p>
+												<div>Каждый человек в жизне получает то что хочет</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<div><a href="#"><img src="img/background/blog.jpg" width="197" height="39" alt="" /></a></div>
+					</td>
+				</tr>
+			</table>
+					<div class="banright">
+						<a href="#"><img src="img/temp/baners/shablon_215.jpg" width="364" height="49" alt="" /></a>
+					</div>
+		
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>
+		<address>2010 - АiiA - Городской портал Майкопа 
+<br /> Все права защищены</address>
+
+<div class="count">
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t53.7;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число просмотров и"+
+	" посетителей за 24 часа' "+
+	"border='0' width='88' height='31'><\/a>")
+	//--></script><!--/LiveInternet-->
+
+	<a href="http://www.pr-cy.ru/" target="_blank" title="Счетчик тИЦ и PR"><img src="http://counter.pr-cy.ru/prcy/www.aiia.pro" alt="PR-CY.ru" width="88" height="31" border="0" /></a>
+
+	<!--Openstat--><span id="openstat2140389"></span><script type="text/javascript">
+	var openstat = { counter: 2140389, image: 5043, next: openstat, track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+	(("https:" == document.location.protocol) ? "s" : "") +
+	"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E"));
+	</script><!--/Openstat--> 
+</div>
+
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

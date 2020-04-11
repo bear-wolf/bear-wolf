@@ -1,0 +1,109 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/dialog.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <title> Редактирование анкеты владельца </title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7a.css"/><![endif]-->
+	<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+
+
+	<div class="dialog">
+		<div class="dial-name">
+			<div>Редактирование анкеты владельца</div>
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<a href="#"></a>
+		</div>
+		
+		<div class="dial-centr">
+			<div class="centr1">
+			
+				<div class="otstup">
+					<div class="foto">
+						<div class="top">
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<div></div>
+						</div>
+						<div class="cen"><img src="img/dialog/foto.jpg" width="126" height="126" alt="" /></div>
+						<div class="bot">
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<div></div>
+						</div>
+					</div>
+					
+					<ul class="list">
+						<li><div><input type="text" value="Имя" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div></li>
+						<li><div><input type="text" value="Фамилия" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div></li>
+						<li><div><input type="text" value="E-mail" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div></li>
+						<li><div><input type="text" value="Страна" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div></li>
+						<li><div><input type="text" value="Город" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div></li>
+						<li><div><input type="text" value="Заменить фотографию" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div> <input type="image" src="img/dialog/button/obzor.jpg" class="but" /></li>
+						<li>Файл gif jpg png, обём не более 2 Мб</li>
+						<li>Изменить пароль?</li>
+						<li><div><input type="text" value="Старый пароль" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div></li>
+						<li>
+							<div><input type="text" value="Новый пароль" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div> 
+							<div class="nov"><input type="text" value="Повторите новый пароль" class="toggle-inputs" /><i class="u1"></i><i class="u2"></i></div>
+						</li>
+					</ul>
+					
+					<div class="error">Ошибка!  Пароли не совпадают </div>
+					<div class="button"><input type="image" src="img/dialog/button/save.png" /></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="dial-bot">
+			<span class="u1"></span>
+			<span class="u2"></span>
+			<div></div>
+		</div>
+		
+	</div>
+
+</div>
+</body>
+</html>

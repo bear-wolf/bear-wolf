@@ -1,0 +1,42 @@
+$form-control-width: 250px;
+
+.training-common-parameters-content{
+  .row-item{
+    flex-direction: column;
+
+    .item{
+
+      [class*="controls-input-"],
+      [class*="controls-select-"]{
+        width: 100%;
+      }
+
+      .form-control-select{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+
+        .ui-dropdown{
+          width: $form-control-width;
+        }
+      }
+      label{
+        font-weight: normal;
+      }
+
+      .form-control-input{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+
+        input{
+          width: $form-control-width;
+        }
+      }
+    }
+
+  }
+}

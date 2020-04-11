@@ -1,0 +1,63 @@
+<form [formGroup]="form">
+  <div formArray="scales">
+    <ng-container *ngFor="let scale of drug.scalesList; let i = index">
+
+      <div class="content-block drug-scale1-content">
+        <div class="title-block title-border-gray">
+          <h2 class="title fs-20">Шкала {{ scale.name }}</h2>
+        </div>
+
+        <div [formGroup]="form.get('scales')['controls'][i]" class="row">
+          <div class="col">
+              <div>% прироста</div>
+            <app-form-controls-input
+                    formControlName="growthPercent"
+                    placeholder="Введите значение"
+                    [errors]="form.get('scales')['controls'][i].get('growthPercent').errors">
+            </app-form-controls-input>
+          </div>
+          <div class="col">
+              <div>План, уп</div>
+            <app-form-controls-input
+                    formControlName="planUp"
+                    placeholder="Введите значение"
+                    [errors]="form.get('scales')['controls'][i].get('planUp').errors">
+            </app-form-controls-input>
+          </div>
+          <div class="col">
+              <div>План, руб</div>
+            <app-form-controls-input
+                    formControlName="planRubPrice"
+                    placeholder="Введите значение"
+                    [errors]="form.get('scales')['controls'][i].get('planRubPrice').errors">
+            </app-form-controls-input>
+          </div>
+          <div class="col">
+              <div>% инвестиций</div>
+            <app-form-controls-input
+                    formControlName="investmentPercent"
+                    placeholder="Введите значение"
+                    [errors]="form.get('scales')['controls'][i].get('investmentPercent').errors">
+            </app-form-controls-input>
+          </div>
+          <div class="col">
+              <div>% премии</div>
+            <app-form-controls-input
+                    formControlName="prizesPercent"
+                    placeholder="Введите значение"
+                    [errors]="form.get('scales')['controls'][i].get('prizesPercent').errors">
+            </app-form-controls-input>
+          </div>
+          <div class="col">
+              <div>Выплата, руб</div>
+            <app-form-controls-input
+                    formControlName="payRubPrice"
+                    placeholder="Введите значение"
+                    [errors]="form.get('scales')['controls'][i].get('payRubPrice').errors">
+            </app-form-controls-input>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</form>

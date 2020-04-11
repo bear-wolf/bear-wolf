@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Css/style.css"/>
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css"/><![endif]-->	
+    <script type="text/javascript" src="Script/jquery.min.js"></script>
+    <script type="text/javascript" src="Script/slider/jquery.js"></script>
+    <script type="text/javascript" src="Script/jquery.cookie.js"></script>
+    <script src="Script/java.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Script/jquery.themepunch.plugins.min.js"></script>			
+    <script type="text/javascript" src="Script/jquery.themepunch.kenburn.min.js"></script>			
+    
+    <script>
+        jQuery.noConflict();
+        
+    </script>
+    <script type='text/javascript' src='/js/lightbox.js'></script>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function ($) {        
+        $('#closetmp').click(function () {
+            $('#temp_ban').hide();
+            $('#temp_ban2').hide();
+            $.cookie("cheto", '1');
+        });
+    });
+</script>
+
+    
+    
+
+</head>
+
+<body>
+    
+<div class="main">
+
+    <div class="content">
+		<div class="wrapper">	
+			
+
+          
+
+
+			<div class="MiddlePart">
+				
+				<div class="RightPart">
+					
+				</div>
+				
+				<div class="CenterPart">
+					
+				</div>			
+			</div>
+		</div>
+	</div>
+ 
+    <!-- BEGIN: HEADER -->
+        <div id="flash_box">
+            	  
+<!-- CSS STYLE -->
+<!--<link rel="stylesheet" type="text/css" href="http://www.cross-studio.it/slider/style.css" media="screen" />		 -->
+<!-- jQuery KENBURN Slider  -->
+<!--<link rel="stylesheet" type="text/css" href="http://www.cross-studio.it/slider/settings.css" media="screen" />	-->
+<div id="banner-example-1" class="dark">
+    <ul>
+		<li data-transition="slide"  data-startalign="left,center" data-zoom="in" data-zoomfact="0" data-endAlign="left,bottom" data-panduration="6" data-colortransition="10">
+	    <img alt="" src="http://www.cross-studio.it/slider/load_image/3.jpg"/>
+	    
+	    <div  class="creative_layer">
+				
+	    </div>
+	    
+	</li>
+		<li data-transition="slide"  data-startalign="left,center" data-zoom="in" data-zoomfact="0" data-endAlign="right,bottom" data-panduration="10" data-colortransition="10">
+	    <img alt="" src="http://www.cross-studio.it/slider/load_image/IMG_8563_s.jpg"/>
+	    
+	    <div  class="creative_layer">
+				
+	    </div>
+	    
+	</li>
+		<li data-transition="slide"  data-startalign="left,center" data-zoom="in" data-zoomfact="0" data-endAlign="left,bottom" data-panduration="8" data-colortransition="10">
+	    <img alt="" src="http://www.cross-studio.it/slider/load_image/IMG_8476_s.jpg"/>
+	    
+	    <div  class="creative_layer">
+				
+	    </div>
+	    
+	</li>
+		<li data-transition="slide"  data-startalign="right,bottom" data-zoom="in" data-zoomfact="0" data-endAlign="left,center" data-panduration="5" data-colortransition="10">
+	    <img alt="" src="http://www.cross-studio.it/slider/load_image/IMG_8695_s.jpg"/>
+	    
+	    <div  class="creative_layer">
+				
+	    </div>
+	    
+	</li>
+		<li data-transition="slide"  data-startalign="right,bottom" data-zoom="in" data-zoomfact="0" data-endAlign="left,top" data-panduration="6" data-colortransition="10">
+	    <img alt="" src="http://www.cross-studio.it/slider/load_image/IMG_8395_s.jpg"/>
+	    
+	    <div  class="creative_layer">
+				
+	    </div>
+	    
+	</li>
+		<li data-transition="slide"  data-startalign="right,center" data-zoom="in" data-zoomfact="0" data-endAlign="left,bottom" data-panduration="5" data-colortransition="10">
+	    <img alt="" src="http://www.cross-studio.it/slider/load_image/IMG_8412_s.jpg"/>
+	    
+	    <div  class="creative_layer">
+				
+	    </div>
+	    
+	</li>
+	    </ul>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery.noConflict();
+        jQuery('#banner-example-1 li[ahref1]').bind('click', function () {
+            if (jQuery(this).attr('ahref1') != '') {
+                window.open(jQuery(this).attr('ahref1'), "");
+            }
+        });
+        jQuery('#banner-example-1').kenburn({
+            width: 894,
+            height: 300,
+
+            thumbWidth: 120,
+            thumbHeight: 70,
+            thumbAmount: 6,
+            thumbSpaces: 0,
+            thumbPadding: 9,
+            thumbStyle: "none",
+            //bulletXOffset:0,
+            bulletYOffset: -90,
+
+            repairChromeBug: "on",
+
+            shadow: 'true',
+            timerShow: "on",
+
+            touchenabled: 'on',
+            pauseOnRollOverThumbs: 'off',
+            pauseOnRollOverMain: 'on',
+            preloadedSlides: 1,
+
+            timer: 5,
+
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //												 Google Fonts !!											 //
+            // local GoogleFont JS from your server: http://www.yourdomain.com/kb-plugin/js/jquery.googlefonts.js		 //
+            // GoogleFonts from Original Source: http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js or https:... // 
+            //																											//
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            googleFonts: 'PT+Sans+Narrow:400,700',
+            googleFontJS: 'http://www.cross-studio.it/slider/jquery.googlefonts.js'/*tpa=http://www.themepunch.com/codecanyon/kenburner/kb-plugin/js/jquery.googlefonts.js*/
+        });
+    });
+</script>        </div>
+      
+
+</div>
+
+</body>
+</html>

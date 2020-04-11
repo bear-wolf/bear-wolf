@@ -1,0 +1,118 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.training-common-info-content{
+
+  .row-item{
+    label{
+      margin-bottom: 0!important;
+    }
+  }
+
+  .period-container{
+    &>span:first-child{
+      padding-right: 15px;
+    }
+  }
+
+  .controls-select-brand,
+  .controls-autocomplete-sku{
+    .form-control-select>label{
+      margin-bottom: 15px!important;
+    }
+    .ui-multiselect{
+      min-height: 35px!important;
+      width: 100%;
+    }
+  }
+
+  .row-item-brand{
+    &>div{
+      align-items: flex-start;
+    }
+  }
+
+  .controls-autocomplete-sku{
+    .form-control-input>label{
+      margin-bottom: 17px!important;
+      font-weight: bold;
+    }
+    p-autocomplete{
+      width: 100%!important;
+    }
+    .ui-widget{
+      min-height: 35px!important;
+      width: 100%!important;
+    }
+  }
+
+  .controls-select-brand{
+    .form-control-select>label{
+      margin-bottom: 17px!important;
+    }
+  }
+
+  label.first-level,
+  .controls-select-duration>label,
+  .controls-select-month-from>label,
+  .form-control-select>label{
+    font-weight: bold!important;
+    display: flex;
+  }
+
+  label.first-level{
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .activity-period{
+    &>*{
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+ .form-component{
+   .controls-autocomplete-sku,
+   .controls-select-brand{
+
+     &,
+     p-dropdown,
+     .ui-dropdown{
+       width: 100%;
+     }
+
+     .form-control-input,
+     .form-control-select{
+       display: flex;
+       flex-direction: column;
+       align-items: baseline;
+       width: 100%;
+     }
+   }
+
+   .controls-select-month-from,
+   .controls-select-duration-budget{
+     p-dropdown,
+     .ui-dropdown{
+       width: 100px;
+     }
+   }
+
+   .controls-select-month-to,
+   .controls-select-duration,
+   .controls-select-duration-budget,
+   .controls-select-month-from{
+
+     .form-group{
+       justify-content: start;
+
+       label{
+         width: auto!important;
+       }
+     }
+   }
+ }
+}

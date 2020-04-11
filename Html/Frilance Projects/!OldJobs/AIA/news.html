@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>news.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" border="0"/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li class="activ"><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+		
+			<div class="top_line">
+				<div class="abs">
+					<ul>
+					  <li class="active"><a href="#">Главные</a></li> 	
+					  <li><a href="http://www.66.ru/news/politic/">Политика</a>	  </li>	
+					  <li><a href="http://www.66.ru/news/society/" >Общество</a>	  </li>
+					  <li><a href="http://www.66.ru/realty/news/" >Недвижимость</a>	  </li>
+					  <li><a href="http://www.66.ru/news/business/">Бизнес</a>	  </li>
+					  <li><a href="http://www.66.ru/news/incident/" >Происшествия!</a>	  </li>
+					  <li><a href="http://www.66.ru/news/internet/" >Интернет</a>	  </li>
+					  <li><a href="http://www.66.ru/news/freetime/" >Свободное время</a>	  </li>
+					  <li><a href="http://www.66.ru/auto/news/">Авто</a>	  </li>
+					  <li><a href="http://www.66.ru/news/hitech/" >Hi-Tech</a>	  </li>
+					  <li><a href="http://www.66.ru/news/science/">Наука</a>	  </li>
+					  <li class="end"><a href="http://www.66.ru/news/sport/">Спорт</a>	  </li>
+					 </ul>
+				</div>
+			</div>
+			
+			<!--<ul class="gorizontal">
+				  <li><a href="#">Главные</a></li> 	
+				  <li><a href="http://www.66.ru/news/politic/">Политика</a>	  </li>	
+				  <li><a href="http://www.66.ru/news/society/" >Общество</a>	  </li>
+				  <li><a href="http://www.66.ru/realty/news/" >Недвижимость</a>	  </li>
+				  <li><a href="http://www.66.ru/news/business/">Бизнес</a>	  </li>
+				  <li><a href="http://www.66.ru/news/incident/" >Происшествия!</a>	  </li>
+				  <li><a href="http://www.66.ru/news/internet/" >Интернет</a>	  </li>
+				  <li><a href="http://www.66.ru/news/freetime/" >Свободное время</a>	  </li>
+				  <li><a href="http://www.66.ru/auto/news/">Авто</a>	  </li>
+				  <li><a href="http://www.66.ru/news/hitech/" >Hi-Tech</a>	  </li>
+				  <li><a href="http://www.66.ru/news/science/">Наука</a>	  </li>
+				  <li><a href="http://www.66.ru/news/sport/">Спорт</a>	  </li>
+			 </ul>-->
+			 
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+				
+				<div class="content-block">
+		
+		
+		<script type="text/javascript"><!--//<![CDATA[
+var m3_u = (location.protocol=='https:'?'https://r.66.ru/www/delivery/ajs.php':'http://r.66.ru/www/delivery/ajs.php');
+var m3_r = Math.floor(Math.random()*99999999999);
+if (!document.MAX_used) document.MAX_used = ',';
+document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+document.write ("?zoneid=80");
+document.write ('&amp;cb=' + m3_r);
+if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+document.write ("&amp;loc=" + escape(window.location));
+if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+if (document.context) document.write ("&context=" + escape(document.context));
+if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+document.write ("'></scr"+"ipt>");
+//]]>-->
+</script><script type="text/javascript" src="news_files/ajs_003.js"></script>
+<script type="text/javascript">
+<!--// <![CDATA[
+var fo = new FlashObject('http://r.66.ru/www/delivery/ai.php?filename=final-banner-spo-4-cs3.swf&contenttype=swf&clickTARGET=_blank&clickTAG=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9&link=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9&rb_link=http://r.66.ru/www/delivery/ck.php?oaparams=2__bannerid=2329__ad_sec=1298375123__zoneid=80__cb=b0edf66ba9', 'mymovie', '240', '400', '8');
+fo.addParam('wmode','opaque');
+fo.addParam('allowScriptAccess', 'always');
+fo.addParam('menu', 'false');
+fo.write('m3_79abced93d0f04b271ff4a3e17db2a4b');
+// ]]> -->
+</script><div id="beacon_2329" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="img/pages/news/lg_003.gif" alt="" style="width: 0px; height: 0px;" height="0" width="0"></div><script type="text/javascript">document.context='YzoxNzk2fA=='; </script>
+<noscript>
+<a href='http://r.66.ru/www/delivery/ck.php?n=acddaa01&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://r.66.ru/www/delivery/avw.php?zoneid=80&amp;n=acddaa01' border='0' alt='' /></a></noscript>
+		</div>
+		
+						<embed type="application/x-shockwave-flash" src="img/pages/news/ai.php" id="mymovie" name="mymovie" quality="high" wmode="opaque" allowscriptaccess="always" menu="false" height="400" width="240" />
+		<div class="content-block">	
+			<script type="text/javascript" src="img/pages/news/openapi.js"></script>
+			<!-- VK Widget -->
+			<div style="width: 240px; background: none repeat scroll 0% 0% transparent; height: 362px;" id="vk_groups">
+				<iframe style="overflow: hidden; height: 362px;" id="vkwidget1" src="img/pages/news/widget_groups.htm" name="fXD5d4ee" scrolling="no" frameborder="0" height="200" width="240px"></iframe>
+			</div>
+			<script type="text/javascript">
+				VK.Widgets.Group("vk_groups", {mode: 0, width: "240", height: "360"}, 23350715);
+			</script>
+		</div>
+		
+		
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		
+		
+		<div class="kontakt">
+			<h2>Мы ВКонтакте</h2>
+			<p>Майкоп: всё самое интересное</p>
+			
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<div><input type="checkbox" /> Подписаться на новости</div>
+		</div>
+		
+		<div class="kontakt">
+			<h2>Мы ВКонтакте</h2>
+			<p>Майкоп: всё самое интересное</p>
+			
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<div><input type="checkbox" /> Подписаться на новости</div>
+		</div>
+		
+		<div class="kontakt">
+			<h2>Мы ВКонтакте</h2>
+			<p>Майкоп: всё самое интересное</p>
+			
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<div><input type="checkbox" /> Подписаться на новости</div>
+		</div>
+		
+		<div class="kontakt">
+			<h2>Мы ВКонтакте</h2>
+			<p>Майкоп: всё самое интересное</p>
+			
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<div><input type="checkbox" /> Подписаться на новости</div>
+		</div>
+		
+					
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+					<table class="struct_novunu">
+						<tr>
+							<td>
+								<table class="all_news">
+									<tr>
+										<td>
+											<a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="149" alt="" /></a>
+											<a href="#">Жилой район «Академический»: стройка века по-уральски</a> Сегодня [16:02] <a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											<p>Беспрецедентно грандиозная фотопрогулка по улицам и квартирам любимого детища компании «Ренова-СтройГруп».</p>
+										</td>
+									</tr>
+								</table>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+								
+							</td>
+							<td class="tdnews_chas">
+								<div class="news_chas">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<h2>Новости часа</h2>
+									<table class="news_single_image">
+										<tr>
+											<td>
+												<div>
+													<a href="#" class="img"><img src="img/pages/news/f310bb9b_resizedScaled_100to79.jpg" width="70" alt=""></a>
+													<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+														Сегодня [16:26]
+													<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">Вся лента новостей</a> &raquo; 
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+					<table class="two_menu_novun">
+						<tr>
+							<td>
+								<h3><i>Политика</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+											
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Общество</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<h3><i>Бизнес</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Происшествия!</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Интернет</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Свободное время</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Hi-Tech</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Наука</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Спорт</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Здоровье</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Мероприятия</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3><i>Безумный мир</i> <a href="#">Все новости раздела &raquo;</a> </h3>
+								
+								<table class="list_nov">
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" height="77" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" class="img"><img src="img/pages/news/8ba77d7a_resizedScaled_230to194.jpg" width="100" alt="" /></a></td>
+										<td>
+											<h2>
+												<a href="#">Фоторепортаж 66.ru: Высокая кухня Анатолия Галкина</a> Сегодня [16:02]
+												<img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /> 
+												<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+											</h2> 
+											<p>В феврале в Майкопе прошло несколько кулинарных мастер-классов.</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="width">
+								<ul class="spisok">
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/new/foto.jpg" width="27" height="12" alt="" /></a>
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+										<li>
+											<a href="#">В Свердловской Думе появился беспроводной интернет</a>
+											Сегодня [16:26]
+											<a href="#" class="comments"><img src="img/icon/coment.png" width="9" height="10" alt="" /> 4</a>
+										</li>
+									</ul>
+							</td>
+						</tr>
+					</table>
+										
+					<br />
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>
+		<address>2010 - АiiA - Городской портал Майкопа 
+<br /> Все права защищены</address>
+<div class="count">
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t53.7;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число просмотров и"+
+	" посетителей за 24 часа' "+
+	"border='0' width='88' height='31'><\/a>")
+	//--></script><!--/LiveInternet-->
+
+	<a href="http://www.pr-cy.ru/" target="_blank" title="Счетчик тИЦ и PR"><img src="http://counter.pr-cy.ru/prcy/www.aiia.pro" alt="PR-CY.ru" width="88" height="31" border="0" /></a>
+
+	<!--Openstat--><span id="openstat2140389"></span><script type="text/javascript">
+	var openstat = { counter: 2140389, image: 5043, next: openstat, track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+	(("https:" == document.location.protocol) ? "s" : "") +
+	"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E"));
+	</script><!--/Openstat--> 
+</div>
+
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

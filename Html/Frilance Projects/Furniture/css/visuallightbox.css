@@ -1,0 +1,270 @@
+#overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:190;
+	width:100%;
+	height:auto;
+	background-color:#151410;
+}
+
+#lightbox{
+	position:absolute;
+	top:20px;
+	left:0;
+	width:100%;
+	z-index:200;
+	text-align:center;
+	color:#151410;
+	line-height:0;
+}
+
+#lightbox a, #lightbox a:hover {
+	border-bottom:none;
+	color:#151410;
+	text-decoration:underline;
+}
+
+#lightbox a img{ border:none; }
+
+#outerImageContainer{
+	width:auto;
+	height:auto; /* without this line error in IE8 detected */
+	margin:0 auto;
+	position:relative;
+    border-radius:14px;
+    padding:8px;
+    background:white;
+    border:10px solid #323232;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    display: inline-block;
+}
+
+#lightboxImage{
+	width:100%;
+	height:100%;
+}
+
+#imageContainerMain{
+	margin:0 auto;
+	overflow:visible;
+	position:relative;
+	font-size:0;/* ie fix - big info bar*/
+    padding:5px; background:#e6e6e6; border:1px solid #ddd;
+}
+
+#imageContainer{
+	width:10px;
+	height:10px;
+	margin:0 auto;
+	overflow:hidden;
+	background-color:#fff;
+	position:relative;
+	font-size:0;/* ie fix - big info bar*/
+}
+
+#loading{
+	position:absolute;
+	top:40%;
+	left:0%;
+	height:25%;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	z-index:1;
+}
+#loadingLink {
+	display:block;
+	margin:0 auto;
+	padding:0;
+	width:32px;
+	height:32px;
+	background:url(../images/icons/loading.gif) center center no-repeat;
+	text-indent:-9999px;
+}
+#hoverNav{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:10;
+}
+#imageContainer>#hoverNav{ left:0;}
+#prevLinkImg, #nextLinkImg{
+	top:0;
+	width:43px;
+	height:100%;
+	position:absolute;
+	z-index:20;
+	outline-style:none;
+	display:block;
+	text-indent:-9999px;
+	}
+* html #prevLinkImg,* html #nextLinkImg{
+	background-image:url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */
+}
+#prevLinkImg { left: -9px; }
+#nextLinkImg { right: -9px; }
+#prevLinkImg:hover,#prevLinkImg.hover, #prevLinkImg:visited:hover { 
+	background:url(../images/lightbox/prev.png) 5% center no-repeat; 
+	_background-image:url(../images/lightbox/prev.png)
+}
+#nextLinkImg:hover,#nextLinkImg.hover, #nextLinkImg:visited:hover { 
+	background:url(../images/lightbox/next.png) 97% center no-repeat; 
+	_background-image:url(../images/lightbox/next.png)
+}
+
+
+#imageDataContainer{
+	font:10px Verdana, Helvetica, sans-serif;
+	background-color:#fff;
+	width:100%;
+    margin:0;
+    height:38px;
+}
+
+#imageData{
+	overflow:hidden;
+	width:100%;
+}
+#imageDetails{ width:70%; float:left; text-align:left; }
+#caption{ font-weight:bold; display:block;}
+#numberDisplay{ display:block; 
+    padding-right: 10px;
+    position: absolute;
+    left: 110px;
+    bottom: 18px;
+}			
+#detailsNav{display:block; float:left; margin:9px 0 0 0px; }
+#prevLinkDetails, #nextLinkDetails, #slideShowControl{ background-repeat:no-repeat; outline-style:none; display:block; float:left;}
+#prevLinkDetails { margin-top:4px; width:20px;height:21px; background:url(../images/lightbox/v_prev.png) left center;}
+#nextLinkDetails { margin-top:4px; width:20px;height:21px; background:url(../images/lightbox/v_next.png) right center;}
+
+#lightbox #caption{
+    position:absolute;
+    left:150px; 
+    bottom:10px;
+    width:100px;
+    height:20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color:#5a4c38;
+    font-family:Tahoma;
+    font-size:12px;
+}
+
+#slideShowControl.started{ background-position:left bottom;}
+#slideShowControl{
+	display:block;
+	width:29px; 
+	height:29px; 
+	float:left;
+	background:url(../images/lightbox/v_next_x.png);	
+	background-repeat:no-repeat;
+	}
+
+#close{	
+	position: absolute;
+    right: 7px;
+    bottom: 10px;
+    width:29px;
+	height:29px;
+}
+#closeLink {
+	display:block; outline-style:none; margin:0; padding:0; text-decoration:none; 
+	width:29px;
+	height:29px;
+	background:url(../images/lightbox/close.png) no-repeat;
+}	
+#outerImageContainer tr:last-child td{ display:none;}		
+	
+
+
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html>body .clearfix {display:inline-block; width:100%;}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height:1%;
+	/* End hide from IE-mac */
+}	
+	
+
+#outerImageFrame{
+	border:solid 1px red;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+
+#outerImageContainer{
+	overflow:visible;
+}
+#outerImageContainer td{
+	text-align:center;
+	padding:0;
+}
+
+#lightboxFrameBody{
+	background-color:#fff;
+	border:solid 1px #fff; /* hack for opera table small cell width */
+}
+
+#outerImageContainer td, #outerImageContainer tr{
+	font-size:0;
+	border:0 none;
+}
+/* frame style */
+#outerImageContainer td.tl, #outerImageContainer td.br{
+	height:0px;
+	width:0px;
+}
+.vlb{display:none;}
+#outerImageContainer td.tl{
+	/*background-image:url(../images/borderTopLeft.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderTopLeft.png', sizingMethod='scale');*/
+}
+#outerImageContainer td.tc{
+	/*background-image:url(../images/borderTopCenter.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderTopCenter.png', sizingMethod='scale');*/
+}
+#outerImageContainer td.ml{
+	/*background-image:url(../images/borderMiddleLeft.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderMiddleLeft.png', sizingMethod='scale');*/
+}
+#outerImageContainer td.mr{
+	/*background-image:url(../images/borderMiddleRight.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderMiddleRight.png', sizingMethod='scale');*/
+}
+#outerImageContainer td.bc{
+	/*background-image:url(../images/borderBottomCenter.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderBottomCenter.png', sizingMethod='scale');*/
+}
+
+
+#outerImageContainer td.tr{
+	/*background-image:url(../images/borderTopRight.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderTopRight.png', sizingMethod='scale');*/
+}
+#outerImageContainer td.bl{
+	/*background-image:url(../images/borderBottomLeft.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderBottomLeft.png', sizingMethod='scale');*/
+}
+#outerImageContainer td.br{
+	/*background-image:url(../images/borderBottomRight.png);*/
+	_background-image:none;
+	/*_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='engine/images/borderBottomRight.png', sizingMethod='scale');*/
+}

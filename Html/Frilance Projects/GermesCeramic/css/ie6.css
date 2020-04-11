@@ -1,0 +1,7 @@
+/*css style for IE6*/
+* html div,
+* html li{height:1%;}
+
+input,
+img{ filter:expression(fixPNG(this)); }
+

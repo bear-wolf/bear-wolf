@@ -1,0 +1,9 @@
+/*css style for IE6*/
+
+* html div,
+* html li{
+	height:1%;	
+	}
+	
+* html .easyfix{ overflow:visible; }
+.fixPNG, .fixPNG img{ filter:expression(fixPNG(this)); }

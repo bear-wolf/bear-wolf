@@ -1,0 +1,5 @@
+1. Should be responsive (adaptive) (looks good on mobile, tablets and desktop)
+2. Right column (Activity) is scrollable
+3. Use boostrap.css as a base of layout
+4. Work should be done in git repository - and you should provide access to it for taraslyapun@gmail.com and send a link
+5. Support Chrome, Safari, Firefox and IE10+

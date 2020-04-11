@@ -1,0 +1,105 @@
+﻿.iPhone .navbar-default .navbar-brand {
+    margin: 0 0 0 8px !important;
+}
+
+.iPhone .navbar-toggle {
+    top: 18px;
+}
+
+.iPhone .mainPage {
+    max-height: 459px;
+}
+
+/*.iPhone footer {    
+    height: 10px;
+    transition:1s ease;
+}
+    .iPhone footer i.arrow {
+        display:block;
+    }*/
+
+.iPhone footer {
+    display: none;
+}
+
+.mobile .toTop {
+    right: 15px;
+    bottom: 15px;
+}
+
+.iPhone .base-slide1,
+.iPhone .base-slide2 {
+    margin-top: 91px;
+    /*height: 50% !important;*/
+}
+
+.iPhone .mainPage div {
+    height: 368px;
+}
+
+.mobile .login {
+    max-width: 100%;
+}
+.mobile .form-signin, 
+.mobile .form-forgot-password {
+    max-width: 100%;
+    padding: 5px;
+}
+.mobile.page-guest .container {
+  width: auto!important;
+}
+.mobile h2 {
+    margin-top: 30px;
+}
+.mobile .login.form-horizontal .row-btn {
+  margin-top: 20px;
+}
+.mobile .form-horizontal {
+    padding:5px;
+}
+
+/*.iPad*/
+.iPad .fullWidth {
+  width: 100%!important;
+}
+.iPad.mobile .toTop {
+    right: 17px;
+    bottom: 26px;
+}
+
+.iPad .mainPage {
+    max-height: 500px!important;
+}
+.iPad .mainPage div {        
+}
+.iPad .base-slide1,
+.iPad .base-slide2 {
+    margin-top: 13px;
+    /*height: 50% !important;*/
+}
+.iPad .base-slide1 {
+    background: #252525;
+    position:relative;
+    z-index:100;
+}
+.iPad.mobile .login {
+    max-width: 550px;
+}
+.mobile .form-signin, 
+.mobile .form-forgot-password {
+    max-width: 100%;
+    padding: 5px;
+}
+.mobile.page-guest .container {
+  width: auto!important;
+}
+.mobile h2 {
+    margin-top: 30px;
+}
+.mobile .login.form-horizontal .row-btn {
+  margin-top: 20px;
+}
+.mobile .form-horizontal {
+    padding:5px;
+}
+/*.iPad===========*/

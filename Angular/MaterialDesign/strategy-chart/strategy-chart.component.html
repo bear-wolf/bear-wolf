@@ -1,0 +1,16 @@
+<mat-card flex class="strategy-statement">
+  <mat-card-title>Strategy Charts</mat-card-title>
+  <mat-divider></mat-divider>
+
+  <mat-card-content
+    class="strategy-charts">
+     <div #pieChart
+          *ngIf="context"
+          style="height: 50vh;"></div>
+
+    <h3 class="text-center"
+        *ngIf="status && !context">
+      Data of chart are not found
+    </h3>
+  </mat-card-content>
+</mat-card>

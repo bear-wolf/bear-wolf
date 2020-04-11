@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>LubPortal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link type="text/css" href="css/tabs/tabs.css" rel="stylesheet" />
+	<script type="text/javascript" src="script/fixpng.js"></script>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css"/><![endif]-->
+	<!--<script type="text/javascript" src="script/jquery.js"></script>-->
+    <script src="script/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="script/jquery-ui-1.8.16.min.js" type="text/javascript"></script>
+    <script src="script/TopMenu.js" type="text/javascript"></script>
+    <script src="script/java.js" type="text/javascript"></script>    
+	<script type="text/javascript">
+
+	    jQuery(document).ready(function () {
+	        setToggleInputs();
+	        MainMenu();
+	        Autorization();
+	        $(".BottomMenu li:last").addClass("last");
+	        $("#tabs").tabs();
+	        AutoHeight("#BorderBlock");
+	    });
+	</script>
+</head>
+
+<body>
+<div id="Autorization">
+    <a href="" class="login">Имя и выход</a>
+    <div class="karma">        
+        <p>Карма: 0 </p>
+        <p>Кошелёк: 5000 ед.</p>
+    </div>
+
+    <div class="speek">
+        <span>Общение</span>
+        <input type="text" value="" class="TextEntry" />
+        <p><input type="submit" value="" /></p>
+    </div>
+
+    <div id="tabs">
+        <script type="text/javascript">
+            $(function () {
+                $("#tabs").tabs();
+                $("table.MyMir tr:last").addClass("last");
+            })
+        </script>
+        <div class="center">
+	  <ul>
+	    <li><a href="#tabs-1">Мой мир</a></li>
+	    <li><a href="#tabs-2">Навигация</a></li>
+	    <li><a href="#tabs-3">Профиль</a></li>
+	  </ul>
+      <div class="clearfix"></div>
+	  <div id="tabs-1">
+	   	<table class="MyMir">
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОЙ БЛОГ</p><a href="">написать</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ ДРУЗЬЯ</p></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ ОРГАНИЗАЦИИ</p><a href="">добавить</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОЯ АНКЕТА / АВТОПОРТРЕТ</p><a href="">выделить анкету</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ РЕЗЮМЕ</p></td>
+          </tr><tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОЙ БЛОГ</p><a href="">написать</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ ДРУЗЬЯ</p></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ ОРГАНИЗАЦИИ</p><a href="">добавить</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОЯ АНКЕТА / АВТОПОРТРЕТ</p><a href="">выделить анкету</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ РЕЗЮМЕ</p></td>
+          </tr><tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОЙ БЛОГ</p><a href="">написать</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ ДРУЗЬЯ</p></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ ОРГАНИЗАЦИИ</p><a href="">добавить</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОЯ АНКЕТА / АВТОПОРТРЕТ</p><a href="">выделить анкету</a></td>
+          </tr>
+          <tr>
+            <th><img src="img/tabimg.jpg" alt="" /></th>
+            <td><p>МОИ РЕЗЮМЕ</p></td>
+          </tr>
+		</table>          
+	  </div>
+	  
+	  <div id="tabs-2">
+       <ul>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+        <li>Этот день класный. </li>
+       </ul>
+	  </div>
+	  <div id="tabs-3">
+		<p><a href="">15:07 - Иконы вышитые бисером</a></p>
+   		<p><a href="">15:07 - Иконы вышитые бисером</a></p>
+   		<p><a href="">15:07 - Иконы вышитые бисером</a></p>
+   		<p><a href="">15:07 - Иконы вышитые бисером</a></p>
+   		<p><a href="">15:07 - Иконы вышитые бисером</a></p>
+   		<p><a href="">15:07 - Иконы вышитые бисером</a></p>                                
+	  </div>
+      
+      </div>
+	</div>
+    
+    <a href="javascript:void(0)" class="close"></a>
+</div>
+<div class="TopMenu" id="TopMenu">
+    <div class="fixit">
+        <ul class="MainMenu">
+            <li  onmouseover="HideMenu()"><a href="Raspisanie.html">НОВОСТИ</a></li>
+            <li><a href="" submenu="link2" onmouseover="ShowLink(this)">О РАЙОНЕ</a></li>
+            <li onmouseover="HideMenu()"><a href="help.html" >INFOСправка</a></li>
+            <li onmouseover="HideMenu()"><a href="Others.html">ЗНАКОМСТВА</a></li>
+            <li onmouseover="HideMenu()"><a href="">услуги</a></li>
+            <li class="active" submenu="link6" onmouseover="ShowLink(this)">
+                <a href="">досуг</a>               
+            </li>
+            <li onmouseover="HideMenu()"><a href="">галерея</a></li>
+            <li onmouseover="HideMenu()"><a href="">общение</a></li>
+            <li onmouseover="HideMenu()"><a href="">реклама</a></li>
+            <li onmouseover="HideMenu()"><a href="">мой мир</a></li>
+            <li onmouseover="HideMenu()"><a href="">ещё</a></li>
+        </ul>       
+    </div>        
+
+     <div class="Submenu">                    
+        <ul id="link6">
+            <li><a href="">клубы</a></li>
+            <li class="active"><a href="">концертные площадки</a></li>
+            <li><a href="">рестораны</a></li>
+            <li><a href="">театр</a></li>
+        </ul>
+        <ul id="link2">
+            <li><a href="">Район 1</a></li>
+            <li class="active"><a href="">Район 2</a></li>                        
+        </ul>
+    </div>
+
+</div>
+
+<div class="Autorization">
+    <a href="javascript:void(0)"></a>
+</div>
+
+<div class="Main PageNews">
+    
+<div class="fixit">
+<!-- header -->
+	<div class="Header">        
+        <a href="index.html" class="logo"></a>              
+        
+        <div class="AddNews">
+            <a href="">Добавить новость</a>
+        </div>
+
+        
+        <div class="HeadFind">
+            <form action="http://rambler.ru">
+            <ul>
+                <li class="button"><input type="submit" value="поиск" /></li>
+                <li><input type="text" value="Поиск Организации" class="TextEntry toggle-inputs" value="" /></li>
+            </ul>
+            </form>
+        </div>
+
+         <div class="Probki Border">
+                <div class="Name"><i class="Red"></i> Пробки</div>
+                <div class="information">
+                    <strong>8 балов</strong>
+                    <table>
+                        <tr>
+                            <th class="active">сейчас</th>
+                            <td><span class="checkbox"></span></td>
+                            <th>обычно</th>
+                        </tr>
+                    </table>
+                </div>            
+            </div>
+
+        <div class="Whether">
+            <img src="img/temp/Whether.gif" alt="" />
+        </div>  
+                
+        <div class="Clock">15:48:07</div>          
+	</div>		
+<!-- /header -->		
+    
+    
+    
+	<div class="content">
+		<div class="wrapper">	
+			
+            <div class="LeftPart">
+				<div class="News">
+                    <p class="Name"><a href="">Новости</a></p>
+                    <ul>
+                        <li>
+                            <span>24.08.12</span>
+                            <a href="">В 2010 году Выставка Salon Del Mobile обещает быть ещё более  расширенной и интересной. </a>
+                        </li>
+                        <li>
+                            <span>24.08.12</span>
+                            <a href="">В 2010 году Выставка Salon Del Mobile обещает быть ещё более  расширенной и интересной. </a>
+                        </li>
+                        <li>
+                            <span>24.08.12</span>
+                            <a href="">В 2010 году Выставка Salon Del Mobile обещает быть ещё более  расширенной и интересной. </a>
+                        </li>                        <li>
+                            <span>24.08.12</span>
+                            <a href="">В 2010 году Выставка Salon Del Mobile обещает быть ещё более  расширенной и интересной. </a>
+                        </li>
+                        <li>
+                            <span>24.08.12</span>
+                            <a href="">В 2010 году Выставка Salon Del Mobile обещает быть ещё более  расширенной и интересной. </a>
+                        </li>
+                        <li>
+                            <span>24.08.12</span>
+                            <a href="">В 2010 году Выставка Salon Del Mobile обещает быть ещё более  расширенной и интересной. </a>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+
+			<div class="MiddlePart">				
+				
+				<div class="CenterPart">
+                                    
+                    <div class="BorderBlock">
+                        <i class="ugol1"></i>
+                        <i class="ugol2"></i>
+                        <i class="ugol3"></i>
+                        <i class="ugol4"></i>
+                        <div class="BorderBlock-Right">
+                        <div class="BorderBlock-Bottom">
+                        <div class="BorderBlock-Left" id="BorderBlock">
+                            Пример текста
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+
+				</div>			
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- bottom-->
+	<div class="Footer">
+        <div class="fixit">
+        
+            <div class="Counter">
+                <div>
+                    <p><a href=""><img src="img/counter/LubPortal_93.gif" alt="" /></a></p>
+                    <p><a href=""><img src="img/counter/LubPortal_101.gif" alt="" /></a></p>
+                </div>
+                <div class="width2">
+                    <a href=""><img src="img/counter/42.gif" alt="" /></a>
+                </div>
+                <div class="width3">
+                    <a href=""><img src="img/counter/LubPortal_98.gif" alt="" /></a>
+                </div>                
+            </div>
+
+            <ul class="BottomMenu">
+                <li><a href="">О проекте</a></li>
+                <li><a href="">Написать нам</a></li>
+                <li class="active"><a href="">Соглашение</a></li>
+                <li><a href="">вопрос\ответ</a></li>
+                <li><a href="">карта</a></li>
+            </ul>
+            <address>(c) Информационно-развлекательный портал города Люберцы. 2012 г</address>
+        </div>	
+	</div>	
+<!--bottom=========== -->
+
+
+</div>
+</body>
+</html>

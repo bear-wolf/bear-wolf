@@ -1,0 +1,14 @@
+/*css style for IE7*/
+
+html div,
+html li{
+	zoom:1;
+	}
+
+.opros ul li input{
+	position:absolute;
+	left:4px;
+	top:1px;
+	width:11px;
+	height:11px;
+	}

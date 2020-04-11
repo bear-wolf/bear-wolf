@@ -1,0 +1,1179 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    line-height: 1.4;
+    color: black;
+    background: white url(../images/background/background.png) repeat center top;
+    font-family: Tahoma;
+}
+
+img {
+    border: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+aside, nav, footer, header, section {
+    display: block;
+}
+
+input, select, textarea {
+    outline: none;
+}
+/*Reset==============*/
+
+/*font-face*/
+@font-face {
+    font-family: "OpenSans-CondBold";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-CondBold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "OpenSans-CondLight";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-CondLight.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-Semibold.woff') format("woff");
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.ttf') format("truetype"), url('../fonts/OpenSansBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/MyriadPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "MyriadProLight";
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/MyriadProLight.otf') format('opentype');
+}
+
+/*font-face==============*/
+
+div {
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font: 100 12px Tahoma;
+    color: #9c9b9b;
+}
+
+ul li {
+    list-style: none;
+}
+
+div.clear {
+    clear: both;
+    font-size: 0;
+}
+
+/* UTIL */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.easyfix {
+    overflow: hidden;
+}
+
+a:link,
+a:visited {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #acacac;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 12px;
+    color: #281311;
+    font-family: "OpenSansCondensedLight";
+    line-height: 15px;
+    padding-bottom: 11px;
+}
+
+.fixit {
+    width: 1200px;
+    position: relative;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
+.main {
+    position: relative;
+    min-height: 100%;
+    background: url(../images/background/header.jpg) no-repeat center top;
+}
+
+.header,
+header {
+    height: 614px;
+}
+
+.content {
+    position: relative;
+}
+
+.fixit {
+    position: relative;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}*/
+
+
+.logotype {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    width: 272px;
+    height: 120px;
+    background: url(../images/logotype.png) no-repeat;
+}
+
+.discount {
+    display: block;
+    position: absolute;
+    left: 295px;
+    top: 92px;
+    width: 107px;
+    height: 62px;
+    text-align: center;
+    font-size: 77px;
+    color: #000;
+}
+
+    .discount.count30 {
+        background: url(../images/discount/30.png) no-repeat;
+        font-size: 0;
+    }
+
+
+
+.adventures {
+    position: absolute;
+    left: 0px;
+    top: 229px;
+    width: 270px;
+    height: 80px;
+    text-align: right;
+}
+
+    .adventures p {
+        color: #ffb83d;
+        font-size: 24px;
+        font-family: "OpenSans-Light";
+    }
+
+        .adventures p b {
+            color: white;
+            font-family: "OpenSans-Bold";
+            font-weight: bold;
+        }
+
+.phone {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    width: 373px;
+    height: 50px;
+}
+
+    .phone .tell-me {
+        display: block;
+        float: left;
+        margin-top: 4px;
+        color: white;
+        font-size: 20px;
+        font-family: "OpenSans-CondBold";
+        text-shadow: 0 0 0 black;
+    }
+
+    .phone .number {
+        font-size: 0;
+        background: url(../images/text/phone.png) no-repeat;
+        float: right;
+        width: 200px;
+        height: 47px;
+        display: block;
+    }
+
+
+/*autor*/
+.autor {
+    position: absolute;
+    width: 310px;
+    height: 150px;
+    top: 160px;
+    right: 24px;
+}
+
+    .autor h1,
+    .autor h2,
+    .autor h3,
+    .autor h4 {
+        font-weight: normal;
+        font-size: 30px;
+        font-family: "OpenSans-CondBold";
+        text-align: center;
+        letter-spacing: -1px;
+        line-height: 30px;
+        color: white;
+        margin-bottom: 8px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .autor li {
+        padding: 0 0 0 33px;
+        margin: 0;
+        position: relative;
+    }
+
+        .autor li.first {
+            background: url(../images/icons/people.png) no-repeat 0 2px;
+        }
+
+            .autor li.first.on1 {
+                background: url(../images/icons/people-1.png) no-repeat 0 2px;
+            }
+
+        .autor li.last {
+            background: url(../images/icons/phone.png) no-repeat 0 4px;
+        }
+
+    .autor span.no-valid {
+        display: block;
+        font-family: Tahoma;
+        color: #f58220;
+        font-weight: bold;
+        font-size: 11px;
+        height: 15px;
+        line-height: 11px;
+        margin-top: 1px;
+        margin-left: 13px;
+        white-space: nowrap;
+    }
+
+    .autor ul input {
+        display: block;
+        width: 190px;
+        border: none;
+        height: 33px;
+        font-size: 14px;
+        color: white;
+        padding: 0 13px;
+        line-height: 33px;
+        background: url(../images/text/text-entry.png) no-repeat;
+        font-family: "MyriadProLight";
+        text-transform: uppercase;
+    }
+
+    .autor input.no-valid {
+        background-position: left bottom;
+    }
+
+    .autor .send {
+        background: url(../images/button/btn-send.png) no-repeat;
+        display: block;
+        font-family: "OpenSans-CondLight";
+        position: absolute;
+        left: -27px;
+        top: 176px;
+        width: 173px;
+        height: 46px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        text-shadow: 0 0 0 black;
+    }
+
+/*autor========*/
+
+
+.buy-room {
+    display: block;
+    position: absolute;
+    right: 21px;
+    top: 522px;
+    width: 429px;
+    height: 70px;
+    background: url(../images/text/buy-room.png) no-repeat;
+}
+
+
+.title-why {
+    display: block;
+    width: 1031px;
+    height: 96px;
+    background: url(../images/title/why.png) no-repeat;
+}
+
+/*Why*/
+.why table td {
+    vertical-align: middle;
+    text-align: left;
+}
+
+.why table th {
+    width: 580px;
+}
+
+.why table td.ico {
+    width: 183px;
+}
+
+.why table tr {
+    height: 146px;
+    position: relative;
+}
+
+.why table i {
+    background: url(../images/icons/many.png) no-repeat;
+    display: block;
+    width: 165px;
+    height: 139px;
+    float: left;
+}
+
+    .why table i.item1 {
+        background-position: 0 0;
+    }
+
+    .why table i.item2 {
+        background-position: right 0;
+    }
+
+    .why table i.item3 {
+        background-position: left -146px;
+    }
+
+.why i.item4 {
+    background-position: right -146px;
+}
+
+.why i.item5 {
+    background-position: left -292px;
+}
+
+.why i.item6 {
+    background-position: right -292px;
+}
+
+.why i.item7 {
+    background-position: left -438px;
+}
+
+.why i.item8 {
+    background-position: right -438px;
+}
+
+.why i.item9 {
+    background-position: left -584px;
+}
+
+.why i.item10 {
+    background-position: right -584px;
+}
+
+.why i.item11 {
+    background-position: left bottom;
+}
+
+.why i.item12 {
+    background-position: right bottom;
+}
+
+.why table td {
+    font-size: 24px;
+    color: #512c00;
+    font-family: "OpenSans-Light";
+    text-align: left;
+    line-height: 26px;
+    font-weight: normal;
+}
+/*Why==========*/
+
+.title-where {
+    display: block;
+    width: 1031px;
+    height: 191px;
+    background: url(../images/title/title1.png) no-repeat;
+    margin-top: -50px;
+}
+
+.title-time {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/title2.png) no-repeat;
+}
+
+.title-room {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    margin-top:-13px;
+    background: url(../images/title/room.png) no-repeat;
+}
+
+    .title-room a {
+        background: url(../images/button/btn-full.png) no-repeat;
+        width: 487px;
+        height: 60px;
+        position: absolute;
+        left: 670px;
+        top: 34px;
+        line-height: 60px;
+        text-align: center;
+        display: block;
+        font-size: 32px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        text-shadow: 0 0 0 black;
+        font-family: "OpenSans-CondLight";
+    }
+
+.title-people {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/sotrudnik.png) no-repeat;
+}
+
+.title-help {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/dogovor.png) no-repeat;
+}
+
+.title-review {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/title4.png) no-repeat;
+}
+
+.title-credit {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/title3.png) no-repeat;
+}
+
+.title-fabric {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/title6.png) no-repeat;
+}
+
+.title-catalog {
+    display: block;
+    width: 1031px;
+    height: 144px;
+    background: url(../images/title/title7.png) no-repeat;
+}
+
+
+.list-where table {
+    margin: 27px 0 24px 0;
+}
+/*list-border*/
+.list-border td {
+    vertical-align: top;
+}
+
+.list-border .base div {
+    background: url(../images/background/border.png) no-repeat;
+    width: 229px;
+    height: 337px;
+}
+
+.list-border .base p {
+    font-size: 24px;
+    color: #542000;
+    font-family: "OpenSans-Light";
+    text-align: center;
+    line-height: 29px;
+}
+
+.list-border .base img {
+    margin: 66px 38px 0 38px;
+    max-width: 148px;
+    max-height: 219px;
+}
+/*list-border======*/
+
+.time-proccess {
+    background: url(../images/background/proccess.png) no-repeat 15px 179px;
+}
+
+    .time-proccess table td {
+        vertical-align: top;
+    }
+
+
+    .time-proccess .first {
+        width: 220px;
+    }
+
+    .time-proccess .item1 {
+        width: 255px;
+    }
+
+        .time-proccess .item1 p {
+            width: 200px;
+            margin-left: 20px;
+        }
+
+    .time-proccess .item2 {
+        width: 240px;
+    }
+
+        .time-proccess .item2 p {
+            width: 240px;
+            margin-left: -10px;
+        }
+
+    .time-proccess .item3 p {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .time-proccess .last p {
+        width: 150px;
+    }
+
+    .time-proccess .base {
+        padding-top: 196px;
+    }
+
+    .time-proccess p {
+        font-size: 24px;
+        color: #542000;
+        font-family: "OpenSans-Light";
+        text-align: center;
+        line-height: 29px;
+        display: block;
+        width: 170px;
+        letter-spacing: -1px;
+        margin: 0;
+    }
+
+
+
+/*inner-header*/
+.inner-header {
+    background: url(../images/background/inner-header1.png) no-repeat center -10px;    
+    height: 565px;
+}
+
+    .inner-header h2.to {
+        display: block;
+        position: absolute;
+        right: 270px;
+        top: 55px;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: white;
+        font-family: "OpenSans-Light";
+        text-shadow: 0px 1px 0 black;
+    }
+
+    .inner-header .autor {
+        position: absolute;
+        width: 310px;
+        height: 150px;
+        top: 145px;
+        right: 140px;
+    }
+
+        .inner-header .autor h3 {
+            font-size: 24px;
+            color: #d5e600;
+            margin-right: 40px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+            .inner-header .autor h3 span {
+                color: white;
+                font-family: "OpenSans-Light";
+                font-size: 20px;
+                display: block;
+                line-height: 20px;
+            }
+
+        .inner-header .autor .send {
+            left: 45px;
+            top: 190px;
+            width: 173px;
+        }
+
+    .inner-header .tell {
+        display: block;
+        position: absolute;
+        right: 288px;
+        top: 400px;
+        font-size: 24px;
+        font-family: "OpenSans-Light";
+        color: white;
+        text-shadow: 0 0 0 black;
+    }
+/*inner-header=======*/
+
+
+
+/*list-border-big*/
+
+.list-border-big td {
+    vertical-align: top;
+    padding-bottom:20px;
+}
+
+.list-border-big .base div {
+    background: url(../images/background/border-big.png) no-repeat;
+    width: 295px;
+    height: 323px;
+    margin-bottom: 9px;
+}
+
+.list-border-big .base p {
+    font-size: 30px;
+    color: #542000;
+    font-family: "OpenSans-Semibold";
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 29px;
+}
+
+.list-border-big .base img {
+    margin: 66px 38px 0 38px;
+    max-width: 215px;
+    max-height: 215px;
+}
+
+.list-border-big .get-catalog {
+    width: 171px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    font-family: "OpenSans-CondLight";
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 0 black;
+    background: url(../images/button/btn-46.png) no-repeat;
+}
+
+.list-border-big.list-calalog .base p {
+    font-size: 27px;
+    font-family: "OpenSans-CondBold";
+    text-transform: none;
+}
+
+    .list-border-big.list-calalog .base p span {
+        font-family: "OpenSans-CondLight";
+        display: block;
+        letter-spacing: -1px;
+        width: 200px;
+        margin: 0 auto;
+    }
+/*list-border-big*/
+
+/*.inner-job*/
+.inner-job {
+    background: url(../images/background/jobs.png) no-repeat center top;
+    height: 507px;
+}
+
+    .inner-job h2.to {
+        display: block;
+        position: absolute;
+        right: 270px;
+        top: 75px;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: white;
+        font-family: "OpenSans-Light";
+        text-shadow: 0px 1px 0 black;
+    }
+
+    .inner-job .autor {
+        position: absolute;
+        width: 310px;
+        height: 150px;
+        top: 130px;
+        right: 0px;
+    }
+
+        .inner-job .autor h3 {
+            font-size: 24px;
+            color: #d5e600;
+            margin-right: 40px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+            .inner-job .autor h3 span {
+                color: white;
+                font-family: "OpenSans-Light";
+                font-size: 20px;
+                display: block;
+                line-height: 20px;
+            }
+
+        .inner-job .autor .send {
+            left: 45px;
+            top: 190px;
+            width: 173px;
+        }
+/*.inner-job*/
+
+
+/*list-border-middle*/
+.list-border-middle {
+    margin-bottom: 20px;
+}
+
+    .list-border-middle td {
+        vertical-align: top;
+    }
+
+    .list-border-middle .base div {
+        background: url(../images/background/border-middle.png) no-repeat;
+        width: 229px;
+        height: 256px;
+        margin-bottom: 9px;
+    }
+
+    .list-border-middle .base p {
+        font-size: 24px;
+        color: #542000;
+        font-family: "OpenSans-Regular";
+        text-align: center;
+        line-height: 29px;
+    }
+
+        .list-border-middle .base p span {
+            display: block;
+            font-size: 18px;
+            font-family: "OpenSans-Light";
+        }
+
+    .list-border-middle .base img {
+        margin: 66px 38px 0 38px;
+        max-width: 215px;
+        max-height: 215px;
+    }
+
+/*list-border-middle*/
+
+/*.list-border-h*/
+.list-border-h {
+    margin-bottom: 20px;
+}
+
+    .list-border-h td {
+        vertical-align: top;
+    }
+
+    .list-border-h .base div {
+        background: url(../images/background/border-h.png) no-repeat;
+        width: 229px;
+        height: 326px;
+    }
+
+    .list-border-h .base img {
+        margin: 66px 38px 0 38px;
+        max-width: 147px;
+        max-height: 218px;
+    }
+
+/*list-border-middle*/
+
+
+/*review*/
+.review {
+}
+
+    .review td {
+        vertical-align: top;
+    }
+
+    .review .description {
+        width: 370px;
+    }
+
+    .review td.ico {
+        width: 230px;
+    }
+
+    .review td div.name {
+        font-family: "OpenSans-Light";
+        font-size: 18px;
+        color: white;
+    }
+
+        .review td div.name span {
+            font-size: 24px;
+            color: #542000;
+            display: block;
+            font-family: "OpenSans-Bold";
+        }
+
+    .review td p {
+        font-size: 12px;
+        color: #542000;
+        font-family: "OpenSans-Regular";
+        margin-top: 10px;
+    }
+
+    .review td.ico div {
+        background: url(../images/background/border-middle.png) no-repeat 0 -26px;
+        width: 229px;
+        height: 256px;
+        margin: 0 15px;
+    }
+
+    .review td.ico img {
+        margin: 40px 38px 0 38px;
+        max-width: 215px;
+        max-height: 215px;
+    }
+/*review==========*/
+
+
+
+/*credit*/
+.credit .description {
+    width: 370px;
+}
+
+.credit td {
+    padding-bottom: 20px;
+}
+
+    .credit td.ico {
+        width: 198px;
+    }
+
+    .credit td div.name {
+        font-family: "OpenSans-Light";
+        font-size: 18px;
+        color: white;
+    }
+
+        .credit td div.name span {
+            font-size: 24px;
+            color: #542000;
+            display: block;
+            font-family: "OpenSans-Bold";
+        }
+
+    .credit td p {
+        font-size: 12px;
+        color: #542000;
+        font-family: "OpenSans-Regular";
+        margin-top: 10px;
+    }
+
+    .credit td.ico div {
+        background: url(../images/background/bordrer-credit.png) no-repeat;
+        width: 193px;
+        height: 194px;
+        margin: 0 15px 5px 15px;
+    }
+
+    .credit td.ico span {
+        color: #542000;
+        display: block;
+        font-family: "OpenSans-Regular";
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .credit td.ico img {
+        margin: 35px 0 0 34px;
+        width: 124px;
+        height: 125px;
+    }
+
+.credit td {
+    vertical-align: top;
+}
+
+.credit .base {
+    position: relative;
+}
+
+    .credit .base .arrow {
+        position: absolute;
+        left: 0;
+        top: 68px;
+        width: 62px;
+        height: 62px;
+        background: url(../images/icons/arrows.png) no-repeat;
+    }
+
+    .credit .base .get-rasrochka {
+        position: absolute;
+        left: 76px;
+        top: 106px;
+        width: 298px;
+        height: 69px;
+        line-height: 69px;
+        font-family: "OpenSans-CondBold";
+        font-size: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        background: url(../images/button/btn-h.png) no-repeat;
+        color: white;
+    }
+
+        .credit .base .get-rasrochka:hover {
+            text-decoration: none;
+        }
+
+    .credit .base .price {
+        position: absolute;
+        left: 65px;
+        top: 0px;
+        height: 75px;
+        width: 315px;
+    }
+
+        .credit .base .price i {
+            font-style: normal;
+            color: #48301e;
+            font-size: 88px;
+            font-family: OpenSans-ExtraBold;
+            float: left;
+            margin: -25px 5px 0 0;
+            display: block;
+        }
+
+        .credit .base .price span {
+            display: block;
+            font-family: "OpenSans-Light";
+            font-size: 29px;
+            color: white;
+            display: block;
+        }
+
+        .credit .base .price b {
+            color: #644b37;
+            font-family: "OpenSans-Bold";
+            font-size: 39px;
+            display: block;
+            margin-top: -10px;
+        }
+/*credit==========*/
+
+
+/*fabric*/
+.fabric {
+    margin-bottom: 55px;
+}
+
+    .fabric ul li {
+        float: left;
+        width: 108px;
+        height: 140px;
+    }
+
+    .fabric a {
+        font-size: 20px;
+        color: #542000;
+        font-family: "OpenSans-CondLight";
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        width: 104px;
+    }
+
+        .fabric a div {
+            background: url(../images/background/border-small.png) no-repeat;
+            width: 104px;
+            height: 105px;
+        }
+
+            .fabric a div img {
+                margin: 12px;
+            }
+/*fabric========*/
+
+
+.bottom {
+    background: url(../images/background/footer.png) no-repeat center top;
+    height: 859px;
+}
+    .bottom .fixit {
+        height:880px;
+    }
+
+    .bottom .adventures {
+        top: 235px;
+    }
+
+    .bottom .discount {
+        top: 113px;
+    }
+
+    .bottom .phone {
+        top: 80px;
+    }
+
+    .bottom .autor {
+        top: 179px;
+    }
+
+    .bottom .buy-room {
+        top: 550px;
+    }
+
+.address{
+    font-size:18px;
+    color:#ffa323;
+    font-family: "MyriadPro-Regular";
+    position:absolute;
+    left:115px;
+    bottom:153px;
+    width:950px;
+    height:40px;
+    line-height:18px;
+}
+
+.address .left{ float:left; text-align:left;}
+.address .right{ float:right; text-align:right;}
+
+.bottom-line {
+    position:absolute;
+    bottom:40px;
+    left:360px;
+    height:25px;
+    width:500px;
+}
+
+    .bottom-line ul li {
+          float:left;
+    }
+        .bottom-line ul li.first { margin-right:58px;}
+
+    .bottom-line ul li a,
+    .bottom-line ul li{      
+        font-size:16px;
+        color:white;
+        font-family: "MyriadPro-Regular";
+    }
+
+
+.inner-header .skidki{
+    display:block;
+    position:absolute;
+    right:30px;
+    top:45px;
+    width:236px;
+    height:65px;
+    background:url(../images/background/to_30.png) no-repeat;    
+}

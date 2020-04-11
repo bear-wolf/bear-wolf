@@ -1,0 +1,6 @@
+/*css style for IE7*/
+
+html div,
+html li{
+	zoom:1;
+	}

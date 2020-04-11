@@ -1,0 +1,346 @@
+/*Navigation*/
+.Navigation, .navigation
+{
+    position: relative;
+}
+
+.MainSlider .absolute
+{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.MainSliderSmall .absolute
+{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.BaseRelative, .baserelative
+{
+    padding: 0 0px;
+}
+
+.Slider .absolute
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 280px;
+}
+
+.Slider .Relative
+{
+    position: relative;
+    overflow: hidden;
+    height: 245px;
+    z-index: 500;
+}
+
+.MainSliderSmall .Relative
+{
+    height: 190px;
+    width: 410px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 500;
+}
+
+.MainSlider .Relative
+{
+    height: 452px;
+    width: 860px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 500;
+}
+
+.pagination a
+{
+    display: inline-block;
+    background: url(images/thumb.png) 0 0 no-repeat;
+    height: 38px;
+    width: 17px;
+    position: relative;
+    margin: 0 1px 0 2px;
+    font-size: 0;
+}
+
+    .pagination a:hover,
+    .pagination a.active
+    {
+        background-position: right top;
+    }
+
+    .pagination a.active
+    {
+        cursor: default;
+    }
+/*Navigation=======*/
+
+/*SmallPhoto - slider*/
+.SmallPhoto
+{
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    height: 118px;
+    position: relative;
+}
+
+    .SmallPhoto .absolute
+    {
+        top: 11px!important;
+    }
+
+        .SmallPhoto .absolute ul li
+        {
+            width: 104px;
+            height: 96px;
+            text-align: left;
+            font-size: 11px;
+            font-family: Arial;
+            text-align: left;
+            float: left;
+        }
+
+            .SmallPhoto .absolute ul li .SmallText
+            {
+                width: 115px;
+                text-align: center;
+            }
+
+    .SmallPhoto .Navigation
+    {
+        position: absolute;
+        left: 0;
+        width: 351px;
+        top: 0;
+    }
+
+        .SmallPhoto .Navigation .ArrowLeft,
+        .SmallPhoto .Navigation .ArrowRight
+        {
+            position: absolute;
+            width: 9px;
+            height: 17px;
+            font-size: 0;
+            background: url(images/arrow.png) no-repeat;
+            top: 51px;
+            z-index: 999;
+        }
+
+    .SmallPhoto .MainSlider .Relative
+    {
+        overflow: hidden;
+        position: relative;
+        z-index: 500;
+        margin: 0 24px;
+        width: 309px;
+        height: 108px;
+    }
+
+    .SmallPhoto .Navigation .ArrowLeft.Last
+    {
+        background-position: left bottom;
+        display: none;
+    }
+
+    .SmallPhoto .Navigation .ArrowRight.Last
+    {
+        background-position: right bottom;
+        display: none;
+    }
+
+    .SmallPhoto .Navigation .ArrowLeft
+    {
+        left: 0px;
+        background-position: 0 0;
+    }
+
+    .SmallPhoto .Navigation .ArrowRight
+    {
+        right: 0px;
+        background-position: right top!important;
+    }
+
+li.Active .small_background
+{
+    background: #45dcfc;
+    border-color: #c4c3c1;
+}
+
+/*SmallPhoto - slider =====================*/
+
+.textblockslider .navigation .arrowright
+{
+    background-position: right bottom !important;
+    right: -22px;
+}
+
+
+.navigation .arrowleft
+{
+    background-position: left top;
+    left: -49px;
+}
+
+.navigation .arrowright
+{
+    background-position: right bottom !important;
+    right: -49px;
+}
+
+.MainSliderBigArrow .navigation .arrowleft.last, 
+.MainSliderBigArrow .navigation .arrowleft:hover
+{
+    background-position: left bottom !important;
+}
+
+.MainSliderBigArrow .navigation .arrowright.last, 
+.MainSliderBigArrow .navigation .arrowright:hover
+{
+    background-position: top right !important;
+}
+
+.MainSliderBigArrow .navigation .arrowleft,
+.MainSliderBigArrow .navigation .arrowright
+{
+    position: absolute;
+    width: 40px;
+    height: 78px;
+    font-size: 0;
+    background: url(../../images/bg/sliderbuttons.png) no-repeat;
+    top: 155px;
+    z-index: 999;
+}
+
+.MainSliderSmallArrow .navigation .arrowleft.Last,
+.MainSliderSmallArrow .navigation .arrowleft:hover
+{
+    background-position: left bottom !important;
+}
+
+.MainSliderSmallArrow .navigation .arrowright.Last, 
+.MainSliderSmallArrow .navigation .arrowright:hover
+{
+    background-position: top right !important;
+}
+
+.MainSliderSmallArrow .navigation .arrowleft,
+.MainSliderSmallArrow .navigation .arrowright
+{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    font-size: 0;
+    background: url(../../images/bg/smallsliderbuttons.png) no-repeat;
+    top: 70px;
+    z-index: 999;
+}
+
+.MainSliderSmallArrow .navigation .arrowleft
+{
+    left: -46px;
+}
+
+.MainSliderSmallArrow .navigation .arrowright
+{
+    right: -15px;
+}
+
+.MainSliderSmall li.active .byeblocksmal
+{
+    border: 3px solid #acacac !important;
+}
+
+/*big_slider - slider*/
+.big_slider
+{
+    position: relative;
+}
+
+    .big_slider .absolute
+    {
+        top: 0px!important;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 331px;
+    }
+
+        .big_slider .absolute ul li
+        {
+            position: relative;
+            width: 1200px;
+            height: 331px;
+            text-align: left;
+            font-size: 11px;
+            font-family: Arial;
+            text-align: left;
+            float: left;
+        }
+
+            .big_slider .absolute ul li .SmallText
+            {
+                width: 115px;
+                text-align: center;
+            }
+
+    .big_slider .navigation
+    {
+        display: none!important;
+    }
+
+    .big_slider .relative
+    {
+        overflow: hidden;
+        position: relative;
+        z-index: 500;
+        width: 1200px;
+        height: 331px;
+    }
+
+
+/*big_slider - slider =====================*/
+
+
+.pagination
+{
+    position: absolute;
+    z-index: 4000;
+    right: 50px;
+    bottom: 15px;
+    height: 36px;
+    background: url(../../images/bg/topsliderline.png) repeat-x center left;
+}
+
+    .pagination a
+    {
+        display: inline-block;
+        background: url(../../images/bg/topslidercerk.png) no-repeat right top;
+        width: 10px;
+        height: 11px;
+        font-size: 0;
+        line-height: 0;
+        margin: 0 20px 0px 0;
+    }
+
+        .pagination a:last-child
+        {
+            margin: 0;
+        }
+
+        .pagination a:hover, .pagination a.active
+        {
+            background-position: left top;
+            text-decoration: none;
+        }
+
+.arrowright2{right:-25px !important; }

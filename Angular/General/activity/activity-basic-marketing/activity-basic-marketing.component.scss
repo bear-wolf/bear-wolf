@@ -1,0 +1,55 @@
+@import "~assets/css/shared";
+
+.basic-marketing-content{
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps{
+    li{
+      &.step0 {
+        a{
+          padding: 0!important;
+          width: 135px!important;
+        }
+      }
+      &.step2 {
+        a{
+          padding: 0!important;
+          width: 110px!important;
+        }
+      }
+      &.step4 {
+        a{
+          padding: 0!important;
+          width: 100px!important;
+        }
+      }
+      &.step6 {
+        a{
+          padding: 0 11px!important;
+          width: 100px!important;
+        }
+      }
+    }
+    .ui-steps:before{
+      width: 1065px!important;
+    }
+  }
+
+  .basic-marketing-select-drug-content{
+    .list-sku .ui-widget{
+      width: 100%;
+    }
+  }
+
+  .document-content{
+    .item{
+      label{
+        font-weight: bold!important;
+      }
+      .form-control-input-label{
+        padding-right: 15px;
+      }
+    }
+  }
+}

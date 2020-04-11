@@ -1,0 +1,62 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.training-content {
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps {
+    li{
+      &.step1{
+        a{
+          width: 100px!important;
+        }
+      }
+      &.step2{
+        a{
+          width: 90px!important;
+        }
+      }
+    }
+    .ui-steps:before {
+      width: 340px !important;
+    }
+  }
+
+  .document-content {
+    .controls-datepicker{
+      height: 38px;
+
+      &>.form-group>div{
+        width: 115px;
+      }
+    }
+    .row-item {
+      flex-direction: column;
+
+      .item {
+        width: 100%;
+        margin-bottom: $form-row-margin-bottom;
+
+        p-calendar input {
+          font-size: 11px;
+        }
+
+        & > span > label {
+          align-items: center;
+          font-weight: bold !important;
+        }
+
+        .form-control-input {
+          display: flex;
+
+          label {
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

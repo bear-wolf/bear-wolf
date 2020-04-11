@@ -1,0 +1,667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>realty.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" border="0"/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li class="activ"><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			
+			<div class="top_line">
+				<div class="abs">
+					<ul>
+					  <li class="active"><a href="http://www.66.ru/realty/news/" >Недвижимость</a>	  </li>
+					  <li><a href="http://www.66.ru/news/business/">Новости</a>	  </li>
+					  <li><a href="http://www.66.ru/news/incident/" >Частные обявления!</a>	  </li>
+					  <li><a href="http://www.66.ru/news/internet/" >Новостройки</a>	  </li>
+					  <li><a href="http://www.66.ru/news/freetime/" >Застройщики</a>	  </li>
+					  <li><a href="http://www.66.ru/auto/news/">Агенства недвижимости</a>	  </li>
+					</ul>
+				</div>
+			</div>
+			 
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+					  
+					  <div class="sponsor">
+							<h2>Наши партнёры</h2>
+							<ul>
+								<li><a href="#"><img src="img/temp/partner/512732_normal_700.jpg" width="200" height="54" alt="" /></a></li>
+							</ul>
+					  </div>                  
+					
+						<div class="list_inform">
+							<h2>
+								<b>Новостройки</b>
+								в базе все (79) новостройки города
+								<i class="u1"></i> <i class="u2"></i>
+							</h2>
+							<div class="color">
+								<i class="u3"></i> <i class="u4"></i>
+								<ul>
+									<li>в
+										<select>
+											<option>Майкопе</option>
+										</select>
+									</li>
+									<li><a href="#">Указать район</a></li>
+								</ul>
+								<table>
+									<tr>
+										<td>Количество комнат</td>
+										<td>
+											<select>
+												<option>любое</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Цена (р. за м2) до</td>
+										<td><input type="text" /></td>
+									</tr>
+									<tr>
+										<td><p><input type="checkbox" /> дом стан</p></td>
+										<td class="but"><input type="image" src="img/button/find.jpg" /></td>
+									</tr>
+								</table>
+							</div>
+						</div>    
+						
+						<div class="list_inform">
+							<h2>
+								<b>Ипотека</b>
+								актуальные  предложения на 12.02.2011
+								<i class="u1"></i> <i class="u2"></i>
+							</h2>
+							<div class="color1">
+								<i class="u3"></i> <i class="u4"></i>
+								<table>
+									<tr>
+										<td>Стоимость объекта <br />
+											<input type="text" value="2 000 000" />
+										</td>
+										<td> <br />
+											<select>
+												<option>рублей</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Вид жилья <br />
+											<select>
+												<option>любой</option>
+											</select>
+										</td>
+										<td>Срок <br />
+											<select>
+												<option>5 лет</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#">Заполнить заявку на кредит</a></td>
+										<td class="but"><input type="image" src="img/button/find1.jpg" /></td>
+									</tr>
+								</table>
+							</div>
+						</div>                         
+                  
+				  		<div class="list_inform_dom">
+							<h2>
+								<p>Рекомендуем новостройки</p>
+								<i class="u1"></i> <i class="u2"></i>
+							</h2>
+							<div class="color1">
+								<i class="u3"></i> <i class="u4"></i>
+								<table>
+									<tr>
+										<td>
+											<img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt="" />
+											<p><a href="#">ЖК Тащичевский район</a></p>
+										</td>
+										<td>
+											<img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt="" />
+											<p><a href="#">ЖК Тащичевский район</a></p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt="" />
+											<p><a href="#">ЖК Тащичевский район</a></p>
+										</td>
+										<td>
+											<img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt="" />
+											<p><a href="#">ЖК Тащичевский район</a></p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt="" />
+											<p><a href="#">ЖК Тащичевский район</a></p>
+										</td>
+										<td>
+											<img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt="" />
+											<p><a href="#">ЖК Тащичевский район</a></p>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						
+						
+						<div class="news_build">
+							<p>Новости новостроек</p>
+							<ul>
+								<li>
+									<span>вчера</span>
+									<p>* Добавлен новый застройщик «Среднеуральская строительная компания (ССК)»
+										<a href="#">* Жилой комплекс «Радуга»»</a>
+										<a href="#">* «Жилой комплекс «Радуга»»</a>
+									</p>
+								</li>					
+								<li>
+									<span>вчера</span>
+									<p>* Добавлен новый застройщик «Среднеуральская строительная компания (ССК)»
+										<a href="#">* объекте «Жилой комплекс «Радуга»»</a>
+										<a href="#">* «Жилой комплекс «Радуга»»</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+						
+				  
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+				
+				<div class="build_news">
+					<table>
+						<tr>
+							<td>
+								<img src="img/temp/news/shablon_103.jpg" width="133" height="100" class="big" alt="" />
+								<h1>Точечную застройку на Декабристов <a href="#">приостановили</a> </h1>
+								<span>вчера</span>
+								<p>Об этом сегодня заседании коллегии по проекту «Транспортная карта горожанина» заявил председатель Комитета по транспорту администрации Екатеринбурга Алексей Курлыков.</p>
+<p>Как пишет «Новый Регион» со ссылкой на пресс-службу горадминистрации, для этого специальный чип будет закреплен на сим-карте горожанина. После отправки смс-сообщения оператору у абонента активизируется транспортный тариф. После его активации остается лишь поднести мобильный телефон к валидатору и получить чек. Администрация Екатеринбурга уже ведет активные переговоры на этот счет с несколькими сотовыми операторами. Сам Алексей Курлыков назвал внедрение бесконтактной оплаты в общественном транспорте «задачей года».</p>
+							</td>
+						</tr>
+					</table>
+					<ul>
+						<li>1. На программу «1000 дворов» <a href="#">регион выделяет 357 млн</a> </li>
+						<li>2. Лучший в России велотрек <a href="#">построят в Майкопе</a></li>
+						<li>3. Архитектор из Барселоны <a href="#">займется развитием </a></li>
+						<li>4. Администрация Майкопа <a href="#">проиграла абсурдный суд о земле</a></li>
+						<li>5. Администрация обещает в <a href="#">2011 году снести 42 ветхих дома</a></li>
+						<li>6. Леонид Волков обнародовал <a href="#">свои предложения по застройщикам</a></li>
+					</ul>	
+					<div class="rss"><a href="#">Все новости по каналу rss</a></div>	
+				</div>
+				
+				<table class="obyav">
+					<tr>
+						<td>
+							<div class="news_chas">
+								<i class="u1"></i>
+								<i class="u2"></i>
+								<i class="u3"></i>
+								<i class="u4"></i>
+								<h2>Продажа</h2>
+								
+								<ul>
+									<li>
+										<ul>
+											<li><a href="#">Квартиры</a></li>
+											<li><a href="#">1к</a> (804)</li>
+											<li><a href="#">2к</a> (754)</li>
+											<li><a href="#">3к</a> (405)</li>
+											<li><a href="#">4к</a> (205)</li>
+											<li><a href="#">5к+</a> (80)</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li><a href="#">Комнаты</a> (335)</li>
+											<li><a href="#">Дома</a> (804)</li>
+											<li><a href="#">Гаражи</a> (754)</li>
+											<li><a href="#">Участки</a> (405)</li>
+											<li><a href="#">Новостройки</a></li>
+										</ul>
+									</li>
+								</ul>
+								
+							</div>
+						</td>
+						<td>
+							<div class="news_chas">
+								<i class="u1"></i>
+								<i class="u2"></i>
+								<i class="u3"></i>
+								<i class="u4"></i>
+								<h2>Аренда</h2>
+								
+								<ul>
+									<li>
+										<ul>
+											<li><a href="#">Квартиры</a></li>
+											<li><a href="#">1к</a> (804)</li>
+											<li><a href="#">2к</a> (754)</li>
+											<li><a href="#">3к</a> (405)</li>
+											<li><a href="#">4к</a> (205)</li>
+											<li><a href="#">5к+</a> (80)</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li><a href="#">Комнаты</a> (335)</li>
+											<li><a href="#">Дома</a> (804)</li>
+											<li><a href="#">Гаражи</a> (754)</li>
+											<li><a href="#">Участки</a> (405)</li>
+											<li><a href="#">Новостройки</a></li>
+										</ul>
+									</li>
+								</ul>
+								
+							</div>
+						</td>
+					</tr>
+				</table>				
+				
+					<div class="obyav">
+						<a href="#">Обявления о недвижимости</a> <a href="#"><img src="img/button/add.jpg" width="155" height="23" /></a>
+					</div>
+					
+					<div class="head_line1">
+						<div class="top">
+							<ul>
+								<li><a href="http://www.66.ru/doska/?action_type=buy">новые <i class="lt"></i> <i class="rt"></i></a></li>
+								<li class="active"><a href="http://www.66.ru/doska/?action_type=buy">всё <i class="lt"></i> <i class="rt"></i></a></li>
+								<li><a href="http://www.66.ru/doska/?action_type=buy">купля <i class="lt"></i> <i class="rt"></i></a></li>
+								<li><a href="http://www.66.ru/doska/?action_type=sell">продажа <i class="lt"></i> <i class="rt"></i></a></li>
+								<li><a href="http://www.66.ru/doska/?action_type=serv">услуга <i class="lt"></i> <i class="rt"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<table class="list_doska">
+						 <tbody>
+							<tr class="bg">
+								<td class="date">11.02</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									»детский мир 
+								</td>
+							</tr>
+							<tr>
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									»детский мир 
+								</td>
+								
+							</tr>
+							<tr class="bg">
+								<td class="date">сегодня</td>
+								<td>
+									<a href="http://www.66.ru/doska/a/2113179/">продам 2 комплекта одежды для мальчика </a>
+									<img src="img/icon/new/foto.jpg" width="27" height="12" alt="фото">»детский мир 
+								</td>
+								
+							</tr>
+							
+						</tbody>
+					</table>
+	 
+					
+						<div class="head_line1">
+							<div class="bot">
+								<ul>
+									<li class="active"><a href="#">1 <i class="lb"></i> <i class="rb"></i></a></li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=2&amp;sort_by=updated"> 2 <i class="lb"></i> <i class="rb"></i></a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=3&amp;sort_by=updated">    3 <i class="lb"></i> <i class="rb"></i> </a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=4&amp;sort_by=updated" rel="nofollow">      ... <i class="lb"></i> <i class="rb"></i></a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=929&amp;sort_by=updated" rel="nofollow">    929 <i class="lb"></i> <i class="rb"></i></a>
+									</li>
+									<li>
+										<a href="http://www.66.ru/doska/?sort_dir=-1&amp;page=930&amp;sort_by=updated" rel="nofollow">
+											930 <i class="lb"></i> <i class="rb"></i>
+										</a>
+									</li>
+									<li class="right">
+										на странице:
+										<select>
+											<option value="20" selected="selected">20&nbsp;</option>
+											<option value="30">30&nbsp;</option>
+											<option value="50">50&nbsp;</option>
+											<option value="70">70&nbsp;</option>
+											<option value="100">100&nbsp;</option>
+										</select>
+									</li>
+								</ul>
+							</div>
+						</div>
+								
+						<div class="build_list">
+							<table>
+								<tr>
+									<td>
+										<a href="#"><img src="img/temp/build/small/realty_22.jpg" width="96" height="70" alt=""></a>
+										<p>Ваш дом и Ваш парк</p>
+										<a href="#">цена доступная</a> от 64 000 за кв.м.
+									</td>
+									<td>
+										<a href="#"><img src="img/temp/build/small/realty_24.jpg" width="96" height="70" alt=""></a>
+										<p>Ваш дом и Ваш парк</p>
+										<a href="#">цена доступная</a> от 64 000 за кв.м.
+									</td>
+									<td>
+										<a href="#"><img src="img/temp/build/small/realty_26.jpg" width="96" height="70" alt=""></a>
+										<p>Ваш дом и Ваш парк</p>
+										<a href="#">цена доступная</a> от 64 000 за кв.м.
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="text">
+							<p><b>Недвижимость Майкопа</b> — это каталог новостроек, объявления о продаже и аренде квартир от собственников, а также список агентств недвижимости и застройщиков.</p>
+							<p>Каждый день вы имеете возможность узнать здесь самые свежие новости из сферы недвижимости, прочитать прогнозы и аналитические статьи о тенденциях рынка. На доске объявлений недвижимости собраны самые актуальные объявления от частных лиц (собственников) и агентств для тех, кто желает продать или, напротив, купить квартиру, сдать или снять жилье в аренду.</p>
+	
+							<p>Обилие предложений и удобный поиск по нужным параметрам позволят Вам подобрать лучший вариант в кратчайшие сроки. Кроме того, на 66.ru представлен крупнейший каталог новостроек Екатеринбурга, а также наиболее полная и точная информация о городских застройщиках и агентствах недвижимости.</p>
+						
+							<h2>Обуждения в блогах</h2>
+						<ul class="list_news">
+							<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+								<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+								<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+								<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+								<img src="img/icon/coment.png" width="9" height="10" alt="" />
+								27
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+								<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+								<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+								<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+								<img src="img/icon/coment.png" width="9" height="10" alt="" />
+								27
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>10:00</i> <a href="#">перв околова</a>
+								<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+								<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+								<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+								<img src="img/icon/coment.png" width="9" height="10" alt="" />
+								27
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропал. Кот Матроскин пошёл домой и пропал. Кот Матроскин пошёл домой и пропал. </a>
+								<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+								<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+								<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+								<img src="img/icon/coment.png" width="9" height="10" alt="" />
+								27
+								<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>	
+							<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+								<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>10:00</i> <a href="#">перв околова</a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>11:00</i> <a href="#">Не хочу.</a>
+								<a href="#"><img src="img/icon/diagr.jpg" width="10" height="9" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/sm1.jpg" width="7" height="10" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>	
+							<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>10:00</i> <a href="#">перв околова</a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>11:00</i> <a href="#">Не хочу.</a>
+								<a href="#"><img src="img/icon/diagr.jpg" width="10" height="9" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/sm1.jpg" width="7" height="10" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>	
+							<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>10:00</i> <a href="#">перв околова</a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>
+							<li><i>11:00</i> <a href="#">Не хочу.</a>
+								<a href="#"><img src="img/icon/diagr.jpg" width="10" height="9" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+								27
+								<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+								<a href="#"><img src="img/icon/sm1.jpg" width="7" height="10" alt="" /></a>
+								<a href="#" class="bl">Питрич</a>
+							</li>										
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>	
+		<address>2010 - Городской портал <br /> Все права защищены</address>
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

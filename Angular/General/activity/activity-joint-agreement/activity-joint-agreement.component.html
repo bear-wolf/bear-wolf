@@ -1,0 +1,64 @@
+<ng-container *ngIf="jointAgreement">
+  <div class="joint-agreement-content">
+    <div class="content-header">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="title">Объединенный договор</h3>
+        </div>
+        <div class="col-md-6">
+          <app-document-version
+                  *ngIf="jointAgreement.documentService"
+                  [activity]="jointAgreement">
+          </app-document-version>
+        </div>
+      </div>
+    </div>
+
+    <app-entity-header
+            #entityHeaderComponent
+            [data]="entityHeader"
+            [entity]="jointAgreement"
+            [stepActiveIndex]="stepActiveIndex"
+            (approval)="approval($event, 1)"></app-entity-header>
+
+    <div [ngSwitch]="stepActiveIndex">
+      <div *ngSwitchCase="0">
+        <app-activity-joint-agreement-common
+                #innerFormComponent
+                [jointAgreement]="jointAgreement"></app-activity-joint-agreement-common>
+      </div>
+      <div *ngSwitchCase="1">
+        <app-activity-akam-agreement
+                [activity]="jointAgreement"></app-activity-akam-agreement>
+      </div>
+      <div *ngSwitchCase="2"
+           class="step2 step-item">
+        <app-activity-joint-agreement-docs
+                #innerFormComponent
+                [jointAgreement]="jointAgreement"></app-activity-joint-agreement-docs>
+      </div>
+    </div>
+
+    <div class="common-form-btn-group">
+      <button class="btn btn-orange"
+              (click)="cancel()">Отмена
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isPrevStep"
+              (click)="prev()">Вернутся
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isNextStep"
+              (click)="next()">Далее
+      </button>
+      <button class="btn btn-blue btn-primary"
+              *ngIf="isLastStep"
+              (click)="save()">Сохранить
+      </button>
+      <button class="btn btn-primary btn-green btn-approval"
+              *ngIf="stepActiveIndex == 1 && jointAgreement.isApproval"
+              (click)="sendManager()">Сохранить и отправить руководителю
+      </button>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,45 @@
+@import "~assets/css/shared";
+
+.dma-content{
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps{
+    li{
+      width: 285px;
+
+      &.step0{
+        width: 175px!important;
+        a{
+          width: 175px;
+        }
+      }
+
+      &.step1{
+        a{
+          width: 130px;
+        }
+      }
+
+      &.step2{
+        a{
+          width: 150px;
+        }
+      }
+      &.step4{
+        a{
+          width: 140px;
+          padding: 0!important;
+        }
+      }
+      &.step5{
+        a{
+          width: 90px;
+        }
+      }
+    }
+    .ui-steps:before {
+      width: 1025px;
+    }
+  }
+}

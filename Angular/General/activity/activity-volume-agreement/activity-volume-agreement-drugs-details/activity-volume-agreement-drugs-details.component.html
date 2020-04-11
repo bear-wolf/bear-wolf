@@ -1,0 +1,47 @@
+<div class="volume-agreement-drugs-details-content">
+  <div class="row">
+    <div class="col-lg-3">
+      <app-agreement-choose-drug
+              (selected)="selected($event)"
+              (selectedGroup)="selectedGroup($event)"
+              [activity]="volumeAgreement">
+      </app-agreement-choose-drug>
+    </div>
+
+    <div class="col-lg-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <ng-container *ngFor="let drugInfo of drugInformationGroup.drugInformation">
+              <app-agreement-detail
+                      #innerFormComponent
+                      *ngIf="drugInfo.skuId === drugInformation.skuId"
+                      [drug]="drugInfo">
+              </app-agreement-detail>
+            </ng-container>
+          </div>
+
+          <div class="col-lg-4">
+            <ng-container *ngFor="let drugInfo of drugInformationGroup.drugInformation">
+              <app-agreement-total
+                      *ngIf="drugInfo.skuId === drugInformation.skuId"
+                      [drug]="drugInfo">
+              </app-agreement-total>
+            </ng-container>
+          </div>
+        </div>
+
+        <div class="row" *ngFor="let drugInfo of drugInformationGroup.drugInformation">
+          <div class="col-12"
+               *ngIf="drugInfo.skuId === drugInformation.skuId">
+            <app-agreement-scale
+                  #innerFormComponent
+                  [drug]="drugInfo">
+            </app-agreement-scale>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

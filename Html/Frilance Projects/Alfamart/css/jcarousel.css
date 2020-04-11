@@ -1,0 +1,44 @@
+.jcarousel-skin-default{position:relative;padding:0 56px 0 58px;}
+.jcarousel-skin-default .jcarousel {
+    position: relative;
+    overflow: hidden;
+	height:237px;
+}
+
+.jcarousel-skin-default ul {
+    width: 20000px;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-skin-default li {
+    float: left;
+    margin: 0 17px 0 0;
+    padding: 0;
+}
+
+.jcarousel-skin-default li img {
+	display:block;
+    border: 2px solid #fff;
+}
+
+.item_car.item_list2{width:100%;}
+.item_car .jcarousel-skin-default{padding:5px 35px 5px 34px;}
+.item_list2.with_btns .jcarousel-skin-default{padding-right:34px;}
+.item_car .jcarousel-skin-default .jcarousel{height:263px;}
+.item_list2.with_btns .jcarousel-skin-default .jcarousel{height:306px;}
+.item_car .jcarousel-skin-default li{margin-right:5px;}
+.item_car .jcarousel-skin-default li img{border:none;}
+
+.jcarousel-skin-default .car_btn{display:block;position:absolute;top:50%;background:url(../images/car_btns.png) 0 0 no-repeat;width:32px;height:48px;margin-top:-24px;}
+.jcarousel-skin-default .car_btn:focus{outline:none;}
+.jcarousel-skin-default .car_btn.lbtn{left:11px;}
+.jcarousel-skin-default .car_btn.rbtn{right:11px;background-position:-32px 0;}
+.jcarousel-skin-default .car_btn.lbtn:hover{}
+.jcarousel-skin-default .car_btn.rbtn:hover{}
+
+.item_car .jcarousel-skin-default .car_btn{background:url(../images/car_btns2.png) 0 0 no-repeat;width:35px;height:84px;margin-top:-42px;}
+.item_car .jcarousel-skin-default .car_btn.lbtn{left:0;}
+.item_car .jcarousel-skin-default .car_btn.rbtn{right:0;background-position:-35px 0;}

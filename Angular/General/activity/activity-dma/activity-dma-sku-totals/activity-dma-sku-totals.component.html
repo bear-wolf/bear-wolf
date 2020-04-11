@@ -1,0 +1,56 @@
+<div class="content-block">
+  <div class="title-block title-border-gray">
+    <h2 class="title fs-20">Итого по всем SKU:</h2>
+  </div>
+
+    <table class="table table-forecast">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Потенциальный охват / объем</th>
+        <th>Потенциальная стоимость / экономия, руб</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Обучение фармацевтов</td>
+        <td>{{getTotalByField('prPharmacistTraining')}}</td>
+        <td>{{getTotalByField('pcPharmacistTraining')}}</td>
+      </tr>
+      <tr>
+        <td>Размещение на внешних рекламных поверхностях</td>
+        <td>{{getTotalByField('prExternalSurfaces')}}</td>
+        <td>{{getTotalByField('pcExternalSurfaces')}}</td>
+      </tr>
+      <tr>
+        <td>Размещение на внутренних рекламных поверхностях</td>
+        <td>{{getTotalByField('prIndoorSurfaces')}}</td>
+        <td>{{getTotalByField('pcIndoorSurfaces')}}</td>
+      </tr>
+      <tr>
+        <td>Радио реклама</td>
+        <td>{{getTotalByField('prRadio')}}</td>
+        <td>{{getTotalByField('pcRadio')}}</td>
+      </tr>
+      <tr>
+        <td>ТВ реклама</td>
+        <td>{{getTotalByField('prTv')}}</td>
+        <td>{{getTotalByField('pcTv')}}</td>
+      </tr>
+      <tr>
+        <td>Другое</td>
+        <td>{{getTotalByField('prOther')}}</td>
+        <td>{{getTotalByField('pcOther')}}</td>
+      </tr>
+      <tr>
+        <td>Всего</td>
+        <td>{{getTotal('pr')}}</td>
+        <td>{{getTotal('pc')}}</td>
+      </tr>
+      <tr>
+        <td colspan="2">ROI с учетом дополнительных эффектов:</td>
+        <td>{{getTotalRoi()}}</td>
+      </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,0 +1,41 @@
+<div [ngClass]="'filters-dialog'">
+    <h1 mat-dialog-title>Filter</h1>
+    <div mat-dialog-content
+         [ngClass]="'filters-dialog-container ' + parentClass"
+        *ngIf="scheme && scheme.data">
+
+      <div *ngIf="isFieldValue() && anotherField.length">
+          <mat-tab-group (selectedTabChange)="changeTab($event)">
+              <mat-tab label="Text">
+                  <filter-items [data]="onlyValue" (command)="onSearch()"></filter-items>
+              </mat-tab>
+
+              <mat-tab label="Fields">
+                  <filter-items [data]="anotherField" (command)="onSearch()"></filter-items>
+              </mat-tab>
+          </mat-tab-group>
+      </div>
+
+      <div *ngIf="!isFieldValue()">
+        <filter-items [data]="anotherField" (command)="onSearch()"></filter-items>
+      </div>
+
+      <div *ngIf="isFieldValue() && !anotherField.length">
+        <filter-items [data]="onlyValue" (command)="onSearch()"></filter-items>
+      </div>
+
+    </div>
+
+    <mat-card [ngClass]="'filter-buttons'">
+        <mat-card-content>
+            <div>
+                <button mat-button
+                        autoFocus
+                        #searchBtn
+                        (click)="onSearch()"
+                        tabindex="1">Search</button>
+                <button mat-button (click)="onClearFilterClick()" tabindex="2">Clear Form</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

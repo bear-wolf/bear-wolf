@@ -1,0 +1,97 @@
+/*css style for IE7*/
+
+html div,
+html li{
+	zoom:1;
+	}
+
+ul.line li.inp i{
+	display:block;
+	position:absolute;
+	top:1px;
+	font-size:0;
+	width:4px;
+	height:20px;
+	}
+ul.line li.inp i.u1{ left:0; background:url(../img/ugol/inp_lt.jpg) no-repeat;}
+ul.line li.inp i.u2{ right:0; background:url(../img/ugol/inp_rt.jpg) no-repeat;}
+
+
+ul.line li.sel{
+	position:relative;
+	padding:0 20px 0 2px;
+	}
+ul.line li.sel i{
+	display:block;
+	position:absolute;
+	top:0px;
+	font-size:0;
+	width:4px;
+	z-index:255;
+	height:20px;
+	}
+ul.line li.sel i.u1{ left:0px; background:url(../img/ugol/inp_lt.jpg) no-repeat;}
+ul.line li.sel i.u2{ right:19px; background:url(../img/ugol/inp_rt.jpg) no-repeat;}
+
+
+i.korz{
+	top:5px;
+	}
+
+
+ul.line li.button i.u11,
+ul.line li.button i.u22{
+	font-size:0;
+	position:absolute;
+	display:block;
+	width:4px;
+	height:29px;	
+	top:0px;
+	z-index:50;
+	}
+	
+ul.line li.button i.u1,
+ul.line li.button i.u2{
+	font-size:0;
+	position:absolute;
+	display:block;
+	width:4px;
+	height:29px;	
+	top:0px;
+	z-index:50;
+	}
+
+
+.menu span i{
+	bottom:2px;
+	}
+	
+.tab table tbody td div i.u1{ left:0; top:1px;}
+.tab table tbody td div i.u2{ right:-4px; top:1px;}
+
+/***********/
+.prostor ul.line li{
+	margin:0 3px 0 0;
+	}
+.prostor .divbutton input{
+	left:-10px;
+	}
+.prostor .divbutton i.u2{ right:-4px;}
+
+.prostor .block{
+	font-size:0;
+	padding:22px 5px 10px 20px;
+	}
+
+/**********/
+.contactus span i{
+	position:absolute;
+	font-size:0;
+	display:block;
+	width:4px;
+	height:4px;
+	}
+.contact span i.u1{ left:0; top:1px; }
+.contact span i.u2{ right:0px; top:1px; }
+.contact span i.u3{ right:0; bottom:1px; }
+.contact span i.u4{ left:0px; bottom:1px; }

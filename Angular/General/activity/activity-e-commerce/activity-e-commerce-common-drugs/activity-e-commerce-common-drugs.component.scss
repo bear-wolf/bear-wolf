@@ -1,0 +1,46 @@
+.commerce-common-drugs-content{
+  .item{
+    .controls-select-brand{
+      .ui-dropdown{
+        width: 200px;
+      }
+    }
+
+    .controls-autocomplete-sku{
+      &,
+      p-autocomplete,
+      .ui-widget{
+        width: 100%!important;
+      }
+
+      &>.form-control-input{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        &>label{
+          width: 115px!important;
+        }
+      }
+      p-multiSelect{
+        width: 100%;
+        .ui-multiselect{
+          min-height: 35px;
+        }
+      }
+    }
+
+    .form-control-input,
+    .form-control-select{
+      display: flex;
+      width: 100%;
+
+      &>label{
+        display: flex;
+        align-items: center;
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+
+  }
+}

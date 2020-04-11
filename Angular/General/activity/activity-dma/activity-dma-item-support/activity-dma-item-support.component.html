@@ -1,0 +1,22 @@
+<div class="content-block">
+  <div class="part-item-support title-block">
+    <h3 class="title">Элементы поддержки в аптеках</h3>
+    <h3 class="sub-title">Укажите, нужно ли задавать одинаковые элементы поддержки для брендов и SKU</h3>
+
+    <form [formGroup]="form">
+      <div class="item">
+        <app-form-controls-check
+                [label]="'Одинаковые для всех брендов'"
+                formControlName="identicalForAllBrandsoperty">
+        </app-form-controls-check>
+      </div>
+
+      <div class="item">
+        <app-form-controls-check
+                [label]="'Одинаковые для всех SKU в рамках бренда'"
+                formControlName="sameForAllSkusWithinBrand">
+        </app-form-controls-check>
+      </div>
+    </form>
+  </div>
+</div>

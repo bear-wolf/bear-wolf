@@ -1,0 +1,409 @@
+<div class="content-block common-activity-types-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Виды активностей</h3>
+    </div>
+
+    <div class="form-component">
+        <form [formGroup]="form">
+            <table class="border-none table-common">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Показатели</th>
+                        <th rowspan="2">Разновидности</th>
+                        <th colspan="2">Инвестиции</th>
+                        <th colspan="2">Рост продаж</th>
+                    </tr>
+                    <tr>
+                        <th class="widht-fix">План</th>
+                        <th class="widht-fix">Факт</th>
+                        <th class="widht-fix">План</th>
+                        <th class="widht-fix">Факт</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr-item">
+                        <td>Размещение баннера на сайте</td>
+                        <td>
+                            <app-form-controls-check
+                                    formControlName="placingBanner"
+                                    prefix="placingBanner"
+                                    #placingBanner
+                                    label="Размещение"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    [disabled]="checkStatus(placingBanner)"
+                                    formControlName="placingBannerInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    [disabled]="checkStatus(placingBanner)"
+                                    formControlName="placingBannerInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    [disabled]="checkStatus(placingBanner)"
+                                    formControlName="placingBannerPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(placingBanner)"
+                                    formControlName="placingBannerFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Оптимизация поиска на сервисе</td>
+                        <td>
+                            <app-form-controls-check
+                                    formControlName="firstLinkSearchOptimizationService"
+                                    prefix="firstLinkSearchOptimizationService"
+                                    #firstLinkSearchOptimizationService
+                                    label="Первая ссылка под строкой поиска на наименование товара, МНН, симптомы"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(firstLinkSearchOptimizationService)"
+                                    formControlName="firstLinkSearchOptimizationServicePlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(firstLinkSearchOptimizationService)"
+                                    formControlName="firstLinkSearchOptimizationServiceFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(firstLinkSearchOptimizationService)"
+                                    formControlName="firstLinkSearchOptimizationServicePlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(firstLinkSearchOptimizationService)"
+                                    formControlName="firstLinkSearchOptimizationServiceFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <app-form-controls-check
+                                    label="Соотнесение симтомов или действий с товаром"
+                                    prefix="actionWithGoodsSearchOptimizationService"
+                                    #actionWithGoodsSearchOptimizationService
+                                    formControlName="actionWithGoodsSearchOptimizationService"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(actionWithGoodsSearchOptimizationService)"
+                                    formControlName="actionWithGoodsSearchOptimizationServiceInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(actionWithGoodsSearchOptimizationService)"
+                                    formControlName="actionWithGoodsSearchOptimizationServiceInvestmentPlanFact"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(actionWithGoodsSearchOptimizationService)"
+                                    formControlName="actionWithGoodsSearchOptimizationServicePlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(actionWithGoodsSearchOptimizationService)"
+                                    formControlName="actionWithGoodsSearchOptimizationServiceFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <app-form-controls-check
+                                    label="Повышение рейтинга лекарственного средства при поиске по МНН"
+                                    #searchingForINNSearchOptimizationService
+                                    formControlName="searchingForINNSearchOptimizationService"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(searchingForINNSearchOptimizationService)"
+                                    formControlName="searchingForINNSearchOptimizationServiceInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(searchingForINNSearchOptimizationService)"
+                                    formControlName="searchingForINNSearchOptimizationServiceInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(searchingForINNSearchOptimizationService)"
+                                    formControlName="searchingForINNSearchOptimizationServicePlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(searchingForINNSearchOptimizationService)"
+                                    formControlName="searchingForINNSearchOptimizationServiceFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Информирование потребителей</td>
+                        <td>
+                            <app-form-controls-check
+                                    formControlName="promotionalArticlesConsumerAwareness"
+                                    prefix="promotionalArticlesConsumerAwareness"
+                                    #promotionalArticlesConsumerAwareness
+                                    label="Рекламные статьи для потребителей"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalArticlesConsumerAwareness)"
+                                    formControlName="promotionalArticlesConsumerAwarenessInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalArticlesConsumerAwareness)"
+                                    formControlName="promotionalArticlesConsumerAwarenessInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalArticlesConsumerAwareness)"
+                                    formControlName="promotionalArticlesConsumerAwarenessPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalArticlesConsumerAwareness)"
+                                    formControlName="promotionalArticlesConsumerAwarenessFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <app-form-controls-check
+                                    prefix="recommendedRelatedProductsConsumerAwareness"
+                                    label="Рекомендация сопутствиющих товаров 'С этим товаром заказывают'"
+                                    #recommendedRelatedProductsConsumerAwareness
+                                    formControlName="recommendedRelatedProductsConsumerAwareness"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(recommendedRelatedProductsConsumerAwareness)"
+                                    formControlName="recommendedRelatedProductsConsumerAwarenessInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(recommendedRelatedProductsConsumerAwareness)"
+                                    formControlName="recommendedRelatedProductsConsumerAwarenessInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(recommendedRelatedProductsConsumerAwareness)"
+                                    formControlName="recommendedRelatedProductsConsumerAwarenessPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(recommendedRelatedProductsConsumerAwareness)"
+                                    formControlName="recommendedRelatedProductsConsumerAwarenessFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">E-mail рассылки</td>
+                        <td>
+                            <app-form-controls-check
+                                    prefix="targetMailing"
+                                    label="Таргетная e-mail рассылка"
+                                    #targetMailing
+                                    formControlName="targetMailing"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(targetMailing)"
+                                    formControlName="targetMailingInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(targetMailing)"
+                                    formControlName="targetMailingInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(targetMailing)"
+                                    formControlName="targetMailingPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(targetMailing)"
+                                    formControlName="targetMailingFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <app-form-controls-check
+                                    prefix="massMailing"
+                                    label="Массовая e-mail рассылка"
+                                    #massMailing
+                                    formControlName="massMailing"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(massMailing)"
+                                    formControlName="massMailingInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(massMailing)"
+                                    formControlName="massMailingInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(massMailing)"
+                                    formControlName="massMailingPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(targetMailing)"
+                                    formControlName="massMailingFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td>Размещение рич-контента</td>
+                        <td>
+                            <app-form-controls-check
+                                    prefix="richContentPosting"
+                                    label="Размещение рич-контента Бренда на странице бренда"
+                                    #richContentPosting
+                                    formControlName="richContentPosting"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(richContentPosting)"
+                                    formControlName="richContentPostingInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(richContentPosting)"
+                                    formControlName="richContentPostingInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(richContentPosting)"
+                                    formControlName="richContentPostingPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(richContentPosting)"
+                                    formControlName="richContentPostingFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td>Участие в мета категориях</td>
+                        <td>
+                            <app-form-controls-check
+                                    prefix="participationMetaCategories"
+                                    label="Размещение в сезонных, акционных категориях. Например: осенняя профилактика, победи простуду"
+                                    #participationMetaCategories
+                                    formControlName="participationMetaCategories"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(participationMetaCategories)"
+                                    formControlName="participationMetaCategoriesInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(participationMetaCategories)"
+                                    formControlName="participationMetaCategoriesInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(participationMetaCategories)"
+                                    formControlName="participationMetaCategoriesPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(participationMetaCategories)"
+                                    formControlName="participationMetaCategoriesFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                    <tr class="line">
+                        <td colspan="6"></td>
+                    </tr>
+                    <tr>
+                        <td>Акция "Промокод по товару"</td>
+                        <td>
+                            <app-form-controls-check
+                                    label="Применимо к ОТС продуктам"
+                                    prefix="promotionalCodeProduct"
+                                    #promotionalCodeProduct
+                                    formControlName="promotionalCodeProduct"></app-form-controls-check>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalCodeProduct)"
+                                    formControlName="promotionalCodeProductInvestmentPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalCodeProduct)"
+                                    formControlName="promotionalCodeProductInvestmentFactPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalCodeProduct)"
+                                    formControlName="promotionalCodeProductPlanPrice"></app-form-controls-input>
+                        </td>
+                        <td>
+                            <app-form-controls-input
+                                    class="plan-item"
+                                    [disabled]="checkStatus(promotionalCodeProduct)"
+                                    formControlName="promotionalCodeProductFactPrice"></app-form-controls-input>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

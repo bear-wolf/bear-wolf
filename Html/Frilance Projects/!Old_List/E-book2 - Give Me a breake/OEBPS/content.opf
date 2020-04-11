@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="3.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 9.0" />
+		<meta name="cover" content="x203.png" />
+		<dc:title>Give Me A Break!</dc:title>
+		<dc:date>2013-11-26</dc:date>
+		<dc:language>en-US</dc:language>
+		<meta property="dcterms:modified">2013-08-09T12:00:00Z</meta>
+		<dc:identifier id="bookid">urn:uuid:59A9BF0D-AB5E-4051-82DA-065764FF496A</dc:identifier>
+	</metadata>
+	<manifest>
+		<item id="text1" href="text-1.html" media-type="text/html" />
+		<item id="text2" href="text-2.html" media-type="text/html" />
+		<item id="text3" href="text-3.html" media-type="text/html" />	
+		<item id="text4" href="text-4.html" media-type="text/html" />	
+		<item id="text5" href="text-5.html" media-type="text/html" />	
+		<item id="text6" href="text-6.html" media-type="text/html" />	
+		<item id="text7" href="text-7.html" media-type="text/html" />	
+		<item id="text8" href="text-8.html" media-type="text/html" />	
+		<item id="text9" href="text-9.html" media-type="text/html" />	
+		<item id="text10" href="text-10.html" media-type="text/html" />	
+		<item id="text11" href="text-11.html" media-type="text/html" />	
+		<item id="text12" href="text-12.html" media-type="text/html" />			
+		<item id="x203.png" href="image/Preview.png" media-type="image/png" />		
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="text1"/>
+		<itemref idref="text2"/>
+		<itemref idref="text3"/>
+		<itemref idref="text4"/>
+		<itemref idref="text5"/>
+		<itemref idref="text6"/>
+		<itemref idref="text7"/>
+		<itemref idref="text8"/>
+		<itemref idref="text9"/>
+		<itemref idref="text10"/>
+		<itemref idref="text11"/>
+		<itemref idref="text12"/>		
+	</spine>
+</package>

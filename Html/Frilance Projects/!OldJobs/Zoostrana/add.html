@@ -1,0 +1,182 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+   <link rel="stylesheet" type="text/css" href="css/pages.css" />
+   <script type="text/javascript" src="css/fixpng.js"></script>
+   <title>Добавить питомца</title>
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->	<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+
+<body>
+<div class="main">
+<div class="fixit">
+<!--HEADER-->
+	<div class="header">
+		
+		<div class="top_line">
+			<i class="u1"></i>
+			<i class="u2"></i>			
+			<div class="logo"><a href="#">Первая международная интернет-выставка животных</a></div>						
+		</div>
+		
+		<div class="autorizaciya">
+			<!--Добро пожаловать, <a href="#">Иван Иванов</a>
+			<input type="image" src="img/icon/button/exit.jpg" />-->
+			<table>
+				<tr>
+					<td>
+						<div>
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<input type="text" value="Email" class="toggle-inputs" />
+						</div>
+						<a href="#">Регистрация</a>
+					</td>
+					<td>
+						<div>
+							<i class="u1"></i>
+							<i class="u2"></i>
+							<input type="text" value="Пароль" class="toggle-inputs" />
+						</div>
+						<a href="#">Забыли&nbsp;пароль?</a>
+					</td>
+					<td class="go"><input type="image" src="img/icon/button/go.jpg" /></td>
+				</tr>
+			</table>
+			
+		</div>	
+		
+		<div class="add"><div><a href="#"></a></div></div>
+		
+	</div>
+	<!-- /HEADER -->
+
+            
+<!-- CONTENT -->			
+<div class="content">
+	<div class="wrapper">
+		
+		<div class="pokaz">
+			<table>
+				<tr>
+					<td>
+						<a class="dog"></a>
+						<div>
+							<a href="#"><img src="img/temp/big/pit_39.jpg" width="211" height="212" alt="" /></a>
+							<i class="dog"></i>
+						</div>
+						
+						  <div class="news">
+								<h1>Новые участники</h1>
+								<ul>
+									<li><a href="#"><img src="img/temp/small/pit_51.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_53.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_57.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_58.jpg" width="101" height="102" alt=""  /></a></li>
+								</ul>
+							</div>
+						
+					</td>
+					<td>
+						<a class="kot"></a>
+						<div>
+							<a href="#"><img src="img/temp/big/pit_42.jpg" width="211" height="212" alt="" /></a>
+							<i class="kot"></i>
+						</div>
+						  <div class="news">
+								<h1>Новые участники</h1>
+								<ul>
+									<li><a href="#"><img src="img/temp/small/pit_51.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_53.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_57.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_58.jpg" width="101" height="102" alt=""  /></a></li>
+								</ul>
+							</div>
+
+					</td>
+					<td>
+						<a class="zver"></a>
+						<div>
+							<a href="#"><img src="img/temp/big/pit_45.jpg" width="211" height="212" alt="" /></a>
+							<i class="zver"></i>
+						</div>
+						  <div class="news">
+								<h1>Новые участники</h1>
+								<ul>
+									<li><a href="#"><img src="img/temp/small/pit_51.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_53.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_57.jpg" width="101" height="102" alt=""  /></a></li>
+									<li><a href="#"><img src="img/temp/small/pit_58.jpg" width="101" height="102" alt=""  /></a></li>
+								</ul>
+							</div>
+					</td>
+				</tr>
+			</table>
+						
+			<div class="geografy">
+				<h3>География выставки</h3>
+				<img src="img/temp/karta/karta_big.jpg" width="891px" height="457px" alt="" />	
+			</div>
+		</div>		
+			
+	</div>	
+</div>
+<!-- /CONTENT========================= -->	
+           
+<!--FOOTER-->
+	<div class="footer">
+		<i class="u1"></i>
+		<i class="u2"></i>
+		<div class="bg">
+			<div>
+				<address>ЗООСТРАНА © 2007-2008 Название компании. Все права защищены</address>
+				<ul class="bot">
+					<li><a href="#">Вакансии</a> |</li>
+					<li><a href="#">Связаться с нами</a> |</li>
+					<li><a href="#">Разместить рекламу</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>		
+<!--/ FOOTER===============-->	
+</div>
+</div>
+</body>
+</html>

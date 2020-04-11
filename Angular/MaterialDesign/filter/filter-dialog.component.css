@@ -1,0 +1,56 @@
+.filter-elements{
+    display: flex;
+}
+
+.item .mat-hint{
+    display: none!important;
+}
+.item.mat-form-field-invalid .mat-hint{
+    display: block!important;
+    color: #f44336;
+}
+
+.filters-dialog-container .mat-form-field{
+    width: 100%;
+}
+.filters-dialog-container{
+    flex-direction: row;
+}
+.filters-dialog-container .item{
+    width: 100%;
+}
+.filters-dialog-container .filter-elements{
+    display: flex;
+}
+
+.filters-dialog-container.deals-container filter-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters-dialog-container.deals-container .item{
+    margin: 0 10px 10px 0;
+}
+
+.filters-dialog .mat-dialog-content{
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.filters-dialog .mat-expansion-panel-header,
+.filters-dialog .mat-expansion-panel-body {
+  padding: 0 8px;
+}
+
+
+.filter-buttons{
+    margin: 10px 0 0 0!important;
+}
+
+.filter-buttons .mat-card-content>div{
+    display: flex;
+}
+.filter-buttons .mat-card-content>div button{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+/*SAFARY*/
+
+/*html:root**/
+
+/*.safari3 ul.line li.inp i{
+	display:block;
+	position:absolute;
+	top:-3px;
+	font-size:0;
+	width:4px;
+	height:20px;
+	} */
+
+
+.find ul li input.button
+{
+	top:0px;	
+	}

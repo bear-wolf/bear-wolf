@@ -1,0 +1,107 @@
+<div class="content-block investments-content">
+    <div class="title-block title-border-gray">
+        <h3 class="title">Данные по расчетным инвестициям</h3>
+    </div>
+
+    <div class="form-component">
+        <form [formGroup]="form" class="rows-block">
+            <div class="row-item">
+                <span>
+                    <label class="first-level">Факт итого 2019, р.:</label>
+                </span>
+                <span>
+                    <app-form-controls-input
+                            formControlName="totalFactOldPrice"
+                            [hideErrors]="true"
+                            [errors]="form.get('totalFactOldPrice').errors">
+                    </app-form-controls-input>
+                </span>
+            </div>
+
+            <div class="row-item">
+                <span>
+                    <label class="first-level">% прироста органический:</label>
+                </span>
+                <span>
+                   <div class="investment-row">
+                      <app-form-controls-input
+                             formControlName="organicGrowth"
+                             [hideErrors]="true"
+                             [errors]="form.get('organicGrowth').errors">
+                      </app-form-controls-input>
+                      <label class="first-level">% инвестиций:</label>
+                      <app-form-controls-input
+                          formControlName="investmentPercentage"
+                          class="controls-input-investment-percentage"
+                          [hideErrors]="true"
+                          [errors]="form.get('investmentPercentage').errors">
+                        </app-form-controls-input>
+                   </div>
+
+                </span>
+            </div>
+
+            <div class="row-item">
+                <span>
+                    <label class="first-level">План итого 2020, р.:</label>
+                </span>
+                <span>
+                    {{basicMarketing.totalPlanNow}}
+                </span>
+            </div>
+
+            <div class="row-item">
+                <span>
+                    <label class="first-level">Инвестиции по матрице год, р.:</label>
+                </span>
+                <span>
+                    <div class="matrix-investment">
+                        <span>{{basicMarketing.matrixInvestmentsYear}}</span>
+                        <label class="first-level">месяц, р.:</label>
+                        <span>{{basicMarketing.matrixInvestmentsMonth}}</span>
+                    </div>
+                </span>
+            </div>
+
+            <div class="row-item">
+                <div>
+                    <label class="first-level">Расчетные инвестиции на период активности, р.:</label>
+                </div>
+                <div>
+                    <app-form-controls-input
+                            formControlName="estimatedInvestmentsForPeriodPrice"
+                            [hideErrors]="true"
+                            [errors]="form.get('estimatedInvestmentsForPeriodPrice').errors">
+                    </app-form-controls-input>
+                </div>
+            </div>
+
+            <div class="row-item">
+                <div>
+                    <label class="first-level">Цена отчетов 1 SKU, р:</label>
+                </div>
+                <div>
+                    <app-form-controls-input
+                            formControlName="oneSkuReportPricePrice"
+                            [hideErrors]="true"
+                            [errors]="form.get('oneSkuReportPricePrice').errors">
+                    </app-form-controls-input>
+                </div>
+            </div>
+
+            <div class="row-item">
+                <div>
+                    <label class="first-level">Фактический период предоставления отчетов:</label>
+                </div>
+                <div>
+                    <app-form-controls-period
+                            formControlName="actualReportingPeriod"
+                            [options]="periodOptions"
+                            [labels]="true"
+                            [errors]="form.get('actualReportingPeriod').errors">
+                    </app-form-controls-period>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

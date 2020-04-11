@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-4">
+    <app-activity-drugs-select
+            [itemsList]="dma.skuBlocks"
+            [bindLabel]="'skuBlockName'"
+            (itemSelected)="selectSkuBlock($event)">
+    </app-activity-drugs-select>
+  </div>
+  <div class="col-4">
+    <ng-container *ngFor="let skuBlock of dma.skuBlocks">
+      <app-activity-dma-sku-details
+          #innerFormComponent
+          *ngIf="skuBlock === selectedSkuBlock"
+          [sku]="skuBlock">
+      </app-activity-dma-sku-details>
+    </ng-container>
+  </div>
+  <div class="col-4">
+    <app-activity-dma-sku-totals
+            *ngIf="dma.skuBlocks"
+            [dma]="dma">
+    </app-activity-dma-sku-totals>
+  </div>
+</div>

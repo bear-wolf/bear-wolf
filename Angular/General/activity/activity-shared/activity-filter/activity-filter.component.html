@@ -1,0 +1,81 @@
+<div class="content-block activity-filter-content">
+  <div class="form-component"
+      *ngIf="modelFilter && modelFilter.isReady">
+    <form [formGroup]="form">
+      <div class="row">
+        <div class="col-7">
+          <div class="row row-one row-item">
+            <div class="col-6">
+              <app-form-controls-select
+                      formControlName="categoryNetwork"
+                      class="controls-select-category-network"
+                      placeholder="Выберите категорию сети"
+                      [errors]="form.get('categoryNetwork').errors"
+                      [hideErrors]="true"
+                      label="Категория сети"
+                      [options]="modelFilter.categoryNetwork">
+              </app-form-controls-select>
+            </div>
+            <div class="col-6">
+              <app-form-controls-select
+                      formControlName="segmentNetwork"
+                      class="controls-select-segment-network"
+                      placeholder="Выберите сегмент сети"
+                      [hideErrors]="true"
+                      [errors]="form.get('segmentNetwork').errors"
+                      label="Cегмент сети"
+                      [options]="modelFilter.segmentNetwork">
+              </app-form-controls-select>
+
+            </div>
+          </div>
+
+          <div class="row row-two row-item">
+            <div class="col-7">
+              <app-form-controls-multiselect
+                      class="controls-multiselect-list-brands"
+                      formControlName="brandIds"
+                      placeholder=""
+                      label="Показать МП с участием брендов"
+                      [hideErrors]="true"
+                      [options]="brands"
+                      [bindLabel]="'name'"
+                      [bindValue]="'id'"
+                      [errors]="form.get('brandIds').errors">
+              </app-form-controls-multiselect>
+            </div>
+            <div class="col-5"
+                 *ngIf="businessUnits">
+              <label class="first-level">Выбрать препараты по следующим BU:</label>
+              <div class="bu-list">
+                <ng-container *ngFor="let bu of businessUnits">
+                  <p-checkbox
+                          class="checkbox-item"
+                          [value]="bu.id"
+                          [label]="bu.name"
+                          name="businessUnits"
+                          [formControl]="form.get('bUIds')">
+                  </p-checkbox>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="btn-block justify-content-center d-flex h-100 align-items-end">
+            <button class="btn btn-primary max-width-150"
+                    (click)="show()"
+                    type="submit">
+              Показать
+            </button>
+            <button class="btn btn-danger max-width-150"
+                    (click)="reset()"
+                    type="submit">
+              Сбросить
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

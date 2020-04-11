@@ -1,0 +1,261 @@
+/*Navigation*/
+.slider .navigation {
+    position: relative;
+}
+
+    .slider .navigation .arrowleft.last {
+        background-position: left bottom;
+        display: none;
+    }
+
+    .slider .navigation .arrowright.last {
+        background-position: right bottom;
+        display: none;
+    }
+
+    .slider .navigation .arrowleft:hover {
+        background-position: left bottom;
+    }
+
+    .slider .navigation .arrowright:hover {
+        background-position: right bottom;
+    }
+
+    .slider .navigation .arrowleft,
+    .slider .navigation .arrowright {
+        width: 55px;
+        height: 96px;
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 105px;
+    }
+
+/*.slider .navigation .arrowleft {
+        background: url(../../Images/Background/slice2.png) no-repeat left top;
+        left: -85px;
+    }*/
+
+.slider .absolute {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+/*.slider .navigation .arrowright {
+    background: url(../../Images/Background/slice2.png) no-repeat right top;
+    right: 10px;
+}*/
+
+.slider .baserelative {
+    padding: 0 0px;
+}
+
+.slider .relative {
+    position: relative;
+    overflow: hidden;
+    height: 245px;
+    z-index: 500;
+    width: 100%;
+}
+
+.pagination a {
+    display: inline-block;
+    background: url(images/thumb.png) 0 0 no-repeat;
+    height: 38px;
+    width: 17px;
+    position: relative;
+    margin: 0 1px 0 2px;
+    font-size: 0;
+}
+
+    .pagination a:hover,
+    .pagination a.active {
+        background-position: right top;
+    }
+
+    .pagination a.active {
+        cursor: default;
+    }
+/*Navigation=======*/
+
+/*small_slider - slider*/
+.detail_procuct .slider {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 315px;
+    height: 88px;
+    z-index:150;
+}
+
+/*.default_slider - slider*/
+header .main_slider {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 137px;
+    z-index: 0;
+}
+
+.default_slider .bottomline {
+    padding: 0 19px;
+}
+
+.default_slider .absolute {
+    top: 0px!important;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 137px;
+}
+
+    .default_slider .absolute ul li {
+        position: relative;
+        width: 95px;
+        height: 88px;
+        float: left;
+    }
+
+.default_slider img {
+    border: 1px solid #cfcfcf;
+    padding: 3px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+
+.default_slider .navigation {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 322px;
+    height: 88px;
+}
+
+    .default_slider .navigation .arrowleft,
+    .default_slider .navigation .arrowright {
+        width: 9px;
+        height: 17px;
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        top: 36px;
+        background: url(images/arrow.png) no-repeat left top;
+        cursor: pointer;
+    }
+
+    .default_slider .navigation .arrowleft {
+        background-position: left top;
+        left: 0px;
+    }
+
+        .default_slider .navigation .arrowleft.last {
+            display: none;
+        }
+
+    .default_slider .navigation .arrowright.last {
+        display: none;
+    }
+
+    .default_slider .navigation .arrowright {
+        background-position: right top;
+        right: 0px;
+    }
+
+.default_slider .absolute ul li.active img {
+    border: 1px solid #d37b67;
+    background: #d37b67;
+}
+
+.default_slider .relative {
+    overflow: hidden;
+    position: relative;
+    z-index: 500;
+    margin: 0px;
+    width: 285px;
+    height: 88px;
+}
+/*.default_slider - slider =====================*/
+
+
+.pagination {
+    bottom: 16px;
+    position: absolute;
+    right: 180px;
+    z-index: 4000;
+}
+
+    .pagination a {
+        display: inline-block;
+        margin: 0 5px 0 0;
+        background: url(../../Images/Background/slice_3.png) no-repeat right top;
+        width: 15px;
+        height: 15px;
+        text-decoration: none;
+    }
+
+        .pagination a:hover, .pagination a.active {
+            text-decoration: none;
+            background: url(../../Images/Background/slice_3.png) no-repeat left top;
+        }
+
+.mainsliderbigarrow .navigation .arrowleft {
+    background: url(images/rightarrow.png) no-repeat left top;
+    left: -6px;
+}
+
+.mainsliderbigarrow .navigation .arrowleft,
+.mainsliderbigarrow .navigation .arrowright {
+    display: block;
+    width: 25px;
+    height: 53px;
+    z-index: 5000;
+    position: absolute;
+    top: 303px;
+}
+
+.mainsliderbigarrow .navigation .arrowright {
+    background: url(images/rightarrow.png) no-repeat right top;
+    right: -6px;
+}
+
+.mainsliderbigarrow .navigation .arrowleft.last {
+    background-position:left bottom;
+}
+
+.mainsliderbigarrow .navigation .arrowright.last {
+    background-position:right bottom;
+}
+
+.mainsliderbigarrow .mainslider {
+    margin: 0 0 0 -1px;
+}
+
+    .mainsliderbigarrow .mainslider .relative {
+        height: 412px;
+        overflow: hidden;
+        position: relative;
+        z-index: 500;
+        margin-right:5px;
+        margin-top:2px;
+    }
+
+    .mainsliderbigarrow .mainslider .absolute {
+        left: 0;
+        position: absolute;
+        top: -2px;
+        width: 100%;
+        height: 412px;
+    }
+
+    .mainsliderbigarrow .mainslider ul li {
+        height: 412px;
+        position: relative;
+        overflow: hidden;
+        width: 1204px;
+        float:left;
+    }

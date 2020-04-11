@@ -1,0 +1,52 @@
+/*OPERA*/
+
+
+
+
+@media not all and (-webkit-min-device-pixel-ratio) {
+ 
+   ul.line li.sel i{
+	display:block;
+	position:absolute;
+	
+	font-size:0;
+	width:4px;
+	z-index:255;
+	height:20px;
+	}
+	ul.line li.sel i.u1{ left:0px; top:0px;}
+	ul.line li.sel i.u2{ top:0px;}
+   
+   ul.line li.inp i{
+	display:block;
+	position:absolute;
+	font-size:0;
+	width:4px;
+	z-index:255;
+	height:20px;
+	}
+	ul.line li.inp i.u1{ left:0px; top:0px;}
+	ul.line li.inp i.u2{ top:0px;}
+	
+	
+	ul.line li.button input{
+		position:absolute;
+		left:78px;
+		top:-7px;
+		text-align:left;
+		width:87px;
+		padding:0 0 0 10px;
+		height:29px;
+		border:none;
+		}
+	ul.line li.button{ position:relative; padding:0 0 0 39px; height:29px;}
+	
+	ul.line li.button i.u1{	
+		top:-100px;
+		}
+	ul.line li.button i.korz{
+		right:14px;
+		top:6px;
+		}
+   
+}

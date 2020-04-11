@@ -1,0 +1,37 @@
+<div class="period-container">
+  <span>
+    <label *ngIf="labels">{{labelFrom}}</label>
+    <p-calendar [(ngModel)]="value.from"
+                (ngModelChange)="updatePeriodValue($event, 'from')"
+                view="month"
+                dateFormat="mm-y"
+                [yearNavigator]="true"
+                class="period-calendar"
+                yearRange="1900:2099"
+                [readonlyInput]="true">
+    </p-calendar>
+  </span>
+  <span *ngIf="!labels" class="delimiter"> — </span>
+  <span>
+    <label *ngIf="labels">{{labelTo}}</label>
+    <p-calendar [(ngModel)]="value.to"
+                (ngModelChange)="updatePeriodValue($event, 'to')"
+                view="month"
+                dateFormat="mm-y"
+                [yearNavigator]="true"
+                class="period-calendar"
+                yearRange="1900:2099"
+                [readonlyInput]="true">
+    </p-calendar>
+  </span>
+</div>
+
+<div *ngIf="errors" class="error-messages">
+  <div *ngIf="errors.requiredFrom" class="form-text text-danger">Required FROM error</div>
+  <div *ngIf="errors.requiredTo" class="form-text text-danger">Required TO error</div>
+  <div *ngIf="errors.period" class="form-text text-danger">Date FROM can not be later than date TO</div>
+</div>
+
+<div *ngIf="!errors && hint" class="form-text text-muted">
+  {{hint}}
+</div>

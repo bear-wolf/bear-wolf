@@ -1,0 +1,45 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.dma-total-content{
+  @include document-column-view;
+
+  .item1-content{
+    position: relative;
+    padding-bottom: 60px;
+
+    .document-content{
+      .item > span{
+        height: 38px;
+      }
+      .btn-update-block {
+        position: absolute;
+        top:initial;
+        bottom: 20px!important;
+        left: 10px!important;
+      }
+    }
+
+    .dma-total-content-data{
+      .item{
+        margin-bottom: $form-row-margin-bottom;
+
+        .form-control-select{
+          display: flex;
+          justify-content: space-between;
+          padding-right: 50px;
+          &>label{
+            font-weight: bold;
+          }
+
+          p-dropdown{
+            .ui-dropdown-label{
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

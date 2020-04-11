@@ -1,0 +1,451 @@
+﻿.big-title {
+    margin: 0 auto;
+    width: 472px;
+    height: 70px;
+    background: url(../images/about/title.png) no-repeat;
+    font-family: 'NeoSansPro-Regular';
+    font-size: 24px;
+    line-height: 60px;
+    color: white;
+    text-shadow: 0 0 0 1px black;
+    text-align: center;
+}
+
+    .big-title i {
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    .big-title.x1 {
+        width: 550px;
+        height: 75px;
+        background: url(../images/about/title-big.png) no-repeat;
+        line-height: 24px;
+        padding: 15px 0 0 0;
+    }
+
+
+.fixit-about {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+/*icon-job*/
+.icon-job {
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+
+    .icon-job .big-title {
+        margin-bottom: 48px;
+    }
+
+    .icon-job ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .icon-job li {
+        float: left;
+        width: 328px;
+        height: 306px;
+        padding-right: 10px;
+        padding-bottom: 26px;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+        .icon-job li:nth-child(3n) {
+            padding-right: 0;
+        }
+
+        .icon-job li i {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 328px;
+            height: 306px;
+            display: block;
+            z-index: 0;
+        }
+
+        .icon-job li.ico1 i {
+            background: url(../images/about/phone-netbook.jpg);
+            top: -41px;
+            height: 347px;
+        }
+
+        .icon-job li.ico2 i {
+            background: url(../images/about/phone-car.jpg);
+            top: -10px;
+            height: 316px;
+        }
+
+        .icon-job li.ico3 i {
+            background: url(../images/about/phone-office.jpg);
+            top: -34px;
+            height: 340px;
+        }
+
+        .icon-job li.ico4 i {
+            background: url(../images/about/phone-people.jpg);
+        }
+
+        .icon-job li.ico5 i {
+            background: url(../images/about/phone-shcool.jpg);
+            top: -15px;
+            height: 321px;
+        }
+
+        .icon-job li.ico6 i {
+            background: url(../images/about/phone-valentine.jpg);
+            top: -6px;
+            height: 312px;
+        }
+
+        .icon-job li p {
+            font-size: 16px;
+            color: #42515a;
+            font-family: 'NeoSansPro-Regular';
+            position: relative;
+            z-index: 5;
+            line-height: 19px;
+            text-align: center;
+            margin-top: 185px;
+        }
+
+        .icon-job li.ico5 p {
+            margin-top: 165px;
+        }
+/*icon-job===========*/
+
+
+/*proffy*/
+.proffy {
+    margin-bottom: 40px;
+}
+
+    .proffy .big-title {
+        margin-bottom: 23px;
+    }
+
+    .proffy li {
+        width: 233px;
+        padding-right: 24px;
+        float: left;
+    }
+
+        .proffy li:last-child {
+            padding-right: 0;
+        }
+
+        .proffy li div.images {
+            min-height: 250px;
+            margin-bottom: 14px;
+        }
+
+            .proffy li div.images img {
+                background: #cdcdcd;
+                padding: 6px;
+                border-radius: 5px;
+            }
+
+        .proffy li strong {
+            color: #42515a;
+            font-size: 18px;
+            line-height: 18px;
+            display: block;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .proffy li .pro {
+            color: #fe6404;
+            font-family: 'NeoSansPro-Regular';
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            line-height: 19px;
+            margin-bottom: 15px;
+        }
+
+        .proffy li p {
+            text-align: center;
+            font-size: 14px;
+            color: #42515a;
+            line-height: 16px;
+            font-family: 'NeoSansPro-Regular';
+        }
+
+        .proffy li .min-height {
+            min-height: 112px;
+        }
+
+        .proffy li .btn {
+            background: url(../images/about/btn.png) no-repeat;
+            height: 34px;
+            line-height: 34px;
+            width: 224px;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            font-family: Tahoma;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding: 0;
+            margin-top: 15px;
+        }
+/*proffy=======*/
+
+/*vugodno*/
+.vugodno {
+    margin-bottom: 28px;
+}
+
+    .vugodno .big-title {
+        margin-bottom: 24px;
+    }
+
+    .vugodno .column li {
+        float: left;
+        width: 340px;
+    }
+
+    .vugodno .col li {
+        float: none;
+        min-height: 107px;
+        padding-bottom: 8px;
+        position: relative;
+    }
+
+        .vugodno .col li p {
+            padding-left: 120px;
+            font-size: 16px;
+            color: #42515a;
+            line-height: 19px;
+            font-family: 'NeoSansPro-Regular';
+        }
+
+        .vugodno .col li i {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 106px;
+            height: 106px;
+        }
+
+    .vugodno .col1 i {
+        background: url(../images/about/ico-1.png) no-repeat;
+    }
+
+    .vugodno .col2 i {
+        background: url(../images/about/ico-2.png) no-repeat;
+    }
+
+    .vugodno .col3 i {
+        background: url(../images/about/ico-3.png) no-repeat;
+    }
+
+    .vugodno .col li.item1 i {
+        background-position: 0 0;
+    }
+
+    .vugodno .col li.item2 i {
+        background-position: 0 -115px;
+    }
+
+    .vugodno .col li.item3 i {
+        background-position: 0 -230px;
+    }
+
+    .vugodno .col li.item4 i {
+        background-position: 0 bottom;
+    }
+
+
+    .vugodno .col1 li.item1 p {
+        padding-top: 23px;
+    }
+
+    .vugodno .col1 li.item2 p {
+        padding-top: 23px;
+    }
+
+    .vugodno .col1 li.item3 p {
+        padding-top: 23px;
+    }
+
+    .vugodno .col1 li.item4 p {
+        padding-top: 23px;
+    }
+
+    .vugodno .col2 li.item1 p {
+        padding-top: 12px;
+    }
+
+    .vugodno .col2 li.item2 p {
+        padding-top: 12px;
+    }
+
+    .vugodno .col2 li.item3 p {
+        padding-top: 12px;
+    }
+
+    .vugodno .col2 li.item4 p {
+        padding-top: 4px;
+    }
+
+    .vugodno .col3 li.item1 p {
+        padding-top: 15px;
+    }
+
+    .vugodno .col3 li.item2 p {
+        padding-top: 23px;
+    }
+
+    .vugodno .col3 li.item3 p {
+        padding-top: 23px;
+    }
+
+    .vugodno .col3 li.item4 p {
+        padding-top: 23px;
+    }
+/*vugodno========*/
+
+
+/*catalog*/
+.catalog {
+    margin-bottom:50px;
+}
+
+    .catalog .big-title {
+        margin-bottom: 26px;
+    }
+
+    .catalog .column li {
+        float: left;
+        width: 250px;
+    }
+
+    .catalog .column {
+        width:500px;
+        display:block;
+        margin-left:305px;
+    }
+
+    .catalog .column .col li {
+        float: none;
+        min-width: 48px;
+        padding-bottom: 7px;
+    }
+
+        .catalog .column .col li a {
+            display: block;
+            padding: 0 0 0 59px;
+            line-height: 48px;
+            font-family: 'NeoSansPro-Regular';
+            text-decoration: none;
+            color: #42515a;
+            font-size: 18px;
+            position: relative;
+        }
+
+            .catalog .column .col li:hover a,
+            .catalog .column .col li a:hover {
+                text-decoration: underline;
+            }
+
+    .catalog .column li a i {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        background: url(../images/about/ico.png) no-repeat;
+    }
+
+    .catalog .column .col1 li.item1 a i {
+        background-position: left top;
+    }
+
+    .catalog .column .col1 li.item1:hover a i {
+        background-position: right top;
+    }
+
+    .catalog .column .col1 li.item2 a i {
+        background-position: left -48px;
+    }
+
+    .catalog .column .col1 li.item2:hover a i {
+        background-position: right -48px;
+    }
+
+    .catalog .column .col1 li.item3 a i {
+        background-position: left -96px;
+    }
+
+    .catalog .column .col1 li.item3:hover a i {
+        background-position: right -96px;
+    }
+
+    .catalog .column .col1 li.item4 a i {
+        background-position: left -144px;
+    }
+
+    .catalog .column .col1 li.item4:hover a i {
+        background-position: right -144px;
+    }
+
+    .catalog .column .col2 li.item5 a i {
+        background-position: left -192px;
+    }
+
+    .catalog .column .col2 li.item5:hover a i {
+        background-position: right -192px;
+    }
+
+    .catalog .column .col2 li.item6 a i {
+        background-position: left -240px;
+    }
+
+    .catalog .column .col2 li.item6:hover a i {
+        background-position: right -240px;
+    }
+
+    .catalog .column .col2 li.item7 a i {
+        background-position: left bottom;
+    }
+
+    .catalog .column .col2 li.item7:hover a i {
+        background-position: right bottom;
+    }
+/*sertificate=========*/
+
+
+/*sertificate*/
+.sertificate {
+    margin-bottom: 42px;
+}
+
+    .sertificate .big-title {
+        margin-bottom: 26px;
+    }
+
+    .sertificate ul li {
+        width: 161px;
+        padding-right: 8px;
+        float: left;
+    }
+
+        .sertificate ul li img {
+            padding: 3px;
+            background: white;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+/*sertificate=========*/

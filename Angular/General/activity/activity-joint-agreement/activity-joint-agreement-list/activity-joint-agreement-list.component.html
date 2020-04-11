@@ -1,0 +1,21 @@
+<div class="content-block joint-agreement-list-content">
+    <div class="content-header">
+        <div class="title-block title-border-gray">
+            <h3 class="title">Активности, входящив в объединенный договор</h3>
+        </div>
+    </div>
+
+    <div class="content-body">
+        <app-activity-list
+                *ngIf="activity"
+                [activity]="activity"
+                [filter]="filter"
+                [innerPage]="true"
+                [isFilter]="false"
+                [header]="false"></app-activity-list>
+
+        <h3 class="title not-found-data"
+            *ngIf="!activity">Нету данных для отображения</h3>
+    </div>
+
+</div>

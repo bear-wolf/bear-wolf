@@ -1,0 +1,3405 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    line-height: 1.4;
+    color: black;
+    background: white;
+    font-family: Arial;
+    font-size: 12px;
+    color: #111017;
+}
+
+img {
+    border: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+aside, nav, footer, header, section {
+    display: block;
+}
+
+input, select, textarea {
+    outline: none;
+}
+/*Reset==============*/
+
+/*font-face*/
+
+@font-face {
+    font-family: "OpenSansRegular";
+    font-style: normal;
+    font-weight: 100;
+    font-stretch: condensed;
+    src: url('../fonts/opensans-regular.ttf') format("truetype");
+}
+/*font-face==============*/
+
+
+
+div {
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url(../images/background/body.jpg) repeat;
+    color: #281311;
+    font-family: "OpenSansRegular";
+    font-size: 12px;
+}
+
+ul li {
+    list-style: none;
+}
+
+div.clear {
+    clear: both;
+    font-size: 0;
+}
+
+/* UTIL */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.easyfix {
+    overflow: hidden;
+}
+
+.none span,
+.none a span {
+    display: none;
+}
+
+a:link,
+a:visited {
+    font-family: "OpenSansRegular";
+    font-size: 12px;
+    color: #acacac;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 12px;
+    color: #281311;
+    font-family: "OpenSansRegular";
+    line-height: 15px;
+    padding-bottom: 11px;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
+.Main {
+    position: relative;
+    min-height: 100%;
+    font-family: Arial;
+}
+
+header {
+    position: relative;
+    height: 82px;
+    padding: 10px 0 0 0;
+    background: url(../images/background/headbg.jpg) repeat-x center top;
+}
+
+    header .inside {
+        width: 1195px;
+        background: url(../images/menu/mainbg.jpg) repeat-x;
+        height: 62px;
+        padding: 0px 0 0 0;
+        border: 2px solid #2eaddf;
+        position: relative;
+    }
+
+#Content {
+    position: relative;
+    padding: 10px 0 220px 0;
+    width: 1204px;
+    margin-top: 0px;
+    background: #FFF;
+}
+
+    #Content:after,
+    .Wrapper:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+.Wrapper {
+    padding: 0;
+}
+
+.LeftPart {
+    position: relative;
+    float: left;
+    width: 291px;
+    padding: 0 0 0 20px;
+    text-align: left;
+}
+
+.RightPart {
+    position: relative;
+    float: right;
+    width: 224px;
+    padding: 8px 6px 0 0;
+}
+
+.CenterPart {
+    text-align: left;
+    padding: 0 3px 0 0;
+}
+
+.MiddlePart {
+    margin-left: 329px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 184px;
+    background: url(../images/background/footer.png) repeat-x;
+}
+
+    footer .insidefoter {
+        width: 1204px;
+    }
+
+.logo {
+    background: url(../images/logo/logo.png) no-repeat;
+    display: block;
+    width: 226px;
+    float: left;
+    margin: 18px 0 0 20px;
+    height: 25px;
+}
+
+.inside ul {
+    float: right;
+    list-style: none;
+}
+
+    .inside ul li {
+        line-height: 0;
+        position: relative;
+        float: left;
+        height: 60px;
+        padding: 0 0px 0 0px;
+        background: url(../images/menu/limain.jpg) no-repeat right center;
+        max-width: 157px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+        .inside ul li a {
+            padding: 30px 25px 0 25px;
+            height: 30px;
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            font-family: "OpenSansRegular";
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+            .inside ul li a:hover {
+                text-decoration: none;
+            }
+                    
+        .inside ul li ul li {
+            float: none;
+            background: url(../images/menu/subli1.png) repeat-x;
+            border: 1px solid #056cae;
+            z-index: 9999;
+            border-bottom: 1px solid #02a5da;
+            border-top: none;
+            height: 33px;
+            line-height: 0;
+            padding: 0;
+            width: 193px;
+            margin: 0;
+        }
+
+ul.level0 li ul li:hover {
+    background: url(../images/menu/subli2.png) repeat-x;
+}
+
+ul.level0 li ul li.Last {
+    border-bottom: 1px solid #006ba9;
+}
+
+.inside ul li ul li a:hover {
+    background: none;
+}
+
+.inside ul li ul li a {
+    padding: 17px 0 0 25px;
+    height: 33px;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    font-family: "OpenSansRegular";
+}
+
+ul.level0 li ul {
+    position: absolute;
+    left: -1px;
+    top: 58px;
+    display: none;
+    border: 1px solid #006ba9;
+    border-top: 4px solid transparent;
+}
+
+ul.level0 li .level1 li {
+    margin-top: -1px;
+    float: none;
+    border-top: 1px solid #b8b8b8;
+}
+
+ul.level1 li ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 0px;
+}
+
+ul.level0 li.hover a.top0,
+ul.level0 li a.Active {
+    text-decoration: none;
+    background: url(../images/menu/lihoverbg.jpg) repeat-x 0 1px;
+}
+ul.level0 li .level1 li:hover a.top1,
+ul.level0 li .level2 li:hover a.top2,
+ul.level0 li .level3 li:hover a.top3,
+ul.level0 li .level4 li:hover a.top4{ background: url(../images/menu/subli2.png) repeat-x;}
+
+ul.level0 li:hover .level1 {
+    display: block;
+}
+
+.inside .lang {
+    background: url(../images/icons/lang.png) no-repeat center left;
+    margin: 11px 0 0 20px;
+    padding: 10px 25px 0 25px;
+    position: relative;
+    line-height: 0;
+    font: 100 12px Tahoma;
+    color: #0bb1e8;
+}
+
+    .inside .lang:hover {
+        background: url(../images/icons/lang.png) no-repeat center left;
+    }
+
+
+.select-dropdown {
+    width: 82px!important;
+}
+
+.inside .lang i {
+    background: url(../images/icons/lang2.png) no-repeat;
+    width: 5px;
+    position: relative;
+    margin: 7px 0 0 5px;
+    float: right;
+    height: 3px;
+    display: block;
+}
+
+.select-wrap2 {
+    border: 1px solid #CFD8E6;
+    color: #281311;
+    cursor: default;
+    display: block;
+    font-family: "OpenSansRegular";
+    height: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.select-button2 {
+    background: url("../images/icons/select.png") no-repeat scroll right top transparent;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 23px;
+}
+
+.select-title2 {
+    display: block;
+    height: 17px;
+    line-height: 17px;
+}
+
+
+
+
+
+
+.leftmenu {
+    height: 490px;
+    overflow: hidden;
+    list-style: none;
+}
+
+    .leftmenu li {
+        background: url(../images/menu/leftmenli1.png) repeat-x;
+        /*border:1px solid #02a6db;*/
+        padding: 0 0 0 0px;
+        line-height: 0;
+        min-height: 62px;
+    }
+
+        .leftmenu li:hover,
+        .leftmenu li.Active {
+            background: url(../images/menu/leftmenli2.png) repeat-x; /*border:1px solid #056cae;*/
+        }
+
+        .leftmenu li a {
+            background: url(../images/menu/arrow1.png) no-repeat 18px center;
+            padding: 30px 0 0 50px;
+            display: block;
+            font-size: 16px;
+            color: #fff;
+            font-family: "OpenSansRegular";
+            min-height: 32px;
+        }
+
+            .leftmenu li a:hover {
+                text-decoration: none;
+            }
+
+        .leftmenu li.Active a {
+            background: url(../images/menu/arrow2.png) no-repeat 18px center;
+        }
+
+        .leftmenu li.Active .submen {
+            display: block;
+        }
+
+.scroll2 {
+    height: 180px !important;
+}
+
+.submen {
+    height: 175px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    background: #FFF;
+}
+
+    .submen li {
+        border: none;
+        background: url(../images/menu/bread.png) repeat-x bottom left !important;
+        min-height: 30px !important;
+    }
+
+        .submen li a {
+            background: none !important;
+            padding: 15px 10px 0 15px;
+            min-height: 15px !important;
+            display: block;
+            width: 235px;
+            position: relative;
+            font-size: 14px;
+            color: #000;
+            font-family: Arial;
+        }
+
+            .submen li a span {
+                float: left;
+                position: relative;
+            }
+
+            .submen li a:hover, 
+            .submen li:hover {
+                border: none !important;
+            }
+
+        .submen li.Active i {
+            background: url(../images/menu/trup.png) no-repeat;
+        }
+
+    .submen i {
+        background: url(../images/menu/trdown.png) no-repeat;
+        width: 5px;
+        position: absolute;
+        right: -13px;
+        top: 0px;
+        height: 3px;
+        display: block;
+    }
+
+        .submen i:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+    .submen li div {
+        background: url(../images/menu/bread.png) repeat-x top left !important;
+        padding: 20px 0 20px 20px;
+        display: none;
+        min-height: 60px !important;
+    }
+
+    .submen li.Active div {
+        display: block;
+    }
+
+.actual {
+    margin: 20px 0 3px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #0bb1e8;
+    font-family: "OpenSansBold";
+}
+
+.submen li div p {
+    font-size: 12px;
+    line-height: 0px;
+    position: relative;
+    height: 21px;
+    margin: 0 0 3px 0;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+    .submen li div p a {
+        font-size: 12px;
+        color: #0bb1e8;
+        font-family: Arial;
+        padding: 10px 0 0 0px;
+        margin: 0 0 0 30px;
+        float: none;
+        text-decoration: underline;
+    }
+
+    .submen li div p span {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+/*.submen li div p span{
+	    background:url(../images/menu/checkbox.png) no-repeat right top;
+        cursor: pointer;
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 21px;
+	    }    
+    .submen li div p span.active {
+	    background:url(../images/menu/checkbox.png) no-repeat left top;
+    }*/
+
+.social {
+    background: url(../images/icons/social.png) no-repeat;
+    width: 195px;
+    height: 36px;
+    float: left;
+    margin: 4px 10px 10px 0;
+}
+
+    .social a {
+        width: 35px;
+        height: 35px;
+        display: block;
+        float: left;
+        margin: 0 8px 0 0;
+    }
+
+footer .text {
+    margin: 25px 0px 0 0;
+    text-align: justify;
+    font-size: 11px;
+    color: #00347e;
+    font-family: Tahoma;
+}
+
+footer ul li {
+    float: left;
+    border-right: 1px solid #FFF;
+    margin: 30px 0px 20px 0px;
+    padding: 0 20px 0 20px;
+}
+
+footer .first {
+    padding: 0 20px 0 0px;
+}
+
+footer .last {
+    border: none;
+}
+
+footer ul li a {
+    font: 100 12px Tahoma !important;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+footer p {
+    float: right;
+    height: 28px;
+    font: 100 12px Arial;
+    margin: 19px 0 0 0;
+    color: #FFF;
+    display: block;
+    position: relative;
+    padding: 15px 130px 0 0;
+}
+
+    footer p a {
+        font: bold 12px Arial !important;
+        color: #FFF !important;
+        text-decoration: underline !important;
+    }
+
+        footer p a:hover {
+            text-decoration: none !important;
+        }
+
+
+
+/*Dialog*/
+.Dialog {
+    background: url("../images/alpha.png") repeat scroll 0 0 transparent;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+    .Dialog.Active {
+        display: block;
+    }
+
+    .Dialog .Reset,
+    .Dialog .Exit {
+        position: absolute;
+        display: block;
+        right: -39px;
+        top: 11px;
+        width: 25px;
+        height: 25px;
+        background: url(../images/icons/close.png) no-repeat;
+    }
+
+    .Dialog table.DBase {
+        height: 100%;
+        width: 100%;
+    }
+
+    .Dialog table td.DBaseTd {
+        text-align: center;
+        vertical-align: middle;
+    }
+/*Dialog===============*/
+
+
+/*Width837*/
+.Width837 {
+    background: url(../images/background/dialog837.png) no-repeat scroll;
+    height: 615px;
+    position: relative;
+    width: 837px;
+    z-index: 600;
+    text-align: center;
+}
+
+    .Width837 .background {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 807px;
+        height: 585px;
+        background: #e7e9eb;
+    }
+
+    .Width837 .BigPhotoSlider .Baseimages {
+        position: absolute;
+        left: 85px;
+        top: 45px;
+        max-width: 657px;
+        max-height: 409px;
+        border: 1px solid #cdcfd0;
+        padding: 2px;
+        background: #e5e5e5;
+    }
+
+.margrez {
+    margin: 17px 0 0 56px !important;
+}
+
+/*Width837========*/
+
+/*ItemChat*/
+.ItemChat {
+    margin: 0 0 0 2px;
+}
+
+    .ItemChat .Name {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        display: block;
+        line-height: 12px;
+    }
+
+    .ItemChat textarea {
+        resize: none;
+        overflow: auto;
+        border-radius: 2px;
+        height: 48px;
+        width: 100%;
+        border: none;
+    }
+
+    .ItemChat .BigArea textarea {
+        height: 98px;
+    }
+
+    .ItemChat .MidlleArea textarea {
+        height: 78px;
+    }
+
+    .ItemChat .Area {
+        padding-right: 19px;
+        padding: 5px;
+        margin-right: 0px;
+        border: 1px solid #b2c2d9;
+        margin-bottom: 10px;
+    }
+/*ItemChat====*/
+
+
+/*BlockChat*/
+.BlockChat {
+}
+
+    .BlockChat .Title {
+        font-size: 30px;
+        font-family: "OpenSansBold";
+        font-weight: normal;
+        color: #035499;
+        margin-bottom: 3px;
+    }
+
+    .BlockChat .BaseUl {
+        margin-bottom: 15px;
+    }
+
+        .BlockChat .BaseUl ul li {
+            display: inline;
+            padding-right: 23px;
+        }
+
+            .BlockChat .BaseUl ul li a {
+                text-decoration: underline;
+                color: #111017;
+                font-family: Arial;
+                font-size: 14px;
+            }
+
+                .BlockChat .BaseUl ul li a:hover {
+                    text-decoration: none;
+                }
+/*BlockChat========*/
+
+
+/*Smallmenu*/
+.Smallmenu {
+    position: relative;
+    height: 44px;
+    margin-bottom: 24px;
+}
+
+    .Smallmenu ul li {
+        float: left;
+        width: 86px;
+        height: 44px;
+        padding-left: 1px;
+    }
+
+        .Smallmenu ul li.first {
+            padding-left: 0;
+        }
+
+        .Smallmenu ul li a {
+            width: 88px;
+            height: 44px;
+            display: block;
+            padding: 0;
+            line-height: 44px;
+            background: url(../images/menu/smallmenu.png) no-repeat center top;
+            font-size: 14px;
+            color: #0bb1e8;
+            text-align: center;
+        }
+
+        .Smallmenu ul li.Item2 a, .Smallmenu ul li.Item7 a, .Smallmenu ul li.Item8 a, .Smallmenu ul li.Item9 a {
+            padding: 9px 0 0 0;
+            height: 35px;
+            line-height: 13px;
+        }
+
+        .Smallmenu ul li:hover a,
+        .Smallmenu ul li.Active a {
+            background-position: left bottom;
+            color: white;
+            text-decoration: none;
+        }
+/*Smallmenu========*/
+
+.newsblock {
+    background: url(../images/background/news.png) no-repeat;
+    width: 292px;
+    margin: 0 0 5px 0;
+    height: 82px;
+    overflow: hidden;
+}
+
+.newsblock1 {
+    text-align: center;
+    width: 50px;
+}
+
+.newsblock2 {
+    width: auto;
+    font: 100 11px Tahoma;
+    color: #858585;
+}
+
+    .newsblock2 b, .newsblock2 a {
+        font: bold 14px Tahoma;
+        text-decoration: none;
+        margin: 0 0 2px 0;
+        display: block;
+        color: #000;
+    }
+
+        .newsblock2 a:hover {
+            text-decoration: underline;
+        }
+
+.newsblock3 {
+    width: 60px;
+    padding: 0 3px 0 0;
+    text-align: center;
+    font: bold 13px Tahoma;
+    color: #fff;
+}
+
+    .newsblock3 b {
+        display: block;
+        font: bold 20px Tahoma;
+    }
+
+    .newsblock3 span {
+        display: block;
+        font: 100 11px Tahoma;
+    }
+
+.novinki {
+    background: url(../images/background/redarrow.png) no-repeat right center;
+    padding: 0 25px 0 0;
+    font: bold 12px Tahoma;
+    color: #1d1d1d !important;
+    margin: 15px 0 20px 0;
+    display: inline-block;
+    text-decoration: underline;
+    height: 17px;
+}
+
+.novinki {
+    text-decoration: none;
+}
+
+
+/*Maps*/
+.Maps {
+    min-height: 292px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .Maps .BaseIframe {
+        border: 1px solid #c8c8c8;
+        background: #f7f5f2;
+        padding: 5px;
+        line-height: 0;
+        width: 624px;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .Maps iframe {
+        width: 624px;
+        height: 292px;
+    }
+
+    .Maps .Inner {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 219px;
+        height: 276px;
+    }
+
+    .Maps .Title {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        display: block;
+        margin-bottom: 11px;
+    }
+
+    .Maps p {
+        font-family: Arial;
+        font-weight: normal;
+        font-size: 12px;
+        padding: 0 0 4px 0;
+        line-height: 14px;
+        color: #111017;
+    }
+
+        .Maps p.Last {
+            padding-bottom: 20px;
+        }
+
+    .Maps a {
+        font-family: Arial;
+        font-size: 12px;
+        color: #0bb1e8;
+        text-decoration: underline;
+    }
+
+        .Maps a:hover {
+            text-decoration: none;
+        }
+
+    .Maps b {
+        display: block;
+        margin-top: 19px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Arial;
+    }
+/*Maps============*/
+
+/*Grid*/
+.Grid table {
+    border: 1px solid #cfd8e6;
+}
+
+    .Grid table td,
+    .Grid table th {
+        vertical-align: middle;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid #cfd8e6;
+    }
+
+    .Grid table th {
+        font-weight: normal;
+        background: url(../images/background/Grid.jpg) repeat-x;
+        width: 81px;
+        height: 39px;
+        font-family: Tahoma;
+        color: #000;
+    }
+
+        .Grid table th.Last {
+            width: auto;
+        }
+
+    .Grid table td {
+        font-family: Arial;
+        color: #111017;
+        vertical-align: middle;
+        height: 72px;
+    }
+
+        .Grid table td b {
+            display: block;
+            font-size: 18px;
+            color: #035499;
+            font-family: "OpenSansBold";
+        }
+
+        .Grid table td.Last {
+            padding: 0 10px;
+            text-align: left;
+        }
+
+        .Grid table td.background {
+            color: white;
+            font-size: 18px;
+            font-family: "OpenSansBold";
+            background: #0bb1e8;
+        }
+/*Grid========*/
+
+.BlockChat .BaseUl ul li.Active a {
+    text-decoration: none;
+}
+
+.ListSlider .Title {
+    font-size: 14px;
+    font-family: "OpenSansBold";
+    padding-bottom: 5px;
+    display: block;
+    line-height: normal;
+}
+
+.ListSlider li .Slider {
+    background: #d2d6de;
+    height: 106px;
+    margin-bottom: 10px;
+}
+
+.ListSlider .absolute ul li {
+    width: 131px;
+    height: 95px;
+    float: left;
+    font-size: 11px;
+    font-family: Arial;
+    text-align: center;
+}
+
+    .ListSlider .absolute ul li .SmallPhoto {
+        width: 115px;
+        height: 70px;
+        border: 1px solid #b4b8bf;
+        background: #e5e5e5;
+        padding: 3px;
+        margin-bottom: 2px;
+    }
+
+    .ListSlider .absolute ul li.Active .SmallPhoto {
+        background: #0bb1e8!important;
+    }
+
+.ListSlider .SmallText {
+    margin-top: -4px;
+}
+
+.Title span {
+    color: #0bb1e8;
+}
+
+
+
+
+.blublock {
+    background: url(../images/background/blublock.png) no-repeat;
+    width: 391px;
+    height: 287px;
+    padding: 20px;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.blublock .nazv {
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #fff;
+    font-family: "OpenSansRegular";
+}
+
+.longinp {
+    height: 30px;
+    border: none;
+    width: 379px;
+    font: 100 14px Tahoma;
+    color: #8c8c8c;
+    padding: 0 0 0 10px;
+    background: #FFF;
+}
+
+.ie8 .longinp {
+    padding: 5px 0 0 10px;
+    width: 378px;
+    height: 25px;
+}
+
+.blublock .nazv2 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #53d4ff;
+    font-family: "OpenSansRegular";
+}
+
+
+.blublock .camera {
+    background: url(../images/background/camera.png) no-repeat;
+    width: 190px;
+    text-transform: uppercase;
+    height: 83px;
+    margin: 45px auto 0px auto;
+    padding: 15px 10px 10px 95px;
+    font-size: 18px;
+    color: #fff;
+    font-family: "OpenSansRegular";
+    display: block;
+}
+
+.blublock .camera2 {
+    background: url(../images/background/button1.png) no-repeat;
+    width: 215px;
+    text-transform: uppercase;
+    height: 53px;
+    margin: 30px auto 0px auto;
+    padding: 9px 10px 10px 75px;
+    font-size: 18px;
+    color: #fff;
+    font-family: "OpenSansRegular";
+    display: block;
+}
+
+.blublock .camera3 {
+    background: url(../images/background/button2.png) no-repeat;
+    width: 215px;
+    text-transform: uppercase;
+    height: 53px;
+    margin: 10px auto 0px auto;
+    padding: 8px 10px 10px 75px;
+    font-size: 18px;
+    color: #fff;
+    font-family: "OpenSansRegular";
+    display: block;
+}
+
+.ie8 .blublock .camera3 {
+    line-height: 17px;
+}
+
+.ie8 .blublock .camera2 {
+    line-height: 17px;
+}
+
+.ie8 .blublock .camera {
+    line-height: 20px;
+}
+
+.blublock .label1 {
+    font: 100 14px Tahoma;
+    color: #fff;
+    padding: 0;
+    margin: 5px 0 3px 0;
+}
+
+.date {
+    margin: 0;
+    position: relative;
+}
+
+.IconDate {
+    background: url(../images/icons/datepicker.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 0;
+    height: 21px;
+    position: absolute;
+    right: 8px;
+    top: 2px;
+    width: 23px;
+}
+
+.dateinput {
+    height: 25px;
+    border: none;
+    width: 140px;
+    font: 100 14px Tahoma;
+    color: #8c8c8c;
+    padding: 0 40px 0 10px;
+    margin: 0 2px 15px 0;
+    background: #FFF;
+}
+
+.inputtext {
+    height: 25px;
+    border: none;
+    width: 110px;
+    font: 100 14px Tahoma;
+    color: #8c8c8c;
+    margin: 0 15px 0 0;
+    padding: 0 0 0 10px;
+    background: #FFF;
+}
+
+.lastinp {
+    margin: 0 !important;
+}
+
+.margin15 {
+    margin: 15px;
+}
+
+.redbutton {
+    width: 110px;
+    background: url(../images/background/redbutfon.png) repeat-x;
+    height: 35px;
+    border: 1px solid #982121;
+    text-align: center;
+    margin: 15px 0 0 0;
+    text-transform: uppercase;
+    padding: 7px 0 0 0;
+    font-size: 18px !important;
+    color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+    display: block;
+    text-decoration: none;
+}
+
+    .redbutton:hover {
+        background-position: left bottom;
+        text-decoration: none!Important;
+        border: 1px solid #6d6d6d;
+    }
+
+.longbutton1 {
+    background: url(../images/background/blublockbuttons.png) no-repeat left top;
+    width: 433px;
+    height: 49px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px 0 0 0;
+    padding: 10px 0 0 0;
+    font-size: 18px !important;
+    color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+}
+
+    .longbutton1:hover {
+        /*background:url(../images/background/blublockbuttons.png) no-repeat right top;*/
+        text-decoration: none;
+    }
+
+.longbutton2 {
+    background: url(../images/background/blublockbuttons.png) no-repeat right top;
+    width: 433px;
+    height: 49px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px 0 0 0;
+    padding: 10px 0 0 0;
+    font-size: 18px !important;
+    color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+}
+
+    .longbutton2:hover {
+        background: url(../images/background/blublockbuttons.png) no-repeat left top;
+        text-decoration: none;
+    }
+
+.line5 {
+    border-bottom: 5px solid #bfccdf;
+    height: 5px;
+    float: none;
+    clear: right;
+    width: 100%;
+    line-height: 0;
+    font-size: 0;
+    margin: 5px 0 15px 0;
+}
+
+.nulline {
+    height: 1px;
+    float: none;
+    clear: right;
+    width: 100%;
+    line-height: 0;
+    font-size: 0;
+    margin: 0px 0 15px 0;
+}
+
+/*Sorted*/
+.Sorted {
+    position: relative;
+    height: 55px;
+    border-top: 5px solid #bfccdf;
+    border-bottom: 5px solid #bfccdf;
+}
+
+    .Sorted ul {
+        position: absolute;
+        left: 0;
+        top: 19px;
+        width: 100%;
+        height: 18px;
+    }
+
+        .Sorted ul li.First {
+            font-size: 14px;
+            color: #0bb1e8;
+            font-family: "OpenSansRegular";
+            float: left;
+            text-transform: uppercase;
+            padding-right: 15px;
+            margin-top: -3px;
+        }
+
+        .Sorted ul li {
+            float: left;
+            padding-right: 18px;
+            font: 100 12px Arial;
+            color: #000;
+        }
+
+            .Sorted ul li span {
+                display: block;
+                position: relative;
+                padding-right: 30px;
+                cursor: pointer;
+            }
+
+            .Sorted ul li a.sort {
+                position: absolute;
+                right: 0;
+                top: 0px;
+                width: 24px;
+                height: 9px;
+                display: block;
+                margin: 3px 0 0 5px;
+                font-size: 0;
+                float: left;
+                background: url(../images/background/filtrarrow.png) no-repeat;
+            }
+
+            .Sorted ul li span.Active a.sort {
+                background-position: left bottom;
+            }
+
+/*Sorted=========*/
+.filtr p {
+    float: left;
+    font: 100 12px Arial;
+    margin: 0 0 0 12px;
+    color: #000;
+}
+
+.filtr span {
+    float: left;
+    font: 100 12px Arial;
+    color: #000;
+}
+
+.filtr .up {
+    background: url(../images/background/filtrarrow.png) no-repeat left top;
+    width: 12px;
+    height: 9px;
+    display: block;
+    margin: 3px 0 0 5px;
+    float: left;
+}
+
+.filtr .down {
+    background: url(../images/background/filtrarrow.png) no-repeat right top;
+    width: 12px;
+    height: 9px;
+    margin: 3px 0 0 0px;
+    display: block;
+    float: left;
+}
+
+.filtrfirst {
+    font-size: 14px;
+    color: #0bb1e8;
+    font-family: "OpenSansRegular";
+    float: left;
+    text-transform: uppercase;
+}
+
+.clearright {
+    clear: right;
+    width: 100%;
+}
+
+.filtertabmenu {
+    margin: 0 0 10px 0;
+}
+
+    .filtertabmenu li {
+        float: left;
+        padding: 0 10px 0 10px;
+        border-right: 1px solid #000;
+    }
+
+        .filtertabmenu li a {
+            font: 100 12px Tahoma;
+            color: #000;
+            text-decoration: underline;
+        }
+
+            .filtertabmenu li a:hover, .filtertabmenu li a.active {
+                text-decoration: none;
+                color: #0bb1e8;
+            }
+
+
+        .filtertabmenu li.first {
+            padding: 0 10px 0 0px;
+            font-weight: bold;
+        }
+
+.greenchkbox div {
+    width: 32px;
+    height: 239px;
+    line-height: 239px;
+    background: url(../images/background/chkline.png) repeat-x left bottom #8fdd1b;
+    text-align: center;
+    border: 1px solid #64a909;
+}
+
+.greenchkbox span.sCheckbox {
+    margin: 0 auto;
+    margin-top: 107px;
+}
+
+.checkbox {
+    font: 100 14px Tahoma;
+    color: #fff;
+    height: 11px;
+    float: left;
+    line-height: 0;
+    margin: 0 10px 3px 0;
+    padding: 10px 0 0 30px;
+    position: relative;
+}
+
+    .checkbox span {
+        background: url("../images/menu/checkbox.png") no-repeat scroll right top transparent;
+        cursor: pointer;
+        display: block;
+        height: 20px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 21px;
+    }
+
+        .checkbox span.active {
+            background: url("../images/menu/checkbox.png") no-repeat scroll left top transparent;
+        }
+
+span.sCheckbox {
+    cursor: pointer!important;
+    display: block!important;
+    height: 20px!important;
+    width: 21px!important;
+    background: url("../images/menu/checkbox.png") no-repeat left bottom;
+}
+
+    span.sCheckbox.Active {
+        background-position: left top;
+    }
+
+
+span.sRadiobox {
+    cursor: pointer!important;
+    display: block!important;
+    height: 24px!important;
+    width: 23px!important;
+    float: left;
+    margin: -10px 5px 0 0px;
+    background: url(../images/background/radiobutton.png) no-repeat right top;
+}
+
+    span.sRadiobox.Active {
+        background-position: left top !important;
+    }
+
+
+.Radiobox {
+    color: #FFFFFF;
+    float: left;
+    font: 100 14px/0 Tahoma;
+    height: 13px;
+    margin: 0 20px 3px 0;
+    padding: 8px 0 0 0px;
+    position: relative;
+}
+
+
+.table .secondtd {
+    font: 100 12px Arial;
+    color: #111017;
+    padding-top: 1px;
+}
+
+.table .gray div.Base {
+    background: #e5e7ec;
+}
+
+.table.OldHover .secondtd div.Base,
+.table:hover .secondtd div.Base {
+    background: #e5e7ec;
+    cursor: pointer;
+}
+
+
+
+.fototd {
+    padding: 0 15px 0 0;
+    width: 245px;
+}
+
+    .fototd img {
+        width: 237px;
+        height: 145px;
+        border: 1px solid #d6d6d6;
+        padding: 3px;
+    }
+
+    .fototd a.button {
+        font-size: 18px;
+        color: #0bb1e8;
+        font-family: "OpenSansRegular";
+        background: url(../images/background/tabbuton.png) no-repeat bottom left;
+        width: 244px;
+        height: 36px;
+        margin: 3px auto 0 auto;
+        padding: 9px 0 0 0;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        .fototd a.button.Active,
+        .fototd a.button:hover {
+            background: url(../images/background/tabbuton.png) no-repeat top left;
+            color: #fff;
+        }
+
+.tabwidth1 {
+    width: 330px;
+}
+
+.tabwidth2 {
+    width: 30px;
+}
+
+
+.secondtd td,
+.secondtd {
+    vertical-align: top;
+}
+
+    .secondtd .nazv3 {
+        margin-top: 1px;
+    }
+
+    .secondtd .tabwidth1 .nazv3 {
+        margin: 3px 0 0 0;
+    }
+
+    .secondtd table td.tabwidth1 {
+        vertical-align: top;
+    }
+
+    .secondtd table.Number th {
+        text-align: right;
+    }
+
+.nazv3 {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: #035499;
+    font-family: "OpenSansBold";
+}
+
+.tabwidth3 {
+    text-align: right;
+}
+
+    .tabwidth3 span {
+        font: 100 12px Arial;
+        color: #000;
+        text-decoration: line-through;
+    }
+
+    .tabwidth3 i {
+        font: bold 14px Arial;
+        color: #035499;
+    }
+
+    .tabwidth3 b {
+        font: bold 12px Arial;
+        color: #000;
+    }
+
+    .tabwidth3 .green {
+        background: #41b043;
+        font: bold 12px Arial;
+        color: #fff;
+        padding: 1px 2px 1px 2px;
+        text-align: center;
+    }
+
+.ie8 .tabwidth3 .green {
+    padding: 1px 2px 2px 2px;
+}
+
+.tabwidth3 .red {
+    background: #e75e5e;
+    font: bold 12px Arial;
+    color: #fff;
+    padding: 1px 2px 1px 2px;
+    text-align: center;
+}
+
+.ie8 .tabwidth3 .red {
+    padding: 1px 2px 2px 2px;
+}
+
+.line {
+    border-bottom: 1px solid #bfccdf;
+    height: 1px;
+    width: 100%;
+    margin: 27px 0 14px 0;
+    display: block;
+}
+
+.tabwidth4 {
+    width: 120px;
+}
+
+.tabwidth5 {
+    font: bold 12px Arial;
+    color: #000;
+}
+
+.tabwidth6 {
+    width: 170px;
+}
+
+.tabwidth8 {
+    text-align: right;
+    font: bold 12px Arial;
+    color: #000;
+}
+
+.BasePager {
+    padding: 0px 0px 0 10px;
+    position: relative;
+    height: 32px;
+}
+
+    .BasePager div {
+        position: absolute;
+        right: 0;
+        top: 0;
+        float: right;
+    }
+
+    .BasePager ul li {
+        background: none repeat scroll 0 0 transparent;
+        float: left;
+        height: 32px;
+        margin: 0;
+        padding-bottom: 0 !important;
+        padding-left: 5px;
+    }
+
+        .BasePager ul li a {
+            background: none repeat scroll 0 0 #F5F5F5;
+            border: 1px solid #CFCECE;
+            color: #00347e;
+            display: block;
+            font-family: Tahoma;
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            width: 30px;
+        }
+
+            .BasePager ul li a:hover,
+            .BasePager ul li a.active {
+                border: 1px solid #2cbbeb!important;
+                background: #2cbbeb!important;
+                color: white;
+            }
+
+        .BasePager ul li.Prev a i {
+            background-position: left top;
+        }
+
+        .BasePager ul li.Next a i {
+            background-position: right top;
+        }
+
+        .BasePager ul li .Arrow {
+            background: url("../images/icons/Arrow.png") no-repeat scroll 0 0 transparent;
+            font-size: 0;
+            height: 5px;
+            position: absolute;
+            width: 5px;
+            left: 12px;
+            top: 13px;
+        }
+
+.element {
+    background: url(../images/menu/bgfon.png) no-repeat;
+    width: 258px;
+    height: 25px;
+    margin: 3px 0 0 0;
+    padding: 6px 0 0 15px;
+    font: 100 16px Arial;
+    display: block;
+    position: relative;
+    color: #111017;
+}
+
+.firstelement {
+    margin: 0px 0 0 0 !important;
+}
+
+.element b {
+    background: url(../images/menu/xbut.png) no-repeat;
+    width: 30px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.subbutton1 {
+    background: url(../images/menu/butons.png) no-repeat left top !important;
+    width: 133px;
+    height: 15px;
+    min-height: 15px !important;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px 0 0px 0;
+    padding: 15px 0 0 0 !important;
+    font-size: 14px !important;
+    color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+}
+
+    .subbutton1:hover {
+        background: url(../images/menu/butons.png) no-repeat right top !important;
+    }
+
+.subbutton2 {
+    background: url(../images/menu/butons.png) no-repeat right top !important;
+    width: 133px;
+    height: 15px;
+    min-height: 15px !important;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px 0 0px 0;
+    padding: 15px 0 0 0 !important;
+    font-size: 14px !important;
+    color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+}
+
+    .subbutton2:hover {
+        background: url(../images/menu/butons.png) no-repeat left top !important;
+    }
+
+
+
+.ListSlider li p.pText {
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+strong {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "OpenSansBold";
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+/*Grid1*/
+.Grid1 {
+    margin-bottom: 24px;
+}
+
+    .Grid1 table {
+        border: 1px solid #cfd8e6;
+    }
+
+        .Grid1 table td,
+        .Grid1 table th {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #cfd8e6;
+        }
+
+        .Grid1 table th {
+            font-weight: normal;
+            background: #34bcf1;
+            height: 30px;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+
+            .Grid1 table th.Last {
+                width: auto;
+            }
+
+        .Grid1 table td a {
+            font-family: Arial;
+            font-size: 12px;
+            color: #0bb1e8;
+            text-decoration: underline;
+        }
+
+            .Grid1 table td a:hover {
+                text-decoration: none;
+            }
+
+        .Grid1 table td {
+            font-family: Arial;
+            color: #111017;
+            text-align: left;
+            padding-left: 18px;
+            vertical-align: middle;
+            height: 20px;
+        }
+
+        .Grid1 table th.Item {
+            width: 82px;
+        }
+
+        .Grid1 table th.Item1 {
+            width: 126px;
+        }
+
+        .Grid1 table td span.right {
+            display: block;
+            float: right;
+            width: 42px;
+            padding-right: 10px;
+        }
+
+            .Grid1 table td span.right a {
+                text-decoration: underline;
+                font-size: 12px;
+                font-family: Arial;
+                color: #6db009;
+            }
+
+                .Grid1 table td span.right a:hover {
+                    text-decoration: none;
+                }
+
+        .Grid1 table tr.FixCenter td.First {
+            text-align: left;
+            padding-left: 18px;
+        }
+
+        .Grid1 table tr.FixCenter td {
+            text-align: center;
+            padding: 0;
+        }
+
+            .Grid1 table tr.FixCenter td .sCheckbox {
+                margin: 0 auto;
+            }
+
+        .Grid1 table tr.FixCenter {
+            height: 22px;
+            vertical-align: middle;
+        }
+
+        .Grid1 table th.Item93 {
+            width: 93px;
+            text-align: center;
+        }
+
+        .Grid1 table th.Item72 {
+            width: 72px;
+            text-align: center;
+        }
+
+        .Grid1 table th.Item48 {
+            width: 48px;
+            text-align: center;
+        }
+
+        .Grid1 table th.Item72 select {
+            width: 72px;
+        }
+
+    .Grid1 .ddl .select-wrap {
+    }
+
+/*Grid1========*/
+
+
+/*GridSERT*/
+.GridSERT {
+    margin-bottom: 24px;
+    float: left;
+    margin: 0 15px 0 2px;
+}
+
+    .GridSERT table {
+        border: 1px solid #cfd8e6;
+    }
+
+        .GridSERT table td,
+        .GridSERT table th {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #cfd8e6;
+        }
+
+        .GridSERT table th {
+            font-weight: normal;
+            background: #34bcf1;
+            height: 30px;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+
+            .GridSERT table th.Last {
+                width: auto;
+            }
+
+        .GridSERT table td a {
+            font-family: Arial;
+            font-size: 12px;
+            color: #0bb1e8;
+            text-decoration: underline;
+        }
+
+            .GridSERT table td a:hover {
+                text-decoration: none;
+            }
+
+        .GridSERT table td {
+            font-family: Arial;
+            color: #111017;
+            text-align: left;
+            padding-left: 18px;
+            vertical-align: middle;
+            height: 20px;
+        }
+
+        .GridSERT table th.Item {
+            width: 82px;
+        }
+
+        .GridSERT table th.Item3 {
+            width: 30px;
+        }
+
+        .GridSERT table td.Item3 {
+            width: 30px;
+            background: url(../images/background/griditem3.png) left bottom repeat-x #FFF;
+            text-align: center;
+            padding: 0;
+        }
+
+
+        .GridSERT table th.Item2 {
+            width: 296px;
+        }
+
+        .GridSERT table th.Item4, .GridSERT table th.Item2 {
+            width: 324px;
+        }
+
+        .GridSERT table th.Item5 {
+            width: 88px;
+        }
+
+/*GridSERT========*/
+
+
+strong.Green18 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #6db009;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.Pokoje {
+    margin-top: -6px;
+}
+
+    .Pokoje .Top {
+        font-size: 14px;
+        position: relative;
+        margin-bottom: 21px;
+    }
+
+        .Pokoje .Top div {
+            position: absolute;
+            right: 0px;
+            top: 0;
+            height: 20px;
+            width: 330px;
+            text-align: left;
+        }
+
+    .Pokoje .Count {
+        color: #03549b;
+        font-weight: bold;
+    }
+
+    .Pokoje .Top div ul li {
+        float: left;
+    }
+
+        .Pokoje .Top div ul li.First {
+            padding-right: 20px;
+        }
+
+    .Pokoje .Top div i {
+        font-style: normal;
+        color: #03549b;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .Pokoje .Top div span {
+        display: block;
+        float: left;
+        font-size: 12px;
+        width: 107px;
+        height: 20px;
+        text-align: right;
+    }
+
+/*.BlockButton*/
+.BlockButton {
+    position: relative;
+    height: 34px;
+    padding-bottom: 11px;
+}
+
+    .BlockButton .btnGreen,
+    .BlockButton .btnGreenWidth110 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .BlockButton .btnGreen {
+        width: 190px;
+        height: 34px;
+        text-align: center;
+        line-height: 34px;
+        border: none;
+        text-transform: uppercase;
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+        background: url(../images/background/GreenBtn.png) no-repeat;
+    }
+
+.btnGreenWidth110 {
+    width: 110px;
+    position: relative;
+}
+
+.BlockButton i.right {
+    position: absolute;
+    right: 0px;
+    height: 34px;
+    width: 1px;
+    top: 0px;
+    background: url(../images/background/GreenBtn.png) no-repeat right top;
+}
+
+.btnGreenWidth110 input {
+    height: 34px;
+    width: 110px;
+    text-align: center;
+    line-height: 34px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-family: "OpenSansRegular";
+    background: url(../images/background/GreenBtn.png) no-repeat;
+}
+/*.BlockButton==============*/
+.size12 {
+    font-size: 12px!important;
+}
+
+.TotalPrice {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0bb1e8;
+    margin: 14px 0 0 0;
+    height: 9px;
+    position: relative;
+}
+
+    .TotalPrice div {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .TotalPrice b {
+        font-size: 18px;
+        color: #035499;
+        margin-left: 5px;
+    }
+
+.Line {
+    height: 1px;
+    font-size: 0px;
+    line-height: 0;
+    background: #bfccdf;
+    display: block;
+    margin-top: 1px;
+}
+
+div.Line5 {
+    height: 5px;
+    font-size: 0px;
+    line-height: 0;
+    background: #bfccdf;
+    display: block;
+}
+
+.PageMain div.Line5 {
+    margin-left: 34px;
+}
+
+.PageMain .Sorted {
+    border-bottom: none;
+    height: 28px;
+}
+
+.PageMain .TopLine {
+    border-bottom: 5px solid #bfccdf;
+    margin-left: 34px;
+    height: 5px;
+}
+
+/*shceme*/
+.shceme {
+    width: 762px;
+    margin-bottom: 2px;
+}
+
+    .shceme th {
+        width: 192px;
+        text-align: left;
+        font-weight: normal;
+        vertical-align: top;
+    }
+
+    .shceme td {
+        vertical-align: top;
+    }
+
+    .shceme th ul.Verticalmenu {
+        width: 192px;
+    }
+
+        .shceme th ul.Verticalmenu li.First {
+            height: 32px;
+        }
+
+        .shceme th ul.Verticalmenu li.Last span {
+            line-height: 14px;
+            height: 26px;
+            padding: 8px 0;
+        }
+
+        .shceme th ul.Verticalmenu li {
+            float: none!important;
+            width: 192px!important;
+            height: 64px;
+            padding: 0 0 5px 0;
+        }
+
+            .shceme th ul.Verticalmenu li span,
+            .shceme th ul.Verticalmenu li i {
+                display: block;
+                height: 30px;
+                border: 1px solid #cfd8e6;
+                line-height: 30px;
+                text-align: center;
+                font-style: normal;
+            }
+
+            .shceme th ul.Verticalmenu li span {
+                background: white;
+                font-weight: normal;
+                font-size: 12px;
+                color: #000;
+            }
+
+            .shceme th ul.Verticalmenu li i {
+                background: url(../images/background/Title30.png) repeat-x;
+                color: white;
+                text-shadow: 1px 1px 1px #2493ce;
+            }
+/*shceme======*/
+
+/*GridCheckBox*/
+.GridCheckBox {
+    margin-left: 46px;
+}
+
+    .GridCheckBox th {
+        width: 154px;
+    }
+
+    .GridCheckBox li {
+        position: relative;
+        font-size: 12px;
+        height: 21px!important;
+        line-height: 18px;
+        padding-left: 28px;
+        padding-bottom: 1px!important;
+    }
+
+        .GridCheckBox li span.sCheckbox {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 255;
+        }
+/*GridCheckBox=========*/
+
+
+.divArea {
+    position: relative;
+}
+
+    .divArea textarea {
+        border: 1px solid #cfd8e6;
+        height: 100px;
+        width: 694px;
+        padding: 15px;
+        font-family: Tahoma;
+        font-size: 14px;
+        color: #8c8c8c;
+        overflow: auto;
+        resize: none;
+        background: white;
+    }
+
+    .divArea .Reset {
+        right: 1px;
+        top: 0;
+    }
+
+
+
+
+.recenzemenu {
+    float: left;
+    margin: -16px 0 0 3px;
+}
+
+    .recenzemenu li {
+        margin: 19px 0 0 0;
+    }
+
+        .recenzemenu li a {
+            font: 100 12px Arial;
+            color: #111017;
+            text-align: left;
+            margin: 0;
+        }
+
+.recenzeinfo {
+    float: left;
+    font: 100 12px Arial;
+    color: #111017;
+    margin: 0px 0 0 134px;
+}
+
+.progressbar {
+    width: 354px;
+    margin: 20px 0 0 0;
+    padding: 6px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: "OpenSansRegular";
+    height: 24px;
+    border: 1px solid #d7dfea;
+}
+
+    .progressbar input {
+        border: none;
+        width: 100%;
+        text-align: center;
+        height: 24px;
+        padding-top: 0px;
+        display: block;
+        margin-top: -2px;
+        line-height: 20px;
+        font-size: 18px;
+        font-family: "OpenSansRegular";
+    }
+
+.recenzebut {
+    font-family: "OpenSansRegular" !important;
+    height: 34px;
+    background: url(../images/background/RECENZE_but.png) repeat-x;
+    /*width:356px;*/
+    width: 352px;
+    margin: 5px 0 0 0;
+    padding: 5px 0 0 0;
+    text-align: center;
+    font-size: 20px !important;
+    color: #FFF !important;
+    display: block;
+    border: 2px solid #d9e0eb;
+}
+
+.recenzenazvtab {
+    background: url(../images/background/RECENZE_but.png) repeat-x;
+    border: 1px solid #d9e0eb;
+    height: 29px;
+    font-family: "OpenSansBold";
+    margin: 20px 20px 0 0;
+    float: left;
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-size: 20px !important;
+    color: #FFF !important;
+    width: 867px;
+}
+
+
+
+
+.GridRecenze {
+    margin-bottom: 24px;
+    float: left;
+    margin: 0 0px 0 0;
+}
+
+    .GridRecenze table {
+        border: 1px solid #cfd8e6;
+    }
+
+        .GridRecenze table td,
+        .GridRecenze table th {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #cfd8e6;
+        }
+
+        .GridRecenze table th {
+            font-weight: normal;
+            background: url(../images/background/griditem3.png) left bottom repeat-x #FFF;
+            height: 30px;
+            font-family: "OpenSansRegular";
+            font-size: 14px;
+            color: #0bb1e8;
+            width: 190px;
+        }
+
+        .GridRecenze table td a:hover {
+            text-decoration: none;
+        }
+
+        .GridRecenze table td {
+            font-family: Arial;
+            color: #111017;
+            vertical-align: middle;
+            height: 83px;
+        }
+
+        .GridRecenze table th.Item3 {
+            width: 294px;
+        }
+
+        .GridRecenze table td.Item1 {
+            font-family: "OpenSansRegular";
+            font-size: 36px;
+            color: #035499;
+        }
+
+
+/*GridRecenze========*/
+
+
+.BigMaps {
+    position: relative;
+    margin-top: 6px;
+}
+
+    .BigMaps iframe {
+        border: 1px solid #c8c8c8;
+        width: 869px;
+        height: 695px;
+    }
+
+.Flag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0;
+    display: block;
+    width: 140px;
+    height: 133px;
+    background: url(../images/icons/Flag.png) no-repeat;
+}
+
+    .Flag.Green {
+        background-position: right top;
+    }
+
+    .Flag.Red {
+        background-position: -140px top;
+    }
+
+.Dialog565 {
+    position: absolute;
+    left: 300px;
+    top: 185px;
+    width: 565px;
+    height: 464px;
+    background: url(../images/background/Dialog565.png) no-repeat;
+    display: none;
+    z-index: 255;
+}
+
+    .Dialog565.Active {
+        display: block;
+    }
+
+    .Dialog565 .Base {
+        padding: 15px 31px 35px 65px;
+    }
+
+    .Dialog565 .BlockButton {
+        margin-top: 17px;
+    }
+
+        .Dialog565 .BlockButton input {
+            width: 244px;
+        }
+
+    .Dialog565 .images {
+        position: relative;
+        min-height: 153px;
+        padding: 0px 0 18px 264px;
+        margin-top: 10px;
+    }
+
+        .Dialog565 .images img {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 236px;
+            height: 145px;
+            padding: 3px;
+            border: 1px solid #d6d6d6;
+            background: #e5e5e5;
+        }
+
+        .Dialog565 .images .nazv3 {
+            padding-bottom: 13px;
+        }
+
+        .Dialog565 .images table td {
+            padding-bottom: 2px;
+        }
+
+    .Dialog565 h2.Title {
+        margin-bottom: 15px;
+    }
+
+    .Dialog565 .Space {
+        width: 90px;
+    }
+
+    .Dialog565 table.Number {
+        width: auto;
+    }
+
+        .Dialog565 table.Number th {
+            text-align: right;
+        }
+
+    .Dialog565 p.Text {
+        border-bottom: 1px solid #bfccdf;
+        padding-bottom: 14px;
+        margin-bottom: 16px;
+        display: block;
+        text-align: justify;
+    }
+
+
+h2.Title {
+    font-size: 30px;
+    font-family: "OpenSansBold";
+    font-weight: normal;
+    color: #035499;
+    margin-bottom: 3px;
+}
+
+.PageMain table.Number td.Space {
+    width: 175px;
+}
+
+table.Number td.Last {
+    width: 135px;
+}
+
+table.Number th {
+    width: 60px;
+}
+
+table.Number td.First {
+    width: 120px;
+}
+
+.nazv3 span,
+.Title span {
+    color: #0bb1e8;
+}
+
+
+.BlockPopis {
+    margin-top: -8px;
+}
+
+    .BlockPopis th,
+    .BlockPopis td {
+        vertical-align: top;
+    }
+
+    .BlockPopis p {
+        text-align: justify;
+        padding-right: 1px;
+        margin-top: -3px;
+    }
+
+    .BlockPopis .PanelNews p {
+        margin-top: 0;
+    }
+
+    .BlockPopis th {
+        width: 360px;
+        padding-right: 20px;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    .BlockPopis img.Big {
+        padding: 3px;
+        border: 1px solid #b8b8b8;
+        background: #e5e5e5;
+        width: 352px;
+        max-width: 352px;
+        margin-bottom: 9px;
+    }
+
+    .BlockPopis .Detail li {
+        font-size: 14px;
+        font-family: "OpenSansRegular";
+        color: #111017;
+        padding-bottom: 5px;
+    }
+
+        .BlockPopis .Detail li b {
+            display: block;
+            font-family: "OpenSansBold";
+        }
+
+        .BlockPopis .Detail li a {
+            color: #0bb1e8;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+
+            .BlockPopis .Detail li a:hover {
+                text-decoration: none;
+            }
+
+    .BlockPopis .Detail .Last {
+        padding-top: 9px;
+    }
+
+    .BlockPopis th .BlockButton {
+        padding-bottom: 14px;
+        border-bottom: 1px solid #bfccdf;
+        margin: 0;
+        width: 263px;
+        margin-top: 11px;
+        text-align: left;
+    }
+
+        .BlockPopis th .BlockButton .btnGreen {
+            width: 182px;
+            left: 0!important;
+        }
+
+/*PanelNews*/
+.PanelNews {
+    border-top: 1px solid #bfccdf;
+}
+
+    .PanelNews ul li {
+        border-bottom: 1px solid #bfccdf;
+        padding-top: 10px;
+        position: relative;
+        min-height: 118px;
+        padding-left: 127px;
+    }
+
+        .PanelNews ul li img {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 98px;
+            max-height: 98px;
+            border: 1px solid #ccc;
+            padding: 4px;
+            background: #e5e5e5;
+        }
+
+        .PanelNews ul li h2 {
+            font-family: "OpenSansBold";
+            font-size: 14px;
+            font-weight: normal;
+            color: #0bb1e8;
+            padding-bottom: 9px;
+        }
+
+        .PanelNews ul li p {
+            font-size: 12px;
+            color: #111017;
+        }
+/*PanelNews=======*/
+
+/*.GridDetail*/
+.GridDetail {
+}
+
+table.GridDetail {
+    width: 773px;
+}
+
+.GridDetail th,
+.GridDetail td {
+    width: 253px;
+    vertical-align: top;
+}
+
+    .GridDetail th div {
+        margin: 0 7px;
+    }
+
+.GridDetail thead td div,
+.GridDetail thead th div {
+    background: url(../images/background/Title42.png) repeat-x;
+    line-height: 42px;
+    font-family: "OpenSansRegular";
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.GridDetail thead th div {
+}
+
+.GridDetail tbody ul li {
+    float: none!important;
+}
+
+    .GridDetail tbody ul li.Padding {
+        height: 5px;
+    }
+
+.GridDetail tbody span {
+    display: block;
+    background: #eaeaea;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+    padding-left: 68px;
+    font-family: "OpenSansBold";
+    font-size: 14px;
+    font-weight: bold;
+    color: #035499;
+    text-transform: uppercase;
+    border-top: 1px solid #bfccdf;
+    margin-bottom: 8px;
+}
+
+    .GridDetail tbody span i {
+        background: url(../images/icons/Service.png) no-repeat;
+        width: 51px;
+        height: 51px;
+        left: 8px;
+        top: 7px;
+        position: absolute;
+        font-size: 0;
+        display: block;
+    }
+
+
+
+.GridDetail span i.Item1 {
+    background-position: 0 0;
+}
+
+.GridDetail span i.Item2 {
+    background-position: -51px 0;
+}
+
+.GridDetail span i.Item3 {
+    background-position: -102px 0;
+}
+
+.GridDetail span i.Item4 {
+    background-position: -153px 0;
+}
+
+.GridDetail span i.Item5 {
+    background-position: -204px 0;
+}
+
+.GridDetail span i.Item6 {
+    background-position: -255px 0;
+}
+
+.GridDetail span i.Item7 {
+    background-position: -306px 0;
+}
+
+.GridDetail span i.Item8 {
+    background-position: -357px 0;
+}
+
+.GridDetail span i.Item9 {
+    background-position: -408px 0;
+}
+
+.GridDetail span i.Item10 {
+    background-position: right 0;
+}
+
+.GridDetail span.BigText {
+    line-height: 14px;
+    padding-top: 16px;
+    height: 46px;
+}
+
+    .GridDetail span.BigText i {
+        top: 27px;
+    }
+
+.GridDetail .variant {
+    display: block;
+    margin-left: 68px;
+    position: relative;
+    height: 16px;
+    font-size: 12px;
+    font-family: Arial;
+    color: #111017;
+    padding: 2px 0 2px 30px;
+}
+
+    .GridDetail .variant i {
+        display: block;
+        background: url(../images/icons/tick.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 16px;
+    }
+
+.GridDetail ul li {
+    padding-bottom: 6px;
+}
+/*.GridDetail============*/
+
+
+.ListSlider li p.pText {
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+strong {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "OpenSansBold";
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+/*Grid1*/
+.Grid1 {
+    margin-bottom: 24px;
+}
+
+    .Grid1 table {
+        border: 1px solid #cfd8e6;
+    }
+
+        .Grid1 table td,
+        .Grid1 table th {
+            vertical-align: middle;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #cfd8e6;
+        }
+
+        .Grid1 table th {
+            font-weight: normal;
+            background: #34bcf1;
+            height: 30px;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+
+            .Grid1 table th.Last {
+                width: auto;
+            }
+
+        .Grid1 table td a {
+            font-family: Arial;
+            font-size: 12px;
+            color: #0bb1e8;
+            text-decoration: underline;
+        }
+
+            .Grid1 table td a:hover {
+                text-decoration: none;
+            }
+
+        .Grid1 table td {
+            font-family: Arial;
+            color: #111017;
+            text-align: left;
+            padding-left: 20px;
+            vertical-align: middle;
+            height: 20px;
+        }
+
+        .Grid1 table th.Item {
+            width: 82px;
+        }
+/*Grid1========*/
+
+
+.Width1137 {
+    background: url(../images/background/Dialog1137.png) no-repeat;
+    height: 456px;
+    width: 1137px;
+    position: relative;
+    z-index: 600;
+    text-align: center;
+}
+
+/*tableForm*/
+.tableForm th,
+.tableForm td {
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+}
+
+.tableForm td {
+    width: 453px!important;
+}
+
+.tableForm th {
+    width: 487px;
+}
+
+.tableForm td textarea {
+    width: 422px;
+    height: 98px;
+    padding: 15px;
+    resize: none;
+    overflow: auto;
+    margin-bottom: 3px;
+}
+
+.tableForm td textarea,
+.tableForm td input {
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #8c8c8c;
+    background: white;
+    border: 1px solid #a1b3cb;
+}
+
+ul.Gridimages {
+    width: 497px;
+}
+
+    ul.Gridimages li {
+        float: left;
+        width: 240px!important;
+        height: 150px!important;
+        padding: 0 0 7px 7px!important;
+    }
+
+        ul.Gridimages li img {
+            border: 1px solid #d6d6d6;
+            padding: 3px;
+            background: #e5e5e5;
+            width: 232px!important;
+            height: 142px!important;
+        }
+/*tableForm=========*/
+
+.GridForm {
+    width: 454px!important;
+}
+
+    .GridForm li {
+        position: relative;
+        padding: 9px 0 5px 0;
+        height: 21px!important;
+        width: 454px!important;
+        line-height: 14px;
+    }
+
+        .GridForm li input {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 28px!important;
+            width: 330px;
+            border: 1px solid #a1b3cb;
+            padding: 0 15px;
+        }
+
+.Width837_2 {
+    background: url(../images/background/Dialog837_2.png) no-repeat scroll;
+    height: 545px;
+    width: 837px;
+    position: relative;
+    z-index: 600;
+    text-align: left;
+}
+
+    .Width837_2 .padding {
+        padding: 39px 75px 0 17px;
+    }
+
+    .Width837_2 .nazv {
+        font: bold 12px Arial;
+        color: #111017;
+        padding: 0 0 7px 0;
+    }
+
+    .Width837_2 textarea {
+        width: 453px;
+        height: 100px;
+        background: #FFF;
+        resize: none;
+        padding: 15px;
+        margin: 0 0 16px 0;
+        border-bottom: 2px solid #dce1e9;
+        border-left: 2px solid #dce1e9;
+        border-top: 1px solid #cfd8e6;
+        border-right: 1px solid #cfd8e6;
+    }
+
+    .Width837_2 table td {
+        vertical-align: top;
+    }
+
+    .Width837_2 .td2 {
+        padding: 56px 76px 0 0px;
+    }
+
+    .Width837_2 .td1 {
+        width: 275px;
+        padding: 56px 0 0 56px;
+        text-align: left;
+    }
+
+    .Width837_2 .td3 {
+        padding: 20px 0 0 56px;
+    }
+
+        .Width837_2 .td3 .checkbox {
+            color: #000;
+        }
+
+.inputblock input {
+    width: 227px;
+    height: 20px;
+    background: #FFF;
+    border: 1px solid #cfd8e6;
+    font: 100 12px Arial;
+    color: #111017;
+    padding: 0 0 0 14px;
+}
+
+
+
+
+.Width837_2 .select-wrap {
+    text-align: left;
+}
+
+.Width837_2 .select-title {
+    padding-left: 14px;
+}
+
+.Width837_2 .select-option {
+    padding-left: 14px;
+    text-align: left;
+}
+
+.Width837_2 .select-dropdown {
+    width: 240px!important;
+}
+
+.BlockJET {
+    background: url(../images/background/fotsld.png) no-repeat;
+    width: 831px;
+    padding: 20px;
+    height: 91px;
+    margin: 0 0 20px 0;
+}
+
+    .BlockJET p {
+        font-family: "OpenSansRegular";
+        font-size: 24px;
+        margin: 0 0 11px 0;
+        color: #FFF;
+    }
+
+.redbutton2 {
+    width: 113px;
+    background: url(../images/icons/hledat.png) no-repeat;
+    height: 33px;
+    text-align: center;
+    margin: -2px 0 0 0;
+    text-transform: uppercase;
+    padding: 7px 0 0 0;
+    font-size: 18px !important;
+    color: #fff !important;
+    font-family: "OpenSansRegular" !important;
+    display: block;
+    float: right;
+    text-decoration: none;
+}
+
+    .redbutton2:hover {
+        background-position: left bottom;
+        text-decoration: none;
+    }
+
+.fotodiv {
+    position: relative;
+    width: 277px;
+    height: 277px;
+}
+
+    .fotodiv p {
+        text-align: center;
+        margin: -171px 0 0 0;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 36px;
+        color: #FFF;
+        font-family: "OpenSansBold";
+    }
+
+
+.iconfoto {
+    background: url(../images/background/iconsfon.png) no-repeat;
+    width: 244px;
+    height: 44px;
+    padding: 20px 0 0 0;
+    text-align: center;
+    margin: -12px auto 10px auto;
+    position: relative;
+}
+
+    .iconfoto .last {
+        margin: -12px auto 0px auto !important;
+    }
+
+    .iconfoto ul li {
+    }
+
+    .iconfoto a {
+        height: 35px;
+        display: inline-block;
+        position: relative;
+        background-position: top left;
+        margin: 0 7px 0 0;
+    }
+
+        .iconfoto a.Active,
+        .iconfoto a:hover {
+            background-position: bottom left;
+        }
+
+.iconfoto1 {
+    background: url(../images/icons/1/ico1.png);
+    width: 25px;
+}
+
+.iconfoto2 {
+    background: url(../images/icons/1/ico2.png);
+    width: 32px;
+}
+
+.iconfoto3 {
+    background: url(../images/icons/1/ico3.png);
+    width: 28px;
+}
+
+.iconfoto4 {
+    background: url(../images/icons/1/ico4.png);
+    width: 19px;
+}
+
+.iconfoto5 {
+    background: url(../images/icons/1/ico5.png);
+    width: 32px;
+}
+
+.iconfoto6 {
+    background: url(../images/icons/1/ico6.png);
+    width: 30px;
+}
+
+.nomarg {
+    margin: 0;
+}
+
+.tip {
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+    margin: 0 0 0px 0;
+    color: #FFF;
+    background: url(../images/background/fotobar.png) no-repeat;
+    width: 154px;
+    height: 39px;
+    position: absolute;
+    top: 38px;
+    display: none;
+    padding: 14px 0 0 0;
+    line-height: 16px;
+    z-index: 9999;
+    left: -20px;
+}
+
+.iconfoto a.Active .tip,
+.iconfoto a:hover .tip {
+    display: block;
+}
+
+.margin45 {
+    margin: 45px 0 0 0;
+}
+
+
+.ddl {
+    position: relative;
+}
+
+.Grid1 .select-dropdown {
+    top: 20px!important;
+    width: 72px!important;
+}
+
+.Grid1 .select-wrap {
+    border-bottom: none;
+    border-top: none;
+    margin-top: 1px;
+}
+
+.blublock .camera2,
+.blublock .camera3 {
+    letter-spacing: -1px!important;
+}
+
+
+.table .Slider {
+    border-bottom: 5px solid #bfccdf;
+}
+
+.table .BottomLine {
+    display: none;
+}
+
+.table td {
+    vertical-align: top;
+}
+
+.table .secondtd .Base {
+    padding: 20px 20px 10px 15px;
+    position: relative;
+    margin-top: -1px;
+    min-height: 210px;
+}
+
+.table.OldHover .BottomLine,
+.table.Hover .BottomLine {
+    display: block;
+}
+
+.table.OldHover .greenfon .Base {
+    background: #d7ead5 !important;
+}
+
+
+
+
+
+.langbase {
+    background: url(../images/icons/lang.png) no-repeat scroll left center transparent;
+    color: #0BB1E8;
+    font: 100 12px Tahoma;
+    margin: 21px 15px 0 20px;
+    padding: 0 0 5px 20px;
+    position: relative;
+    min-width: 50px;
+    float: right;
+}
+
+    .langbase .select-option {
+        border-bottom: 1px solid #D9E1EC;
+        color: #111017;
+        cursor: pointer;
+        font: 100 14px Tahoma;
+        height: 26px;
+        padding: 6px 0 0 8px;
+    }
+
+    .langbase .select-wrap {
+        position: relative;
+        cursor: default;
+        display: block;
+        height: 15px;
+        color: #0BB1E8;
+        font: 100 12px Tahoma;
+        border: none;
+    }
+
+
+.ie8 .langbase .select-wrap {
+    width: 60px;
+}
+
+.inpbase .select-wrap {
+    position: relative;
+    cursor: default;
+    display: block;
+    height: 20px;
+    padding: 0;
+    font: 100 12px Arial;
+    color: #111017;
+    border: none;
+}
+
+.inpJET {
+    background: #FFF;
+    border: 1px solid #cfd8e6;
+    font: 100 12px Arial;
+    color: #111017;
+    float: left;
+    width: 705px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    .inpJET .select-dropdown {
+        width: 706px!important;
+    }
+
+
+.BlockJET .select-title {
+    height: 17px;
+    line-height: 17px;
+    display: block;
+    padding: 7px;
+    cursor: pointer;
+    color: #8c8c8c;
+    font: 100 14px Tahoma;
+}
+
+.BlockJET .select-wrap {
+    position: relative;
+    cursor: default;
+    display: block;
+    width: 100%;
+    height: 32px;
+    color: #281311;
+    font-family: "OpenSansRegular";
+    border: 1px solid #cfd8e6;
+}
+
+.BlockJET .select-button {
+    position: relative;
+    cursor: pointer;
+    width: 18px;
+    position: absolute;
+    right: 5px;
+    top: 13px;
+    height: 11px;
+    display: block;
+    border: none !important;
+    background: url(../images/background/arrow4.png) no-repeat;
+}
+
+.BlockJET .select-option:hover {
+    background: #37bdf1;
+    color: #FFF;
+}
+
+.BlockJET .select-option {
+    padding: 6px 0 0 8px;
+    height: 26px;
+    font: 100 14px Tahoma;
+    color: #111017;
+    cursor: pointer;
+    border-bottom: 1px solid #d9e1ec;
+}
+
+.BlockJET .select-dropdown {
+    position: absolute;
+    z-index: 300;
+    left: -1px;
+    background: #fff;
+    color: #281311;
+    font-family: "OpenSansRegular";
+    border: 1px solid #cfd8e6;
+    width: 120px;
+    top: 33px;
+}
+
+.langbase .select-dropdown {
+    margin-left: -19px;
+}
+
+
+
+
+.SmallLogo {
+    background: url(../images/Logo/logo2.png) no-repeat right center;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 124px;
+    height: 28px;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+.level0 li.hover .level1,
+.level1 li:hover .level2,
+.level2 li:hover .level3,
+.level3 li:hover .level4 {
+    display: block;
+}
+
+/*.level1:hover .level2 li a .level2:hover .level3 li a .level3:hover .level4 li a {
+    background: white;
+}*/
+
+.level2,
+.level3,
+.level4 {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    background: white;
+}

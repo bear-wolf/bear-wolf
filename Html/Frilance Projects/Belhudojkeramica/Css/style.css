@@ -1,0 +1,863 @@
+/*Reset*/
+*{
+margin: 0;
+padding: 0;
+background:transparent;
+}
+
+body {
+line-height: 1.4;
+color: black;
+background: white;
+}
+
+img{ border:none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width:100%;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: "";
+}
+blockquote, q {
+quotes: "" "";
+}
+
+aside, nav, footer, header, section { display: block }
+input,select,textarea{outline:none}
+/*Reset==============*/
+
+/*font-face*/
+	
+@font-face{
+	font-family:"OpenSansRegular";	
+	font-style:normal;
+	font-weight:100;
+	font-stretch:condensed;	
+	src: url('../Fonts/OpenSans-Regular.ttf') format("truetype");    
+}           			
+
+/*font-face==============*/
+
+.Title,
+h1{
+    padding:0 0 27px 0;
+    display:block;
+    line-height:19px;
+    font-size:19px;
+    color:#4f1f19;
+    font-family:OpenSansExtraBoldItalic;
+    font-weight:normal;
+}
+h2,
+h3,
+h4{
+    color:#4f1f19;
+    font-family:OpenSansExtraBold;
+    font-style:normal;
+    display:block;
+    padding:0 0 13px 0;    
+    font-weight:normal;
+}
+h2{   
+    line-height:19px;
+    font-size:17px;    
+}
+h3{   
+    font-size:15px;
+    line-height:15px;
+}
+h4{   
+    line-height:13px;
+    font-size:13px;    
+}
+
+
+div { margin:0 auto;}
+	
+html, body{ height:100%; }	
+
+body{background:#fff; color:#281311; font-family:"OpenSansRegular";	 font-size:12px;}
+
+ul li{ list-style:none; }
+
+div.clear{
+	clear:both;
+	font-size:0;
+	}
+
+/* UTIL */
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;	
+	}
+
+.easyfix{ overflow:hidden; }
+
+.none span,
+.none a span{	
+	display:none; 
+	}
+
+a:link,
+a:visited{ 
+    font-family:"OpenSansRegular";	
+    font-size:12px;
+    color:#acacac;
+    text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+
+p {
+    font-size:12px;
+    color:#281311;
+    font-family:"OpenSansRegular";	
+    line-height:15px;
+    padding-bottom:11px;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6{ line-height:1.1; }
+	
+.Main{
+	position:relative;	
+	min-height:100%;
+	font-family:Arial;	
+	}
+.Fixit {
+    width:1292px;
+    position:relative;
+}
+header{
+	position:relative;
+	height:331px;        
+    background:url(../Images/Background/Header.png) no-repeat center top;
+	}
+header .Fixit{ height:331px;}
+
+#Content{
+	position:relative;
+	padding:0 0 71px 0;
+    width:1200px;
+    margin-top:-9px;
+	}	
+
+#Content:after,
+.Wrapper:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;	
+	}
+.Wrapper{padding:0;}
+
+.LeftPart{
+	position:relative;
+	float:left;
+	width:279px;
+    padding:0;
+	text-align:left;
+	}
+
+.RightPart{
+	position:relative;
+	float:right;
+	width:224px;
+	padding:8px 6px 0 0;
+	}
+
+.CenterPart{
+	text-align:left;	
+    padding-top:23px;
+	}
+	
+.MiddlePart{
+	margin-left:302px;    
+	}
+
+footer{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:52px;
+	background:url(../Images/Menu/TopMenu.png) no-repeat center top;
+	}
+
+/*Find*/
+.Find{
+    position:absolute;
+    left:50px;
+    top:39px;    
+    width:302px;
+    height:155px;
+    font-family:"OpenSansSemiBold";	
+    background:url(../Images/Background/Town.png) no-repeat 130px top;
+}
+.Find span{ display:block; 
+    position:absolute; left:0; bottom:13px; width:58px;
+    font-size:13px;
+    color:#281311;
+    text-transform:uppercase;
+}
+.Find .Border { 
+    position:absolute;
+    left:58px;
+    bottom:0;    
+    border-radius:16px;
+    height:36px;    
+    padding:0 25px;
+    width:194px;
+    line-height:0;
+    background:url(../Images/Background/background.png);
+    border:1px solid #b5a19f;
+}
+.Find .Border input{ display:block; border:none; background:none; line-height:36px; width:100%;}
+.Find .button{
+    font-size:0;
+    display:block;
+    position:absolute;
+    right:12px;
+    bottom:11px;
+    width:14px;
+    height:14px;
+    font-size:0;
+    border:none;
+    cursor:pointer;
+    background:url(../Images/Icons/Magnifier.png) no-repeat
+}
+/*Find========*/
+
+/*Language*/
+.Language {
+    position:absolute;
+    right:46px;
+    top:13px;
+    width:136px;
+    height:36px;
+    border-radius:16px;
+    background:url(../Images/Background/background.png);
+}
+.Language ul{ margin:6px 0 0 3px;}
+.Language li{ padding-left:7px; float:left;}
+.Language li a{ background:url(../Images/Icons/Language.png) no-repeat; width:24px; height:24px; font-size:0; cursor:pointer; display:block;}
+.Language li.bl a{ background-position:left top;}
+.Language li.ru a{ background-position:left -24px;}
+.Language li.ua a{ background-position:left -48px;}
+.Language li.br a{ background-position:left bottom;}
+/*Language==========*/
+
+.LogoType {
+    background:url(../Images/Logo/LogoType.png) no-repeat;
+    width:325px;
+    height:233px;
+    position:absolute;    
+    top:0;
+    left:506px;
+    display:block;
+}
+.LogoType a{
+    display:block;
+    width:325px;
+    height:233px;
+    cursor:pointer;
+}
+
+/*footer*/
+footer .Fixit{ }
+footer ul{ margin-left:70px;}
+footer ul li{ float:left; color:#b46b3a; font-family:Arial; padding:0 0 0 12px; line-height:52px;}
+footer ul li a{
+    font-size:12px!important;
+    color:white!important;
+    margin-right:16px;    
+    text-decoration:none!important;
+    font-family:"OpenSansRegular";	
+}
+footer ul li a:hover{ text-decoration:underline!important;} 
+footer ul li.Last span{ color:#281311;}
+footer ul li.Last{
+    padding-left:24px;
+    font-family:OpenSansExtraBoldItalic;
+    color:white;
+    font-size:18px;
+}
+/*footer=======*/
+
+
+/*Contact*/
+.Contact{
+    position:absolute;
+    right:46px;
+    top:94px;
+    height:98px;
+    width:305px;
+    text-align:right;
+}
+.Contact .text{
+    font-family:OpenSansRegular;
+    font-size:12px;
+    color:#d68745;
+    display:block;
+    line-height:15px;
+    margin-bottom:14px;
+}
+.Contact p span{ color:#d68745;}
+.Contact p{
+    font-family:OpenSansExtraBoldItalic;
+    color:#281311;
+    font-size:30px;
+}
+.Contact .TellMe{
+    display:block;
+    background:url(../Images/Background/TellMe.png) no-repeat;
+    width:160px;
+    height:22px;
+    margin-top:8px;
+    float:right;
+    display:block;
+    font-size:13px;
+    color:white;
+    font-family:"OpenSansBold";
+    text-align:center;    
+    line-height:22px;
+    text-decoration:none;
+}
+.Contact .TellMe:hover{ background-position:left bottom;}
+/*Contact======*/
+
+/*Nav*/
+nav {
+    position:absolute;
+    left:0;
+    bottom:26px;
+    width:1292px;
+    height:65px;
+    display:block;
+    margin:0 auto;
+    background:url(../Images/Menu/TopMenu.png) no-repeat left 2px;
+}
+nav ul{ margin:0 0 0 90px;}
+nav ul li{ float:left; padding:0 21px 0 10px;}
+nav ul li.Item4{ padding-right:5px;}
+nav ul li div{ position:relative; height:65px;}
+
+nav ul li.Item1:hover,
+nav ul li.Active.Item1{ padding-left:0px; padding-right:1px; margin-right:4px;}
+nav ul li.Item2:hover,
+nav ul li.Active.Item2{ padding-left:0px; padding-right:1px; margin-right:4px;}
+nav ul li.Item3:hover,
+nav ul li.Active.Item3{ padding-left:0px; padding-right:0px; margin-right:3px;}
+nav ul li.Item4:hover,
+nav ul li.Active.Item4{ padding-left:0px; padding-right:0px; margin-right:-2px;}
+nav ul li.Item5:hover,
+nav ul li.Active.Item5{ padding-left:0px; padding-right:0px; margin-right:-2px;}
+nav ul li.Item6:hover,
+nav ul li.Active.Item6{ padding-left:0px; padding-right:0px; margin-right:-3px; }
+nav ul li.Item7:hover,
+nav ul li.Active.Item7{ padding-left:0px; padding-right:0px; margin-right:14px; }
+
+nav ul li.Item4{ padding-right:20px;}
+
+nav ul li:hover div,
+nav ul li.Active div{ background:url(../Images/Menu/Active.png) no-repeat;}
+
+nav ul li.Item1:hover div,
+nav ul li.Item1.Active div{ background-position:-1px top; width:140px;}  
+
+nav ul li.Item2:hover div,
+nav ul li.Item2.Active div{ background-position:-144px top; width:88px;}
+
+nav ul li.Item3:hover div,
+nav ul li.Item3.Active div{ background-position:-235px top; width:122px;}
+
+nav ul li.Item4:hover div,
+nav ul li.Item4.Active div{ background-position:-360px top; width:173px;}
+
+nav ul li.Item5:hover div,
+nav ul li.Item5.Active div{ background-position:-536px top; width:247px}
+
+nav ul li.Item6:hover div,
+nav ul li.Item6.Active div{ background-position:-786px top; width:128px;}
+
+nav ul li.Item7:hover div,
+nav ul li.Item7.Active div{ background-position:-144px top; width:88px;}
+
+nav ul li.Item8:hover div,
+nav ul li.Item8.Active div{ background-position:right top; width:98px;}
+
+nav ul li.Item8:hover,
+nav ul li.Item8.Active{ padding-left:0px;}
+
+                
+nav ul li div a{
+    font-size:15px!important;
+    color:white!important;
+    height:41px;
+    text-align:center;
+    display:block;
+    padding-top:24px;
+    line-height:15px;
+    min-width:40px;
+    text-decoration:none!important;
+    font-family:"OpenSansBold";	
+    position:relative;
+    z-index:10;
+}
+nav ul li:hover div a,
+nav ul li.Active div a{
+    color:#4f1f19!important;
+    font-weight:bold;    
+}
+/*Nav=================*/
+
+/*#SmallMenu*/
+#SmallMenu {padding-left:54px;}
+#SmallMenu ul li{ display:inline; padding:0 7px 0 13px; background:url(../Images/Icons/point.png) no-repeat left 7px; line-height:0;}
+#SmallMenu ul li.First{ background:none!important; padding-left:0!important;}
+#SmallMenu ul li a{
+    font-family:"OpenSansRegular";	
+    font-size:12px;
+    color:#acacac
+}
+/*#SmallMenu========*/
+
+/*Images*/
+.Images{
+    font-family:0;
+    color:#4f1f19;
+    font-size:19px;
+    font-family:OpenSansExtraBoldItalic;
+    text-align:center;
+    margin-top:31px;
+}
+.Images img {
+    margin-top:24px;
+    border:1px solid #eaeaea;
+}
+/*Images=======*/
+
+/*MainPage*/
+.MainPage {
+    padding:398px 0 0 10px;
+    background:url(../Images/MainPage.jpg) no-repeat;
+}
+.MainPage p{ text-align:justify;}
+.MainPage img {
+    float:right;
+    border:1px solid #eaeaea;
+    margin:0 0 24px 24px;
+}
+/*MainPage==========*/
+
+.PageMain .LeftMenu{ padding:27px 0 0 0;}
+
+/*LeftMenu*/
+.LeftMenu{ padding:21px 0 0 0;}
+.LeftMenu ul li{ position:relative; min-height:44px; background:url(../Images/Menu/Item.png) no-repeat; margin-bottom:1px;}
+.LeftMenu ul li a{ font-size:15px; line-height:44px; padding:0 0 0 75px; color:white; font-family:"OpenSansSemibold"; display:block;}
+.LeftMenu ul li i{ position:absolute; left:0; top:0; width:62px; height:44px;}
+.LeftMenu ul li i b{ display:block; background:url(../Images/Menu/IconImages.png) no-repeat; height:44px; background-position:left top;}
+.LeftMenu ul li:hover,
+.LeftMenu ul li.Active{ background-position:left bottom;}
+
+
+.LeftMenu ul li.Item1 i b{ background-position:left top;}
+.LeftMenu ul li.Item2 i b{ background-position:-54px top;}
+.LeftMenu ul li.Item3 i b{ background-position:-108px top;}
+.LeftMenu ul li.Item4 i b{ background-position:-162px top;}
+.LeftMenu ul li.Item5 i b{ background-position:-216px top;}
+.LeftMenu ul li.Item6 i b{ background-position:-270px top;}
+.LeftMenu ul li.Item7 i b{ background-position:-324px top;}
+.LeftMenu ul li.Item8 i b{ background-position:-378px top;}
+
+.LeftMenu ul li.Item1:hover i b,
+.LeftMenu ul li.Item1.Active i b{ background-position:left bottom;}
+.LeftMenu ul li.Item2:hover i b,
+.LeftMenu ul li.Item2.Active i b{ background-position:-54px bottom;}
+.LeftMenu ul li.Item3:hover i b,
+.LeftMenu ul li.Item3.Active i b{ background-position:-108px bottom;}
+.LeftMenu ul li.Item4:hover i b,
+.LeftMenu ul li.Item4.Active i b{ background-position:-162px bottom;}
+.LeftMenu ul li.Item5:hover i b,
+.LeftMenu ul li.Item5.Active i b{ background-position:-216px bottom;}
+.LeftMenu ul li.Item6:hover i b,
+.LeftMenu ul li.Item6.Active i b{ background-position:-270px bottom;}
+.LeftMenu ul li.Item7:hover i b,
+.LeftMenu ul li.Item7.Active i b{ background-position:-324px bottom;}
+.LeftMenu ul li.Item8:hover i b,
+.LeftMenu ul li.Item8.Active i b{ background-position:-378px bottom;}
+
+.LeftMenu ul li:hover a,
+.LeftMenu ul li.Active a{ color:#4f1f19; text-decoration:none;}
+/*LeftMenu=================*/
+
+
+.BlockText { padding-bottom:30px;}
+.BlockText p{ text-align:justify;}
+.BlockText img.FloatRight {
+    float:right;
+    border:1px solid #eaeaea;
+    margin:0 0 24px 24px;
+}
+
+/*.List*/
+.List { margin:28px 0 0 0;}
+.List li{
+    padding:0 0 3px 32px;
+    text-align:justify;
+    position:relative;
+    background:url(../Images/Icons/Point1.png) no-repeat 9px 2px;
+}
+.List.Number{}
+.List.Number li i{ position:absolute; left:0; top:0; width:23px; height:23px; background:#d68745; border-radius:4px; text-align:center; line-height:23px; font-family:"OpenSansExtraBold"; color:white; font-style:normal;}
+.List.Number{}
+/*.List=======*/
+
+/*Grid*/
+.Grid,
+.Grid .Title { width:842px; margin:0;}
+.Grid .Title{
+    position:relative;
+    height:43px;    
+    padding:0;
+}
+.Grid .Title .Base{ position:absolute; height:45px; background:#d68745; border-radius:4px; width:100%; left:0; }
+.Grid .Title .Base div{ font-family:"OpenSansExtraBold"; color:white; font-size:13px; line-height:45px; text-align:center; border-right:1px solid white; float:left;}
+.Grid .Title .Base div.First{ padding-left:19px; text-align:left; width:145px;}
+.Grid .Title .Base div.Last{ width:147px; border-right:none; padding-left:13px;}
+.Grid .Title .Base div{ width:166px; padding-left:2px;}
+.Grid  table td{ height:30px; border:1px solid #d8d8d8;}
+.Grid  table td.First{ width:141px; text-align:left; padding-left:19px;}
+.Grid  table td.Last{ width:165px;}
+.Grid  table td{ width:165px; text-align:center; font-family:"OpenSansRegular";	 font-size:12px; color:#211f1f;}
+/*Grid========*/
+
+/*table.Form*/
+table.Form{
+    width:440px;
+    margin:0 auto;
+    margin-top:21px;
+}
+
+table.Form td,
+table.Form th{ text-align:left; font-weight:normal; color:#281311; font-family:"OpenSansBold"; font-size:12px; vertical-align:top; line-height:0px; padding-bottom:8px;}
+table.Form th{ padding-left:6px;}
+table.Form span{ display:block;}
+table.Form textarea,
+table.Form input{ border:1px solid #d38544; margin-top:16px; width:194px; padding:0 5px;}
+
+table.Form input{ height:20px; line-height:20px;}
+table.Form textarea{ resize:none; overflow:auto; padding:5px; height:34px;}
+table.Form td.First{ padding-bottom:0; }
+table.Form td.First div.R2{ margin-top:20px;}
+table.Form .Command div{ position:relative; margin-top:4px;}
+table.Form .Command input{ width:102px; float:right; margin:0 12px 0 0;}
+table.Form .Command .Captcha{ position:absolute; left:0; top:0; width:59px; height:22px; border:none;}
+table.Form .Command .Reset{ position:absolute; left:64px; top:6px; width:15px; height:12px; background:url(../Images/Reset.png) no-repeat; cursor:pointer;}
+table.Form th.btn{ padding:12px 12px 0 0;}
+table.Form th.btn input.button{ 
+    display:block;
+    background:url(../Images/Background/TellMe.png) no-repeat;
+    width:160px;
+    height:22px;
+    margin-top:4px;
+    float:right;
+    display:block;
+    font-size:13px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-family:"OpenSansBold";
+    text-align:center;    
+    line-height:22px;
+    text-decoration:none;
+}
+table.Form th.btn input.button:hover{ background-position:left bottom;}
+/*table.Form=========*/
+
+/*Pager*/
+.Pager{ position:relative; height:38px;}
+.Pager .Base{ position:absolute; left:0; top:0; height:38px; width:100%;}
+.Pager ul{}
+.Pager ul li{ float:left; height:38px; padding:0 16px 0 0px; margin-left:-3px;}
+.Pager ul li a{ font-size:15px; color:#d68745; font-family:"OpenSansBold"; display:block; line-height:38px;}
+.Pager ul li.Active a{ background:url(../Images/Icons/PagerActive.png) no-repeat; width:38px; height:38px; text-align:center;}
+.Pager ul li a:hover{ color:#5a211a; text-decoration:none;}
+.Pager ul li.Active a:hover{ color:#d68745; text-decoration:none;}
+
+.Pager ul li.Next{ width:15px; margin-left:0;}
+.Pager ul li.Prev{ width:15px;}
+.Pager ul li.Prev a,
+.Pager ul li.Next a{ display:block; height:14px; margin-top:11px; width:11px; background:url(../Images/Icons/Arrow.png) no-repeat; line-height:0;}
+
+.Pager ul li.Next a{ background-position:right top;}
+/*Pager======*/
+
+/*Filter*/
+.Filter{ position:relative; height:136px; border-radius:4px; border:1px solid #d38544;}
+.Filter .Base{ position:absolute; left:0; top:9px; width:100%; height:118px;}
+.Filter .Base div.First,
+.Filter .Base div.Last,
+.Filter .Base div.Item{ float:left; padding:0 0 0 19px; height:117px; border-right:1px solid #ededed;}
+
+.Filter .Base div.First{ width:274px;}
+.Filter .Base div.Last{ border:none; width:180px;}
+.Filter .Base div.Item{ width:179px;}
+
+.Filter .subTitle{
+    font-family:"OpenSansBold";	
+    font-size:12px;
+    color:#281311;
+}
+.Filter .First .Type{ margin-top:37px;}
+.Filter .First .Type li{ float:left;}
+.Filter .First .Type li input{ width:81px; padding:0 5px; height:20px; border:1px solid #d38544; margin:0 12px 0 5px;}
+
+.SelectCheck {
+    padding:32px 0 0 0px;
+}
+.SelectCheck ul{ white-space:nowrap;}
+.SelectCheck li{
+    position:relative;
+    padding:0 0 0 24px;
+    float:left;
+    width:66px;
+    display:block;
+    height:15px;    
+    font-size:12px;
+    color:#281311;
+    font-family:"OpenSansBold";	
+}
+.SelectCheck li span{
+    display:block;
+    position:absolute;
+    left:0;
+    top:0; 
+    width:12px;
+    height:12px;
+    cursor:pointer;
+    border:1px solid #d38544;
+}
+.SelectCheck li span.Active{ background:url(../Images/Icons/CheckBox.png) no-repeat 1px;}
+
+.SelectCheck .btn{ padding:48px 0px 0 4px;}
+.SelectCheck .btn input.button{ 
+    display:block;
+    background:url(../Images/Background/TellMe.png) no-repeat;
+    width:160px;
+    height:22px;    
+    display:block;
+    font-size:13px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-family:"OpenSansBold";
+    text-align:center;    
+    line-height:22px;
+    text-decoration:none;
+}
+.SelectCheck .btn input.button:hover{ background-position:left bottom;}
+
+.ListSelect li .ddl{ position:relative;}
+.ListSelect li{ padding-bottom:7px;}
+.ListSelect li span.subTitle{ display:block; margin-bottom:8px;}
+.ListSelect li .ddl .select-wrap{ width:150px; margin:0;}
+.ListSelect li .ddl .select-title{ padding-left:14px;}
+.ListSelect li .ddl .select-dropdown{ top:21px; width:150px!important;}
+.ListSelect li .ddl .select-option{ height:23px; padding-left:14px; line-height:23px;}
+
+
+#Sorting .jslider{ width:230px;}
+#Sorting .jslider .jslider-value{ font-size: 10px; color:#281311; font-family:"OpenSansBold";}
+/*Filter======*/
+
+
+/*Catalog*/
+.Catalog{ padding-bottom:28px;}
+.Catalog tr.First td,
+.Catalog tr.First th{ padding-top:38px!important;}
+.Catalog table td,
+.Catalog table th{ vertical-align:top; text-align:left; font-weight:normal; padding:21px 0 0 25px;}
+
+.Catalog .Title{ padding-bottom:0; text-align:center;}
+.Catalog .Title i{ display:block; font-size:12px; color:#d68745; font-style:normal; font-weight:normal; font-family:"OpenSansRegular"; margin:3px 0 14px 0;	}
+.Catalog div.Base{ width:265px; line-height:0;}
+.Catalog div.Base:hover div.Detail{ background-position:left bottom;}
+.Catalog div img{ width:262px; max-height:159px; border:1px solid #ae9d8e;}
+
+div.Detail{
+    background:url(../Images/Background/Detail.png) no-repeat;
+    width:265px;
+    height:50px;
+    margin-left:1px;
+    position:relative;
+}
+
+.Separator div{
+    background:url(../Images/Background/Separator.png) no-repeat;
+    height:17px;
+    font-size:0;
+}
+.Separator{ padding:10px 0 0 0!important;}
+
+div.Detail span.Price{ font-size:12px; font-family:"OpenSansRegular"; left:27px; display:block; width:105px; color:white; position:absolute; top:16px;}
+div.Detail span.Price i{ font-size:30px; font-family:"OpenSansExtraBoldItalic";}
+div.Detail .ReadMe:hover{ text-decoration:none;}
+div.Detail .ReadMe {
+    display:block;
+    position:absolute;
+    right:9px;
+    top:0;
+    width:122px;
+    height:50px;
+    line-height:50px;
+    color:#4f1f19;
+    font-size:15px;
+    text-align:center;
+    font-family:"OpenSansBold";	
+}
+/*Catalog=======*/
+
+
+/*Detail*/
+.BlockDetail{}
+.BlockDetail .TopLine{ position:relative; padding-top:1px;}
+.BlockDetail .TopLine .Title{ float:left; width:auto; padding-right:100px; position:relative;}
+.BlockDetail .TopLine .Title i{
+    font-size:12px;
+    color:#d68745;
+    font-family:"OpenSansRegular";	
+    position:absolute;
+    right:0;
+    top:0px;
+    font-style:normal;
+}
+.BlockDetail .TopLine i.News{
+    position:absolute;
+    right:0;
+    top:0;
+    width:100px;
+    color:#d31700;
+    font-family:"OpenSansExtraBoldItalic";	
+    font-size:19px;
+    text-transform:uppercase;
+    letter-spacing:-2px;
+    font-style:normal;
+    display:block;
+}
+.BlockDetail table th,
+.BlockDetail table td{ vertical-align:top;}
+
+.BlockDetail table th{width:277px; text-align:left; font-weight:normal;}
+
+.BlockDetail th div.Base{ width:265px; line-height:0; margin:0;}
+  
+.BlockDetail th div.Base:hover div.Detail{ background-position:left bottom;}
+.BlockDetail th div.Base .BigImages{ width:262px; max-height:159px; border:1px solid #ae9d8e;}
+    
+.BlockDetail th div.Base ul.SmallImages{ margin:7px 0 12px 0; height:51px;}
+.BlockDetail th div.Base ul li{ float:left;}
+.BlockDetail th div.Base ul li img{ width:81px; max-height:49px; border:1px solid #eee;}
+.BlockDetail th div.Base ul li.center{ padding:0 8px;}
+
+.BlockDetail th div.Base .ReadMe{ line-height:18px; padding:7px 0 0 0;}
+.BlockDetail .Description{
+    position:relative;
+    padding:29px 0 23px 0;
+    text-align:justify;
+    margin-bottom:20px;
+}
+.BlockDetail .Description span{ width:618px; height:16px; position:absolute; left:0; background:url(../Images/Background/SmallSeparator.png) no-repeat;}
+.BlockDetail .Description .Top{ top:0; background-position:left top;}
+.BlockDetail .Description .Bottom{ bottom:0; background-position:left bottom;}
+
+.BlockDetail .Others{}
+.BlockDetail .Others h3{ padding-bottom:8px;}
+.BlockDetail .Others .Border{ border:1px solid #d38544; border-radius:4px; height:26px; position:relative; margin-bottom:21px;}
+.BlockDetail .Others .Border ul{ position:absolute; left:10px; top:6px; width:590px;}
+
+.BlockDetail .Others .Border li{ float:left; padding:0 12px 0 17px; background:url(../Images/Icons/Point1.png) no-repeat 0 2px; }
+.BlockDetail .Others .Border li,
+.BlockDetail .Others .Border li a{ color:#281311; font-size:12px; font-family:"OpenSansRegular";}
+
+.BlockDetail .Others ul.Extentions{}
+.BlockDetail .Others ul.Extentions li{ 
+    padding:0 0 16px 9px; 
+    color:#d68745;
+    font-family:"OpenSansRegular";	
+    font-size:12px;                                                                              
+}
+.BlockDetail .Others ul.Extentions li span{ 
+    color:#4f1f19;
+    font-family:OpenSansExtraBold;
+    font-style:normal;
+    font-size:15px;
+    margin-right:8px;
+}
+/*Detail========*/
+
+
+/*News*/
+
+.News li{ position:relative; padding:0 0 25px 176px; min-height:117px;}
+.News li h2{ padding-bottom:9px;}
+.News li h2,
+.News li h2 a{
+    color:#4f1f19;
+    font-family:OpenSansExtraBold;
+    font-style:normal;
+    display:block;
+    line-height:19px;
+    font-size:17px;    
+}
+.News li img{ max-width:158px; max-height:97px; display:block; position:absolute; left:0; top:0; border:1px solid #f3f3f3;}
+.News li i.Date{ font-style:normal; font-size:12px; color:#d68745; font-family:"OpenSansRegular"; padding-left:16px; background:url(../Images/Icons/Point1.png) no-repeat 0 3px; margin-bottom:10px; display:block;}
+.News li p{ padding-bottom:23px;}
+.News li div.Separator{
+    position:absolute;
+    left:0;
+    bottom:7px;
+    width:100%;
+    background:url(../Images/Background/Separator.png) no-repeat;
+    height:17px;
+}
+
+.News li:hover img,
+.News li.Active img{ border:1px solid #d38544;}
+.News li:hover h2 a,
+.News li.Active h2 a,
+.News li:hover h2,
+.News li.Active h2{ color:#d68745; text-decoration:none;}
+.News li h2 a:hover{ text-decoration:underline;}
+
+.News li.Last{ padding-bottom:8px;}
+.News li.Last div.Separator{ display:none;}
+/*News===========*/
+
+
+
+/*Firefox*/
+.Firefox .News li h2 a{ font-weight:normal!important;}
+/*Firefox=========*/
+
+
+/*IE9*/
+.ie9 #SmallMenu ul li{ background-position:left 4px!important;}
+.ie9 nav ul li.Item5:hover,
+.ie9 nav ul li.Active.Item5{ padding-left:0px; padding-right:0px; margin-right:-9px;}
+.ie9 nav ul li.Item6:hover,
+.ie9 nav ul li.Active.Item6{ padding-left:0px; padding-right:1px; margin-right:-5px; }
+.ie9 nav ul li.Item7:hover,
+.ie9 nav ul li.Active.Item7{ padding-left:0px; padding-right:0px; margin-right:-3px; }
+
+/*IE9*/

@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>talk.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages.css"/>
+<script type="text/javascript" src="css/fixpng.js"></script>
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"/><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"/><![endif]-->
+<script type="text/javascript" src="css/jquery.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+  setToggleInputs();
+});
+
+function setToggleInputs () {
+
+jQuery("[class*='toggle-inputs']").each(function (i) {
+var defaultValue = jQuery(this).val();
+
+jQuery(this).bind("click", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("focus", function(){
+if (jQuery(this).val() == defaultValue) {
+jQuery(this).val('');
+}
+});
+
+jQuery(this).bind("blur", function(){
+if (jQuery(this).val() == '') {
+jQuery(this).val(defaultValue);
+}
+});
+
+});
+
+return true;
+}
+</script>
+</head>
+<body>
+<div class="main">
+
+<!-- header -->
+	<div class="header">
+		<i class="lt"></i>
+		<i class="rt"></i>
+		<div class="flesh"><a href="http://www.tachki01.ru"><img src="http://www.aiia.pro/uploads/posts/2011-02/1298448428_tachki01-kopiya.jpg" width="765" height="115" alt=""/></a></div>
+
+
+		<div class="bot">
+			<div class="logo"><a href="#"></a></div>
+			
+			<div class="find">
+				<ul>
+					<li><b>Место поиска:</b></li>
+					<li><a href="#">интернет <i class="lt"></i> <i class="rt"></i></a></li>
+					<li class="activ"><a href="#">новости <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">блоги <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">клубы <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">люди <i class="lt"></i> <i class="rt"></i></a></li>
+					<li><a href="#">работа <i class="lt"></i> <i class="rt"></i></a></li>
+				</ul>
+				<div>
+					<span class="left"></span> 
+					<span class="right"></span>
+					<input type="text" value="Например последние новости..." class="toggle-inputs"  />
+					<input type="submit" value="" class="but" />
+				</div>
+			</div>
+
+			<div class="input">
+				<i class="u1"></i>
+				<i class="u2"></i>
+				<i class="u3"></i>
+				<i class="u4"></i>
+				<ul>
+					<li><a href="#">Зарегистрироваться</a></li>
+					<li><a href="#">Востановить пароль?</a></li>
+				</ul>
+				<input type="image" src="img/button/vxod.jpg" />
+			</div>
+
+		</div>	
+				
+		
+		<div class="nav-top">
+			<i class="u1"></i>
+			<i class="u2"></i>
+			<ul>
+				<li>
+					<a href="#">Новости</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Главные</a></li>
+							<li><a href="#">Общество</a></li>
+							<li><a href="#">Политика</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Происшествия</a></li>
+							<li><a href="#">Интернет</a></li>
+							<li><a href="#">Свободное время</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#">Бизнес</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="#">Поиск работы</a></li>
+							<li><a href="#">Поиск резюме</a></li>
+							<li><a href="#">Добавить вакансию</a></li>
+							<li><a href="#">Добавить резюме</a></li>
+							<li><a href="#">Кадровые агенства</a></li>
+							<li><a href="#">Обучение персонала</a></li>
+							<li><a href="#">Биржа труда</a></li>
+							<li><a href="#">форум</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">Работа</a></li>
+				<li><a href="#">Справка</a></li>
+				<li><a href="#">Авто</a></li>
+				<li><a href="#">Объявления</a></li>
+				<li> <a href="#">Дом</a></li>
+				<li class="activ"><a href="#">Афиша</a></li>
+				<li><a href="#">Общение</a></li>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Мой Айя</a></li>
+				<li><a href="#">Сервисы</a></li>
+			</ul>
+		</div>	
+	</div>		
+<!-- /header -->		
+
+	<div class="content">
+		<div class="wrapper">
+			
+			<div class="top_line">
+				<div class="abs">
+					<ul>
+						<li class="active"><a href="#">Клубы</a></li>
+						<li><a href="#">Пользователи</a></li> 
+						<li><a href="#">Опросы</a></li>
+						<li><a href="#">Форум</a></li>
+						<li class="end"><a href="#">Развёрнутая лента</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<div class="MIDDLE-COL">
+				<!--RIGHT-COL-->
+				<div class="RIGHT-COL">
+				
+				<div class="registry">
+					<a href="#">Регистрация</a>
+					<span><a href="#">зачем?</a></span>
+				</div>
+			
+				<div class="stat">
+					<p>За последние сутки на сайте:</p>
+					<ul>
+						<li>Новостей <a href="#">+0</a></li>
+						<li class="active">Фотографий <a href="#">+62</a></li>
+						<li>Записей в блогах<a href="#">+20</a></li>
+						<li>Записей в клубах<a href="#">+805</a></li>
+						<li>Авто обявлений <a href="#">+160</a></li>
+						<li>Новых регистраций <a href="#">+1342</a></li>
+					</ul>
+				</div>
+						
+		<div class="content-block">	
+			<script type="text/javascript" src="img/pages/news/openapi.js"></script>
+			<!-- VK Widget -->
+			<div style="width: 240px; background: none repeat scroll 0% 0% transparent; height: 362px;" id="vk_groups">
+				<iframe style="overflow: hidden; height: 362px;" id="vkwidget1" src="img/pages/news/widget_groups.htm" name="fXD5d4ee" scrolling="no" frameborder="0" height="200" width="240px"></iframe>
+			</div>
+			
+		</div>
+		
+					<br />	
+					<div class="baner">
+						<a href="#"><img src="img/temp/baners/shablon_211.jpg" width="152" height="409" alt="" /></a>
+					</div>	
+					<br />	
+				</div>
+				<!-- / RIGHT-COL ===============-->
+				<div class="CENTER">
+					<table class="struct_novunu">
+						<tr>
+							<td>
+								<div class="tema">
+									<div>Тема дня: <a href="#">Бесплатные парковки появляться в Майкопе</a></div>
+									<h2>Сегодня, <b>14 марта 2011</b></h2>
+									<ul class="list_news">
+										<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропа </a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропа </a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропа </a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропа </a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропа </a>
+											<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+											<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+											<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+											<img src="img/icon/coment.png" width="9" height="10" alt="" />
+											27
+											<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>	
+										<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>
+										<li><i>10:00</i> <a href="#">перв околова</a>
+											<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+											27
+											<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+											<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+											<a href="#" class="bl">Питрич</a>
+										</li>				
+									</ul>
+								</div>
+								
+								<div class="img_blog">
+									<i class="u1"></i>
+									<i class="u2"></i>
+									<i class="u3"></i>
+									<i class="u4"></i>
+									<p>Картинки из блогов</p>
+									<ul>
+										<li><a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a></li>
+										<li><a href="#"><img src="img/temp/auto/sm/auto_22.jpg" width="69" height="55" alt="" /></a></li>
+									</ul>
+									<div>
+										<ul>
+											<li><a href="#">Предыдущие</a></li>
+											<li class="end"><a href="#">Следующие</a></li>							
+										</ul>
+									</div>
+								</div>
+								
+								
+							</td>
+							<td class="width_talk">
+								
+								<a href="#"><img src="img/temp/baners/tema_06.jpg" width="200" alt="" /></a>
+							
+								<div class="afisha_today">
+									<h2>Прямой ефир</h2>
+									<div>
+										<i class="u1"></i>
+										<i class="u2"></i>
+										<i class="u3"></i>
+										<i class="u4"></i>
+																				
+										<ul class="list_news">
+											<li><i>08:00</i> <a href="#">Вернул кошелёк</a>
+												<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+												<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+												<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+												<img src="img/icon/coment.png" width="9" height="10" alt="" />
+												27
+												<a href="#" class="bl">Питрич</a>
+											</li>
+											<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+												<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+												<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+												<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+												<img src="img/icon/coment.png" width="9" height="10" alt="" />
+												27
+												<a href="#" class="bl">Питрич</a>
+											</li>
+											<li><i>10:00</i> <a href="#">перв околова</a>
+												<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+												<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+												<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+												<img src="img/icon/coment.png" width="9" height="10" alt="" />
+												27
+												<a href="#" class="bl">Питрич</a>
+											</li>
+											<li><i>11:00</i> <a href="#">Кот Матроскин пошёл домой и пропа </a>
+												<a href="#"><img src="img/icon/foto.jpg" width="27" height="12"  alt="" /></a>
+												<a href="#"><img src="img/icon/diagrama.jpg" width="12" height="11" alt="" /></a>
+												<a href="#"><img src="img/icon/video.jpg" width="32" height="12" alt="" /></a>
+												<img src="img/icon/coment.png" width="9" height="10" alt="" />
+												27
+												<a href="#"><img src="img/icon/people/icons_14.png" width="8" height="10" alt="" /></a>
+												<a href="#" class="bl">Питрич</a>
+											</li>	
+											<li><i>08:00</i> <a href="#">первым резидетом Соколова</a>
+												<a href="#"><img src="img/icon/people/icons_11.png" width="8" height="9" alt="" /></a>
+												<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+												27
+												<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+												<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+												<a href="#" class="bl">Питрич</a>
+											</li>
+											<li><i>09:00</i> <a href="#">первым резидетом Соколова</a>
+												<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+												<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+												27
+												<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+												<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+												<a href="#" class="bl">Питрич</a>
+											</li>
+											<li><i>10:00</i> <a href="#">перв околова</a>
+												<a href="#"><img src="img/icon/shablon_134.jpg" width="16" height="8" alt="" /></a>
+												<a href="#"><img src="img/icon/shablon_136.jpg" width="6" height="8" alt="" /></a> 
+												27
+												<a href="#"><img src="img/icon/shablon_142.jpg" width="7" height="7" alt="" /></a>
+												<a href="#"><img src="img/icon/shablon_149.jpg" width="19" height="7" alt="" /></a>
+												<a href="#" class="bl">Питрич</a>
+											</li>				
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					
+				
+				
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+<!-- bottom-->
+	<div class="footer">
+		<span class="lt"></span>
+		<span class="rt"></span>
+		<div class="logo"><a href="#"></a></div>
+		<address>2010 - АiiA - Городской портал Майкопа 
+<br /> Все права защищены</address>
+<div class="count">
+	<!--LiveInternet counter--><script type="text/javascript"><!--
+	document.write("<a href='http://www.liveinternet.ru/click' "+
+	"target=_blank><img src='//counter.yadro.ru/hit?t53.7;r"+
+	escape(document.referrer)+((typeof(screen)=="undefined")?"":
+	";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+	screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+	";"+Math.random()+
+	"' alt='' title='LiveInternet: показано число просмотров и"+
+	" посетителей за 24 часа' "+
+	"border='0' width='88' height='31'><\/a>")
+	//--></script><!--/LiveInternet-->
+
+	<a href="http://www.pr-cy.ru/" target="_blank" title="Счетчик тИЦ и PR"><img src="http://counter.pr-cy.ru/prcy/www.aiia.pro" alt="PR-CY.ru" width="88" height="31" border="0" /></a>
+
+	<!--Openstat--><span id="openstat2140389"></span><script type="text/javascript">
+	var openstat = { counter: 2140389, image: 5043, next: openstat, track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+	(("https:" == document.location.protocol) ? "s" : "") +
+	"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E"));
+	</script><!--/Openstat--> 
+</div>
+
+	</div>	
+<!--bottom=========== -->
+</div>
+</body>
+</html>

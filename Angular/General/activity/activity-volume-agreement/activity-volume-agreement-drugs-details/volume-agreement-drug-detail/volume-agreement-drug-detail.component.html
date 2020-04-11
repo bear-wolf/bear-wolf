@@ -1,0 +1,90 @@
+<div class="content-block drug-detail-content"
+     *ngIf="drug">
+  <div class="content-header">
+    <div class="title-block title-border-gray">
+      <h3 class="title" [innerHTML]="'Препарат '+ drug.sku.name"></h3>
+    </div>
+  </div>
+
+  <div class="form-component">
+    <form [formGroup]="form">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="row-block">
+            <div class="item">
+              <app-form-controls-input
+                      formControlName="factPrevYearUp"
+                      placeholder="Введите количество"
+                      label="Факт 2017, уп"
+                      [hideErrors]="true"
+                      [errors]="form.get('factPrevYearUp').errors">
+              </app-form-controls-input>
+            </div>
+            <div class="item">
+              <app-form-controls-input
+                      formControlName="pricePrevYearDDPPrice"
+                      class="controls-input-price-prev-year"
+                      placeholder="Введите цену"
+                      label="Цена 2018, DDP"
+                      [hideErrors]="true"
+                      [errors]="form.get('pricePrevYearDDPPrice').errors">
+              </app-form-controls-input>
+            </div>
+            <div class="item">
+              <app-form-controls-select
+                      formControlName="typeConfirmationsDb"
+                      label="Тип подтверждения ДБ"
+                      [options]="typeConfirmationsDbOptions"
+                      [hideErrors]="true"
+                      [errors]="form.get('typeConfirmationsDb').errors">
+              </app-form-controls-select>
+            </div>
+            <div class="item">
+              <app-form-controls-select
+                      formControlName="bonusCondition"
+                      label="Условия премирования"
+                      class="controls-select-bonus"
+                      [options]="bonusConditionOptions"
+                      [hideErrors]="true"
+                      [errors]="form.get('bonusCondition').errors">
+              </app-form-controls-select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="character">
+            <app-form-controls-label
+                    formControlName="group"
+                    label="Группа:">
+            </app-form-controls-label>
+
+            <app-form-controls-label
+                    formControlName="brand"
+                    label="Бренд:">
+            </app-form-controls-label>
+
+            <app-form-controls-check
+                    [label]="'SKU исключен из ДС'"
+                    formControlName="skUexcludedFromDS">
+            </app-form-controls-check>
+
+            <app-form-controls-check
+                    [label]="'ДМА в следующем периоде'"
+                    formControlName="dmAinNextPeriod">
+            </app-form-controls-check>
+
+            <app-form-controls-check
+                    [label]="'Единные % внутри группы'"
+                    formControlName="singlePercentInGroup">
+            </app-form-controls-check>
+
+            <app-form-controls-check
+                    [label]="'Единные % внутри бренда'"
+                    formControlName="singlePercentInBrand">
+            </app-form-controls-check>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

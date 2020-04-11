@@ -1,0 +1,17 @@
+/*css style for IE7*/
+
+@import url(ie.css);
+
+html div,
+html li{
+	zoom:1;
+	}
+	
+.findMain{
+	height:23px;
+	padding:2px 0 0 42px;
+	}
+	
+.sponsorMain{
+	top:353px;
+	}		

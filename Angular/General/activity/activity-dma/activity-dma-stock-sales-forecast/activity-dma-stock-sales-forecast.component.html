@@ -1,0 +1,47 @@
+<div class="content-block">
+  <div class="title-block">
+    <h3 class="title">Прогноз продаж без акции</h3>
+  </div>
+  <form [formGroup]="form">
+    <table>
+      <thead>
+      <tr>
+        <th>SKU</th>
+        <th>Базовый прирост перепарата, %</th>
+        <th>Потери на замещение конкурентами, %</th>
+        <th>Прогноз продаж без акции, р.</th>
+        <th>Прогноз продаж без акции, уп.</th>
+        <th>Среднемесячные продажи в аналогичном периоде предыдущего года (релевантном периоде) в одинаковом количестве ТТ, уп.</th>
+        <th>Будет ли проводиться аналогичная акция конкурентами в случае нашего отказа</th>
+        <th>По какому препарату (ам)</th>
+      </tr>
+      </thead>
+      <tbody formArrayName="skuList">
+      <tr *ngFor="let skuBlock of dma.skuBlocks; let i = index" [formGroup]="form.get('skuList')['controls'][i]">
+        <td>{{skuBlock.skuBlockName}}</td>
+        <td>{{skuBlock.baseDrugGain}}</td>
+        <td>{{skuBlock.lossesToReplaceCompetitors}}</td>
+        <td>{{skuBlock.forecastOfSalesWithoutSharesRubPrice}}</td>
+        <td>{{skuBlock.forecastOfSalesWithoutSharesUpPrice}}</td>
+        <td></td>
+        <td>
+          <app-form-controls-select
+                  class="month-from"
+                  formControlName="isSimilarActionByCompetitors"
+                  placeholder=""
+                  [options]="[{label: 'Да', value: true}, {label: 'Нет', value: false}]"
+                  [errors]="form.get('skuList')['controls'][i].get('isSimilarActionByCompetitors').errors">
+          </app-form-controls-select>
+        </td>
+        <td>
+          <app-form-controls-input
+                  formControlName="whatDrug"
+                  placeholder=""
+                  [errors]="form.get('skuList')['controls'][i].get('whatDrug').errors">
+          </app-form-controls-input>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

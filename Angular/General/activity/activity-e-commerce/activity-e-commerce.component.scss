@@ -1,0 +1,60 @@
+@import "~assets/css/variables";
+@import "~assets/css/shared";
+
+.e-commerce-content{
+  @include item-steps;
+  @include common-form-btn-group;
+
+  p-steps{
+    li{
+      &.step0{
+        &,
+        a{
+          width: 90px!important;
+        }
+      }
+      &.step1{
+        a{
+          width: 90px!important;
+        }
+      }
+      &.step2{
+        a{
+          width: 80px!important;
+        }
+      }
+    }
+    .ui-steps:before{
+      width: 420px!important;
+    }
+  }
+
+  .document-content{
+    .row-item{
+      flex-direction: column;
+
+      .item{
+        width: 100%;
+        margin-bottom: $form-row-margin-bottom;
+
+        p-calendar input{
+          font-size: 11px;
+        }
+
+        &>span>label{
+          align-items: center;
+          font-weight: bold!important;
+          padding-right: 15px;
+        }
+        .form-control-input{
+          display: flex;
+          label{
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<div class="form-control-select">
+  <label *ngIf="label" class="form-control-select-label" [innerHTML]="label"></label>
+
+  <p-dropdown
+          *ngIf="bindValue === 'value'"
+          [(ngModel)]="value"
+          [options]="options"
+          [placeholder]="placeholder"
+          [disabled]="disabled"
+          [autoDisplayFirst]="false"
+          (onChange)="updateSelectValue($event)">
+    <ng-template *ngIf="translate" pTemplate="item" let-item>
+      {{item[bindLabel] | translate}}
+    </ng-template>
+    <ng-template *ngIf="translate"
+                 let-selectedItem pTemplate="selectedItem">
+      {{selectedItem[bindLabel] | translate}}
+    </ng-template>
+  </p-dropdown>
+
+  <p-dropdown
+          *ngIf="bindValue !== 'value'"
+          [(ngModel)]="value"
+          [options]="options"
+          [placeholder]="placeholder"
+          [disabled]="disabled"
+          [optionLabel]="bindLabel"
+          [dataKey]="bindValue"
+          [autoDisplayFirst]="false"
+          (onChange)="updateSelectValue($event)">
+    <ng-template *ngIf="translate" pTemplate="item" let-item>
+      {{item[bindLabel] | translate}}
+    </ng-template>
+    <ng-template *ngIf="translate"
+                 let-selectedItem pTemplate="selectedItem">
+      {{selectedItem[bindLabel] | translate}}
+    </ng-template>
+  </p-dropdown>
+
+  <div *ngIf="errors && !hideErrors" class="error-messages">
+    <div *ngIf="errors.required" class="form-text text-danger">Required error</div>
+  </div>
+
+  <div *ngIf="!errors && hint" class="hint-messages">
+    {{hint}}
+  </div>
+</div>
+

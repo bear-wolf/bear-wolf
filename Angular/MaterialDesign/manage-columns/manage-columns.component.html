@@ -1,0 +1,12 @@
+<div class="manage-columns" event-out (eventOut)="clickOut()">
+    <a href="javascript: void(0);" (click)="onToogle()"><mat-icon>settings</mat-icon></a>
+    <mat-card [ngClass]="'pop-up'" *ngIf="toggle">
+        <div class="list">
+            <div *ngFor="let item of columnsList; index as i; let first = first">
+                <mat-checkbox [disabled]="first"
+                              [checked]="!item.hidden"
+                              (change)="onChange(item)">{{ item.label}}</mat-checkbox>
+            </div>
+        </div>
+    </mat-card>
+</div>

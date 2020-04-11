@@ -1,0 +1,120 @@
+<div class="content-block sku-details">
+  <div class="title-block title-border-gray">
+    <h3 class="title">Детализация по препаратам</h3>
+  </div>
+
+  <p-table [columns]="columns" [value]="groupedSkus | keyvalue" dataKey="name">
+    <ng-template pTemplate="header" let-columns>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col.header}}
+        </th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+      <tr>
+        <td colspan="5" [pRowToggler]="rowData.key" class="bu-row">
+          <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></i>
+          {{rowData.key}}
+        </td>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns" let-expanded="expanded">
+      <tr>
+        <td colspan="5" class="inner-table-wrapper">
+
+          <p-table [columns]="columns" [value]="rowData.value | keyvalue" dataKey="name">
+            <ng-template pTemplate="body" let-rowData let-expanded="expanded" let-columns="columns">
+              <tr>
+              <td *ngFor="let col of columns" [pRowToggler]="rowData.key">
+                <ng-container [ngSwitch]="col.field">
+                  <ng-container *ngSwitchCase="'name'">
+                    <i [ngClass]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></i>
+                    {{rowData.key}}
+                  </ng-container>
+                  <ng-container *ngSwitchDefault>
+                    {{getTotalForBrand(rowData.value, col.field)}}
+                  </ng-container>
+                </ng-container>
+              </td>
+            </tr>
+            </ng-template>
+
+            <ng-template pTemplate="rowexpansion" let-rowData let-columns="columns" let-expanded="expanded">
+              <tr *ngFor="let bmSku of rowData.value">
+                <ng-container *ngFor="let col of columns">
+                  <ng-container [ngSwitch]="col.field">
+                    <td *ngSwitchCase="'name'">
+                      {{bmSku.sku.name}}
+                    </td>
+                    <td *ngSwitchCase="'ntz'" pEditableColumn>
+                      <p-cellEditor>
+                        <ng-template pTemplate="input">
+                          <input pInputText type="number" [(ngModel)]="bmSku.ntzAmount">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                          {{bmSku.ntzAmount}}
+                        </ng-template>
+                      </p-cellEditor>
+                    </td>
+                    <td *ngSwitchCase="'calculation'" pEditableColumn>
+                      <p-cellEditor>
+                        <ng-template pTemplate="input">
+                          <input pInputText type="number" [(ngModel)]="bmSku.calculationAmount">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                          {{bmSku.calculationAmount}}
+                        </ng-template>
+                      </p-cellEditor>
+                    </td>
+                    <td *ngSwitchCase="'reports'" pEditableColumn>
+                      <p-cellEditor>
+                        <ng-template pTemplate="input">
+                          <input pInputText type="number" [(ngModel)]="bmSku.reportsAmount">
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                          {{bmSku.reportsAmount}}
+                        </ng-template>
+                      </p-cellEditor>
+                    </td>
+                    <td *ngSwitchCase="'total'">
+                      {{bmSku.total}}
+                    </td>
+                  </ng-container>
+                </ng-container>
+              </tr>
+            </ng-template>
+          </p-table>
+      </td>
+    </tr>
+
+  </ng-template>
+
+  <!-- Total row -->
+  <ng-template pTemplate="footer" let-columns>
+    <tr>
+      <td *ngFor="let col of columns" class="total">
+        <ng-container [ngSwitch]="col.field">
+          <ng-container *ngSwitchCase="'name'">
+            Итого:
+          </ng-container>
+          <ng-container *ngSwitchCase="'ntz'">
+            {{basicMarketing.ntzAmount}}
+          </ng-container>
+          <ng-container *ngSwitchCase="'calculation'">
+            {{basicMarketing.calculationAmount}}
+          </ng-container>
+          <ng-container *ngSwitchCase="'reports'">
+            {{basicMarketing.reportsAmount}}
+          </ng-container>
+          <ng-container *ngSwitchCase="'total'">
+            {{basicMarketing.estimatedInvestmentsForPeriodPrice}}
+          </ng-container>
+        </ng-container>
+      </td>
+    </tr>
+  </ng-template>
+  </p-table>
+</div>

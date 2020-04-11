@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<title>index.html</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+	<script type="text/javascript" src="js/jquery1_6_4.js"></script>
+	<script type="text/javascript" src="js/java.js"></script>
+	<script type="text/javascript"> 
+
+        if ($.browser.opera) document.writeln("<link rel='stylesheet' type='text/css' href='css/opera.css'>");
+        if ($.browser.msie) document.writeln("<link rel='stylesheet' type='text/css' href='css/ie7.css'>");        
+        if ($.browser.mozilla) document.writeln("<link rel='stylesheet' type='text/css' href='css/mozilla.css'>");
+
+        if ($.browser.safari) {
+            var userAgent = navigator.userAgent.toLowerCase();
+            jQuery.browser = {
+                version: (userAgent.match(/.+(?:rv|it|ra|ie|me)[\/: ]([\d.]+)/) || [])[1],
+                chrome: /chrome/.test(userAgent),
+                safari: /webkit/.test(userAgent) && !/chrome/.test(userAgent),
+                opera: /opera/.test(userAgent),
+                msie: /msie/.test(userAgent) && !/opera/.test(userAgent),
+                mozilla: /mozilla/.test(userAgent) && !/(compatible|webkit)/.test(userAgent)
+            };
+            if ($.browser.safari) { document.writeln("<link rel='stylesheet' type='text/css' href='css/safary.css'>"); }
+            else { document.writeln("<link rel='stylesheet' type='text/css' href='css/chrome.css'>"); }
+        }      
+               
+    </script>
+	
+</head>
+
+<body>
+<div class="main">
+
+	<div class="TopBanner">
+		<a href="#"><img src="img/temp/TopBaner.gif" width="470" height="140" alt="" /></a>
+	</div>
+
+<!-- header -->
+	<div class="header">
+		
+		<div class="logo">
+			<a href="#">Женский автоклуб</a>
+		</div>
+		
+		<div class="Registry">
+			<ul>
+				<li><a href="#">Регистрация</a> /</li>
+				<li><a href="#">Войти</a></li>
+			</ul>
+		</div>
+		
+		<div class="Find">
+			<ul>
+				<li><input type="text" value="Поиск" class="toggle-inputs" /></li>
+				<li><span><input type="submit" value="" /></span></li>
+			</ul>
+		</div>
+		
+		<div class="nav-head">
+			<div>
+				<ul>
+					<li><a href="#" class="active">Главная</a></li>
+					<li><a href="#">Леди</a></li>
+					<li>
+						<a href="#">Автоновости</a>
+						<div class="submenu">
+							<ul>
+								<li><a href="#">Новость 1</a></li>
+								<li><a href="#">Новость 2</a></li>
+								<li><a href="#">Новость 3</a></li>
+								<li><a href="#">Новость 4</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Тест-драйв</a></li>
+					<li><a href="#">Доска обьявлений</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Фото</a></li>
+					<li><a href="#">Закладки</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+<!-- /header -->	
+
+	<div class="content">
+		<div class="wrapper clearfix">
+
+<!-- left col -->		  	
+			<div class="left-col">	
+				
+				<div class="PhotoKonkurs">
+					<h1><a href="#">Лидеры фотоконкурса</a></h1>
+					<a href="#"><img src="img/temp/Konkurs/FairLady_33.gif" width="185" height="135" alt="" /></a>
+					<p><a href="#">Анастасия Лукова и Mersedes</a></p>
+				</div>
+				
+				<div class="Goroskop">
+					<h2><a href="#">Гороскоп</a></h2>
+					<table>
+						<tr>
+							<td><a href="#"><img src="img/temp/Goroskop/FairLady_50.png" width="65" height="70" alt="" /></a></td>
+							<td>
+								<a href="#">Водолей</a>
+								<p>Рутинная работа не будет восприниматься как повинность.</p>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="img/temp/Goroskop/FairLady_60.png" width="70" height="74" alt="" /></a></td>
+							<td>
+								<a href="#">Дева</a>
+								<p>Сегодня вы обнаружите много новых положи-тельных сторон в дру-жеских и семейных взаимоотношениях.</p>
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="img/temp/Goroskop/FairLady_67.png" width="76" height="75" alt="" /></a></td>
+							<td>
+								<a href="#">Близнецы</a>
+								<p>Неплохой день для финансовых операций.</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="Board">
+					<h2><a href="#">Доска обьявлений</a></h2>
+					<a href="#"><img src="img/temp/Board/FairLady_84.gif" width="199" height="149" alt="" /></a>
+					<p><a href="#">Bmw 520</a> I, Шахтинск (5 000.00USD)</p>
+				</div>
+				
+				<div class="Baner">
+					<a href="#"><img src="img/temp/FairLady_94.gif" width="220" height="146" alt="" /></a>
+				</div>
+				<div class="Baner">
+					<a href="#"><img src="img/temp/week.gif" width="120" height="120" alt="" /></a>
+				</div>
+				
+			</div>
+<!-- /left col -->
+			<div class="middle-col">
+			
+				<div class="right-col">	
+									
+					<div class="People">
+						<h2><a href="#">Участники</a></h2>
+						<table>
+							<tr>
+								<td><a href="#"><img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" /></a></td>
+								<td><a href="#"><img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" /></a></td>
+								<td><a href="#"><img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" /></a></td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" /></a></td>
+								<td><a href="#"><img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" /></a></td>
+								<td><a href="#"><img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" /></a></td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="Baner">
+						<a href="#"><img src="img/temp/baner.gif" width="220" height="324" alt="" /></a>
+					</div>
+					
+					<div class="Board">
+						<h2><a href="#">Тест-Драйв</a></h2>
+						<a href="#"><img src="img/temp/Board/FairLady_88.gif" width="199" height="149" alt="" /></a>
+						<p>Тест-драйв <a href="#">Mercedes-Benz S-class.</a> «Мерседес» уходит от погони</p>
+					</div>
+					
+					<div class="Event">
+						<h2><a href="#">События</a></h2>
+						<table>
+							<tr>
+								<td><a href="#"><img src="img/temp/Event/FairLady_96.gif" width="69" height="69" alt="" /></a></td>
+								<td>
+									<a href="#">Новый Mercedes ML показан в России.</a>
+									<i>10.09.2011 10:03</i>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/Event/FairLady_100.gif" width="69" height="69" alt="" /></a></td>
+								<td>
+									<a href="#">На УАЗе вокруг Байкала</a>
+									<i>23.08.2011 07:55</i>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/Event/FairLady_107.gif" width="69" height="69" alt="" /></a></td>
+								<td>
+									<a href="#">VW Touareg проехал самую длинную автодорогу</a>
+									<i>22.07.2011 11:15</i>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="img/temp/Event/FairLady_110.gif" width="69" height="69" alt="" /></a></td>
+								<td>
+									<a href="#">В России начались продажи внедорожника Tahoe</a>
+									<i>21.06.2011 10:50</i>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+				</div>
+
+				<div class="center-col">
+				
+					<div class="BgSlider">
+						<div class="Slider">
+							<div class="navigation">
+								<a href="#" class="beg" rel="beg"></a>
+								<a href="#" class="end" rel="end"></a>
+							</div>
+							<div class="window">	
+								<div class="image_reel">
+									<img src="img/temp/Big/FairLady_27.gif" width="464" height="232" alt="" />
+									<img src="img/temp/TopBaner.gif" width="464" height="232" alt="" />
+									<img src="img/temp/Konkurs/FairLady_33.gif" width="464" height="232" alt="" />
+									<img src="img/temp/Board/FairLady_84.gif" width="464" height="232" alt="" />
+									<img src="img/temp/Board/FairLady_88.gif" width="464" height="232" alt="" />
+								</div>
+							</div>
+							<div style="display: block;" class="paging">
+								<a href="#" rel="1"></a>
+								<a href="#" rel="2"></a>
+								<a href="#" rel="3"></a>
+								<a href="#" rel="4"></a>
+								<a href="#" rel="5"></a>
+							</div>
+						</div>
+					</div>
+						
+					<div class="News">
+						<div class="line">
+							<div>
+								<span>Новости</span>
+							</div>
+						</div>
+						<div class="Inform">
+							<ul>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/news/FairLady_63.gif" width="52" height="52" alt="" />
+												<h3>
+													<a href="#">Porsche отзывает спорткары 911 из-за опасности потери колес</a>
+													<i>15.08.2011 10:03</i>
+												</h3>
+											</td>
+										</tr>
+									</table>
+									<p>Страховщики готовы предоставить государству обоснованные расчеты с целью повышения тарифов по ОСАГО. Об этом на парламентских слушаниях в Совете Федерации сообщил вице-президент Российского союза автостраховщиков Андрей Батуркин.</p>
+									<ul class="CommandLine">
+										<li class="comment"><a href="#">Оставить комментарий <b>(7)</b></a></li>
+										<li class="reytung"><a href="#">Голосовать</a></li>
+										<li class="tabs"><a href="#">Добавить закладку</a></li>
+									</ul>
+								</li>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/news/FairLady_82.gif" width="52" height="52" alt="" />
+												<h3>
+													<a href="#">Mazda прекратит выпуск автомобилей на совместном с "Фордом" заводе</a>
+													<i>10.08.2011 10:03</i>
+												</h3>
+											</td>
+										</tr>
+									</table>
+									<p>Страховщики готовы предоставить государству обоснованные расчеты с целью повышения тарифов по ОСАГО. Об этом на парламентских слушаниях в Совете Федерации сообщил вице-президент Российского союза автостраховщиков Андрей Батуркин.</p>
+									<ul class="CommandLine">
+										<li class="comment"><a href="#">Оставить комментарий <b>(7)</b></a></li>
+										<li class="reytung"><a href="#">Голосовать</a></li>
+										<li class="tabs"><a href="#">Добавить закладку</a></li>
+									</ul>
+								</li>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/news/FairLady_90.gif" width="52" height="52" alt="" />
+												<h3>
+													<a href="#">Saab вновь остановил производство</a>
+													<i>13.08.2011 10:03</i>
+												</h3>
+											</td>
+										</tr>
+									</table>
+									<p>Страховщики готовы предоставить государству обоснованные расчеты с целью повышения тарифов по ОСАГО. Об этом на парламентских слушаниях в Совете Федерации сообщил вице-президент Российского союза автостраховщиков Андрей Батуркин.</p>
+									<ul class="CommandLine">
+										<li class="comment"><a href="#">Оставить комментарий <b>(7)</b></a></li>
+										<li class="reytung"><a href="#">Голосовать</a></li>
+										<li class="tabs"><a href="#">Добавить закладку</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="News">
+						<div class="line">
+							<div>
+								<span>Сообщения из блогов</span>
+							</div>
+						</div>
+						<div class="Inform">
+							<ul>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" />
+												<h3>
+													<a href="#">Страховщики намерены повысить тарифы по ОСАГО</a>
+													<i>Написано пользователем <a href="#">tamar</a>  15.08.2011</i>
+												</h3>
+											</td>
+										</tr>
+									</table>
+									<p>Страховщики готовы предоставить государству обоснованные расчеты с целью повышения тарифов по ОСАГО. Об этом на парламентских слушаниях в Совете Федерации сообщил вице-президент Российского союза автостраховщиков Андрей Батуркин.</p>
+									<ul class="CommandLine">
+										<li class="comment"><a href="#">Оставить комментарий <b>(7)</b></a></li>
+										<li class="reytung"><a href="#">Голосовать</a></li>
+										<li class="tabs"><a href="#">Добавить закладку</a></li>
+									</ul>
+								</li>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" />
+												<h3>
+													<a href="#">Страховщики намерены повысить тарифы по ОСАГО</a>
+													<i>Написано пользователем <a href="#">tamar</a>  15.08.2011</i>
+												</h3>
+											</td>
+										</tr>
+									</table>
+									<p>Страховщики готовы предоставить государству обоснованные расчеты с целью повышения тарифов по ОСАГО. Об этом на парламентских слушаниях в Совете Федерации сообщил вице-президент Российского союза автостраховщиков Андрей Батуркин.</p>
+									<ul class="CommandLine">
+										<li class="comment"><a href="#">Оставить комментарий <b>(7)</b></a></li>
+										<li class="reytung"><a href="#">Голосовать</a></li>
+										<li class="tabs"><a href="#">Добавить закладку</a></li>
+									</ul>
+								</li>
+								<li>
+									<table>
+										<tr>
+											<td>
+												<img src="img/temp/People/FairLady_30.gif" width="65" height="65" alt="" />
+												<h3>
+													<a href="#">Страховщики намерены повысить тарифы по ОСАГО</a>
+													<i>Написано пользователем <a href="#">tamar</a>  15.08.2011</i>
+												</h3>
+											</td>
+										</tr>
+									</table>
+									<p>Страховщики готовы предоставить государству обоснованные расчеты с целью повышения тарифов по ОСАГО. Об этом на парламентских слушаниях в Совете Федерации сообщил вице-президент Российского союза автостраховщиков Андрей Батуркин.</p>
+									<ul class="CommandLine">
+										<li class="comment"><a href="#">Оставить комментарий <b>(7)</b></a></li>
+										<li class="reytung"><a href="#">Голосовать</a></li>
+										<li class="tabs"><a href="#">Добавить закладку</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+						
+					<div class="Forum">
+						<div class="line">
+							<div>
+								<span>Последнее из форума</span>
+							</div>
+						</div>
+						<div class="Inform">
+							<ul> 
+								<li><b>Сегодня:</b></li>
+								<li><a href="#">Поцарапали вашу машину. Что будете делать?</a> Мир АвтоМотоСпорта</li>
+								<li><a href="#">Заводские дефекты Chrysler Мир </a> АвтоМотоСпорта </li>
+								<li><a href="#">Отзыв Кадиллак SRX (Cadillac SRX)</a>  Автобеседка </li>
+								<li><a href="#">Запчасит Volkswagen Passat B5 Немецкие автомобили фольцваген транспортер т4 2.5 бензин 1995г.в плохо заводится на холодную</a> Немецкие автомобили</li>
+								<li><a href="#">Вентилятор охлаждения радиатора работает наоборот</a>  Мой любимый автомобиль</li>
+								<li><a href="#">Тачка на прокачку Тюнинг и</a>  стайлинг </li>
+								<li><a href="#">Покрытие автомобиля воском Мир</a> АвтоМотоСпорта</li>
+								<li><a href="#">Покрытие автомобиля воском</a> Автобеседка</li>
+								<li><a href="#">Поцарапали вашу машину. Что будете делать?</a> Немецкие автомобили</li>
+								<li><a href="#">Поцарапали вашу машину. Что будете делать?</a> Мир АвтоМотоСпорта</li>								
+								<li><b>Вчера:</b></li>
+								<li><a href="#">Заводские дефекты Chrysler Мир </a> АвтоМотоСпорта </li>
+								<li><a href="#">Отзыв Кадиллак SRX (Cadillac SRX)</a>  Автобеседка </li>
+								<li><a href="#">Запчасит Volkswagen Passat B5 Немецкие автомобили фольцваген транспортер т4 2.5 бензин 1995г.в плохо заводится на холодную</a> Немецкие автомобили</li>
+								<li><a href="#">Вентилятор охлаждения радиатора работает наоборот</a>  Мой любимый автомобиль</li>
+								<li><a href="#">Тачка на прокачку Тюнинг и</a>  стайлинг </li>
+								<li><a href="#">Покрытие автомобиля воском Мир</a> АвтоМотоСпорта</li>
+								<li><a href="#">Покрытие автомобиля воском</a> Автобеседка</li>
+								<li><a href="#">Поцарапали вашу машину. Что будете делать?</a> Немецкие автомобили</li>
+								<li><a href="#">Поцарапали вашу машину. Что будете делать?</a> Мир АвтоМотоСпорта</li>
+								<li><a href="#">Заводские дефекты Chrysler Мир </a> АвтоМотоСпорта </li>
+								<li><a href="#">Отзыв Кадиллак SRX (Cadillac SRX)</a>  Автобеседка </li>
+								<li><b>21.06.2011</b></li>
+								<li><a href="#">Запчасит Volkswagen Passat B5 Немецкие автомобили фольцваген транспортер т4 2.5 бензин 1995г.в плохо заводится на холодную</a> Немецкие автомобили</li>
+								<li><a href="#">Вентилятор охлаждения радиатора работает наоборот</a>  Мой любимый автомобиль</li>
+								<li><a href="#">Тачка на прокачку Тюнинг и</a>  стайлинг </li>
+								<li><a href="#">Покрытие автомобиля воском Мир</a> АвтоМотоСпорта</li>
+								<li><a href="#">Покрытие автомобиля воском</a> Автобеседка</li>
+								<li><a href="#">Поцарапали вашу машину. Что будете делать?</a> Немецкие автомобили</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div> 
+			
+			<div class="Garaje">
+		<div class="line">
+			<div>
+				<span>Фотки из гаражей участников сайта</span>
+			</div>
+		</div>
+		<div class="tabs">
+			<table>
+				<tr>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_113.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Nika Babich</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_115.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Elena Alexandrova</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_117.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Sofia Ryazanova</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_119.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Nika Byelousova</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_121.gif" width="89" height="90" alt="" /></a>
+						<p><a href="#">Anna Bystraya</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_123.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Maria Zelonaya</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_125.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Elena Yershova</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_128.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Ludmila Chizh</a></p>
+					</td>
+					<td>
+						<a href="#"><img src="img/temp/Garaje/FairLady_130.gif" width="90" height="90" alt="" /></a>
+						<p><a href="#">Olga Katerinova</a></p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+			
+		</div>	
+	</div>
+		
+
+<!-- bottom -->
+	<div class="footer">
+		<div>
+			<table>
+				<tr>
+					<td>
+						<ul>
+							<li>Главная</li>
+							<li><a href="#">Участники</a></li>
+							<li><a href="#">Блоги</a></li>
+							<li><a href="#">Форум</a></li>
+							<li><a href="#">Группы</a></li>
+							<li><a href="#">События</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Скидки</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</td>
+					<td>					
+						<ul>
+							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Леди</li>
+							<li><a href="#">На дороге</a></li>
+							<li><a href="#">Вождение</a></li>
+							<li><a href="#">Мифы</a></li>
+							<li><a href="#">Красота</a></li>
+							<li><a href="#">Гороскоп</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Автоновости</li>
+							<li><a href="#">Новости автомира</a></li>
+							<li><a href="#">Автоновинки</a></li>
+							<li><a href="#">Выставки и автосалоны</a></li>
+							<li><a href="#">Новости компаний</a></li>
+							<li><a href="#">Происшествия</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Статьи</li>
+							<li><a href="#">Автообзоры</a></li>
+							<li><a href="#">Тюнинг</a></li>
+							<li><a href="#">История авто</a></li>
+							<li><a href="#">Безопасность</a></li>
+							<li><a href="#">Эксплуатация</a></li>
+							<li><a href="#">Закон</a></li>
+							<li><a href="#">Автоспорт</a></li>
+							<li><a href="#">Автотуризм</a></li>
+							<li><a href="#">Интервью</a></li>
+						</ul>
+					</td>
+					<td>					
+						<ul>
+							<li>Тест-драйв</li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Видео</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Доска обьявлений</li>
+							<li><a href="#">Стандартно</a></li>
+							<li><a href="#">Каталогизировано по маркам</a></li>
+							<li><a href="#">Поиск</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Каталог</li>
+							<li><a href="#">Автосалоны</a></li>
+							<li><a href="#">Автошколы</a></li>
+							<li><a href="#">Автосервис</a></li>
+							<li><a href="#">Мойка</a></li>
+							<li><a href="#">Автозапчасти</a></li>
+							<li><a href="#">Страхование</a></li>
+							<li><a href="#">Кредиты</a></li>
+							<li><a href="#">Отзывы</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Фото</li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">Обои</a></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Закладки</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Контакты</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<address>
+			&copy;Copyright  2011  Fairlady
+		</address>
+	</div>	
+<!-- /bottom -->	
+
+</div>
+</body>
+</html>

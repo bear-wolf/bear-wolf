@@ -1,0 +1,32 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { ActivityDmaSkuTotalsComponent } from './activity-dma-sku-totals.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {FormControlsModule} from "@shared/modules/form-controls/form-controls.module";
+
+describe('ActivityDmaSkuTotalsComponent', () => {
+  let component: ActivityDmaSkuTotalsComponent;
+  let fixture: ComponentFixture<ActivityDmaSkuTotalsComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ ActivityDmaSkuTotalsComponent ],
+      imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        FormControlsModule
+      ],
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(ActivityDmaSkuTotalsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

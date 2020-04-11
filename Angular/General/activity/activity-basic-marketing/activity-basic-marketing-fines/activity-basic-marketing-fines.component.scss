@@ -1,0 +1,15 @@
+@import '../../../../assets/css/variables';
+tr {
+  td.bu-row {
+    background-color: $color-abbott-light-gray;
+  }
+
+  td.total {
+    font-weight: bold;
+  }
+
+  td.inner-table-wrapper {
+    padding: 0 !important;
+    border: none !important;
+  }
+}

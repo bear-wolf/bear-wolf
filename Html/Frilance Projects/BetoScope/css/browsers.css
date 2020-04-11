@@ -1,0 +1,36 @@
+.iPad {
+    overflow:auto;
+}
+.iPad .container__logo_bets {
+    width: 100%;
+}
+
+.iPad .games {
+    width: 100%;
+}
+
+.iPad .games {
+    margin-top: 16px;
+}
+
+.iPad .float-right.baseAction {
+    float: none !important;
+    padding-top: 5px !important;
+}
+
+.iPad .div-ipad {
+    display: block;
+}
+
+.iPad .action {
+    max-width: 100%;
+    width: 100%;
+}
+
+.iPad .list-container {
+    float: none;
+}
+
+.iPad .navigation td i {
+    width: 95%;
+}

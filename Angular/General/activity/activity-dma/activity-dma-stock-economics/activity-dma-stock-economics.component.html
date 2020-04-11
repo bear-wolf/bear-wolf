@@ -1,0 +1,62 @@
+<div class="content-block dma-stock-economics-content">
+  <div class="title-block">
+    <h3 class="title title-border-gray">
+      Условия и экономика акции
+    </h3>
+  </div>
+
+  <div class="form-component rows-block">
+    <form [formGroup]="form">
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="showData"
+                label="Показывать данные:"
+                [options]="showDataOptions"
+                [errors]="form.get('showData').errors">
+        </app-form-controls-select>
+      </div>
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="brand"
+                label="Бренд:"
+                [options]="brandsOptions"
+                [errors]="form.get('brand').errors">
+        </app-form-controls-select>
+      </div>
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="sku"
+                label="SKU:"
+                [options]="skusOptions"
+                [errors]="form.get('sku').errors">
+        </app-form-controls-select>
+      </div>
+      <div class="row-item">
+        <app-form-controls-input
+                formControlName="productManagerFullName"
+                label="ФИО Продакт менеджера:"
+                [hideErrors]="true"
+                [errors]="form.get('productManagerFullName').errors">
+        </app-form-controls-input>
+      </div>
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="deductionFromDC"
+                placeholder=""
+                class="control"
+                label="Вычет из ДС по обьемному соглашению:"
+                [options]="[{label: 'Да', value: true}, {label: 'Нет', value: false}]"
+                [errors]="form.get('deductionFromDC').errors">
+        </app-form-controls-select>
+      </div>
+      <div class="row-item">
+        <app-form-controls-select
+                formControlName="networkExposesPharmacyPlan"
+                label="Сеть выставляет поаптечный план:"
+                [options]="[{label: 'Да', value: true}, {label: 'Нет', value: false}]"
+                [errors]="form.get('networkExposesPharmacyPlan').errors">
+        </app-form-controls-select>
+      </div>
+    </form>
+  </div>
+</div>
