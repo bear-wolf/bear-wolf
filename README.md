@@ -7,6 +7,3 @@ You can find on this document my code style such as:
 - Node / Express / Mongo ;
 - jQuery;
 - Html/Css/Bootstrap
-
-##Links
-https://drive.google.com/open?id=0Bzmjg8jX6iJjMm1ScUkxVWpMMEU
